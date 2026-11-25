@@ -68,6 +68,7 @@ that repository, copy writings, or transform any published passage.
 | D-baseline | Accepted in Cycle 14 | Preserve `326fa7e6d6ceba85351249c22c2a464490e6b0e4` as editorial baseline. No historical adjudication, frozen model or scientific dependency change. |
 | D-introduction | Implemented against `7c37478701b2b3e70f25d8a9a81316c370b3636e` | R1: order → direct/protected trade-off → ‘hay’ predictions → E32 and the written record → survival and the fallback claim. R2: retain all frozen table cells; distinguish hiatus from dialectal endpoints and morphological replacement; move notation detail to N-trace-notation. Map E32 to future P-char-reading without changing its prose. Mark E33 and E34 jointly necessary for H2, not established or necessary for H1. Preserve all prose outside R1–R2 and defer Nathanification. |
 | D-charter | Authorized in Cycle 16 against `a81760edf7110b8ea6fde2e8568e6388f6fa49d3` | R1–R2 provisionally approved and protected. Move simplex behind charter without rewriting; consolidate the charter and composition passages, then implement the eight R3 units as four separately validated and pushed pairs. No new historical verdict. Each checkpoint records its parent and scope in its commit. |
+| D-simplex | Implemented in Cycle 17 against `4237e0ea` | R3 approved subject to three scoped corrections. In R4, distinguish secure case assignments, regional written targets, and Eadwine's observed readings from conventional normalization. Preserve Table 2, Appendix A, the census and historical assessments. R5 remains outside scope. |
 
 **Editorial review of D-introduction:** The direct geminate in ‘bed’
 now explains why analogy is at issue before any spellings of ‘hay’
@@ -90,3 +91,13 @@ confirms that the lexical preference does not rest on avoiding a dating
 anomaly, that the protected stem is a live alternative, and that the
 compound cannot identify the direct case. No historical proposition
 or source-verification status was changed.
+
+**Cycle 17 checkpoints:** The charter corrections are `d421b21a`
+(attribution and phonological contrast) and `230ef043` (transition).
+`c89c16e1` staged the R4 anchors without rewriting prose. `8468a688`
+established the principal direct witnesses and spelling distribution;
+`f1791b66` distinguished Eadwine's manuscript evidence from the normalized
+form. `01e96c1c` aligned the case note and Table 2 with the arguments they
+support. All six were source-only; the following publication commit
+carries the matching PDF. The editorial review found no basis in these
+spellings to revise the historical model.
