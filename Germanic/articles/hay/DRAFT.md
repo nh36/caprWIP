@@ -232,28 +232,36 @@ road names are later, survive in later copies, or are disputed.
 Setting and spelling thus support ‘hay-road’ together, but
 a road by meadows could also be the king’s highway.
 
-<!-- pending:P-char-rival -->
+<!-- P-char-rival -->
 
-In contrast, Bosworth–Toller
-files the compound under *hēah-weg*, with *hēah-strǣt* as a semantic
-parallel, and Clark Hall gives the tentative gloss ‘highway?’.
-Neither establishes a local correspondence between *hēah-* and
-⟨hei-⟩ [@BosworthToller1898, s.v. *hēah-weg*; @ClarkHall1960, p. 152].
+If the first element is the adjective ‘high’, the compound
+has no bearing on the development of ‘hay’. Bosworth–Toller
+lists it under *hēah-weg*, with *hēah-strǣt* as a semantic
+parallel; Clark Hall prints ‘highway?’, and Cooper adopts
+that interpretation [@BosworthToller1898, s.v. *hēah-weg*;
+@ClarkHall1960, p. 152; @Cooper2003, p. 61 nn. 151, 155].
+If *cyniges hei weg* and *cyninges strete* refer to the same
+route, the latter expression supports the identification
+of a significant road. It does not show that the first
+expression named it for its status rather than its use.
 
-If the two mentions of
-the king’s road refer to the same route, *cyninges strete* supports
-the interpretation of a significant road without establishing that
-the first designation meant ‘high’.
+<!-- P-char-phon -->
 
-<!-- pending:P-char-phon -->
+The semantic parallel leaves a difference in form unexplained.
+The expected *hēah-* has a back fricative before the *w* of
+*weg*. To derive ⟨hei-⟩ from it, one must account for the lack
+of that fricative in the spelling and for the appearance of
+⟨ei⟩, which in *dei* writes a mid vowel with a palatal reflex.
+Neither dictionary supplies such a local correspondence, and
+the charter comparison found no securely comparable
+ninth-century Kentish example. This does not make the required
+development impossible. It does give ‘hay’ the better
+phonological comparison: the spelling can be related either
+to the early sequence reached by the direct stem or to the
+local notation of a vowel and glide, without first having to
+explain a reflex of *hēah-* before *w*.[^char-minor]
 
-An enclosure term is semantically possible but has no demonstrated
-local ⟨hei-⟩ reflex [@Wager2017, pp. 169–174]. A ‘high’ etymology
-requires evidence for the development of the fricative in *hēah*
-before *w*. The bounded charter comparison yielded no matched
-ninth-century Kentish example; that absence reduces the comparative
-support for ‘high’ but does not establish that the development was
-impossible.
+[^char-minor]: An enclosure term is semantically possible but likewise has no demonstrated local ⟨hei-⟩ reflex [@Wager2017, pp. 169–174].
 
 <!-- pending:P-char-document -->
 

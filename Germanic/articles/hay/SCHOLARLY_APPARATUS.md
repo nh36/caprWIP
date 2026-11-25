@@ -23,7 +23,7 @@ the appendix. The source-bearing IDs resolve through the
 | N-char-date | P-char-reading, P-char-document | E06, E28 | Retain `s1196` with Lowe's qualifiers, date slip, witness-list and copying alternatives; text retains sheet vs. transaction and Cooper's exclusion as substantive distinctions. |
 | N-bryan | P-char-positive | E07, E08 | Retain `bryan`: XXVI versus XXIV, and attribution to Miller and Chadwick; *dei* and its significance stay in prose. |
 | N-dahl | P-char-positive | E07 | Retain `dahl`: 839 misprint versus 859; keep Dahl's adoption and limited independent force in prose. |
-| N-char-minor | P-char-phon, P-char-close | E10, E27 | Proposed: subsidiary enclosure/road-name candidates and bounded search loci; keep the scope of the negative and Worcester counterexample in prose. |
+| N-char-minor | P-char-phon, P-char-close | E10, E27 | `char-minor` puts the subsidiary enclosure interpretation in a note. Keep the scope of the negative and Worcester counterexample in prose; list bounded search loci in their own note. |
 | N-compounds | P-char-compound | E09 | Proposed: full glossary citations, connector examples and other late examples beyond *bedtīd*. Preserve the fact that neither hay-house form has a visible connector in prose. |
 | N-editions | P-simplex-distribution | E13, E29 | Proposed: Lambeth *hyg*, *Dialogues* variants, distinct Cleopatra and Julius entries, and Lindisfarne correction/apparatus and inaccessible images. Main prose/table state verification class and readings bearing on claims. |
 | N-eadwine | P-simplex-eadwine | E16, E29 | Proposed: detailed folio/reference, scribal and exemplar caveats with Faulkner and edition references; keep directly verified spellings and absence of secure dialect attribution in prose. |
