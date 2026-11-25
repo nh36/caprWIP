@@ -384,11 +384,12 @@ clause; Owun has *heg ɫ gers micel* in the corresponding
 gloss [@Skeat1887, p. 59; @Tamoto2013, p. 19; @Skeat1878, p. 55].
 These syntactic contexts identify the direct function, not the
 ancestry of the stem or the sounds represented by its letters.
+Other contexts do not permit an equally secure case assignment.[^simplex-case]
 The dates are those of the surviving English writing: the Latin
 manuscripts may be older than their glosses, while a copy may
 postdate the English translation or gloss it transmits. The
 date of copying does not by itself establish the age of the
-exemplar.[^simplex-case]
+exemplar.
 
 [^simplex-case]: Neither Aldred’s *ofer heg* nor Farman’s *on hóeg* at Mt 14:19 has distinctive case marking [@Skeat1887, p. 123; @Tamoto2013, p. 47]. A positional reading of *gesittan on hóeg* favours the dative; taking the hay as the goal of sitting down permits an accusative. Position does not require the dative after *ofer*: CCCC 140, Mk 6:39, has accusative agreement in *sæte ofer þæt grene hig* despite the seated posture [@Skeat1871, pp. 48–49]. In Vespasian Hymn 7:4, snow falls *ofer heg* in a comparison with rain falling *ofer græs*: motion favours the accusative, but the English does not determine it. Nor does *swa swa* assign case: in withering similes such as *spe spe heg eorðan* (Ps 71:16), an elliptical comparison with the subject is plausible, but there is no separate subject agreement with the noun [@Stevenson1843VP; @Kuhn1965VP]. The corresponding Latin cases do not resolve these English ambiguities.
 
@@ -397,15 +398,24 @@ exemplar.[^simplex-case]
 The early Anglian witnesses give mid-vowel spellings: Vespasian
 *heg* and the Northumbrian *heg* and *heig* of Aldred and Owun.
 Farman’s *hóeg* belongs to his own Mercian Matthew gloss; its
-acute is evidence to be assessed for that witness, not a mark
-carried by the unaccented spellings. The Lindisfarne *hehg*
-and corrected *heg* at Mt 14:19 are known from the printed
+acute is evidence to be assessed for that witness. The ordinary
+unmarked spellings do not independently establish quantity.
+The Lindisfarne *hehg* and corrected *heg* at Mt 14:19 are
+known from the printed
 editions and apparatus, not from inspection of the manuscript
 alteration, and are readings of a single occurrence.[^simplex-editions]
 Owun’s *heg* is separately written, but his John gloss and
 Aldred’s transmit closely related material; copying directly
 from the surviving Lindisfarne manuscript is not established
 [@Kotake2016, pp. 377–396].
+
+The West Saxon evidence instead includes high-vowel spellings:
+*hig* in the West Saxon Gospels (Mk 6:39) and *hyg* in the
+Lambeth gloss (e.g. Ps 101:5) [@Skeat1871, pp. 48–49;
+@Lindeloef1909, p. 158]. These spellings pose a different
+problem of vowel quality, not a contrast in measured length.
+Table 2 gives the principal witnesses and Appendix A compares
+the Psalter glosses by locus.
 
 | English witness and date | Spelling | Locus and source |
 |-------------------------------|--------------|---------------------------------------------|
@@ -425,14 +435,8 @@ from the surviving Lindisfarne manuscript is not established
 
 : Principal simplex witnesses. The superscript ² denotes the second half of a century.
 
-The West Saxon evidence instead includes high-vowel spellings:
-*hig* in the West Saxon Gospels (Mk 6:39) and *hyg* in the
-Lambeth gloss (e.g. Ps 101:5) [@Skeat1871, pp. 48–49;
-@Lindeloef1909, p. 158]. These spellings pose a different
-problem of vowel quality, not a contrast in measured length.
-Table 2 gives the principal witnesses and Appendix A compares
-the Psalter glosses by locus. Later witnesses do not sort into
-two uniform groups: the metrical Paris Psalter has both mid-
+Later witnesses do not sort into two uniform groups: the
+metrical Paris Psalter has both mid-
 and high-vowel spellings, and manuscripts of the *Dialogues*
 vary in spelling and sometimes in the word used. Neither the
 provenance of a manuscript nor the origin of its scribe by itself
