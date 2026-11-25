@@ -318,8 +318,8 @@ the age of the compound and the subsequent loss of the vowel.
 Neither *heiweg* nor the hay-house forms preserves such a connector.
 
 A protected stem could also give ⟨hei⟩. Kentish *ċēgan* ‘call’
-independently illustrates a mid-vowel reflex of mutated
-\emph{*ēa*}; for a stem of that type with a final palatal,
+independently illustrates a mid-vowel outcome of
+i-umlaut of \emph{*ēa}. For a stem of that type with a final palatal,
 *dei* supplies a plausible spelling convention
 [@RingeTaylor2014, p. 246; @Bryan1915, pp. 23, 25]. No
 independently long local control establishes ⟨ei⟩ for /eːj/,
@@ -341,8 +341,8 @@ Worcester glossary F.174 has *Fenum, hei, uel græs* beside
 *hig* in the older Julius parallel; Worcester also writes
 *wei* ‘way’ [@WrightWuelcker1884, I, cols. 325.21, 547].
 Worcester’s ⟨hei⟩ therefore need not preserve hiatus or
-continue the Kentish form. Neither it nor the later Middle
-English variants adds to the Old English attestation
+continue the Kentish form. Neither Worcester nor the later Middle
+English variants supplies another Old English attestation of ⟨hei⟩
 [@MiddleEnglishDictionaryHei, s.v. *hei*].
 
 The early correspondence calls for explanation, but it does
