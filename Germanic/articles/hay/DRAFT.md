@@ -352,8 +352,9 @@ The early correspondence calls for explanation, but it does
 not establish short quantity, retained hiatus or descent
 from the inherited direct singular. A compound can preserve
 a stem shape without revealing its grammatical source.
-Evidence for the survival of the direct singular must also
-come from simplex forms whose syntax identifies the case.
+To investigate the survival of the inherited direct singular
+more directly, we turn to simplex attestations in which the
+grammatical function of the noun can be established.
 
 [^early-hei]: The comparison covered the *híg/hég* and road-name entries, the principal glossary loci, and the Kentish road comparanda [@BosworthToller1898, s.v. *hēah-weg*; @Toller1921, s.v. *híg*; @WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36, 547; @Cooper2003, p. 61].
 
