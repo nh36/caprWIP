@@ -193,33 +193,44 @@ for what they establish about the vowel and the palatal.
 
 ## 2.1 *Cyniges heiweg*
 
-<!-- pending:P-char-reading -->
+<!-- P-char-reading -->
 
-In the Kentish sheet S 1196 (BL Cotton Augustus ii.16), Sweet
-prints *cyniges hei weg*, followed by *stret to scufelingforde*.
-The bounds mention the burg-dwellers’ meadows and later *an cyninges
-strete* [@Sweet1885, p. 450, Ct. 43].[^s1196] The division into
-*hei weg* is that of the edition; the sheet was not independently
-collated here.
+The sequence ⟨hei⟩ occurs in the bounds of S 1196, the
+Kentish charter not discussed in Ringe and Taylor’s treatments
+of ‘hay’ (Section 1.1). On the surviving mid-ninth-century
+sheet (BL Cotton Augustus II 16), Sweet reads *cyniges hei
+weg*, followed by *stret to scufelingforde*; the bounds mention
+the burg-dwellers’ meadows and later *an cyninges strete*
+[@Sweet1885, p. 450, Ct. 43].[^s1196] The reading and word
+division are Sweet’s, not the result of a fresh collation.
+If the first element is ‘hay’, the compound gives an early
+written counterpart to the \emph{*hei} reached by the direct
+stem under early apocope.
 
-<!-- pending:P-char-positive -->
+<!-- P-char-positive -->
 
-Sweet lists the first member under ‘hay’. Bryan compares it with
-Germanic \emph{*hauja-} and distinguishes its reconstructed quantity from
-that of Kentish *dei* ‘day’.[^bryan] The latter comparison shows that
-⟨ei⟩ could write a vowel followed by a glide; the two letters do not
-encode Bryan’s quantity distinction. Dahl adopts ‘hay-road’ and
-includes the example alongside *Hegforde*, without a separate argument
-from the boundary clause [@Bryan1915, pp. 8, 23, 25;
-@Dahl1938, ‘hay’ discussion].[^dahl]
+The meadows give a reason independent of the derivation to take
+the first element as ‘hay’: a road serving meadow land could
+be named for the crop. Langlands’s comparison with S 445 makes
+that function concrete: *higweges* occurs beside a meadow, and
+a much later map calls a route there Mower’s Lane
+[@Langlands2019, pp. 45–46, 109, 126]. S 445 survives in a
+fifteenth-century copy, and neither its bounds nor the map
+identifies the function of the S 1196 road.
 
-Langlands’s comparison with S 445 adds a functional possibility:
-*higweges* occurs beside a meadow, and a route there is called
-Mower’s Lane on a much later map [@Langlands2019, pp. 45–46, 109, 126].
-The charter survives in a fifteenth-century copy, and neither
-it nor the map independently names the function of the S 1196
-route. The other potentially relevant *hig* or *heg* road names
-are later, survive in later copies, or have disputed interpretations.
+The spelling also fits ‘hay’. Sweet lists the first element
+under that word; Bryan gives the historical comparison with
+Germanic \emph{*hauja-} and adduces Kentish *dei* ‘day’
+[@Bryan1915, pp. 8, 23, 25].[^bryan] *Dei* establishes
+⟨ei⟩ as a spelling for a vowel followed by a palatal glide,
+not for disyllabic /e.i/; the two letters do not mark the
+quantity distinction Bryan reconstructs. Dahl adopts ‘hay-road’
+and includes it alongside *Hegforde*, without adding an
+independent argument from the bounds [@Dahl1938, ‘hay’
+discussion].[^dahl] Other potentially relevant *hig* or *heg*
+road names are later, survive in later copies, or are disputed.
+Setting and spelling thus support ‘hay-road’ together, but
+a road by meadows could also be the king’s highway.
 
 <!-- pending:P-char-rival -->
 
