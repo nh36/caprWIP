@@ -11,6 +11,8 @@ the appendix. The source-bearing IDs resolve through the
 | ID | Anchor | Claims | Location and scholarly function |
 |---|---|---|---|
 | T-derivations | P-trace-diverge, P-trace-end | E01, E02, E03, E04, C01, C02 | Keep Table 1, equal stages and source/notation notes; put the separately labelled substitution display in P-substitution, not in the regular sequence. |
+| N-char-omission | P-motivation | E32 | Cite the three passages in prose. The bounded electronic search goes in the research record; no printed note is needed to draw a conclusion about these passages alone. |
+| N-trace-notation | P-trace-end | E03, E04 | `trace-notation`: retain the conventional use of initial *h*, actual fricative fronting, and schematic status of *aeu* off the main derivational line. |
 | T-witnesses | P-simplex-anchor, P-simplex-distribution | E13, E16, E17, E29 | Keep Table 2: witnesses, loci, dates, readings and verification. Cite editions and manuscripts; do not make a normalized dictionary form a row of observed evidence. |
 | T-hiatus | P-hiatus-contract | E14, E19, C06 | Keep Table 3: sequence, position, outcome and loci; accompanying prose distinguishes matched features from unmatched conditions. |
 | T-farman | P-quantity-farman | E15, E24, C07 | Keep Table 4: extent, control groups, token and surface-type denominators, roles of related lexical types, uncertainty and Tamoto citation. No extrapolation from two target tokens. |

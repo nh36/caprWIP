@@ -20,7 +20,12 @@ live references together.
 | Publication fault | Correct notes, tables, references or typography, then rebuild and check affected material and layout. Do not re-adjudicate history to fix a publication error. |
 
 Use `python3 Germanic/articles/hay/validate_exposition.py` for structural
-checks; `--trace C05` (or any proposition/paragraph/apparatus ID) lists
+and implemented source-anchor checks. For the R1–R2 revision, add
+`--against 7c37478701b2b3e70f25d8a9a81316c370b3636e` to verify the exact
+unchanged text outside the authorized sections and frozen table cells.
+Use standalone `<!-- P-id -->` comments for new implemented units and
+extend the validator's section map when more blocks are authorized.
+`--trace C05` (or any proposition/paragraph/apparatus ID) lists
 forward and reverse relations. Required edges and alternative branches
 are distinct from supporting evidence: inspect the prose before
 interpreting a reachability hit as a consequence. Human review checks
@@ -46,5 +51,15 @@ that repository, copy writings, or transform any published passage.
 
 | Decision | Status | Scope and invariants |
 |---|---|---|
-| D-architecture | Proposed for owner review | R0–R9 and paragraph plan; move lexical and morphological evidence only after the question it answers. Preserve the historical conclusions, verified derivations, seven tables and documentary evidence. |
-| D-baseline | Accepted for this infrastructure assignment | Pin `326fa7e6d6ceba85351249c22c2a464490e6b0e4`; published prose and PDF stay unchanged. No historical adjudication, frozen model or scientific dependency change. |
+| D-architecture | Approved in principle by owner in Cycle 15, with amendments | R0–R9 and paragraph plan; only R1–R2 authorized for implementation now. Include E32, preserve the primacy of the survival question, and give argumentative units nonprinting anchors. Later blocks require separate authorization. |
+| D-baseline | Accepted in Cycle 14 | Preserve `326fa7e6d6ceba85351249c22c2a464490e6b0e4` as editorial baseline. No historical adjudication, frozen model or scientific dependency change. |
+| D-introduction | Implemented against `7c37478701b2b3e70f25d8a9a81316c370b3636e` | R1: order → direct/protected trade-off → ‘hay’ predictions → E32 and the written record → survival and the fallback claim. R2: retain all frozen table cells; distinguish hiatus from dialectal endpoints and morphological replacement; move notation detail to N-trace-notation. Map E32 to future P-char-reading without changing its prose. Mark E33 and E34 jointly necessary for H2, not established or necessary for H1. Preserve all prose outside R1–R2 and defer Nathanification. |
+
+**Editorial review of D-introduction:** The direct geminate in ‘bed’
+now explains why analogy is at issue before any spellings of ‘hay’
+appear. The two paths predict different inherited material, not a
+dialectal anomaly under Ringe and Taylor's account. The charter's
+letters motivate the survival question but neither prove it nor
+make the Anglian argument depend on it. The derivations end by naming
+what would have to be shown about the recorded vowel and palatal,
+not by treating a modeled stage as a written pronunciation.

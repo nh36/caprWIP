@@ -22,46 +22,98 @@ header-includes:
 
 ## 1.1 The chronological test
 
-The ninth-century Vespasian Psalter writes ⟨heg⟩ ‘hay’, including
-in direct-object constructions. The Kentish charter form *heiweg*,
-preferably ‘hay-road’, has ⟨hei⟩. Neither has the high vocalism
-of conventional West Saxon *hīeġ*. This discrepancy matters because
-the relative order of nasal apocope and West Germanic gemination
-predicts two different histories for the nominative–accusative
-singular of \emph{*hawją}. Under early apocope the direct singular
-escapes gemination and reaches \emph{*he.i} after loss of *w*.
-Under late apocope, it geminates like the vowel-protected cells
-and develops their long nucleus and palatal segment.
+<!-- P-orders -->
 
-Ringe and Taylor remove both oral and nasal endings before
-gemination; Hogg and Fulk distinguish early loss of oral
-endings such as masculine \emph{*-az} from retention of nasal
-\emph{*-ą} through gemination
+Did West Germanic gemination precede or follow the loss of final
+nasal \emph{*-ą}? The disagreement concerns the nasal ending, not
+the early loss of the oral vowel in endings such as masculine
+\emph{*-az}. Ringe and Taylor place both losses before gemination.
+Hogg and Fulk retain \emph{*-ą} through gemination, though the
+oral vowel has already been lost
 [@RingeTaylor2014, pp. 44–53, 173; @HoggFulk2011, pp. 20–21 §2.23;
-@Boutkan1995, pp. 209–213]. Both derivations below assume
-consonantal \emph{*wj}, independently of the order chosen.
-On the early chronology Ringe and Taylor obtain the English
-forms by substituting the protected stem. In *bedd* ‘bed’,
-the direct singular has the geminate that the regular early
-history cannot supply. In Anglian ‘hay’, by contrast, the
-direct history can supply the mid vowel whether or not its
-final segment survived. The question is whether the evidence
-for importing the protected vowel in West Saxon extends to
-Anglian.
+@Boutkan1995, pp. 209–213].
+
+<!-- P-tradeoff -->
+
+This difference changes the relation between the stems of light
+neuter ja-nouns. If the nominative–accusative singular lost its
+final vowel early, its \emph{*j} ceased to be prevocalic and the
+stem escaped gemination. Forms such as the genitive and dative
+retained a following vowel and so could supply a geminated
+stem. On the late chronology the direct singular geminated too.
+Thus Old English *bedd* ‘bed’ has a geminate predicted by the
+late order, whereas the early order can explain it by extension
+from the protected cells. Conversely, ungeminated continental
+*beti*-type forms count against the late order if they continue
+the inherited direct stem rather than a secondary formation
+[@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23;
+@Boutkan1995, pp. 435–436; @Stiles2013, pp. 15–16]. Agreement
+with a normalized headword is therefore less informative than
+knowing which cell supplied the stem and which of its features
+would have developed without levelling.
+
+<!-- P-hay-predictions -->
+
+‘Hay’ makes that distinction especially useful because the two
+orders differ in the source of the vowel and the final palatal
+rather than in a surviving geminate. Under early loss, the
+inherited direct singular \emph{*hawją} develops through
+\emph{*hawi}, \emph{*hæwi} and \emph{*hewi} to \emph{*hei},
+initially with hiatus. Under late loss the direct singular
+develops like the protected cells, yielding the long nucleus
+and glide conventionally represented by West Saxon *hīeġ*.
+Ringe and Taylor adopt early loss but reach the protected-type
+outcome by replacing direct \emph{*hæwi} with the stem
+\emph{*hēaj-} before i-umlaut. From this substituted stem they
+derive both the high West Saxon and the mid Anglian reflexes
+[@RingeTaylor2014, pp. 53, 173, 246].
+
+<!-- P-motivation -->
+
+Those treatments do not discuss the ninth-century Kentish
+*heiweg* [@RingeTaylor2014, pp. 53, 173, 246; @Sweet1885, p. 450,
+Ct. 43]. On the preferred interpretation ‘hay-road’, the
+first element has exactly the letters ⟨hei⟩, corresponding
+to the sequence predicted if the direct stem is allowed to
+develop without substitution under their ordering. The
+compound does not establish how the sequence was pronounced
+or which cell supplied it. The early Anglian simplex
+spellings ⟨heg⟩ and ⟨heig⟩ give a separate test: the noun
+occurs in direct syntax, and the mid vowel can be compared
+with the outcome of the unremodelled stem
+[@Stevenson1843VP; @Skeat1878, p. 55].
+
+<!-- P-thesis -->
+
+The question, then, is whether the inherited direct singular
+survived without analogy in any early Old English tradition.
+Under early loss, the high West Saxon vowels favour the
+protected stem, but the Anglian mid vowel need not have the
+same source. Even if the inherited vowels contracted and a
+palatal had to be supplied from another form, replacing the
+vowel as well would not be necessary. In that respect Anglian
+‘hay’ differs from ‘bed’: the latter cannot inherit its
+geminate directly under the early order, whereas ‘hay’ can
+retain the historical source of its vowel even if survival of
+the whole stem cannot be demonstrated.
 
 ## 1.2 The two regular derivations
 
-Table 1 aligns the changes in explicit implementations of these
-orders. The first divergence is at gemination and nasal apocope:
-early loss strands singleton \emph{*j} after the labial of a light
-stem, and the resulting syllabic \emph{*i} is no longer the trigger
-for gemination. In the late order the labial is geminated before
-loss; vocalization of a stranded singleton glide cannot act on
-the resulting cluster. The labial sequence is resolved differently
-in the two histories. In the early order it supplies an ordinary
-intervocalic \emph{*w}, lost before unstressed \emph{*i} after umlaut. In the
-late order the geminated labial supplies the second member of a
-diphthong, and \emph{*j} survives and triggers umlaut.
+<!-- P-trace-diverge -->
+
+Table 1 starts both derivations from the consonantal
+\emph{*wj} of \emph{*hawją}. The first difference is whether
+\emph{*j} is still followed by a vowel when the labial could
+geminate. Early loss of \emph{*-ą} strands singleton \emph{*j}
+after the labial of a light stem. It vocalizes to \emph{*i},
+leaving a single intervocalic \emph{*w}. If \emph{*-ą}
+instead remains through gemination, prevocalic \emph{*j}
+triggers gemination before the ending is lost. Vocalization
+of a stranded singleton cannot then apply: the geminated
+labial supplies the second member of a diphthong and
+\emph{*j} remains consonantal. The ordering thus determines
+both the material available for the nucleus and the segment
+that conditions umlaut.
 
 | Change and environment | Early apocope | Late apocope |
 |:-------------------------|:----------------------|:-----------------------|
@@ -80,17 +132,19 @@ diphthong, and \emph{*j} survives and triggers umlaut.
 
 : Parallel derivations of the inherited nominative–accusative singular under the two orders. The output on the left retains syllabic *i*; the final *ġ* on the right is consonantal.
 
-The transcription uses conventional initial *h* throughout; both
-implementations separately front the initial fricative from [x] to
-[ç] before umlaut. The notation \emph{*aeu} is schematic for a fronted
-diphthong stage, not a reconstruction of three syllabic vowels.
-At the end of the early sequence shown here, \emph{*hei}
-contains short stressed /e/ and unstressed syllabic /i/. This
-is the input to subsequent hiatus resolution, not a prediction
-that two syllables persisted into written Old English.
-In \emph{*hīeġ} the macron marks a long nucleus and the dot marks
-consonantal /j/. Neither transcription supplies a change in
-syllabicity or quantity beyond the respective derivation.
+<!-- P-trace-end -->
+
+In the early order, fronting and i-umlaut give \emph{*hewi};
+subsequent loss of \emph{*w} before unstressed \emph{*i}
+leaves \emph{*hei}, with short stressed /e/ followed by
+syllabic /i/. This is a regular stage feeding any later
+resolution of hiatus, not a claim that two syllables
+persisted into written Old English. In the late order the
+diphthong develops to \emph{*ēa} before being mutated by
+consonantal \emph{*j}. In the conventional West Saxon
+representation \emph{*hīeġ}, the macron marks a long
+nucleus and the dot marks /j/. It is not a transcription
+of the regular outcome in every dialect.[^trace-notation]
 
 These are regular predictions of the two orderings with the
 stated treatment of the labials, not complete analyses attributed
@@ -105,35 +159,35 @@ diphthongal representation and gives a separate account of final
 
 ## 1.3 Ringe and Taylor’s protected-stem analysis
 
-Ringe and Taylor do not derive their English direct singular
-by continuing \emph{*hawi}. In their comparison with Old High German,
-*hewi* continues that ungeminated direct stem, whereas *houwi*
-extends the geminated stem of other cells. The English substitution
-is explicit in their treatment of umlaut: alongside the inherited
-direct \emph{*hawi} > \emph{*hæwi} stands the protected sequence
-\emph{*[hawʲwʲ-]} > \emph{*hauj-} > \emph{*hēaj-}. The
-two lines meet by morphological substitution, not by a sound
-change [@RingeTaylor2014, pp. 53, 173, 246]:
+<!-- P-substitution -->
+
+Even under early loss, the protected cells have a following
+vowel at gemination. In Ringe and Taylor’s analysis, their
+stem develops along the line \emph{*[hawʲwʲ-]} >
+\emph{*hauj-} > \emph{*hēaj-}. In Old High German they
+identify *hewi* as the inherited direct singular and
+*houwi* as an extension of the geminated stem. For English
+they set out the substitution in their treatment of
+umlaut [@RingeTaylor2014, pp. 53, 173, 246]:
 
 **Substitution before i-umlaut:** direct \emph{*hæwi} is replaced by
 protected \emph{*hēaj-}, as endingless \emph{*hēaj}.
 
-With \emph{*j} as the conditioning segment, the remade form
-develops regularly to West Saxon *hīeġ*, Mercian and Northumbrian
-*hēġ*. Ringe and Taylor name no particular English donor cell
-and do not continue the unremodelled English line beyond
-\emph{*hæwi} in this derivation.
+This replacement abandons the continuation of \emph{*hæwi}
+through \emph{*hewi} to hiatus: both the short stem vowel
+and the final syllabic \emph{*i} are replaced. After the
+substitution, i-umlaut conditioned by \emph{*j} and regular
+dialectal development give West Saxon *hīeġ* and Mercian
+and Northumbrian *hēġ*. Ringe and Taylor do not identify
+the English donor cell or continue the unremodelled English
+line beyond \emph{*hæwi} in these passages. Their account
+shows how the protected stem can yield the attested dialectal
+contrast; it does not show that the contrast requires
+replacement in Anglian. To determine what the direct stem
+could have supplied, the recorded forms must be examined
+for what they establish about the vowel and the palatal.
 
-The distinction is not between two predictions of the same
-quantity followed by a choice of spelling. In the regular early
-history, the direct vowel descends from the short vowel of
-\emph{*hæwi}, with \emph{*i} as an unstressed vowel. In the substituted
-history, the nucleus descends from protected \emph{*ēa} and the final
-palatal from \emph{*j}. The regular late history reaches the latter
-type of stem without substitution. To establish a need for
-levelling under early loss, one must therefore show which
-features of the surviving direct forms cannot come from the
-ungeminated stem.
+[^trace-notation]: Initial *h* is conventional throughout. Both derivations front the initial fricative from [x] to [ç] before umlaut. The notation \emph{*aeu} is schematic for a fronted diphthong stage, not three syllabic vowels.
 
 # 2. The Old English attestations
 

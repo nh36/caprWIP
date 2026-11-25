@@ -1,6 +1,7 @@
-# Proposed reader sequence
+# Approved reader sequence
 
-For review, not yet applied to the [baseline](BASELINE.md). The
+Approved in principle; only R1–R2 are implemented in Cycle 15 (see the
+[decision record](REVISION_PROTOCOL.md#decision-record)). The
 [historical model](ARGUMENT_CYCLE13.md) orders reasons;
 the [thesis](THESIS.md) fixes their force. This document orders what
 readers need to know to see why each reason matters.

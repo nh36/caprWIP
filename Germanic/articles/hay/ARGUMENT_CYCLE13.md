@@ -72,7 +72,8 @@ vocalism, not historical preference for a uniquely recovered form.
 
 ## Evidence split for editorial traceability
 
-These are source pointers for already assessed material, not new findings.
+E26–E31 index already assessed material. E32 is a bounded source check;
+E33–E34 distinguish two existing conditional premises of H2.
 
 | ID | Proposition, basis and status | Assumption, counterevidence and consequence of rejection |
 |---|---|---|
@@ -82,13 +83,16 @@ These are source pointers for already assessed material, not new findings.
 | E29 | Manuscript, edition/apparatus and indexed witnesses must be distinguished. See [simplex concordance](CONCORDANCE.tsv), [Lindisfarne dossier](LINDISFARNE_EVIDENCE.md) and [baseline draft](DRAFT.md) §2.1 / App. A. **Witness-specific records.** | Related glosses and corrections are not independent phonological witnesses; damage and editorial supply restrict the evidential set. A changed reading changes the relevant witness and its dependent dialect, quantity or case inference. |
 | E30 | Dahl's alternative makes the pre-*j* material diphthongal and still restores final *ġ* analogically (1938: 81–86 and ‘hay’ discussion). **Authorial reconstruction.** | The frozen comparison assumes E01; convergence on *auj* does not equate the histories. Rejecting Dahl does not decide the order in E02. |
 | E31 | Ringe & Taylor (2014: 257–261) and Campbell (§§237, 406) provide positive *w*-loss controls, not just ‘hay’: *sāwi*, *āwi*, *gliwi*, *niwi-*, *pylwī* and nonfinal examples. **Comparative conditioning evidence.** | Transfer removes ‘ewe’ from the conditioning; *cleweþa* is exceptional and lexical or derivational analogy is possible. None fixes word-final /e.i/ resolution; rejecting the loss itself would undermine E03. |
+| E32 | Ringe & Taylor (2014: 53, 173, 246) do not discuss Kentish *heiweg* in those treatments of ‘hay’. **Verified scoped omission.** Consulted printed pages on PDF sheets 68, 188, 261; case-insensitive searches of the registered electronic text and fresh PDF extraction found no *heiweg* (including spacing, hyphenation and wynn), S 1196 or *Scufelingforde*. | Search coverage is extraction-dependent; nothing follows about their knowledge of the charter. A contrary passage would change the attribution and rhetorical motivation, not the attestation or historical alternatives. |
+| E33 | To obtain *hē* by H2, short stressed /e/ and unstressed final /i/ left by *w*-loss must contract in the relevant variety before /i/ can become a glide. **Necessary, unestablished application.** | E03 and E14 motivate the nucleus and the mechanism, but *gecēd/ēde/strēde* are nonfinal and the final controls have different inputs. If this environment does not contract, H2 fails; H1 remains separately testable. |
+| E34 | To obtain /eːj/ by H2, a historically accessible palatal source must be independently defensible and actually supply a secondary /j/ after contraction without replacing the vowel. **Necessary, unestablished operation.** | E18–19 motivate looking for a protected alternant or a comparable re-formation; neither identifies the English donor nor proves transfer. If no such source and supply are defensible, H2 cannot explain palatal ⟨heg⟩. |
 
 ## Dependency index
 
 **Required** entries are conjunctive; **Either** lists alternative branches
 when combined with the required column. **Other** entries are weighted
 evidence, qualifications, or rivals, not necessities. The historical prose
-above and in the base model specifies the warrants and status. E01–E31
+above and in the base model specifies the warrants and status. E01–E34
 are source-bearing propositions, not all independent observations.
 For reverse exposition links run the validator with `--trace ID`.
 
@@ -104,6 +108,8 @@ For reverse exposition links run the validator with `--trace ID`.
 | E18 | E04, E17 | — | — |
 | E22 | E21 | — | E23 |
 | E25 | E03, E11, E12, E13 | — | E14 |
+| E33 | E03, E14 | — | — |
+| E34 | — | — | E18, E19 |
 | C01 | E01, E02, E03 | — | E30 |
 | C02 | E01, E02, E04 | — | E20, E30 |
 | C03 | E02, E04, E05 | — | E18 |
@@ -113,7 +119,7 @@ For reverse exposition links run the validator with `--trace ID`.
 | C07 | E13, E15, E16 | — | E08, E24, E29 |
 | C08 | C02, E17, E18 | — | E19, E21, E22, E23 |
 | H1 | C01, E13, E25 | — | C05, C07 |
-| H2 | C01, E14 | — | E18, E19, C07, C08 |
+| H2 | C01, E33, E34 | — | C07, C08 |
 | H3 | C03 | — | C07, C08 |
 | H4 | C02 | — | E20, C07 |
 | H5 | E16 | H1, H2, H3 | C07, C08 |

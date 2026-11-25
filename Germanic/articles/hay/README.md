@@ -24,12 +24,13 @@ grounds for protected vocalism under early apocope.
    [`RESEARCH_MEMO_CYCLE7.md`](RESEARCH_MEMO_CYCLE7.md) document the
    completed source-preparation phase.
 
-## Proposed editorial architecture (for review)
+## Approved editorial architecture and staged implementation
 
 The [rhetorical architecture](RHETORICAL_ARCHITECTURE.md),
 [paragraph plan](PARAGRAPH_PLAN.md) and
-[scholarly apparatus](SCHOLARLY_APPARATUS.md) are proposals, not changes
-to the published prose or PDF. Use the [revision protocol](REVISION_PROTOCOL.md)
+[scholarly apparatus](SCHOLARLY_APPARATUS.md) are approved in principle.
+The draft and PDF implement R1–R2 only; later blocks await authorization.
+Use the [revision protocol](REVISION_PROTOCOL.md)
 before any substantive edit; the [*heiweg* demonstration](HEIWEG_DEMONSTRATION.md)
 shows which passages would change after a new lexical finding and
 which would stay fixed.
