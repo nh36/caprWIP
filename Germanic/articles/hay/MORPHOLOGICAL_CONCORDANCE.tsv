@@ -10,13 +10,13 @@ V08	09c	09c gloss	BL Cotton Vespasian A.i	Vespasian	Mercian	Ps 104:35	Stevenson 
 V09	09c	09c gloss	BL Cotton Vespasian A.i	Vespasian	Mercian	Ps 105:20	Stevenson 1847 II; Dahl 1938	heg	acc	sg	none	object of eating; genitive qualifies calf	edition
 V10	09c	09c gloss	BL Cotton Vespasian A.i	Vespasian	Mercian	Ps 128:6	Stevenson 1847 II; Dahl 1938	heg	uncertain	sg	none	sien spe spe heg timbra; comparative gloss	edition
 V11	09c	09c gloss	BL Cotton Vespasian A.i	Vespasian	Mercian	Ps 146:8	Stevenson 1847 II; Dahl 1938	heg	acc	sg	none	forðlædeþ in muntum heg; object	edition
-V12	09c	09c gloss	BL Cotton Vespasian A.i	Vespasian	Mercian	Vespasian Hymns 7:4	Stevenson 1847 II; Dahl 1938	heg	acc	sg	none	ofer heg; parallel to ofer græs in first half of verse	edition
+V12	09c	09c gloss	BL Cotton Vespasian A.i	Vespasian	Mercian	Vespasian Hymns 7:4	Stevenson 1847 II; Dahl 1938	heg	uncertain	sg	none	ofer heg in parallel with ofer græs; downward motion of snow favours accusative; bare neuter forms do not show agreement	edition
 B01	10c copies	unknown	OE Bede (composite reading)	Bede	Anglian substrate	I.1	Miller 1890 I:28.33	heg	acc	sg	none	heg ne māweþ; object	edition
 L01	10c second half	10c gloss	BL Cotton Nero D.iv	Lindisfarne–Rushworth John	Northumbrian	Mt 6:30	Kemble–Hardwick 1858:55; Skeat 1887:59	heg	acc	sg	none	gers ⁊/or heg; object of gegirues (supplied by matrix clause)	edition
-L02	10c second half	10c gloss	BL Cotton Nero D.iv	Lindisfarne–Rushworth John	Northumbrian	Mt 14:19	Kemble–Hardwick 1858:117; Skeat 1887:123	heg	uncertain	sg	none	ofer heg; position/direction unresolved; apparatus reports first state hehg	apparatus
+L02	10c second half	10c gloss	BL Cotton Nero D.iv	Lindisfarne–Rushworth John	Northumbrian	Mt 14:19	Kemble–Hardwick 1858:117; Skeat 1887:123	heg	uncertain	sg	none	ofer heg; compare West Saxon Mk 6:39 overtly accusative þæt grene hig with sitting; bare gloss permits directional or locative construal; first state hehg in apparatus	apparatus
 L03	10c second half	10c gloss	BL Cotton Nero D.iv	Lindisfarne–Rushworth John	Northumbrian	Jn 6:10	Skeat 1878:55	heig	nom	sg	none	gærs ɫ heig micil; existential subject	edition
 F01	10c second half	10c gloss	Bodleian Auct. D.2.19	Rushworth Matthew	Mercian	Mt 6:30	Kemble–Hardwick 1858:55; Skeat 1887:59; Tamoto 2013:19	hóeg	acc	sg	none	londes hóeg; object of gyreþ (not subject)	edition
-F02	10c second half	10c gloss	Bodleian Auct. D.2.19	Rushworth Matthew	Mercian	Mt 14:19	Kemble–Hardwick 1858:117; Skeat 1887:123; Tamoto 2013:47	hóeg	uncertain	sg	none	gesittan on hóeg; dative location possible, accusative direction not excluded	edition
+F02	10c second half	10c gloss	Bodleian Auct. D.2.19	Rushworth Matthew	Mercian	Mt 14:19	Kemble–Hardwick 1858:117; Skeat 1887:123; Tamoto 2013:47	hóeg	uncertain	sg	none	gesittan on hóeg; location favours dative, but a goal reading is possible with gesittan; no expressed agreement	edition
 O01	10c second half	10c gloss	Bodleian Auct. D.2.19	Lindisfarne–Rushworth John	Northumbrian	Jn 6:10	Skeat 1878:55	heg	nom	sg	none	heg ɫ gers micel; existential subject, close parallel to Aldred	edition
 A01	10c second half	unknown	Vercelli Biblioteca Capitolare CXVII	Andreas	poetic, late West Saxon copy	Andreas 38	Krapp 1932 II:4	hig	acc	sg	none	hie hig ond gærs … gedrehte; coordinated object	edition
 G01	10c end–11c start	unknown	BL Cotton Cleopatra A.iii	Cleopatra glossary	unassigned	Foenum	Wright–Wülcker 1884 I:289.45	heg	none	unknown	none	isolated Latin equivalence; dictionary acute editorial	edition
@@ -28,14 +28,14 @@ P02	11c middle	unknown	Paris BnF lat. 8824 fol. 116r	Paris Psalter	Saxonized Ang
 P03	11c middle	unknown	Paris BnF lat. 8824 fol. 116v	Paris Psalter	Saxonized Anglian verse	Ps 101:9	Krapp 1932 V:72–73	hege	dat	sg	e	hege gelic; complement of gelic	image
 P04	11c middle	unknown	Paris BnF lat. 8824 fol. 118v	Paris Psalter	Saxonized Anglian verse	Ps 102:14	Krapp 1932 V:75	hege	dat	sg	e	mawenum hege … anlice; dative agreement	image
 P05	11c middle	unknown	Paris BnF lat. 8824	Paris Psalter	Saxonized Anglian verse	Ps 105:17	Krapp 1932 V:84	hig	acc	sg	none	hæðenstyrces hig etendes; object of participle	edition
-T01	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 71:16	Rosier 1962 via DOE PsGlG	heig	uncertain	sg	none	Latin comparison; English case not independently collated	candidate
-T02	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 101:5	Rosier 1962 via DOE PsGlG	heig	uncertain	sg	none	Latin comparison; English case not independently collated	candidate
-T03	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 101:12	Rosier 1962 via DOE PsGlG	heig	uncertain	sg	none	Latin comparison; English case not independently collated	candidate
-T04	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 102:15	Rosier 1962 via DOE PsGlG	heig	uncertain	sg	none	Latin comparison; English case not independently collated	candidate
-T05	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 103:14	Rosier 1962 via DOE PsGlG	heig	uncertain	sg	none	Latin object; English case not independently collated	candidate
-T06	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 105:20	Rosier 1962 via DOE PsGlG	heig	uncertain	sg	none	Latin object; English case not independently collated	candidate
-T07	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 128:6	Rosier 1962 via DOE PsGlG	heig	uncertain	sg	none	Latin comparison; English case not independently collated	candidate
-T08	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 146:8	Rosier 1962 via DOE PsGlG	heig	uncertain	sg	none	Latin object; English case not independently collated	candidate
+T01	11c middle	unknown	BL Cotton Vitellius E.xviii fol. 72r	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 71:16	Rosier 1962 via DOE PsGlG; https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x00009b/canvas/c/155	heig	uncertain	sg	none	swa swa heig eorðan; comparison	image
+T02	11c middle	unknown	BL Cotton Vitellius E.xviii fol. 95v	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 101:5	Rosier 1962 via DOE PsGlG; https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x0000ca/canvas/c/202	heig	uncertain	sg	none	comparison; identifiable Latin locus but fire damage makes the gloss uncertain	corpus
+T03	11c middle	unknown	BL Cotton Vitellius E.xviii fol. 95v	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 101:12	Rosier 1962 via DOE PsGlG; https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x0000ca/canvas/c/202	heig	uncertain	sg	none	ic swa swa heig adrugade; comparative gloss	image
+T04	11c middle	unknown	BL Cotton Vitellius E.xviii fol. 97r	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 102:15	Rosier 1962 via DOE PsGlG; https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x0000cd/canvas/c/205	heig	uncertain	sg	none	mann swa swa heig; comparative gloss	image
+T05	11c middle	unknown	BL Cotton Vitellius E.xviii fol. 98r	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 103:14	Rosier 1962 via DOE PsGlG; https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x0000cf/canvas/c/207	heig	acc	sg	none	English gloss of bringing forth takes heig as its object; nytenum is dative	image
+T06	11c middle	unknown	BL Cotton Vitellius E.xviii fol. 101v	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 105:20	Rosier 1962 via DOE PsGlG; https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x0000d6/canvas/c/214	heig	acc	sg	none	object of the English gloss of eating	image
+T07	11c middle	unknown	BL Cotton Vitellius E.xviii fol. 120r	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 128:6	Rosier 1962 via DOE PsGlG; https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x0000fb/canvas/c/251	heig	uncertain	sg	none	swa swa heig þecena; comparison	image
+T08	11c middle	unknown	BL Cotton Vitellius E.xviii fol. 129v	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 146:8	Rosier 1962 via DOE PsGlG; https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x00010e/canvas/c/270	heig	acc	sg	none	object in the indexed English gloss; fire damage leaves the manuscript spelling unresolved	corpus
 D01	11c second half	late 9c translation	Cambridge CCCC 322	Dialogues	West Saxon copy	Hecht p. 36 l. 2	Hecht 1900	heig	acc	sg	none	object of mowing; parallel O D06, H gærs	edition
 D02	11c second half	late 9c translation	Cambridge CCCC 322	Dialogues	West Saxon copy	Hecht p. 36 l. 13	Hecht 1900	heig	acc	sg	none	þæt heig; parallel O D07; absent in H	edition
 D03	11c second half	late 9c translation	Cambridge CCCC 322 fol. 13r	Dialogues	West Saxon copy	Hecht p. 36 l. 29	Hecht 1900	hig	acc	sg	none	þis grene hig; parallel O D08, H gærs	edition
@@ -45,84 +45,84 @@ D06	11c	late 9c translation	BL Cotton Otho C.i/2	Dialogues	West Saxon copy	paral
 D07	11c	late 9c translation	BL Cotton Otho C.i/2	Dialogues	West Saxon copy	parallel to Hecht p. 36 l. 13	Hecht 1900	heg	acc	sg	none	object; parallel D02	edition
 D08	11c	late 9c translation	BL Cotton Otho C.i/2	Dialogues	West Saxon copy	parallel to Hecht p. 36 l. 29	Hecht 1900	heg	acc	sg	none	object; parallel D03	edition
 D09	11c	late 9c translation	BL Cotton Otho C.i/2	Dialogues	West Saxon copy	parallel to Hecht p. 37 l. 9	Hecht 1900	hig	acc	sg	none	object; parallel D05	edition
-M01	11c	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 36:2	Lindelöf 1909	hyg	uncertain	sg	none	swaswa hyg; comparison	edition
-M02	11c	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 101:5	Lindelöf 1909 via DOE PsGlI	hyg	uncertain	sg	none	comparison; differs from earlier transcription hig; printed page not independently checked	corpus
-M03	11c	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 102:15	Lindelöf 1909	hig	uncertain	sg	none	swaswa hig; comparison	edition
-M04	11c	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 103:14	Lindelöf 1909	hyg	acc	sg	none	object of bringing forth	edition
-M05	11c	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 104:35	Lindelöf 1909	hyg	acc	sg	none	eall hyg; object of eating	edition
-M06	11c	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 105:20	Lindelöf 1909	hyg	acc	sg	none	etendes hyg; object of participle	edition
-M07	11c	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 146:8	Lindelöf 1909	hyg	acc	sg	none	object of bringing forth	edition
+M01	11c early	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 36:2	Lindelöf 1909	hyg	uncertain	sg	none	swaswa hyg; comparison	edition
+M02	11c early	unknown	Lambeth Palace 427 fol. 124v	Lambeth Psalter	West Saxon	Ps 101:5	Lindelöf 1909:158; printed page checked	hyg	uncertain	sg	none	swaswa hyg; comparative gloss; no overt case agreement	edition
+M03	11c early	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 102:15	Lindelöf 1909	hig	uncertain	sg	none	swaswa hig; comparison	edition
+M04	11c early	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 103:14	Lindelöf 1909	hyg	acc	sg	none	object of bringing forth	edition
+M05	11c early	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 104:35	Lindelöf 1909	hyg	acc	sg	none	eall hyg; object of eating	edition
+M06	11c early	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 105:20	Lindelöf 1909	hyg	acc	sg	none	etendes hyg; object of participle	edition
+M07	11c early	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 146:8	Lindelöf 1909	hyg	acc	sg	none	object of bringing forth	edition
 U02	12c early	unknown	Bodleian Junius 23 fol. 153r (Cockayne's foliation)	Lunar prognostic	unassigned	Day 6 of lunar prognostic	Cockayne 1866 III:178.6	hig	acc	sg	none	do þonne hig on þin beð; object of do	edition
 E01	12c middle	older exemplar, undated	Trinity College Cambridge R.17.1 fol. 125r	Eadwine Psalter	Canterbury manuscript; gloss unassigned	Ps 71:16	Harsley 1889:124	hieg	uncertain	sg	none	Romanum column, Latin sicut fenum terrae	image
 E02	12c middle	older exemplar, undated	Trinity College Cambridge R.17.1 fol. 258r	Eadwine Psalter	Canterbury manuscript; gloss unassigned	Ps 146:8	Harsley 1889:241	hieg	uncertain	sg	none	Romanum column, Latin accusative foenam; English case not independently assigned	image
 G04	12c	unknown	BL Royal 1 A.xiv	West Saxon Gospels	transitional	Mk 6:39	Skeat 1871:48–49	heig	uncertain	sg	none	parallel G03; after ofer	edition
 G05	12c–13c	unknown	Bodleian Hatton 38	West Saxon Gospels	transitional	Mk 6:39	Skeat 1871:48–49	haig	uncertain	sg	none	parallel G03; after ofer	edition
 W01	13c	earlier Old English parallel	Worcester Cathedral F.174	Worcester glossary	Early Middle English, Tremulous Hand	Fenum	Wright–Wülcker 1884 I:547	hei	none	unknown	none	isolated Latin equivalence; parallel Old English hig	edition
-U01	unknown	unknown	witness not collated	unassigned glossary	unassigned	Fenum	Wright–Wülcker 1884 II:35.30	hig	none	unknown	none	græs oððe hig; witness not collated	locator
-U03	unknown	unknown	base witness not independently collated	Ecclesiastical Institutes	unassigned	Ecclesiastical Institutes VIII	Thorpe 1840 II:406.30	hig	acc	sg	none	we gesawon … ge corn ge hig … beon gehealdene; accusative subject of infinitive after gesawon	edition
-Wg01	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 36:2	DOE PsGlC 51200	heg	uncertain	sg	none	comparison	corpus
-Wg02	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 71:16	DOE PsGlC 107300	heg	uncertain	sg	none	comparison	corpus
-Wg03	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 91:8	DOE PsGlC 147400	heg	uncertain	sg	none	comparison	corpus
-Wg04	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 101:5	DOE PsGlC 158000	heg	uncertain	sg	none	comparison	corpus
-Wg05	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 101:12	DOE PsGlC 158700	hig	uncertain	sg	none	comparison	corpus
-Wg06	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 102:15	DOE PsGlC 161900	heg	uncertain	sg	none	comparison	corpus
-Wg07	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 103:14	DOE PsGlC 164000	heg	acc	sg	none	object of bringing forth	corpus
-Wg08	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 104:35	DOE PsGlC 169600	heg	acc	sg	none	object of eating	corpus
-Wg09	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 105:20	DOE PsGlC 172600	heg	acc	sg	none	object of participle	corpus
-Wg10	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 128:6	DOE PsGlC 219100	heg	uncertain	sg	none	comparison	corpus
-Wg11	unknown	unknown	PsGlC	Wildhagen gloss	unassigned	Ps 146:8	DOE PsGlC 241100	heg	acc	sg	none	object of bringing forth	corpus
-Wg12	unknown	unknown	PsCaC	Wildhagen gloss	unassigned	Canticle 7(6):2	DOE PsCaC 6600	heg	uncertain	sg	none	ofer after comparison with snow	corpus
-Br01	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 36:2	DOE PsGlB 50600	heg	uncertain	sg	none	comparison	corpus
-Br02	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 71:16	DOE PsGlB 105200	heg	uncertain	sg	none	comparison	corpus
-Br03	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 91:8	DOE PsGlB 145300	heg	uncertain	sg	none	comparison	corpus
-Br04	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 101:5	DOE PsGlB 155900	heg	uncertain	sg	none	comparison	corpus
-Br05	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 101:12	DOE PsGlB 156600	heg	uncertain	sg	none	comparison	corpus
-Br06	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 102:15	DOE PsGlB 159800	heg	uncertain	sg	none	comparison	corpus
-Br07	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 103:14	DOE PsGlB 161900	heg	acc	sg	none	object of bringing forth	corpus
-Br08	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 104:35	DOE PsGlB 167500	heg	acc	sg	none	object of eating	corpus
-Br09	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 105:20	DOE PsGlB 170500	heg	acc	sg	none	object of participle	corpus
-Br10	unknown	unknown	PsGlB	Brenner gloss	unassigned	Ps 128:6	DOE PsGlB 216900	heg	uncertain	sg	none	comparison	corpus
-R01	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 36:2	DOE PsGlD 51400	heg	uncertain	sg	none	comparison	corpus
-R02	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 71:16	DOE PsGlD 107600	hig	uncertain	sg	none	comparison	corpus
-R03	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 91:8	DOE PsGlD 147700	hyg	uncertain	sg	none	comparison	corpus
-R04	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 101:5	DOE PsGlD 158300	hig	uncertain	sg	none	comparison	corpus
-R05	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 101:12	DOE PsGlD 159000	hig	uncertain	sg	none	comparison	corpus
-R06	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 102:15	DOE PsGlD 162200	hig	uncertain	sg	none	comparison	corpus
-R07	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 103:14	DOE PsGlD 164300	hig	acc	sg	none	object of participle	corpus
-R08	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 105:20	DOE PsGlD 172900	heg	acc	sg	none	object of participle	corpus
-R09	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 128:6	DOE PsGlD 219400	hyg	uncertain	sg	none	comparison	corpus
-R10	unknown	unknown	PsGlD	Roeder gloss	unassigned	Ps 146:8	DOE PsGlD 241400	hyg	acc	sg	none	object of bringing forth	corpus
-R11	unknown	unknown	PsCaD	Roeder gloss	unassigned	Canticle 7(6):2	DOE PsCaD 6600	hig	uncertain	sg	none	ofer after comparison with snow	corpus
-K01	unknown	unknown	PsGlF	Kimmens gloss	unassigned	Ps 36:2	DOE PsGlF 51500	heg	uncertain	sg	none	comparison	corpus
-H01	unknown	unknown	PsGlH	Campbell gloss	unassigned	Ps 36:2	DOE PsGlH 50900	heg	uncertain	sg	none	comparison	corpus
-H02	unknown	unknown	PsGlH	Campbell gloss	unassigned	Ps 71:16	DOE PsGlH 107000	hyg	uncertain	sg	none	comparison	corpus
-H03	unknown	unknown	PsGlH	Campbell gloss	unassigned	Ps 91:8	DOE PsGlH 147100	hyg	uncertain	sg	none	comparison	corpus
-H04	unknown	unknown	PsGlH	Campbell gloss	unassigned	Ps 101:5	DOE PsGlH 157700	hig	uncertain	sg	none	comparison	corpus
-H05	unknown	unknown	PsGlH	Campbell gloss	unassigned	Ps 101:12	DOE PsGlH 158400	hig	uncertain	sg	none	comparison	corpus
-H06	unknown	unknown	PsGlH	Campbell gloss	unassigned	Ps 102:15	DOE PsGlH 161600	hig	uncertain	sg	none	comparison	corpus
-H07	unknown	unknown	PsGlH	Campbell gloss	unassigned	Ps 103:14	DOE PsGlH 163700	hyg	acc	sg	none	object of participle	corpus
-H08	unknown	unknown	PsGlH	Campbell gloss	unassigned	Ps 105:20	DOE PsGlH 172300	hig	acc	sg	none	object of participle	corpus
-S01	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 36:2	DOE PsGlK 50600	hig	uncertain	sg	none	comparison	corpus
-S02	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 71:16	DOE PsGlK 104300	heg	uncertain	sg	none	comparison	corpus
-S03	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 91:8	DOE PsGlK 144600	heg	uncertain	sg	none	comparison	corpus
-S04	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 101:5	DOE PsGlK 154300	heg	uncertain	sg	none	comparison	corpus
-S05	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 101:12	DOE PsGlK 155000	hig	uncertain	sg	none	comparison	corpus
-S06	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 102:15	DOE PsGlK 158200	hig	uncertain	sg	none	comparison	corpus
-S07	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 103:14	DOE PsGlK 160300	hig	acc	sg	none	object of participle	corpus
-S08	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 104:34	DOE PsGlK 165800	hig	acc	sg	none	object of eating	corpus
-S09	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 105:20	DOE PsGlK 168900	hig	acc	sg	none	object of participle	corpus
-S10	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 128:6	DOE PsGlK 214500	hyg	uncertain	sg	none	comparison	corpus
-S11	unknown	unknown	PsGlK	Sisam gloss	unassigned	Ps 146:8	DOE PsGlK 234700	hig	acc	sg	none	object of bringing forth	corpus
+U01	10c end–11c start	unknown	BL Cotton Cleopatra A.iii	Cleopatra glossary	unassigned	Fenum (first Cleopatra glossary)	Wright–Wülcker 1884 I:402.36; printed page checked	hig	none	unknown	none	græs oððe hig; same locus as Stryker 2463 (Gl01)	edition
+U03	11c middle	unknown	Cambridge CCCC 201 (Thorpe D)	Theodulf Capitula	unassigned	Ecclesiastical Institutes VIII	Thorpe 1840 I:xxv, II:394 n. a, 406.30	hig	acc	sg	none	we gesawon … ge corn ge hig … beon gehealdene; accusative subject of infinitive after gesawon	edition
+Wg01	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 36:2	DOE PsGlC 51200	heg	uncertain	sg	none	comparison	corpus
+Wg02	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 71:16	DOE PsGlC 107300	heg	uncertain	sg	none	comparison	corpus
+Wg03	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 91:8	DOE PsGlC 147400	heg	uncertain	sg	none	comparison	corpus
+Wg04	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 101:5	DOE PsGlC 158000	heg	uncertain	sg	none	comparison	corpus
+Wg05	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 101:12	DOE PsGlC 158700	hig	uncertain	sg	none	comparison	corpus
+Wg06	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 102:15	DOE PsGlC 161900	heg	uncertain	sg	none	comparison	corpus
+Wg07	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 103:14	DOE PsGlC 164000	heg	acc	sg	none	object of bringing forth	corpus
+Wg08	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 104:35	DOE PsGlC 169600	heg	acc	sg	none	object of eating	corpus
+Wg09	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 105:20	DOE PsGlC 172600	heg	acc	sg	none	object of participle	corpus
+Wg10	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 128:6	DOE PsGlC 219100	heg	uncertain	sg	none	comparison	corpus
+Wg11	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Ps 146:8	DOE PsGlC 241100	heg	acc	sg	none	object of bringing forth	corpus
+Wg12	11c second quarter	unknown	Cambridge UL Ff.1.23	Winchcombe Psalter	Winchcombe, Canterbury or Ramsey proposed	Canticle 7(6):2	DOE PsCaC 6600	heg	uncertain	sg	none	ofer after comparison with snow	corpus
+Br01	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 36:2	DOE PsGlB 50600	heg	uncertain	sg	none	comparison	corpus
+Br02	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 71:16	DOE PsGlB 105200	heg	uncertain	sg	none	comparison	corpus
+Br03	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 91:8	DOE PsGlB 145300	heg	uncertain	sg	none	comparison	corpus
+Br04	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 101:5	Brenner 1908:134; printed page checked	heg	uncertain	sg	none	comparison	edition
+Br05	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 101:12	Brenner 1908:134; printed page checked	heg	uncertain	sg	none	comparison	edition
+Br06	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 102:15	DOE PsGlB 159800	heg	uncertain	sg	none	comparison	corpus
+Br07	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 103:14	Brenner 1908:138; printed page checked	heg	acc	sg	none	object of bringing forth	edition
+Br08	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 104:35	DOE PsGlB 167500	heg	acc	sg	none	object of eating	corpus
+Br09	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 105:20	DOE PsGlB 170500	heg	acc	sg	none	object of participle	corpus
+Br10	10c first half	unknown	Bodleian Junius 27	Junius Psalter	Winchester proposed; related to Vespasian	Ps 128:6	DOE PsGlB 216900	heg	uncertain	sg	none	comparison	corpus
+R01	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 36:2	Roeder 1904:64; printed page checked	heg	uncertain	sg	none	comparison	edition
+R02	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 71:16	DOE PsGlD 107600	hig	uncertain	sg	none	comparison	corpus
+R03	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 91:8	DOE PsGlD 147700	hyg	uncertain	sg	none	comparison	corpus
+R04	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 101:5	DOE PsGlD 158300	hig	uncertain	sg	none	comparison	corpus
+R05	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 101:12	DOE PsGlD 159000	hig	uncertain	sg	none	comparison	corpus
+R06	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 102:15	DOE PsGlD 162200	hig	uncertain	sg	none	comparison	corpus
+R07	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 103:14	Roeder 1904:192; printed page checked	hig	acc	sg	none	object of participle	edition
+R08	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 105:20	Roeder 1904:200; printed page checked	heg	acc	sg	none	object of participle	edition
+R09	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 128:6	DOE PsGlD 219400	hyg	uncertain	sg	none	comparison	corpus
+R10	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Ps 146:8	DOE PsGlD 241400	hyg	acc	sg	none	object of bringing forth	corpus
+R11	10c middle	unknown	BL Royal 2 B.v	Regius Psalter	southern English; precise origin disputed	Canticle 7(6):2	DOE PsCaD 6600	hig	uncertain	sg	none	ofer after comparison with snow	corpus
+K01	11c middle	unknown	BL Stowe 2	Stowe Psalter	Gallican Psalter; southwestern origin proposed	Ps 36:2	DOE PsGlF 51500	heg	uncertain	sg	none	comparison	corpus
+H01	11c middle	unknown	BL Cotton Tiberius C.vi	Tiberius Psalter	gloss of the Gallican Psalter; origin unassigned	Ps 36:2	DOE PsGlH 50900	heg	uncertain	sg	none	comparison	corpus
+H02	11c middle	unknown	BL Cotton Tiberius C.vi	Tiberius Psalter	gloss of the Gallican Psalter; origin unassigned	Ps 71:16	DOE PsGlH 107000	hyg	uncertain	sg	none	comparison	corpus
+H03	11c middle	unknown	BL Cotton Tiberius C.vi	Tiberius Psalter	gloss of the Gallican Psalter; origin unassigned	Ps 91:8	DOE PsGlH 147100	hyg	uncertain	sg	none	comparison	corpus
+H04	11c middle	unknown	BL Cotton Tiberius C.vi	Tiberius Psalter	gloss of the Gallican Psalter; origin unassigned	Ps 101:5	DOE PsGlH 157700	hig	uncertain	sg	none	comparison	corpus
+H05	11c middle	unknown	BL Cotton Tiberius C.vi	Tiberius Psalter	gloss of the Gallican Psalter; origin unassigned	Ps 101:12	DOE PsGlH 158400	hig	uncertain	sg	none	comparison	corpus
+H06	11c middle	unknown	BL Cotton Tiberius C.vi	Tiberius Psalter	gloss of the Gallican Psalter; origin unassigned	Ps 102:15	DOE PsGlH 161600	hig	uncertain	sg	none	comparison	corpus
+H07	11c middle	unknown	BL Cotton Tiberius C.vi	Tiberius Psalter	gloss of the Gallican Psalter; origin unassigned	Ps 103:14	DOE PsGlH 163700	hyg	acc	sg	none	object of participle	corpus
+H08	11c middle	unknown	BL Cotton Tiberius C.vi	Tiberius Psalter	gloss of the Gallican Psalter; origin unassigned	Ps 105:20	DOE PsGlH 172300	hig	acc	sg	none	object of participle	corpus
+S01	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 36:2	DOE PsGlK 50600	hig	uncertain	sg	none	comparison	corpus
+S02	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 71:16	DOE PsGlK 104300	heg	uncertain	sg	none	comparison	corpus
+S03	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 91:8	DOE PsGlK 144600	heg	uncertain	sg	none	comparison	corpus
+S04	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 101:5	DOE PsGlK 154300	heg	uncertain	sg	none	comparison	corpus
+S05	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 101:12	DOE PsGlK 155000	hig	uncertain	sg	none	comparison	corpus
+S06	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 102:15	DOE PsGlK 158200	hig	uncertain	sg	none	comparison	corpus
+S07	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 103:14	DOE PsGlK 160300	hig	acc	sg	none	object of participle	corpus
+S08	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 104:34	DOE PsGlK 165800	hig	acc	sg	none	object of eating	corpus
+S09	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 105:20	DOE PsGlK 168900	hig	acc	sg	none	object of participle	corpus
+S10	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 128:6	DOE PsGlK 214500	hyg	uncertain	sg	none	comparison	corpus
+S11	11c–12c turn gloss	unknown	Salisbury Cathedral Library 150	Salisbury Psalter	continuous Psalms gloss, not earlier additions elsewhere	Ps 146:8	DOE PsGlK 234700	hig	acc	sg	none	object of bringing forth	corpus
 T09	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 36:2	DOE PsGlG 51600	hyg	uncertain	sg	none	comparison	corpus
 T10	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 91:8	DOE PsGlG 147900	<heg>	uncertain	sg	unknown	corpus notation signals editorial intervention	excluded
 T11	11c middle	unknown	BL Cotton Vitellius E.xviii	Vitellius Psalter	Winchester manuscript; gloss history separate	Ps 104:35	DOE PsGlG 170100	<heg>	uncertain	sg	unknown	corpus notation signals editorial intervention	excluded
 E03	12c middle	older exemplar, undated	Trinity College Cambridge R.17.1	Eadwine Psalter	Canterbury manuscript; gloss unassigned	Ps 36:2	DOE PsGlE 51400	heg	uncertain	sg	none	comparison	corpus
 E04	12c middle	older exemplar, undated	Trinity College Cambridge R.17.1	Eadwine Psalter	Canterbury manuscript; gloss unassigned	Ps 105:20	DOE PsGlE 167200	heg	acc	sg	none	object of participle	corpus
 E05	12c middle	older exemplar, undated	Trinity College Cambridge R.17.1	Eadwine Psalter	Canterbury manuscript; gloss unassigned	Ps 128:6	DOE PsGlE 213700	heg	uncertain	sg	none	comparison	corpus
-M08	11c	unknown	Lambeth Palace 427	Lambeth Psalter	West Saxon	Ps 101:12	DOE PsGlI 158000	hyg	uncertain	sg	none	comparison	corpus
-Ll01	unknown	unknown	PsGlL	Lindelöf gloss	unassigned	Ps 101:5	DOE PsGlL 12700	heg	uncertain	sg	none	comparison	corpus
-Ll02	unknown	unknown	PsGlL	Lindelöf gloss	unassigned	Ps 101:12	DOE PsGlL 13400	heg	uncertain	sg	none	comparison	corpus
-Ll03	unknown	unknown	PsGlL	Lindelöf gloss	unassigned	Ps 128:6	DOE PsGlL 39100	heg	uncertain	sg	none	comparison	corpus
-Ll04	unknown	unknown	PsCaE	Liles canticle	unassigned	Canticle 7(6):2	DOE PsCaE 7500	heg	uncertain	sg	none	ofer after comparison with snow	corpus
-Gl01	unknown	unknown	ClGl 1	Cleopatra glossary	unassigned	Gloss 2463	DOE ClGl 1 (Stryker) 244000	hig	none	unknown	none	fenum equivalent; check against Wright–Wülcker parallels	corpus
-Gl02	unknown	unknown	ClGl 2	Cleopatra glossary	unassigned	Gloss 739	DOE ClGl 2 (Quinn) 73900	heg	none	unknown	none	likely parallel to Wright–Wülcker I:289.45; not counted twice	corpus
+M08	11c early	unknown	Lambeth Palace 427 fol. 125r	Lambeth Psalter	West Saxon	Ps 101:12	Lindelöf 1909:159; printed page checked	hyg	uncertain	sg	none	swaswa hyg; comparative gloss; no overt case agreement	edition
+Ll01	11c early gloss	unknown	BL Add. 37517	Bosworth Psalter	gloss date, not the earlier Latin book	Ps 101:5	DOE PsGlL 12700	heg	uncertain	sg	none	comparison	corpus
+Ll02	11c early gloss	unknown	BL Add. 37517	Bosworth Psalter	gloss date, not the earlier Latin book	Ps 101:12	DOE PsGlL 13400	heg	uncertain	sg	none	comparison	corpus
+Ll03	11c early gloss	unknown	BL Add. 37517	Bosworth Psalter	gloss date, not the earlier Latin book	Ps 128:6	DOE PsGlL 39100	heg	uncertain	sg	none	comparison	corpus
+Ll04	12c middle	older exemplar, undated	Trinity College Cambridge R.17.1	Eadwine Psalter	Canterbury manuscript; gloss unassigned	Canticle 7(6):2	DOE PsCaE 7500	heg	uncertain	sg	none	ofer after comparison with snow	corpus
+Gl01	10c end–11c start	unknown	BL Cotton Cleopatra A.iii	Cleopatra glossary	unassigned	Gloss 2463	DOE ClGl 1 (Stryker) 244000	hig	none	unknown	none	Same manuscript locus as U01; not counted again	duplicate
+Gl02	10c end–11c start	unknown	BL Cotton Cleopatra A.iii	Cleopatra glossary	unassigned	Gloss 739	DOE ClGl 2 (Quinn) 73900	heg	none	unknown	none	Same manuscript locus as G01; not counted again	duplicate

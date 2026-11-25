@@ -181,6 +181,12 @@ pp. 395–416 to sheets 2–23; Ritt pp. 497–512 to sheets 3–18 (admin
 sheets excluded from its OCR). Faulkner's local copy is a 28-sheet
 author preprint; no sheet-to-published-page mapping is claimed.
 
+The later collation and historical argument are in
+`RESEARCH_MEMO_CYCLE11.md` and `ARGUMENT_CYCLE11.md`. The updated
+concordance cites public edition or manuscript locators for the newly
+verified readings. The rendered article does not require the private
+reference holdings or the local image proofs to build.
+
 Research artifacts: `CONCORDANCE.tsv`, `DOE_CROSSWALK_2026-11-23.tsv`,
 `SAME_SCRIBE_CONCORDANCE.tsv`, `COOPER_CHARTER_CORPUS.tsv`, `PARADIGM.md`,
 `QUANTITY_EVIDENCE.md`, `LINDISFARNE_EVIDENCE.md`,

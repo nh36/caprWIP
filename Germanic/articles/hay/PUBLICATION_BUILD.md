@@ -23,21 +23,8 @@ The build checks the PDF and generated TeX for unresolved citations or
 internal references. Section callouts in the current draft are plain prose,
 not automatic cross-reference fields.
 
-## Editorial footnote candidates (not applied)
-
-No manuscript edits are made by this build setup. The linguistic author may
-consider:
-
-- In §3.1, moving the explanation that Dahl prints 839 for *heiweg* but dates
-  the same charter to 859 when citing *Scufelingforde* to a footnote. The
-  current draft already gives the corrected date, 859, and cites Sweet's
-  edition; the note could preserve the correction's source-critical detail.
-- In §3.1, moving the charter's archival identification (Sawyer S 1196,
-  Cotton Augustus ii.16, and Sweet's Ct. 43) to a note if the author wants a
-  shorter evidentiary paragraph.
-- The Rushworth manuscript-image limitation could be a note, but it qualifies
-  the accent evidence directly and is best retained in the text unless the
-  author decides otherwise.
-
-These are layout options only; they do not recommend changing the argument or
-the evidentiary qualifications.
+The three documentary notes in the charter discussion are anchored in
+prose, not table cells. The article prevents individual notes from
+splitting across pages. Check marker placement and complete note text in
+the rendered PDF as well as in the generated TeX before replacing the
+tracked `hay-article.pdf`.

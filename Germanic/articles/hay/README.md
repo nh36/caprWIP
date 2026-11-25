@@ -1,18 +1,18 @@
 # Old English ‘hay’ article
 
-**Status:** Cycle 10 distinguishes the regular early-apocope hiatus
-\*he.i from a contracted continuation \*hē. Contraction has positive
-controls but no securely established terminus for final /e.i/ in
-earliest Mercian. Vespasian ⟨heg⟩ does not prove survival without
-analogy or wholesale replacement. Consonant restoration after
-contraction is a smaller plausible operation in Anglian; West Saxon
-high vowel quality favours protected vocalism under early apocope.
+**Status:** Cycle 11 distinguishes nonfinal /e.i/ contraction from the
+unresolved word-final chronology, and documents structural parallels
+that do not establish regular final /e.i/ > /ej/. Vespasian ⟨heg⟩
+does not prove survival without analogy or wholesale stem replacement.
+Consonant restoration after contraction is a narrower Anglian
+alternative; West Saxon high vowels favour protected vocalism.
 
 ## Entry points
 
-1. [`RESEARCH_MEMO_CYCLE10.md`](RESEARCH_MEMO_CYCLE10.md) is the principal
-   memorandum and adversarial assessment. The cycle-9 memorandum remains
-   useful for the correction to the evidence for w-loss.
+1. [`ARGUMENT_CYCLE11.md`](ARGUMENT_CYCLE11.md) gives the propositions
+   and adversarial assessment; [`RESEARCH_MEMO_CYCLE11.md`](RESEARCH_MEMO_CYCLE11.md)
+   records the new source collation, census, and limits of the results.
+   The Cycle 9 memorandum remains useful for the evidence for w-loss.
 2. [`DRAFT.md`](DRAFT.md) is the current, self-contained article.
    The built PDF is committed at [`hay-article.pdf`](hay-article.pdf).
 3. [`MORPHOLOGICAL_CONCORDANCE.tsv`](MORPHOLOGICAL_CONCORDANCE.tsv) records
@@ -25,7 +25,7 @@ high vowel quality favours protected vocalism under early apocope.
 
 ## Current assessments versus historical conclusions
 
-Use the cycle-10 memo and the **Current status after cycle 10** section at
+Use the Cycle 11 memo and the **Current status after Cycle 11** section at
 the top of [`UNRESOLVED.md`](UNRESOLVED.md) for present assessments.
 Earlier cycle memos (including `RESEARCH_MEMO_CYCLE8.md`, now flagged as
 superseded) preserve the research history; they are not current verdicts.

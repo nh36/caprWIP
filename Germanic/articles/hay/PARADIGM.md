@@ -1,6 +1,6 @@
 # The Old English paradigm of 'hay' (artifact C)
 
-> **Cycle 10:** The present case census is in the article and
+> **Cycle 11:** The present case census is in the article and
 > `MORPHOLOGICAL_CONCORDANCE.tsv`. The historical table below conflates
 > some endingless forms with direct syntax and assumes contraction too
 > early. Consult the current census for individual cases and counts.

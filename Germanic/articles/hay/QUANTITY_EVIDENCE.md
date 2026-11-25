@@ -1,10 +1,13 @@
 # Vowel quantity and syllabification in OE 'hay' (artifact D)
 
-> **Current verdict (cycle 10):** The earliest Anglian spellings do not
+> **Current verdict (Cycle 11):** The earliest Anglian spellings do not
 > independently establish vowel length. Ringe & Taylor (2014: 318) do
 > not date final unlike-vowel contraction and allow earlier identical-vowel
 > contraction. Farman's evidence is moderate and local. The blanket
-> historical quantity inference below is superseded.
+> historical quantity inference below is superseded. The new bounded
+> hiatus and spelling investigation is in `RESEARCH_MEMO_CYCLE11.md`;
+> its additional controls neither establish final /e.i/ > /ej/ nor
+> fix the chronology of final contraction.
 
 **Cycle 5 extraction-boundary correction:** `FARMAN_ACCENTS.tsv` now
 contains 197 types and 301 Old English tokens total: 196 non-target
