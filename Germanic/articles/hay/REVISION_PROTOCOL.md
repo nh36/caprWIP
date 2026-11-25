@@ -34,8 +34,10 @@ and source-anchor checks. Add `--against <parent>` and a `--scope <ID>`
 for each authorized block or unit to verify protected source and frozen
 table cells. With no scope, the source must match exactly. Use standalone
 `<!-- P-id -->` comments for implemented units and `<!-- pending:P-id -->`
-for staged, unimplemented slots. Require `--complete R3` at R3 closeout;
-extend the section map when more blocks are authorized.
+for staged, unimplemented slots. Pending slots must form a trailing
+sequence within a block; a slot already implemented in the comparison
+revision cannot return to pending. Require `--complete <ID>` for the
+block at closeout; extend the section map when more blocks are authorized.
 `--trace C05` (or any proposition/paragraph/apparatus ID) lists
 forward and reverse relations. Required edges and alternative branches
 are distinct from supporting evidence: inspect the prose before

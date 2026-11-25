@@ -19,6 +19,7 @@ IMPLEMENTED = {
     "R1": ("## 1.1 The chronological test", "## 1.2 The two regular derivations"),
     "R2": ("## 1.2 The two regular derivations", "# 2. The Old English attestations"),
     "R3": ("## 2.1 *Cyniges heiweg*", "## 2.2 Simplex forms"),
+    "R4": ("## 2.2 Simplex forms", "# 3. Historical phonology"),
 }
 ANCHOR = re.compile(r"^<!-- (pending:)?(P-[a-z-]+) -->$", re.MULTILINE)
 
@@ -195,13 +196,17 @@ def check_article(text, paragraphs, baseline=None, scope=(), complete=()):
             raise ValueError(f"{DRAFT}: {block} anchors {found}; expected {planned}")
         states = [key for status, key in found if status]
         if states:
-            if block != "R3" or block in complete or states != planned[-len(states):]:
+            if block in complete or states != planned[-len(states):]:
                 raise ValueError(f"{DRAFT}: unexpected pending units in {block}: {states}")
             pending.extend(states)
         expected.extend(found)
     if ANCHOR.findall(text) != expected:
         raise ValueError(f"{DRAFT}: anchor outside implemented scope")
     if baseline is not None:
+        previously_implemented = {key for status, key in ANCHOR.findall(baseline)
+                                  if not status}
+        if previously_implemented.intersection(pending):
+            raise ValueError(f"{DRAFT}: implemented units cannot return to pending")
         for key in scope:
             if key not in IMPLEMENTED and key not in paragraphs:
                 raise ValueError(f"{DRAFT}: unknown scope {key}")

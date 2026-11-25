@@ -360,6 +360,8 @@ grammatical function of the noun can be established.
 
 ## 2.2 Simplex forms
 
+<!-- pending:P-simplex-anchor -->
+
 Table 2 gives the principal witnesses; Appendix A compares the Psalter
 spellings by locus. Dates refer to the surviving English writing,
 not necessarily the date of the book, translation or exemplar.
@@ -370,6 +372,8 @@ and *et all heg eorðan heara* (104:35). In the other Psalms the noun
 occurs in comparisons, as in *spe spe heg eorðan* (71:16). The Old
 English Bede independently has accusative *heg* in *on sumera heg ne
 māweþ* [@Stevenson1843VP; @Kuhn1965VP; @Miller1890, I, p. 28].
+
+<!-- pending:P-simplex-distribution -->
 
 | English witness and date | Spelling | Locus and source |
 |-------------------------------|--------------|---------------------------------------------|
@@ -424,6 +428,8 @@ and in lexical choice. The Cleopatra glossaries have two different
 entries, *Foenum, heg* and *Fenum, græs, oððe hig*; the latter
 is not the Julius glossary’s *Foenum, hig, oððe gærs*
 [@Hecht1900, pp. 36–37; @WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36].
+
+<!-- pending:P-simplex-eadwine -->
 
 The two ⟨hieg⟩ tokens in the Eadwine Psalter were checked in the
 Romanum column: [fol. 125r](https://mss-cat.trin.cam.ac.uk:8183/iiif/2/R.17.1%2F251_R.17.1_f125r.jp2/full/1200,/0/default.jpg),
