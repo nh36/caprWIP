@@ -1,6 +1,6 @@
 # Hay article source-preparation handoff
 
-> **Current routing.** See `RESEARCH_MEMO_CYCLE10.md` for the present
+> **Current routing.** See `RESEARCH_MEMO_CYCLE12.md` for the present
 > historical assessment, `MORPHOLOGICAL_CONCORDANCE.tsv` for the expanded
 > census, and `README.md` for supersession and reproduction notes.
 > This document remains the authoritative record of the source-preparation

@@ -1,9 +1,11 @@
 # The Old English paradigm of 'hay' (artifact C)
 
-> **Cycle 11:** The present case census is in the article and
+> **Current:** The present case census is in the article and
 > `MORPHOLOGICAL_CONCORDANCE.tsv`. The historical table below conflates
 > some endingless forms with direct syntax and assumes contraction too
-> early. Consult the current census for individual cases and counts.
+> early. The protected cells give possible donors under both orders;
+> the Paris datives prove inflection, not the direction of levelling.
+> See `ARGUMENT_CYCLE12.md`, C02 and C08.
 
 Source: `CONCORDANCE.tsv` (mechanical extraction from the frozen PR #21
 source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:

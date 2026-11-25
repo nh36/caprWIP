@@ -1,5 +1,11 @@
 # Comparative controls for the 'hay' problem (research cycle 2)
 
+> **Current comparison:** see `RESEARCH_MEMO_CYCLE12.md` and the
+> article's ‘glee’ discussion. Campbell's re-formation draws on other
+> *ī(g) : īw/īow* alternations; it does not demonstrate transfer of a
+> glide from *glīowes*. Brunner's surviving-*j* analysis is an alternative.
+> The categorical wording of older comparisons below is historical.
+
 Question: which other lexemes genuinely discriminate between (i) early
 apocope with ungeminated direct forms, (ii) late apocope with geminated
 direct forms, and (iii) Dahl's diphthongal no-gemination route — and

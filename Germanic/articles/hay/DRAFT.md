@@ -1,5 +1,17 @@
 ---
 title: "The inherited direct singular of Old English ‘hay’"
+abstract: |
+  Early nasal apocope gives the inherited nominative–accusative singular
+  of ‘hay’ an ungeminated history ending in disyllabic \emph{*he.i}; later
+  apocope predicts the long nucleus and palatal glide of conventional
+  West Saxon *hīeġ*. Ninth-century Kentish *heiweg*, preferably
+  ‘hay-road’, supplies an exact written counterpart to the first
+  prediction, while early Anglian *heg* does not establish vowel
+  length. The Anglian mid vowel can continue the inherited direct
+  nucleus even if the final glide was restored. West Saxon high
+  vocalism, by contrast, favours the protected stem if apocope was
+  early. ‘Hay’ therefore does not impose the same analogical burden
+  as light neuters with a directly attested geminate, such as ‘bed’.
 bibliography: ["../../../docs/refs.bib", "article_refs.bib"]
 reference-section-title: "References"
 header-includes:
@@ -8,31 +20,117 @@ header-includes:
 
 # 1. Introduction
 
-The nominative and accusative singular of the Proto-Germanic light
-neuter ja-stem \*hawją ‘hay’ could have escaped West Germanic gemination
-if final \*-ą was lost first. On the consonantal analysis of medial
-\*wj, early loss leaves \*hawi, with no vowel after \*j to provide the
-environment for gemination. Cells retaining such a vowel developed a
-different stem. If nasal apocope followed gemination, the direct
-singular could instead have developed like those protected cells
-[@RingeTaylor2014, pp. 44–53, 173; @HoggFulk2011, §2.23;
-@Boutkan1995, pp. 209–213].
+## 1.1 The chronological test
 
-The Old English evidence permits a distinction between the survival of
-the direct singular and the survival of its vocalism. Under early
-apocope the regular changes yield \*he.i. The subsequent contraction
-of this sequence could supply the vowel of Anglian *hēġ*, leaving only
-the glide to be explained. A regular route to the glide itself is not
-established. West Saxon high-vowel spellings present a different problem:
-neither contracted *ē* nor unlengthened /ej/ accounts for them. The
-English evidence therefore does not impose the same morphological
-explanation in both areas.
+The order of West Germanic gemination and loss of final nasal \emph{*-ą}
+changes what one has to explain in light neuter ja-stems. If
+gemination came first, the ending of the nominative–accusative
+singular supplied the following vowel in the environment for
+gemination before \emph{*j}. If nasal apocope came first, the direct
+singular escaped gemination, while the genitive, dative and
+direct plural retained the right environment. In Old English
+*bedd* ‘bed’, the geminate itself is the feature that must be
+explained under early loss. In ‘hay’, the difference between the
+predictions is expressed instead in the nucleus and final palatal
+segment. That difference makes it possible for the inherited direct
+stem to leave an identifiable reflex without surviving intact.
+
+The nominative and accusative singular of the Proto-Germanic light
+neuter ja-stem \emph{*hawją} ‘hay’ is here compared under the early order
+of Ringe and Taylor and the later order represented by Hogg and
+Fulk. The latter distinguish early loss of oral endings, as in
+masculine \emph{*-az}, from retention of nasal \emph{*-ą} through gemination;
+the early order removes both before gemination
+[@RingeTaylor2014, pp. 44–53, 173; @HoggFulk2011, pp. 20–21 §2.23;
+@Boutkan1995, pp. 209–213]. Both derivations below assume consonantal
+\emph{*wj}. The relative chronology and the phonological analysis of
+that sequence are separable assumptions.
+
+## 1.2 The two regular derivations
+
+Table 1 aligns the changes in explicit implementations of these
+orders. The first divergence is at gemination and nasal apocope:
+early loss strands singleton \emph{*j} after the labial of a light
+stem, and the resulting syllabic \emph{*i} is no longer the trigger
+for gemination. In the late order the labial is geminated before
+loss; vocalization of a stranded singleton glide cannot act on
+the resulting cluster. The labial sequence is resolved differently
+in the two histories. In the early order it supplies an ordinary
+intervocalic \emph{*w}, lost before unstressed \emph{*i} after umlaut. In the
+late order the geminated labial supplies the second member of a
+diphthong, and \emph{*j} survives and triggers umlaut.
+
+| Change and environment | Early apocope | Late apocope |
+|:-------------------------|:----------------------|:-----------------------|
+| Inherited direct singular | \emph{*hawją} | \emph{*hawją} |
+| Gemination before prevocalic \emph{*j}, if the ending remains | Not yet applied | \emph{*hawją} > \emph{*hawwją} |
+| Nasal apocope | \emph{*hawją} > \emph{*hawj} | \emph{*hawwją} > \emph{*hawwj} |
+| Vocalization of a stranded singleton glide | \emph{*hawj} > \emph{*hawi} | Blocked by the geminate |
+| Gemination in the early order | No prevocalic \emph{*j} | Already applied |
+| Resolution of the geminated labial sequence | No geminate | \emph{*hawwj} > \emph{*hauj} |
+| Diphthong fronting and development | No diphthong | \emph{*hauj} > \emph{*aeuj} > \emph{*ēaj} |
+| Fronting of short \emph{*a} | \emph{*hawi} > \emph{*hæwi} | No short \emph{*a} |
+| Initial fricative fronting | [x] > [ç] | [x] > [ç] |
+| i-Umlaut by \emph{*i} or \emph{*j} | \emph{*hæwi} > \emph{*hewi} | \emph{*ēaj} > \emph{*īej} |
+| Loss of \emph{*w} before unstressed \emph{*i} | \emph{*hewi} > \emph{*he.i} | No \emph{*wi} sequence |
+| Regular prediction | \emph{*hei}, /he.i/ | \emph{*hīeġ}, long nucleus + /j/ |
+
+: Parallel derivations of the inherited nominative–accusative singular under the two orders. The output on the left retains syllabic *i*; the final *ġ* on the right is consonantal.
+
+The transcription uses conventional initial *h* throughout; both
+implementations separately front the initial fricative from [x] to
+[ç] before umlaut. The notation \emph{*aeu} is schematic for a fronted
+diphthong stage, not a reconstruction of three syllabic vowels.
+The early output \emph{*hei} contains short stressed /e/ and
+unstressed syllabic /i/.
+In \emph{*hīeġ} the macron marks a long nucleus and the dot marks
+consonantal /j/. Neither transcription supplies a change in
+syllabicity or quantity beyond the respective derivation.
+
+These are regular predictions of the two orderings with the
+stated treatment of the labials, not complete analyses attributed
+to either grammar. Campbell and Hogg retain the labial glide
+longer in their treatments of the geminated sequence. Ringe and
+Taylor derive \emph{*auj} from a reversible gemination rather than
+beginning with a diphthong. Dahl’s analysis starts with a
+diphthongal representation and gives a separate account of final
+*ġ* (Section 6) [@Campbell1959, pp. 45–46 §120.2;
+@HoggGrammar1992, §3.18; @RingeTaylor2014, pp. 53, 173;
+@Dahl1938, pp. 81–86 and Excursus].
+
+## 1.3 Ringe and Taylor’s protected-stem analysis
+
+Ringe and Taylor do not derive their English direct singular
+by continuing \emph{*hawi}. In their comparison with Old High German,
+*hewi* continues that ungeminated direct stem, whereas *houwi*
+extends the geminated stem of other cells. The English substitution
+is explicit in their treatment of umlaut: alongside the inherited
+direct \emph{*hawi} > \emph{*hæwi} stands the protected sequence
+\emph{*[hawʲwʲ-]} > \emph{*hauj-} > \emph{*hēaj-}. They replace **direct \emph{*hæwi}
+with protected \emph{*hēaj-}**, as the endingless form \emph{*hēaj}. This
+places the substitution after the protected diphthong developed
+but before its mutation. With \emph{*j} as the conditioning segment,
+the substituted stem gives West Saxon *hīeġ*, Mercian and
+Northumbrian *hēġ*. The authors do not name a particular English
+donor cell or take the unremodelled English line beyond \emph{*hæwi}
+in this derivation [@RingeTaylor2014, pp. 53, 173, 246].
+
+The distinction is not between two predictions of the same
+quantity followed by a choice of spelling. In the regular early
+history, the direct vowel descends from the short vowel of
+\emph{*hæwi}, with \emph{*i} as an unstressed vowel. In the substituted
+history, the nucleus descends from protected \emph{*ēa} and the final
+palatal from \emph{*j}. The regular late history reaches the latter
+type of stem without substitution. To establish a need for
+levelling under early loss, one must therefore show which
+features of the surviving direct forms cannot come from the
+ungeminated stem.
 
 # 2. The Old English attestations
 
 ## 2.1 Simplex forms
 
-Table 1 gives the principal witnesses; Appendix A compares the Psalter
+Table 2 gives the principal witnesses; Appendix A compares the Psalter
 spellings by locus. Dates refer to the surviving English writing,
 not necessarily the date of the book, translation or exemplar.
 The ninth-century Mercian Vespasian gloss has eleven instances of
@@ -46,7 +144,7 @@ māweþ* [@Stevenson1843VP; @Kuhn1965VP; @Miller1890, I, p. 28].
 | English witness and date | Spelling | Locus and source |
 |-------------------------------|--------------|---------------------------------------------|
 | Vespasian, BL Cotton Vespasian A.i; 9th c. | *heg* | Pss 36:2, 71:16, 91:8, 101:5, 101:12, 102:15, 103:14, 104:35, 105:20, 128:6, 146:8; Hymn 7:4 [@Stevenson1843VP] |
-| Aldred, BL Cotton Nero D.iv; 10th c.² | *heg*, *hehg* → *heg*, *heig* | Mt 6:30, 14:19, Jn 6:10 [@Skeat1887, pp. 59, 123; @Skeat1878, p. 55] |
+| Aldred, BL Cotton Nero D.iv; 10th c.² | *heg*; *hehg*, corrected to *heg*; *heig* | Mt 6:30, 14:19, Jn 6:10 [@Skeat1887, pp. 59, 123; @Skeat1878, p. 55] |
 | Farman, Bodleian Auct. D.2.19; 10th c.² | *hóeg* | Mt 6:30, 14:19 [@Tamoto2013, pp. 19, 47] |
 | Owun, same manuscript | *heg* | Jn 6:10 [@Skeat1878, p. 55] |
 | Old English Bede; 10th-c. copies | *heg* | I.1, Miller’s composite text [@Miller1890, I, p. 28] |
@@ -122,7 +220,7 @@ strete* [@Sweet1885, p. 450, Ct. 43].[^s1196] The division into
 collated here.
 
 Sweet lists the first member under ‘hay’. Bryan compares it with
-Germanic \*hauja- and distinguishes its reconstructed quantity from
+Germanic \emph{*hauja-} and distinguishes its reconstructed quantity from
 that of Kentish *dei* ‘day’.[^bryan] The latter comparison shows that
 ⟨ei⟩ could write a vowel followed by a glide; the two letters do not
 encode Bryan’s quantity distinction. Dahl adopts ‘hay-road’ and
@@ -162,16 +260,51 @@ support for ‘high’ but does not establish that the development was
 impossible.
 
 The local association with meadows and the independently established
-Kentish use of ⟨ei⟩ in *dei* make ‘hay-road’ the preferable reading.
-The route’s actual function and the alternative etymology remain
-unresolved. Even if the first member is ‘hay’, a compound is not
-evidence of case or of the retention of a particular prehistoric
-simplex stem (Section 4.3). The other exact ⟨hei⟩ is a simplex but
-late: the thirteenth-century Worcester glossary F.174 has *Fenum,
-hei, uel græs*, corresponding to older *hig* in the Julius glossary.
-The Worcester vocabulary also writes *wei* ‘way’. Its *hei* provides
-no date for an Old English development [@WrightWuelcker1884,
-I, cols. 325.21, 547].
+Kentish use of ⟨ei⟩ in *dei* together make ‘hay-road’ the preferable
+reading. The two arguments are complementary: a route beside
+meadows could have several names, and a spelling can fit more
+than one etymology. It is the conjunction of the setting and
+the local written form, rather than either alone, that favours
+‘hay’. The exact first-element spelling is then the one the
+regular early derivation would naturally suggest: ⟨e⟩ and ⟨i⟩
+can express the two elements of \emph{*he.i} without adding a letter
+for an inherited consonant. They can also express a desyllabified
+continuation. The written correspondence is present on a
+mid-ninth-century sheet, regardless of how the syllables or
+quantity are reconstructed.
+
+The protected-stem interpretation is also viable. A Kentish
+mid-vowel reflex of mutated \emph{*ēa} is independently supported by
+*ċēgan* ‘call’; a stem of that type with a final palatal would
+only need the spelling convention seen in *dei* to give ⟨hei⟩
+[@RingeTaylor2014, p. 246; @Bryan1915, pp. 23, 25].
+There is no independently long control in this local material
+that demonstrates ⟨ei⟩ for /eːj/, but there is no evidence that
+the spelling was restricted to a short vowel either. The early
+output thus has an exact written parallel without the spelling
+being its exclusive prediction. Whether an older first element
+could survive in composition after the simplex was remodelled
+is a morphological question, distinct from the correspondence
+itself (Section 4.3).
+
+## 2.3 Other exact spellings
+
+No additional early ⟨hei⟩ for ‘hay’ emerged from comparison of
+the *híg/hég* and road-name dictionary entries, the principal
+glossary loci, and the Kentish road comparanda
+[@BosworthToller1898, s.v. *hēah-weg*; @Toller1921, s.v. *híg*;
+@WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36, 547;
+@Cooper2003, p. 61]. Northern and other ⟨heig⟩ forms are
+potentially relevant to the same phonology, but are not exact
+written matches. The secure simplex is later. The thirteenth-century
+Worcester glossary F.174 has *Fenum, hei, uel græs*, where the older
+parallel in the Julius glossary has *hig*. Worcester also writes
+*wei* ‘way’ [@WrightWuelcker1884, I, cols. 325.21, 547]. Its
+spelling can therefore arise without preserving inherited hiatus:
+the later written match does not require continuity with the
+Kentish one. The later Middle English spelling variants are
+consistent with this interpretation but do not extend the
+Old English attestation [@MiddleEnglishDictionaryHei, s.v. *hei*].
 
 # 3. Historical phonology
 
@@ -180,20 +313,20 @@ I, cols. 325.21, 547].
 On the early-apocope and consonantal analyses the direct form
 develops as follows:
 
-\*hawją → \*hawi → \*hæwi → \*hewi → \*he.i.
+\emph{*hawją} > \emph{*hawi} > \emph{*hæwi} > \emph{*hewi} > \emph{*he.i}.
 
-Once \*-ą is lost, stranded \*j is syllabic. The \*wi sequence
+Once \emph{*-ą} is lost, stranded \emph{*j} is syllabic. The \emph{*wi} sequence
 permits Anglo-Frisian fronting, followed by i-umlaut; Ringe and
-Taylor’s parallels are \*awi ‘ewe’ and \*klawiþō ‘itch’
+Taylor’s parallels are \emph{*awi} ‘ewe’ and \emph{*klawiþō} ‘itch’
 [@RingeTaylor2014, pp. 148, 237; @Campbell1959, §579(4)].
-After umlaut and before general syncope, noninitial \*w was lost
-before fully unstressed \*i. The unstressed vowel was still
+After umlaut and before general syncope, noninitial \emph{*w} was lost
+before fully unstressed \emph{*i}. The unstressed vowel was still
 syllabic at the point of loss [@RingeTaylor2014, pp. 257–261;
 @Campbell1959, §§237.1b, 406].
 
-The loss is not peculiar to this noun. It appears in \*gliwi
-‘merrymaking’ > *glī*, in \*niwi- ‘new’ > *nī-* in compounds,
-and in \*pylwī ‘pillow’ > *pyle*. In the weak verbs it is
+The loss is not peculiar to this noun. It appears in \emph{*gliwi}
+> *glī* ‘merrymaking’, in \emph{*niwi-} > *nī-* ‘new’ in compounds,
+and in \emph{*pylwī} ‘pillow’ > *pyle*. In the weak verbs it is
 conditioned by the vowel of the ending: compare *giereþ* ‘prepares’
 and its infinitive *gierwan*. Later restoration is possible where
 other parts of a paradigm retained the consonant; forms such as
@@ -206,13 +339,13 @@ competing suffix formations [@RingeTaylor2014, pp. 258–261;
 
 ## 3.2 Contraction and glide formation
 
-The outcome \*he.i is disyllabic. Table 2 distinguishes the
+The outcome \emph{*he.i} is disyllabic. Table 3 distinguishes the
 positions and vowel sequences represented by the principal controls.
 The identical final vowels in *glī* do not establish the chronology
 of unlike final vowels. Vespasian *gecēd* is especially useful for
-dating contraction in the tradition which writes *heg*: \*e.i
+dating contraction in the tradition which writes *heg*: \emph{*e.i}
 contracted before the dental in that verb. It does not show that the
-same contraction preceded the recording of a word with final \*e.i.
+same contraction preceded the recording of a word with final \emph{*e.i}.
 *Sǣ* and *ǣ* have final unlike vowels in the reconstructed input,
 but their first vowel was already long; loss of *i* gives the same
 observable result [@Campbell1959, §237.1b; @RingeTaylor2014,
@@ -220,11 +353,11 @@ pp. 259–260, 318].
 
 | Old English reflex | Input at hiatus | Position | Source |
 |---------------------------|--------------|---------------------|--------------------------|
-| *glī* ‘merrymaking’ | \*i.i | Final | Ringe & Taylor 2014: 259, 318 |
-| *nī-* ‘new’ | \*i.i | Compound boundary | Ringe & Taylor 2014: 259 |
-| *ēde* ‘flock’, *strēde* ‘strewed’ | \*e.i | Before a dental | Ringe & Taylor 2014: 259–260, 318 |
-| Vespasian *gecēd* ‘calls’ | \*e.i | Before a dental | Campbell 1959: §237.1b; Ringe & Taylor 2014: 260 |
-| *sǣ* ‘sea’, *ǣ* ‘law’ | \*ǣ.i | Final | Ringe & Taylor 2014: 318 |
+| *glī* ‘merrymaking’ | \emph{*i.i} | Final | Ringe & Taylor 2014: 259, 318 |
+| *nī-* ‘new’ | \emph{*i.i} | Compound boundary | Ringe & Taylor 2014: 259 |
+| *ēde* ‘flock’, *strēde* ‘strewed’ | \emph{*e.i} | Before a dental | Ringe & Taylor 2014: 259–260, 318 |
+| Vespasian *gecēd* ‘calls’ | \emph{*e.i} | Before a dental | Campbell 1959: §237.1b; Ringe & Taylor 2014: 260 |
+| *sǣ* ‘sea’, *ǣ* ‘law’ | \emph{*ǣ.i} | Final | Ringe & Taylor 2014: 318 |
 
 : Contraction controls grouped by sequence and position.
 
@@ -236,9 +369,14 @@ not date a local pronunciation. Vespasian *hīe* and *sīe* offer
 comparisons within the Mercian tradition, with *sīem* at Ps 26:4
 supporting two syllables. They contain *i.e*, not *e.i*, and
 do not use ⟨g⟩ to write the hiatus [@HoggGrammar1992,
-§§5.132–134, 5.146]. These examples permit coexistence of contracted
-and uncontracted sequences in different environments. None dates
-contraction of final unlike *e.i*.
+§§5.132–134, 5.146]. These examples permit coexistence of contracted and uncontracted
+sequences in different environments. In particular, *gecēd* and
+*sīem* make it unnecessary to assume a single date for the
+disappearance of hiatus even in the same gloss tradition.
+Persistence is the historical inference here: it gives a sequence
+created by *w*-loss an interval in which the treatment of an
+unstressed final vowel could differ from that of a vowel before
+a consonant.
 
 Desyllabification after consonant loss is independently attested
 in a different setting. Hogg derives *clēa* ‘claw’ from *kla.wu*
@@ -249,10 +387,28 @@ diphthong types *au* and *eu*. Campbell’s prevocalic gliding in
 Latin loans and metrical synizesis are also distinct: the former
 involves a following vowel, and the latter does not establish
 ordinary lexical syllabification [@Campbell1959, §§512, 553–557].
-The structural analogy makes loss of syllabicity in final *i*
-plausible, but gives no independent Old English rule changing final
-/e.i/ to /ej/. A consonantal glide sequence /ej/ does not require a
-phonemic falling diphthong /ei̯/.
+The comparison supplies a mechanism, not the same output: when
+*w* disappears, a following unstressed high vowel can lose
+syllabicity instead of being deleted. The back vowel of *clēa*
+could join an established diphthong class, whereas there is no
+such class to appeal to for *hei*. But /ej/ needs no phonemic
+falling diphthong /ei̯/. Old English already had nuclei followed
+by /j/, as in *weġ* ‘way’. A shift of unstressed /i/ into the
+coda after a stressed /e/ would use an existing syllable
+structure. *Sīem* does not model that shift: it supports
+retention of unlike front vowels, and its second vowel is not
+the high vowel required by the proposal.
+
+The conjunction of retention after *w*-loss, the precedent for
+desyllabification, and the ordinary /Vj/ syllable structure
+motivates \emph{*he.i} > \emph{*hej} as an extension to a new environment.
+It is not a demonstrated Old English sound law. Its chief
+phonological uncertainty is whether final unstressed /i/ could
+become a coda before contraction removed it. The contraction
+comparison is closer in vowel quality, but it does not supply
+the missing final chronology either. This is a choice between
+historically motivated processes, not between an established
+contraction in ‘hay’ and a wholly unconstrained alternative.
 
 ## 3.3 Orthography and vowel quantity
 
@@ -274,7 +430,11 @@ interpretable early Mercian, Northumbrian or Kentish spelling
 examined here establishes ⟨eg⟩ or ⟨ig⟩ as notation for retained
 final /e.i/.
 
-Contraction predicts long *ē*. Ordinary ⟨heg⟩ accommodates both
+The relevant contrasts are /he.i/ with a short stressed vowel
+and two syllables, /hej/ with a short nucleus and a glide,
+conventional Anglian /heːj/, and the conventional West Saxon
+long diphthongal or high nucleus plus /j/. Contraction predicts
+long *ē* but does not itself produce a final glide. Ordinary ⟨heg⟩ accommodates both
 /ej/ and /eːj/, and that compatibility is not positive evidence
 for either quantity. Nor does the additional ⟨i⟩ in Aldred’s
 ⟨heig⟩ establish an extra mora or syllable. His two spellings are
@@ -291,7 +451,7 @@ Farman provides more specific evidence. Three editions print
 an acute in both instances of *hóeg* [@KembleHardwick1858,
 pp. 55, 117; @Skeat1887, pp. 59, 123; @Tamoto2013, pp. 19, 47].
 Neither folio is in the digitized selection consulted. The
-accent calibration in Table 3 counts occurrences in Farman’s stint
+accent calibration in Table 4 counts occurrences in Farman’s stint
 from Mt 1:1 to Mk 2:15. A surface type is a distinct spelling
 ignoring the acute; an accented type has at least one accented
 occurrence. The noun and verb of the long-*ī* family share a
@@ -326,7 +486,11 @@ lexical evidence. Ritt’s distinction between contexts with
 predictable and unpredictable quantity also argues against pooling
 the homorganic-cluster panel with the glide controls
 [@Ritt2000, pp. 498–510]. Farman’s practice cannot be assigned
-to Aldred or projected back onto Vespasian.
+to Aldred or projected back onto Vespasian. In particular, the
+length inference is a reason not to identify Farman’s vowel with
+the short nucleus of hypothetical regular /hej/ without a further
+development. It is not a reason to require the same further
+development in ninth-century Mercian.
 
 The metrical evidence does not settle the issue. If the written
 direct forms are monosyllables closed by /j/, both vowel quantities
@@ -343,11 +507,29 @@ Middle English *hay* and *way* of discriminatory value
 
 ## 4.1 Grammatical cells
 
-Early apocope gives the direct singular \*hawi beside protected forms
-such as genitive \*hawjas, dative \*hawjai, and nominative–accusative
-plural \*hawjō. These are independently reconstructed grammatical
-environments, not attested forms of the English noun. The English
-record in Table 4 counts each occurrence in a distinct manuscript
+Early apocope gives the direct singular \emph{*hawi} beside protected forms
+such as genitive \emph{*hawjas}, dative \emph{*hawjai}, and nominative–accusative
+plural \emph{*hawjō}. In the dative and plural, the endings themselves
+develop before gemination (\emph{*-ai} > \emph{*-ē} and \emph{*-ō} > \emph{*-u}),
+but both still put a vowel after \emph{*j}. There is no corresponding
+loss of \emph{*-ą} in these forms. After gemination, the same
+labial resolution and diphthong development as in the late
+direct singular lead to \emph{*hēaj-} in both orders. Table 5 makes
+explicit the resulting alternation before any levelling and
+the normalized forms it predicts. The rows are reconstructed
+grammatical environments, not attestations of their outcomes
+[@HoggFulk2011, §§2.19, 2.23; @RingeTaylor2014, pp. 44–53, 173, 246].
+
+| Cell and reconstructed input | Early history at gemination | Late history at gemination | Regular predicted reflex |
+|:--------------------------------|:----------------------------|:---------------------------|:-------------------------|
+| Nom.–acc. sg. \emph{*hawją} | \emph{*hawi}, ungeminated | \emph{*hawwją} | Early \emph{*he.i} at hiatus; late \emph{*hīeġ} |
+| Gen. sg. \emph{*hawjas} | \emph{*hawwjas} | \emph{*hawwjas} | \emph{*hīeġes} |
+| Dat. sg. \emph{*hawjai} | \emph{*hawwjē} | \emph{*hawwjē} | \emph{*hīeġe} |
+| Nom.–acc. pl. \emph{*hawjō} | \emph{*hawwju} | \emph{*hawwju} | \emph{*hīeġ} |
+
+: Reconstructed direct and protected cells. In both orders the protected stem develops from \emph{*hawwj-} to \emph{*hauj-}, then via fronting to \emph{*hēaj-} and by umlaut to \emph{*īej-}. The normalized diphthongal predictions are not a manuscript paradigm.
+
+The English record in Table 6 counts each occurrence in a distinct manuscript
 once, including dependent texts, but excludes two duplicate glossary
 editions and two editorially supplied Vitellius readings. Apart
 from the three *hege* datives, every included form is endingless.
@@ -397,47 +579,59 @@ after a verb of perception. His base manuscript D is CCCC 201,
 whose Theodulf section is mid-eleventh-century [@Thorpe1840Institutes,
 I, p. xxv; II, pp. 394 n. a, 406].
 
+The absence of an overt ending in the secure early direct forms
+does not identify the stem that they contain: both orders predict
+an endingless singular. By the eleventh century the record shows
+the noun with overt *-e* as well as an endingless dative. Wright’s
+normalized *hīeġes* and *hīeġe* are paradigm illustrations
+[@Wright1914, §270 and note]. The Paris forms independently
+demonstrate the dative function and its ending; they do not
+give the normalized high-vowel form. The genitive and direct
+plural predicted by the grammars have no secure manuscript
+counterparts here. Thus the attested paradigm contains less
+evidence for the prehistoric stem alternation than its handbook
+representation suggests, but more evidence for inflection than
+the isolated citation form would suggest.
+
 ## 4.2 Donor forms and levelling
 
-No early donor alternation is demonstrated within English. The mass
-meaning and the recurrence of biblical *faenum* contexts favour direct
-and comparative uses in the surviving record. These frequencies do
-not measure the accessibility of earlier inflectional forms. The
-Paris datives attest use of an inflected stem, not its pronunciation
-or antiquity at the time of the proposed levelling. Endingless
-*mid hig* could reflect loss of *-e* or extension of the direct
-shape into a dative function. Neither interpretation supplies
-evidence that the oblique was the historical donor to the direct
-singular.
+The early reconstruction makes an oblique donor possible even
+in a noun rarely used in the plural: a genitive or dative
+singular could preserve the same protected stem. Nor need
+analogy follow the frequency of one grammatical cell. If the
+same stem recurred in several cells, or if related ja-stems
+favoured a uniform stem, speakers could extend it to the direct
+singular. This makes Ringe and Taylor’s direction of levelling
+morphologically intelligible. It does not show that the
+requisite donor remained available or that levelling occurred
+before umlaut.
 
-The light neuter ja-stem ‘glee’ provides a closer comparison than
-the later datives of ‘hay’. The recorded *glī*, *glīg* and
-*glīowes* coexist with the *glēo/glīo(w)* forms. Ringe and
-Taylor derive *glī* by regular loss of *w* and identical-vowel
-contraction. Campbell interprets *glīg* as a re-formation under
-the influence of the inflected stem [@RingeTaylor2014, pp. 259,
-318; @Campbell1959, §§411, 579(4); @Wright1914, §357].
-On this analysis, the direct vowel survived while the glide was
-supplied from elsewhere. Brunner instead compares *glīg* and
-the compound first member *nīġ-* ‘new’, proposing development
-from a sequence in which *j* was already present
-[@SieversBrunner1965, §130 n. 3]. The doublet therefore supplies
-a precedent for glide restoration on Campbell’s analysis, not
-an observation of the operation. For ‘hay’ a contracted direct
-vowel and a surviving glide-bearing donor must both be available.
-Comparable ja-stems show evidence of
-levelling in both directions [@Hogg1979Analogy, pp. 68–73].
+There is a countervailing consideration. For a mass noun, the
+singular used as the subject or object of ordinary predication
+may be well established, without much competition from a
+plural. In the surviving record, the noun is characteristically
+what grows, is mown, or is carried or eaten. The direct singular
+could persist under these conditions, or its shape could be
+extended to a dative. Biblical glosses cannot measure prehistoric
+frequency, and the absence of a plural token does not show that
+there was no plural. *Mid hig* illustrates the two relevant
+possibilities: loss of an ending or extension of the direct
+shape. The Paris *hege* forms show that a distinct ending was
+available elsewhere, but neither series identifies which shape
+spread. Comparable ja-stems show evidence of levelling in
+both directions [@Hogg1979Analogy, pp. 68–73].
 
-Old High German *hewi/houwi* and Middle Dutch *hoye/houwe* are
-documented doublets. Ringe and Taylor identify *hewi* as the inherited
-direct singular and *houwi* as the generalized protected stem. A
-late-apocope account can derive *houwi* regularly but must explain
-*hewi* independently. Boutkan’s assignment of the Dutch doublets
-to grammatical stems depends on his reconstruction of the ordering
-[@RingeTaylor2014, pp. 53, 173; @Boutkan1995, pp. 212–213].
-The existence of the doublets is better established than the
-direction of levelling. Gothic *hawi*, outside West Germanic,
-cannot decide whether a West Germanic form escaped gemination.
+A smaller operation would be available if the inherited direct
+vowel were already *ē*: only /j/ would need to be supplied from
+a protected stem. That hypothesis requires an accessible palatal
+alternant but not a donor with the same nucleus. Wright also
+distinguishes the history of the final consonant from that of
+the vowel. His proposal concerns a secondary glide between
+vowels after a long nucleus and its transfer to the direct
+singular, not a regular outcome of short /e.i/
+[@Wright1914, §§270, 357]. It establishes that the two
+historical questions can be separated; it does not identify a
+source for Anglian /j/ in this noun.
 
 ## 4.3 Compound stems
 
@@ -456,41 +650,151 @@ remodelling or that it preserves an ungeminated stage.
 Conversely, an inherited composition form need not have resembled the
 direct singular. Campbell lists connecting vowels in *endeleas*,
 *lǣcecræft* and *rīcedōm*, beside absence or late loss in other
-compounds [@Campbell1959, §359]. If a vowel once followed \*j within
+compounds [@Campbell1959, §359]. If a vowel once followed \emph{*j} within
 an inherited compound, it could protect the stem from the word-final
-development in \*hawją. Such a derivation requires independent
+development in \emph{*hawją}. Such a derivation requires independent
 evidence for the connector, the age of the formation and the history
 of its loss. No connector or otherwise diagnostic stem survives in
-*heiweg* or the hay-house forms. The conservative inference from
-*hei-* is that the written form is compatible with a hay stem used in
-composition; it does not identify a regular continuation of \*hawi
-or decide between inherited and subsequently generalized composition
-forms.
+*heiweg* or the hay-house forms. A lexicalized compound could
+retain an older direct-shaped first element after the free
+noun was remodelled, just as a new compound could be built
+on the generalized stem. The first scenario would make a
+Kentish reflex of \emph{*he.i} compatible with subsequent levelling
+in the simplex; the second could produce ⟨hei⟩ from a mid
+vowel plus glide. The written correspondence gives the first
+scenario a concrete historical form to explain. In the
+absence of a Kentish contrast between compound and free
+forms, it does not distinguish the scenarios.
 
-# 5. Discussion
+## 4.4 ‘Glee’ and the continental comparisons
 
-Under early apocope the strongest regular-survival account reads
-Vespasian ⟨heg⟩ as /hej/. It requires final *i* to lose syllabicity
-before contraction. The development to hiatus, the spelling of
-/ej/, and the existence of desyllabification after consonant loss
-in another environment are independently supported. Its crucial
-conditioning and timing in final /e.i/ are not. A reading of
-⟨heg⟩ as uncontracted hiatus avoids the phonological step but
-requires an orthographic convention not established by the
-Mercian evidence. Kentish *hei-* writes two vowel letters, but
-even a secure lexical identification would not turn it into a
-simplex or distinguish hiatus from /Vj/.
+The light neuter ‘glee’ provides two different comparisons.
+Ringe and Taylor’s inherited direct \emph{*gliwi} loses \emph{*w} and
+contracts identical vowels: \emph{*gliwi} > \emph{*gli.i} > *glī*. Their
+protected \emph{*[gliwwjas]} is represented by *glīowes*, with a
+labial in a form with an overt ending. The first comparison
+is unusually close at the point of loss of \emph{*w}*, but /i.i/
+has no vowel-quality decision to make at contraction. It is
+the coexistence of different stems, not the precise treatment
+of hiatus, that more directly parallels the morphological
+problem in ‘hay’ [@RingeTaylor2014, pp. 53, 259, 318].
+
+Campbell treats *glīg* and *glīges* as re-formations beside
+*glīw/glīow*. Existing alternations between *ī(g)* and
+*īw/īow* elsewhere in the lexicon could give a new *g*-form
+without changing the historical source of the direct nucleus.
+This is not a claim that the *w*-bearing genitive *glīowes*
+itself furnished a palatal consonant. Brunner instead allows
+singleton *w* to combine with preceding *i* as *iu* while
+*j* remains. Umlaut gives West Saxon *ie* or *ī*, with a
+palatal segment; with a protected ending the labial can
+geminate and persist, giving the competing *w*-forms. He
+compares compounds with *nīġ-* ‘new’ and contrasts *glīg*
+and its compounds with *glīw*, *glēo* and related compounds
+[@Campbell1959, §§120.2, 411, 579(4);
+@SieversBrunner1965, §§130 n. 3, 173, 247 n. 1].
+
+On Campbell’s analysis the doublet is a precedent for
+modifying the end of a word without replacing its nucleus.
+On Brunner’s, some forms can have a palatal from the outset;
+secondary extension remains possible, but is not necessary
+to originate the segment. This alternative matters for ‘hay’
+because the fate of a labial and the source of a palatal need
+not be coupled. However, it cannot preserve inherited *j*
+in a derivation that has already vocalized it to syllabic *i*
+in \emph{*hawi}. Applying Brunner’s mechanism directly to ‘hay’
+would require an independently justified reconstruction in
+which *j* survived that stage. Neither interpretation of
+‘glee’ proves the origin of the final glide of *heg*.
+
+Old High German *hewi/houwi* and Middle Dutch *hoye/houwe* are
+documented doublets. Ringe and Taylor identify *hewi* as the inherited
+direct singular and *houwi* as the generalized protected stem. A
+late-apocope account can derive *houwi* regularly but must explain
+*hewi* independently. Boutkan’s assignment of the Dutch doublets
+to grammatical stems depends on his reconstruction of the ordering
+[@RingeTaylor2014, pp. 53, 173; @Boutkan1995, pp. 212–213].
+The doublets document the coexistence of different stem shapes;
+they do not independently establish a direction of levelling in
+English. Gothic *hawi*, outside West Germanic, cannot decide
+whether a West Germanic form escaped gemination.
+
+# 5. The interpretation of the Old English forms
+
+## 5.1 Earliest Anglian and Kentish evidence
+
+The two earliest written points of comparison have different
+strengths. Kentish ⟨hei⟩ is an exact match to the regular early
+output, conditional on identifying ‘hay’ in the compound.
+It is the least indirect evidence that a form of that written
+shape was current early. Mercian ⟨heg⟩, by contrast, belongs
+securely to the noun and occurs in direct syntax. Neither is
+exactly the evidence supplied by the other: a first element
+has no case, and ⟨heg⟩ more naturally writes /Vj/ than two
+syllabic vowels. Together they motivate asking whether the
+early inherited *e* persisted, not treating either spelling as
+a transcription of the answer.
+
+On the regular-survival account, *w*-loss leaves \emph{*he.i}, and
+desyllabification gives /hej/ without borrowing either the
+nucleus or the glide. The result uses the ordinary Mercian
+spelling ⟨heg⟩. This is the best regular-survival reading of
+that spelling: an interpretation with retained hiatus would
+require an independently unestablished use of ⟨g⟩. The
+desyllabification account instead has a structural precedent
+in *clēa*, and the persistence of other hiatus sequences makes
+it unnecessary to assume immediate contraction. Its added
+hypothesis is the order and conditioning of final /i/ in this
+environment. An independently dated contraction of a matched
+sequence before Vespasian would weigh directly against it.
 
 An alternative uses the independently motivated contraction
-process. If \*he.i had become \*hē, restoration of /j/ could
-supply Anglian ⟨heg⟩ without changing the historical source of
-the vowel. *Glī/glīg* supplies a comparative precedent on
-Campbell’s interpretation. No bare \*hē ‘hay’ or contemporary
-donor alternation has been identified, so this is a supported
-type of operation, not a demonstration of its application. A
-protected \*hauj- stem gives the same Anglian vowel after umlaut
-and smoothing. Even an independent proof of vowel length would
-not distinguish the two histories.
+process, for which there is a closer control in the same vowel
+sequence but a different position. If \emph{*he.i} contracted to \emph{*hē},
+restoration of /j/ would supply Anglian ⟨heg⟩ without changing
+the origin of the nucleus. *Glī/glīg* supports a repair of this
+scope on Campbell’s account. The cost is positive: contraction
+destroys the potential inherited source of /j/, and neither
+bare \emph{*hē} ‘hay’ nor a contemporary contrast between that form
+and a glide-bearing stem has been identified. This account is
+well motivated where both length and a glide need explaining,
+but it cannot be selected merely from an ordinary ⟨heg⟩.
+
+Substitution of the protected stem has the independent support
+of levelling in the class and gives the Anglian vowel and glide
+in one operation followed by regular sound changes. It also
+has two requirements not imposed by the spellings: a donor in
+the relevant period and the extension of its nucleus as well
+as its palatal segment. The attested datives show inflection
+but do not establish either requirement. The regular late
+derivation gives the same nucleus and glide without an English
+donor; its cost is different, namely the need to account
+for ungeminated continental comparanda under that chronology.
+
+For the earliest Anglian forms the most economical reading of
+the evidence is consequently that their *e* need not have
+been imported. The independently established direct history
+supplies it, and the spelling does not exclude short /ej/.
+This gives regular survival a positive historical basis,
+without placing it above contraction and limited restoration
+on evidence that the two hypotheses do not share. The more
+specific contraction parallel and the more familiar levelling
+mechanism do not establish their application in this noun
+any more than *clēa* establishes the conditioning of *hei*.
+There is no independently demonstrated need for whole-stem
+replacement in the earliest Anglian simplex.
+
+## 5.2 Farman and West Saxon
+
+Where Farman’s combination of ⟨oe⟩ and accent favours length,
+unlengthened /hej/ is a weaker account of his form. Contraction
+plus restoration and protected-stem transfer both explain
+length and a palatal; quantity, even if independently confirmed
+there, would not choose between them. The case for one or
+the other would have to rest on direct and protected alternants
+or a closer historical control. Farman does not supply a
+date by which contraction or transfer must have happened
+in Mercian generally.
 
 Secure West Saxon ⟨hig/hyg⟩ is better explained by borrowing
 protected vocalism under the early consonantal reconstruction.
@@ -507,58 +811,68 @@ rests on vowel quality, not on treating unassigned Eadwine
 
 # 6. Implications for West Germanic chronology
 
-If final \*-ą survived gemination and the stem contained
-consonantal \*wj, the direct singular and protected cells
-converged regularly: \*hawją → \*hawwją → \*hauj, with umlaut
-and the regular dialectal developments yielding conventional
-West Saxon *hīeġ* and Anglian *hēġ*. This history does not require
-English levelling but leaves ungeminated Old High German *hewi*
-to be explained. Dahl instead takes the pre-\*j sequence to be
+Dahl takes the pre-\emph{*j} sequence to be
 diphthongal, not consonantal *w*. His regular account of the
 vocalism is not the early hiatus derivation and explicitly
 requires restoration of final *ġ*. Ringe and Taylor allow a
-similarly shaped \*auj output from reversible gemination.
+similarly shaped \emph{*auj} output from reversible gemination.
 Convergence of these outputs does not establish that the inputs
 or intermediate stages were identical [@Dahl1938, pp. 81–86
 and ‘hay’ discussion; @RingeTaylor2014, pp. 44–53, 173].
 
-In *bedd*, *nett* and *cynn*, the medial geminate directly
-expresses the feature at issue: under early loss of the ending
-it needs an explanation other than regular gemination of the
-direct singular. Conversely, ungeminated *mene* ‘necklace’ and
-continental *peti/bedi*-type forms support early apocope where
-their identification as inherited direct forms can be defended
-[@Stiles2013, pp. 15–16; @Boutkan1995, pp. 435–436]. In ‘hay’,
-the sound changes and possible restoration after gemination
-erase that simple correspondence. Under early apocope one may
-account for the Anglian nucleus without replacing it, while
-the high West Saxon nucleus has a better protected-stem analysis.
-An analogy count that assigns ‘hay’ the same operation as
-‘bed’, or assumes a fixed balance between *mene* and *hay*
-under the two chronologies, is therefore not warranted.
+In *bedd* ‘bed’, *nett* ‘net’ and *cynn* ‘kin’, the geminate
+directly expresses the feature at issue: under early loss of
+the ending it needs an explanation other than regular
+gemination of the direct singular. The protected cells give
+a ready explanation by stem transfer; the late order predicts
+the geminate without that operation. Conversely, ungeminated
+*mene* ‘necklace’ and continental *beti*-type forms support
+early apocope insofar as they can be independently identified
+as inherited direct forms, rather than as the results of
+secondary phonological or morphological change
+[@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23;
+@Stiles2013, pp. 15–16; @Boutkan1995, pp. 435–436].
+
+‘Hay’ is not a simple counterpart to any one of these words.
+Resolution of the labial sequence makes the protected stem
+recognizable by its vocalism, not by a surviving geminate.
+The early direct history can produce the same mid vowel
+independently, and the glide is a separable historical
+question. Thus a direct form of ‘hay’ can be compatible
+with survival even where a direct *bedd* cannot be regular
+under the same order. That distinction weakens one objection
+to early apocope. It is not positive proof of early apocope
+in the word, since the spelling and the distribution of
+protected cells are also compatible with late apocope.
 
 # 7. Conclusion
 
-Early apocope and independently motivated phonology yield
-\*he.i. The evidence supports contraction of the same vowel
-sequence before a consonant and desyllabification of back vowels
-after *w*-loss, but neither establishes regular final /e.i/ >
-/ej/ or dates final contraction in Mercian. Ordinary ⟨heg⟩ does
-not independently identify hiatus or vowel length. Farman’s
-accents favour length in his gloss alone.
+Under early apocope, independently motivated changes lead to
+a direct singular \emph{*he.i} before any levelling. The Kentish
+compound, preferably ‘hay-road’, gives this prediction an
+exact early written counterpart. The Anglian direct forms
+give a different kind of support: their mid vowel is consistent
+with the inherited direct history, and their spelling does
+not itself establish the long quantity of the conventional
+reconstruction. Desyllabification offers a defensible account
+of regular survival; contraction plus restoration of the
+palatal offers an account of a long form that still preserves
+the inherited origin of the nucleus.
 
-Anglian ⟨heg⟩ consequently shows neither that the inherited
-direct form survived intact nor that its nucleus had to be
-replaced. Contraction followed by glide restoration is a narrower
-explanation with comparative support. Under early apocope the
-West Saxon high forms favour transfer of protected vocalism
-as well. The distinction limits the inference of obligatory
-levelling without turning the English spellings into independent
-evidence for either chronology.
+The difference between Anglian and West Saxon is therefore
+substantive. Under early loss, the West Saxon high vowels
+favour transfer of protected vocalism, whereas no such
+transfer is required by the earliest Anglian forms. Ringe
+and Taylor’s replacement of \emph{*hæwi} by \emph{*hēaj} is a possible
+history, not a uniform consequence of the record. The
+chronological contribution of ‘hay’ lies in that asymmetry:
+the explanatory burden is separable into vowel and glide,
+unlike the replacement needed to supply the geminate of
+‘bed’ on the early order.
 
 # Appendix A. Parallel Psalter readings
 
-Table 5 gives the corresponding readings, including dependent
+Table 7 gives the corresponding readings, including dependent
 witnesses. The verse numbering follows the respective editions;
 Salisbury’s 104:34 corresponds to 104:35 in the other glosses.
 Roman numerals in the date column describe the English gloss

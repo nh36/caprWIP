@@ -1,5 +1,11 @@
 # Competing derivations of OE 'hay' (artifact E)
 
+> **Current trace and interpretation:** `RESEARCH_MEMO_CYCLE12.md`
+> verifies both direct and protected histories from the adoption capture.
+> `ARGUMENT_CYCLE12.md` distinguishes the stage *he.i* from its two
+> possible Anglian continuations. The Cycle 8 labels below are archival,
+> including the unsupported rejection of *w*-loss.
+
 > **Cycle 10:** Early apocope regularly gives \*hawi → \*hæwi →
 > \*hewi → \*he.i. The recorded \*hē is conditional on contraction;
 > its date is not established in final position. The alternative

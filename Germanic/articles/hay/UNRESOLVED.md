@@ -1,6 +1,30 @@
 # Hay research unresolved evidence
 
-## Current status after Cycle 11
+## Current status after Cycle 12
+
+- The frozen direct histories end in \*hei (/he.i/) and \*hīeġ
+  (long nucleus plus /j/); neither should be assigned to an attestation
+  merely on orthographic grounds. Ringe and Taylor substitute protected
+  \*hēaj for direct \*hæwi before i-umlaut of the diphthong.
+- The exact ⟨hei⟩ in S 1196 corresponds to the early direct prediction
+  on the preferred ‘hay-road’ reading. A mid-vowel protected reflex plus
+  Kentish glide notation also fits. No further early exact spelling was
+  identified in the bounded review; Worcester is a later simplex.
+- The independent parallels jointly make /e.i/ > /ej/ a defensible
+  hypothesis. Its final conditioning and timing remain uncertain, as
+  does the timing of final contraction. Anglian ⟨heg⟩ is better read as
+  a palatal spelling than as retained hiatus; the early letters do not
+  distinguish short /ej/ from long /eːj/. Farman's evidence for length
+  remains local. The West Saxon high vowels are positive evidence for
+  considering protected vocalism if apocope was early.
+- The unchanged census establishes overt datives but not the prehistoric
+  donor or direction of transfer. No minimum analogical operation can
+  be demonstrated for the earliest Anglian forms. If contraction and a
+  final glide are assumed, restoring the glide alone suffices.
+
+See `ARGUMENT_CYCLE12.md` and `RESEARCH_MEMO_CYCLE12.md`.
+
+## Assessment after Cycle 11
 
 - Early apocope yields hiatus; the date of word-final /e.i/ contraction
   is open. A regular /e.i/ → /ej/ and ⟨eg⟩ as a hiatus spelling lack

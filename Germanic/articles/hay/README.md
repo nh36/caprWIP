@@ -1,18 +1,20 @@
 # Old English ‘hay’ article
 
-**Status:** Cycle 11 distinguishes nonfinal /e.i/ contraction from the
-unresolved word-final chronology, and documents structural parallels
-that do not establish regular final /e.i/ > /ej/. Vespasian ⟨heg⟩
-does not prove survival without analogy or wholesale stem replacement.
-Consonant restoration after contraction is a narrower Anglian
-alternative; West Saxon high vowels favour protected vocalism.
+**Status:** Under early apocope, the inherited direct singular regularly
+reaches \*he.i. Kentish *heiweg*, preferably ‘hay-road’, supplies an
+exact early written counterpart, not a demonstration of hiatus or
+inherited direct case. The earliest Anglian spellings permit short
+/hej/; contraction and glide restoration would also preserve the
+origin of the nucleus. West Saxon high vowels give separate positive
+grounds for protected vocalism under early apocope.
 
 ## Entry points
 
-1. [`ARGUMENT_CYCLE11.md`](ARGUMENT_CYCLE11.md) gives the propositions
-   and adversarial assessment; [`RESEARCH_MEMO_CYCLE11.md`](RESEARCH_MEMO_CYCLE11.md)
-   records the new source collation, census, and limits of the results.
-   The Cycle 9 memorandum remains useful for the evidence for w-loss.
+1. [`ARGUMENT_CYCLE12.md`](ARGUMENT_CYCLE12.md) gives the evidence,
+   component arguments, competing histories and adversarial review.
+   [`OUTLINE_CYCLE12.md`](OUTLINE_CYCLE12.md) maps them to the article.
+   [`RESEARCH_MEMO_CYCLE12.md`](RESEARCH_MEMO_CYCLE12.md) records the
+   frozen traces, original-source verification, and bounded spelling search.
 2. [`DRAFT.md`](DRAFT.md) is the current, self-contained article.
    The built PDF is committed at [`hay-article.pdf`](hay-article.pdf).
 3. [`MORPHOLOGICAL_CONCORDANCE.tsv`](MORPHOLOGICAL_CONCORDANCE.tsv) records
@@ -25,7 +27,7 @@ alternative; West Saxon high vowels favour protected vocalism.
 
 ## Current assessments versus historical conclusions
 
-Use the Cycle 11 memo and the **Current status after Cycle 11** section at
+Use the Cycle 12 memo and the **Current status after Cycle 12** section at
 the top of [`UNRESOLVED.md`](UNRESOLVED.md) for present assessments.
 Earlier cycle memos (including `RESEARCH_MEMO_CYCLE8.md`, now flagged as
 superseded) preserve the research history; they are not current verdicts.
@@ -41,7 +43,8 @@ In particular:
 - The Eadwine ⟨hieg⟩ readings remain directly verified but dialectally
   unassigned; normalized *hīeġ* is not a manuscript reading.
 - ‘Hay-road’ has a provisional evidential advantage for S 1196
-  *heiweg*. No hypothesis about a Kentish simplex paradigm follows.
+  *heiweg*. The exact ⟨hei⟩ is historically significant even though
+  neither the inherited simplex paradigm nor the quantity follows.
 - Farman sensitivity counts: use the cycle-7 6/147 figures,
   `FARMAN_ACCENT_CALIBRATION.tsv` and `calibrate_farman_accents.py`.
 
