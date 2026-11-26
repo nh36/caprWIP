@@ -368,7 +368,7 @@ in the ninth-century Mercian gloss of the Vespasian Psalter. It has
 eleven instances of endingless *heg* in the Psalms and one in the
 canticles. Four Psalm occurrences are secure direct objects
 (103:14, 104:35, 105:20, 146:8). In *forð gelædes heg neatum*
-‘brings forth hay for cattle’ (103:14), for example, *heg* is
+‘you bring forth hay for cattle’ (103:14), for example, *heg* is
 the thing brought forth [@Stevenson1843VP; @Kuhn1965VP]. The
 Old English Bede gives independent accusative evidence: in
 *on sumera heg ne māweþ* ‘does not mow hay in summer’, *heg*
