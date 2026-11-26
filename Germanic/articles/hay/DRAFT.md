@@ -62,7 +62,7 @@ account makes the latter secondary rather than inherited
 without gemination (Section 6)
 [@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23;
 @Boutkan1995, pp. 211–213, 435–436; @Stiles2013, pp. 15–16;
-@Krapp1932PPs, Ps 40:3; *Beowulf*, lines 1240, 1791].
+@Thorpe1835Paris, p. 99, Ps 40:3; *Beowulf*, lines 1240, 1791].
 
 <!-- P-hay-predictions -->
 
