@@ -16,6 +16,7 @@ PLAN = "PARAGRAPH_PLAN.md"
 APPARATUS = "SCHOLARLY_APPARATUS.md"
 DRAFT = "DRAFT.md"
 IMPLEMENTED = {
+    "R0": None,
     "R1": ("## 1.1 The chronological test", "## 1.2 The two regular derivations"),
     "R2": ("## 1.2 The two regular derivations", "# 2. The Old English attestations"),
     "R3": ("## 2.1 *Cyniges heiweg*", "## 2.2 Simplex forms"),
@@ -26,6 +27,20 @@ IMPLEMENTED = {
     "R8": ("# 5. The interpretation of the Old English forms", "# Appendix A. Parallel Psalter readings"),
 }
 ANCHOR = re.compile(r"^<!-- (pending:)?(P-[a-z-]+) -->$", re.MULTILINE)
+ABSTRACT = re.compile(r"^abstract: \|\n(?:^  [^\n]*\n)+", re.MULTILINE)
+
+
+def abstract_bounds(text):
+    fields = text.split("---\n", 2)
+    if len(fields) != 3 or fields[0]:
+        raise ValueError(f"{DRAFT}: expected YAML front matter")
+    header = fields[1]
+    matches = list(ABSTRACT.finditer(header))
+    if (len(matches) != 1 or len(re.findall(r"^abstract:", header, re.MULTILINE)) != 1
+            or not matches[0][0].partition("\n")[2].strip()
+            or "<!--" in matches[0][0]):
+        raise ValueError(f"{DRAFT}: expected one nonempty literal abstract for P-abstract")
+    return matches[0].start() + 4, matches[0].end() + 4
 
 
 def rows(text, pattern, width):
@@ -171,6 +186,10 @@ def section_bounds(text, start, end):
 def without_scope(text, scope, paragraphs):
     ranges = []
     for block, boundaries in IMPLEMENTED.items():
+        if block == "R0":
+            if block in scope or "P-abstract" in scope:
+                ranges.append(abstract_bounds(text))
+            continue
         start, end = section_bounds(text, *boundaries)
         if block in scope:
             ranges.append((start, end))
@@ -190,9 +209,14 @@ def without_scope(text, scope, paragraphs):
 
 
 def check_article(text, paragraphs, baseline=None, scope=(), complete=()):
+    abstract_bounds(text)
+    if [key for key, cells in paragraphs.items() if cells[0] == "R0"] != ["P-abstract"]:
+        raise ValueError(f"{DRAFT}: R0 must map to P-abstract")
     expected = []
     pending = []
     for block, boundaries in IMPLEMENTED.items():
+        if block == "R0":
+            continue
         start, end = section_bounds(text, *boundaries)
         planned = [key for key, cells in paragraphs.items() if cells[0] == block]
         found = ANCHOR.findall(text[start:end])
@@ -224,7 +248,7 @@ def check_article(text, paragraphs, baseline=None, scope=(), complete=()):
         new = re.search(table, text, re.MULTILINE)
         if not old or not new or old[0] != new[0]:
             raise ValueError(f"{DRAFT}: frozen derivation table changed")
-    return len(expected) - len(pending), pending
+    return 1 + len(expected) - len(pending), pending
 
 
 def trace(key, claims, deps, blocks, paragraphs, apparatus, loci):

@@ -1,17 +1,26 @@
 ---
 title: "Old English ‘hay’ and the scope of paradigmatic levelling"
 abstract: |
-  Early nasal apocope gives the inherited nominative–accusative singular
-  of ‘hay’ an ungeminated history reaching disyllabic \emph{*he.i} after
-  loss of *w*; later apocope predicts the long nucleus and palatal glide of conventional
-  West Saxon *hīeġ*. Ninth-century Kentish *heiweg*, preferably
-  ‘hay-road’, supplies an exact written counterpart to the first
-  prediction, while early Anglian *heg* does not establish vowel
-  length. The Anglian mid vowel can continue the inherited direct
-  nucleus even if the final glide was restored. West Saxon high
-  vocalism, by contrast, favours the protected stem if apocope was
-  early. ‘Hay’ therefore does not impose the same analogical burden
-  as light neuters with a directly attested geminate, such as ‘bed’.
+  Whether West Germanic gemination preceded nasal apocope determines
+  whether light neuter ja-stems geminated in the direct singular.
+  Potentially inherited continental singleton forms of ‘bed’ favour
+  considering early loss, but ‘hay’ appears to require an additional
+  analogy on that order. Late loss gives a protected-type stem
+  regularly; under early loss, Ringe and Taylor (2014) obtain it by
+  substituting the protected stem before i-umlaut, accounting for
+  both Anglian and West Saxon. Without substitution, regular
+  development reaches \emph{*he.i} at hiatus. The ninth-century
+  Kentish compound *heiweg*, absent from their principal discussions
+  of ‘hay’, is preferably read as ‘hay-road’. Its first member matches
+  that prediction in writing, not necessarily in pronunciation or
+  ancestry. Phonological parallels motivate desyllabification, which
+  would preserve both inherited components, or contraction with
+  secondary palatal supply, which would preserve only the source of
+  the vowel. Neither continuation is established for ‘hay’. West
+  Saxon high vocalism favours a protected source under early loss,
+  but the earliest Anglian evidence does not require one. The
+  possibility of entirely regular survival remains open, and the
+  apparent additional objection to early apocope is diminished.
 bibliography: ["../../../docs/refs.bib", "article_refs.bib"]
 reference-section-title: "References"
 header-includes:
