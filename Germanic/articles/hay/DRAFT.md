@@ -797,7 +797,7 @@ The resolution of /i.e/ likewise gives no precedent for raising
 in the reverse sequence /e.i/. Umlaut of an earlier diphthong,
 by contrast, has an independently motivated input in the
 protected stem, though not in either direct mid-vowel history
-[@Hogg2006, p. 400; @HoggGrammar1992, §§5.49, 5.53, 5.82–84, 5.146–147].
+[@Hogg2006, p. 400; @HoggGrammar1992, §5.163 and §§5.49, 5.53, 5.82–84, 5.146–147].
 Under early apocope, protected vocalism therefore has a better
 historical basis for West Saxon than a raising process for
 which there is no comparable evidence. The two Eadwine spellings
@@ -849,12 +849,11 @@ his own gloss, not in Vespasian or Anglian generally. Contraction
 can account for an inherited long mid vowel if a secondary
 palatal was supplied; transfer from a protected stem can
 account for the same Anglian outcome and has positive support
-from the high West Saxon vowel under early apocope. Quantity
-cannot choose between the long-vowel histories. That choice
-requires independent evidence from the paradigm: which cells
-could have provided a donor, which stems the attested cells
-actually distinguish, and what would favour extension of an
-entire stem rather than restoration of its consonant alone.
+from the high West Saxon vowel under early apocope. Since the
+available quantity evidence cannot distinguish the two
+long-vowel histories, the next question is what independent
+grounds the noun’s morphology provides for transferring a
+stem or supplying the palatal alone.
 
 # 4. Historical morphology
 
