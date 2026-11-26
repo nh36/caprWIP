@@ -72,6 +72,7 @@ that repository, copy writings, or transform any published passage.
 | D-hiatus | Authorized in Cycle 18 against `177dc5a9` | Correct the Vespasian translation separately, relocate nonquantitative spelling evidence, then implement R5 in three pushed pairs. Preserve R6 and the frozen record. |
 | D-quantity | Implemented in Cycle 19; Increment A reviewed at `f1271db1` | Qualify the R5 ‘strew’ evidence separately, then distinguish quantity from regional vowel quality in R6. No new historical verdict, calibration run, or changes to the frozen derivations, Table 4 cells or the census. R7 and later blocks remain outside scope. |
 | D-morphology | Implemented in Cycle 20 against `30a73f51` | Verify Hogg's R6 citation and qualify its transition; stage and develop R7 in four increments. Relocate the continental paragraph verbatim without implementing R8. Preserve all table cells, counts, frozen derivations and production inputs. |
+| D-synthesis | Implemented in Cycle 21 against `c326fe7c` | Correct the R7 comparison and notation separately; stage R8 and compare H1–H5 in three increments. Explain the regional and continental evidence and return to the ‘bed’ contrast. Preserve the abstract, appendix, all table cells, census and frozen models. |
 
 **Editorial review of D-introduction:** The direct geminate in ‘bed’
 now explains why analogy is at issue before any spellings of ‘hay’
@@ -173,3 +174,51 @@ nor Wright establishes an accessible donor that actually supplied
 the Anglian palatal. E33 and E34 remain necessary and unestablished.
 There is no change to the historical verdict, the frozen models,
 production inputs, or certification.
+
+**Cycle 21 checkpoints:** `4a912649` clarifies the structural comparison
+with ‘glee’ and marks the reconstructed intermediate; `7e9cd58c` stages
+R8 without changing prose. `586133bd` tests the competing Anglian
+histories, `0a0cbd97` weighs regional and continental evidence, and
+`6adee0ce` gives the chronological implications and conclusion.
+`0ac98762` clarifies the phrasing of Boutkan's stem history and Dahl's
+distinction between his general proposal and the printed derivation.
+These checkpoints are source-only and were built and checked for scope
+against their immediate parents. The publication commit carries the
+visually inspected, matching 20-page PDF. Closeout confirms complete
+R8 coverage, unchanged tables and protected prose, rejection of an
+unauthorized earlier edit and incomplete R8, and no printed anchors
+or unresolved internal references.
+
+**Cycle 21 historical review (article only):** The introduction asks
+whether the direct stem survived without analogy. The synthesis
+distinguishes that open question (C11) from the defensible alternative
+to obligatory vowel replacement (C10) and the resulting difference
+in explanatory burden from ‘bed’ (C09, with E20). The charter supplies
+a written match, not a pronunciation or ancestry test. The simplex
+comparison stands independently. After rereading the complete article,
+retain the distinct predictions and both directions of levelling;
+defer actual survival, either premise of H2, and the general chronology.
+Ringe and Taylor (2014: 44–53, 173), Boutkan (1995: 211–213,
+435–436), Dahl (1938: 81–86, 97), Stiles (2013: 15–16), and
+Hogg and Fulk (2011: §2.23) clarify the competing proposals without
+changing the assessment. Dahl's different input (E30) is not the
+consonantal starting point of the frozen comparison. There is no
+new registry verdict, executable diagnosis, chronology edge,
+experiment, or production baseline change.
+
+| Fault test | What changes and what survives |
+|---|---|
+| Reverse the charter reading | Lose the written match for ‘hay’ (C05); independent direct simplex attestations and the case for C10 remain. |
+| Reject final desyllabification | Lose H1 and the corresponding case for C11; retained hiatus lacks a secure spelling basis. H2 can still support C10 if both premises are defensible. |
+| Reject final contraction | E33 fails, so H2 fails even if palatal supply is plausible. H1 remains separately testable. |
+| Reject accessible and actual secondary palatal supply | E34 fails, so H2 cannot account for the glide even if final contraction occurred. H1 remains separately testable. |
+| Weaken Farman's length inference | Lose the local preference for long-vowel histories; early Anglian quantity and the question of vowel ancestry remain open. |
+| Motivate another source of West Saxon high vowels | Reduce the advantage of protected vocalism there; neither the high-vowel evidence nor the independent Anglian argument is lost. |
+| Reject the direction inferred from Ball and Stiles | Weaken the mass-noun argument for outward levelling; the attested cells, competing donor possibilities, and phonological alternatives survive. |
+| Show the continental ungeminated forms to be secondary | Lose their argument against late apocope, not the English comparison between the Anglian vowel and the surviving geminate of ‘bed’. |
+
+If both H1 and H2 fail, withdraw the positive alternative under C10
+and narrow C09 to the difference in regular predictions. The written
+findings, the derivation to hiatus under the specified input and order,
+and the limits of quantity and morphology remain. E33 and E34 are
+independently necessary and neither is established.
