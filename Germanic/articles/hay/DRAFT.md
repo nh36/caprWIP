@@ -1136,6 +1136,8 @@ weighing these histories against the spelling and phonology.
 
 ## 5.1 Earliest Anglian and Kentish evidence
 
+<!-- pending:P-compare-forms -->
+
 The two earliest written points of comparison have different
 strengths. Kentish ⟨hei⟩, on the ‘hay-road’ reading, shows
 the early sequence of letters but not its quantity or
@@ -1180,6 +1182,8 @@ derivation gives the same nucleus and glide without an English
 donor; its cost is different, namely the need to account
 for ungeminated continental comparanda under that chronology.
 
+<!-- pending:P-compare-failure -->
+
 Rejecting final desyllabification would eliminate the
 analogy-free account proposed here, not the inherited
 source of the mid vowel. The nonfinal contraction parallels
@@ -1194,6 +1198,8 @@ Together they make importing the protected vowel unnecessary
 to account for the earliest Anglian forms.
 
 ## 5.2 Farman and West Saxon
+
+<!-- pending:P-compare-regions -->
 
 Where Farman’s combination of ⟨oe⟩ and accent favours length,
 unlengthened /hej/ is a weaker account of his form. Contraction
@@ -1220,6 +1226,8 @@ rests on vowel quality, not on treating unassigned Eadwine
 
 # 6. Implications for West Germanic chronology
 
+<!-- pending:P-compare-continental -->
+
 Old High German *hewi/houwi* and Middle Dutch *hoye/houwe* are
 documented doublets. Ringe and Taylor identify *hewi* as the inherited
 direct singular and *houwi* as the generalized protected stem. A
@@ -1240,6 +1248,8 @@ similarly shaped \emph{*auj} output from reversible gemination.
 Convergence of these outputs does not establish that the inputs
 or intermediate stages were identical [@Dahl1938, pp. 81–86
 and ‘hay’ discussion; @RingeTaylor2014, pp. 44–53, 173].
+
+<!-- pending:P-compare-bed -->
 
 In *bedd* ‘bed’, *nett* ‘net’ and *cynn* ‘kin’, the geminate
 directly expresses the feature at issue: under early loss of
@@ -1267,6 +1277,8 @@ in the word, since the spelling and the distribution of
 protected cells are also compatible with late apocope.
 
 # 7. Conclusion
+
+<!-- pending:P-conclusion -->
 
 Early apocope does not require the earliest Anglian forms
 of ‘hay’ to borrow their vocalism. Regular development
