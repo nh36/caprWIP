@@ -70,6 +70,7 @@ that repository, copy writings, or transform any published passage.
 | D-charter | Authorized in Cycle 16 against `a81760edf7110b8ea6fde2e8568e6388f6fa49d3` | R1–R2 provisionally approved and protected. Move simplex behind charter without rewriting; consolidate the charter and composition passages, then implement the eight R3 units as four separately validated and pushed pairs. No new historical verdict. Each checkpoint records its parent and scope in its commit. |
 | D-simplex | Implemented in Cycle 17 against `4237e0ea` | R3 approved subject to three scoped corrections. In R4, distinguish secure case assignments, regional written targets, and Eadwine's observed readings from conventional normalization. Preserve Table 2, Appendix A, the census and historical assessments. R5 remains outside scope. |
 | D-hiatus | Authorized in Cycle 18 against `177dc5a9` | Correct the Vespasian translation separately, relocate nonquantitative spelling evidence, then implement R5 in three pushed pairs. Preserve R6 and the frozen record. |
+| D-quantity | Implemented in Cycle 19; Increment A reviewed at `f1271db1` | Qualify the R5 ‘strew’ evidence separately, then distinguish quantity from regional vowel quality in R6. No new historical verdict, calibration run, or changes to the frozen derivations, Table 4 cells or the census. R7 and later blocks remain outside scope. |
 
 **Editorial review of D-introduction:** The direct geminate in ‘bed’
 now explains why analogy is at issue before any spellings of ‘hay’
@@ -129,3 +130,24 @@ in final /e.i/. No new SC, executable diagnosis, registry verdict,
 chronology edge, new experiment or baseline change was warranted.
 The production book and scientific graph do not consume this standalone
 article; validation concerns the scoped source and standalone publication.
+
+**Cycle 19 checkpoints:** `75cae3bb` qualified the early ‘strew’ glosses
+and connected the contraction discussion to the later ‘glee’ comparison;
+`436d48d7` staged R6 without changing prose. `f1271db1` implemented the
+quantity test and Farman discussion; `a3097ef8` clarified that the short
+controls are classified historically, not from observed synchronic
+quantity. `52ab91ae` distinguished West Saxon high vocalism and tested the
+metrical and later evidence before turning to the question of levelling.
+All five were source-only and individually checked against their parent
+and built. Closeout requires complete R6 coverage, a cumulative scope
+check, rejection of an unauthorized earlier edit and pending R6 coverage,
+and visual inspection of the standalone PDF in the publication commit.
+
+**Cycle 19 historical review (article only):** Retain both short and long
+mid vowels as possibilities for the earliest Anglian forms. Farman favours
+length locally, and West Saxon quality favours protected vocalism under
+early apocope without determining the Anglian source or the operation of
+transfer. The bounded source checks refine the status of the disputed
+R5 glosses and the assumptions of the Paris scansions without changing
+the historical assessment. No production inputs or scientific
+certification are involved.
