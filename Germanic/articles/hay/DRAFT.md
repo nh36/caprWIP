@@ -983,17 +983,16 @@ apocope. Its survival, the relative availability of its
 members and the direction of any remodelling are separate
 questions for the record.
 
-<!-- pending:P-morph-census -->
+<!-- P-morph-census -->
 
-The English record in Table 6 counts each occurrence in a distinct manuscript
-once, including dependent texts, but excludes two duplicate glossary
-editions and two editorially supplied Vitellius readings. Apart
-from the three *hege* datives, every included form is endingless.
-There is no secure plural or genitive of the noun.
-The nominative and accusative singular have no overt forms in
-the corpus. Their earliest examples are already endingless, as the
-class predicts; there is no later overt form against which to count
-chronologically prior endingless occurrences.
+Table 6 asks which cells are actually attested and whether
+they distinguish the reconstructed stems. It counts each
+occurrence in a distinct manuscript once, including dependent
+texts, but excludes two duplicate glossary editions and two
+editorially supplied Vitellius readings. Only the three Paris
+datives have overt endings. The earliest secure direct forms
+are already endingless, as both histories predict; there is
+no secure genitive or plural in the surviving sample.
 
 | Syntactic classification | All | Verified | 9th–11th c. verified | Earliest secure dated verified witness |
 |----------------------|-------:|----------:|--------------:|--------------------------------------|
@@ -1007,64 +1006,71 @@ chronologically prior endingless occurrences.
 
 : Simplex occurrences by grammatical function. Verification comprises separate checks of editions, apparatus or manuscript images. Unverified readings and case assignments follow the corpus contexts in Appendix A.
 
-The inventory contains 57 corpus-indexed readings not separately
-verified and 66 verified occurrences, including 11 checked in
-manuscript images. Case is assignable in 51 occurrences, 36 of
-them verified. Grouping by glossing or textual witness rather than
-individual copies yields 24 distinguishable source groups overall
-and 19 in the verified set. The two John glosses count as one group;
-the Dialogues copies and the West Saxon Gospels copies also each
-count as one. The distinct Psalter glosses are listed separately,
-but their borrowings and shared exemplars preclude treating the
-24 groups as independent innovations.
+Of the 123 occurrences, 66 have been separately verified,
+including 60 in ninth- to eleventh-century witnesses and 11
+checked in manuscript images. The remaining 57 follow corpus
+contexts. Case is assignable in 51 occurrences: 47 direct
+singulars and four datives, of which 36 occurrences in all
+are verified. Grouping by gloss or text rather than by copy
+gives 24 distinguishable source groups, 19 in the verified
+set. The related John glosses count as one group, as do
+copies of the *Dialogues* and copies of the West Saxon
+Gospels. Even separately grouped Psalter glosses may share
+material through borrowing or transmission. These restricted
+contexts, many of them biblical glosses, do not provide a
+representative estimate of prehistoric case or stem frequency.
 
-In the Colloquy *mid* governs the dative. No secure endingless
-dative demonstrably predates the overt Paris forms: the Colloquy
-and Paris copy dates overlap, and Farman’s earlier *on hóeg* is
-not uniquely assignable. In Paris, *gelic* and *anlice* take a
-dative complement. In PPs 101:4 *þam þe* resumes *hege*; in PPs
-102:14 the noun agrees with *mawenum*. All three *hege* readings
-are unaccented in the images
-([f. 116r](https://gallica.bnf.fr/ark:/12148/btv1b8451636f/f241),
-[f. 116v](https://gallica.bnf.fr/ark:/12148/btv1b8451636f/f242),
-[f. 118v](https://gallica.bnf.fr/ark:/12148/btv1b8451636f/f246)).
-The Paris *hig* at 105:17 is an accusative governed by ‘eating’;
-the genitive marks the calf. Thorpe’s *ge corn ge hig … beon
-gehealdene* is the accusative subject of an infinitival clause
-after a verb of perception. His base manuscript D is CCCC 201,
-whose Theodulf section is mid-eleventh-century [@Thorpe1840Institutes,
-I, p. xxv; II, pp. 394 n. a, 406].
+The three Paris Psalter forms *hege* are important because
+they attest a dative with an ending. At Pss 101:4 and 101:9
+the noun is the complement of *gelic*, and at 102:14 of
+*anlice*. The readings are unaccented in the mid-eleventh-century
+copy, whose underlying verse need not be of that date
+[@Krapp1932PPs, pp. 72–75; @Fulk1992Meter, pp. 410–414].[^morph-case]
+By contrast, *mid hig* ‘with hay’ in the *Colloquy* is a
+dative by government but has no overt ending
+[@WrightWuelcker1884, I, col. 91]. Its manuscript date overlaps
+that of the Paris material, and the earlier *on hóeg* in
+Farman is not unambiguously dative (see the case note in Section 2.2).
+The evidence establishes both dative types, but not their
+order of appearance.
 
-The absence of an overt ending in the secure early direct forms
-does not identify the stem that they contain: both orders predict
-an endingless singular. By the eleventh century the record shows
-the noun with overt *-e* as well as an endingless dative. Wright’s
-normalized *hīeġes* and *hīeġe* are paradigm illustrations
-[@Wright1914, §270 and note]. The Paris forms independently
-demonstrate the dative function and its ending; they do not
-give the normalized high-vowel form. The genitive and direct
-plural predicted by the grammars have no secure manuscript
-counterparts here. Thus the attested paradigm contains less
-evidence for the prehistoric stem alternation than its handbook
-representation suggests, but more evidence for inflection than
-the isolated citation form would suggest.
+[^morph-case]: Paris, BnF lat. 8824: [f. 116r](https://gallica.bnf.fr/ark:/12148/btv1b8451636f/f241) (Ps 101:4, where dative *þam þe* resumes *hege*), [f. 116v](https://gallica.bnf.fr/ark:/12148/btv1b8451636f/f242) (101:9) and [f. 118v](https://gallica.bnf.fr/ark:/12148/btv1b8451636f/f246) (102:14, with agreeing dative *mawenum*). The *Colloquy* witness is London, British Library, Cotton Tiberius A.iii, ff. 60v–64v. Paris *hig* at 105:17, by contrast, is an accusative governed by ‘eating’; the genitive marks the calf. In Thorpe’s *ge corn ge hig … beon gehealdene*, ‘both grain and hay’ is the accusative subject of an infinitival clause after a verb of perception. Thorpe’s base manuscript D is Cambridge, Corpus Christi College 201, whose Theodulf section is mid-eleventh-century [@Thorpe1840Institutes, I, p. xxv; II, pp. 394 n. a, 406].
 
 ## 4.3 The scope of levelling and the comparison with ‘glee’
 
-<!-- pending:P-morph-scope -->
+<!-- P-morph-scope -->
 
-These are different operations. The inherited direct stem
-could survive without spreading; its vocalism could spread
-to a dative without eliminating *-e*; and an endingless dative
-such as *mid hig* could reflect loss of inflection without
-any prehistoric stem transfer. Neither *mid hig* nor the overt
-Paris *hege* distinguishes these histories. Conversely,
-Ringe and Taylor’s transfer replaces the vowel and palatal
-together, whereas an inherited contracted vowel would need
-only the palatal supplied. Wright’s secondary glide between
-vowels and its subsequent extension to the direct singular
-provides a precedent for separating the two, not a direct
-derivation of /j/ from short /e.i/ [@Wright1914, §§270, 357].
+Survival of the inherited direct stem need not entail its
+extension. If its vowel did spread to the inflected stem,
+the dative could still retain *-e*. Conversely, an endingless
+dative such as *mid hig* could arise by loss of the ending
+without borrowing a direct stem. Paris *hege* therefore
+attests inflection, but written ⟨e⟩ does not distinguish an
+inherited direct mid vowel from a mid-vowel reflex of the
+protected stem. Neither dative establishes the donor or the
+direction of levelling.
+
+Transfer into the direct singular can itself have different
+scopes. Ringe and Taylor’s pre-umlaut substitution brings
+the protected vowel and palatal in together. If the inherited
+direct vowel first contracted, by contrast, only the palatal
+would need to be supplied. Such an account needs a source of
+/j/ accessible after contraction in the variety concerned,
+and a reason for the consonant to spread without the vowel.
+Reconstructing a protected stem with /j/ is not sufficient.
+Wright proposes that a secondary glide formed between vowels
+in inflected forms and then spread to the direct singular in
+‘hay’ and ‘island’. This is a model for a limited transfer,
+not independent evidence that it happened in ‘hay’ or that
+a glide formed regularly from final /e.i/
+[@Wright1914, §270 and note, §357].
+
+The comparisons give reasons to consider either direction
+of levelling, but the reconstructed and attested cells do
+not tell us which way ‘hay’ was remodelled, if at all.
+The closely related ‘glee’ provides a further test of how
+far a comparison can support consonantal re-formation
+without replacement of the nucleus.
 
 <!-- pending:P-morph-glee -->
 
