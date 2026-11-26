@@ -213,3 +213,66 @@ Mercian.
 precedent, but no additional independent support for Vespasian
 shortness was found. The long normalization remains historically
 motivated, not an independent observation either.
+
+## R5. Dialect and chronology
+
+Hogg (2006: 397–399) takes Campbell's §256 definitions as
+agreements among texts, not territorial or synchronic identities.
+**Anglian** here means the overlapping Mercian and Northumbrian
+evidence; it does not include Kentish. **Non-West-Saxon** is the
+broader comparison. Hogg (402–404) uses Second Fronting to illustrate
+why Vespasian and Ru1 can be very different even if one locates both
+at Lichfield. His discussion of Aldred and Owun (405–406) similarly
+distinguishes shared phonology, scribal habits and provenance; the
+North/South geographical interpretation is not a premise here.
+
+| Witness | Compatible reading | Positive evidence and limits |
+|---|---|---|
+| Ninth-century Kentish S 1196, *heiweg* | If ‘hay-way’, the first member is compatible with inherited material or protected-type vocalism; compound position does not instantiate H1's word-final environment. | The letters give a real early comparison for A and, with same-hand *dei*, for a palatal spelling. Topography and later compounds motivate ‘hay-way’, but ‘high’ and enclosure-related interpretations and non-direct ancestry remain open (Lowe 76–78; Langlands 45–46, 109, 126; Cycle 5). |
+| Ninth-century Mercian Vespasian, *heg* | H1–H4 can account for the simplex mid-vowel spelling; H5 can allow early retention but does not require it. | Secure *faenum* alignment and bare direct forms establish the lexical and grammatical comparison. Short *weg* and *deg* show compatibility with a short vowel, but the missing matched long panel and non-diagnostic metre leave quantity open (Sweet 207, 263, 335; R3). |
+| Late tenth-century Northumbrian Aldred, *heg/heig* | H1–H4 remain compatible with the ordinary spelling contrast; H5 does not follow from the extra vowel letter. | Separate edition-verified spellings of the same lexeme give direct evidence of graphic variation. Jones's breaking is possible but does not supply independently short input. Ritt does not make the absence of an acute a short-vowel diagnostic (R3–R4). |
+| Late tenth-century Northumbrian Owun, *heg* | Same quantity alternatives as Aldred, not an independent repetition of a phonological event. | Jn 6:10 gives a genuinely different written choice within the same gloss tradition. Direct copying from the extant Lindisfarne MS is not necessary; a close exemplar or intermediaries suffice (Kotake 2016: 377–396, especially 381–382; Skeat 1878: 55). |
+| Late tenth-century Mercian Farman, *hóeg* | H2–H4 accommodate length; bare H1 would predict shortness and is locally disfavoured, not excluded by the current evidence. H5 could permit a changed outcome. | Two repeated spellings in Farman's independent Matthew gloss favour length locally. His practice has no matched long monosyllabic final-/j/ control; the spelling does not establish rooting in a particular stem (Tamoto 19, 47; R3). |
+| West Saxon *hig/hyg* | H3 or H4 gives an independently motivated source of a high vowel. H5 allows this alongside a retained Anglian nucleus. | High spellings in Mk 6:39 and Lambeth Ps 101:5 contradict unchanged inherited mid vocalism as their explanation, not early apocope itself. Neither the spelling nor this contrast measures length or identifies a specific levelling event. Eadwine *hieg* is a distinct, later, dialectally unassigned witness. |
+
+**Farman's ⟨oe⟩.** Kuhn (1945: 646) gives *oele* from a short
+loan vowel, with possible Northumbrian influence. His treatment of
+the *au*-umlaut set (660–661) and unrounding despite ⟨oe⟩ (666–667)
+shows why actual rounding is not forced. Compare the *hēran* class
+(*gehóerde*) and words of inherited rounded-umlaut origin in
+[the Gospel dossier](../LINDISFARNE_EVIDENCE.md). These parallels
+give a reason to consider *hóeg* part of the scribal *ē/œ̄*
+interchange; they are not a second independent quantity measurement.
+An inherited direct /e/ in H1 has no independent demonstrated route
+to a rounded vowel here. H2 would provide a contracted /eː/; Kuhn's
+*edes* (661) supports contraction after *w*-loss elsewhere in this
+very gloss, though nonfinally and without ⟨oe⟩. H3/H4 supply the
+*au*-umlaut type directly, giving a closer **etymological parallel**
+than H1. But an inverted spelling of /eː/ does not require that
+ancestry, and actual rounding plus its conditioning is not established.
+Thus the digraph is informative about a spelling class without
+independently preferring a protected source over H2. Treating the
+acute and digraph as independent votes would overstate the evidence.
+
+If Farman's vowel were proved long:
+
+1. Uniform shortness across Anglian would be contradicted, as would
+   H1 as the unchanged endpoint in this gloss.
+2. Shortness in some early Anglian witnesses would remain possible.
+3. Vespasian's regular survival would remain possible, not demonstrated;
+   a common label supplies neither quantity nor continuity.
+4. Kentish *hei-* could still continue inherited material; Farman
+   neither identifies the charter lexeme nor determines its stem.
+5. A uniform unchanged **short outcome** in tenth-century Anglian
+   would fail. A shared **historical stem** would not thereby fail:
+   the other vowels might be long too, or might share ancestry despite
+   later differences. A particular later lengthening or transfer is
+   not shown.
+
+**Assessment.** Regional or chronological differentiation under a
+common early order (H5) is a viable historical framework. The West
+Saxon contrast gives it a genuine reason to be considered, and
+Farman warns against uniformity. Neither demonstrates when or where
+an Anglian short vowel survived, or the timing and direction of
+any subsequent levelling. No historical assessment is changed by
+collapsing these witnesses into a single dialect average.
