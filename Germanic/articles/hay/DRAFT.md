@@ -682,6 +682,8 @@ metrical evidence establish such a distinction?
 
 ## 3.3 Orthography and vowel quantity
 
+<!-- pending:P-quantity-test -->
+
 The relevant contrasts are /he.i/ with a short stressed vowel
 and two syllables, /hej/ with a short nucleus and a glide,
 conventional Anglian /heːj/, and the conventional West Saxon
@@ -698,6 +700,8 @@ quantity marker. West Saxon ⟨hig/hyg⟩ indicates high vocalism, not
 its length. The West Saxon ⟨ie⟩ of the conventional reconstruction
 must not be treated as an observed spelling in an early West Saxon
 manuscript. The Eadwine readings do not independently supply one.
+
+<!-- pending:P-quantity-farman -->
 
 Farman provides more specific evidence. Three editions print
 an acute in both instances of *hóeg* [@KembleHardwick1858,
@@ -744,6 +748,10 @@ not have the same evidential value. The positive inference from
 Farman’s two spellings weighs against unlengthened /hej/ for his
 gloss; unmarked Vespasian ⟨heg⟩ neither extends the inference
 backwards nor proves shortness.
+
+<!-- pending:P-quantity-quality -->
+
+<!-- pending:P-quantity-close -->
 
 The metrical evidence does not settle the issue. If the written
 direct forms are monosyllables closed by /j/, both vowel quantities
