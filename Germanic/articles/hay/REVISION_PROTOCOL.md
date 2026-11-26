@@ -111,3 +111,21 @@ gloss leaves E14's evidence for nonfinal contraction before a dental
 unchanged. Pheifer §59.2 n. 1 and Hogg §5.133 n. 2 also allow an
 alternative lexical identification for the early ‘strew’ glosses;
 the prose now makes those spellings conditional evidence for E11.
+
+**Cycle 18 checkpoints:** `aa908fea` corrected the translation;
+`c8fc3781` relocated the nonquantitative spelling discussion and staged
+the anchors; `4c8764fc`, `e7644250` and `28f0e780` implemented the three
+R5 pairs. All five were source-only; the publication commit carries the
+matching PDF. The closeout compares each unit against its immediate
+parent, verifies the relocation separately by conserving the moved
+words and preserving the quantitative tail byte for byte, and requires
+complete R5 coverage.
+
+**Historical review (article only):** RETAIN the conditional derivation
+to hiatus; DEFER a decision between final desyllabification and contraction,
+and between secondary supply and protected-stem substitution. The
+comparisons support distinct mechanisms but do not date their operation
+in final /e.i/. No new SC, executable diagnosis, registry verdict,
+chronology edge, new experiment or baseline change was warranted.
+The production book and scientific graph do not consume this standalone
+article; validation concerns the scoped source and standalone publication.

@@ -1,6 +1,6 @@
 # Approved reader sequence
 
-Approved in principle; R1–R4 are implemented through Cycle 17 (see the
+Approved in principle; R1–R5 are implemented through Cycle 18 (see the
 [decision record](REVISION_PROTOCOL.md#decision-record)). The
 [historical model](ARGUMENT_CYCLE13.md) orders reasons;
 the [thesis](THESIS.md) fixes their force. This document orders what
