@@ -1009,9 +1009,9 @@ no secure genitive or plural in the surviving sample.
 Of the 123 occurrences, 66 have been separately verified,
 including 60 in ninth- to eleventh-century witnesses and 11
 checked in manuscript images. The remaining 57 follow corpus
-contexts. Case is assignable in 51 occurrences: 47 direct
-singulars and four datives, of which 36 occurrences in all
-are verified. Grouping by gloss or text rather than by copy
+contexts. Of the 51 case-assigned occurrences, 47 are direct
+singulars and four are datives; 36 of the 51 have been
+separately verified. Grouping by gloss or text rather than by copy
 gives 24 distinguishable source groups, 19 in the verified
 set. The related John glosses count as one group, as do
 copies of the *Dialogues* and copies of the West Saxon
