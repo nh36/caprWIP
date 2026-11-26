@@ -22,6 +22,7 @@ IMPLEMENTED = {
     "R4": ("## 2.2 Simplex forms", "# 3. Historical phonology"),
     "R5": ("# 3. Historical phonology", "## 3.3 Orthography and vowel quantity"),
     "R6": ("## 3.3 Orthography and vowel quantity", "# 4. Historical morphology"),
+    "R7": ("# 4. Historical morphology", "# 5. The interpretation of the Old English forms"),
 }
 ANCHOR = re.compile(r"^<!-- (pending:)?(P-[a-z-]+) -->$", re.MULTILINE)
 

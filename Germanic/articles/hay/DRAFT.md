@@ -857,7 +857,72 @@ stem or supplying the palatal alone.
 
 # 4. Historical morphology
 
-## 4.1 Grammatical cells
+## 4.1 Competing directions of levelling
+
+<!-- pending:P-morph-question -->
+
+The protected genitive or dative could supply a stem even if
+‘hay’ was seldom plural. The same stem in several grammatical
+cells and pressure from uniform paradigms of other ja-stems
+give reasons for extending it to the direct singular. But
+related ja-stems show levelling in both directions
+[@Hogg1979Analogy, pp. 68–73]. A protected stem in the
+reconstruction does not tell us which alternant speakers
+used as the basis for remodelling.
+
+<!-- pending:P-morph-yellow -->
+
+Ball and Stiles’s comparison of ‘yellow’ and ‘meal, flour’
+shows what a directional argument would involve. They derive
+the broken stem \emph{*geolw-} from \emph{*gelw-} in inflected
+forms, including the weak adjective. The direct form
+\emph{*gelu} lacked the \emph{*lw} cluster. Early glossary
+forms still show the direct monophthong; later Anglian
+back-mutation could give *geolu* without levelling. In West
+Saxon, where they expect an unremodelled \emph{*gielu} by
+palatal diphthongization, they infer instead the extension of
+the broken stem, probably before i-mutation
+[@BallStiles1983, pp. 15–18 §§4.2–4.3].
+
+<!-- pending:P-morph-meal -->
+
+For ‘meal’ the recorded variants include *melu* beside
+*meolu* and *melwes* beside *meolwes*. In Ball and Stiles’s
+account, breaking regularly gives \emph{*meolw-} in the
+inflected stem, while \emph{*melu} escapes breaking and can
+later give *meolu* by back-mutation. Between these changes,
+they propose that the more frequent direct \emph{*melu} of
+the uncountable noun supplied its vowel to new inflected
+\emph{*melw-} forms. Those inflected by-forms in turn
+supported the direct monophthong against the new *meolu*.
+They interpret the inflected *smer(u)w-* forms of ‘fat’,
+including early Épinal–Érfurt datives, in the same way:
+direct vocalism replaced the breaking diphthong before
+back-mutation. ‘Tar’ limits the comparison. They find early
+direct *teru/tero* but no inflected *terw-*; the reported
+genitive plural *teorwena* may reflect different usage,
+though the distribution could also reflect transmission
+[@BallStiles1983, pp. 18–19 §4.3 and n. 18].
+
+‘Meal’ and ‘fat’ have *wa*-stems and actual monophthongal
+inflected variants. ‘Hay’ has neither that structural
+alternation nor diagnostic vocalism in its recorded datives.
+Ball and Stiles’s frequency explanation is inferred, and it
+depends on their chronology of breaking. Its relevance is
+the direction of transfer: an uncountable noun can supply a
+reason for preserving direct vocalism, or for extending it
+to inflected forms, rather than automatically taking the
+protected stem as the donor. Of the 51 case-assigned ‘hay’
+occurrences, 47 are direct singular; the distribution of
+these glosses and the absence of a secure plural cannot
+establish the relative frequency of prehistoric stems.
+But the attested morphology supplies no contrary reason
+to assume that protected vocalism had the advantage in
+Anglian.
+
+## 4.2 The reconstructed and attested paradigm
+
+<!-- pending:P-morph-reconstruct -->
 
 Early apocope gives the direct singular \emph{*hawi} beside protected forms
 such as genitive \emph{*hawjas}, dative \emph{*hawjai}, and nominative–accusative
@@ -880,6 +945,8 @@ grammatical environments, not attestations of their outcomes
 | Nom.–acc. pl. \emph{*hawjō} | \emph{*hawwju} | \emph{*hawwju} | \emph{*hīeġ} |
 
 : Selected reconstructed cells. In both orders the protected stem develops from \emph{*hawwj-} to \emph{*hauj-}, then via fronting to \emph{*hēaj-} and by umlaut to \emph{*īej-}. The normalized diphthongal predictions are not a manuscript paradigm.
+
+<!-- pending:P-morph-census -->
 
 The English record in Table 6 counts each occurrence in a distinct manuscript
 once, including dependent texts, but excludes two duplicate glossary
@@ -945,62 +1012,9 @@ evidence for the prehistoric stem alternation than its handbook
 representation suggests, but more evidence for inflection than
 the isolated citation form would suggest.
 
-## 4.2 The direction and scope of levelling
+## 4.3 The scope of levelling and the comparison with ‘glee’
 
-The protected genitive or dative could supply a stem even if
-‘hay’ was seldom plural. The same stem in several grammatical
-cells and pressure from uniform paradigms of other ja-stems
-give reasons for extending it to the direct singular. But
-related ja-stems show levelling in both directions
-[@Hogg1979Analogy, pp. 68–73]. A protected stem in the
-reconstruction does not tell us which alternant speakers
-used as the basis for remodelling.
-
-Ball and Stiles’s comparison of ‘yellow’ and ‘meal, flour’
-shows what a directional argument would involve. They derive
-the broken stem \emph{*geolw-} from \emph{*gelw-} in inflected
-forms, including the weak adjective. The direct form
-\emph{*gelu} lacked the \emph{*lw} cluster. Early glossary
-forms still show the direct monophthong; later Anglian
-back-mutation could give *geolu* without levelling. In West
-Saxon, where they expect an unremodelled \emph{*gielu} by
-palatal diphthongization, they infer instead the extension of
-the broken stem, probably before i-mutation
-[@BallStiles1983, pp. 15–18 §§4.2–4.3].
-
-For ‘meal’ the recorded variants include *melu* beside
-*meolu* and *melwes* beside *meolwes*. In Ball and Stiles’s
-account, breaking regularly gives \emph{*meolw-} in the
-inflected stem, while \emph{*melu} escapes breaking and can
-later give *meolu* by back-mutation. Between these changes,
-they propose that the more frequent direct \emph{*melu} of
-the uncountable noun supplied its vowel to new inflected
-\emph{*melw-} forms. Those inflected by-forms in turn
-supported the direct monophthong against the new *meolu*.
-They interpret the inflected *smer(u)w-* forms of ‘fat’,
-including early Épinal–Érfurt datives, in the same way:
-direct vocalism replaced the breaking diphthong before
-back-mutation. ‘Tar’ limits the comparison. They find early
-direct *teru/tero* but no inflected *terw-*; the reported
-genitive plural *teorwena* may reflect different usage,
-though the distribution could also reflect transmission
-[@BallStiles1983, pp. 18–19 §4.3 and n. 18].
-
-‘Meal’ and ‘fat’ have *wa*-stems and actual monophthongal
-inflected variants. ‘Hay’ has neither that structural
-alternation nor diagnostic vocalism in its recorded datives.
-Ball and Stiles’s frequency explanation is inferred, and it
-depends on their chronology of breaking. Its relevance is
-the direction of transfer: an uncountable noun can supply a
-reason for preserving direct vocalism, or for extending it
-to inflected forms, rather than automatically taking the
-protected stem as the donor. Of the 51 case-assigned ‘hay’
-occurrences, 47 are direct singular; the distribution of
-these glosses and the absence of a secure plural cannot
-establish the relative frequency of prehistoric stems.
-But the attested morphology supplies no contrary reason
-to assume that protected vocalism had the advantage in
-Anglian.
+<!-- pending:P-morph-scope -->
 
 These are different operations. The inherited direct stem
 could survive without spreading; its vocalism could spread
@@ -1015,7 +1029,7 @@ vowels and its subsequent extension to the direct singular
 provides a precedent for separating the two, not a direct
 derivation of /j/ from short /e.i/ [@Wright1914, §§270, 357].
 
-## 4.3 ‘Glee’ and the continental comparisons
+<!-- pending:P-morph-glee -->
 
 The light neuter ‘glee’ provides two different comparisons.
 Ringe and Taylor’s inherited direct \emph{*gliwi} loses \emph{*w} and
@@ -1055,18 +1069,6 @@ in \emph{*hawi}. Applying Brunner’s mechanism directly to ‘hay’
 would require an independently justified reconstruction in
 which *j* survived that stage. Neither interpretation of
 ‘glee’ proves the origin of the final glide of *heg*.
-
-Old High German *hewi/houwi* and Middle Dutch *hoye/houwe* are
-documented doublets. Ringe and Taylor identify *hewi* as the inherited
-direct singular and *houwi* as the generalized protected stem. A
-late-apocope account can derive *houwi* regularly but must explain
-*hewi* independently. Boutkan’s assignment of the Dutch doublets
-to grammatical stems depends on his reconstruction of the ordering
-[@RingeTaylor2014, pp. 53, 173; @Boutkan1995, pp. 212–213].
-The doublets document the coexistence of different stem shapes;
-they do not independently establish a direction of levelling in
-English. Gothic *hawi*, outside West Germanic, cannot decide
-whether a West Germanic form escaped gemination.
 
 # 5. The interpretation of the Old English forms
 
@@ -1155,6 +1157,18 @@ rests on vowel quality, not on treating unassigned Eadwine
 ⟨hieg⟩ as early West Saxon.
 
 # 6. Implications for West Germanic chronology
+
+Old High German *hewi/houwi* and Middle Dutch *hoye/houwe* are
+documented doublets. Ringe and Taylor identify *hewi* as the inherited
+direct singular and *houwi* as the generalized protected stem. A
+late-apocope account can derive *houwi* regularly but must explain
+*hewi* independently. Boutkan’s assignment of the Dutch doublets
+to grammatical stems depends on his reconstruction of the ordering
+[@RingeTaylor2014, pp. 53, 173; @Boutkan1995, pp. 212–213].
+The doublets document the coexistence of different stem shapes;
+they do not independently establish a direction of levelling in
+English. Gothic *hawi*, outside West Germanic, cannot decide
+whether a West Germanic form escaped gemination.
 
 Dahl takes the pre-\emph{*j} sequence to be
 diphthongal, not consonantal *w*. His regular account of the
