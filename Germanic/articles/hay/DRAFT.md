@@ -682,40 +682,62 @@ metrical evidence establish such a distinction?
 
 ## 3.3 Orthography and vowel quantity
 
-<!-- pending:P-quantity-test -->
+<!-- P-quantity-test -->
 
-The relevant contrasts are /he.i/ with a short stressed vowel
-and two syllables, /hej/ with a short nucleus and a glide,
-conventional Anglian /heːj/, and the conventional West Saxon
-long diphthongal or high nucleus plus /j/. Contraction predicts
-long *ē* but does not itself produce a final glide. Ordinary ⟨heg⟩ accommodates both
-/ej/ and /eːj/, and that compatibility is not positive evidence
-for either quantity. Nor does the additional ⟨i⟩ in Aldred’s
-⟨heig⟩ establish an extra mora or syllable. His two spellings are
-compatible with the same /Vj/ sequence, and the sources consulted
-do not mark a quantity distinction in these instances
-[@Jones1989, pp. 21, 55, 149–152]. Vespasian’s ⟨heg⟩ is
-unaccented in the editions; Kentish *hei-* has no independent
-quantity marker. West Saxon ⟨hig/hyg⟩ indicates high vocalism, not
-its length. The West Saxon ⟨ie⟩ of the conventional reconstruction
-must not be treated as an observed spelling in an early West Saxon
-manuscript. The Eadwine readings do not independently supply one.
+An independently long vowel in an early Anglian witness would
+rule out unlengthened /hej/ there, but would not distinguish
+contraction with glide restoration from protected-stem vocalism.
+Conversely, independent evidence for short /ej/ would count
+against both long-vowel histories as formulated. The macron in
+conventional *hēġ* is not such evidence: insofar as the length
+comes from deriving the form from the protected stem (Section 1.3),
+using the macron to establish that derivation would be circular.
 
-<!-- pending:P-quantity-farman -->
+Vespasian ⟨heg⟩ and Northumbrian ⟨heg⟩ and ⟨heig⟩ accommodate
+a mid vowel plus /j/ without distinguishing /e/ from /eː/.
+The added ⟨i⟩ in *heig* does not independently indicate an
+extra mora or syllable. Jones uses both short and long
+transcriptions in discussing ‘hay’; these are interpretations,
+not manuscript quantity marks. His short-vowel entry ⟨heg⟩
+glossed ‘meadow’ is not securely identifiable as ‘hay’
+[@Jones1989, pp. 21, 55, 149–152]. Kentish *dei* ‘day’ shows
+that ⟨ei⟩ is compatible with a short vowel and a glide. The
+lack of a matched long-vowel spelling does not establish that
+*hei-* was short (Section 2.1). Thus the ordinary spellings
+do not establish either quantity.
 
-Farman provides more specific evidence. Three editions print
-an acute in both instances of *hóeg* [@KembleHardwick1858,
-pp. 55, 117; @Skeat1887, pp. 59, 123; @Tamoto2013, pp. 19, 47].
-Neither folio is in the digitized selection consulted. The
-accent calibration in Table 4 counts occurrences in Farman’s stint
-from Mt 1:1 to Mk 2:15. A surface type is a distinct spelling
-ignoring the acute; an accented type has at least one accented
-occurrence. The noun and verb of the long-*ī* family share a
-root, and no independently long vowel followed by a palatal glide
-was identified in a matched monosyllabic control. The excerpt
-contains 301 accented English tokens in 197 surface types, including
-both *hóeg* tokens; that aggregate has no denominator for unaccented
-stressed vowels.
+Even a scribe who used the acute for length need not have
+marked every long vowel. Ritt proposes that in Aldred’s
+Lindisfarne gloss the acute preferentially marked length
+where it was not otherwise predictable from the spelling.
+On that account an unmarked vowel can still be long
+[@Ritt2000, pp. 505–510]. This explains why the absence of
+a mark cannot be interpreted apart from the scribe’s practice.
+Farman’s marks must be assessed in his own gloss.
+
+<!-- P-quantity-farman -->
+
+At Mt 6:30 and 14:19, all three editions print Farman’s
+*hóeg* with an acute [@KembleHardwick1858, pp. 55, 117;
+@Skeat1887, pp. 59, 123; @Tamoto2013, pp. 19, 47]. This is
+agreement among editions: neither folio was available in the
+digitized selection consulted. If Farman seldom used the acute
+on short vowels in comparable forms, its recurrence in ‘hay’
+would favour length.
+
+Table 4 compares selected forms in Farman’s stint from Mt 1:1
+to Mk 2:15 whose historical quantity or potential lengthening
+can be assessed independently of ‘hay’. A token is an occurrence;
+a surface type groups identical spellings apart from the acute;
+a lexical type groups forms of the same item. A surface type
+counts as accented if at least one occurrence bears the mark.
+The closest short-vowel controls are closed monosyllables of
+*weg* and *dæg*: like proposed short /hej/, they have a short
+nucleus followed by a palatal glide. Only one of the 26 is
+accented, *wég*, so the mark is not exclusive to long vowels.
+The unaccented *weig* ‘way’ (Mk 1:3) is a particularly close
+spelling comparison. Forms with a following vowel letter
+and forms with homorganic clusters are less directly comparable.
 
 | Comparison | Accented / total tokens | Accented / total surface types |
 |-------------------------------------------|----------------------:|--------------------------:|
@@ -726,28 +748,35 @@ stressed vowels.
 | Long-*ī* *stīg*, *stīgan*: related forms | 1/14 | 1/10 |
 | Potential homorganic lengthening: five lexical families | 5/133 | 5/23 |
 
-: Accent distribution in Farman’s gloss (Tamoto 2013). A dash indicates a subset not separately counted by surface type.
+: Accent distribution in selected descriptive groups in Farman’s gloss (Tamoto 2013). A dash indicates a subset not separately counted by surface type.
 
-The short controls include unaccented *weig* (Mk 1:3); the sole
-accented long-*ī* control is plural *stígas* (Mt 3:3). The
-homorganic panel comprises *gangan*, *lond*, *word*, *hond*
-and *cild*; eight ambiguous *gang*-family forms and one *dægne*
-were excluded. Neither
-short control has ⟨oe⟩, although Farman does use the digraph
-for a short vowel in *oele* and for ē in spellings of the *hēran*
-type [@Kuhn1945, p. 646]. The combination of accent and spelling
-favours length in Farman, but the short controls are not uniformly
-unaccented and the two tokens do not constitute independent
-lexical evidence. In Lindisfarne, Ritt argues that an acute could
-mark length where the spelling did not already make it predictable.
-On that interpretation an unmarked vowel is not necessarily short
-[@Ritt2000, pp. 505–510]. Farman need not have followed Aldred’s
-practice. The distinction does matter for his controls: an acute
-before a homorganic cluster and one before a palatal glide need
-not have the same evidential value. The positive inference from
-Farman’s two spellings weighs against unlengthened /hej/ for his
-gloss; unmarked Vespasian ⟨heg⟩ neither extends the inference
-backwards nor proves shortness.
+There is no independently long monosyllabic word-form with a
+final palatal glide in the panel.[^quantity-accent] The two
+target tokens repeat one spelling of one lexical item, and the
+controls likewise repeat a few lexical items. The counts describe
+these forms; they do not measure the probability of accentuation
+or of vowel length in a representative sample.
+
+Neither short-vowel control has ⟨oe⟩. Kuhn’s *oele* ‘oil’,
+however, shows that the digraph could represent a short rounded
+vowel. Farman also writes it in forms of *hēran* ‘hear’, such
+as *gehóerde*, where the long vowel belongs to the class
+derived by umlaut of earlier *ēa* from Germanic *au*
+[@Kuhn1945, pp. 646, 660–661; @Tamoto2013, Mt 9:12].
+This association makes *hóeg* comparable in spelling to forms
+with long vowels, without fixing its rounding, proving length
+or identifying the source of the vowel. Digraph and accent
+belong to the same spellings and are not independent trials.
+
+Taken together, Farman’s spellings favour length in his own
+gloss. This is positive local evidence against unlengthened
+/hej/, not proof of length even there, and it cannot be projected
+back onto Vespasian or across Anglian. Nor does it tell us
+whether Farman’s nucleus was inherited through contraction
+or supplied by a protected stem. It therefore does not decide
+the order of apocope and gemination.
+
+[^quantity-accent]: The long-*ī* noun *stīg* and verb *stīgan* share a root. The only accented form is plural *stígas* (Mt 3:3); *astig* (Mt 27:40) has a graphically closed stressed root syllable but is a prefixed disyllabic word-form. The supplementary homorganic groups are *gangan*, *lond*, *word*, *hond* and *cild*; their historical quantity may itself reflect lengthening. Eight ambiguous *gang*-family tokens and one *dægne* were excluded. The excerpt contains 301 accented English tokens in 197 surface types, including both target tokens, but the aggregate lacks a denominator of all eligible stressed vowels [@Tamoto2013, pp. 8, 96, 104].
 
 <!-- pending:P-quantity-quality -->
 
