@@ -1304,9 +1304,14 @@ palatal was supplied anew, the operation would not have to
 replace the vowel. That difference in scope is not a reason
 to prefer the account simply because it replaces less;
 each operation needs its own historical motivation.
-It is a reason not to treat ‘hay’ as imposing the same
-explanatory burden as *bedd*. This weakens a specific
-objection to early apocope without establishing its priority.
+Rather, the independently motivated Anglian alternatives
+weaken an apparent objection to the same early order that
+can explain the continental singleton forms of ‘bed’ as
+inherited. The Kentish written match gives some corroboration
+to the early prediction, though a protected stem could also
+have supplied the first element of the compound (Section 2.1).
+The comparison turns on the ancestry of particular forms and
+the evidence for each development, not a tally of analogies.
 
 # 7. Conclusion
 
@@ -1330,12 +1335,14 @@ A securely dated direct form with independent quantity
 evidence and a distinguishable protected alternant would
 help separate these histories. An independently dated
 development in the precise final hiatus environment would
-also change their relative standing. For the chronological
-question, the result is that ‘hay’ need not borrow the
-vowel whose origin is at issue, whereas ‘bed’ cannot
-inherit its geminate directly under the early order.
-The two words therefore do not supply the same argument
-against early apocope.
+also change their relative standing. The potentially inherited
+continental singleton forms of ‘bed’ give independent grounds
+for considering early nasal apocope. The apparent necessity
+of a further substitution in ‘hay’ has weighed in the other
+direction. In Anglian, an entirely regular continuation remains
+possible; even with secondary palatal supply, the vowel could
+be inherited. These alternatives diminish that objection to
+early apocope without settling the relative chronology.
 
 # Appendix A. Parallel Psalter readings
 
