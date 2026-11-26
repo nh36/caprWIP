@@ -859,30 +859,45 @@ stem or supplying the palatal alone.
 
 ## 4.1 Competing directions of levelling
 
-<!-- pending:P-morph-question -->
+<!-- P-morph-question -->
 
-The protected genitive or dative could supply a stem even if
-‘hay’ was seldom plural. The same stem in several grammatical
-cells and pressure from uniform paradigms of other ja-stems
-give reasons for extending it to the direct singular. But
-related ja-stems show levelling in both directions
-[@Hogg1979Analogy, pp. 68–73]. A protected stem in the
-reconstruction does not tell us which alternant speakers
-used as the basis for remodelling.
+On Ringe and Taylor’s early-apocope account, the protected stem
+\emph{*hēaj-} replaced direct singular \emph{*hæwi} before
+i-umlaut (Section 1.3). The substitution supplied both a
+different vowel and a palatal consonant
+[@RingeTaylor2014, pp. 173, 246]. There are independent reasons
+to consider such a transfer. The protected stem belonged to
+several cells, and a noun need not be used often in the plural
+for its genitive or dative singular to furnish a model.
+Uniform stems in other *ja*-paradigms also offered a model for
+levelling. In Hogg’s analysis of masculine *hyll* ‘hill’, the
+geminate stem spread to the nominative singular, with the
+uniform neuter *cynn* ‘race’ as a possible model. Yet in *hyse*
+‘warrior’ he infers extension of the nominative form to the
+accusative, while the plural retained its geminate
+[@Hogg1979Analogy, pp. 68–73]. That is not the alternation
+reconstructed for ‘hay’, but it shows why pressure for uniformity
+does not, by itself, pick a donor.
 
-<!-- pending:P-morph-yellow -->
+<!-- P-morph-yellow -->
 
-Ball and Stiles’s comparison of ‘yellow’ and ‘meal, flour’
-shows what a directional argument would involve. They derive
-the broken stem \emph{*geolw-} from \emph{*gelw-} in inflected
-forms, including the weak adjective. The direct form
-\emph{*gelu} lacked the \emph{*lw} cluster. Early glossary
-forms still show the direct monophthong; later Anglian
-back-mutation could give *geolu* without levelling. In West
-Saxon, where they expect an unremodelled \emph{*gielu} by
-palatal diphthongization, they infer instead the extension of
-the broken stem, probably before i-mutation
-[@BallStiles1983, pp. 15–18 §§4.2–4.3].
+Ball and Stiles find more specific grounds for the direction
+of levelling in ‘yellow’. Early glossaries write the direct
+singular *gelu* (also *gelo*); the inflected stem shows *geolw-*,
+as in *geolwes*. In their reconstruction, inflected forms,
+including the weak adjective, had \emph{*lw}, which broke short
+/e/ to *eo*. Direct \emph{*gelu} escaped because it lacked the
+cluster. In Anglian, later back-mutation could give *geolu*
+from the unbroken direct form without transfer. In West Saxon,
+by contrast, they expect palatal diphthongization to yield
+\emph{*gielu}, on the model of *giefu* ‘gift’. They explain
+West Saxon *geolu* instead by extension of the broken vowel
+from the protected stem, probably before i-mutation
+[@BallStiles1983, pp. 15–18, §§4.2–4.3]. The expected West
+Saxon alternation and its levelling are inferences, not
+observed stages. What motivates their direction is that the
+inflected stem provides a regular source for the vowel that
+the direct West Saxon history does not predict.
 
 <!-- pending:P-morph-meal -->
 
