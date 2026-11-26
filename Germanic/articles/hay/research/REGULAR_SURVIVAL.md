@@ -164,3 +164,52 @@ preference for short /ej/ in ‘hay’. The positive result is that
 short controls can share the ordinary spelling patterns; that removes
 an objection to shortness, not to length. Farman remains the limited
 local exception to the general lack of positive quantity evidence.
+
+## R4. Jones and the provenance of short-vowel interpretations
+
+Jones (1989: 21, 55, 149–152; held PDF sheets 35, 69, 163–166) was
+checked against page images, not the OCR's lost macrons and brackets.
+In his account [j] is a voiced palatal **fricative**, not the
+phonetic approximant implied by a literal modern IPA reading. The
+relevant structural contrast is consonantal palatal vs. a
+nonsyllabic portion of the stressed nucleus, not /he.i/ vs. /hej/
+in A.
+
+| Location | Form, identity and time | What the notation establishes |
+|---|---|---|
+| 21, §2.2.2 | Lindisfarne's tenth-century Northumbrian ⟨heig⟩ ‘hay’ beside ⟨heg⟩. The independently verified *heig* is Jn 6:10; the *heg* form class includes Mt 6:30 and corrected Mt 14:19. | These are spelling citations, not quantitative transcriptions. Jones suggests that an existing consonantal fricative induced a diphthong and could remain in place. The spellings do not independently measure the input vowel or establish that **i** represents a diphthong rather than one way of writing the palatal sequence. |
+| 55–56, Table 2.29 | West Saxon column ⟨hæg⟩ ‘meadow’; tenth-century Northumbrian columns ⟨heg⟩ and ⟨heig⟩, under [ɛ]/[ɛi]. The discussion on p. 56 returns to this pair without identifying a separate locus. | The single vowel symbol stands against the proposed diphthong; the table supplies no independent quantitative diagnostic. On p. 56 Jones separately interprets *weg/wég* as [ej] beside [eej] using the acute, not the spelling ⟨eg⟩ alone. The argument about a marked ‘way’ token does not calibrate unmarked ‘hay’. |
+| 149, §3.4.2 | Late Old English [hej]/[heij] ‘hay’, explicitly recalling §2.3.6 and thus the Northumbrian spelling discussion, not Vespasian. | Single [e] in [hej] is short in contrast to his doubled long-vowel notation. [heij] adds a nuclear offglide before the consonant; it is not disyllabic. This is an explicit scholarly short-vowel interpretation, but the proposed breaking starts with that quantity instead of testing it. |
+| 150, Table 3.17 | Old English ⟨hēg⟩ [heej̆] and ⟨hīg⟩ [hiij̆] ‘hay’ in a column headed West Saxon; compared with twelfth- to fifteenth-century Middle English spellings with and without a written final palatal. | Both old inputs have a long vowel and consonantal palatal. The table heading is not a witness identification for either normalized form. The table groups the two long outcomes without independently assigning an early dialectal quantity. Its ‘day’ [dæj̆] and ‘clay’ [klæj̆] have a single vowel; the latter departs from conventional *clǣg*. |
+| 151–152 | Table 3.18 on p. 151 concerns velar environments, not new ‘hay’ evidence. On p. 152 Jones illustrates a Middle English loss/reinterpretation problem with [hej] > [heij] > [hei], linking *heigh/hai* and *cleiȝ/clei*. | The displayed path begins with a short vowel and consonantal fricative and ends in a diphthong without that consonant. The acoustic analogy accounts for possible movement from consonant to vowel, not the earlier or reverse movement from syllabic final /i/ to consonantal /j/ in A. No new Old English token or dating is given. |
+
+The ‘meadow’ row is not an independent securely identified token.
+The verified Lindisfarne ⟨heig⟩ glosses Latin *faenum*, while the
+paired ⟨heg⟩ forms are also in *faenum* contexts. This makes reuse of
+the ‘hay’ spelling pair with a loose or mistaken English gloss more
+plausible than treating the table as attestation of a separate
+‘meadow’ item. The West Saxon ⟨hæg⟩ form and the gloss could instead
+reflect conflation with the enclosure family (compare Clark Hall,
+s.v. *hēg*, *hieg*, *hege*, and the distinct charter evidence in
+Cycle 5). Jones gives no verse for the row, so neither a separate
+enclosure reading nor that conflation can be demonstrated. Do not
+add a token to either lexical inventory.
+
+The search for independent short-vowel analyses was bounded to the
+lexical treatments in R1, Campbell's palatal spelling discussion
+(§§266–269), and Minkova (2014: 178–179). Bryan's *dei* comparison
+calibrates the spelling but his ‘hay’ quantity comes from his own
+etymology. Dahl's Anglian long vowel comes from a different input;
+the grammar treatments derive length on the protected line, and
+Minkova explicitly takes it as etymological before explaining why
+the later merger obscures it. Jones supplies the explicit short
+analysis found in this search, not a second independently controlled
+early quantity. His late-Northumbrian short notation and comparative
+table's long forms need not be a contradiction about the same token;
+neither provides a reason to assign that length to ninth-century
+Mercian.
+
+**Assessment.** The short reconstruction has genuine scholarly
+precedent, but no additional independent support for Vespasian
+shortness was found. The long normalization remains historically
+motivated, not an independent observation either.
