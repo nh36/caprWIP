@@ -91,17 +91,15 @@ with the outcome of the unremodelled stem
 
 <!-- P-thesis -->
 
-The question, then, is whether the inherited direct singular
-survived without analogy in any early Old English tradition.
-Under early loss, the high West Saxon vowels favour the
-protected stem, but the Anglian mid vowel need not have the
-same source. Even if the inherited vowels contracted and a
-palatal had to be supplied from another form, replacing the
-vowel as well would not be necessary. In that respect Anglian
-‘hay’ differs from ‘bed’: the latter cannot inherit its
-geminate directly under the early order, whereas ‘hay’ can
-retain the historical source of its vowel even if survival of
-the whole stem cannot be demonstrated.
+The first question, then, is whether the inherited direct
+singular could have survived by regular sound change in early
+Anglian. If it did not, a second question is whether the vowel
+could still be inherited: contraction could preserve its source
+even if a palatal had to be supplied from another form. The
+high West Saxon vowels favour the protected stem under early
+loss, but the Anglian mid vowel need not have the same source.
+Either Anglian history would diminish the apparent disadvantage
+of early apocope without deciding the chronology.
 
 ## 1.2 The two regular derivations
 
