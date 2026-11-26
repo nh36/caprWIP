@@ -29,8 +29,9 @@ grounds for protected vocalism under early apocope.
 The [rhetorical architecture](RHETORICAL_ARCHITECTURE.md),
 [paragraph plan](PARAGRAPH_PLAN.md) and
 [scholarly apparatus](SCHOLARLY_APPARATUS.md) are approved in principle.
-The draft and PDF implement R1–R8; the abstract, appendix and final
-apparatus review await authorization.
+The draft and PDF implement R0–R9, including the abstract, appendix
+and scholarly apparatus review. The controlled stylistic revision
+awaits authorization.
 Use the [revision protocol](REVISION_PROTOCOL.md)
 before any substantive edit; the [*heiweg* demonstration](HEIWEG_DEMONSTRATION.md)
 shows which passages would change after a new lexical finding and

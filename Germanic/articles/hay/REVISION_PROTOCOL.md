@@ -222,3 +222,95 @@ and narrow C09 to the difference in regular predictions. The written
 findings, the derivation to hiatus under the specified input and order,
 and the limits of quantity and morphology remain. E33 and E34 are
 independently necessary and neither is established.
+
+## Cycle 22: comparative framing and publication review
+
+Against `43332f9f`: F1 (`aad51ae0`, `e1d5053f`) restores the comparative
+motivation and separates the primary survival question from its fallback.
+F2 (`578aed3f`) returns to that comparison in the synthesis and conclusion.
+A (`be2b7020`) revises the abstract and checks its YAML field as P-abstract;
+B (`2385e964`) completes the appendix anchors and verification conventions.
+C documents the continental glosses (`3c7f8afb`), separates Boutkan's oral
+chronology from Hogg and Fulk's and restores a reconstruction marker
+(`5c1895d1`), cites the prose Paris Psalter edition (`eb3731f4`), and removes
+an active duplicate bibliography key (`3633f061`). These were source-only
+checkpoints, built and checked against their immediate predecessors.
+
+The historical verdict and dependencies are unchanged. Frozen SC047 gives
+direct ‘bed’ as A *bede*, B2 *bedd*, and dative *bedde* in both; independently
+attested English protected forms are possible donors, not proof of transfer.
+A still gives ‘hay’ as *hei* with syllabic final *i*. Neither proposed
+continuation is an executable or certified result. Reversing the charter
+reading loses corroboration but not the independent Anglian argument.
+Rejecting desyllabification loses the regular-survival hypothesis; rejecting
+either final contraction or actual palatal supply independently defeats
+limited restoration. If both paths fail, withdraw the positive case against
+obligatory replacement. If continental singletons are secondary, withdraw
+their support for early loss without changing the lexical result for ‘hay’.
+No historical stage, chronology edge or production input changed.
+
+**Apparatus.** The 17 notes and seven tables keep the premises in prose and
+source details retrievable. The continental gloss locators and editorial
+status follow the frozen source audit and lexical ledger, not fresh
+manuscript collation. No relevant Heidermanns citation was securely
+identified. Hofmann (1970: 95–108) supplies a pertinent regional comparison
+for ‘fen’, but its case, gender and regional caveats make it unnecessary to
+the limited ‘bed’ comparison. Both Eadwine image links responded; the Paris
+and Vitellius endpoints denied or failed access on recheck. The folio
+locators and earlier verification statuses remain. Tables 2 and 7 make the
+principal spellings and source distinctions checkable; Table 6 gives the
+census, not a reproducible row-level export. A cleared occurrence-level
+supplement would help an independent reader reproduce the totals, but is
+not required to assess the principal historical argument.
+
+**Editorial assessment.** The paper is a credible specialist-journal
+submission after a controlled prose pass. Its contribution is not discovery
+of *heiweg* or proof of a new sound law, but connecting that known spelling,
+omitted in Ringe and Taylor's principal treatments, to an independently
+motivated hiatus prediction. The simplex, quantity and morphology sections
+then test distinct questions: what belongs to the direct cell, whether
+quantity can discriminate, and what could be transferred. The conclusion
+answers the opening comparative question: the apparent disadvantage of
+early apocope is diminished, not eliminated. Regular survival is the
+stronger, unresolved result sought; inherited vocalism with secondary
+palatal supply is a separately motivated fallback. A referee's strongest
+objections are the absence of an exact final /e.i/ control, evidence for
+actual palatal transfer, and independently secure inherited direct ancestry
+for the continental glosses. These limit the inference rather than break it.
+
+Approximate counts, including in-text locators but excluding headings:
+8,750 main-text words (introduction and derivations 1,020; attestations
+1,850; phonology and quantity 2,590; morphology 1,810; synthesis,
+chronology and conclusion 1,500); abstract 178; notes 1,160; tables and
+captions 1,060; appendix prose 300; references 1,160. The phonological
+documentation is the largest share and generally earned; repeated summaries,
+rather than primary controls or manuscript notes, offer the clearest savings.
+Keep the current title for this publication. Of the alternatives, “Old
+English ‘hay’, paradigmatic levelling and West Germanic chronology” best
+signals both the mechanism and the stakes, at the cost of length. “Old
+English ‘hay’ and the chronology of West Germanic nasal apocope” is more
+direct but may promise a decision; “Old English ‘hay’ and the evidence for
+early nasal apocope” risks implying that ‘hay’ independently dates the loss.
+
+**Stylistic handoff, in order.** Keep the worked contrasts in
+P-tradeoff/P-hay-predictions, the rival reading in P-char-phon, the two
+Paris scansions in P-quantity-close, and the donor comparison in P-morph-glee.
+First tighten the joins P-char-verdict to P-char-close and P-hiatus-result
+to P-quantity-test: distinguish each unit's new inference rather than
+repeating “does not establish.” Then review P-morph-census to P-morph-scope
+and P-compare-forms to P-compare-failure for a more continuous authorial
+voice, fewer question-openers, and less repeated statement of the two
+histories. Consider paragraph joins before merging headings; keep the
+regional and chronological distinctions legible. Review P-abstract and
+P-conclusion last for matching claim strength. Preserve the written-only
+charter match, the exact phonological limits, Farman's local inference,
+West Saxon quality, the two H2 premises and the conditional continental
+ancestry, with their citations and verification levels.
+
+**Closeout.** All 45 planned units are implemented; cumulative scope,
+four negative guard cases, 58 distinct citation keys, 17 notes and unchanged
+table cells passed. The standalone build reported no unresolved references.
+Visual proof covered all 21 pages, including the continuation headers of
+Tables 3 and 7, notes, links and bibliography. The publication commit
+carries the inspected bytes. No private material or production changes
+are included.
