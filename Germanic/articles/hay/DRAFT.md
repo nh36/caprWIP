@@ -779,20 +779,82 @@ the order of apocope and gemination.
 
 [^quantity-accent]: The long-*ī* noun *stīg* and verb *stīgan* share a root. The only accented form is plural *stígas* (Mt 3:3); *astig* (Mt 27:40) has a graphically closed stressed root syllable but is a prefixed disyllabic word-form. The supplementary homorganic groups are *gangan*, *lond*, *word*, *hond* and *cild*; their historical quantity may itself reflect lengthening. Eight ambiguous *gang*-family tokens and one *dægne* were excluded. The excerpt contains 301 accented English tokens in 197 surface types, including both target tokens, but the aggregate lacks a denominator of all eligible stressed vowels [@Tamoto2013, pp. 8, 96, 104].
 
-<!-- pending:P-quantity-quality -->
+<!-- P-quantity-quality -->
 
-<!-- pending:P-quantity-close -->
+The West Saxon evidence raises a question of quality rather than
+quantity. Whereas the Anglian spellings point to a mid vowel,
+West Saxon *hig* and *hyg* point to high vocalism. Neither
+desyllabification nor contraction with a secondary glide raises
+the inherited mid vowel in the histories proposed in Section 3.2.
+Unlike the conventional macron in *hēġ*, the contrast between
+the written vowels is positive evidence that these histories
+do not account for the West Saxon forms as they stand.
 
-The metrical evidence does not settle the issue. If the written
-direct forms are monosyllables closed by /j/, both vowel quantities
-can scan as heavy. The two *hege gelic* lines in Paris (101:4,
-101:9) scan as type B on either quantity, with resolution of a
-short lift or with the second syllable of *hege* in the dip.
-The verse tradition itself does not support a finer quantitative
-inference [@Fulk1992Meter, pp. 410–414; @Toswell1990, ch. 6].
-Later merger of long and short vowels before /j/ also deprives
-Middle English *hay* and *way* of discriminatory value
+The sources of West Saxon ⟨ie⟩ are not equally relevant here.
+Palatal diphthongization of earlier /eː/ requires a preceding
+palatal consonant; a following /j/ does not meet that condition.
+The resolution of /i.e/ likewise gives no precedent for raising
+in the reverse sequence /e.i/. Umlaut of an earlier diphthong,
+by contrast, has an independently motivated input in the
+protected stem, though not in either direct mid-vowel history
+[@Hogg2006, p. 400; @HoggGrammar1992, §§5.49, 5.53, 5.82–84, 5.146–147].
+Under early apocope, protected vocalism therefore has a better
+historical basis for West Saxon than a raising process for
+which there is no comparable evidence. The two Eadwine spellings
+do not localize an early ⟨ie⟩ stage (Section 2.2), and *hig* and
+*hyg* do not establish length, prove a particular intermediate
+diphthong or identify the operation by which the vowel entered
+the direct singular. The case for protected vocalism in West
+Saxon does not show that the Anglian vowel was borrowed too.
+
+<!-- P-quantity-close -->
+
+Metre does not settle the Anglian quantity. If the direct forms
+are monosyllables closed by /j/, the coda makes the syllable heavy
+even with a short vowel. A heavy lift therefore does not require
+a long nucleus. An inflected form might give a better test if
+the intervocalic consonant begins the second syllable, leaving
+the first open. Consider Paris Psalter Ps 101:4 *ic eom hege
+gelic* ‘I am like hay’ and Ps 101:9 *and ic hege gelic* ‘and I
+[am] like hay’ [@Krapp1932PPs, pp. 72–73]. In both verses, if the
+initial words are unstressed and *-lic* takes the second lift,
+the pattern is type B: dip, lift, dip, lift. With a single /j/
+as onset of the second syllable (/he.je/), short *he-* and
+unstressed *-ge* can together fill the first lift by resolution;
+only the prefix *ge-* of *gelic* occupies the medial dip. With
+long /heː.je/, *hē-* alone fills the first lift, and *-ge* and
+the prefix fill a two-syllable dip. The short parse depends on
+the open first syllable; it would not be a case of resolution
+if ⟨g⟩ closed that syllable. On the stated assumptions, neither
+verse requires one vowel quantity rather than the other.
+
+That ambiguity is distinct from the limits of the witness.
+Fulk finds irregularities in the distribution of unstressed
+syllables and in alliteration in the metrical Psalms, and argues
+that a reviser Saxonized an Anglian text, sometimes retaining
+forms needed for the metre. This makes fine quantitative
+inferences from a transmitted spelling especially insecure
+[@Fulk1992Meter, pp. 410–414; @Toswell1990, ch. 6]. Middle
+English offers no independent check either: once short and
+long vowels before /j/ merged, ‘hay’ and ‘way’ could agree
+even if their Old English vowels differed in length. The
+agreement does not show that they were already alike
 [@Minkova2014, p. 178].
+
+The earliest Anglian spellings thus leave both short and long
+mid vowels open, and neither metre nor the later merger decides
+between them. Desyllabification remains a motivated account of
+a short inherited nucleus. Farman’s spellings favour length in
+his own gloss, not in Vespasian or Anglian generally. Contraction
+can account for an inherited long mid vowel if a secondary
+palatal was supplied; transfer from a protected stem can
+account for the same Anglian outcome and has positive support
+from the high West Saxon vowel under early apocope. Quantity
+cannot choose between the long-vowel histories. That choice
+requires independent evidence from the paradigm: which cells
+could have provided a donor, which stems the attested cells
+actually distinguish, and what would favour extension of an
+entire stem rather than restoration of its consonant alone.
 
 # 4. Historical morphology
 
