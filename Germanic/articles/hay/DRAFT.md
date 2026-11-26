@@ -518,7 +518,7 @@ application to ‘hay’ requires no special consonant loss:
 given \emph{*hewi}, it yields \emph{*he.i}. What became of
 the hiatus is a separate question.
 
-[^loss-controls]: Compare also \emph{*āwi} > *ǣ* ‘law’ and \emph{*niwi-} > *nī-* in compounds such as *nī-cenned* ‘newborn’. Anglian *ēde* ‘flock of sheep’ preserves evidence of the loss, whereas Ringe and Taylor explain West Saxon *eowede* by remodelling on *eowu*. The weak verbs often restore *w* by levelling; relic forms include *streide* ‘strewed’ and *gecēd* ‘called’ or ‘having called’ [@RingeTaylor2014, pp. 258–260; @Campbell1959, pp. 100, 166–167, 327–328].
+[^loss-controls]: Compare also \emph{*āwi} > *ǣ* ‘law’ and \emph{*niwi-} > *nī-* in compounds such as *nī-cenned* ‘newborn’. Anglian *ēde* ‘flock of sheep’ preserves evidence of the loss, whereas Ringe and Taylor explain West Saxon *eowede* by remodelling on *eowu*. The weak verbs often restore *w* by levelling; independent evidence for its loss includes *gierede* ‘prepared’, Northumbrian *strēdun* ‘they strewed’ and Vespasian *gecēd* ‘called’ [@RingeTaylor2014, pp. 258–260; @Campbell1959, pp. 100, 166–167, 327–328]. The early glossary spellings *streidæ/streide* are less secure: they may belong to *stregdan*, as discussed below.
 
 ## 3.2 Contraction and glide formation
 
@@ -619,8 +619,10 @@ first vowel was already long: loss of final \emph{*i}
 and contraction yield the same result. Vespasian *gecēd*
 is especially instructive, since it places contraction
 of the same sequence, \emph{*e.i}, in the tradition that
-writes *heg*. Here, as in *ēde* and *strēde*, a dental
-followed the sequence. Ringe and Taylor allow that
+writes *heg*. Here, as in *ēde* and Northumbrian *strēdun*,
+a dental followed the sequence. The contracted plural
+*strēdun* does not depend on identifying the early glossary
+forms as ‘strew’. Ringe and Taylor allow that
 identical and unlike vowels may have contracted at
 different times. Even the closest controls do not date
 contraction of final \emph{*e.i} in ‘hay’
@@ -630,7 +632,7 @@ contraction of final \emph{*e.i} in ‘hay’
 |---------------------------|--------------|---------------------|--------------------------|
 | *glī* ‘merrymaking’ | \emph{*i.i} | Final | Ringe & Taylor 2014: 259, 318 |
 | *nī-* ‘new’ | \emph{*i.i} | Compound boundary | Ringe & Taylor 2014: 259 |
-| *ēde* ‘flock’, *strēde* ‘strewed’ | \emph{*e.i} | Before a dental | Ringe & Taylor 2014: 259–260, 318 |
+| *ēde* ‘flock’, *strēdun* ‘they strewed’ | \emph{*e.i} | Before a dental | Ringe & Taylor 2014: 259–260, 318; Campbell 1959: §237.1b |
 | Vespasian *gecēd* ‘called’ (past participle) | \emph{*e.i} | Before a dental | Campbell 1959: §237.1b; Ringe & Taylor 2014: 260; Sweet 1885: 416 |
 | *sǣ* ‘sea’, *ǣ* ‘law’ | \emph{*ǣ.i} | Final | Ringe & Taylor 2014: 318 |
 
@@ -651,7 +653,9 @@ alternative retains an inherited palatal. The comparison
 motivates investigating how the two components could
 have acquired different histories, not assuming that
 they did [@Campbell1959, §§120.2, 411;
-@SieversBrunner1965, §130 n. 3].
+@SieversBrunner1965, §130 n. 3]. Sections 4.2–4.3 take
+up the scope and direction of levelling and the ‘glee’
+comparison in more detail.
 
 <!-- P-hiatus-result -->
 

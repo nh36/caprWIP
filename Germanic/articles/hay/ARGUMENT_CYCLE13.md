@@ -87,6 +87,17 @@ E33–E34 distinguish two existing conditional premises of H2.
 | E33 | To obtain *hē* by H2, short stressed /e/ and unstressed final /i/ left by *w*-loss must contract in the relevant variety before /i/ can become a glide. **Necessary, unestablished application.** | E03 and E14 motivate the nucleus and the mechanism, but *gecēd/ēde/strēde* are nonfinal and the final controls have different inputs. If this environment does not contract, H2 fails; H1 remains separately testable. |
 | E34 | To obtain /eːj/ by H2, a historically accessible palatal source must be independently defensible and actually supply a secondary /j/ after contraction without replacing the vowel. **Necessary, unestablished operation.** | E18–19 motivate looking for a protected alternant or a comparable re-formation; neither identifies the English donor nor proves transfer. If no such source and supply are defensible, H2 cannot explain palatal ⟨heg⟩. |
 
+**Cycle 19 source qualification (supersedes the affected wording of
+E11 and E14, not their IDs or dependencies).** Erfurt 899 *streidæ*
+and Corpus 1910 *streide* support nonfinal hiatus from *w*-loss only
+if they belong to ‘strew’, rather than *stregdan* (Pheifer §59.2 n. 1;
+Hogg §5.133 n. 2). The separate metrical and Vespasian comparisons
+retain their stated limits. For E14 and E33, use contracted
+Northumbrian *strēdun*, alongside *ēde* and Vespasian *gecēd*;
+it does not depend on the glossary identification (Campbell §237.1b;
+Ringe & Taylor pp. 259–260, 318). E31's independent support for
+*w*-loss is unchanged, as are the timing and scope limits of E14.
+
 ## Dependency index
 
 **Required** entries are conjunctive; **Either** lists alternative branches
