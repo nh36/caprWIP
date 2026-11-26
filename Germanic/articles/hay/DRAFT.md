@@ -478,6 +478,8 @@ available to the direct stem, particularly once loss of
 
 ## 3.1 Development to hiatus
 
+<!-- pending:P-loss -->
+
 On the early-apocope and consonantal analyses the direct form
 develops as follows:
 
@@ -507,27 +509,15 @@ competing suffix formations [@RingeTaylor2014, pp. 258–261;
 
 ## 3.2 Contraction and glide formation
 
-The outcome \emph{*he.i} is disyllabic. Table 3 distinguishes the
-positions and vowel sequences represented by the principal controls.
-The identical final vowels in *glī* do not establish the chronology
-of unlike final vowels. Vespasian *gecēd* is especially useful for
-dating contraction in the tradition which writes *heg*: \emph{*e.i}
-contracted before the dental in that verb. It does not show that the
-same contraction preceded the recording of a word with final \emph{*e.i}.
-*Sǣ* and *ǣ* have final unlike vowels in the reconstructed input,
-but their first vowel was already long; loss of *i* gives the same
-observable result [@Campbell1959, §237.1b; @RingeTaylor2014,
-pp. 259–260, 318].
+<!-- pending:P-hiatus-test -->
 
-| Old English reflex | Input at hiatus | Position | Source |
-|---------------------------|--------------|---------------------|--------------------------|
-| *glī* ‘merrymaking’ | \emph{*i.i} | Final | Ringe & Taylor 2014: 259, 318 |
-| *nī-* ‘new’ | \emph{*i.i} | Compound boundary | Ringe & Taylor 2014: 259 |
-| *ēde* ‘flock’, *strēde* ‘strewed’ | \emph{*e.i} | Before a dental | Ringe & Taylor 2014: 259–260, 318 |
-| Vespasian *gecēd* ‘calls’ | \emph{*e.i} | Before a dental | Campbell 1959: §237.1b; Ringe & Taylor 2014: 260 |
-| *sǣ* ‘sea’, *ǣ* ‘law’ | \emph{*ǣ.i} | Final | Ringe & Taylor 2014: 318 |
+The spelling ⟨eg⟩ regularly writes /Vj/ [@HoggGrammar1992, §2.76].
+Comparanda such as *deg/dei* ‘day’ and Farman’s *weig* ‘way’
+have an independent consonantal source for the glide. They tell
+us how a glide could be written, not whether *i* in ‘hay’ became
+a glide.
 
-: Contraction controls grouped by sequence and position.
+<!-- pending:P-hiatus-retain -->
 
 The early glosses write *strēidæ/strēide* (Érfurt 899, Corpus 1910),
 and the verse at *Beowulf* 2436 scans with disyllabic *strēd*.
@@ -545,6 +535,22 @@ Persistence is the historical inference here: it gives a sequence
 created by *w*-loss an interval in which the treatment of an
 unstressed final vowel could differ from that of a vowel before
 a consonant.
+
+Campbell discusses *streide* and Kentish *gecēide* near
+examples of palatal vocalization; the two vowel letters alone do
+not identify the direction of change. Vespasian *hefie* beside
+⟨-ige⟩ illustrates vocalization, not the creation of a consonant
+from syllabic *i* [@Campbell1959, §§237.1b, 266–267].
+In Lindisfarne *heista/neista* beside *hesta/nesta* can reflect
+uncontracted hiatus after *h*-loss, but the only apparent ⟨ig⟩
+counterpart, *heigsta* (Brunner’s *hēiȝsta*), is isolated and he treats it as a
+probable error [@SieversBrunner1965, p. 112 §129 n. 5]. It
+concerns a nonfinal sequence from a different source. No independently
+interpretable early Mercian, Northumbrian or Kentish spelling
+examined here establishes ⟨eg⟩ or ⟨ig⟩ as notation for retained
+final /e.i/.
+
+<!-- pending:P-hiatus-glide -->
 
 Desyllabification after consonant loss is independently attested
 in a different setting. Hogg derives *clēa* ‘claw’ from *kla.wu*
@@ -567,6 +573,32 @@ structure. *Sīem* does not model that shift: it supports
 retention of unlike front vowels, and its second vowel is not
 the high vowel required by the proposal.
 
+<!-- pending:P-hiatus-contract -->
+
+The outcome \emph{*he.i} is disyllabic. Table 3 distinguishes the
+positions and vowel sequences represented by the principal controls.
+The identical final vowels in *glī* do not establish the chronology
+of unlike final vowels. Vespasian *gecēd* is especially useful for
+dating contraction in the tradition which writes *heg*: \emph{*e.i}
+contracted before the dental in that verb. It does not show that the
+same contraction preceded the recording of a word with final \emph{*e.i}.
+*Sǣ* and *ǣ* have final unlike vowels in the reconstructed input,
+but their first vowel was already long; loss of *i* gives the same
+observable result [@Campbell1959, §237.1b; @RingeTaylor2014,
+pp. 259–260, 318].
+
+| Old English reflex | Input at hiatus | Position | Source |
+|---------------------------|--------------|---------------------|--------------------------|
+| *glī* ‘merrymaking’ | \emph{*i.i} | Final | Ringe & Taylor 2014: 259, 318 |
+| *nī-* ‘new’ | \emph{*i.i} | Compound boundary | Ringe & Taylor 2014: 259 |
+| *ēde* ‘flock’, *strēde* ‘strewed’ | \emph{*e.i} | Before a dental | Ringe & Taylor 2014: 259–260, 318 |
+| Vespasian *gecēd* ‘calls’ | \emph{*e.i} | Before a dental | Campbell 1959: §237.1b; Ringe & Taylor 2014: 260 |
+| *sǣ* ‘sea’, *ǣ* ‘law’ | \emph{*ǣ.i} | Final | Ringe & Taylor 2014: 318 |
+
+: Contraction controls grouped by sequence and position.
+
+<!-- pending:P-hiatus-result -->
+
 The retention and desyllabification comparisons motivate
 \emph{*he.i} > \emph{*hej} as a candidate development: after
 *w*-loss, fully unstressed final /i/ following stressed short
@@ -579,24 +611,6 @@ with different inputs. Neither process can be timed in the
 precise environment from those comparisons.
 
 ## 3.3 Orthography and vowel quantity
-
-The spelling ⟨eg⟩ regularly writes /Vj/ [@HoggGrammar1992, §2.76].
-Comparanda such as *deg/dei* ‘day’ and Farman’s *weig* ‘way’
-have an independent consonantal source for the glide. They tell
-us how a glide could be written, not whether *i* in ‘hay’ became
-a glide. Campbell discusses *streide* and Kentish *gecēide* near
-examples of palatal vocalization; the two vowel letters alone do
-not identify the direction of change. Vespasian *hefie* beside
-⟨-ige⟩ illustrates vocalization, not the creation of a consonant
-from syllabic *i* [@Campbell1959, §§237.1b, 266–267].
-In Lindisfarne *heista/neista* beside *hesta/nesta* can reflect
-uncontracted hiatus after *h*-loss, but the only apparent ⟨ig⟩
-counterpart, *heigsta* (Brunner’s *hēiȝsta*), is isolated and he treats it as a
-probable error [@SieversBrunner1965, p. 112 §129 n. 5]. It
-concerns a nonfinal sequence from a different source. No independently
-interpretable early Mercian, Northumbrian or Kentish spelling
-examined here establishes ⟨eg⟩ or ⟨ig⟩ as notation for retained
-final /e.i/.
 
 The relevant contrasts are /he.i/ with a short stressed vowel
 and two syllables, /hej/ with a short nucleus and a glide,
