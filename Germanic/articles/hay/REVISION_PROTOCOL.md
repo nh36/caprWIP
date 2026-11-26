@@ -274,9 +274,10 @@ answers the opening comparative question: the apparent disadvantage of
 early apocope is diminished, not eliminated. Regular survival is the
 stronger, unresolved result sought; inherited vocalism with secondary
 palatal supply is a separately motivated fallback. A referee's strongest
-objections are the absence of an exact final /e.i/ control, evidence for
-actual palatal transfer, and independently secure inherited direct ancestry
-for the continental glosses. These limit the inference rather than break it.
+objections are the lack of an exact final /e.i/ control, the absence of
+direct evidence for actual palatal transfer, and the uncertain inherited
+direct ancestry of the continental glosses. These limit the inference
+rather than break it.
 
 Approximate counts, including in-text locators but excluding headings:
 8,750 main-text words (introduction and derivations 1,020; attestations
@@ -292,21 +293,6 @@ English ‘hay’ and the chronology of West Germanic nasal apocope” is more
 direct but may promise a decision; “Old English ‘hay’ and the evidence for
 early nasal apocope” risks implying that ‘hay’ independently dates the loss.
 
-**Stylistic handoff, in order.** Keep the worked contrasts in
-P-tradeoff/P-hay-predictions, the rival reading in P-char-phon, the two
-Paris scansions in P-quantity-close, and the donor comparison in P-morph-glee.
-First tighten the joins P-char-verdict to P-char-close and P-hiatus-result
-to P-quantity-test: distinguish each unit's new inference rather than
-repeating “does not establish.” Then review P-morph-census to P-morph-scope
-and P-compare-forms to P-compare-failure for a more continuous authorial
-voice, fewer question-openers, and less repeated statement of the two
-histories. Consider paragraph joins before merging headings; keep the
-regional and chronological distinctions legible. Review P-abstract and
-P-conclusion last for matching claim strength. Preserve the written-only
-charter match, the exact phonological limits, Farman's local inference,
-West Saxon quality, the two H2 premises and the conditional continental
-ancestry, with their citations and verification levels.
-
 **Closeout.** All 45 planned units are implemented; cumulative scope,
 four negative guard cases, 58 distinct citation keys, 17 notes and unchanged
 table cells passed. The standalone build reported no unresolved references.
@@ -314,3 +300,33 @@ Visual proof covered all 21 pages, including the continuation headers of
 Tables 3 and 7, notes, links and bibliography. The publication commit
 carries the inspected bytes. No private material or production changes
 are included.
+
+### Proposed Cycle 23 structural and rhetorical consolidation
+
+Plan only. Use the Cycle 22 publication (`bf9194f3`) as the manuscript
+baseline. The objective is to make each passage do one identifiable job
+for the reader, not to make the prose sound more like the author. Keep
+the title, evidential order, stable unit IDs and historical dependencies.
+The cross-references below identify where the evidence belongs; they do
+not enlarge the edit scope of an increment.
+
+| Order and priority | Units | Reader problem and proposed operation | What must survive; risk to check |
+|---|---|---|---|
+| 1 · High | P-char-verdict, P-char-close | Two verdicts make the charter argument seem to restart after the composition test. Put the lexical preference and its grounds in P-char-verdict; use P-char-close for the bounded exact-match comparison and the reason to turn to case-assigned simplex forms. Leave P-char-compound as the test of stem ancestry. | C04–C05 and E10: Sweet's reading, the converging contextual and spelling arguments, the Worcester contrast and `early-hei` note. Preserve the rival in P-char-phon and the protected first-member possibility. Risk: making an exact written match a quantity, pronunciation or ancestry test. |
+| 2 · High | P-hiatus-result, P-quantity-test | The same short/long predictions are introduced on both sides of the section break. Let P-hiatus-result close with what each history inherits; let P-quantity-test state what independent length or shortness would exclude and move directly to the witness evidence. | C06–C07, H1–H3; keep the phonological demonstrations and Table 3 in P-hiatus-glide/P-hiatus-contract, the Ritt/Aldred distinction in P-quantity-test and the Farman calibration in its own unit. Risk: treating absence of length marking as shortness or a conditional prediction as an attested quantity. |
+| 3 · High | P-morph-census, P-morph-scope | The datives are introduced twice before the reader learns what they can discriminate. Keep their substantive demonstration in P-morph-census; have P-morph-scope begin with what overt and endingless datives allow without diagnosing transfer. Use P-compare-forms only for the consequence of that test. | E17–E19, E29, C08 and H2–H3; retain Tables 5–6, the `morph-case` note, Paris and Colloquy loci, overlapping dates and uncertainty of Farman's case. Risk: treating an ending as a stem contrast, frequency measure or date of levelling. |
+| 4 · High | P-compare-forms, P-compare-failure | Repeated mini-derivations postpone the new comparison. Compare the candidates once against the shared spelling, quantity and grammatical constraints; make the next unit a counterfactual about what fails if gliding or either H2 premise fails. Refer back to §§3.2 and 4.3 instead of repeating the demonstrations. | C05, C07–C08, C10–C11 and E33–E34; retain the argument's independence from the charter, both necessary H2 conditions, and the distinction between Campbell's cross-lexical precedent and an actual donor. Risk: treating H3 as an automatic default or allowing C10 to survive rejection of both inherited-nucleus routes. |
+| 5 · Medium | P-compare-regions, P-compare-bed | §5.2 should use the regional findings to distinguish histories rather than restate the diagnostics, and §6 should explain how those histories affect the chronological comparison. Review whether the §5.2 heading still aids navigation after tightening; retain it unless the regional contrast remains equally visible without it. | C07, C09–C10, E20 and H3–H5; §3.3 owns Farman's local length inference and the West Saxon quality evidence; §6 owns the *bed* gloss note, conditional singleton ancestry and Boutkan alternative. Risk: reading regional spelling as evidence for distinct early orders or counting analogies as if that settled chronology. |
+| 6 · Final alignment | P-abstract, P-conclusion | Keep the abstract intelligible on its own; make the conclusion answer the opening comparative question rather than reprising the whole paper. Check both against P-thesis without reopening it. Change only where the earlier consolidation makes a sentence redundant or weakens the signposting. | C01–C05, C07, C09–C11 and the discriminating evidence proposed in P-conclusion. Keep regular survival possible, limited restoration conditional, and the objection to early loss diminished rather than eliminated. Risk: promoting possibility to proof or turning a criticism of obligatory replacement into a verdict on West Germanic chronology. |
+
+Keep the worked introduction, charter rival, Paris scansions and ‘glee’
+comparison unless the review identifies a specific structural problem.
+In each increment, examine paragraph joins and repeated question-openers
+before changing headings. Trim a repeated qualification only where the
+reader can still recover its warrant from the definitive passage. Validate
+one or two units against the immediate parent, build, commit and push
+before proceeding. At closeout reread the revised opening and ending
+together, run the Cycle 22 fault tests, and check that all seven tables
+and evidence locators survive. Defer vocabulary, syntax, cadence, register
+and habits of disagreement to the separately authorized author-specific
+pass; do not invoke or develop Nathanification as part of consolidation.

@@ -30,8 +30,9 @@ The [rhetorical architecture](RHETORICAL_ARCHITECTURE.md),
 [paragraph plan](PARAGRAPH_PLAN.md) and
 [scholarly apparatus](SCHOLARLY_APPARATUS.md) are approved in principle.
 The draft and PDF implement R0–R9, including the abstract, appendix
-and scholarly apparatus review. The controlled stylistic revision
-awaits authorization.
+and scholarly apparatus review. The [Cycle 23 consolidation plan](REVISION_PROTOCOL.md#proposed-cycle-23-structural-and-rhetorical-consolidation)
+awaits authorization. Author-specific stylistic revision is a separate,
+later stage.
 Use the [revision protocol](REVISION_PROTOCOL.md)
 before any substantive edit; the [*heiweg* demonstration](HEIWEG_DEMONSTRATION.md)
 shows which passages would change after a new lexical finding and
