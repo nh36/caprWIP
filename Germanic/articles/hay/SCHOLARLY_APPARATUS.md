@@ -32,8 +32,8 @@ the appendix. The source-bearing IDs resolve through the
 | N-case | P-simplex-anchor, P-morph-census, P-morph-scope | E17, E29 | `simplex-case`: positional vs. goal readings in Farman/Aldred, agreement in CCCC 140, and limits of Vespasian comparison syntax. Paris and Colloquy manuscript loci and Thorpe's infinitival subject remain with the later morphology discussion; retain the evidence that the datives are genuine. |
 | N-glee | P-morph-glee | E19 | Proposed: extended forms and sources for Brunner's competing analysis; body must explain why it cannot be imported unchanged and what Campbell actually claimed. |
 | N-doublets | P-compare-continental | E20, E30 | Proposed: supplementary comparative details and exact references, not the conditional nature of the stem identifications or Gothic's exclusion from West Germanic gemination. |
-| N-hiatus-spelling | P-hiatus-test, P-hiatus-retain | E13 | Proposed: *heista/neista*, isolated *heigsta*, and *hefie* with exact citations; *deg/dei* and *weig* establish ordinary glide spelling in R5. R6 retains the separate question of whether the letters distinguish quantities. |
-| N-hiatus-controls | P-hiatus-glide, P-hiatus-contract | E12, E14 | Proposed: Latin loan and synizesis limits where helpful; the main argument must still distinguish back-vowel desyllabification from final /e.i/ and explain why same-vowel and long-vowel cases do not settle it. |
+| N-hiatus-spelling | P-hiatus-test, P-hiatus-retain | E13 | `hiatus-spelling`: doubtful Lindisfarne and glossary forms and Campbell’s vocalization comparisons. *Deg/dei* and *weig* establish ordinary glide spelling in prose; R6 retains the independent quantity question. |
+| N-hiatus-controls | P-hiatus-glide, P-hiatus-contract | E12, E14 | `hiatus-controls`: prevocalic loanword gliding, synizesis and the limits of *siem*. The principal conditioning limits of the glide and contraction comparisons remain in prose. |
 
 No separate supplement is presently necessary: Appendix A and Tables 2–7
 carry the public evidence at the needed resolution. Private holdings,

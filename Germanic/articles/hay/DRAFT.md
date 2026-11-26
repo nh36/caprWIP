@@ -546,61 +546,67 @@ an ordinary reading of the Anglian spellings of ‘hay’;
 it does not tell us whether that glide came from a
 syllabic vowel.
 
-<!-- pending:P-hiatus-retain -->
+<!-- P-hiatus-retain -->
 
-The early glosses write *strēidæ/strēide* (Érfurt 899, Corpus 1910),
-and the verse at *Beowulf* 2436 scans with disyllabic *strēd*.
-These are independent indications that a sequence produced by
-*w*-loss could remain disyllabic nonfinally; a copied spelling does
-not date a local pronunciation. Vespasian *hīe* and *sīe* offer
-comparisons within the Mercian tradition, with *sīem* at Ps 26:4
-supporting two syllables. They contain *i.e*, not *e.i*, and
-do not use ⟨g⟩ to write the hiatus [@HoggGrammar1992,
-§§5.132–134, 5.146]. These examples permit coexistence of contracted and uncontracted
-sequences in different environments. In particular, *gecēd* and
-*sīem* make it unnecessary to assume a single date for the
-disappearance of hiatus even in the same gloss tradition.
-Persistence is the historical inference here: it gives a sequence
-created by *w*-loss an interval in which the treatment of an
-unstressed final vowel could differ from that of a vowel before
-a consonant.
+Hiatus need not have disappeared as soon as it arose.
+The early glossaries write ⟨streidæ⟩ (Erfurt 899) and
+⟨streide⟩ (Corpus 1910), without the length marks often
+supplied in discussion. If these are forms of ‘strew’,
+their two vowel letters are consistent with nonfinal hiatus
+after \emph{*w}-loss. The scansion of *stred* at *Beowulf*
+2436 independently calls for two syllables in that verse,
+though Hogg allows a pronunciation favoured by slow speech
+rather than a surviving archaism [@Pheifer1974, §59.2 n. 1
+and no. 899; @Sweet1885, Corpus no. 1910; @Campbell1959,
+§237.1b; @HoggGrammar1992, §5.133]. Within the Vespasian
+tradition Hogg discusses ⟨hie⟩ and ⟨sie⟩ and takes the
+analogical formation ⟨siem⟩ at Ps 26:4 as particularly strong
+evidence for disyllabicity [@Sweet1885, Vespasian Ps 26:4].
+That comparison involves the
+reverse vowel order, /iː.e/, rather than /e.i/
+[@HoggGrammar1992, §5.146]. Together these examples
+allow persistence in some environments without dating the
+loss of final /e.i/ in ‘hay’.
 
-Campbell discusses *streide* and Kentish *gecēide* near
-examples of palatal vocalization; the two vowel letters alone do
-not identify the direction of change. Vespasian *hefie* beside
-⟨-ige⟩ illustrates vocalization, not the creation of a consonant
-from syllabic *i* [@Campbell1959, §§237.1b, 266–267].
-In Lindisfarne *heista/neista* beside *hesta/nesta* can reflect
-uncontracted hiatus after *h*-loss, but the only apparent ⟨ig⟩
-counterpart, *heigsta* (Brunner’s *hēiȝsta*), is isolated and he treats it as a
-probable error [@SieversBrunner1965, p. 112 §129 n. 5]. It
-concerns a nonfinal sequence from a different source. No independently
-interpretable early Mercian, Northumbrian or Kentish spelling
-examined here establishes ⟨eg⟩ or ⟨ig⟩ as notation for retained
-final /e.i/.
+If ⟨heg⟩ represents retained hiatus, there should be some
+independent reason to take ⟨g⟩ as a syllabic vowel in that
+environment. Lindisfarne *heista* and *neista* can reflect
+hiatus after loss of \emph{*h}, but the one apparent
+parallel with ⟨ig⟩, *heigsta*, is nonfinal and Brunner
+regards it as probably a scribal error.[^hiatus-spelling]
+The early Mercian, Northumbrian and Kentish spellings
+examined here do not establish ⟨eg⟩ or ⟨ig⟩ for final
+/e.i/. Persistence is possible; it does not by itself
+account for the letters in the Anglian simplex.
 
-<!-- pending:P-hiatus-glide -->
+[^hiatus-spelling]: Pheifer and Hogg allow that the glossary *streide* may instead be a weak preterite of *stregdan* [@Pheifer1974, §59.2 n. 1; @HoggGrammar1992, §5.133 n. 2]. For Lindisfarne *heista/neista* beside *hesta/nesta* and Brunner’s isolated *hēiȝsta*, see Brunner [-@SieversBrunner1965, p. 112 §129 n. 5]. Campbell treats *streide* and Kentish *gecēide* alongside spellings associated with palatal vocalization: ⟨ei⟩ does not identify the direction of change. Vespasian *hefie* beside forms in ⟨-ige⟩ is evidence for vocalization, not for formation of a consonant from an inherited syllabic vowel [@Campbell1959, §§237.1b, 266–267].
 
-Desyllabification after consonant loss is independently attested
-in a different setting. Hogg derives *clēa* ‘claw’ from *kla.wu*
-through *kla.u* and monosyllabic *klau*; the plural forms
-*cnēo* and *trēo* illustrate comparable treatment of back vowels
-[@HoggGrammar1992, §3.19]. The outputs belong to the inherited
-diphthong types *au* and *eu*. Campbell’s prevocalic gliding in
-Latin loans and metrical synizesis are also distinct: the former
-involves a following vowel, and the latter does not establish
-ordinary lexical syllabification [@Campbell1959, §§512, 553–557].
-The comparison supplies a mechanism, not the same output: when
-*w* disappears, a following unstressed high vowel can lose
-syllabicity instead of being deleted. The back vowel of *clēa*
-could join an established diphthong class, whereas there is no
-such class to appeal to for *hei*. But /ej/ needs no phonemic
-falling diphthong /ei̯/. Old English already had nuclei followed
-by /j/, as in *weġ* ‘way’. A shift of unstressed /i/ into the
-coda after a stressed /e/ would use an existing syllable
-structure. *Sīem* does not model that shift: it supports
-retention of unlike front vowels, and its second vowel is not
-the high vowel required by the proposal.
+<!-- P-hiatus-glide -->
+
+The second vowel could instead have become a glide. Hogg
+reconstructs \emph{*kla.wu} > \emph{*kla.u} > \emph{*klau}
+in the history of Old English *clēa* ‘claw’: after loss
+of \emph{*w}, the formerly unstressed vowel joined the
+preceding nucleus rather than disappearing. The plurals
+*cnēo* ‘knees’ and *trēo* ‘trees’ provide related comparisons
+in his account [@HoggGrammar1992, §3.19]. Those outcomes
+continue established back-vowel diphthong types. The proposed
+front-vowel development need not extend the diphthong
+inventory: /ej/ consists of a stressed mid vowel and a
+consonantal palatal glide, a structure Old English already
+had in words such as *weġ* ‘way’.[^hiatus-controls]
+
+The comparison motivates \emph{*he.i} > \emph{*hej}:
+fully unstressed final /i/ after stressed short /e/
+could lose syllabicity after \emph{*w}-loss, provided
+contraction had not already eliminated the sequence.
+The structural precedent and the ordinary reading of ⟨heg⟩
+give this proposal independent motivation and an attested
+target, respectively. Neither settles whether it operated
+with these front vowels in final position, whether it
+preceded contraction, or in which varieties it occurred.
+
+[^hiatus-controls]: Campbell’s loanword examples concern gliding before another vowel; his metrical synizesis examples need not reflect ordinary lexical syllabification [@Campbell1959, §§512, 553–557]. Vespasian ⟨siem⟩ supports persistence, not the proposed desyllabification: its second vowel is not the high vowel posited for ‘hay’.
 
 <!-- pending:P-hiatus-contract -->
 
