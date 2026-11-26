@@ -1301,9 +1301,14 @@ ungeminated direct forms. Ringe and Taylor likewise treat
 Old High German *beti* ‘bed’ as a relic, while Boutkan’s
 account permits a secondary ungeminated stem. These comparisons
 weigh against the late order only to the extent that the
-ungeminated forms are inherited without gemination
+ungeminated forms are inherited without gemination. The
+Latin contexts of the isolated ‘bed’ glosses do not by
+themselves secure the vernacular case, and the evidence
+does not date nasal apocope in every West Germanic variety
 [@Stiles2013, pp. 15–16; @RingeTaylor2014, pp. 44–47;
-@Boutkan1995, pp. 211–212, 435–436].
+@Boutkan1995, pp. 211–212, 435–436].[^bed-glosses]
+
+[^bed-glosses]: The [*Althochdeutsches Wörterbuch*, I, cols. 935–937, s.v. *betti*](https://awb.saw-leipzig.de/?sigle=AWB&lemid=B00752) indexes *peti* with Latin *stratum* (Steinmeyer–Sievers, *Die althochdeutschen Glossen*, II, p. 221, l. 60; Munich, Clm 18550a, fol. 154v, l. 22), *beti* with *area* (IV, p. 228, l. 15), and *bedi* with *culcitram* (Paulus, *Historia Langobardorum*, 1878 edition, p. 144, l. 4, apparatus p). These are edition-based readings: *peti*, in particular, is the editorial rendering of *p&i*, not a diplomatic transcription.
 
 In ‘hay’, resolution of the labial-palatal sequence removes
 the corresponding surface test: the Anglian vowel is not
