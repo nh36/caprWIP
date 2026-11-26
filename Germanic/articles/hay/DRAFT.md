@@ -733,8 +733,9 @@ a lexical type groups forms of the same item. A surface type
 counts as accented if at least one occurrence bears the mark.
 The closest short-vowel controls are closed monosyllables of
 *weg* and *dæg*: like proposed short /hej/, they have a short
-nucleus followed by a palatal glide. Only one of the 26 is
-accented, *wég*, so the mark is not exclusive to long vowels.
+nucleus followed by a palatal glide in their historical analysis.
+Only one of these 26 historically short forms bears an acute,
+*wég*. The mark is unusual in this group, though not absent.
 The unaccented *weig* ‘way’ (Mk 1:3) is a particularly close
 spelling comparison. Forms with a following vowel letter
 and forms with homorganic clusters are less directly comparable.
