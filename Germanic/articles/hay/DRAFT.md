@@ -34,13 +34,14 @@ header-includes:
 <!-- P-orders -->
 
 Did West Germanic gemination precede or follow the loss of final
-nasal \emph{*-ą}? The disagreement concerns the nasal ending, not
-the early loss of the oral vowel in endings such as masculine
-\emph{*-az}. Ringe and Taylor place both losses before gemination.
-Hogg and Fulk retain \emph{*-ą} through gemination, though the
-oral vowel has already been lost
-[@RingeTaylor2014, pp. 44–53, 173; @HoggFulk2011, pp. 20–21 §2.23;
-@Boutkan1995, pp. 209–213].
+nasal \emph{*-ą}? Ringe and Taylor place both that loss and the
+loss of the oral vowel in endings such as masculine \emph{*-az}
+before gemination. Hogg and Fulk retain \emph{*-ą} through
+gemination, though the oral vowel has already been lost
+[@RingeTaylor2014, pp. 44–53, 173; @HoggFulk2011, pp. 20–21 §2.23].
+Boutkan instead places gemination before both losses
+[@Boutkan1995, pp. 209–213]. The comparison here concerns the
+nasal ending.
 
 <!-- P-tradeoff -->
 
@@ -918,7 +919,7 @@ the direct West Saxon history does not predict.
 record has both direct *melu* and *meolu* and genitive *melwes*
 and *meolwes*. On Ball and Stiles’s account, direct
 \emph{*melu} lacked the \emph{*lw} cluster that caused breaking
-in the protected stem, \emph{*melw- > meolw-}. They propose
+in the protected stem, \emph{*melw- > *meolw-}. They propose
 that after breaking, but before back-mutation, the frequent
 direct singular of this uncountable noun supplied its
 monophthong to the inflected forms, creating new
