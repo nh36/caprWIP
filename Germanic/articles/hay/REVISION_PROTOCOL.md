@@ -69,6 +69,7 @@ that repository, copy writings, or transform any published passage.
 | D-introduction | Implemented against `7c37478701b2b3e70f25d8a9a81316c370b3636e` | R1: order → direct/protected trade-off → ‘hay’ predictions → E32 and the written record → survival and the fallback claim. R2: retain all frozen table cells; distinguish hiatus from dialectal endpoints and morphological replacement; move notation detail to N-trace-notation. Map E32 to future P-char-reading without changing its prose. Mark E33 and E34 jointly necessary for H2, not established or necessary for H1. Preserve all prose outside R1–R2 and defer Nathanification. |
 | D-charter | Authorized in Cycle 16 against `a81760edf7110b8ea6fde2e8568e6388f6fa49d3` | R1–R2 provisionally approved and protected. Move simplex behind charter without rewriting; consolidate the charter and composition passages, then implement the eight R3 units as four separately validated and pushed pairs. No new historical verdict. Each checkpoint records its parent and scope in its commit. |
 | D-simplex | Implemented in Cycle 17 against `4237e0ea` | R3 approved subject to three scoped corrections. In R4, distinguish secure case assignments, regional written targets, and Eadwine's observed readings from conventional normalization. Preserve Table 2, Appendix A, the census and historical assessments. R5 remains outside scope. |
+| D-hiatus | Authorized in Cycle 18 against `177dc5a9` | Correct the Vespasian translation separately, relocate nonquantitative spelling evidence, then implement R5 in three pushed pairs. Preserve R6 and the frozen record. |
 
 **Editorial review of D-introduction:** The direct geminate in ‘bed’
 now explains why analogy is at issue before any spellings of ‘hay’
@@ -101,3 +102,12 @@ form. `01e96c1c` aligned the case note and Table 2 with the arguments they
 support. All six were source-only; the following publication commit
 carries the matching PDF. The editorial review found no basis in these
 spellings to revise the historical model.
+
+**Cycle 18 source finding (E14):** Table 3 formerly glossed Vespasian
+*gecēd* as ‘calls’. Campbell §237.1b and Ringe and Taylor p. 260
+distinguish the participle from the finite *gecēð*. Sweet (1885: 416)
+prints *bist geced*, glossing Latin *vocaveris*. The corrected participial
+gloss leaves E14's evidence for nonfinal contraction before a dental
+unchanged. Pheifer §59.2 n. 1 and Hogg §5.133 n. 2 also allow an
+alternative lexical identification for the early ‘strew’ glosses;
+the prose now makes those spellings conditional evidence for E11.

@@ -608,42 +608,73 @@ preceded contraction, or in which varieties it occurred.
 
 [^hiatus-controls]: Campbell’s loanword examples concern gliding before another vowel; his metrical synizesis examples need not reflect ordinary lexical syllabification [@Campbell1959, §§512, 553–557]. Vespasian ⟨siem⟩ supports persistence, not the proposed desyllabification: its second vowel is not the high vowel posited for ‘hay’.
 
-<!-- pending:P-hiatus-contract -->
+<!-- P-hiatus-contract -->
 
-The outcome \emph{*he.i} is disyllabic. Table 3 distinguishes the
-positions and vowel sequences represented by the principal controls.
-The identical final vowels in *glī* do not establish the chronology
-of unlike final vowels. Vespasian *gecēd* is especially useful for
-dating contraction in the tradition which writes *heg*: \emph{*e.i}
-contracted before the dental in that verb. It does not show that the
-same contraction preceded the recording of a word with final \emph{*e.i}.
-*Sǣ* and *ǣ* have final unlike vowels in the reconstructed input,
-but their first vowel was already long; loss of *i* gives the same
-observable result [@Campbell1959, §237.1b; @RingeTaylor2014,
-pp. 259–260, 318].
+Contraction is a genuine competitor to glide formation.
+The comparisons in Table 3 match different parts of the
+environment in ‘hay’. *Glī*, from another light neuter
+ja-stem, matches final position but has two identical
+vowels. *Sǣ* and *ǣ* have final unlike vowels, but the
+first vowel was already long: loss of final \emph{*i}
+and contraction yield the same result. Vespasian *gecēd*
+is especially instructive, since it places contraction
+of the same sequence, \emph{*e.i}, in the tradition that
+writes *heg*. Here, as in *ēde* and *strēde*, a dental
+followed the sequence. Ringe and Taylor allow that
+identical and unlike vowels may have contracted at
+different times. Even the closest controls do not date
+contraction of final \emph{*e.i} in ‘hay’
+[@Campbell1959, §237.1b; @RingeTaylor2014, pp. 259–260, 318].
 
 | Old English reflex | Input at hiatus | Position | Source |
 |---------------------------|--------------|---------------------|--------------------------|
 | *glī* ‘merrymaking’ | \emph{*i.i} | Final | Ringe & Taylor 2014: 259, 318 |
 | *nī-* ‘new’ | \emph{*i.i} | Compound boundary | Ringe & Taylor 2014: 259 |
 | *ēde* ‘flock’, *strēde* ‘strewed’ | \emph{*e.i} | Before a dental | Ringe & Taylor 2014: 259–260, 318 |
-| Vespasian *gecēd* ‘calls’ | \emph{*e.i} | Before a dental | Campbell 1959: §237.1b; Ringe & Taylor 2014: 260 |
+| Vespasian *gecēd* ‘called’ (past participle) | \emph{*e.i} | Before a dental | Campbell 1959: §237.1b; Ringe & Taylor 2014: 260; Sweet 1885: 416 |
 | *sǣ* ‘sea’, *ǣ* ‘law’ | \emph{*ǣ.i} | Final | Ringe & Taylor 2014: 318 |
 
 : Contraction controls grouped by sequence and position.
 
-<!-- pending:P-hiatus-result -->
+If final contraction took place before \emph{*i} could
+become a glide, \emph{*he.i} > \emph{*hē} would preserve
+the inherited source of the nucleus but eliminate the
+inherited source of the palatal. To explain /heːj/ on
+this account requires both contraction in the relevant
+environment and a historically available source that
+actually supplied /j/ without replacing the vowel. A
+protected alternant could supply it; no such transfer is
+directly established. Campbell’s re-formation of *glīg*
+invokes a wider pattern of alternations, not a transfer
+from a particular inflected cell of ‘glee’. Brunner’s
+alternative retains an inherited palatal. The comparison
+motivates investigating how the two components could
+have acquired different histories, not assuming that
+they did [@Campbell1959, §§120.2, 411;
+@SieversBrunner1965, §130 n. 3].
 
-The retention and desyllabification comparisons motivate
-\emph{*he.i} > \emph{*hej} as a candidate development: after
-*w*-loss, fully unstressed final /i/ following stressed short
-/e/ could become a coda while hiatus still existed. Prior
-contraction would remove that input. The evidence does not
-establish this development in Anglian, let alone throughout
-Old English. Contraction has a closer control for the same
-vowels before a dental and closer controls for final position
-with different inputs. Neither process can be timed in the
-precise environment from those comparisons.
+<!-- P-hiatus-result -->
+
+The early-apocope derivation supplies an inherited mid
+vowel at hiatus. Its subsequent fate is less certain.
+Desyllabification before contraction could preserve both
+inherited components as short /ej/. Contraction with
+secondary restoration could preserve the source of the
+nucleus in long /eːj/ while giving the consonant a
+different history. Protected-stem substitution also
+yields Anglian /eːj/, but requires the actual replacement
+of the direct stem, not merely the existence of a
+protected alternant. Failure to show an inherited source
+for the glide would not establish that the vowel was
+replaced. Conversely, retaining more inherited material
+is no substitute for evidence that final contraction and
+secondary supply of the glide both took place.
+
+These accounts differ in what would rule them out. An
+independent demonstration of length in a particular early
+witness would exclude unlengthened /ej/ as a direct
+explanation of that witness. Can the spellings and
+metrical evidence establish such a distinction?
 
 ## 3.3 Orthography and vowel quantity
 
