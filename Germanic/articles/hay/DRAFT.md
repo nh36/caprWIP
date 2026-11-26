@@ -1203,55 +1203,72 @@ would still stand.
 
 ## 5.2 Farman and West Saxon
 
-<!-- pending:P-compare-regions -->
+<!-- P-compare-regions -->
 
-Where Farman’s combination of ⟨oe⟩ and accent favours length,
-unlengthened /hej/ is a weaker account of his form. Contraction
-plus restoration and protected-stem transfer both explain
-length and a palatal; quantity, even if independently confirmed
-there, would not choose between them. The case for one or
-the other would have to rest on direct and protected alternants
-or a closer historical control. Farman does not supply a
-date by which contraction or transfer must have happened
-in Mercian generally.
+The regional evidence weighs differently on these histories.
+In the earliest Anglian spellings the vowel is mid and its
+length remains open. Farman’s repeated use of the acute and
+⟨oe⟩ favours length in his gloss (Section 3.3). If independently
+confirmed, length would rule out unchanged short /hej/ for
+Farman, but not distinguish contraction with palatal supply,
+protected-stem substitution, or regular late apocope. His
+spellings date neither contraction nor levelling elsewhere.
 
-Secure West Saxon ⟨hig/hyg⟩ is better explained by borrowing
-protected vocalism under the early consonantal reconstruction.
-Palatal conditioning of *ē* requires a preceding palatal, and
-West Saxon treatment of /i.e/ does not establish raising of
-/e.i/ [@HoggGrammar1992, §§5.49, 5.53, 5.82–84, 5.146–147;
-@Hogg2006, p. 400]. If the high forms pass through the usual
-umlauted diphthong stage, transferring the nucleus and glide
-would suffice. The spellings do not distinguish that operation
-from early substitution of the whole stem, as in Ringe and
-Taylor’s analysis, or identify its date. The dialectal distinction
-rests on vowel quality, not on treating unassigned Eadwine
-⟨hieg⟩ as early West Saxon.
+West Saxon ⟨hig⟩ and ⟨hyg⟩, by contrast, point to a high vowel.
+Neither direct continuation through \emph{*he.i} supplies that
+quality as proposed. Under early apocope, the protected stem
+has an advantage: umlaut of its diphthong provides an
+independently motivated source of high vocalism (Section 3.3).
+That does not require the same transfer in Anglian. Regional
+reflexes of the same protected material can account for the
+contrast; so can different degrees of remodelling, with
+inherited direct vocalism retained or differently developed
+in some Anglian forms. The record establishes neither the
+boundary nor the date of any such transfer. It gives no
+reason to posit different regional orders of the original
+West Germanic changes.
 
 # 6. Implications for West Germanic chronology
 
-<!-- pending:P-compare-continental -->
+<!-- P-compare-continental -->
 
-Old High German *hewi/houwi* and Middle Dutch *hoye/houwe* are
-documented doublets. Ringe and Taylor identify *hewi* as the inherited
-direct singular and *houwi* as the generalized protected stem. A
-late-apocope account can derive *houwi* regularly but must explain
-*hewi* independently. Boutkan’s assignment of the Dutch doublets
-to grammatical stems depends on his reconstruction of the ordering
-[@RingeTaylor2014, pp. 53, 173; @Boutkan1995, pp. 212–213].
-The doublets document the coexistence of different stem shapes;
-they do not independently establish a direction of levelling in
-English. Gothic *hawi*, outside West Germanic, cannot decide
-whether a West Germanic form escaped gemination.
+The Old High German doublet *hewi/houwi* makes stem ancestry
+crucial to the chronological comparison. Ringe and Taylor
+identify *hewi* as the inherited direct singular and *houwi*
+as the result of extending the geminated oblique stem.
+With late nasal apocope, the direct stem would geminate
+regularly, so it is *hewi* that needs another explanation.
+Boutkan proposes a southern development that simplifies
+geminated material; he treats the High German doublets on
+that model, with the geminate in the competing form supplied
+by analogy. He assigns Middle Dutch *hoye* to oblique
+\emph{*hauj-} and *houwe* to \emph{*hawi}, the old nominative
+stem in his reconstruction. That assignment does not put
+\emph{*hawi} before gemination: he places gemination before
+apocope and takes Dutch to follow the southern pattern
+[@RingeTaylor2014, pp. 53, 173; @Boutkan1995, pp. 211–213].
+The doublets establish that two shapes coexisted, not whether
+the ungeminated member was inherited without gemination or
+was secondary. Nor do they establish which way English
+levelled. Gothic *hawi* supports the comparative input and
+attests an ungeminated form outside West Germanic; it cannot
+show that a West Germanic direct form escaped gemination.
 
-Dahl takes the pre-\emph{*j} sequence to be
-diphthongal, not consonantal *w*. His regular account of the
-vocalism is not the early hiatus derivation and explicitly
-requires restoration of final *ġ*. Ringe and Taylor allow a
-similarly shaped \emph{*auj} output from reversible gemination.
-Convergence of these outputs does not establish that the inputs
-or intermediate stages were identical [@Dahl1938, pp. 81–86
-and ‘hay’ discussion; @RingeTaylor2014, pp. 44–53, 173].
+Dahl changes the input rather than merely the ordering.
+He treats the material before \emph{*j} as a diphthong and
+does not posit gemination in this English class. In his
+account the diphthong differentiates before \emph{*j}
+becomes final; the vocalized glide induces umlaut and is then
+lost. The inflected forms supply final *ġ* anew. His account
+of the vowel is not a development through \emph{*he.i}, and
+his account of the whole form is not analogy-free
+[@Dahl1938, pp. 81–86, 97]. A similar \emph{*auj} shape in
+Ringe and Taylor results from resolution of a geminated
+sequence, not from an inherited diphthong
+[@RingeTaylor2014, pp. 53, 173]. Convergence on that shape
+does not decide between the reconstructions. The comparison
+of the two orders here remains conditional on consonantal
+\emph{*wj}.
 
 <!-- pending:P-compare-bed -->
 
