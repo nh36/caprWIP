@@ -1068,7 +1068,7 @@ a glide formed regularly from final /e.i/
 The comparisons give reasons to consider either direction
 of levelling, but the reconstructed and attested cells do
 not tell us which way ‘hay’ was remodelled, if at all.
-The closely related ‘glee’ provides a further test of how
+The structurally comparable ‘glee’ provides a further test of how
 far a comparison can support consonantal re-formation
 without replacement of the nucleus.
 
@@ -1077,7 +1077,7 @@ without replacement of the nucleus.
 ‘Glee’ is a close comparison because it is another light
 neuter in which the early direct and protected stems could
 differ at gemination. On Ringe and Taylor’s analysis, the
-direct development is \emph{*gliwi > gli.i} > *glī*, with
+direct development is \emph{*gliwi > *gli.i} > *glī*, with
 loss of \emph{*w} as in ‘hay’. Contraction of identical
 vowels does not establish what happened to final /e.i/.
 For morphology the important contrast is with the protected
