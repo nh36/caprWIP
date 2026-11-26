@@ -1136,66 +1136,70 @@ weighing these histories against the spelling and phonology.
 
 ## 5.1 Earliest Anglian and Kentish evidence
 
-<!-- pending:P-compare-forms -->
+<!-- P-compare-forms -->
 
-The two earliest written points of comparison have different
-strengths. Kentish ⟨hei⟩, on the ‘hay-road’ reading, shows
-the early sequence of letters but not its quantity or
-syllabification. Mercian ⟨heg⟩ belongs securely to the noun
-and occurs in direct syntax. It more naturally writes /Vj/
-than hiatus, but it no more identifies the source of the
-nucleus than the Kentish first element identifies a case form.
+The earliest Anglian forms require a mid vowel and, on the
+ordinary reading of ⟨heg⟩ and ⟨heig⟩, a palatal glide.
+Their nominative or accusative use identifies the direct
+singular, but neither its written vowel nor the attested
+datives determine which stem supplied that vowel or how long
+it was. Kentish *heiweg*, if ‘hay-road’ as argued in Section
+2.1, supplies an exact written counterpart to the hiatus
+stage \emph{*he.i} reached under early apocope. It does not
+establish hiatus in pronunciation or identify a grammatical
+cell. The Anglian simplex remains evidence for the direct
+singular even if the charter compound is interpreted otherwise.
 
-On the regular-survival account, *w*-loss leaves \emph{*he.i}, and
-desyllabification gives /hej/ without borrowing either the
-nucleus or the glide. The result uses the ordinary Mercian
-spelling ⟨heg⟩. This is the best regular-survival reading of
-that spelling: an interpretation with retained hiatus would
-require an independently unestablished use of ⟨g⟩. The
-desyllabification account instead has a structural precedent
-in *clēa*, and the persistence of other hiatus sequences makes
-it unnecessary to assume immediate contraction. Its added
-hypothesis is the order and conditioning of final /i/ in this
-environment. An independently dated contraction of a matched
-sequence before Vespasian would weigh directly against it.
+Early apocope offers two ways to keep the inherited vowel.
+Desyllabification of final /i/ would yield short /hej/ and
+preserve both components without analogy. The comparison
+with *clēa* motivates the structural change, not its
+application to final /e.i/ (Section 3.2). This is a stronger
+regular-survival reading of ⟨heg⟩ than retained hiatus,
+which needs a use of ⟨g⟩ not independently established there.
+Alternatively, contraction to \emph{*hē} followed by
+secondary supply of /j/ would give long /eːj/ without
+replacing the nucleus. Neither step has been established
+for this form.
 
-An alternative uses the independently motivated contraction
-process, for which there is a closer control in the same vowel
-sequence but a different position. If \emph{*he.i} contracted to \emph{*hē},
-restoration of /j/ would supply Anglian ⟨heg⟩ without changing
-the origin of the nucleus. *Glī/glīg* supports a repair of this
-scope on Campbell’s account. The cost is positive: contraction
-destroys the potential inherited source of /j/, and neither
-bare \emph{*hē} ‘hay’ nor a contemporary contrast between that form
-and a glide-bearing stem has been identified. This account is
-well motivated where both length and a glide need explaining,
-but it cannot be selected merely from an ordinary ⟨heg⟩.
+The same long vowel and glide can have a protected-type
+history. Ringe and Taylor replace direct \emph{*hæwi}
+with protected \emph{*hēaj-} before i-umlaut (Section 1.3);
+they do not transfer the already developed Anglian vowel
+and glide at a later stage. A reconstructible donor and
+independently motivated cases of levelling make this a
+serious alternative. The datives do not establish that it
+occurred in Anglian. Late apocope gives the same protected-type
+outcome directly, without English stem transfer; the
+ungeminated continental forms raise a separate question
+(Section 6). And a single order of apocope and gemination
+need not entail identical subsequent histories in Anglian
+and West Saxon.
 
-Substitution of the protected stem has the independent support
-of levelling in the class and gives the Anglian vowel and glide
-in one operation followed by regular sound changes. It also
-has two requirements not imposed by the spellings: a donor in
-the relevant period and the extension of its nucleus as well
-as its palatal segment. The attested datives show inflection
-but do not establish either requirement. The regular late
-derivation gives the same nucleus and glide without an English
-donor; its cost is different, namely the need to account
-for ungeminated continental comparanda under that chronology.
+<!-- P-compare-failure -->
 
-<!-- pending:P-compare-failure -->
+If desyllabification did not operate in early Anglian final
+/e.i/, the analogy-free account loses its means of supplying
+the glide. This would not establish that the vowel was
+borrowed. The nonfinal contraction parallels give independent
+grounds for considering an inherited long vowel, but
+contraction must occur in the relevant final environment,
+and a source accessible at that time must actually supply
+/j/ without replacing the vowel. Campbell’s ‘glee’ comparison
+motivates a re-formation of that scope; it establishes
+neither event in ‘hay’. Neither a bare \emph{*hē} ‘hay’
+nor a contemporaneous, diagnostic alternation has been found.
 
-Rejecting final desyllabification would eliminate the
-analogy-free account proposed here, not the inherited
-source of the mid vowel. The nonfinal contraction parallels
-motivate a long direct vowel that could take a glide from
-a protected alternant. The morphology gives no independent
-reason to include the donor’s vowel in that operation: the
-protected stem is reconstructible, but the datives do not
-reveal its nucleus, and the ‘meal’ comparison shows why a
-mass noun need not favour protected vocalism. Neither the
-phonology nor the morphology establishes actual retention.
-Together they make importing the protected vowel unnecessary
-to account for the earliest Anglian forms.
+Paradigmatic uniformity provides independent grounds for
+whole-stem levelling, but the Anglian evidence does not
+require transfer of the donor’s vowel. This distinction
+rests on at least one inherited-vowel history remaining
+defensible. If desyllabification were excluded and either
+final contraction or secondary palatal supply failed, the
+positive case against obligatory replacement would be lost.
+The written evidence, the different regular predictions of
+the two orders and the limits of the quantity evidence
+would still stand.
 
 ## 5.2 Farman and West Saxon
 
