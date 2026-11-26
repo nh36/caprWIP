@@ -39,18 +39,20 @@ This difference changes the relation between the stems of light
 neuter ja-nouns. If the nominative–accusative singular lost its
 final vowel early, its \emph{*j} ceased to be prevocalic and the
 stem escaped gemination. Forms such as the genitive and dative
-retained a following vowel and so could supply a geminated
-stem. On the late chronology the direct singular geminated too.
-Thus Old English *bedd* ‘bed’ has a geminate predicted by the
-late order, whereas the early order can explain it by extension
-from the protected cells. Conversely, ungeminated continental
-*beti*-type forms count against the late order if they continue
-the inherited direct stem rather than a secondary formation
+retained a following vowel. Continental *peti*, *beti* and
+*bedi* ‘bed’ give positive comparative grounds for early loss
+if they continue the inherited ungeminated direct stem.
+On that chronology, Old English direct *bedd* can be explained
+by extension from the independently attested geminated stem
+of *bedde*, *beddes* and *beddum*. Those forms make the transfer
+possible; they do not establish that it took place. The late
+order gives direct *bedd* regularly but needs a separate
+explanation for the continental singleton forms. Boutkan’s
+account makes the latter secondary rather than inherited
+without gemination (Section 6)
 [@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23;
-@Boutkan1995, pp. 435–436; @Stiles2013, pp. 15–16]. Agreement
-with a normalized headword is therefore less informative than
-knowing which cell supplied the stem and which of its features
-would have developed without levelling.
+@Boutkan1995, pp. 211–213, 435–436; @Stiles2013, pp. 15–16;
+@Krapp1932PPs, Ps 40:3; *Beowulf*, lines 1240, 1791].
 
 <!-- P-hay-predictions -->
 
@@ -67,6 +69,10 @@ outcome by replacing direct \emph{*hæwi} with the stem
 \emph{*hēaj-} before i-umlaut. From this substituted stem they
 derive both the high West Saxon and the mid Anglian reflexes
 [@RingeTaylor2014, pp. 53, 173, 246].
+If that substitution is necessary, ‘hay’ adds a historical
+requirement under early apocope that the late order does
+not have. The question is whether that apparent disadvantage
+can be removed or reduced.
 
 <!-- P-motivation -->
 
