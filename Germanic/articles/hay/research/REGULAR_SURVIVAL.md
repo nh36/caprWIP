@@ -274,5 +274,144 @@ common early order (H5) is a viable historical framework. The West
 Saxon contrast gives it a genuine reason to be considered, and
 Farman warns against uniformity. Neither demonstrates when or where
 an Anglian short vowel survived, or the timing and direction of
-any subsequent levelling. No historical assessment is changed by
-collapsing these witnesses into a single dialect average.
+any subsequent levelling. Pooling the witnesses would obscure these
+distinctions rather than resolve them.
+
+## R6. Comparative adjudication
+
+Compare the histories by the operations each needs and the predictions
+that distinguish them. Regular change has explanatory priority when it
+is independently supported in the relevant environment. Neither an
+unmarked spelling nor a conventional macron establishes that
+environment or selects an ancestry.
+
+| History | Independently supported premises and positive evidence | Necessary steps not established; counterevidence | Witness scope and non-discriminating evidence |
+|---|---|---|---|
+| **H1. Regular short /hej/** | Under A the direct singular escapes gemination and reaches final hiatus. Other native final sequences show loss of syllabicity without loss of the second vowel's quality; this motivates looking for gliding. | E25 needs consonantalization of final /i/ before contraction, retaining short /e/. Back-vowel controls give diphthongs; the nearer *gecēd* gives nonfinal contraction. Farman leans against unchanged shortness locally. West Saxon high vocalism contradicts unchanged H1 there. | Vespasian and later ordinary Anglian spellings allow it; conditional Kentish compound resemblance has a different boundary. Neither the forms, the metrical alternatives, Jones's transcriptions nor the later merger establishes shortness. |
+| **H2. Contracted inherited vowel plus secondary /j/** | Nonfinal /e.i/ after *w*-loss gives a better nucleus match to the proposed contraction. Final contraction is independently known with other inputs. Later secondary palatals and paradigm alternants motivate looking for a donor. | E33 needs contraction in the exact final environment; E34 needs an available donor and actual transfer of /j/ without its vowel. Neither follows from the other. No bare *hē* ‘hay’ attestation or secure direct donor event was found. West Saxon high vocalism contradicts unchanged H2 there. | Compatible with a long Vespasian or later Anglian mid vowel and with Farman's local evidence. This is not Dahl's etymology (E30). Proof of Anglian length alone would not distinguish H2 from H3/H4. |
+| **H3. Substitution of the protected stem under early apocope** | Early loss yields direct/protected alternation. The reconstructed protected donor has the vowel ancestry that explains West Saxon high quality and Anglian long mid quality. There is independently attested class levelling in both directions. | The Ringe–Taylor history needs replacement of *hæwi* by protected \*hēaj- before umlaut; availability is not evidence of transfer in each dialect. The observed inflected cells and mass-noun parallels do not fix scope, date or direction. Independently short *heg* would contradict unmodified H3 for that token. | Preferable to H1/H2 **unchanged in West Saxon if A's order is assumed**; genuine Anglian competitor, especially where length is locally favoured, but the early Mercian spellings do not independently establish the predicted length. |
+| **H4. Regular protected-type singular under late apocope** | Gemination and the regional reflexes of the protected-type material are independently supported as mechanisms. An inherited direct geminate is a more transparent test than ‘hay’; the OE *bedd* type motivates this order if inherited. | Requires nasal loss after gemination in the relevant ancestor and the ordinary regional developments. Inherited continental singletons would count against a uniform late order without another explanation. Demonstrated short Vespasian *heg* would contradict the unmodified long output here too. | Explains high West Saxon and long mid Anglian results without importing another stem. The same vowel outcomes are possible under H3, so *hig/hyg* and *hóeg* are not independent chronology tests. |
+| **H5. Later differentiation** | The high/mid regional contrast and distinct witness practices give a reason not to demand one unchanged outcome. A shared early order can in principle leave different later histories. | Requires independently warranted component histories; no actual Vespasian short vowel, later Anglian transfer, date of levelling or separate regional prehistoric order is established. Spelling variation alone is not phonological differentiation. | A framework for combining regional/chronological outcomes, not a third mechanism for producing early /ej/ and not an explanation on its own. |
+
+**Explicit verdicts.**
+
+1. **C01, derivation to final hiatus:** Established **within A**, and
+   historically well motivated conditional on its consonantal input
+   and early loss. Not demonstrated as a ninth-century spoken form
+   or as proof of the early order. E30 is a rival reconstruction of
+   the earlier material, not a refutation of A's internal derivation.
+2. **Final \*he.i > \*hej:** Positively motivated but undecided as a
+   hypothesis; **not independently established as a sound change**.
+   Nonfinal contraction weighs against unrestricted gliding, not a
+   demonstrated final rule. There is no evidence-based finality split
+   yet.
+3. **Bare \*hē:** Contraction has closer vowel-quality and *w*-loss
+   parallels; these make H2's first step worth taking seriously, not
+   the preferable *final* continuation. E33 remains unestablished, and
+   bare \*hē would not itself explain the simplex final palatal. E34
+   is a separate obligation. Dahl supplies \*hē on another input.
+4. **Vespasian short /hej/:** **Merely compatible as a witness
+   reconstruction**, not independently preferable. Short controls
+   prove the spelling can accommodate it, not that it selected it.
+5. **Vespasian conventional /heːj/:** **Merely compatible as a
+   witness reconstruction** and positively motivated by different
+   etymologies, not independently preferable on the early evidence.
+   Farman's later local preference cannot be read back into *heg*.
+6. **Kentish *heiweg*:** The written comparison is demonstrated;
+   ‘hay-way’ is positively motivated but undecided. The compound's
+   local *dei* comparison provides context for a palatal spelling, not
+   independent evidence of syllabicity, shortness or direct-cell
+   descent. C05 remains qualified corroboration, not a second proof.
+7. **Farman and ninth-century Mercian:** No material direct revision
+   to Vespasian's reconstruction. The positive but limited local
+   evidence disfavors a *uniform unchanged* short outcome. Extension
+   to Vespasian would require separately established continuity.
+8. **Farman and protected ancestry:** The *hēran* class is a closer
+   etymological analogy than unchanged H1, but Farman does **not**
+   independently prefer the protected source over a contracted
+   inherited long vowel. The acute chiefly bears on quantity; the
+   digraph bears on the scribal vowel class, not unique ancestry.
+9. **Article promotion:** **No.** C06 retains its motivation for
+   a regular route; C07 retains the witness and regional distinctions.
+   C11, actual analogy-free survival, needs positive discrimination
+   not supplied by R1–R5. C10, a defensible inherited-nucleus
+   alternative via H1 **or** H2, survives without C11.
+10. **Early apocope (C09):** Unchanged as a conditional comparative
+    conclusion. Inherited continental *beti* and associated
+    singletons are possible positive evidence for early loss; their
+    inherited status is the independent burden. ‘Hay’ removes the
+    claim that early loss necessarily entails borrowing the Anglian
+    vowel; it does not positively date the order. If both inherited
+    routes are excluded, retract C10 and the corresponding part of
+    C09. If the continental singletons prove secondary, retract
+    their positive chronological weight independently. Neither
+    consequence follows from the present source checks.
+
+**Article recommendation (not implemented).** Retain the current
+historical conclusion. If editorially useful, cite Jones as an
+explicit late-Northumbrian short interpretation, not an early Mercian
+quantity witness; note that the closest like-vowel contraction controls
+are nonfinal and that the word-final consonantal outcome lacks an
+independent example. Keep the West Saxon source preference conditional
+on early loss, and do not turn absence of evidence for long /eː/ into
+evidence for short /e/.
+
+**CAPR recommendation (not implemented).**
+
+| Object | Status and appropriate use |
+|---|---|
+| Kentish ⟨hei-⟩ in *heiweg* | Attested written first member. Document as a qualified written comparison for A, conditional on identity as ‘hay’; ‘quasi-attested’ must refer only to the written comparison, not to a simplex cell or pronunciation. |
+| Vespasian ⟨heg⟩ | Attested written simplex/direct singular, independently identified by gloss context. Quantity not read from the spelling. |
+| /he.i/ | Reconstructed final hiatus under A, with syllabic /i/. Not a manuscript form. No independent spelling control makes simplex ⟨heg⟩ a witness for the hiatus itself. |
+| /hej/ | Reconstructed short nucleus with consonantal coda, a proposed regular continuation. Not an attested phonetic value. |
+| `hei` | Frozen A executable output; its letters match the compound first member, but its /i/ is syllabic in the historical interpretation. Neither `hei` nor the compound establishes executable agreement with simplex ⟨heg⟩. |
+
+Do not target short /hej/ as a regular attested simplex reflex
+without independent evidence locating shortness in a secure early
+simplex and independently supporting final consonantalization under
+the relevant conditioning and chronology. A future authorized
+research-only comparison could tabulate final versus nonfinal
+post-*w*-loss sequences with matched input vowels and stress, including
+*gecēd* as a negative control for unrestricted gliding. Only after a
+source-supported final distinction is found would a disposable
+model-local test of competing outcomes be informative; it would test
+the consequences, not supply historical evidence or change targets.
+
+**SC047 protocol closeout.** Identity: the supplementary lexical
+question above, `research/hay-article`, initial checkpoint `14293ff4`;
+the separately registered SC047 executable identifier is
+`OEHeavySyllableNasalApocope`. Current state: final short nasal
+low-vowel apocope is registered as Proto-West Germanic with
+pan-West-Germanic scope, independent of the executable identifier.
+The article compares early/late models using the inherited direct
+singular input, not a protected cell preselected as the answer.
+Diagnosis uses the existing frozen trace and comparative record
+([SC047 baseline](../SC047_BASELINE.md), [argument
+model](../ARGUMENT_CYCLE13.md)); the written controls above are
+orthographic witnesses, not runtime firings. Fresh executable census,
+counterfactual traces and runtime witness classification are out of
+scope. Literature, conditioning, regional scope, negative controls
+and positive grounds for analogy are given under R1–R6. The proposed
+final development would be later than *w*-loss and limited to the
+hypothesized stressed /e/ + unstressed syllabic /i/ at a word edge.
+Those are requirements internal to H1, not independently demonstrated
+chronology edges; no chronology edge is added. The frozen proxy ends
+at hiatus and does not execute H1. Lexical verdict: **DEFER** promotion
+or implementation, for want of discriminating evidence. Production
+registry verdict remains unchanged:
+
+`Registry-verdict: SC047=REFORMULATE/RETAIN`
+
+Propagation: dossier and inventories only; no regression changes,
+registry edits, re-freeze, target/fingerprint changes or fresh
+scientific certificate. Residue: verified matched long mid-vowel
+controls, complete Vespasian image collation, positive evidence of
+quantity/ancestry for Vespasian, and a dated final-hiatus control or
+actual donor event. No private holdings are included.
+
+**Chronological commit ledger.** R1 `9fdf06f4` (published histories);
+R2 `afb143c6` (hiatus controls); R3 `bdcc5e40` (witness panels);
+R4 `61a7c0b3` (Jones); R5 `a18839e4` (dialect and chronology);
+R6 is the commit introducing this section (`hay: adjudicate the
+regular-survival hypothesis without promoting it`). The manuscript
+and PDF remain at the Cycle 22 publication state.
