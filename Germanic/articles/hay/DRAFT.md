@@ -899,58 +899,70 @@ observed stages. What motivates their direction is that the
 inflected stem provides a regular source for the vowel that
 the direct West Saxon history does not predict.
 
-<!-- pending:P-morph-meal -->
+<!-- P-morph-meal -->
 
-For ‘meal’ the recorded variants include *melu* beside
-*meolu* and *melwes* beside *meolwes*. In Ball and Stiles’s
-account, breaking regularly gives \emph{*meolw-} in the
-inflected stem, while \emph{*melu} escapes breaking and can
-later give *meolu* by back-mutation. Between these changes,
-they propose that the more frequent direct \emph{*melu} of
-the uncountable noun supplied its vowel to new inflected
-\emph{*melw-} forms. Those inflected by-forms in turn
-supported the direct monophthong against the new *meolu*.
-They interpret the inflected *smer(u)w-* forms of ‘fat’,
-including early Épinal–Érfurt datives, in the same way:
-direct vocalism replaced the breaking diphthong before
-back-mutation. ‘Tar’ limits the comparison. They find early
-direct *teru/tero* but no inflected *terw-*; the reported
-genitive plural *teorwena* may reflect different usage,
-though the distribution could also reflect transmission
-[@BallStiles1983, pp. 18–19 §4.3 and n. 18].
+‘Meal, flour’ presents the opposite possibility. The written
+record has both direct *melu* and *meolu* and genitive *melwes*
+and *meolwes*. On Ball and Stiles’s account, direct
+\emph{*melu} lacked the \emph{*lw} cluster that caused breaking
+in the protected stem, \emph{*melw- > meolw-}. They propose
+that after breaking, but before back-mutation, the frequent
+direct singular of this uncountable noun supplied its
+monophthong to the inflected forms, creating new
+\emph{*melw-} variants alongside the broken stem. When regular
+back-mutation then produced *meolu*, the monophthongal
+inflected variants in turn helped maintain direct *melu*.
+Thus each set of forms could support the other at a different
+stage. Luick and Sievers–Brunner instead explain direct *melu*
+from inflected forms that escaped back-mutation. The spelling
+distribution alone does not choose between these explanations:
+Ball and Stiles’s initial outward transfer depends on their
+reconstruction of breaking in the inflected forms before
+back-mutation [@BallStiles1983, p. 18, §4.3;
+@SieversBrunner1965, §110.1].
 
-‘Meal’ and ‘fat’ have *wa*-stems and actual monophthongal
-inflected variants. ‘Hay’ has neither that structural
-alternation nor diagnostic vocalism in its recorded datives.
-Ball and Stiles’s frequency explanation is inferred, and it
-depends on their chronology of breaking. Its relevance is
-the direction of transfer: an uncountable noun can supply a
-reason for preserving direct vocalism, or for extending it
-to inflected forms, rather than automatically taking the
-protected stem as the donor. Of the 51 case-assigned ‘hay’
-occurrences, 47 are direct singular; the distribution of
-these glosses and the absence of a secure plural cannot
-establish the relative frequency of prehistoric stems.
-But the attested morphology supplies no contrary reason
-to assume that protected vocalism had the advantage in
-Anglian.
+They apply the same reasoning to ‘fat’. In addition to
+inflected *smer(u)w-* in the medical texts, they cite the
+early Épinal–Érfurt dative *smeruui* (gloss 944), with
+monophthongal vocalism already in an inflected form. On their
+account this is evidence for outward transfer before
+back-mutation. ‘Tar’, however, has early *teru/tero* but
+no inflected *terw-* in their material. The reported genitive
+plural *teorwena* may point to uses other than as a mass noun;
+the surviving distribution could also be an accident of
+transmission [@BallStiles1983, pp. 18–19, §4.3 and n. 18].
+Meaning alone does not determine the direction of levelling.
+
+If direct singular ‘hay’ was likewise frequent relative to
+its inflected forms, retaining its vocalism or extending it
+to other cells is historically motivated, not merely the
+absence of protected-to-direct transfer. But Ball and Stiles
+infer relative frequency; they do not measure it. Their
+*wa*-stems had a different conditioning environment and
+attested inflected variants with contrasting vowels. For the
+*ja*-stem ‘hay’, the recorded datives do not give that test.
+The comparison supplies a reason to consider the other
+direction, not evidence that ‘hay’ took it.
 
 ## 4.2 The reconstructed and attested paradigm
 
-<!-- pending:P-morph-reconstruct -->
+<!-- P-morph-reconstruct -->
 
-Early apocope gives the direct singular \emph{*hawi} beside protected forms
-such as genitive \emph{*hawjas}, dative \emph{*hawjai}, and nominative–accusative
-plural \emph{*hawjō}. In the dative and plural, the endings themselves
-develop before gemination (\emph{*-ai} > \emph{*-ē} and \emph{*-ō} > \emph{*-u}),
-but both still put a vowel after \emph{*j}. There is no corresponding
-loss of \emph{*-ą} in these forms. After gemination, the same
-labial resolution and diphthong development as in the late
-direct singular lead to \emph{*hēaj-} in both orders. Table 5 makes
-explicit the resulting alternation before any levelling and
-the normalized forms it predicts. The rows are reconstructed
-grammatical environments, not attestations of their outcomes
-[@HoggFulk2011, §§2.19, 2.23; @RingeTaylor2014, pp. 44–53, 173, 246].
+Which cells could have preserved a stem available for
+transfer? Table 5 starts from inherited inflectional shapes
+and compares their West Germanic forms at gemination.
+Only the nominative–accusative singular contains the nasal
+ending at issue. If it was lost early, the direct singular
+became \emph{*hawi}, without prevocalic \emph{*j}; if the
+ending remained, the stem geminated. In the genitive singular,
+dative singular and nominative–accusative plural, a vowel
+followed \emph{*j} in either order. The inherited dative
+\emph{*-ai > -ē} and neuter plural \emph{*-ō > -u} had
+already changed by gemination, but neither change removed
+that vowel. Subsequent labial resolution and diphthong
+development yield the same protected \emph{*hēaj-} in
+both orders [@HoggFulk2011, §§2.19, 2.22–2.23;
+@RingeTaylor2014, pp. 44–53, 173, 246].
 
 | Cell and reconstructed input | Early history at gemination | Late history at gemination | Regular predicted reflex |
 |:--------------------------------|:----------------------------|:---------------------------|:-------------------------|
@@ -959,7 +971,17 @@ grammatical environments, not attestations of their outcomes
 | Dat. sg. \emph{*hawjai} | \emph{*hawwjē} | \emph{*hawwjē} | \emph{*hīeġe} |
 | Nom.–acc. pl. \emph{*hawjō} | \emph{*hawwju} | \emph{*hawwju} | \emph{*hīeġ} |
 
-: Selected reconstructed cells. In both orders the protected stem develops from \emph{*hawwj-} to \emph{*hauj-}, then via fronting to \emph{*hēaj-} and by umlaut to \emph{*īej-}. The normalized diphthongal predictions are not a manuscript paradigm.
+: Selected reconstructed cells. In both orders the protected stem develops from \emph{*hawwj-} to \emph{*hauj-}, then via fronting to \emph{*hēaj-} and by umlaut to \emph{*īej-}. The diphthongal predictions use normalized West Saxon forms, not manuscript readings.
+
+Wright’s *hīeġes* and *hīeġe* likewise illustrate the
+grammatical paradigm, not a series of manuscript attestations
+[@Wright1914, §270 and note, §357]. Even if the plural was
+rare, either oblique singular would make a protected stem
+available in the reconstruction. What the reconstruction
+establishes is the possibility of an alternation under early
+apocope. Its survival, the relative availability of its
+members and the direction of any remodelling are separate
+questions for the record.
 
 <!-- pending:P-morph-census -->
 
