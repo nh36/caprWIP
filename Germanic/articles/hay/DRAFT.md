@@ -1072,46 +1072,65 @@ The closely related ‘glee’ provides a further test of how
 far a comparison can support consonantal re-formation
 without replacement of the nucleus.
 
-<!-- pending:P-morph-glee -->
+<!-- P-morph-glee -->
 
-The light neuter ‘glee’ provides two different comparisons.
-Ringe and Taylor’s inherited direct \emph{*gliwi} loses \emph{*w} and
-contracts identical vowels: \emph{*gliwi} > \emph{*gli.i} > *glī*. Their
-protected \emph{*[gliwwjas]} is represented by *glīowes*, with a
-labial in a form with an overt ending. The first comparison
-is unusually close at the point of loss of \emph{*w}*, but /i.i/
-has no vowel-quality decision to make at contraction. It is
-the coexistence of different stems, not the precise treatment
-of hiatus, that more directly parallels the morphological
-problem in ‘hay’ [@RingeTaylor2014, pp. 53, 259, 318].
+‘Glee’ is a close comparison because it is another light
+neuter in which the early direct and protected stems could
+differ at gemination. On Ringe and Taylor’s analysis, the
+direct development is \emph{*gliwi > gli.i} > *glī*, with
+loss of \emph{*w} as in ‘hay’. Contraction of identical
+vowels does not establish what happened to final /e.i/.
+For morphology the important contrast is with the protected
+genitive: their geminated reconstruction is reflected in
+*glīowes*, an inflected form retaining a labial
+[@RingeTaylor2014, pp. 53, 250, 259, 318].
 
-Campbell treats *glīg* and *glīges* as re-formations beside
-*glīw/glīow*. Existing alternations between *ī(g)* and
-*īw/īow* elsewhere in the lexicon could give a new *g*-form
-without changing the historical source of the direct nucleus.
-This is not a claim that the *w*-bearing genitive *glīowes*
-itself furnished a palatal consonant. Brunner instead allows
-singleton *w* to combine with preceding *i* as *iu* while
-*j* remains. Umlaut gives West Saxon *ie* or *ī*, with a
-palatal segment; with a protected ending the labial can
-geminate and persist, giving the competing *w*-forms. He
-compares compounds with *nīġ-* ‘new’ and contrasts *glīg*
-and its compounds with *glīw*, *glēo* and related compounds
-[@Campbell1959, §§120.2, 411, 579(4);
-@SieversBrunner1965, §§130 n. 3, 173, 247 n. 1].
+Campbell takes *glīg* and *glīges* to be re-formations beside
+*glīw/glīow*. He compares words in which final *w* was lost
+after *i*, but labial forms arose by restoration from
+inflected forms. The resulting alternations include *Tīg*
+beside *Tīwes-* (the god’s name), with *Tīges* showing that
+the *g*-form could itself spread to an inflected cell.
+The model for ‘glee’ is that cross-lexical alternation, not
+transfer of a *g* from the *w*-bearing genitive *glīowes*.
+On this analysis re-formation could alter the end of the
+word without importing a different nucleus
+[@Campbell1959, §§120.2, 411, 579(4)].[^glee-variants]
 
-On Campbell’s analysis the doublet is a precedent for
-modifying the end of a word without replacing its nucleus.
-On Brunner’s, some forms can have a palatal from the outset;
-secondary extension remains possible, but is not necessary
-to originate the segment. This alternative matters for ‘hay’
-because the fate of a labial and the source of a palatal need
-not be coupled. However, it cannot preserve inherited *j*
-in a derivation that has already vocalized it to syllabic *i*
-in \emph{*hawi}. Applying Brunner’s mechanism directly to ‘hay’
-would require an independently justified reconstruction in
-which *j* survived that stage. Neither interpretation of
-‘glee’ proves the origin of the final glide of *heg*.
+Brunner instead derives the palatal from inherited *j*:
+singleton *w* combined with preceding *i* as *iu*, which
+underwent i-umlaut to West Saxon *ie* or *ī*, while *j*
+survived. In protected forms, *j* could geminate the
+labial; *w* then persisted after diphthong formation and
+the palatal was lost. This accounts for a palatal without
+secondary supply. It cannot be carried over unchanged to
+the early history of ‘hay’, where stranded \emph{*j} is
+already syllabic in \emph{*hawi}. Such an account of ‘hay’
+would need independent grounds for a different input or
+sequence [@SieversBrunner1965, §130 n. 3, §173 n. 2,
+§247 n. 1].
+
+[^glee-variants]: Brunner compares palatal forms of ‘new’ in compounds such as *nīġcumene* ‘newly come’, beside *nīcumen* and simplex *nīwe*. For ‘glee’ he contrasts *glīg* and forms such as *glīgmann* ‘minstrel’ with *glīw*, *glēo* and compounds such as *glēodrēam*. He also records *glīwes* beside the less frequent *glīowes* [@SieversBrunner1965, §130 n. 3, §247 n. 1].
+
+Campbell’s account gives a reason to consider limited
+re-formation, not proof of the two steps that ‘hay’ would
+require. Final /e.i/ must first contract in the relevant
+variety. A historically accessible source must then actually
+supply /j/ without replacing the vowel. Neither ‘glee’
+analysis establishes that source or its availability at the
+required time. Replacing less material does not by itself
+make the account preferable.
+
+The morphology thus supplies more than a reconstructible
+protected stem. Other paradigms show why an inflected stem
+might spread into the direct singular, and the mass-noun
+comparisons show why frequent direct forms might instead
+resist replacement or extend their vocalism. Neither
+motivation measures usage in prehistoric ‘hay’; its attested
+datives establish inflection, not a direction of levelling.
+The qualified precedent for limited re-formation makes it
+worth distinguishing from whole-stem substitution when
+weighing these histories against the spelling and phonology.
 
 # 5. The interpretation of the Old English forms
 
