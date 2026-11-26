@@ -87,3 +87,80 @@ frication after /i/, not by keeping an inherited /j/ after /e/.
 undecided as an application. Contraction has the closer vowel-quality
 match; the matching examples are nonfinal. Neither bare \*hē nor
 \*hej is independently predicted for the exact final environment.
+
+## R3. Witness-specific orthographic controls
+
+The [control panel](ORTHOGRAPHIC_CONTROLS.tsv) distinguishes inherited
+quantity from an observation about the glossator's vowel. The
+[Vespasian candidate ledger](VESPASIAN_SPELLING_CANDIDATES.tsv) is the
+complete output of a *text-layer search*, not a verified token census.
+Farman's token locators and surface forms remain in the
+[existing calibration](../FARMAN_ACCENT_CALIBRATION.tsv). Target
+attestations, rather than controls, are in the [concordance](../CONCORDANCE.tsv).
+
+| Witness | Selected, checked short controls | Selected, checked long-source controls | Consequence |
+|---|---|---|---|
+| Kentish charters | Eight tokens, two lexemes: *dei* ×6 (one scribe 7, five scribe 5), *dege* ×1 (scribe 5), *weg* ×1 (S 350) | None matched. The separate Surrey control *ceortesege* ×2 is one place-name, inflected and compound-internal | Short vowels can occur before written ⟨i⟩; neither the presence of ⟨i⟩ nor lack of a matched long example proves shortness. |
+| Vespasian | Twelve tokens, two lexemes: *deg* ×3, *dig* ×1, *dege* ×1, *deges* ×1; *weg* ×3, *wege* ×3 | Four tokens, three lexemes: *dryge*, *stige*, *styge*, *astig*. Only *astig* has final ⟨g⟩; it is prefixed and has a high vowel | Plain ⟨g⟩ occurs after both historical quantities, but no independently long mid vowel before final /j/ is established in this sample. |
+| Aldred | Two tokens, one lexeme: *wege*, *woeg* | *stiga* ×1, before a back vowel, not a matched palatal control | The short *woeg* cautions against equating an extra vowel letter with length; its spelling cannot calibrate Farman's practice. |
+| Owun | Two tokens, one lexeme: *weg*, *weig* | *stige* ×1, inflected or otherwise nonfinal | One short lexeme takes both graphs in adjacent verses. This establishes spelling availability, not a preference for short *heg*. |
+| Farman | 53 tokens, two lexemes: 26 bare forms (*dæg* ×17, *wæg* ×3, *weg* ×4, *weig*, *wég*) and 27 with a following vowel graph (*dæge* ×15, *dæges*, *wæge* ×7, *wege* ×3, *wegæ*) | 14 tokens, two lexical types: *stígas*, *stige*, and 12 forms of *stīgan*, including prefixed *astig*; no matched closed monosyllable | Acute is locally positive but limited evidence: the two *hóeg* tokens are one type, and *wég* is the exception among historically short controls. No new matched control was found; no census rerun or likelihood calculation. |
+
+**Kentish scope.** Lowe (2001: 76–78, 85–86, Appendix I.7 and I.14)
+attributes the relevant English of S 1195 (Cotton Augustus ii.52,
+mid-ninth-century; c. 850; Christ Church/Kent) and S 1196 (ii.16,
+mid-ninth-century; transaction conventionally 859, uncertain) to
+Brooks's scribe 7. Sweet Ct. 39.7 is S 1195, not an additional *dei*;
+Sweet's c. 831 dating is not used. Ct. 42 is S 1510 (ii.42,
+mid-ninth-century, Christ Church, 845 × 853 according to Lowe Appendix
+I.6, not Sweet's 837); its scribe 5 alternates *dege* and *dei* across
+different cells. Ct. 41 (S 1482, ii.64, ninth-century Christ Church,
+833 × 839; Lowe Appendix I.3) and Ct. 45 (S 1508, Stowe 19, late
+ninth-century, 871 × 889, primarily Surrey; Lowe Appendix I.10)
+add inflected or short comparanda, not a same-hand matched long control.
+S 350's Farleigh *weg* is a separate hand and witness (F 150, ix/x;
+transaction 898, linguistic dating disputed). S 1196 *Deimund* is a
+personal name in a possibly separately added list. The existing scribe-7
+search (S 316, 328, 332, 344, 1195–97) supplies no independently long
+mid-vowel monosyllable; *higum* ‘household’ and *hegforde* with unresolved
+lexical identity cannot fill that gap. Scarcity of eligible comparisons
+is not evidence of a categorical spelling convention.
+
+**Vespasian scope.** The complete text layer of Sweet (1885: 188–420,
+PDF sheets 202–434) was screened for simplex candidate variants of
+‘day’, ‘way’, ‘play’, ‘island’, ‘clay’, ‘dry’, ‘path’ and ‘ascend’;
+Sweet's glossary was cross-checked for spellings missed by the text
+layer. This interlinear scan mixes Latin, English, apparatus and OCR
+errors. Latin *Dei* is not Kentish-looking English *dei*, most hits
+for *ege/egum* relate to ‘fear’, and *plaga* is not the English noun
+‘play’. Sweet (525–526, 608–609, 631–632) gives ‘play’ primarily in
+inflected verb forms (Ps 46:2, 67:26, 97:8) and ‘island’ in names
+from other sources. No securely identified Vespasian simplex of
+‘island’, ‘clay’, or noun ‘play’ emerged from the screen. ‘Dry’ and
+the *stīg* family are structurally or qualitatively mismatched.
+An image check confirmed the uncommon *dig* beside *deg* (Ps 55),
+*weg* beside *styge* (77:50), and prefixed final *astig* (143:5).
+These establish variation and overlap in the use of consonant letters,
+not a same-environment long/short contrast. The panel reports marks
+printed by Sweet; no comprehensive manuscript accent audit or
+complete collation of candidate tokens was obtained. The additional
+vowel-letter preference and any independent suprasegmental distinction
+for early Mercian *heg* therefore remain untested, not absent.
+
+**Gospel scope.** Skeat's paired Mk 1:2–3 columns allow small,
+separate panels; the same verses are not independent phonological
+events. The target contrast Aldred *heig* : Owun *heg* at Jn 6:10
+likewise establishes separate written choices within a related gloss
+tradition. Ritt (2000: 505–509) interprets Aldred's acutes by graphical
+syllable shape as well as quantity. His reverse check on the first
+100 graphically closed Matthew items credits an accented **variant**
+of an otherwise unaccented historically long item and allows reduced
+pronouns. It is neither a token-level rule that omission means short
+nor a final-/j/ calibration. Aldred's unaccented target readings are
+therefore not positive evidence for shortness.
+
+**Assessment.** No studied witness supplies an independently calibrated
+preference for short /ej/ in ‘hay’. The positive result is that
+short controls can share the ordinary spelling patterns; that removes
+an objection to shortness, not to length. Farman remains the limited
+local exception to the general lack of positive quantity evidence.
