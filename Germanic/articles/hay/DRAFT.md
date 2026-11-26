@@ -1243,9 +1243,9 @@ geminated material; he treats the High German doublets on
 that model, with the geminate in the competing form supplied
 by analogy. He assigns Middle Dutch *hoye* to oblique
 \emph{*hauj-} and *houwe* to \emph{*hawi}, the old nominative
-stem in his reconstruction. That assignment does not put
-\emph{*hawi} before gemination: he places gemination before
-apocope and takes Dutch to follow the southern pattern
+stem in his reconstruction. Nominative ancestry does not
+mean that the stem escaped gemination: he places gemination
+before apocope and takes Dutch to follow the southern pattern
 [@RingeTaylor2014, pp. 53, 173; @Boutkan1995, pp. 211–213].
 The doublets establish that two shapes coexisted, not whether
 the ungeminated member was inherited without gemination or
@@ -1258,9 +1258,10 @@ Dahl changes the input rather than merely the ordering.
 He treats the material before \emph{*j} as a diphthong and
 does not posit gemination in this English class. In his
 account the diphthong differentiates before \emph{*j}
-becomes final; the vocalized glide induces umlaut and is then
-lost. The inflected forms supply final *ġ* anew. His account
-of the vowel is not a development through \emph{*he.i}, and
+becomes final. He allows the inflected forms to preserve or
+restore the final palatal; his derivation of the direct
+singular shows loss after umlaut and subsequent restoration.
+His account of the vowel is not a development through \emph{*he.i}, and
 his account of the whole form is not analogy-free
 [@Dahl1938, pp. 81–86, 97]. A similar \emph{*auj} shape in
 Ringe and Taylor results from resolution of a geminated
@@ -1285,7 +1286,7 @@ Stiles treats Old English *mene* and Old Saxon *(hals-)meni*
 ‘necklace’, beside Old High German *menni*, as inherited
 ungeminated direct forms. Ringe and Taylor likewise treat
 Old High German *beti* ‘bed’ as a relic, while Boutkan’s
-account permits a secondary short stem. These comparisons
+account permits a secondary ungeminated stem. These comparisons
 weigh against the late order only to the extent that the
 ungeminated forms are inherited without gemination
 [@Stiles2013, pp. 15–16; @RingeTaylor2014, pp. 44–47;
