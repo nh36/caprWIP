@@ -25,6 +25,7 @@ IMPLEMENTED = {
     "R6": ("## 3.3 Orthography and vowel quantity", "# 4. Historical morphology"),
     "R7": ("# 4. Historical morphology", "# 5. The interpretation of the Old English forms"),
     "R8": ("# 5. The interpretation of the Old English forms", "# Appendix A. Parallel Psalter readings"),
+    "R9": ("# Appendix A. Parallel Psalter readings", None),
 }
 ANCHOR = re.compile(r"^<!-- (pending:)?(P-[a-z-]+) -->$", re.MULTILINE)
 ABSTRACT = re.compile(r"^abstract: \|\n(?:^  [^\n]*\n)+", re.MULTILINE)
@@ -177,7 +178,10 @@ def load():
 
 def section_bounds(text, start, end):
     a = re.search(rf"^{re.escape(start)}$", text, re.MULTILINE)
-    b = re.search(rf"^{re.escape(end)}$", text, re.MULTILINE)
+    if end is None:
+        b = re.compile(r"^\[\^[^\]]+\]:", re.MULTILINE).search(text, a.end()) if a else None
+    else:
+        b = re.search(rf"^{re.escape(end)}$", text, re.MULTILINE)
     if not a or not b or a.start() >= b.start():
         raise ValueError(f"{DRAFT}: invalid boundaries {start!r}, {end!r}")
     return a.start(), b.start()

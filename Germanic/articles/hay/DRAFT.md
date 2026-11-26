@@ -1355,11 +1355,18 @@ early apocope without settling the relative chronology.
 
 # Appendix A. Parallel Psalter readings
 
-Table 7 gives the corresponding readings, including dependent
-witnesses. The verse numbering follows the respective editions;
+<!-- P-app-guide -->
+
+Table 7 lists supplementary Psalter and canticle glosses at
+loci parallel to the principal witnesses in Table 2. The array
+includes dependent glosses to show how readings are distributed
+in transmission, not to count them as independent phonological
+innovations. The dates are of the English writing, not earlier
+Latin manuscripts or the English material their glosses may
+transmit. Verse numbers follow the respective editions;
 Salisbury’s 104:34 corresponds to 104:35 in the other glosses.
-Roman numerals in the date column describe the English gloss
-where it is later than the Latin manuscript.
+Table 6 gives the grammatical census across witness types;
+Table 7 is not an occurrence-by-occurrence inventory of that census.
 
 | Psalter and edition | Date | Spellings and Psalms |
 |---------------------------------|-------------|------------------------------------------|
@@ -1374,7 +1381,9 @@ where it is later than the Latin manuscript.
 | Salisbury Cathedral 150 [@Sisam1959] | xi/xii | *heg*: 71:16, 91:8, 101:5; *hig*: 36:2, 101:12, 102:15, 103:14, 104:34, 105:20, 146:8; *hyg*: 128:6 |
 | Eadwine R.17.1 [@Harsley1889; @Liles1967] | xii med. | *heg*: 36:2, 105:20, 128:6, Cant. 7(6):2; *hieg*: 71:16, 146:8 |
 
-: Supplementary Psalter and canticle witnesses. Spellings not qualified below by independent inspection follow the *Dictionary of Old English Web Corpus* [@DOETextCorpus].
+: Supplementary Psalter and canticle witnesses. Separate checks against editions or manuscript images are identified where discussed in the article; other readings follow the *Dictionary of Old English Web Corpus* [@DOETextCorpus].
+
+<!-- P-app-checks -->
 
 Brenner’s printed *heg* at 101:5, 101:12 and 103:14 (pp. 134,
 138) and Roeder’s *heg*, *hig*, *heg* at 36:2, 103:14, 105:20
@@ -1387,9 +1396,11 @@ is legible at 71:16 ([f. 72r](https://bl.digirati.io/images/ark:/81055/vdc_10007
 103:14 ([f. 98r](https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x0000cf/canvas/c/207)),
 105:20 ([f. 101v](https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x0000d6/canvas/c/214)),
 and 128:6 ([f. 120r](https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x0000fb/canvas/c/251)).
-The corresponding glosses at 101:5 (f. 95v) and 146:8
+The readings at 101:5 (f. 95v) and 146:8
 ([f. 129v](https://bl.digirati.io/images/ark:/81055/vdc_100074817413.0x00010e/canvas/c/270))
-remain indexed readings because of fire damage. The English
+remain corpus-indexed because fire damage prevented confirmation.
+The two Eadwine *hieg* readings were checked in the manuscript
+(Section 2.2). The English
 bringing-forth and eating constructions at 103:14 and 105:20
 establish accusative functions independently of the Latin.
 
