@@ -1270,58 +1270,67 @@ does not decide between the reconstructions. The comparison
 of the two orders here remains conditional on consonantal
 \emph{*wj}.
 
-<!-- pending:P-compare-bed -->
+<!-- P-compare-bed -->
 
-In *bedd* ‘bed’, *nett* ‘net’ and *cynn* ‘kin’, the geminate
-directly expresses the feature at issue: under early loss of
-the ending it needs an explanation other than regular
-gemination of the direct singular. The protected cells give
-a ready explanation by stem transfer; the late order predicts
-the geminate without that operation. Conversely, ungeminated
-*mene* ‘necklace’ and continental *beti*-type forms support
-early apocope insofar as they can be independently identified
-as inherited direct forms, rather than as the results of
-secondary phonological or morphological change
-[@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23;
-@Stiles2013, pp. 15–16; @Boutkan1995, pp. 435–436].
+The original chronological question concerns whether the
+direct singular still had prevocalic \emph{*j} when gemination
+applied. In *bedd* ‘bed’, *nett* ‘net’ and *cynn* ‘kin’,
+the attested geminate is the very feature the early order
+cannot supply in that cell. Ringe and Taylor’s extension
+from protected forms explains it; on the late order it is
+the regular direct outcome [@RingeTaylor2014, pp. 44–47;
+@HoggFulk2011, §2.23]. The converse test needs ungeminated
+forms whose ancestry can be established independently.
+Stiles treats Old English *mene* and Old Saxon *(hals-)meni*
+‘necklace’, beside Old High German *menni*, as inherited
+ungeminated direct forms. Ringe and Taylor likewise treat
+Old High German *beti* ‘bed’ as a relic, while Boutkan’s
+account permits a secondary short stem. These comparisons
+weigh against the late order only to the extent that the
+ungeminated forms are inherited without gemination
+[@Stiles2013, pp. 15–16; @RingeTaylor2014, pp. 44–47;
+@Boutkan1995, pp. 211–212, 435–436].
 
-‘Hay’ is not a simple counterpart to any one of these words.
-Resolution of the labial sequence makes the protected stem
-recognizable by its vocalism, not by a surviving geminate.
-The early direct history can produce the same mid vowel
-independently, and the glide is a separable historical
-question. Thus a direct form of ‘hay’ can be compatible
-with survival even where a direct *bedd* cannot be regular
-under the same order. That distinction weakens one objection
-to early apocope. It is not positive proof of early apocope
-in the word, since the spelling and the distribution of
-protected cells are also compatible with late apocope.
+In ‘hay’, resolution of the labial-palatal sequence removes
+the corresponding surface test: the Anglian vowel is not
+itself a surviving geminate, and early direct development
+supplies a mid vowel independently. Even if the final
+palatal was supplied anew, the operation would not have to
+replace the vowel. That difference in scope is not a reason
+to prefer the account simply because it replaces less;
+each operation needs its own historical motivation.
+It is a reason not to treat ‘hay’ as imposing the same
+explanatory burden as *bedd*. This weakens a specific
+objection to early apocope without establishing its priority.
 
 # 7. Conclusion
 
-<!-- pending:P-conclusion -->
+<!-- P-conclusion -->
 
-Early apocope does not require the earliest Anglian forms
-of ‘hay’ to borrow their vocalism. Regular development
-supplies \emph{*he.i}; contraction could preserve its mid
-quality in a long vowel even if the glide had to be restored.
-Desyllabification would go further by retaining both
-components, but the final environment is not independently
-secured. The Kentish compound corroborates the relevance of
-the early sequence if its first element is ‘hay’; it does
-not establish that stronger history.
+Under early nasal apocope, regular development gives the
+inherited direct singular a mid vowel at the hiatus stage
+\emph{*he.i}. On the preferable reading ‘hay-road’, Kentish
+*heiweg* gives an exact written counterpart, not a record
+of its pronunciation or stem ancestry. The Anglian simplex
+forms independently admit an inherited source for their
+vowel. Desyllabification could preserve the whole stem;
+contraction followed by secondary palatal supply could
+preserve the source of the vowel alone. Both continuations
+have independent motivation, but neither is established.
+The West Saxon high vowel gives particular grounds for
+protected vocalism under early apocope without making
+whole-stem replacement the only defensible Anglian history.
 
-West Saxon high vocalism gives a positive reason to invoke
-the protected stem under early apocope; Anglian mid
-vocalism does not. Thus ‘hay’ is not a second ‘bed’: the
-Anglian vowel can have an inherited source even if the
-palatal requires analogy, whereas the early direct history
-of ‘bed’ cannot supply its geminate. A secure direct form
-with independent quantity evidence and a distinct protected
-alternant would sharpen the Anglian comparison. Without
-it, the difference in explanatory burden stands, but
-neither an analogy-free history nor the general chronology
-follows.
+A securely dated direct form with independent quantity
+evidence and a distinguishable protected alternant would
+help separate these histories. An independently dated
+development in the precise final hiatus environment would
+also change their relative standing. For the chronological
+question, the result is that ‘hay’ need not borrow the
+vowel whose origin is at issue, whereas ‘bed’ cannot
+inherit its geminate directly under the early order.
+The two words therefore do not supply the same argument
+against early apocope.
 
 # Appendix A. Parallel Psalter readings
 
