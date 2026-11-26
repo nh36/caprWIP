@@ -71,6 +71,7 @@ that repository, copy writings, or transform any published passage.
 | D-simplex | Implemented in Cycle 17 against `4237e0ea` | R3 approved subject to three scoped corrections. In R4, distinguish secure case assignments, regional written targets, and Eadwine's observed readings from conventional normalization. Preserve Table 2, Appendix A, the census and historical assessments. R5 remains outside scope. |
 | D-hiatus | Authorized in Cycle 18 against `177dc5a9` | Correct the Vespasian translation separately, relocate nonquantitative spelling evidence, then implement R5 in three pushed pairs. Preserve R6 and the frozen record. |
 | D-quantity | Implemented in Cycle 19; Increment A reviewed at `f1271db1` | Qualify the R5 ‘strew’ evidence separately, then distinguish quantity from regional vowel quality in R6. No new historical verdict, calibration run, or changes to the frozen derivations, Table 4 cells or the census. R7 and later blocks remain outside scope. |
+| D-morphology | Implemented in Cycle 20 against `30a73f51` | Verify Hogg's R6 citation and qualify its transition; stage and develop R7 in four increments. Relocate the continental paragraph verbatim without implementing R8. Preserve all table cells, counts, frozen derivations and production inputs. |
 
 **Editorial review of D-introduction:** The direct geminate in ‘bed’
 now explains why analogy is at issue before any spellings of ‘hay’
@@ -151,3 +152,24 @@ transfer. The bounded source checks refine the status of the disputed
 R5 glosses and the assumptions of the Paris scansions without changing
 the historical assessment. No production inputs or scientific
 certification are involved.
+
+**Cycle 20 checkpoints:** `a7f1c0b2` confirmed Hogg's phonology volume,
+added §5.163 and narrowed the R6 transition. `ebf5d658` staged R7 and
+relocated existing prose, including the continental paragraph. The four
+increments are `3fd62f62` (donor question and ‘yellow’), `a3994295`
+(‘meal’, ‘fat’, ‘tar’ and the reconstructed paradigm), `071e8ab0`
+(census, datives and scope), and `737b49f4` (‘glee’ and the component
+conclusion). `e32a2476` clarifies the case-verification denominator.
+These checkpoints are source-only. The publication commit carries
+the inspected PDF and requires complete R7 and cumulative scope.
+
+**Cycle 20 historical review (article only):** Retain competing
+directions of levelling. Ball and Stiles motivate direct-to-inflected
+transfer under their proposed chronology; the rival account of
+*melu* remains viable. The census supplies attested cells, not
+prehistoric frequencies. Campbell's cross-lexical comparison supports
+the plausibility of limited re-formation; neither Campbell, Brunner
+nor Wright establishes an accessible donor that actually supplied
+the Anglian palatal. E33 and E34 remain necessary and unestablished.
+There is no change to the historical verdict, the frozen models,
+production inputs, or certification.
