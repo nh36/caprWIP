@@ -478,44 +478,73 @@ available to the direct stem, particularly once loss of
 
 ## 3.1 Development to hiatus
 
-<!-- pending:P-loss -->
+<!-- P-loss -->
 
-On the early-apocope and consonantal analyses the direct form
-develops as follows:
+Can the inherited direct singular supply the vowel and final
+segment suggested by the Anglian spellings? On the consonantal
+analysis, early apocope gives the following regular development:
 
 \emph{*hawją} > \emph{*hawi} > \emph{*hæwi} > \emph{*hewi} > \emph{*he.i}.
 
-Once \emph{*-ą} is lost, stranded \emph{*j} is syllabic. The \emph{*wi} sequence
-permits Anglo-Frisian fronting, followed by i-umlaut; Ringe and
-Taylor’s parallels are \emph{*awi} ‘ewe’ and \emph{*klawiþō} ‘itch’
+Loss of \emph{*-ą} leaves \emph{*j} syllabic. The resulting
+\emph{*wi} permits Anglo-Frisian fronting and then i-umlaut,
+as in the reconstructed histories of ‘ewe’ and ‘itch’
 [@RingeTaylor2014, pp. 148, 237; @Campbell1959, §579(4)].
-After umlaut and before general syncope, noninitial \emph{*w} was lost
-before fully unstressed \emph{*i}. The unstressed vowel was still
-syllabic at the point of loss [@RingeTaylor2014, pp. 257–261;
+Noninitial \emph{*w} was regularly lost before fully unstressed
+high front \emph{*i}, including long \emph{*ī}. The contrast
+between West Saxon *gierwan* ‘prepare’ and *giereþ* ‘prepares’
+supports syllabic \emph{*i} as the trigger: earlier syncope
+had removed it before \emph{*j} in the infinitive, but it
+remained in the finite form. In the preform of *gierede*
+‘prepared’, loss of \emph{*w} lightened the first syllable
+and thereby prevented general syncope. This fixes the loss
+before that syncope [@RingeTaylor2014, pp. 258, 260;
 @Campbell1959, §§237.1b, 406].
 
-The loss is not peculiar to this noun. It appears in \emph{*gliwi}
-> *glī* ‘merrymaking’, in \emph{*niwi-} > *nī-* ‘new’ in compounds,
-and in \emph{*pylwī} ‘pillow’ > *pyle*. In the weak verbs it is
-conditioned by the vowel of the ending: compare *giereþ* ‘prepares’
-and its infinitive *gierwan*. Later restoration is possible where
-other parts of a paradigm retained the consonant; forms such as
-*streide* ‘strewed’ and *gecēd* ‘calls’ preserve evidence of the
-loss. *Eowu* ‘ewe’ does not provide retention in the same environment
-if it had already moved to the ō-stems. Ringe and Taylor treat
-*cleweþa* ‘itch’ as exceptional and suggest lexical analogy or
-competing suffix formations [@RingeTaylor2014, pp. 258–261;
-@Campbell1959, pp. 166–167, 327–328].
+Ringe and Taylor derive *glī* ‘merrymaking’ from \emph{*gliwi}
+and *sǣ* ‘sea’ from \emph{*sāwi}. These final sequences raise
+a second question, since the attested forms have lost both
+the consonant and the separate syllable. By contrast,
+\emph{*pylwī} > *pyle* ‘pillow’ supports the consonant loss
+after another consonant, where it did not bring two vowels
+together.[^loss-controls] Ringe and Taylor place the loss
+after i-umlaut: on their analysis, the mid vowel of *eowu*
+‘ewe’ presupposes umlaut, but its transfer to the ō-stems
+then removed the environment for loss. They acknowledge
+*cleweþa* ‘itch’ as exceptional and suggest analogy with
+*clāwan* ‘scratch’ or competition between suffixes with
+different vowels [@RingeTaylor2014, pp. 259–261]. The
+application to ‘hay’ requires no special consonant loss:
+given \emph{*hewi}, it yields \emph{*he.i}. What became of
+the hiatus is a separate question.
+
+[^loss-controls]: Compare also \emph{*āwi} > *ǣ* ‘law’ and \emph{*niwi-} > *nī-* in compounds such as *nī-cenned* ‘newborn’. Anglian *ēde* ‘flock of sheep’ preserves evidence of the loss, whereas Ringe and Taylor explain West Saxon *eowede* by remodelling on *eowu*. The weak verbs often restore *w* by levelling; relic forms include *streide* ‘strewed’ and *gecēd* ‘called’ or ‘having called’ [@RingeTaylor2014, pp. 258–260; @Campbell1959, pp. 100, 166–167, 327–328].
 
 ## 3.2 Contraction and glide formation
 
-<!-- pending:P-hiatus-test -->
+<!-- P-hiatus-test -->
 
-The spelling ⟨eg⟩ regularly writes /Vj/ [@HoggGrammar1992, §2.76].
-Comparanda such as *deg/dei* ‘day’ and Farman’s *weig* ‘way’
-have an independent consonantal source for the glide. They tell
-us how a glide could be written, not whether *i* in ‘hay’ became
-a glide.
+Can ordinary developments of final \emph{*e.i} account for
+Anglian ⟨heg⟩ and ⟨heig⟩? If the hiatus survived, the
+written forms would have to represent two syllables.
+If final \emph{*i} lost syllabicity, both inherited
+components could survive in one syllable. If the vowels
+contracted, the result could retain the inherited source
+of the nucleus, but any final glide would have to come
+from elsewhere. Ringe and Taylor’s substitution has a
+different starting point: it supplies both components from
+the protected stem without passing through inherited
+\emph{*he.i}.
+
+The spelling gives a reason to take the glide seriously.
+Old English commonly writes /j/ with ⟨g⟩
+[@HoggGrammar1992, §2.76]. In *deg/dei* ‘day’ and Farman’s
+*weig* ‘way’, the final glide has an independently
+reconstructible consonantal source [@Bryan1915, pp. 23, 25;
+@Tamoto2013, Mk 1:3]. This makes a vowel followed by /j/
+an ordinary reading of the Anglian spellings of ‘hay’;
+it does not tell us whether that glide came from a
+syllabic vowel.
 
 <!-- pending:P-hiatus-retain -->
 
