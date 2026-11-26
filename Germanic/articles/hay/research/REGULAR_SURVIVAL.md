@@ -43,3 +43,47 @@ explained by competing etymologies, not independent calibration of the
 earliest spellings. This does not show the long reconstruction is wrong.
 Retain the distinction in C01 and leave E33–E34 unestablished. Dal,
 Wallenberg and Brooks and Kelly were not acquired.
+
+## R2. Hiatus-resolution inventory
+
+Inputs below are reconstructions, not transcriptions. The first vowel
+in a two-vowel input is stressed and the second unstressed unless
+specified; a dot indicates syllable division. Quantity is that of the
+reconstructed input, not an independent reading of a manuscript mark.
+
+| Lexeme / environment | Input, origin and position | Outcome and chronology | Comparability / source |
+|---|---|---|---|
+| ‘claw’ | \*kla.wu > \*kla.u; short /a/, syllabic back /u/, final after labial loss | \*klau > OE *clēa*, a native long diphthongal type; cf. remodelled *clawu* beside inflected *clawe* | Positive for loss of syllabicity without deletion of the second vowel's quality, not preservation of short /a/ plus an independently consonantal coda; Hogg §3.19; Sievers–Brunner §§127 n. 2, 128.1. |
+| ‘knees’, ‘trees’ | Final post-labial back-vowel hiatus, on Hogg's account; high rather than short mid front first vowel | OE *cnēo*, *trēo*, native diphthong outcomes; inflection can be remodelled | Same structural family as ‘claw’, not independent evidence for /e.i/ or for coda /j/; Hogg §3.19, Sievers–Brunner §§128, 174. |
+| ‘merrymaking’ | \*gliwi > \*gli.i, short /i/ plus syllabic /i/, word-final | *glī*, identical-vowel contraction; *glīg* needs a separate account and is not evidence for a glide in the contracted form | Final and from *w*-loss, but identical vowels. Its contraction need not date unlike-vowel contraction; Ringe and Taylor §§6.7.1, 6.9.3 (259, 318); Campbell §§411, 579(4). |
+| ‘new’ in compounds | \*niwi- > \*ni.i-, short /i/ plus /i/ across the pre-boundary portion of e.g. *nī-cenned* | *nī-*; timing may align with ‘merrymaking’; palatal-bearing variants are not proof of derivation from syllabic /i/ | Same-vowel control, not a free final stem; Ringe and Taylor 259, 318; Luick §243; Sievers–Brunner §130 n. 3. |
+| ‘sea’, ‘law’ | \*sāwi and \*āwi lead to \*sǣ.i and \*ǣ.i; already-long /æː/ plus syllabic /i/, final after loss | *sǣ*, *ǣ*; loss of /i/ and contraction converge in the observable output | Does not discriminate contraction from deletion, nor start with a short mid vowel; Ringe and Taylor 259, 318. |
+| ‘flock’ | \*e.i before a dental in the Anglian history of *ēde*, from *w*-loss | *ēde* has long mid vowel; West Saxon *eowede* is separately explained by remodelling | Strong quality/origin match, nonfinal. Ringe and Taylor 259–260, 318; Luick §243. |
+| ‘called’ | \*e.i before a dental after *w*-loss in the participle | Mercian Vespasian *gecēd*, long nucleus by contraction in Ringe and Taylor; Luick's discussion allows *j*-loss in some analogous verbal forms | Best same-tradition counterexample to unrestricted glide formation; no independent finality or date rule from this contrast alone. Campbell §237.1b; Ringe and Taylor 260, 318; Sweet 1885: 416. |
+| ‘strewed’ | \*e.i before dental after *w*-loss under the weak-verb analysis | Northumbrian *strēdun* supports nonfinal contraction. Early *streidæ/streide* may reflect another verb; metrically disyllabic *stred* admits persistence but need not reflect everyday speech | Near-match, not proof of final behavior; Ringe and Taylor 259, 318; Campbell §237.1b; Pheifer §59.2 n. 1; Hogg §5.133. |
+| ‘betrayed’, ‘recognizes’ | Unlike vowels after *w*-loss; already long first vowel before a dental in the relevant forms | Northumbrian *bilēde*, early West Saxon *gecnēþ*; contraction or syncope | Exclude as outcome-discriminating cases; Ringe and Taylor 318. |
+| ‘be’ forms and superlatives | Vespasian *siem* (Ps 26:4) has reverse /iː.e/ in Hogg's analysis; Lindisfarne *heista/neista* after *h*-loss are nonfinal | The first supports hiatus in its own environment. Brunner doubts isolated *heigsta*; even if genuine it is not final ⟨eg⟩ for /e.i/ | Retention/orthography, not consonantalization or a final /e.i/ control; Hogg §5.146; Sievers–Brunner §129 n. 5. |
+| ‘river’ oblique and ‘high’ inflection | Possible \*ehi/\*iehi > hiatus after *h*-loss; older *h*-loss contrasts with later attachment of vowel-initial endings in forms like *hēaum* | Contracted *ē/īe* may instead be formations to contracted nominative *ēa*; *hēaum* can be restored rather than inherited hiatus | Reject as diagnostic final controls: different origin/first vowel or uncertain morphology. Ringe and Taylor 317–318; Sievers–Brunner §127 nn. 1, 3. |
+| ‘strike’, ‘see’; Old Frisian | \*slahan, \*seh(w)- forms; hiatus after *h*-loss, or retention of *h* after earlier syncope in *siucht* ‘sees’ | *slā(n)* and other contracted forms; *siucht* gives a relative chronology of *h*-loss, not a hiatus resolution | Different vowels and conditions; Bremmer §§54–57; Campbell (1939) §13. Bremmer §78.19 also gives ⟨g⟩ [j] as a hiatus filler, a different, prevocalic operation. |
+| Old Saxon *hoi*; OHG *hewi/houwi*; Gothic *hawi* | Cognates or doublets; independent status of consonant or diphthong and stem ancestry differs between accounts | No independently identified final short /e.i/ created by *w*-loss in a control lexeme | Not independent comparanda for the disputed change; Ringe and Taylor 53, 173; Boutkan 211–213. |
+| Loan adaptation, poetic synizesis and ‘play’ candidate | Prevocalic gliding in loans, verse syllable compression, or inherited consonantal palatal /j/ | None establishes a lexical final *i* becoming /j/ after *w*-loss | Exclude as direct evidence; Campbell §§512, 553–557; the ‘play’ family is an orthographic candidate only. |
+
+Coverage: the named English controls, Hogg §§3.19, 5.129–154,
+Campbell §§237.1b, 266–267, 406, 512, 553–557, Sievers–Brunner
+§§127–135, Ringe and Taylor §§6.7.1, 6.9.3, and the held Old Frisian
+chapters and continental cognate case studies. This is a bounded
+grammar-and-lexeme search, not an exhaustive West Germanic corpus
+negative. The controls distinguish retention, loss, identical and unlike
+contraction, and diphthongal incorporation. None documents the exact
+conversion to a consonantal coda with independently short /e/.
+Word-finality could matter, but no independently paired final/nonfinal
+/e.i/ establishes the proposed split. Hogg's open-syllable length
+assumption and back-vowel diphthong examples do not show later lengthening
+of *already monosyllabic* /ej/; that added history would need its own
+dated rule and controls. Luick §252 lengthens via the loss of palatal
+frication after /i/, not by keeping an inherited /j/ after /e/.
+
+**Assessment.** E25 remains positively motivated as a mechanism but
+undecided as an application. Contraction has the closer vowel-quality
+match; the matching examples are nonfinal. Neither bare \*hē nor
+\*hej is independently predicted for the exact final environment.
