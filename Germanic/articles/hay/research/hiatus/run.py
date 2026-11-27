@@ -177,10 +177,34 @@ def synthetic_trials(order, paths):
     return {"standalone": standalone, "controls": controls, "arms": arms}
 
 
+def compare_arms(model, order, paths, batches, selected):
+    results = {}
+    for arm in selected:
+        placements = candidates.placements(arm, model)
+        records = {}
+        for start, inputs in batches.items():
+            index = order.index(start)
+            suffix_placements = tuple((anchor, component) for anchor, component in placements
+                                      if order.index(anchor) >= index)
+            suffix = overlay_order(order[index:], suffix_placements)
+            records.update(evaluate(suffix, paths, inputs,
+                                    {component for _, component in suffix_placements}))
+        results[arm] = {"placements": placements, "traces": records}
+    return results
+
+
+def historical_trials(orders, paths, inputs):
+    local = {}
+    for row in dsv(HERE / "local.tsv"):
+        local.setdefault(row["start"], {})["local:" + row["id"]] = row["form"]
+    return {model: compare_arms(model, order, paths, {order[0]: inputs, **local}, candidates.ARMS)
+            for model, order in orders.items()}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("snapshot", type=Path)
-    parser.add_argument("mode", choices=("baseline", "local", "synthetic"), nargs="?",
+    parser.add_argument("mode", choices=("baseline", "local", "synthetic", "historical"), nargs="?",
                         default="baseline")
     parser.add_argument("--stage-cache", type=Path)
     args = parser.parse_args()
@@ -209,11 +233,16 @@ def main():
         else:
             with tempfile.TemporaryDirectory(prefix="hay-candidates-") as tmp:
                 bins = compile_candidates(source, args.stage_cache, Path(tmp))
-                data.update(synthetic_sha256=frozen.sha(HERE / "synthetic.tsv"),
-                            candidates_sha256=frozen.sha(HERE / "candidates.py"),
+                data.update(candidates_sha256=frozen.sha(HERE / "candidates.py"),
                             foma=subprocess.check_output(["foma", "-v"], text=True).strip(),
-                            component_sha256={key: frozen.sha(path) for key, path in bins.items()},
-                            **synthetic_trials(orders["A"], paths | bins))
+                            component_sha256={key: frozen.sha(path) for key, path in bins.items()})
+                if args.mode == "synthetic":
+                    data.update(synthetic_sha256=frozen.sha(HERE / "synthetic.tsv"),
+                                **synthetic_trials(orders["A"], paths | bins))
+                else:
+                    data.update(inventory_sha256=frozen.sha(inventory),
+                                local_sha256=frozen.sha(HERE / "local.tsv"),
+                                models=historical_trials(orders, paths | bins, inputs))
         print(json.dumps(data, ensure_ascii=False))
         return
     anchors = {"OEWLossBeforeI", "SC047FinalIi", "OEHighVowelApocope",

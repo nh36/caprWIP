@@ -253,3 +253,60 @@ starting point**, not to a later injection that skips intervening rules.
 bash Germanic/articles/hay/research/hiatus/run-container.sh synthetic --stage-cache "$cache" \
   > Germanic/articles/hay/research/hiatus/synthetic.json
 ```
+
+## 6. Common historical panel
+
+The [comparison receipt](comparison.json) runs all 27 arms in
+canonical, A and B2. Each arm uses the same 37 historical submissions
+and 20 separately prefixed `local:` diagnostics. For each of the
+4,617 traces it records the input, ordered changes, each candidate
+before/after pair and the endpoint. H0 reproduces the earlier full
+and local traces exactly; the eight unadmitted submissions and
+twelve unsubmitted rows were not repaired or counted as negative
+evidence. The candidate-source hash is identical to §5; component
+binary hashes record each run's isolated compilation, not a
+cross-run byte-identity claim.
+
+| Arm or contrast | Full-cascade historical comparison |
+|---|---|
+| H1, marked vs. foot-aware | The marked-only rule never fires on this panel. Early and intermediate foot-aware H1 prevent A/B2 root-vowel deletion in ‘call’, producing *ġecēþ, ġecēd*, and change *streid* to conditional *strēd*. Late H1 still changes ‘strew’ but misses both ‘call’ forms. The assumed prefixed history should be compared with the relevant prefixed witnesses, not silently equated with simplex *cēþ*. A ‘hay’ becomes *hē*: contraction alone loses the palatal needed for ⟨heg⟩. |
+| H2 | A ‘hay’ becomes *heġ*. Early A/B2 instead give ‘call’ and ‘strew’ *ġeceġþ, ġeceġd, streġd*, not the contracted forms; late H2 misses ‘call’. Preserving written ⟨g⟩ for A ‘hay’ does not establish short quality or quantity from the manuscript. |
+| H3 | Both stop scopes improve the *d* participle if contraction is intended, but neither addresses ‘call’ before *þ*. Dental obstruents repair both ‘call’ forms. Coronal and any-consonant arms add no full-cascade change over dental obstruents on this inventory. Only locally injected ‘couch’ discriminates those wider scopes from dental obstruents. Keeping the edge as hiatus yields A *hei*; a final glide yields *heġ*. No late palatal restoration was introduced. |
+| H4 | Both heavy-loss-bracketing arms give the same visible outcomes as early coronal contraction for ‘call’/‘strew’, but pass through a consonantal *j*. The late loss arm leaves *ġeceġþ, ġeceġd* because `OEHLoss` has cleared the prefix flag used by the plain-root guard. It contracts unprefixed ‘strew’ and the inherited rain/thane/ask clusters instead: *reġn, þeġn, freġnan > rēn, þēn, frēnan*. These replace attested retained forms; notably the last output does not match the panel's *frīnan* loss variant either. The late arm cannot be called a general repair. |
+| H5 | Prior length gives A *hē*, with HVD deleting *i* before the glide stage. Glide-first gives A *hēġ*, but leaves long-vowel-plus-palatal clusters in the preconsonantal cases, where the proposed comparators contract. The two orderings agree on *ġecēġþ, ġecēġd, strēġd* and do not account for ‘call’/‘strew’ by themselves. |
+| H6 | Final-only H6 gives A *heġ* without touching the troublesome preconsonantal cases; nonfinal-only gives early H2's nonfinal glide clusters without altering A *hei*. |
+
+No e.i overlay explains the canonical ‘call’ or ‘strew’ histories
+with their early long diphthong. Canonical and B2 retain their
+West Saxon-comparable *hīeġ*, while A's protected predictions stay
+unchanged. ‘Know’ and ‘crow’, the retained labial and back-vowel
+controls, and the admitted negative controls ‘way’, ‘day’ and
+‘island’ retain their full-cascade endpoints. No candidate resolves
+the independent ‘see’/‘strike’ input problems. A/B2's unlevelled
+‘ewe’ input changes whenever the final hiatus does; this is a
+paradigm-input problem, not an extra success. Arms touching *þ*
+often replace the documented exceptional ‘itch’ with a
+*w*-less output (e.g. *clēþ* or *clēþu*), even bleeding its high
+vowel in early arms; none derives the exceptional form. That
+change is a warning, not a reason to add a lexical exception.
+
+**Local-only diagnostics.** A/B2 and canonical can all take the
+same injected input regardless of the history they reached above.
+Early dental-stop contraction gives ‘flock’ *ēd* instead of *eide*;
+it does not recover the cited *ēde*. Candidate length feeds
+high-vowel loss there. Early coronal contraction or H4 give
+‘couch’ *strēn* instead of *streinu*, while late H1 gives *strēnu*.
+Early dental arms produce injected prefixed *ġecēde*; late
+contraction cannot recover the deleted root. A late *h*-loss
+probe can produce river *ē* under H1 or *eġ* under H2, but only
+with the disputed short input. The deliberately lowered ‘strike’
+probe needs neither overlay. Glide-first lengthens an injected
+*weġ* to *wēġ* when *j* is present at the relevant stage; the
+full input avoids this only because it still has *ʝ* there.
+These results identify prerequisites and collateral effects, not
+inherited cells that the full parser licensed.
+
+```sh
+bash Germanic/articles/hay/research/hiatus/run-container.sh historical --stage-cache "$cache" \
+  > Germanic/articles/hay/research/hiatus/comparison.json
+```
