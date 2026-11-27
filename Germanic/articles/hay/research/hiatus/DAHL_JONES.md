@@ -1100,3 +1100,69 @@ does not attest the consonant-weakening stage of the
 1979 analysis. A retained coda after diphthongization
 is evidence for a different pathway, not an intermediate
 of weakening to an empty coda.
+
+## J5. Can Aldred’s marks discriminate vowel quantity?
+
+Jones (30–31; p. 30 image checked, PDF 44) distinguishes
+an acute from doubling of the **same vowel graph**.
+His ⟨gast/gaast⟩ series includes both marked and
+unmarked long-vowel forms; ⟨stan/stán⟩ occurs 31:5,
+although comparative evidence establishes historical
+length. His ‘sheep’ versus ‘ship’ comparison has the
+advantage of matching the written consonantal frame
+and vowel graph, while ‘ship’ has no accent in his
+sample. It is not a matched *e* plus final palatal
+contrast; his acute/doubling before homorganic clusters
+is also a separate environment. On p. 56 he treats
+⟨wég⟩ as positive evidence of lengthening in ‘way’.
+It therefore cannot be assumed to be a measured short
+control in Aldred’s pronunciation merely because ‘way’
+begins with a historically short vowel.
+
+| Comparison | Evidential weight |
+|---|---|
+| ⟨heg/heig⟩ | No acute is printed on the three established Aldred ‘hay’ loci. ⟨ei⟩ is not a doubled ⟨ee⟩, and is exactly the form whose vocalic structure is disputed. Three sparse, cross-verse tokens, all in double glosses, cannot establish a marking rate. |
+| ⟨weg/wég/we⟩ | Same scribe and close phonological environment if ⟨g⟩ represents a final palatal. The positive ⟨wég⟩ motivates Jones’s lengthening interpretation locally. His Table 2.29 gives forms, not complete counts or loci, and ⟨we⟩ lacks the written coda. |
+| Comparatively long monosyllables | Jones’s ⟨tid⟩, ⟨lar⟩, ⟨ric⟩, ⟨stan⟩ and ‘sheep’ show that marking is possible but variable in closed forms. They do not measure the missing denominator for independent long *e* in the same palatal and gloss context. |
+
+Jones reports the Ross–Stanley index with discrepant
+years (1962 at 30, 1956 at 55 and in the bibliography);
+the catalogue identifies Book II of the commentary to
+the 1956–60 facsimile. The actual index was not acquired,
+so no complete accent/doubling counts for a tightly
+matched final-palatal series can be claimed. Hulme’s
+original 1896 discussion (cols. 19–22, searchable
+[volume scan](https://archive.org/details/modernlanguageno11johnuoft))
+argues that no manuscript marks all its long vowels
+and that marking varies across copies. Clemoes’s 1952
+study and Ker (1957: xxxv ff.) supply the manuscript
+background as cited by Jones; their relevant pages
+were not directly collated here. Ker’s descriptive
+account of the acute as a stroke is independently
+reported by Mokrowiecki (2015); it identifies the mark,
+not the phonetic quantity of an unmarked form.
+
+Ritt (2000: 498–501, 505–510) changes the question:
+if an acute is most useful where length is not
+otherwise predictable, the **distribution** of marks
+may reflect writers’ expectations about quantity,
+not a blanket marking rule. His Matthew census has
+426 accented occurrences and explains 328 of 376
+non-ambiguous ones under his model. These are counts
+of **accented** forms across environments, not a
+denominator of independent long and short final
+palatal forms. They do not disprove length in unmarked
+‘hay’. The full figures, limitations, and Farman’s
+separate practice are already recorded in the
+[Lindisfarne dossier](../../LINDISFARNE_EVIDENCE.md).
+
+**Research verdict:** positive marking matters locally;
+its absence is not evidence of equivalent force.
+Jones’s short reconstruction for ⟨heg⟩ is compatible
+with this comparison, but he does not derive it from
+matched accent or vowel-doubling rates. A genuine
+positive test requires a complete, comparable set of
+historically long and short final-palatal monosyllables
+with the relevant loci, marked and unmarked, and
+allowance for double-gloss context. No new Farman
+calibration was needed or performed.
