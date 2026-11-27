@@ -5,6 +5,13 @@ base=113101ac5f169b589e1a9647cdf24d32cdd4d919
 intake=f220d31157eaa10fcb9a3785ac349bdfac8d6c22
 prior=Germanic/articles/hay/research/hiatus
 cycle=Germanic/articles/hay/research/hiatus-cycle2
+mode=reproduce_stress
+files=(reproduce_stress.py stress-panel.tsv)
+if [[ ${1:-} == --repairs ]]; then
+    mode=stress_repairs
+    files+=(stress_repairs.py)
+    shift
+fi
 
 tmp=$(docker compose exec -T backend mktemp -d /tmp/capr-hay-cycle2.XXXXXXXX)
 case "$tmp" in
@@ -25,7 +32,7 @@ git archive "$base" Germanic/tools Germanic/fsts/germanic.txt \
 git archive "$intake" "$prior" |
     docker compose exec -T backend tar -xf - -C "$tmp"
 docker compose exec -T backend mkdir "$tmp/cycle2"
-tar -cf - -C "$cycle" reproduce_stress.py |
+tar -cf - -C "$cycle" "${files[@]}" |
     docker compose exec -T backend tar -xf - -C "$tmp/cycle2"
 docker compose exec -T backend env PYTHONDONTWRITEBYTECODE=1 \
-    python "$tmp/cycle2/reproduce_stress.py" "$tmp" "$@"
+    python "$tmp/cycle2/$mode.py" "$tmp" "$@"

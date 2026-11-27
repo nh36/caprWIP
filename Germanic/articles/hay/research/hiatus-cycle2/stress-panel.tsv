@@ -1,0 +1,20 @@
+id	entry	input	status	justification
+call-present	full	gakáwiθi	historical	Ringe and Taylor 260, 318; Campbell §237.1b. Root accent; historical input reused from Cycle 1.
+call-participle	full	gakáwid	historical	Sweet 416; Ringe and Taylor 260, 318. Root accent; historical input reused from Cycle 1.
+call-simplex	full	káwiθi	historical	Campbell §237.1b; parallel unprefixed 3sg, subject to input admission.
+believe	full	galáubijaną	corpus	CAPR 1944; matched against frozen capture, SC035 literature adjudication.
+world	full	wír-àldiz	corpus	CAPR 2302; compact compound with secondary accent if independently admitted by the frozen parser.
+weak-posttonic	OEUnstressedEIContraction	*á*k*e*i*d	synthetic	Positive weak reduction with primary stress on preceding syllable.
+weak-prefix	OEUnstressedEIContraction	*ʝ*e*i*k*á*d	synthetic	Pretonic rather than posttonic, before separately marked root.
+weak-after-root	OEUnstressedEIContraction	*ᶠ*ʝ*e*k*é*t*e*i*d	synthetic	Weak reduction remains possible later in a word with a pretonic syllable.
+weak-prefix-stressed	OEUnstressedEIContraction	*ʝ*é*k*e*i*d	synthetic	Models the stress contrast of Campbell §74 n. 5, not a reconstruction of armour.
+root-plain	OEUnstressedEIContraction	*ᶠ*ʝ*e*k*e*i*d	synthetic	Plain root after one pretonic syllable; independent mark must be supplied at entry to test S2.
+root-marked	OEUnstressedEIContraction	*ᶠ*ʝ*e*k*é*i*d	synthetic	Head indicated by surviving acute, with a preceding unstressed nucleus.
+head-complex	OEUnstressedEIContraction	*k*⌃*ei*d	synthetic	Primary-stressed atomic complex nucleus, not two vowel tokens.
+head-syllables	OEUnstressedEIContraction	*k*⌃*e*i*d	synthetic	Primary-stressed short e plus syllabic i, not an atomic nucleus.
+head-approximant	OEUnstressedEIContraction	*k*⌃*e*j*d	synthetic	Primary-stressed short e plus consonantal approximant.
+head-fricative	OEUnstressedEIContraction	*k*⌃*e*ʝ*d	synthetic	Primary-stressed short e plus secondary voiced palatal fricative.
+head-long	OEUnstressedEIContraction	*k*⌃*ē*i*d	synthetic	Primary-stressed long ē plus syllabic i, distinct from short e plus i.
+weak-complex	OEUnstressedEIContraction	*á*k*ei*d	synthetic	Weak atomic nucleus compared with weak syllabic hiatus.
+weak-approximant	OEUnstressedEIContraction	*á*k*e*j*d	synthetic	Weak short e plus approximant compared with weak hiatus.
+weak-fricative	OEUnstressedEIContraction	*á*k*e*ʝ*d	synthetic	Weak short e plus fricative compared with weak hiatus.

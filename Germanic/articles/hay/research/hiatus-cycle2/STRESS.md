@@ -128,3 +128,108 @@ and `*ᶜ` are routing symbols, not accent annotations. The prior
 accent-contrasted. Neither establishes a durable stress representation.
 An independent panel must separate prefix stress, secondary stress,
 quantity, syllabic *i*, a complex nucleus, and the two palatal types.
+
+## S2 checkpoint: independent panel and two repairs
+
+[The panel](stress-panel.tsv) keeps its five full submissions separate
+from fourteen synthetic entries. The frozen captures independently
+give `ġelīefan` for ‘believe’ (1944), with a pretonic syllable,
+root *áu* and a long weak tail; and `weorold` for ‘world’ (2302), with
+explicit primary and secondary accent. The latter is a reconstruction
+of a compound formation, not independent evidence for every detail of
+its compaction or accent history. Campbell §237.1b supports the
+unprefixed verbal comparison. There is no full submission for the
+exceptionally stressed ‘armour’: its stress is independently motivated
+but the local contrast does not assert a reconstructed earlier input.
+
+| Component | Frozen function and limits |
+|---|---|
+| `EnglishProtoInput` / `SC047ProtoInput` | Parse and star tokens; native input accepts acute/grave distinctions. A/B2 also have the documented additional cell branch. Admission is not evidence that stress is specified on every submitted input. |
+| `OEStressFootContext`, `FootCtx` | The first inserts `*ᶠ` before one initial pretonic syllable recognized from a following positively marked head; the second can pass that syllable outside an inner rule's domain. Neither marker identifies all heads or all compounds. |
+| `*ᵘ`, `*ᶜ` | The input interface routes weak final and weak nonfinal sentence contexts, respectively. These are word-level context tags, not lexical stress on a particular syllable and not compound boundaries. |
+| `EAFBrighteningUnstressed`, `EAFBrightening` | Separate plain and accented source clauses. The latter maps primary acute *á* to plain *æ* but retains a separate reflex *ǽ* for its grave input. |
+| `OEStripSecondaryStress`, `OEInterStressRaising` | The former normalizes grave *ò*; the latter includes a weak between-stresses configuration and consumes a grave low/front input on the ‘world’ path. The earlier label is not a universal date at which all secondary accent disappeared. |
+| `OEIUmlaut`, `OEHighStressDecode` | Fronting/raising can neutralize accent with plain outputs; the latter separately maps residual grave high vowels to plain high vowels. These executable decodings are not claims of historical accent displacement. |
+| Weight, syncope and `OEHLoss` | The cascade reads nucleus, consonants and foot domain to resolve weight. `OEWeightMarkers` and `OEWeightCleanup` do not supply a persistent primary-head slot. `OEHLoss` strips the foot marker even when its consonant target is absent; the subsequent physical context alone cannot reliably recover the old head. |
+
+**Repair S1, foot-domain guard.** Replace only SC083 with
+`FootCtx(OEUnstressedEIContraction)`. On a marked word the pretonic
+nucleus cannot license deletion of the first following root nucleus;
+a root nucleus can still license the same rule later in the foot.
+This is not a filter on `ge-` or on a verb class. It changes no
+weight or vowel rules. The two A/B2 ‘call’ cells and the plain-root
+local contrast are its only SC083 changes on this panel. Each model
+retains the three posttonic local firings (after an ordinary head,
+after a stressed prefix, and later in a marked word), and does not
+add a pretonic reduction. Unprefixed ‘call’ and both corpus controls
+retain their H0 endpoints. In A/B2 the simplex has **earlier** palatal
+diphthongization (`ċieiþ`): it is not another instance of SC083.
+
+**Repair S2, explicit tier.** Seed private `*⌃` / `*⌄` tags from
+explicit primary and secondary accent immediately after admission,
+not from first-syllable position or `*ᶠ`. In synthetic local entries
+with otherwise unmarked heads the independently specified probe
+tags supply the intended contrast. Change SC083 only insofar as
+an immediately preceding tag prevents its ordinary left-context
+match (a following tagged nucleus also cannot serve as weak *i*).
+For other components, frozen identity lookups retain the exact
+annotation; changed lookups thread the markers through the frozen
+transduction using Foma ignore insertion. Project intermediate
+results back onto the ordinary representation and record the
+disagreement or ambiguous attachment rather than choosing an
+alignment. This leaves the underlying weight and syllabicity rules
+unchanged and allows a stressed `*ei` without recoding it as
+syllabic `*e*i` or as consonantal `*e*j`. The five local
+head contrasts verify quantity, nucleus, and palatal type separately.
+
+The explicit tier is **not** a general solution. It retains the head
+through brightening, umlaut, w-loss and foot-marker stripping in
+‘call’ and the vowel changes in ‘believe’. In all three cascades it
+fails at `OEMedUnstressedULowering` in ‘world’: the network returns
+tags inside the serialized segment tokens, so the valid annotation
+set is empty although the untagged result exists. Treat this as a
+technical failure of the lift, not a prediction about compounds.
+The existing atomic `*ei` alone has no explicit head contrast;
+the tag demonstrates how to distinguish that property, but says
+nothing about its historical weight or whether all subsequent
+rules recognize the atomic nucleus.
+
+### Keeping hiatus resolution separate
+
+The [receipt](stress-repairs.json.gz) has all three no-overlay arms
+and twelve H arms per frozen model (three operations × two positions
+× two repairs). The early insertions follow `OEWLossBeforeI`.
+S1 late uses the still-present foot marker immediately before
+`OEHLoss`, already after SC083. S2 late uses the explicit tier
+after `OEHLoss`, immediately before `OEContraction`.
+These anchors are intentionally not treated as identical when the
+intervening h-loss itself matters. All H rules are local stress
+diagnostics, not independently established claims of unrestricted
+resolution.
+
+Both no-overlay repairs retain short *e.i* in the affected ‘call’
+forms. In A and B2 both early and late direct contraction now give
+`ġecēþ/ġecēd`. Late consonantal gliding instead supplies *j*
+(`ġeceġþ/ġeceġd`); late nuclear incorporation supplies atomic *ei*,
+rendered with `ei` by the experimental printer. The spelling of the
+nuclear outcome is identical to that of unresolved hiatus, not proof
+that the two phonologies are equivalent. Neither repair changes
+canonical ‘call’ to the short input; its long nucleus is upstream.
+
+**Interim verdict:** S1 is the sounder minimal candidate for wider
+auditing; S2 is useful for targeted post-foot and nuclear diagnostics
+where its alignment is valid, not for unqualified full-model use.
+Late direct contraction is no longer computationally excluded on
+these prefixed paths. This removes a stress-induced argument for
+early contraction, not evidence concerning independent ordering
+relative to umlaut, apocope, lowering or palatal developments.
+
+```bash
+bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --repairs --stage-cache "$cache"
+gzip -t Germanic/articles/hay/research/hiatus-cycle2/stress-repairs.json.gz
+```
+
+The live private panel verifies the two protected ‘call’ cells,
+the independent weak reduction, and the early/late direct predictions.
+It reuses the frozen definition image and adds only isolated component
+compilation. The full archived/active firing census remains S3.
