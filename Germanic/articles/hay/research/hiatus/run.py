@@ -183,10 +183,10 @@ def synthetic_trials(order, paths):
     return {"standalone": standalone, "controls": controls, "arms": arms}
 
 
-def compare_arms(model, order, paths, batches, selected):
+def compare_arms(model, order, paths, batches, selected, extra=None):
     results = {}
     for arm in selected:
-        placements = candidates.placements(arm, model)
+        placements = extra[arm] if extra and arm in extra else candidates.placements(arm, model)
         records = {}
         for start, inputs in batches.items():
             index = order.index(start)
@@ -196,6 +196,23 @@ def compare_arms(model, order, paths, batches, selected):
             records.update(evaluate(suffix, paths, inputs,
                                     {component for _, component in suffix_placements}))
         results[arm] = {"placements": placements, "traces": records}
+    return results
+
+
+def district_trials(orders, paths, inputs):
+    rows = dsv(HERE / "district.tsv")
+    extra = {"Dahl-final": (("OEJLossAfterHeavy", "DaFinalJ"),)}
+    arms = ("H0", "H1-early", "H2-early", "H5-glide-first", "H6-final-only", *extra)
+    results = {}
+    for model, order in orders.items():
+        batches = {}
+        for row in rows:
+            start = order[0] if row["start"] == "full" else row["start"]
+            form = row["form"]
+            batches.setdefault(start, {})[row["id"]] = (
+                inputs[form[1:]] if form.startswith("@") else form
+            )
+        results[model] = compare_arms(model, order, paths, batches, arms, extra)
     return results
 
 
@@ -285,7 +302,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("snapshot", type=Path)
     parser.add_argument("mode", choices=("baseline", "local", "synthetic", "historical", "corpus",
-                                        "palatal"),
+                                        "palatal", "district"),
                         nargs="?", default="baseline")
     parser.add_argument("--stage-cache", type=Path)
     args = parser.parse_args()
@@ -319,7 +336,18 @@ def main():
                 data.update(candidates_sha256=frozen.sha(HERE / f"{overlay.__name__}.py"),
                             foma=subprocess.check_output(["foma", "-v"], text=True).strip(),
                             component_sha256={key: frozen.sha(path) for key, path in bins.items()})
-                if args.mode == "synthetic":
+                if args.mode == "district":
+                    with tempfile.TemporaryDirectory(prefix="hay-palatal-") as palatal_dir:
+                        palatal_bins = compile_candidates(source, args.stage_cache,
+                                                          Path(palatal_dir), palatal)
+                        data.update(inventory_sha256=frozen.sha(inventory),
+                                    panel_sha256=frozen.sha(HERE / "district.tsv"),
+                                    palatal_sha256=frozen.sha(HERE / "palatal.py"),
+                                    palatal_component_sha256={
+                                        key: frozen.sha(path) for key, path in palatal_bins.items()
+                                    },
+                                    models=district_trials(orders, paths | bins | palatal_bins, inputs))
+                elif args.mode == "synthetic":
                     data.update(synthetic_sha256=frozen.sha(HERE / "synthetic.tsv"),
                                 **synthetic_trials(orders["A"], paths | bins))
                 elif args.mode == "historical":

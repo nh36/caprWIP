@@ -1,0 +1,18 @@
+id	start	form	role
+hay-dir	full	@hay-dir	frozen direct target
+hay-gen	full	@hay-gen	frozen protected prediction
+hay-dat	full	@hay-dat	frozen protected prediction
+district-dir	full	gáwją	reconstructed direct cell; not a simplex attestation
+district-gen	full	gáwjas	reconstructed protected genitive
+district-dat	full	gáwjai	reconstructed protected dative
+key-hogg-dat	full	káijai	independent protected retention control from D2
+key-edge	OEWLossBeforeI	*k*ǣ*j	independent inherited final-palatal retention control from D2
+hay-hiatus	OEWLossBeforeI	*ç*e*w*i	A-type state after umlaut
+district-hiatus	OEWLossBeforeI	*ʝ*e*w*i	matched state with separate initial palatalization assumption
+hay-dahl-high	OEWLossBeforeI	*ç*īe*j	Dahl direct cell after mutation; high branch proxy
+district-dahl-high	OEWLossBeforeI	*ʝ*īe*j	Dahl direct cell after mutation; high branch proxy
+hay-dahl-mid	OEWLossBeforeI	*ç*ē*j	Dahl direct cell after mutation; mid branch proxy
+district-dahl-mid	OEWLossBeforeI	*ʝ*ē*j	Dahl direct cell after mutation; mid branch proxy
+hay-dahl-protected	OEWLossBeforeI	*ç*ē*j*æ	Dahl protected cell proxy prior to any analogical operation
+district-dahl-protected	OEWLossBeforeI	*ʝ*ē*j*æ	Dahl protected cell proxy before proposed loss
+district-dahl-dis	OEWLossBeforeI	*ʝ*ē*æ	postulated result of protected dissimilation; input comparison, not an executable law

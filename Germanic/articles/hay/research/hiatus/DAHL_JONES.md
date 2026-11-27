@@ -339,3 +339,106 @@ Dahl’s differentiated-diphthong history remains a competitor;
 its starting point and the actual treatment of compound
 ‘island’ require separate tests. No production verdict or
 chronology edge changes.
+
+## D4. ‘District’: a close reconstruction, not a matched attestation
+
+### Collation of Dahl’s English material
+
+Dahl (98–99, PDF 120–121, image checked) lists only final members
+of names and derivatives. The table transcribes his readings;
+multiple loci in a row share the accompanying description unless
+specified otherwise. `HE` loci are Plummer volume I by page/line;
+`Ct` loci are Sweet, *Oldest English Texts*, by item/line; `Chr`
+is the Parker Chronicle in Earle–Plummer. Verification is against
+Dahl’s printed page, not the manuscript, except that the indicated
+Sweet comparisons independently check his transcription against
+an edition. Dahl’s dialect labels are witness assignments, not
+proof that each name originated in that dialect.
+
+All the putative district elements are **second members**;
+weaker stress than on the first member is a reasonable working
+hypothesis, but neither a measured stress level nor an inference
+that these elements were historically unstressed. In particular,
+Latin embedding and ethnonym derivation prevent the endings
+from being read as a single Old English noun paradigm.
+
+| Dahl’s exact forms and loci | Witness, dating and dialect | Reading and limitations |
+|---|---|---|
+| *Elge*, HE 244/3, 244/33, 246/28 in M, N, B | Moore c. 737, Namur c. 750–800, Cotton Tiberius A XIV early ninth century (Dahl’s dating); Bede completed c. 731. Northumbrian tradition. | Ely; place-name, not a diagnosed inherited nominative; ‘island’ is a serious lexical alternative. |
+| *Sudergeona*, HE 218/30 in M, N, B; *Suderige* correction in B | Same HE witnesses and transmitted date; the correction is not dated here. | After Latin *in regione*. Dahl’s genitive plural ethnonym ‘of the Surrey people’ vs. local singular reading of correction. Compare Sweet 142 (PDF 156): *sudergeona* and a differently transcribed *suðri[o]ena* variant, not absolute-final *gē*. |
+| *Elgæ* 244/3, *Elge* 244/33, 246/28; *Suthriena* 218/30, all HE C | Cotton Tiberius C II, late eighth century, same underlying HE material; classed Mercian, with possible northern copy influence. | First three are Ely; last genitive plural ethnonym. The *i* of *Suthriena* could write or continue a palatal; Sweet’s bracketed transcription cautions against taking it as a phonetic measurement. |
+| *Eastrgena* Ct 18/2 | Canterbury Archives (Sweet Cam. ii), act 788, Mercian authority in Kent; manuscript date not independently established here. | In Latin *in regione*. Genitive plural of a people-name on Dahl’s reading; Campbell calls it quasi-Latin alongside *Sudergeona*. |
+| *Suþregum* Ct 45/31 | Stowe 19, act 871–889; ninth-century Surrey witness in Sweet, Mercian in Dahl’s grouping. | Dative plural after *in*, parallel to *in Cent*. A territorial/population form, not a bare simplex. |
+| *Limingae* Ct 5/1; *Liminiaeae* Ct 7/3; *Liminiaee* Ct 7/4 | Ct 5 Cotton Augustus II 88 and Stowe 1, early hands; Dahl 697 vs. Sweet 700 or 715. Ct 7 Cotton Augustus II 101, act 740, early charter hand. Mercian–Kentish grouping. | Ct 5 after Latin *qui dicitur* supplies no independent OE case. Ct 7 Dahl reads datives, inferring an English preposition at /4; river-name and local-name forms are demonstrably liable to confusion, and *-i-* as palatal spelling is his interpretation. |
+| *Liminge*, *Limingge* Ct 19/8, /9; *Liminge* Ct 41/20; *Liminge* Ct 27/4 | Ct 19 Cotton Augustus II 97, act 798 with endorsement; endorsement not independently dated. Ct 41 Cotton Augustus II 64, Kentish will, 835; Ct 27 Cotton Augustus II 71, Kentish, c. 855 in Dahl. Both ninth-century witnesses in Sweet; no closer palaeographic claim here. | Locatives after *æt* (Ct 19) or *to* (Ct 41 and 27); all Lyminge. Coexistence of single and double spelling within one witness is not a chronology of sound loss. |
+| *Eastorege* Ct 34/8 | Stowe 7 deed and Cotton Augustus II 100 witness; Dahl dates the vernacular memorandum 805–831, distinct from the host deed dated 805. Mercian–Kentish in Dahl’s grouping. | After *to*, locative; Sweet 442 (PDF 456) actually prints *éastorege*. Candidate for re-formation with ‘island’, or Dahl’s alternative vowel insertion before the palatal. |
+| *Easterege* Ct 35/2; *Eosterege* /3; *Eosterge* /4, /7; *Eostorege* /7, /10; *Easterege* /10 | Cotton Augustus II 47, dated 811, ninth-century Kentish charter witness. | /2 and /3 in Latin *in (eadem) regione* in Dahl’s citation; Sweet 442 prints just *in regione* in the latter. Others governed by English *on*. Sweet image independently confirms the spelling variation, particularly *Eosterge* without the internal vowel of *Eostorege*. |
+| *Eastrege* Ct 36/4 | Cotton Augustus II 72; Dahl 834? vs. Sweet 443 (PDF 457) 824?; ninth-century witness. | After Latin *ad*, so Dahl’s acc.? is not an unambiguous English case. Sweet marks the vowel reading uncertain in apparatus. Same Eastry alternatives as above. |
+| *Suðregie* with Dahl’s asterisk, Ct 21/2 and 23/1 | Cotton Augustus II 21 and II 37, 838 and c. 838; related copies, not independent linguistic events. Mixed Saxon–Kentish archive. | After Latin *regione*. Sweet 434–435 prints variant readings rather than independently confirming an identical *-ie*; Dahl 99 also discusses Ct 22 and *-e*. His proposed OE *Sūþ-* + Latin genitive *regie* under influence of *regione* is possible, not established. Do not equate any of these spellings with direct absolute-final *gē*. |
+| *Elige* Chr 34/22; *Suþrige* 42/21, 64/20; *Suþrige* 60/15; *Suþrigea* 62/27, 66/33; *Suþrigium* 64/32 | Parker MS, Cambridge Corpus Christi College 173, first hand c. 891–892; earlier annal material possible, exact dates of the name forms unestablished. West Saxon compilation, possibly inherited spellings. | *Æt Elige* locative (Dahl’s ‘island’ confusion); Surrey after motion *on* (acc. sg. or pl.), then nom. pl., gen. pl. twice, and dat. pl. after *mid*, respectively. A population name can be remodelled on forms like *Dene*; neither plurality nor the spelling establishes a simplex. |
+
+### What historical contrast is established
+
+Gothic *hawi/gawi* and OHG *hewi/gewi* alongside *houwi/gouwi*
+make the two inherited labial-plus-palatal families close
+comparators, not cognates of one another. Ringe and Taylor
+(2014: 173) distinguish inherited *hewi* from the geminate
+history in *houwi*; Orel (2003: 128) lists the Gothic and
+OHG district pair, and Kroonen (2013: 171) explicitly lists
+**OE *-gē*** with a hyphen. The coexistence of continental
+labial reflexes motivates testing analogous reconstructed
+cells. It does not force the same levelling, timing or stress
+in English. Campbell (1959: 245 §610 n. 4) adduces
+*Eosterge* as a locatival form and accounts for some variants
+by re-formation with ‘island’. This is positive evidence for
+a territorial second member, not an independent attestation
+of a free *gē* with directly known quantity.
+
+Dahl’s regular direct branch is long and palatal-less
+(*-gīe/-gē*); he thinks the corresponding protected stem lost
+its palatal through dissimilation under weak compound stress,
+leaving no donor for direct-cell restoration. He also proposes
+a separate contracted history within *Sudergeona*. The
+hypothesis is coherent, but a second-member position from which
+weak stress is inferred is not independent evidence that this
+dissimilation operated. The most useful contrasts are between
+mixed graphic forms and different grammatical contexts, not
+between a securely attested short/long simplex ‘district’ and
+a simplex ‘hay’. Thus *hewi > he.i* and *gewi > ge.i* are
+worth testing under equal conditions, but sameness of their
+English inputs is itself a counterfactual, especially given
+initial-palatal effects and the compound evidence.
+
+### Frozen assay and verdict
+
+The [panel](district.tsv) and [receipt](district.json) record 306
+traces, 17 inputs × six arms × three cascades. The full
+direct and protected cells are hypotheses with separate source
+and attestation status. The suffix probes deliberately match
+the nuclei across roots after allowing the distinct initial
+consonants. The Dahl branches start after mutation, with separate
+high and mid long nuclei; no full equation of his upstream
+representation with canonical or B2 is implied. The palatal-less
+oblique injection records the assumed result of dissimilation,
+not a validated weak-stress rule.
+
+| Test | Result |
+|---|---|
+| Full direct cells, H0 | Canonical and B2 give `hīeġ/ġīeġ`; A gives `hei/ġiei`. The A difference is already present before *w*-loss: initial `*ʝ` in ‘district’ feeds frozen West Saxon diphthongization and then umlaut (`*æ > ea > ie`). The short mid-vowel hiatus overlays therefore do not match full A ‘district’. This is not an explanation of the actual compound forms. |
+| Full protected cells, H0 | All three yield `hīeġes/ġīeġes` and `hīeġe/ġīeġe`. These are predicted donors, not witnessed source forms. None of the tested hiatus overlays turns this symmetry into dissimilation. |
+| Matched hiatus suffixes | H0 `hei/ġei`; contraction `hē/ġē`; early or final glide `heġ/ġeġ`; glide-first lengthening `hēġ/ġēġ`. The rules applied in parallel do not furnish independent evidence for different histories in the two roots. |
+| Dahl final loss | The reused D2 edge rule yields `hīe/ġīe` or `hē/ġē` from the matched long direct probes; protected `hēġe/ġēġe` survive. The artificially depalatalized oblique yields `ġēæ`, not an explanation of the attested endings. The same edge rule deletes the palatal in independent `cǣġ` when supplied at that stage, while retaining the protected `cǣġe`; that adverse result must not be hidden by choosing only ‘hay’ and ‘district’. |
+
+Reproduce with the D2 frozen cache:
+
+```sh
+bash Germanic/articles/hay/research/hiatus/run-container.sh district --stage-cache "$cache" > district.json
+```
+
+**Research verdict:** retain ‘district’ as a close conditional lexical
+comparator, separate from a positive simplex witness. A palatal-less
+territorial compound does not falsify regular short final glide
+formation in ‘hay’. Neither the comparative reconstruction nor
+the executable mismatch demonstrates stress-conditioned
+dissimilation, direct-cell analogy, or a historical chronology
+edge. No production change is proposed.
