@@ -1327,3 +1327,128 @@ analysis must not be credited with explaining a
 coda by the same evidence. Neither Jones’s comparisons
 nor the modern analyses demonstrate a division
 between final gliding and pre-dental contraction.
+
+## Joint assay. Compare the internal states, not just the spelling
+
+**Identity and question.** This is a private adjudication
+of the short mid-vowel hiatus and the fate of postvocalic
+palatals, against the same immutable snapshots used for
+D2–D7 (base `113101ac5f169b589e1a9647cdf24d32cdd4d919`).
+The question is whether attraction of a second vowel into
+the preceding nucleus and weakening of a consonant are
+distinguishable, and whether a shared output establishes
+their conditioning. No registered sound change or
+presumed historical date is assigned to an insertion.
+
+**Witness roles.** The same [inventory](historical.tsv)
+supplies 37 reconstructed inputs to each cascade and
+arm. Its five new comparative rows are unsubmitted:
+for example, ‘clay’ needs the historical quantitative
+and geminate questions settled before fixing a full
+diagnostic target. The following crosswalk allows one
+witness to serve more than one comparison without giving
+it a different input to improve the fit.
+
+| Comparison group | Inputs and function |
+|---|---|
+| Original nuclear/consonantal labials | D7 separates nuclear *au/iu* from consonantal *awj/iwj*, including matched direct × protected forms and the already exposed oral ‘new’ probe. These local alternatives are not interchangeable PGmc submissions. |
+| Hiatus from *w*-loss | ‘Hay’, ‘call’, ‘strew’, ‘flock’, conditional ‘couch’, plus D3 ‘prepare’ and *pyle*. ‘Flock’ and ‘couch’ have local probes where full admission fails. |
+| Hiatus from other losses | ‘River’, ‘strike’, ‘see’, and the long controls in the inventory distinguish *h*-loss, ending lowering and nuclear quantity. None is automatically a matched early final *e.i* witness. |
+| Inherited final palatals | Independent *cǣġ* and its protected comparison; ‘island’ is a qualified long-diphthong comparator. They are counterexamples or checks, not outputs to optimize on ‘hay’. |
+| Secondary palatals | ‘Way’ and ‘day’ distinguish secondary palatalization from inherited *j* or hiatus. ‘Dry’ provides a different vowel and a possible onset. |
+| Preconsonantal palatals | ‘Rain’, ‘thane’, ‘maiden’, ‘wagon’, ‘ask’, ‘against’, plus the older gloss controls in J3. ‘Rainbow’ is a related compound, not independent evidence for a new root. |
+| Primary compound first members | D5 reuses ‘hay’- and ‘glee’-like edges with a private compound delimiter and separately contrasts a bare word and ordinary internal position. The isolated ‘new’ combining form is not a full compound. |
+| Weak compound second members | D4’s place-name data constrain the historical interpretation; the D5 probes explicitly contrast marked and unmarked second-domain stress, not an inferred stress assignment from spelling. |
+| Morphologically protected stems | The full family panel and protected ‘key’ dative distinguish retained material before a real ending from an unverified donor for analogy; a constructed protected cell is not an attestation. |
+
+**Execution and current state.** The
+[joint panel](joint.tsv) adds a four-way segmental contrast
+at word edge and before *d*, plus *n/k*, following-vowel,
+long-nucleus and ‘key’ controls. Seven new local components
+are recorded at `OEJLossAfterHeavy`, before palatal
+merger; the preexisting arms retain their original
+anchors. The bracketed plain-vowel context is the old
+foot proxy, not a reconstruction of root stress. The
+new atomic `*ei` probe has no distinct acute variant
+in these experiments. The merger arm applies to the
+atomic nucleus irrespective of its derivation; no
+historical claim is made that every such input lost
+its distinction. `HiGlide`, by contrast, rewrites
+two separate vowel tokens to a vowel plus `*j`.
+The separate following-vowel arm tests possible onset
+formation without allowing the new *j* to stand at
+absolute edge.
+
+```sh
+bash Germanic/articles/hay/research/hiatus/run-container.sh joint --stage-cache "$cache" > joint.json
+bash Germanic/articles/hay/research/hiatus/run-container.sh joint-corpus --stage-cache "$cache" > joint-corpus.json
+gzip -n -9 -c joint.json > joint.json.gz
+```
+
+The [structured joint traces](joint.json.gz) hold 13,872
+row–model–arm records (136 × 3 × 34): the fixed 37
+submissions in each arm, separate historical suffixes
+from the prior panels, and 18 new local probes. The
+receipt includes all changing stages and the immediate
+input/output of each inserted stage, plus 126 standalone
+lookups (18 × seven). Rejected full inputs remain in
+the receipt, not counted as historical failures. The
+[corpus receipt](joint-corpus.json) covers 18,960
+row–model–arm evaluations (790 × three × eight), with
+archived and active panels identified separately. These
+are frozen research runs, not current-release validation.
+
+**Principal trace comparisons.**
+
+| Comparison | Result and reason it matters |
+|---|---|
+| Final ‘hay’ in A | H0 `*ç*e*i` and J-offglide `*ç*ei` both render `hei`. Early H2 instead gives `heġ`; unrestricted early H1 gives `hē`; glide-first H5 gives `hēġ`. In length-first H5 the longer first vowel feeds high-vowel loss and the late converter no longer has the original `*i`. The rendering is not a measurement of syllabicity or length. |
+| Dental and wider scopes | A ‘call’ present `ġeciþ` is unchanged by the dental-stop treatment but gives `ġecēþ` with dental obstruents. The local *d* input in ‘flock’ is captured by dental stops (`eide` > `ēd`) but loses the ending in this chronology. The narrower groups miss the conditional nasal case; coronal and all-consonant arms capture it in the local trial but show no separate reason to include, e.g., *s/l/r* or noncoronal stops. |
+| Stage of the split | In full A/B2 ‘call’, late candidates cannot undo the early loss of the prefixed root vowel in `OEUnstressedEIContraction`. H4 before or after the heavy-cluster operation reaches `ġecēþ` after a visible `*ej` state, like early direct H3 at the endpoint. Applied late after merger its trigger can catch inherited palatals, and it misses the intended prefixed ‘call’ environment. This is a substrate and ordering problem, not an independent chronology edge. |
+| Synthetic palatal comparison | `*e*ʝ*d` gives `*ē*d` either directly or through `*ei*d`; the approximant serial arm reaches the same result only from the approximant input. Fricative breaking retains `*ʝ` after `*ei`. In the serial arms a following *k* and absolute edge retain an offglide, while *d/n* feed merger. Intervocalic *j/ʝ* and long *ēʝ* are negatives for the coda/short-vowel components. `*e*i*a` can produce `*e*j*a` in the onset arm but edge `*e*i` is unchanged there. These are discriminable predictions, not proven historical environments. |
+| Inherited independent control | Final *cǣġ* survives H0 and the Jones arms, but Dahl loss deletes its inherited palatal. The local protected `*k*ǣ*j*æ` stays `cǣġæ`; the full Hogg dative gives `cǣġe`. Canonical and B2 ‘hay’ at the same late anchor lose their palatal, but fitting one rival history does not outweigh the control. |
+| Continental and compound variants | The D7 branches differ as `*awj` > `awwj` versus `*auj` > `auw` in protected material; apocope before differentiation also differs from the reverse order. D5 models absolute edge separately from marked first-member and second-domain conditions. No production tokenizer or cascade is modified to process these private representations. |
+
+**Wider firing results.** Both panels reproduce their
+available reference endpoints. In each model the three
+new fricative arms each fire in five distinct concepts,
+one row in each panel: ‘rain’, ‘rainbow’, ‘sail’,
+‘thane’ and ‘way’. Direct assimilation changes all
+five to a long monophthong context; the serial arm
+agrees in *n* contexts but leaves `seil` and `wei`
+outside merger; breaking before the retained fricative
+keeps both offglide and consonant in the trace and
+spells them in the outputs. Campbell §§204.8, 363
+already distinguishes *segel/segl* ‘sail’ with and
+without an intervening vowel; `sēl` is an unverified
+prediction in this assay, not support. ‘Way’ is a
+particularly useful edge witness: unrestricted coda
+assimilation produces `wē`, not a satisfactory account
+of the retained consonant in the baseline history.
+‘Day’ is outside the short mid-vowel test. The
+approximant and onset arms do not fire on the corpus
+at this anchor; stage-local positives show that this
+is a property of the supplied representations, not
+proof that the histories were impossible. Atomic
+offgliding fires on A ‘hay’ alone and is invisible in
+surface spelling. Dahl deletion fires on canonical/B2
+‘hay’ alone; ‘key’ is independently tested and does
+not become a supporting witness because it is absent
+from this firing list.
+
+**Historical assessment and verdict.** The historical
+phenomena concern potentially distinct West Germanic,
+pre-OE, recorded OE and Middle English developments.
+Only adjacent unstressed *i/ī* as a trigger for *w*-loss
+has the stronger independent controls described in D3.
+Hiatus must be created before it can resolve in that
+derivation (stage-entailed); no independent ordering of
+final versus preconsonantal resolution, subsequent
+assimilation, or pre-/post-merger OE loss follows from
+the joint experiments. Positive evidence for transfer
+is regionally asymmetric: West Saxon high vocalism
+motivates protected material if apocope was early, but
+there is no new reason to infer whole-stem levelling
+for the earliest Anglian mid vowel. **DEFER adoption**:
+retain the isolated candidates and negative controls,
+no registry verdict or propagation to production.

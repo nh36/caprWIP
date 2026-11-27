@@ -16,6 +16,7 @@ from unittest.mock import patch
 import candidates
 import compound
 import continental
+import joint
 import palatal
 
 BASE = "113101ac5f169b589e1a9647cdf24d32cdd4d919"
@@ -217,11 +218,23 @@ def comparison_panel(orders, paths, inputs, panel, arms):
     return results
 
 
-def historical_trials(orders, paths, inputs):
+def historical_trials(orders, paths, inputs, extra=None):
     local = {}
     for row in dsv(HERE / "local.tsv"):
         local.setdefault(row["start"], {})["local:" + row["id"]] = row["form"]
-    return {model: compare_arms(model, order, paths, {order[0]: inputs, **local}, candidates.ARMS)
+    if extra:
+        for panel in ("palatal", "district", "families"):
+            for row in dsv(HERE / f"{panel}.tsv"):
+                form = row["form"]
+                local.setdefault(row["start"], {})[f"{panel}:" + row["id"]] = (
+                    inputs[form[1:]] if form.startswith("@") else form
+                )
+        for row in dsv(HERE / "joint.tsv"):
+            local.setdefault(joint.ANCHOR, {})["joint:" + row["id"]] = row["form"]
+    return {model: compare_arms(model, order, paths, {
+                order[0]: inputs | local.get("full", {}),
+                **{start: forms for start, forms in local.items() if start != "full"},
+            }, (*candidates.ARMS, *(extra or {})), extra)
             for model, order in orders.items()}
 
 
@@ -259,7 +272,7 @@ CORPUS_ARMS = (
 )
 
 
-def corpus_trials(orders, paths, archive, capture):
+def corpus_trials(orders, paths, archive, capture, extra=None):
     results = {}
     for model, order in orders.items():
         archived = archive["corpus"] if model == "canonical" else capture["models"][model]["corpus"]
@@ -267,7 +280,8 @@ def corpus_trials(orders, paths, archive, capture):
         rows = {f"{panel}:{row['row_id']}": row for panel, items in
                 (("archived", archived), ("active", active)) for row in items}
         inputs = {key: row["fst_input"] for key, row in rows.items()}
-        arms = compare_arms(model, order, paths, {order[0]: inputs}, CORPUS_ARMS)
+        arms = compare_arms(model, order, paths, {order[0]: inputs},
+                            ("H0", *extra) if extra else CORPUS_ARMS, extra)
         base = arms.pop("H0")["traces"]
         baseline = {}
         for key, row in rows.items():
@@ -304,7 +318,7 @@ def main():
     parser.add_argument("snapshot", type=Path)
     parser.add_argument("mode", choices=("baseline", "local", "synthetic", "historical", "corpus",
                                         "palatal", "district", "compound", "families",
-                                        "continental"),
+                                        "continental", "joint", "joint-corpus"),
                         nargs="?", default="baseline")
     parser.add_argument("--stage-cache", type=Path)
     args = parser.parse_args()
@@ -334,7 +348,8 @@ def main():
         else:
             with tempfile.TemporaryDirectory(prefix="hay-candidates-") as tmp:
                 overlay = {"palatal": palatal, "compound": compound,
-                           "continental": continental}.get(args.mode, candidates)
+                           "continental": continental, "joint": joint,
+                           "joint-corpus": joint}.get(args.mode, candidates)
                 bins = compile_candidates(source, args.stage_cache, Path(tmp), overlay)
                 data.update(candidates_sha256=frozen.sha(HERE / f"{overlay.__name__}.py"),
                             foma=subprocess.check_output(["foma", "-v"], text=True).strip(),
@@ -370,6 +385,23 @@ def main():
                     data.update(inventory_sha256=frozen.sha(inventory),
                                 local_sha256=frozen.sha(HERE / "local.tsv"),
                                 models=historical_trials(orders, paths | bins, inputs))
+                elif args.mode == "joint":
+                    panels = ("historical", "local", "palatal", "district", "families", "joint")
+                    probes = {row["id"]: [row["form"]] for row in dsv(HERE / "joint.tsv")}
+                    data.update(panel_sha256={name: frozen.sha(HERE / f"{name}.tsv")
+                                              for name in panels},
+                                definition_sha256={module.__name__: frozen.sha(Path(module.__file__))
+                                                   for module in (candidates, palatal, joint)},
+                                standalone={name: frozen.apply_stage(bins[f"component:{name}"], probes)
+                                            for name in joint.PROBES},
+                                models=historical_trials(orders, paths | bins, inputs, joint.ARMS))
+                elif args.mode == "joint-corpus":
+                    data.update(archived_sha256=frozen.sha(frozen.FROZEN),
+                                active_capture_sha256=frozen.sha(capture_path),
+                                definition_sha256={module.__name__: frozen.sha(Path(module.__file__))
+                                                   for module in (candidates, palatal, joint)},
+                                models=corpus_trials(orders, paths | bins, archive, capture,
+                                                     joint.ARMS))
                 elif args.mode == "corpus":
                     _, predictions = synthetic_components(paths | bins)
                     data.update(archived_sha256=frozen.sha(frozen.FROZEN),

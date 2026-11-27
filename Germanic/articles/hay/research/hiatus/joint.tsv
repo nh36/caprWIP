@@ -1,0 +1,19 @@
+id	form	role
+edge-hiatus	*t*e*i	two nuclei at edge
+edge-offglide	*t*ei	one complex nucleus at edge
+edge-approx	*t*e*j	approximant in coda
+edge-fric	*t*e*ʝ	fricative in coda
+d-hiatus	*t*e*i*d	short two-nucleus input before dental stop
+d-offglide	*t*ei*d	vocalic offglide before dental stop
+d-approx	*t*e*j*d	approximant before dental stop
+d-fric	*t*e*ʝ*d	fricative before dental stop
+n-offglide	*t*ei*n	offglide before nasal
+n-fric	*t*e*ʝ*n	fricative before nasal
+k-offglide	*t*ei*k	noncoronal negative for merger
+k-fric	*t*e*ʝ*k	noncoronal coda fricative
+long-fric	*t*ē*ʝ*d	long negative for short-input components
+v-hiatus	*t*e*i*a	two vowels before following syllabic vowel
+v-fric	*t*e*ʝ*a	intervocalic fricative negative
+v-approx	*t*e*j*a	intervocalic approximant negative
+key-edge	*k*ǣ*j	independent inherited final palatal
+key-protected	*k*ǣ*j*æ	independent inherited protected palatal
