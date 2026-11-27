@@ -1452,3 +1452,211 @@ there is no new reason to infer whole-stem levelling
 for the earliest Anglian mid vowel. **DEFER adoption**:
 retain the isolated candidates and negative controls,
 no registry verdict or propagation to production.
+
+## Comparative adjudication
+
+The earlier literature and the two principal authors
+do not all address the same arrow. Sievers’s accent
+suggestion, Kögel’s labial-to-palatal conversion, van
+Helten’s regional gemination, Chadwick’s directionally
+different stem transfers, and Bülbring’s and Luick’s
+w-less alternatives concern the origin of the input
+and distribution across cells (D1). Dahl supplies a
+specific **prehistoric** competitor: maintain the
+nuclear diphthong, expose a nonsyllabic palatal at
+ending loss, treat exposed and protected palatals
+differently, and allow retention or restoration.
+Ringe and Taylor (2014: 53, 173, 246, 250, 259–261)
+instead separate ungeminated survivals from the
+gemination/resolution history and document comparisons
+for regular *w*-loss. Their preferred vocalism and the
+direction of levelling are additional historical
+judgements, not necessary consequences of a Foma
+endpoint. Hogg (1992: §5.133) and Hogg and Fulk
+(2011: 252) constrain the loss comparisons and the
+distinction between the inherited glide and a palatal
+fricative. Jones and de Chene address **what can
+happen after a palatal or glide is in the rhyme**.
+They cannot supply the prehistoric input assumed by
+a candidate CAPR route.
+
+The composite history \*hewi > he.i > hej is
+historically defensible as a **conditional regular
+account**. The first arrow has independent evidence
+for its phonological mechanism; the second has
+independently motivated types of hiatus resolution,
+but no securely matched early word-final short *e.i*
+control that positively establishes a consonantal
+rather than nuclear result. No uniform regional
+sound law is inferred.
+
+| Witness | What the composite history explains, and what it still needs |
+|---|---|
+| Ninth-century Kentish *hei weg* | A short vowel plus palatal or a complex nucleus can give the spelling; an inherited long/diphthongal first member is also compatible. First-member position blocks Dahl’s absolute-edge deletion in the assay, and the witness does not by itself establish the free simplex. Dahl prints 859; Lowe cautions about the date. |
+| Ninth-century Vespasian ⟨heg⟩ | A retained short mid vowel with a palatal accounts for the written mid vowel and final consonant without levelling. The spelling leaves length open. Direct short survival is therefore viable, not demonstrated; neither the long contraction-and-restoration history nor protected transfer is excluded. |
+| Tenth-century Aldred ⟨heg/heig⟩ | Now verified in manuscript images as alternatives in the same lexical gloss tradition. Short [eʝ]/[ei̯ʝ], an approximant history, and long or nuclear variants are not measured by the written alternatives. A history through /j/ needs separate evidence if Jones’s [ʝ] is to be taken literally. |
+| Farman ⟨hóeg⟩ | Independent local evidence favours length. Unchanged short survival is not the best account of this witness by itself. A subsequent lengthening with retained/restored palatal or protected transfer is possible, but neither can be projected backwards or assumed just to save the model. |
+| Apparent contraction before consonants | Short-root length in ‘call’ provides a positive nonfinal comparison. Direct contraction versus glide/offglide then assimilation is unresolved; ‘strew’ is mixed, ‘flock’ has an admission/ending problem and ‘couch’ is etymologically conditional. The locally successful overlays do not constitute a distinct stop- or coronal-conditioned law. |
+| Independently long plus palatal | *Cǣġ* shows that inherited *j* can survive after a long nucleus. It is not a reflex of short *e.i* and cannot decide its resolution. Likewise, the West Saxon high vowel under early apocope provides positive evidence for a different source of vocalism, not for generalized Anglian analogy. |
+
+### Sixteen answers
+
+1. **Dahl’s new information:** he supplies a fully
+   specified alternative to syllabic *hewi*, separating
+   differential exposure, quantitative deletion and
+   morphological restoration. His source inventory also
+   gives useful tests of weak compound members and
+   distinct continental predictions.
+2. **Jones’s new information:** he explicitly permits
+   short mid vocalism for Aldred and distinguishes
+   retention, vocalization, assimilation, and breaking
+   before a retained fricative. That is not a derivation
+   of the palatal from prehistoric syllabic *i*.
+3. **Rejection of *hewi*:** not independently sustainable.
+   The proposed diphthongal chronology is coherent but
+   not demonstrated for the English direct form. Regular
+   *w*-loss makes the alternative more credible if *hewi*
+   was present; OHG *hewi* does not prove that premise.
+4. **Final loss after long vowels:** not independently
+   established as a general law. *Cǣġ* is a positive
+   long-vowel countercontrol. Restoration there would
+   need independent confirmation, not an exemption.
+5. **Short-vowel survival under Dahl’s condition:** the
+   condition permits survival if a short palatal-bearing
+   form already exists. This is a relative prediction, not
+   a positive witness for the origin of short /hej/.
+6. **‘District’:** no decisive discrimination. Weak
+   stress, lack of a secure simplex and uncertainty over
+   palatal-bearing donors make it a test of the premises,
+   not a proof of a parallel history.
+7. **Compound *hei weg*:** materially different. It
+   is protected against absolute-edge loss in D5’s
+   diagnostic and may retain material absent in a
+   simplex. Its written vowel does not decide the
+   earlier quantity or establish deletion elsewhere.
+8. **Jones’s short argument:** identifiable and
+   phonologically explicit: a single first vowel in
+   the interpretation of a plain/digraph alternation
+   before a surviving fricative. It is not derived
+   from matched accent/doubling counts or an
+   independent measurement of those tokens.
+9. **Preconsonantal assimilation:** a useful precedent.
+   ‘Rain’ and ‘thane’ motivate comparison with lengthened
+   forms, but ‘maiden’ and breaking variants exclude
+   treating a following dental as sufficient without
+   independent controls on dialect, stage and segment.
+10. **De Chene’s contribution:** it makes a two-stage
+    weakening-plus-monophthongization analysis a serious
+    comparator and predicts a possible retained offglide.
+    It does not demonstrate the intermediate in ‘call’
+    or ‘hay’, and its strong prior-contrast claim is not
+    taken as a universal.
+11. **Direct stop/coronal contraction:** there is positive
+    evidence for resolution yielding length in some
+    nonfinal cases, not independent evidence for a direct
+    mechanism confined to stops or generalized to all
+    coronals. The present ‘call’ fricative already defeats
+    the stop-only class as a unified account.
+12. **Absolute versus compound-internal position:**
+    Dahl loss and the D5 explicit domain arms distinguish
+    them; the H6 edge arm distinguishes positions only
+    as supplied to it. An isolated first-member suffix
+    treated as a whole word cannot demonstrate compound
+    protection. H1/H2 do not impose that split.
+13. **Indistinguishable endpoints:** syllabic and atomic
+    hiatus representations can both render `hei`;
+    written ⟨heg/heig⟩ does not uniquely separate
+    palatal quality and vowel quantity. Direct contraction
+    and early glide loss can both yield `ġecēþ`;
+    a protected long vowel and a contracted then
+    restored long vowel can yield the same long
+    palatal-bearing form. Continental copying and
+    gemination may converge on the same labial spelling.
+14. **Useful discriminators:** a matched early final
+    short hiatus witness, independent vowel quantity,
+    a direct/protected/compound set in the same
+    tradition, secure ancestral consonant and aperture
+    in a retained/lost preconsonantal pair, and evidence
+    ordering continental labial outcomes relative to
+    ending loss. Keep *cǣġ* independent of the target.
+15. **Cascade deficiencies exposed:** unsupported
+    proto admissions for some comparisons; a prefixed
+    root susceptible to a weak-vowel deletion proxy;
+    no short *e.i* treatment in the frozen contraction;
+    and surface convergence of distinct nuclear
+    representations. Regional spelling, morphological
+    levelling, and unmodelled compound structure are
+    not automatically defects in the West Saxon
+    production target.
+16. **Positive case for regular survival:** improved but
+    not settled. An independent regular *w*-loss
+    mechanism, an explicit published short Northumbrian
+    comparison verified in the primary manuscript, and
+    an independently plausible form of desyllabification
+    together make regular survival more than an attempt
+    to fit ⟨heg⟩. The phonetic outcome and scope remain
+    unproved, particularly for Farman and for the
+    West Saxon high-vowel witness.
+
+### Next discriminating work
+
+For review, the priority is an independently localized
+final/continuing-stem comparison, not another suite of
+endpoints optimized on ‘hay’. A matched Aldred quantity
+comparison requires the actual Ross–Stanley index or a
+diplomatic census with both marked and unmarked
+denominators; the three primary-image readings are
+now fixed. Acquire Jordan 120–123 and the original
+de Chene and Opalińska passages before attributing
+more to them. Test dated short-vowel and long-vowel
+palatal contrasts with *cǣġ* still independent, and
+keep mature article, model and corpus decisions
+paused. This dossier authorizes no follow-on experiment.
+
+## Chronological release ledger
+
+Each checkpoint below was committed and pushed on
+`research/hay-article` before the next increment.
+For mode names in the ledger the executed command was
+`bash Germanic/articles/hay/research/hiatus/run-container.sh MODE --stage-cache "$cache"`
+with the private cache rooted at
+`/tmp/capr-hay-stages.pnnCGdFt` and stdout captured
+as JSON. Fresh validation below refers only to the
+reported research execution, not a strict publication
+or production certificate. Source-only increments
+used `git diff --check`; directly registered sources
+also used `python3 docs/references/validate_catalogue.py`.
+
+| Increment | Pushed commit | Evidence, execution and validation |
+|---|---|---|
+| D1 | [`0279ff46`](https://github.com/nh36/caprWIP/commit/0279ff466c314ab0a483bf0c85f347752e756097) | Original Dahl pp. 82–86, 95–97, Chadwick 138–139; seven earlier proposals, with mediated claims labelled. |
+| D2 | [`49153a82`](https://github.com/nh36/caprWIP/commit/49153a8211b8043e504eb0416e2a3d656495c41c) | `local` reproduced all 60 diagnostics; `palatal` validated 525 traces, including independent *cǣġ* and the protected comparison. |
+| D3 | [`cbb81cbc`](https://github.com/nh36/caprWIP/commit/cbb81cbcd1ec65f7456441db840eeda464942a6c) | Checked Campbell and Ringe–Taylor page images; reinterpreted existing traces, did not rerun the frozen cascade. |
+| D4 | [`99e94b85`](https://github.com/nh36/caprWIP/commit/99e94b85badc13b72678aa7f0d9775fa0780f7d6) | `district`: verified 306 traces and compared the reported place-names with the checked Sweet loci. |
+| D5 | [`7463b0c6`](https://github.com/nh36/caprWIP/commit/7463b0c6ab70a8fda71a071e28e23bba42cfdfc2) | `compound`: verified 91 component lookups and unchanged boundary markers; original Dahl image reads 859. |
+| D6 | [`7528a609`](https://github.com/nh36/caprWIP/commit/7528a6091d6ac865c1121275cff739ecb8c5cfbe) | `families`: verified 228 traces and the independent final-palatal control; `district` rerun reproduced all D4 model traces. |
+| D7 | [`34f32360`](https://github.com/nh36/caprWIP/commit/34f3236013e3247b46b137b7561c1349310777a4) | `continental`: verified 112 isolated lookups, disjoint trigger domains and the unchanged key controls. |
+| D8 | [`1eb9428d`](https://github.com/nh36/caprWIP/commit/1eb9428da499914af76fef8251586dbc486f232c) | Eight-question adjudication against D1–D7; no new run or adopted rule. |
+| J1 | [`d033ab8e`](https://github.com/nh36/caprWIP/commit/d033ab8e95ba920c889948cbea60d3d0bff5b57a) | `pdftotext -layout` and `pdftoppm`: Jones 55–56, 149–150 checked in images; single vs. doubled vowel and the fricative reading confirmed. |
+| J2 | [`1bb49ad5`](https://github.com/nh36/caprWIP/commit/1bb49ad58a7035faee622c463d5bfc7bd4495484) | Jones 19–21, 55–58, 149–154; distinguished conditional mechanisms, not new historical evidence. |
+| J3 | [`91ca087c`](https://github.com/nh36/caprWIP/commit/91ca087caa2899b0f39e6944e5e4f13531c7db89) | Original tables at 19, 55, 150; five contextual inventory rows added, all full submission identities verified unchanged. |
+| J4 | [`8e3498f0`](https://github.com/nh36/caprWIP/commit/8e3498f08905af78fe0feec333184d2eaca58bd7) | `curl` publisher preview and examined the Cambridge abstract/indexed article extracts; verified edition history and catalogue; no full journal/dissertation collation claimed. |
+| J5 | [`91c53338`](https://github.com/nh36/caprWIP/commit/91c533383c5bc0c0c3cc98c17051c7343a3a13f4) | Jones 30 and Ritt 498–510 checked; bounded contrasts only, without a new Farman calibration or complete final-palatal denominator. |
+| J6 | [`ab946068`](https://github.com/nh36/caprWIP/commit/ab94606807d88e5fc72ba92fa115ded3c05b5b72) | `curl` color folios 38v, 56r, 222v; visually verified spellings, accent status, correction and Latin loci; Ross–Stanley index unavailable. |
+| J7 | [`739a2f62`](https://github.com/nh36/caprWIP/commit/739a2f62952357a94b518971dbff4f9db969b6d1) | Jones 149–152, Campbell and Minkova; Jordan edition verified, pp. 120–123 not directly collated. |
+| J8 | [`08b663aa`](https://github.com/nh36/caprWIP/commit/08b663aa10ae36e8e6f27dc3bb46cc9764122cd0) | Jones 68–73 and the modern hiatus comparison; Opalińska’s original passages remain unverified. |
+| Joint assay | [`f20bf167`](https://github.com/nh36/caprWIP/commit/f20bf167a34751fe4ec81f7ce4b524b6b6033b21) | `joint`, `joint-corpus`, `gzip -t`; verified 13,872 traces, 126 component lookups, 18,960 census evaluations, all overlapping historical traces and both prior corpus baselines. |
+
+Uncompressed joint SHA-256:
+`b3e6cb3c850ad5a1229e2c1a71c6180cfd3087556b8a04b2ec24a614addc50ed`.
+Joint corpus SHA-256:
+`85bc1109b8d53b6049870547f44a82e9ada5beb004047c4d2037ee7efb50bb34`.
+The source identity in both receipts is
+`43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f`.
+At closeout the tracked diff from the intake commit
+is restricted to the private research harness, receipts,
+dossier and source discovery metadata. The publication
+PDF is unchanged (SHA-256
+`75968371a1fcc8d998c41afabb33c10e6ba7a9d3d7431c86956bc569fcb3d335`);
+there is no change to the article source, production
+transducers, the frozen models, corpus targets or PR #21.
