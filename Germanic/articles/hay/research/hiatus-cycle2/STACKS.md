@@ -263,3 +263,92 @@ not automatic proof of a universal intermediate.
 
 Replay the [source-specific receipts](sources-traces.json.gz)
 with `bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --sources --stage-cache "$cache"`.
+
+## T5: integrated hypotheses and ordering graph
+
+The [stack receipt](stack-traces.json.gz) applies a single
+comparison panel on canonical, A and B2. It retains all
+stage-local and admitted entries, including complete oblique
+cells. Explicit compound-domain lookups are separate; an
+ordinary cascade cannot silently erase the research boundary
+and still test it. TD replaces only the relevant full ‘hay’
+and ‘district’ entries with the separately labelled Dahl
+inputs. Its early receipt carries *au > ǣo* before deletion
+of nasal *ą*, then branches to the representative English
+mid and high outputs before final-palatal loss. This is a
+conditional projection at a defined entry point, not a fully
+validated early parser or an implementation of analogy.
+
+| Stack | Distinct proposition | Discriminating result in A |
+|---|---|---|
+| T0 / T1 | Frozen order / S1 only | S1 repairs ‘call’ without adding any hiatus resolution. |
+| T2 / T2-late | Direct nonfinal collapse in *d, þ/ð, n* before / after HVD; leave absolute final hiatus in this comparison | Both give *ġecēd* and *strēne*. Only the later implementation preserves the supplied ‘flock’ ending (*ēde* vs. *ēd*); its early suffix remains conditional. |
+| T3 | Early consonantal gliding, later narrowed assimilation | *heġ* and nonfinal length; early cluster formation can feed HVD (*ēd*). Palatal identity and later merger create additional predictions absent from T2. |
+| T3N | Early nuclear incorporation, later matched merger | *hei* with a single complex nucleus and the same nonfinal lengths; assigned nuclear weight in this implementation likewise feeds HVD. At the edge the orthographic match to H0 is not a phonological match. |
+| T4 | Lengthen after final gliding; separately test absorption after a long nucleus | *hēġ* is viable without transfer, but new length needs independent conditioning. Long-root absorption is not a source of short-root lengthening. |
+| T5 | Early back-vowel incorporation, late front incorporation and matched nonfinal merger, independent *hw* treatment, and contraction or absorption where later *h*-loss creates a suitable sequence | Keeps *ēde* and *strēne*, and gives *clēa/cnēo/trēo* and *sēon*. It wrongly suppresses the retained-sequence interpretation of early *streide* if applied uniformly to that gloss; it does not produce West Saxon high ‘hay’ directly from short *e.i*. |
+| TD | Differentiation of nuclear *au* before nasal loss, mutation before loss of exposed final palatal; protected nuclei retain the consonant | Gives direct *hē* or *hīe*, with protected *hēġes/hīeġes*. Direct written ⟨g⟩ needs restoration in Dahl’s history. The same loss erroneously predicts *cǣ* in the independent ‘key’ control. |
+
+| Edge in the historical graph | Standing and prospective discriminator |
+|---|---|
+| Raising of final *ō* > early *w*-loss before *u* > back-diphthong realization | Source-supported for the plural histories; Hogg's hiatus and Ringe–Taylor's early nuclear inputs converge. An independently disyllabic form persisting after the early loss would discriminate a longer interval. |
+| I-mutation > *w*-loss before weak *i* > general short-vowel syncope > intervocalic *h*-loss | Source-supported relative order, not derived from order of components. The *eowu* class transfer and *gierwan : gierede* are independent comparisons; the fact that *h*-loss creates hiatus later supports, but does not require, a later shared resolution stage. |
+| Identical-vowel collapse > unlike-vowel resolution | A serious proposal, not fixed for every environment: identical *glī/nī-* and early unlike *streide* may favour it, but spellings and poetic archaism cannot date all changes. The executable split and the borrowed boundary cases do not prove the edge. |
+| Early gliding/incorporation > HVD, or HVD > late resolution | Alternative orders. The former feeds HVD in local ‘flock’; the latter preserves the supplied ending. Confirming the early ending and its quantity could make it a historical discriminator. The unobserved ‘couch’ nominative cannot independently adjudicate it. |
+| Consonantal formation > assimilation, or incorporation > monophthongization | Definitional for each serial analysis, not a demonstrated chronology. Early written or metrical preservation of the distinction and independent analogous nuclei could discriminate. |
+| Approximant assimilation vs. *ʝ > j* | Inverting these operations changes the ‘rain’ result. Separately dated retention/loss evidence, ideally within the same dialect, is needed before promoting the executable dependency. |
+| Nasal apocope vs. Dahl’s *au* differentiation | Reversal changes the input to final exposure; no independent date orders them this way in ‘hay’. ‘Key’ counters the broad absolute loss regardless of the executable order tested. |
+| Compound-member exposure vs. compound-medial loss | A separate relation, not inferred from absolute finality. The comparison needs independently inflected or endingless first members and independently motivated compound stress; the charter ⟨hei weg⟩ alone does not provide both. |
+
+### Scholarly limits on unification
+
+Goering’s “A sound change that never was” (first online
+2025, print 2026), §8 pp. 313–314 and the discussion of
+metrical archaism, separates **postconsonantal** *h*-loss
+from **intervocalic** loss and contraction. Heavy poetic
+scansion of *feore* can preserve the prosody of historical
+*feorhǣ* without requiring ordinary long *fēore*; the limited
+southwestern name evidence does not justify a general rule.
+Goering likewise contrasts the metrical shapes of *hēan*
+at *Beowulf* 713b and 116a. The precedent helps explain why
+metrical *strēd* cannot by itself date unlike resolution.
+The experimental stack does not use blanket lengthening after
+postconsonantal loss.
+
+The abstract and indexed excerpts of de Chene & Anderson
+(1979: 505–535, JSTOR 413316) distinguish coda consonant
+weakening from nuclear monophthongization and argue that
+the decomposition is independently necessary in some
+languages. This supports the *possibility* of two steps
+without showing that a weak OE vowel became a fricative,
+or that the same nucleus formed from a vowel and from newly
+vocalized *ʝ*. Kavitskaya’s 2017 critique, as checked in
+the joint dossier, also blocks use of prior quantity contrast
+as a universal proof. The JSTOR `pdfplus` endpoint returned
+HTML, not an inspectable full page copy; Cambridge’s public
+record provides an abstract. The publisher preview of de
+Chene’s revision identifies the first three chapters with
+the 1979 dissertation (one noted change), not the additional
+chapters, and does not expose the necessary complete passages.
+No prior source-access status is upgraded on that basis.
+
+Mosionek and Zembrzuski (2019 §§2–6), already checked
+in the joint dossier, separate phonotactic template matching,
+gliding, glide insertion and contraction. *Nerian/lōcian*
+are prevocalic, not newly formed word-final *j*. Opalińska’s
+original 2002/2004/2006 arguments remain indirect through
+these reports; her institutional publications list confirms
+the identity of the 2004 article, not access to its argument.
+Jordan’s 1974 pp. 120–123 remain inaccessible in the located
+controlled-loan edition. Ross–Stanley Book II was not
+recovered; the accessible Ross *Studies in the Accidence*
+is not that index. None of these limits undermines the
+manuscript-verified Aldred ⟨heg/heig⟩ loci or promotes their
+spellings into a quantitative census.
+
+The source results motivate **separate historical windows
+and one reusable type of syllabicity change**, not one
+identical template and merger at every stage. T5 is the
+broadest constructive hypothesis for the subsequent audit,
+not the winner by endpoint count. Replay:
+`bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --stacks --stage-cache "$cache"`.
