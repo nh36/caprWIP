@@ -127,3 +127,99 @@ test the conditional dependent genitive separately, and keep the
 Bede accusative and possible Exeter dative plural separate from
 the Mercian cells. No historic input should be selected just
 because it gives a convenient bare *strēn*.
+
+## C2: what the etymology actually predicts
+
+| Source | Proposal and its limits |
+|---|---|
+| Luick, §243c, pp. 219–220 | Groups ‘couch’ with Anglian contraction in *e.wi* from older *a.wi* and contrasts the w-bearing form. His alternative loss of analogical *j* is especially relevant to the verbs; he does not derive the noun's nasal or specify an inflected input. |
+| Wright & Wright (1914: 305, §599; cf. §254) | Explicitly includes *streowen* among concrete and abstract feminine formations in *-en*, alongside feminine personal derivatives. The heading gives both *-inī* and *-injō-* and the West Germanic geminated formation. This is an earlier explicit derivational classification, but it does not allocate ‘couch’ to one of the two sources, assign a quantity to the root, explain Vespasian, or give witness-level citations. |
+| Campbell (1959: 100, §237.1b; 166–167, §406) | Treats Vespasian *strēn* as a member of the set with *w*-loss before *i* and contraction, with ‘call’ as an explicitly reconstructed comparison. He supplies neither a noun paradigm nor an independent demonstration of its first vowel length. The normalized lemma must not be read as a cited bare token. |
+| Sievers–Brunner (1965: 111, §129 n. 2; 142, §173e; cf. §110 n. 2) | Allows *w*-loss in Anglian *e.wi* from umlauted *a.wi*, but also suggests influence from ‘strew’. Proposes that the *eo* of the w-bearing noun could have been remodelled after the class II verb, where back mutation has an independent setting; not a claim that back mutation must operate through suffixal *i* in the noun. The general geographical heading at §173e does not relocate Vespasian to Northumbria. |
+| Ringe–Taylor (2014: 259–261, §6.6.4) | Explicit *stræwinu* > *streinu* for southwest Mercian *strēn*, derived from ‘spread out’. Short *æ*, intervocalic *w*, weak *i* and singleton *n* are all specified or implied by the input; the proposed *-u* is compatible with a feminine nominative, not evidence that such a token survives. The comparable past of ‘strew’, together with ‘call’, ‘ewe’ and the loan ‘pillow’, supports the phonological step independently of the noun. |
+| Hogg (1992, §§5.14, 5.105, 6.20); Hogg–Fulk (2011, §§2.38–40, 2.46–49, 3.73–77) | Hogg's vowel and apocope environments, and the independently reconstructed strong feminine endings in Hogg–Fulk, constrain the assay. Hogg–Fulk's account separates two sources of *-en(n)*; it does not supply a new etymology for ‘couch’. |
+
+Wright's discussion shows that the feminine suffix classification
+predates Ringe–Taylor; the exact singleton, short-*i* input is
+explicit in Ringe–Taylor. The earlier accounts do not constitute
+several independent reconstructions of that exact formation. No
+earlier source was verified for the full input, and the accessible
+Holthausen listing did not permit verification of the relevant entry.
+Bosworth–Toller, its Supplement, and Clark Hall establish lexical
+and editorial comparisons, not the prehistory of the suffix.
+
+### Independent comparisons
+
+| Formation | What it licenses |
+|---|---|
+| OE *hæften* ‘captivity’, *rǣden* ‘condition’, *sel(l)en* ‘gift’ (Hogg–Fulk §2.47(2b)) | Deverbal and denominal feminine *-en* formations, including concrete results. Their proposed source is *-īniz*, originally an i-stem formation, with early transfer to the jō-stems. They support the derivational type but do not validate a **short** medial *i* or a precise *-inu* preform. |
+| OE *byrþen(n)* ‘burden’, *hengen* ‘hanging’, *gyden* ‘goddess’; *þēowenn* ‘maidservant’ (Hogg–Fulk §§2.47, 2.49; Ringe–Taylor p. 188) | The distinct *-innjō/-unnjō* formation includes non-personal nouns. The remodelled *þiwin(n)u* is a close labial-bearing feminine comparison; Ringe–Taylor derive the w-bearing outcome with lexical remodelling from the related masculine. It is not a second example of *w*-loss before *i.n*. Final degemination could hide the suffixal geminate in a nominative; that does not make an intervocalic oblique geminate disappear on the same grounds. |
+| OE *cliewen* ‘ball’, OS *kliuwin* ‘ball’; OE *ticcen* ‘kid’, *nīeten/nēten* ‘animal’ (Wright & Wright §600; Ringe–Taylor pp. 298–299) | Singleton *-in-* is independently found in concrete neuter nouns. *kliuwin* even has stem *w*, but it is retained; root shape and analogical possibilities differ. The neuter paradigm is not the paradigm of Vespasian *strene*. |
+| OE *trywen* ‘wooden’, Gothic *triweins* (Ringe–Taylor pp. 188, 260); Gothic *ragin*, OS *regino-giskapu* (Kroonen, s.v. *ragina-*) | A labial plus *in* adjective provides a negative with explicit remodelling. The inherited neuter ‘decision’ has a differently analysed nominal stem; surface *in* alone does not identify a common OE feminine suffix. |
+| Gothic *straujan*, OHG *strewen/strouwen*, OS *strōian* and preterite *streidun*, OFris *strēwa*, ON *strá*; OE *stre(o)wian* and Anglian *strēġan* (Orel, s.v. *strawjanan*; Kroonen, s.v. *straujan-*; Ringe–Taylor pp. 246, 259–260) | The verbal family supports an inherited short root *straw-* before consonantal *w* (with later diphthongal developments before *j*). OS *streidun* and OE *streide* support loss in an *i*-bearing verbal form, not the identity of the noun's suffix. The Norse infinitive is remodelled and is not direct evidence for the noun. |
+| OE *strēa(w)*, ON *strá* n., OFris *strē*, OHG *strō* (Kroonen, s.v. *strawa-*) | An inherited neuter material/collective noun with root *w*; no suffixal nasal. ‘Material strewn out’ makes the semantic relation credible, not the claim of an inherited shared ‘couch’ noun. Kroonen's deeper comparison with Indo-European nasal presents does not locate the nasal in the Germanic noun. |
+| Gothic *badi*, OHG *betti*, OE *bedd*, ON *beðr*; OS and OFris *bed* (Kroonen, s.v. *badja-*; cf. the Tanner/Corpus B contrast in C1) | ‘Bed/bedding’ has a separate Germanic root with no *w* or *n*. OE *strewung* and *strēownes* actually combine the appropriate root and semantics but have different suffixes. No exact non-English cognate of the nasal ‘couch’ noun was verified in this bounded comparison. |
+
+### Reconstructions to keep separate
+
+1. **Preferred working model: short root + singleton nasal.** A
+   feminine stem *strawin-* built to ‘strew’ has independent
+   morphological and lexical motivation, although neither the precise
+   suffix allomorph nor the root quantity of the derived noun is
+   independently attested. Shortness is supported by ordinary inheritance
+   from the short base, conditional on that derivation, not by reading
+   back from *strēn*. Pre-OE *strawina* (accusative) gives *stræwina* >
+   *strewina* > *streina* under brightening, umlaut and *w*-loss; direct
+   contraction and ordinary reduction of final *a* are then predicted to
+   give *strēne*. Here *ei* in the intermediate denotes syllabic *e.i*,
+   not an assumed phonetic diphthong. The alternative palatal and nuclear
+   resolutions still require tests. If the short singleton formation
+   is instead modelled with the early jō-stem transfer of the broader
+   suffix class, jō-stem admission and the quantity consequences need
+   separate justification; the *-ō* paradigm is a first working model,
+   not a demonstration of the inherited stem class.
+2. **Different suffix history.** Wright's geminating feminine
+   *-innjō* and Hogg–Fulk's earlier *-īniz* followed by transfer are
+   genuine alternatives to treating short *-in-* as established.
+   The former predicts a different pre-loss nasal environment and
+   potentially an oblique geminate; the latter does not independently
+   supply the **short** weak vowel invoked by Ringe–Taylor. An
+   earlier *ī* reduced before *w*-loss is a chronological hypothesis to
+   justify, not a way to silently reuse the same input. Neither an
+   originally weak n-stem nor an original bare direct singular is
+   required by the evidence.
+3. **Remodelling or labial retention.** Brunner's w-retaining,
+   verb-influenced alternative can explain why Bede need not share the
+   Mercian development. Bede ⟨streowne⟩ is compatible with a stem
+   *streow(e)n-* plus an accusative ending, with syncope; the stem
+   remodelling would precede the syncope, not be a respelling after it.
+   A Mercian model based on analogical influence from verbal *streid-*
+   or *strēd-* is possible, but must independently justify the direction
+   of transfer and the surviving nasal. A long stem borrowed from
+   another family member is not excluded, but neither a suitable
+   independent nasal donor with an inherited long monophthong nor
+   positive evidence for that transfer is known here. Do not recruit
+   *strēon* ‘gain’ into the argument on spelling alone.
+
+For the first model use the pre-OE ō-stem endings of Hogg–Fulk
+§2.39. The nominative singular *-u* is a diagnostic only; its fate
+can depend on the weight of the stem before high-vowel loss. The
+accusative *-a* is a separate, attested target. Historical genitive
+singular *-ō* and dative *-ai* are distinct inputs even though attested
+strong obliques commonly converge in *-e*. In particular, expected
+genitive *-a* > analogical *-e* (§2.40) is not a phonological output
+criterion for the assay. Plural *-ō/-a* (nom./acc.), *-ǣ* (gen.)
+and *-um* (dat.) complete the working paradigm; only the last has
+a possible attestation, and it belongs to a different witness and
+may belong to the ‘gain’ noun. Neither a short root by itself nor
+surface *-e* determines when internal syncope and apocope applied.
+The experimental test must therefore score the stem and the ending
+separately, and track whether contraction changes the input to
+either loss process.
+
+The preferred account predicts post-labial front hiatus before
+*n* and subsequent resolution, but the written Mercian form gives
+neither an independent measurement of length nor a directly attested
+hiatus intermediate. ‘Couch’ is a serious independent **lexical**
+comparison to ‘hay’, conditional as evidence for one particular
+phonological mechanism or wider nasal conditioning.

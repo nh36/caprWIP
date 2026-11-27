@@ -1,7 +1,7 @@
 project_id	source_id	bib_key	use_scope	dossier_locations
 hay-article	ref:Adamczyk2018	Adamczyk2018	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
 hay-article	ref:Boutkan1995	Boutkan1995	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
-hay-article	ref:Campbell1959	Campbell1959	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
+hay-article	ref:Campbell1959	Campbell1959	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md; Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
 hay-article	ref:Cook1894	Cook1894	cited source	Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md
 hay-article	ref:Dahl1938	Dahl1938	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
 hay-article	ref:Dal1934	Dal1934	article bibliography	
@@ -13,7 +13,7 @@ hay-article	ref:Goering2025	Goering2025	cited source	Germanic/articles/hay/LITER
 hay-article	ref:Hecht1900	Hecht1900	cited source	Germanic/articles/hay/DRAFT.md
 hay-article	ref:Hogg1979	Hogg1979	supplementary source; p. 105 checked against the original	Germanic/articles/hay/research/hiatus/DAHL_JONES.md
 hay-article	ref:Hogg1979Analogy	Hogg1979Analogy	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
-hay-article	ref:HoggFulk2011	HoggFulk2011	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/LITERATURE_MATRIX.md
+hay-article	ref:HoggFulk2011	HoggFulk2011	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/LITERATURE_MATRIX.md; Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
 hay-article	ref:HoggGrammar1992	HoggGrammar1992	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/LITERATURE_MATRIX.md
 hay-article	ref:Jones1989	Jones1989	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/LITERATURE_MATRIX.md
 hay-article	ref:KembleHardwick1858	KembleHardwick1858	cited source	Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md
@@ -26,7 +26,7 @@ hay-article	ref:Miller1891	Miller1891	cited source	Germanic/articles/hay/EDITORI
 hay-article	ref:Minkova2003	Minkova2003	cited source	Germanic/articles/hay/DRAFT.md
 hay-article	ref:Minkova2014	Minkova2014	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
 hay-article	ref:Mokrowiecki2015	Mokrowiecki2015	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md
-hay-article	ref:RingeTaylor2014	RingeTaylor2014	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
+hay-article	ref:RingeTaylor2014	RingeTaylor2014	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md; Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
 hay-article	ref:Ritt2000	Ritt2000	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/QUANTITY_EVIDENCE.md; Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE6.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE7.md
 hay-article	ref:Skeat1871	Skeat1871	cited source	Germanic/articles/hay/EDITORIAL_CLEANUP_REPORT.md; Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/DRAFT.md
 hay-article	ref:Skeat1874	Skeat1874	cited source	Germanic/articles/hay/EDITORIAL_CLEANUP_REPORT.md; Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/DRAFT.md
@@ -39,7 +39,7 @@ hay-article	ref:Sweet1885	Sweet1885	cited source	Germanic/articles/hay/DRAFT.md
 hay-article	ref:Tamoto2013	Tamoto2013	cited source	Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/DRAFT.md
 hay-article	ref:Toswell1990	Toswell1990	cited source	Germanic/articles/hay/DRAFT.md
 hay-article	ref:Versloot2019	Versloot2019	cited source	Germanic/articles/hay/LITERATURE_MATRIX.md
-hay-article	ref:Wright1914	Wright1914	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/LITERATURE_MATRIX.md
+hay-article	ref:Wright1914	Wright1914	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/LITERATURE_MATRIX.md; Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
 hay-article	ref:WrightWuelcker1884	WrightWuelcker1884	cited source	Germanic/articles/hay/DRAFT.md
 hay-article	dataset:DOE-hay-corpus-handoff-2026-11-23		DOE search export	Germanic/articles/hay/SOURCE_INTAKE_2026-11-23.md; Germanic/articles/hay/DOE_CROSSWALK_2026-11-23.tsv
 hay-article	dataset:DOE-hay-supplement-2026-11-23		DOE search export	Germanic/articles/hay/SOURCE_INTAKE_2026-11-23.md; Germanic/articles/hay/DOE_CROSSWALK_2026-11-23.tsv
@@ -69,3 +69,8 @@ hay-article	ref:Miller1890	Miller1890	edition image; HE II.6	Germanic/articles/h
 hay-article	ref:BosworthToller1898	BosworthToller1898	online lexicographic attestation cross-check	Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
 hay-article	ref:Toller1921	Toller1921	dictionary supplement and textual variant	Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
 hay-article	ref:ClarkHall1960	ClarkHall1960	dictionary variants and homograph control	Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
+hay-article	ref:HoggGrammar1992	HoggGrammar1992	phonological conditioning	Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
+hay-article	ref:Luick1914	Luick1914	contraction and verbal comparisons	Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
+hay-article	ref:SieversBrunner1965	SieversBrunner1965	competing phonological and analogical accounts	Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
+hay-article	ref:Kroonen2013	Kroonen2013	lexical etymologies and nominal controls	Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
+hay-article	ref:Orel2003	Orel2003	comparative verbal evidence	Germanic/articles/hay/research/hiatus-cycle2/COUCH.md
