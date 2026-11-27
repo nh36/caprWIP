@@ -404,3 +404,29 @@ The [audit receipt](audit-traces.json.gz) contains all baseline
 changed stages, each experimental firing, all internal-only and
 surface divergences, and full holdout derivations. Replay:
 `bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --audit --stage-cache "$cache"`.
+
+### T6 follow-up: narrow the medial *hw* proposal
+
+The independently reconstructed *sehwan > seohan* path
+motivates **V–*hw*–V**, not the earlier probe's initial
+permission. `HwMed` replaces that probe in **T5m**: a left
+vowel is now required in addition to the following vowel.
+This keeps the change independent of lexeme identity.
+Isolated controls preserve initial *hw* and nonprevocalic
+*hw* while reducing intervocalic *hw*.
+
+All **2,370** archived/active model inputs replayed with
+no surface change relative to T0. The only internal changes
+are the already observed earlier contraction of ‘flee’ and
+‘slay’ in both panels of each order, and A's atomic edge
+nucleus in ‘hay’ in both panels. Full ‘see’ still gives
+*sēon* on all three orders; ‘whale’, ‘while’, ‘whine’,
+‘who’ and ‘where’ retain initial *hw*. The independent
+holdout gaps (‘wealth’, ‘three’) remain visible; no extra
+rule was selected to fit them. Lack of a live corpus firing
+does not validate the historical medial rule across its
+whole domain.
+
+The [separate follow-up receipt](medial-traces.json.gz)
+does not overwrite the failed first T5 census. Replay with
+`bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --medial --stage-cache "$cache"`.
