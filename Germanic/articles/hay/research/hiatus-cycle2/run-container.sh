@@ -16,6 +16,7 @@ case "${1:-}" in
     --quantity) mode=quantity; files+=(quantity.py matched.py panel.py panel.tsv stress_repairs.py); shift ;;
     --sources) mode=sources; files+=(sources.py quantity.py matched.py panel.py panel.tsv stress_repairs.py); shift ;;
     --stacks) mode=stacks; files+=(stacks.py sources.py quantity.py matched.py panel.py panel.tsv stress_repairs.py); shift ;;
+    --audit) mode=audit; files+=(audit.py benchmark.tsv stacks.py sources.py quantity.py matched.py panel.py panel.tsv stress_repairs.py); shift ;;
 esac
 
 tmp=$(docker compose exec -T backend mktemp -d /tmp/capr-hay-cycle2.XXXXXXXX)

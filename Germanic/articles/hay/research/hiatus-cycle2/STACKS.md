@@ -352,3 +352,55 @@ identical template and merger at every stage. T5 is the
 broadest constructive hypothesis for the subsequent audit,
 not the winner by endpoint count. Replay:
 `bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --stacks --stage-cache "$cache"`.
+
+## T6: frozen benchmark and wider firing census
+
+The dedicated [unscored benchmark](benchmark.tsv) was frozen at
+[`1bcd080e`](https://github.com/nh36/caprWIP/commit/1bcd080eae0ca82e08bd6d55e2e4c522bbe3eb6b)
+before replaying the holdout. Nine anchors organize the
+existing evidence; eight held-out rows include six historical
+comparisons and two synthetic discriminators. Each row has an
+evidence grade and an admission route, including an observation
+with no independently submittable phonological input. The six
+grades are not combined into an accuracy figure. `key-retained`
+is established as a lexical comparison but marked *local* because
+its experimental input is a post-mutation state.
+
+The holdout corroborates some operation boundaries, not all the
+positive reconstructions. The southern ‘wealth’ dative comes out
+*feoe*, not *fēo*: the front-vowel version of broken-nucleus
+contraction is missing in T5. Weak *hēan* already succeeds in
+T0; postconsonantal *feore* gains no new length in any arm.
+The ‘fringe’ intermediate retains hiatus after *h*-loss, and
+the conjectural completed contraction is not treated as an
+attestation. The *i.u* ‘three’ instance gives *þreo* rather
+than Hogg’s *þrīo*; it exposes the narrow scope and the frozen
+realization of the back-template treatment. Already nuclear
+*þeu* does yield *þēo* without a new rule. The *b* probe is
+outside the integrated narrow nonfinal merger, and atomic
+`*ei` is not converted back to two nuclei by spelling.
+
+All nine arms replayed 394 archived and 396 active inputs in
+each of the three frozen orders (**21,330 evaluations**).
+T0 reproduced the prior frozen endpoints and T1 reproduced
+every T0 derivation in those corpus panels. Compare input and
+changed-stage histories, not just output:
+
+| Arm | Distinct wider effects |
+|---|---|
+| T2 / T2-late | No new firings in these sparse corpus panels; the relevant ‘call’, ‘couch’ and ‘flock’ tests live in the historical panel. |
+| T3 / T3N / T4 | In A, only ‘hay’ in both panels: *heġ* (T3), internal-only atomic `*ei` (T3N), *hēġ* (T4). No new firings in canonical or B2. |
+| T5, initial scope | In each order the private *hw* treatment erroneously removes initial *w* in ‘whale’, ‘while’, ‘whine’, ‘who’ and ‘where’, once per panel: ten changed surfaces per order. ‘Flee’ and ‘slay’ contract a stage earlier with unchanged spelling; A also has internal-only nuclear ‘hay’. No early back-vowel firings in these corpus panels. |
+| TD | Deletes the exposed long-nucleus palatal of ‘hay’ in canonical and B2, once per panel. This corpus effect is distinct from the independent local *cǣġ* counterexample and TD's own alternative ‘hay’ input in the historical assay. |
+
+This is a demonstrated adverse domain in the **research**
+stack, not a production discrepancy. The ‘see’ evidence
+concerns a medial intervocalic source, not inherited initial
+*hw*. Keep the failed reduction visible rather than counting
+the five initial families as further predictions of English
+cluster loss.
+
+The [audit receipt](audit-traces.json.gz) contains all baseline
+changed stages, each experimental firing, all internal-only and
+surface divergences, and full holdout derivations. Replay:
+`bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --audit --stage-cache "$cache"`.
