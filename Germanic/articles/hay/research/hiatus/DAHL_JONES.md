@@ -1022,3 +1022,81 @@ and chronology matter. The orthographic ‘maiden’
 contrast prevents treating a following dental as a
 sufficient condition for length without checking the
 actual input and domain.
+
+## J4. What the two-stage theory predicts
+
+De Chene and Anderson’s [1979 article abstract](https://doi.org/10.2307/413316)
+formulates a strong historical analysis. Exclude cases
+where disappearance and lengthening are independent;
+in the remainder their source consonant is immediately
+adjacent to the affected vowel. A consonant weakens
+in a coda to a semivocalic or laryngeal glide, which
+joins the nucleus; monophthongization of that complex
+nucleus yields a phonologically long vowel **if and
+only if** there is independent length contrast in
+the system. A synchronic alternation between a consonant
+and length does not entail a single historical act of
+compensation.
+
+The published evidence is not simply a set of matched
+lengthened endpoints. The searchable article extracts
+compare, among others, Latin voiced *s* before a dental
+in the ancestors of *nīdus* and *sīdō*, and exclude
+cases of consonant disappearance without a causally
+related length change. Komi Ižma *l* loss and lengthening,
+compared with a labial reflex in other Komi varieties,
+illustrate a possible intermediate, not a diphthong
+directly attested in Ižma. The comparison with earlier
+and later French monophthongizations (article 527–528,
+as recollated by Kavitskaya) motivates the strong
+claim about an existing length contrast. A dialect in
+which coda weakening operated but monophthongization
+did not can retain the complex nucleus. Neither the
+weakening contexts nor the second-stage outcome can
+be inferred from a long vowel alone.
+
+Kavitskaya (2017: 41–58, [especially her discussion of
+Komi and Old French](https://doi.org/10.5281/zenodo.495438))
+separates coalescence after full consonantal vocalization
+from lengthening based on perceptual reinterpretation
+of an extended vocalic transition before loss. The
+latter needs no phonologized glide intermediate. Her
+discussion of the chronology of French length and the
+typological exceptions makes antecedent contrast a
+testable tendency, not a universal prerequisite.
+Old English already had length contrasts independently
+of the ‘hay’ problem, so the strong universal, even
+if accepted, could only license length here; it cannot
+choose among these histories.
+
+**Source boundary.** Jones (20–21, 57) attributes the
+segment-substitution account to de Chene (1979), and
+uses ‘rain’ and his other Table 2.7 comparisons for its
+Old English application. His citation of dissertation
+p. 66 is attached to the Latin comparison, not to an
+independently proven Old English intermediate. The
+2014 Routledge preview reproduces the 1985 Garland
+edition. Its preface (xiii) confirms that chapters 1–3
+preserve the June 1979 UCLA dissertation circulated by
+the Indiana University Linguistics Club in December,
+apart from a stated alteration on p. 207; chapters 4–5
+are Garland additions. The available preview does not
+reach p. 66. The Cambridge abstract and indexed JSTOR
+extracts are accessible, but the complete journal scan
+and the relevant dissertation pages were not obtained.
+Consequently the English application is reported through
+Jones rather than attributed to an unverified passage
+of either original.
+
+**Research verdict:** compare direct syllabic contraction
+with (i) fricative or approximant vocalization yielding
+a separately recorded complex nucleus and (ii) an
+optional second-stage monophthongization. Keep direct
+source-sensitive assimilation and literal consonant loss
+as separate counterfactuals. A complex nucleus formed
+directly from hiatus may feed the same second-stage
+operation if its structure and conditioning match; it
+does not attest the consonant-weakening stage of the
+1979 analysis. A retained coda after diphthongization
+is evidence for a different pathway, not an intermediate
+of weakening to an empty coda.
