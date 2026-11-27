@@ -1206,3 +1206,60 @@ improves the textual basis of Jones’s comparison and
 confirms the dotted cancellation, but neither lack of
 an acute nor ⟨ei⟩ determines vowel length or shows
 how the palatal originated.
+
+## J7. Short and long in Jones’s two comparisons
+
+The contrast is neither an OCR accident nor adequately
+explained by assigning every example to a different
+period. Jones 21 and 55–56 compares late Northumbrian
+spellings; at 149 he recalls them with [hej]/[heij].
+The West Saxon base column of Table 3.17 (150) instead
+gives conventional long [heej]/[hiij], against which
+he presents twelfth- to fifteenth-century spellings.
+These are different source series used for different
+arguments, so the two entries do not literally assign
+contradictory durations to the same written token.
+But the difference is not a fully worked-out dialect
+history either: at 152 Jones uses [hej] > [heij] >
+[hei] as an illustration of trigger effacement in
+the **Middle English** discussion, without reconciling
+the short illustrative input with his long West Saxon
+base. It is an alternative mechanism in that passage,
+not new independent short-vowel evidence or an explicit
+chronological ordering of the regional histories.
+
+Jones cites Jordan (1974: 120–123) for the comparison
+in Table 3.17. Jordan’s work is the translation and
+revision of the German grammar by Eugene Joseph Crook,
+published by Mouton; the [edition record](https://archive.org/details/handbookofmiddle0000jord)
+is verified, but a readable copy of those pages was
+not obtained from the archive or publisher. It is safe
+to attribute the **Middle English comparison** to
+Jordan **as cited by Jones**. It is not safe to attribute
+Jones’s exact phonetic transcriptions, regional
+provenance for each spelling, or his short and long
+contrast to Jordan without the pages.
+
+The conventional long form is independently documented
+as a **scholarly reconstruction**: Campbell §§120.2,
+580.4 derives *hēg/hīg* from a long diphthongal history,
+assigns the attested direct stem to oblique influence,
+and reconstructs an undisturbed direct *hewi*. Dahl
+(95–97) also obtains length, but from a different
+prehistoric nucleus and history of the exposed palatal;
+the shared quantity is not independent manuscript
+evidence. Minkova (2014: 178–179) uses the conventional
+length of *hēġ* and historically short *weġ* to
+illustrate the later merger, which removes their
+agreement as a diagnostic of earlier quantity.
+
+**Research verdict:** Jones’s short form is a
+historically relevant published hypothesis about the
+Northumbrian material, supported by his interpretation
+of a now-verified graphic alternation. His juxtaposition
+of two analyses leaves open real regional differences,
+but supplies no date or independent measurement for
+one, and no prehistoric \*he.i derivation. His long
+reference forms document a received reconstruction,
+while the later spellings cannot distinguish it from
+the short history once the contrast is neutralized.
