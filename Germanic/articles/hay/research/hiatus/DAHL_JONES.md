@@ -829,3 +829,72 @@ restoration, and protected-stem transfer. Dahl’s
 diphthongal route remains a distinct competitor, not
 an adopted change or a synonym for any of the frozen
 variants.
+
+## J1. What underwrites Jones’s short ‘hay’?
+
+Jones (1989: 149, PDF 163, image checked) prints
+**[hej]/[heij]** as late Old English alternatives,
+referring back to §2.3.6. A single *e* contrasts with his
+doubled long vowels; the second form has a complex
+nucleus rather than a doubled monophthong. His [j] is
+explicitly a **voiced palatal fricative** (55, 149),
+approximately [ʝ] in modern IPA, not the approximant
+/j/. Thus his contrast is schematically [eʝ] versus
+[ei̯ʝ], not [e.i] versus [ej]. The second vowel symbol in
+the second form represents an offglide within the
+stressed space, not an independently syllabic vowel.
+
+The source of the proposal is traceable. At 19–21 Jones
+compares short-vowel-plus-fricative reconstructions with
+long-vowel or diphthongal outcomes. At 21 he specifically
+quotes Lindisfarne ⟨heg/heig⟩ alongside the variants of
+‘ask’ and ‘thane’ as possible cases where the fricative
+stayed consonantal while the preceding vowel broke. At
+55–56 he does so again: Table 2.29 groups the two spellings
+under [ɛ]/[ɛi], and the explanation explicitly takes
+⟨heg/heig⟩ as an example of diphthongization before a
+palatal fricative. The difference between the table’s
+[ɛ] and p. 149’s [e] does not turn the nucleus into a
+long monophthong. The printed gloss in Table 2.29 is
+**‘meadow’**, whereas pp. 21 and 149 say **‘hay’**.
+That inconsistency calls for checking the edition and
+Latin loci, not for silently correcting the table or
+discounting the explicit transcriptions.
+
+Neither of the two graphic forms shows independently
+measured vowel length. The plain/digraph alternation is
+the empirical starting point for Jones’s interpretation
+of **nuclear shape**. The comparison with ‘ask’ and
+‘thane’ motivates an analogous treatment, but their
+position before a nasal does not independently calibrate
+the quantity of this absolute-final example. Campbell
+(1959: §§50, 266–269) and Wright (1925: §321) support
+the background on palatals and late breaking; Jones
+does not identify a source that independently assigns
+shortness to the ‘hay’ tokens. At 30–31 he discusses
+Aldred’s variable marking of long vowels by doubling
+or an acute, including independently long lexical
+controls and cases of homorganic lengthening. At 56 he
+actually appeals to the acute in ⟨wég⟩ ‘way’, but does
+not make the corresponding argument for ‘hay’ or show
+that a single unaccented graph proves shortness. Nor
+does he derive the short vowel from a prehistoric
+etymology. It is the input he assigns within his
+interpretation of the written alternation.
+
+Table 3.17 (150, PDF 164, image checked) instead presents
+West Saxon ⟨hēg⟩ and ⟨hīg⟩ as **[heej]** and **[hiij]**
+in its comparison with Middle English. This distinct
+reference column does not retroactively lengthen the
+late Old English pair on the previous page. Conversely,
+the Middle English spellings through 154 cannot verify
+the short quantity of particular Northumbrian tokens.
+
+**Research verdict:** Jones is a genuine published
+precedent for short Northumbrian vocalism and a retained
+fricative, not independent proof of quantity and not
+precedent for a prehistoric \*he.i derivation. A direct
+edition and manuscript audit is needed for the attribution
+and reading of the individual ⟨heg/heig⟩ tokens. The
+published quantity claim is on record even if that audit
+ultimately weakens its empirical basis.
