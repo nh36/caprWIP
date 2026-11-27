@@ -1,0 +1,21 @@
+id	start	form	purpose
+hay-loss	OEWLossBeforeI	*ç*e*w*i	full-trace state before labial loss
+flock-loss	OEWLossBeforeI	*e*w*i*d*i	Anglian post-umlaut intermediate; bypasses proto-parser gap
+couch-loss	OEWLossBeforeI	*s*t*r*e*w*i*n*u	Anglian post-umlaut derived stem; bypasses proto-parser gap
+call-past-loss	OEWLossBeforeI	*ᶠ*ʝ*i*k*e*w*i*d*e	prefixed post-umlaut diagnostic; root stress not encoded on e
+strew-past-loss	OEWLossBeforeI	*s*t*r*e*w*i*d*e	post-umlaut input conditional on weak verb analysis
+pillow-loss	OEWLossBeforeI	*p*y*l*w*i	loan intermediate; no hiatus expected
+new-loss	OEWLossBeforeI	*n*í*w*i	combining-form phonology at an artificial word edge only
+retained-w	OEWLossBeforeI	*k*l*a*w*u	back vowel; loss before i should not fire
+long-flock-loss	OEWLossBeforeI	*ḗ*w*i*d*i	quantity-only synthetic contrast, not a reconstruction of flock
+river-loss	OEHLoss	*e*ç*i	conditional short Anglian oblique input
+river-long-loss	OEHLoss	*ḗ*ç*i	alternative long input; historical quantity not fixed
+strike-loss	OEHLoss	*s*l*e*ç*i*θ	Anglian smoothed root; unlowered i hypothesis
+strike-lowered	OEHLoss	*s*l*e*ç*e*θ	matched probe with lowering before h-loss
+call-ei	OEContraction	*ʝ*e*k*e*i*d	late hypothetical hiatus in call, withholding earlier root-e deletion
+marked-ei	OEContraction	*t*é*i*d	independent acute stress marker
+plain-ei	OEContraction	*t*e*i*d	no overt stress marker
+atomic-ei	OEContraction	*t*ei*d	check whether artificial atomic input serializes like two vowels
+identical-plain	OEContraction	*t*e*e*d	positive comparator for existing OEContraction
+retained-palatal	OEJLossAfterHeavy	*r*e*ʝ*n	controls merger and retention, not creation of hiatus
+inherited-j	OEJLossAfterHeavy	*w*e*j	independent final consonant control

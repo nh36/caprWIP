@@ -92,3 +92,76 @@ The eight rejected spellings are `áwidī`, `stráwinu`, `gakáwidē`,
 `stráwidē`, `lḗwidē`, `gárwidē`, `púlwin` and `brégdaną`.
 The execution record,
 not the historical endpoint, is authoritative for parser acceptance.
+
+## 3. Stage-local diagnosis
+
+The [local inputs](local.tsv) begin immediately before a named
+component, not at `EnglishProtoInput`. A successful suffix trace
+cannot repair or count as a successful full historical derivation.
+These probes are kept apart from the pre-execution inventory.
+
+| Executable component | Relevant behaviour in the frozen source and full traces |
+|---|---|
+| `EAFBrightening` → `OEIUmlaut` | A changes stressed `*á` to plain `*æ`, then `*e`, in ‘hay’, ‘call’, and ‘strew’. This is the first **representational** loss of stress marking, not historical destressing. A rule requiring `*é` alone would miss these inputs. The prefix marker `*ᶠ` is not a vowel-stress bit and is not present in every relevant word. |
+| `OEWLossBeforeI` | `Ctx` deletes noninitial `*w` after a vowel and zero or more consonants before `*i` or `*ī`. A creates `*e*i` in ‘hay’ and ‘call’, and `*ie*r*i` in ‘prepare’. The latter is not hiatus. |
+| `SC047FinalIi` | A/B2 insert `*í*i` > `*ḯ` at the word edge immediately after *w*-loss. A's ‘glee’ fires; plain `*e*i`, `*é*i`, and nonfinal sequences are outside this rule. |
+| Weight, high-vowel loss and lowering | `OEWeightMarkers` and `OEHighVowelApocope` do not delete the observed A hiatus in ‘hay’, ‘call’ or ‘strew’. The latter rule also erases the word-initial citation compound marker `*ᶜ`; it is not an internal boundary token. `OEMedUnstressedILowering1` requires intervening consonants, so it lowers *i* in ‘prepare’ and in ‘strike’ before *h*-loss but not hiatus *i* in ‘hay’. The second lowering component restores *i* from *e* before *ng*, not in generic hiatus. |
+| `OEJLossAfterHeavy` and `OEIntervocalicJVocalization` | The former removes `*j` after a heavy configuration ending in consonants, not a preconsonantal postvocalic `*j` in `*e*j*d`. The latter can turn an intervening `*j` between vowels into `*i`; a glide probe followed by another vowel can therefore be undone at an early placement. Final `*j` is neither of those environments. |
+| `OEUnstressedEIContraction` | Implements `*e` deletion after V+C⁺ before `*i`. It is not lengthening or a generic remedy: in the prefixed ‘call’ probes its left context reaches the **root** plain `*e`. It leaves final ‘hay’ alone. |
+| `OEHLoss` and `OEContraction` | `OEHLoss` removes intervocalic `*x/*ç` under `FootCtx` and clears `*ᶠ`; retained `*x*w` in ‘see’ is not intervocalic. `OEContraction` contains explicit unlike combinations and identical-vowel pairs, but no `*e*i` or `*é*i` clause. `*ie*e` in ‘strike’ is also unhandled. |
+| Merger and rendering | `OEPalatalFricativeMerger` changes `*ʝ` to `*j` before orthography; `OECjCleanup` only simplifies `*ʤ*j`. `OldEnglishOrthography` renders `*j` as ⟨ġ⟩; stripping the internal marker from `*e*i` gives ⟨ei⟩ without glide formation. |
+
+These are physical component positions, not historical dates. In A
+(one-based) labial loss is 70, high-vowel loss 81, the two lowerings
+95–96, heavy-context *j*-loss 100, intervocalic vocalization 103, the
+unstressed contraction 104, *h*-loss 106, contraction 107, and the
+palatal merger 111. In particular:
+
+- Canonical ‘call’ and ‘strew’ first leave the short-root comparison
+  at `OEAwLongDiphthong`; ‘hay’ diverges on the protected stem path
+  before A's apocope and final glide vocalization. The other models
+  cannot be treated as running the same hiatus input.
+- In A ‘strew’, contraction is the first missing operation **if** the
+  target requires a contracted vowel; the verse does not make that
+  target obligatory. In ‘hay’, the same identity leaves the intended
+  alternative (short glide or contracted long nucleus) unimplemented;
+  ⟨ei⟩ does not select between histories.
+- In ‘know’ and ‘crow’, successful *w*-loss leaves `*ǣ*i`; the
+  later lowering acts on the **ending after** the dental, not the
+  hiatus vowel. There is no matching clause at contraction. Neither
+  the initial vowel's quality nor the extra ending is repaired by
+  an operation on short `*e*i`.
+- ‘Claw’ first takes a long diphthong path at `OEAwLongDiphthong`
+  and loses the high vowel rather than *w* at HVD. ‘Knee’ and ‘tree’
+  first reach the potential environment at `PNWGmcFinalLongORaising`,
+  but lack labial loss before *u*; `OEBreaking` gives a competing
+  *eo* nucleus before the later loss stage. ‘See’ has `*x*w`, which
+  blocks the existing intervocalic environment; ‘strike’ already
+  has `*ie`, not smoothed *e*, after umlaut, then has `*e`, not
+  `*i`, after lowering.
+- The palatal-cluster controls reach `*ʝ` before the late merger;
+  there is no corresponding pre-dental deletion with lengthening.
+  Their retained outcomes are valid controls, not failures unless
+  the intended target is the separately documented loss variant.
+  ‘Ewe’ lacks its necessary paradigm input before any phonological
+  operation; ‘itch’ enters ordinary *w*-loss despite its documented
+  exceptional retention. Neither is clean evidence for the
+  conditioning of hiatus resolution.
+
+All 20 inputs were executed in each model; all 60 ordered suffix
+traces were checked against the manifest and the frozen component order.
+The [receipt](local.json) records every before/after state.
+
+| Injected comparison | Result and limit |
+|---|---|
+| ‘Flock’, ‘couch’, ‘strew’ | Labial loss creates hiatus as intended but leaves *eide, streinu, streide*. ‘Flock’ lowers the separate final *i*; ‘couch’ retains its ending. None establishes a new historical derivation. |
+| Prefixed ‘call’ | The early injection gives *ġecide* via root-vowel deletion. Entry just before contraction gives *ġeceid* instead, localizing the two problems separately. |
+| ‘Pillow’, ‘new’, and retained *w* | *Pyle* needs labial loss plus lowering but no hiatus rule. A/B2 *nī* comes from their final identical-hiatus rule; the fake edge is not an actual compound juncture. *Clawu* is unchanged at labial loss, which does not match before *u*. |
+| River and ‘strike’ | Short and long river inputs give *ei* and *ēi*. For an already smoothed nucleus in ‘strike’, changing only the suffix input *i* to *e* gives *slēþ* instead of *sleiþ*: the existing identical-vowel rule is sufficient for that synthetic path. The full trace does not reach that input. |
+| Representation | `*t*é*i*d`, `*t*e*i*d` and `*t*ei*d` all render *teid* without changing at contraction. `*t*e*e*d` gives *tēd*; the inherited palatals give *reġn, weġ*, not a hiatus output. |
+
+```sh
+cache=$(docker compose exec -T backend mktemp -d /tmp/capr-hay-stages.XXXXXXXX)
+bash Germanic/articles/hay/research/hiatus/run-container.sh local --stage-cache "$cache" \
+  > Germanic/articles/hay/research/hiatus/local.json
+```
