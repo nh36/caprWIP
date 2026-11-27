@@ -7,11 +7,10 @@ prior=Germanic/articles/hay/research/hiatus
 cycle=Germanic/articles/hay/research/hiatus-cycle2
 mode=reproduce_stress
 files=(reproduce_stress.py stress-panel.tsv)
-if [[ ${1:-} == --repairs ]]; then
-    mode=stress_repairs
-    files+=(stress_repairs.py)
-    shift
-fi
+case "${1:-}" in
+    --repairs) mode=stress_repairs; files+=(stress_repairs.py); shift ;;
+    --census) mode=stress_census; files+=(stress_census.py stress_repairs.py); shift ;;
+esac
 
 tmp=$(docker compose exec -T backend mktemp -d /tmp/capr-hay-cycle2.XXXXXXXX)
 case "$tmp" in

@@ -25,6 +25,7 @@ PRIMARY = set("á é í ó ú ḯ ḗ ái áu éu íu".split())
 GRAVE = set("à è ì ò ù ỳ ǽ".split())
 ORTHOGRAPHY = "OldEnglishOrthography"
 EARLY = "OEWLossBeforeI"
+FOOT_DEFINITION = "define StFoot FootCtx(OEUnstressedEIContraction);"
 
 
 def untag(form):
@@ -56,7 +57,7 @@ def compile_repairs(source, cache, directory, orders, frozen_definitions):
     lifts = {stage: f"St{index:03d}" for index, stage in enumerate(stages)}
     definitions = [
         frozen_definitions,
-        "define StFoot FootCtx(OEUnstressedEIContraction);",
+        FOOT_DEFINITION,
         "define StGuard [{*e} -> 0 || EnglishStarVocalic "
         "[EnglishStarConsonant|EnglishPalatalConsonant]+ _ {*i}];",
         *(f"define {name} [{stage} / {TAG}];" for stage, name in lifts.items()),

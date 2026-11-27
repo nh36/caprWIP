@@ -1,0 +1,660 @@
+{
+    "base": "113101ac5f169b589e1a9647cdf24d32cdd4d919",
+    "source_sha256": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+    "prior_receipt_sha256": "85bc1109b8d53b6049870547f44a82e9ada5beb004047c4d2037ee7efb50bb34",
+    "runner_sha256": "47ddb2b5426619705737395f8d1ce35a4eba8fb4e4a0fde756706e21992e730b",
+    "repair": "define StFoot FootCtx(OEUnstressedEIContraction);",
+    "models": {
+        "canonical": {
+            "panel_sizes": {
+                "archived": 394,
+                "active": 396
+            },
+            "firings": {
+                "archived:1956": {
+                    "concept": "bore",
+                    "input": "búrōjaną",
+                    "before": [
+                        "*b*ó*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*b*ó*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*b*ó*r*i*a*n"
+                    ]
+                },
+                "archived:2055": {
+                    "concept": "handle",
+                    "input": "xándlōjaną",
+                    "before": [
+                        "*x*á*n*d*l*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*x*á*n*d*l*i*a*n"
+                    ],
+                    "S1": [
+                        "*x*á*n*d*l*i*a*n"
+                    ]
+                },
+                "archived:2095": {
+                    "concept": "learn",
+                    "input": "líznōjaną",
+                    "before": [
+                        "*l*éo*r*n*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*éo*r*n*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*éo*r*n*i*a*n"
+                    ]
+                },
+                "archived:2099": {
+                    "concept": "lick",
+                    "input": "líkkōjaną",
+                    "before": [
+                        "*l*í*k*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*í*k*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*í*k*k*i*a*n"
+                    ]
+                },
+                "archived:2117": {
+                    "concept": "make",
+                    "input": "mákōjaną",
+                    "before": [
+                        "*m*a*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*m*a*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*m*a*k*i*a*n"
+                    ]
+                },
+                "archived:2186": {
+                    "concept": "show",
+                    "input": "skáwōjaną",
+                    "before": [
+                        "*ʃ*ḗa*w*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ],
+                    "S1": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ]
+                },
+                "archived:2205": {
+                    "concept": "spare",
+                    "input": "spárōjaną",
+                    "before": [
+                        "*s*p*a*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*p*a*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*p*a*r*i*a*n"
+                    ]
+                },
+                "archived:2232": {
+                    "concept": "sunder",
+                    "input": "súndrōjaną",
+                    "before": [
+                        "*s*ú*n*d*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ]
+                },
+                "active:1956": {
+                    "concept": "bore",
+                    "input": "búrōjaną",
+                    "before": [
+                        "*b*ó*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*b*ó*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*b*ó*r*i*a*n"
+                    ]
+                },
+                "active:2055": {
+                    "concept": "handle",
+                    "input": "xándlōjaną",
+                    "before": [
+                        "*x*á*n*d*l*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*x*á*n*d*l*i*a*n"
+                    ],
+                    "S1": [
+                        "*x*á*n*d*l*i*a*n"
+                    ]
+                },
+                "active:2095": {
+                    "concept": "learn",
+                    "input": "líznōjaną",
+                    "before": [
+                        "*l*éo*r*n*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*éo*r*n*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*éo*r*n*i*a*n"
+                    ]
+                },
+                "active:2099": {
+                    "concept": "lick",
+                    "input": "líkkōjaną",
+                    "before": [
+                        "*l*í*k*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*í*k*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*í*k*k*i*a*n"
+                    ]
+                },
+                "active:2117": {
+                    "concept": "make",
+                    "input": "mákōjaną",
+                    "before": [
+                        "*m*a*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*m*a*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*m*a*k*i*a*n"
+                    ]
+                },
+                "active:2186": {
+                    "concept": "show",
+                    "input": "skáwōjaną",
+                    "before": [
+                        "*ʃ*ḗa*w*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ],
+                    "S1": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ]
+                },
+                "active:2205": {
+                    "concept": "spare",
+                    "input": "spárōjaną",
+                    "before": [
+                        "*s*p*a*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*p*a*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*p*a*r*i*a*n"
+                    ]
+                },
+                "active:2232": {
+                    "concept": "sunder",
+                    "input": "súndrōjaną",
+                    "before": [
+                        "*s*ú*n*d*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ]
+                }
+            },
+            "changed_derivations": {}
+        },
+        "A": {
+            "panel_sizes": {
+                "archived": 394,
+                "active": 396
+            },
+            "firings": {
+                "archived:1956": {
+                    "concept": "bore",
+                    "input": "búrōjaną",
+                    "before": [
+                        "*b*ó*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*b*ó*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*b*ó*r*i*a*n"
+                    ]
+                },
+                "archived:2055": {
+                    "concept": "handle",
+                    "input": "xándlōjaną",
+                    "before": [
+                        "*x*á*n*d*l*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*x*á*n*d*l*i*a*n"
+                    ],
+                    "S1": [
+                        "*x*á*n*d*l*i*a*n"
+                    ]
+                },
+                "archived:2095": {
+                    "concept": "learn",
+                    "input": "líznōjaną",
+                    "before": [
+                        "*l*éo*r*n*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*éo*r*n*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*éo*r*n*i*a*n"
+                    ]
+                },
+                "archived:2099": {
+                    "concept": "lick",
+                    "input": "líkkōjaną",
+                    "before": [
+                        "*l*í*k*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*í*k*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*í*k*k*i*a*n"
+                    ]
+                },
+                "archived:2117": {
+                    "concept": "make",
+                    "input": "mákōjaną",
+                    "before": [
+                        "*m*a*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*m*a*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*m*a*k*i*a*n"
+                    ]
+                },
+                "archived:2186": {
+                    "concept": "show",
+                    "input": "skáwōjaną",
+                    "before": [
+                        "*ʃ*ḗa*w*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ],
+                    "S1": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ]
+                },
+                "archived:2205": {
+                    "concept": "spare",
+                    "input": "spárōjaną",
+                    "before": [
+                        "*s*p*a*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*p*a*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*p*a*r*i*a*n"
+                    ]
+                },
+                "archived:2232": {
+                    "concept": "sunder",
+                    "input": "súndrōjaną",
+                    "before": [
+                        "*s*ú*n*d*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ]
+                },
+                "active:1956": {
+                    "concept": "bore",
+                    "input": "búrōjaną",
+                    "before": [
+                        "*b*ó*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*b*ó*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*b*ó*r*i*a*n"
+                    ]
+                },
+                "active:2055": {
+                    "concept": "handle",
+                    "input": "xándlōjaną",
+                    "before": [
+                        "*x*á*n*d*l*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*x*á*n*d*l*i*a*n"
+                    ],
+                    "S1": [
+                        "*x*á*n*d*l*i*a*n"
+                    ]
+                },
+                "active:2095": {
+                    "concept": "learn",
+                    "input": "líznōjaną",
+                    "before": [
+                        "*l*éo*r*n*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*éo*r*n*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*éo*r*n*i*a*n"
+                    ]
+                },
+                "active:2099": {
+                    "concept": "lick",
+                    "input": "líkkōjaną",
+                    "before": [
+                        "*l*í*k*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*í*k*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*í*k*k*i*a*n"
+                    ]
+                },
+                "active:2117": {
+                    "concept": "make",
+                    "input": "mákōjaną",
+                    "before": [
+                        "*m*a*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*m*a*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*m*a*k*i*a*n"
+                    ]
+                },
+                "active:2186": {
+                    "concept": "show",
+                    "input": "skáwōjaną",
+                    "before": [
+                        "*ʃ*ḗa*w*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ],
+                    "S1": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ]
+                },
+                "active:2205": {
+                    "concept": "spare",
+                    "input": "spárōjaną",
+                    "before": [
+                        "*s*p*a*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*p*a*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*p*a*r*i*a*n"
+                    ]
+                },
+                "active:2232": {
+                    "concept": "sunder",
+                    "input": "súndrōjaną",
+                    "before": [
+                        "*s*ú*n*d*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ]
+                }
+            },
+            "changed_derivations": {}
+        },
+        "B2": {
+            "panel_sizes": {
+                "archived": 394,
+                "active": 396
+            },
+            "firings": {
+                "archived:1956": {
+                    "concept": "bore",
+                    "input": "búrōjaną",
+                    "before": [
+                        "*b*ó*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*b*ó*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*b*ó*r*i*a*n"
+                    ]
+                },
+                "archived:2055": {
+                    "concept": "handle",
+                    "input": "xándlōjaną",
+                    "before": [
+                        "*x*á*n*d*l*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*x*á*n*d*l*i*a*n"
+                    ],
+                    "S1": [
+                        "*x*á*n*d*l*i*a*n"
+                    ]
+                },
+                "archived:2095": {
+                    "concept": "learn",
+                    "input": "líznōjaną",
+                    "before": [
+                        "*l*éo*r*n*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*éo*r*n*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*éo*r*n*i*a*n"
+                    ]
+                },
+                "archived:2099": {
+                    "concept": "lick",
+                    "input": "líkkōjaną",
+                    "before": [
+                        "*l*í*k*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*í*k*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*í*k*k*i*a*n"
+                    ]
+                },
+                "archived:2117": {
+                    "concept": "make",
+                    "input": "mákōjaną",
+                    "before": [
+                        "*m*a*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*m*a*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*m*a*k*i*a*n"
+                    ]
+                },
+                "archived:2186": {
+                    "concept": "show",
+                    "input": "skáwōjaną",
+                    "before": [
+                        "*ʃ*ḗa*w*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ],
+                    "S1": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ]
+                },
+                "archived:2205": {
+                    "concept": "spare",
+                    "input": "spárōjaną",
+                    "before": [
+                        "*s*p*a*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*p*a*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*p*a*r*i*a*n"
+                    ]
+                },
+                "archived:2232": {
+                    "concept": "sunder",
+                    "input": "súndrōjaną",
+                    "before": [
+                        "*s*ú*n*d*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ]
+                },
+                "active:1956": {
+                    "concept": "bore",
+                    "input": "búrōjaną",
+                    "before": [
+                        "*b*ó*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*b*ó*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*b*ó*r*i*a*n"
+                    ]
+                },
+                "active:2055": {
+                    "concept": "handle",
+                    "input": "xándlōjaną",
+                    "before": [
+                        "*x*á*n*d*l*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*x*á*n*d*l*i*a*n"
+                    ],
+                    "S1": [
+                        "*x*á*n*d*l*i*a*n"
+                    ]
+                },
+                "active:2095": {
+                    "concept": "learn",
+                    "input": "líznōjaną",
+                    "before": [
+                        "*l*éo*r*n*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*éo*r*n*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*éo*r*n*i*a*n"
+                    ]
+                },
+                "active:2099": {
+                    "concept": "lick",
+                    "input": "líkkōjaną",
+                    "before": [
+                        "*l*í*k*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*l*í*k*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*l*í*k*k*i*a*n"
+                    ]
+                },
+                "active:2117": {
+                    "concept": "make",
+                    "input": "mákōjaną",
+                    "before": [
+                        "*m*a*k*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*m*a*k*i*a*n"
+                    ],
+                    "S1": [
+                        "*m*a*k*i*a*n"
+                    ]
+                },
+                "active:2186": {
+                    "concept": "show",
+                    "input": "skáwōjaną",
+                    "before": [
+                        "*ʃ*ḗa*w*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ],
+                    "S1": [
+                        "*ʃ*ḗa*w*i*a*n"
+                    ]
+                },
+                "active:2205": {
+                    "concept": "spare",
+                    "input": "spárōjaną",
+                    "before": [
+                        "*s*p*a*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*p*a*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*p*a*r*i*a*n"
+                    ]
+                },
+                "active:2232": {
+                    "concept": "sunder",
+                    "input": "súndrōjaną",
+                    "before": [
+                        "*s*ú*n*d*r*e*i*a*n"
+                    ],
+                    "S0": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ],
+                    "S1": [
+                        "*s*ú*n*d*r*i*a*n"
+                    ]
+                }
+            },
+            "changed_derivations": {}
+        }
+    }
+}

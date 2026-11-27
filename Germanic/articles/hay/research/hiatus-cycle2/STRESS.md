@@ -233,3 +233,46 @@ The live private panel verifies the two protected ‘call’ cells,
 the independent weak reduction, and the early/late direct predictions.
 It reuses the frozen definition image and adds only isolated component
 compilation. The full archived/active firing census remains S3.
+
+## S3 checkpoint: archived and active census
+
+The [census](stress-census.json) replays each model on 394 archived
+and 396 active inputs (2,370 model–input records), matching input
+and endpoint to the joint audit before substituting the S1 network
+at SC083. Canonical at the 396 active inputs is the comparison on
+the A active input set, not a separately certified canonical capture.
+The [baseline source](../hiatus/joint-corpus.json), frozen commit,
+and component order are unchanged.
+
+The full firing population is the same in S0 and S1 in all three
+models and both panels: **bore** 1956, **handle** 2055, **learn**
+2095, **lick** 2099, **make** 2117, **show** 2186, **spare**
+2205, and **sunder** 2232. Each deletes plain posttonic *e*
+from weak *e.i* before the remaining *-an*. These are in-domain
+weak-sequence firings, not evidence that the cascade's physical
+position corresponds to a uniquely established historical date.
+The output of the substituted component is identical on every
+input, and therefore there are no downstream derivation changes.
+The stress failure is real in the independently supplied prefixed
+‘call’ forms; it is not demonstrated in another selected corpus
+row by this census. The S2 compound failure belongs to the new
+marker lift and is not an existing frozen-cascade discrepancy.
+
+**Preferred experimental substrate:** S1 for stress-only full
+replay. The result supports a bounded implementation audit of
+SC083 separately from any proposal for a new hiatus rule. Corpus
+parity does not establish that one pretonic syllable suffices as
+a full prosodic representation. Post-foot experiments should use
+independently anchored local entries, or explicitly validate
+attachment of the S2 tier before making claims that depend on
+it. No production action, chronological registration, or scientific
+recertification follows.
+
+```bash
+bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --census --stage-cache "$cache"
+```
+
+This opt-in experiment reuses the already validated frozen common
+image, compiles one additional component, and batches the S1
+comparison on the original SC083 inputs. A full repaired derivation
+is needed only where the component diverges.
