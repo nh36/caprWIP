@@ -13,6 +13,8 @@ import tempfile
 import unicodedata
 from unittest.mock import patch
 
+import candidates
+
 BASE = "113101ac5f169b589e1a9647cdf24d32cdd4d919"
 ROOT = Path(sys.argv[1]).resolve()
 HERE = Path(__file__).resolve().parent
@@ -100,10 +102,86 @@ def cached_stages(directory, source, definitions, orders):
     return paths
 
 
+def compile_candidates(source, cache, directory):
+    image = cache / "defined.bin"
+    if not frozen.compiler.definition_image_source(
+            source.read_text(encoding="utf-8"), directory, image).startswith("load defined "):
+        raise RuntimeError("Candidate compilation requires the matching frozen definition image")
+    recipe = {"definitions": candidates.definitions(), "replace": {}, "insert_rule": None,
+              "insert_after": None, "component_checks": [
+                  {"component": name} for name in candidates.RULES
+              ]}
+    with patch.dict(os.environ, {"CAPR_FOMA_DEFINITION_IMAGE": str(image)}):
+        return frozen.compiler.compile_isolated(
+            source, recipe, [], directory, components_only=True)
+
+
+def overlay_order(order, placements):
+    for anchor, component in placements:
+        index = order.index(anchor)
+        order = order[:index] + [component] + order[index:]
+    return order
+
+
+def synthetic_trials(order, paths):
+    probes = {row["id"]: row["form"] for row in dsv(HERE / "synthetic.tsv")}
+    standalone = {name: frozen.apply_stage(
+        paths[f"component:{name}"], {key: [form] for key, form in probes.items()})
+        for name in candidates.RULES}
+    dental_stops = {"d", "t", "plain", "prefix-root", "marked-root", "no-boundary"}
+    dental = dental_stops | {"thorn", "eth"}
+    coronal = dental | {"n", "s", "l", "r"}
+    preconsonantal = coronal | {"k", "p", "m"}
+    edge = {"edge", "compound", "weak-context"}
+    eligible = preconsonantal | edge | {"vowel"}
+    expected = {
+        "HiContract": eligible, "HiGlide": eligible, "HiPreLength": eligible,
+        "HiEdgeGlide": edge, "HiCGlide": preconsonantal,
+        "HiAcute": eligible - {"compound", "weak-context", "plain", "prefix-root"},
+        "HiStop": dental_stops | {"k", "p"}, "HiDentalStop": dental_stops,
+        "HiDentalObstruent": dental, "HiCoronal": coronal,
+        "HiConsonant": preconsonantal, "HiLoss": {"inherited-j"},
+        "HiLongGlide": {"long-first"}, "HiPostLength": {"inherited-j", "existing-final-j"},
+    }
+    if standalone.keys() != expected.keys():
+        raise RuntimeError("Synthetic expectations do not cover the defined components")
+    for component, results in standalone.items():
+        actual = {key for key, output in results.items() if output != [probes[key]]}
+        if actual != expected[component] or any(len(output) != 1 for output in results.values()):
+            raise RuntimeError(
+                f"{component} synthetic domain violates the manifest: {sorted(actual ^ expected[component])}")
+    for component, probe, outcome in [
+        ("HiContract", "d", "*t*ḗ*d"),
+        ("HiContract", "prefix-root", "*ᶠ*t*i*k*ē*d"),
+        ("HiGlide", "vowel", "*t*é*j*a"),
+        ("HiEdgeGlide", "edge", "*t*é*j"),
+        ("HiLoss", "inherited-j", "*t*ḗ*d"),
+        ("HiPreLength", "edge", "*t*ḗ*i"),
+        ("HiLongGlide", "long-first", "*t*ḗ*j*d"),
+        ("HiPostLength", "existing-final-j", "*t*ḗ*j"),
+    ]:
+        if standalone[component][probe] != [outcome]:
+            raise RuntimeError(f"Incorrect immediate output: {component}/{probe}")
+    starts = {candidates.EARLY, *candidates.ORDERINGS.values()}
+    controls = {start: evaluate(order[order.index(start):], paths, probes, set())
+                for start in sorted(starts)}
+    arms = {}
+    for arm in candidates.ARMS:
+        placements = candidates.placements(arm, "A")
+        if not placements:
+            continue
+        start = placements[0][0]
+        suffix = overlay_order(order[order.index(start):], placements)
+        traces = evaluate(suffix, paths, probes, {component for _, component in placements})
+        arms[arm] = {"start": start, "placements": placements, "traces": traces}
+    return {"standalone": standalone, "controls": controls, "arms": arms}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("snapshot", type=Path)
-    parser.add_argument("mode", choices=("baseline", "local"), nargs="?", default="baseline")
+    parser.add_argument("mode", choices=("baseline", "local", "synthetic"), nargs="?",
+                        default="baseline")
     parser.add_argument("--stage-cache", type=Path)
     args = parser.parse_args()
     source = ROOT / "Germanic/fsts/germanic.txt"
@@ -120,13 +198,22 @@ def main():
                   for r in csv.DictReader(stream, delimiter="\t") if r["submit"]}
     canonical, orders, definitions = frozen.model_sources(source)
     orders = {"canonical": canonical, **orders}
-    if args.mode == "local":
+    if args.mode != "baseline":
         if args.stage_cache is None:
-            parser.error("local diagnostics require a private --stage-cache")
+            parser.error("research trials require a private --stage-cache")
         paths = cached_stages(args.stage_cache, source, definitions, orders)
-        data = {"base": BASE, "source_sha256": frozen.sha(source),
-                "local_sha256": frozen.sha(HERE / "local.tsv"),
-                "models": local_diagnostics(orders, paths)}
+        data = {"base": BASE, "source_sha256": frozen.sha(source)}
+        if args.mode == "local":
+            data.update(local_sha256=frozen.sha(HERE / "local.tsv"),
+                        models=local_diagnostics(orders, paths))
+        else:
+            with tempfile.TemporaryDirectory(prefix="hay-candidates-") as tmp:
+                bins = compile_candidates(source, args.stage_cache, Path(tmp))
+                data.update(synthetic_sha256=frozen.sha(HERE / "synthetic.tsv"),
+                            candidates_sha256=frozen.sha(HERE / "candidates.py"),
+                            foma=subprocess.check_output(["foma", "-v"], text=True).strip(),
+                            component_sha256={key: frozen.sha(path) for key, path in bins.items()},
+                            **synthetic_trials(orders["A"], paths | bins))
         print(json.dumps(data, ensure_ascii=False))
         return
     anchors = {"OEWLossBeforeI", "SC047FinalIi", "OEHighVowelApocope",

@@ -105,7 +105,7 @@ These probes are kept apart from the pre-execution inventory.
 | `EAFBrightening` → `OEIUmlaut` | A changes stressed `*á` to plain `*æ`, then `*e`, in ‘hay’, ‘call’, and ‘strew’. This is the first **representational** loss of stress marking, not historical destressing. A rule requiring `*é` alone would miss these inputs. The prefix marker `*ᶠ` is not a vowel-stress bit and is not present in every relevant word. |
 | `OEWLossBeforeI` | `Ctx` deletes noninitial `*w` after a vowel and zero or more consonants before `*i` or `*ī`. A creates `*e*i` in ‘hay’ and ‘call’, and `*ie*r*i` in ‘prepare’. The latter is not hiatus. |
 | `SC047FinalIi` | A/B2 insert `*í*i` > `*ḯ` at the word edge immediately after *w*-loss. A's ‘glee’ fires; plain `*e*i`, `*é*i`, and nonfinal sequences are outside this rule. |
-| Weight, high-vowel loss and lowering | `OEWeightMarkers` and `OEHighVowelApocope` do not delete the observed A hiatus in ‘hay’, ‘call’ or ‘strew’. The latter rule also erases the word-initial citation compound marker `*ᶜ`; it is not an internal boundary token. `OEMedUnstressedILowering1` requires intervening consonants, so it lowers *i* in ‘prepare’ and in ‘strike’ before *h*-loss but not hiatus *i* in ‘hay’. The second lowering component restores *i* from *e* before *ng*, not in generic hiatus. |
+| Weight, high-vowel loss and lowering | `OEWeightMarkers` and `OEHighVowelApocope` do not delete the observed A hiatus in ‘hay’, ‘call’ or ‘strew’. The literal `*ᶜ` cleanup in HVD is inside `FootCtx`; it does not erase the externally routed initial marker in the injected probes (§5). `OEMedUnstressedILowering1` requires intervening consonants, so it lowers *i* in ‘prepare’ and in ‘strike’ before *h*-loss but not hiatus *i* in ‘hay’. The second lowering component restores *i* from *e* before *ng*, not in generic hiatus. |
 | `OEJLossAfterHeavy` and `OEIntervocalicJVocalization` | The former removes `*j` after a heavy configuration ending in consonants, not a preconsonantal postvocalic `*j` in `*e*j*d`. The latter can turn an intervening `*j` between vowels into `*i`; a glide probe followed by another vowel can therefore be undone at an early placement. Final `*j` is neither of those environments. |
 | `OEUnstressedEIContraction` | Implements `*e` deletion after V+C⁺ before `*i`. It is not lengthening or a generic remedy: in the prefixed ‘call’ probes its left context reaches the **root** plain `*e`. It leaves final ‘hay’ alone. |
 | `OEHLoss` and `OEContraction` | `OEHLoss` removes intervocalic `*x/*ç` under `FootCtx` and clears `*ᶠ`; retained `*x*w` in ‘see’ is not intervocalic. `OEContraction` contains explicit unlike combinations and identical-vowel pairs, but no `*e*i` or `*é*i` clause. `*ie*e` in ‘strike’ is also unhandled. |
@@ -226,3 +226,30 @@ consonant configuration; their phonotactic diagnostics motivate
 testing adjacent consonants, prevocalic strings and long nuclei
 separately, not assigning a particular outcome to *e.i*. Atomic
 diphthongization and creation of consonantal *j* are not synonyms.
+
+## 5. Synthetic environment matrix
+
+The [35 internal probes](synthetic.tsv) are not witness evidence.
+The [receipt](synthetic.json) contains 490 isolated predictions
+(14 networks × 35 probes), 910 overlay suffix traces (26 × 35),
+and 210 no-overlay suffix controls across six starting points in A.
+All isolated firing sets, including negative cases, were checked
+against the fixture expectations. Every overlay trace has all
+immediate candidate before/after states and the untouched frozen
+suffix endpoint. Compare to the no-overlay control **at its own
+starting point**, not to a later injection that skips intervening rules.
+
+| Contrast | Executed result |
+|---|---|
+| Contraction vs. glide vs. retention | At the edge the short marked input gives *tē*, *teġ*, or *tei*, respectively. Before *d*, H1 and H4 give *tēd*; H4 alone goes through *tej-d*. H2 keeps the new palatal as *teġd*. |
+| Class scope | Stops contract before *k, p* as well as *d, t*; dental stops exclude *þ, ð*. Dental obstruents include those fricatives but exclude *n*. Coronals add *n, s, l, r*; any consonant adds the labial sonorant *m*. Final glide changes only the edge, not the preconsonantal contraction class. |
+| Position before a vowel | Early H2 produces `*t*é*j*a` immediately, but the frozen intervocalic rule returns it to `*t*é*i*a`; the endpoint is *teia*. Late H2 produces *teġa* after skipping that operation. |
+| Prior vs. subsequent lengthening | Prior length creates `*t*ḗ*i`, feeds HVD and gives *tē* word-finally, precluding subsequent gliding there. Glide-first survives as *tēġ*, but also lengthens pre-existing `*t*é*j` to *tēġ*. Preconsonantal inputs can converge as *tēġd* by the two different routes. |
+| Palatal loss placement | H4 gives *tēd* from inherited `*t*é*j*d` at all three loss placements. The inherited `*t*é*ʝ*d` case only gives *tēd* when loss runs after merger; earlier arms give *teġd*. This is not a chronology for the originally post-labial controls. |
+| Quality, quantity and stress | First-step rules leave already-long *ē*, lowered *e*, second-vowel *u/ī/í*, initial *á/è* and atomic `*ei` alone. H5's second-step tests intentionally differ. Acute-only misses the plain root; the foot proxy distinguishes flagged pretonic-plus-root from a plain later nucleus and from a plain first vowel in the flagged foot. |
+| Boundary and routing | Two separately queried tokens prevent matching across the application boundary, unlike the same adjacent vowels in one token. There is no independent internal morphology token. `*ᶜ` and `*ᵘ` survive as externally routed flags in these injections (even across HVD) and the frozen suffix rejects those marked forms; late injection of `*ᶠ` similarly skips its cleanup. Their immediate outputs test routing, not actual compound derivations. No overlay adds a downstream rejection among the corresponding accepted controls. |
+
+```sh
+bash Germanic/articles/hay/research/hiatus/run-container.sh synthetic --stage-cache "$cache" \
+  > Germanic/articles/hay/research/hiatus/synthetic.json
+```

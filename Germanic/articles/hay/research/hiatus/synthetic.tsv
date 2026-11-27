@@ -1,0 +1,36 @@
+id	form	purpose
+edge	*t*é*i	absolute edge
+d	*t*é*i*d	voiced dental stop
+t	*t*é*i*t	voiceless dental stop
+thorn	*t*é*i*θ	dental fricative
+eth	*t*é*i*ð	voiced dental fricative
+n	*t*é*i*n	dental nasal
+s	*t*é*i*s	sibilant
+l	*t*é*i*l	lateral
+r	*t*é*i*r	rhotic
+k	*t*é*i*k	velar stop
+p	*t*é*i*p	labial stop
+m	*t*é*i*m	labial sonorant
+vowel	*t*é*i*a	following vowel
+plain	*t*e*i*d	unmarked first nucleus
+marked-root	*t*i*k*é*i*d	explicitly stressed later root
+plain-root	*t*i*k*e*i*d	unmarked later nucleus
+prefix-root	*ᶠ*t*i*k*e*i*d	marked pretonic plus plain root
+prefix-vowel	*ᶠ*t*e*i*d	plain e belongs to flagged first syllable
+compound	*ᶜ*t*e*i	compound citation-context marker
+weak-context	*ᵘ*t*e*i	unstressed citation context marker with plain nucleus
+no-boundary	*t*é*i*d	adjacent vowels without a represented boundary
+left-token	*t*é	first part queried independently across an actual application edge
+right-token	*i*d	second part queried independently across an actual application edge
+first-quality	*t*á*i*d	non-e first vowel
+second-quality	*t*é*u*d	non-i second vowel
+lowered	*t*é*e*d	lowered suffix
+second-stressed	*t*é*í*d	second vowel marked acute
+secondary-first	*t*è*i*d	first vowel with Nebenton marker
+long-first	*t*ḗ*i*d	already long e
+long-second	*t*é*ī*d	already long i
+atomic	*t*ei*d	atomic diphthong symbol
+inherited-j	*t*é*j*d	existing glide not created by the overlay
+inherited-fricative	*t*é*ʝ*d	existing fricative before the merger
+existing-final-j	*t*é*j	existing final consonant
+heavy-j	*t*ḗ*n*j*d	positive heavy-context palatal loss control
