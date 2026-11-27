@@ -169,8 +169,10 @@ and quantity of the inherited direct form under Model A remain open.
 Do not treat the earlier claim that every viable derivation predicts a
 long direct vowel as current.
 
-Only Dal (1934), Wallenberg (1931: 203–205), and Brooks and Kelly (2013)
-remain acquisition items being handled separately by the project owner.
+Only Dal (1934) and Wallenberg (1931: 203–205) remain acquisition items
+being handled separately by the project owner. The relevant Brooks and
+Kelly (2013) pages are now held and reviewed; see the
+[Canterbury proposal](research/CANTERBURY_CHARTER_PROPOSAL.md).
 Other acquisition notes in the historical cycle records below are not
 new acquisition requests. The cycle records are retained as history;
 this current-status section governs.
@@ -215,8 +217,8 @@ this current-status section governs.
   West Saxon evidence. Hogg (2006: 400) describes three distinct sources
   of West Saxon ⟨ie⟩; their applicability to ‘hay’ remains unsettled.
 - The remaining requested publications are Dal (1934) / its identified
-  1971 reprint, Wallenberg (1931: 203–205), and Brooks and Kelly (2013).
-  They are being pursued separately; no other acquisitions are planned.
+  1971 reprint and Wallenberg (1931: 203–205). They are being pursued
+  separately; no other acquisitions are planned.
 
 ## Bounded specialist questions
 

@@ -141,9 +141,9 @@ PR #21 materials were changed.
   catalogues list [1972]), is registered but not held. Either could
   establish Dal's original early-loss argument and how it addresses
   Dahl's objections.
-- Brooks and Kelly 2013, *Charters of Christ Church Canterbury*, is
-  unheld; it may provide authoritative texts and commentary for S 1196
-  and the scribe-7 comparisons.
+- Brooks and Kelly 2013 was unheld at this handoff. A private partial
+  scan is now registered and the three charter loci reviewed in the
+  [Canterbury proposal](research/CANTERBURY_CHARTER_PROPOSAL.md).
 - Ross and Stanley 1956, Book 2, is Jones's cited source; verify whether
   it adds manuscript detail beyond the editions already checked. Its
   holding status was not established in this closeout. Ritt 2000 is now
