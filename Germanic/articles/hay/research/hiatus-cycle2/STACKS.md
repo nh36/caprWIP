@@ -54,3 +54,47 @@ traces were replayed before applying S1. To reproduce, run
 `bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --panel --stage-cache "$cache"`
 from the repository root with the private cache described in
 [STRESS.md](STRESS.md).
+
+## T2: matched resolution, boundary and monophthongization
+
+[`matched.py`](matched.py) executes the same six follow-on classes
+for direct contraction (*e.i > ē*), approximant formation plus
+assimilation (*e.i > ej > ē*) and nuclear incorporation plus
+monophthongization (*e.i > ei̯ > ē*). The first comparison uses
+the same post-*w*-loss anchor for both components of the serial
+arms, so agreement cannot be an artefact of a different window.
+Separate trials delay only the second operation to before
+heavy-context loss, immediately before the palatal merger, or
+after the merger. The nuclear component uses the existing atomic
+`*ei` proxy; its spelling and the lack of a separate stress
+tier for that proxy are not evidence of its OE phonetics.
+
+| Comparison | Result |
+|---|---|
+| Dental stops; all stops; dental obstruents | All resolve A/B2 ‘call’ before a stop, ‘strew’ before *d* and stage-local ‘flock’ before *d*. The first two do not cover the *þ/ð* present; none cover ‘couch’. The local ‘flock’ gives *ēd*, losing an ending that the comparison calls for. The early ‘strew’ gloss, if correctly identified, positively cautions against uniform removal of the second element. |
+| *d, þ/ð, n*; all coronals; all consonants | Each gives A/B2 inflected *strēne* on the conditional early ‘couch’ input. Extending beyond this narrow set adds synthetic predictions before *t, s, z, l, r* or further stops/labials; equivalent historical edges in this panel do not license them. Narrowest useful comparison class is not the same as a demonstrated natural class. |
+| Word edge and before a following vowel | Compare retention (H0), consonantal and nuclear desyllabification, and direct contraction. With the earlier Anglian ‘hay’ input at the absolute edge, outputs are *hei*, *heġ*, *hei* and *hē*, respectively; the two instances of *hei* are internally different. Adjacent following vowels are separately tested, not treated as an edge or a consonantal coda. Early prevocalic gliding may be undone by frozen intervocalic vocalization. |
+| Marked compound boundary | With the same segments, the absolute-edge rule ignores the first-member edge; the member-edge rule reaches it but not ordinary internal adjacency. Neither predicts the unmarked last-member effect; an explicit local accent licenses it. These are isolated component lookups, not whole attested compound reconstructions or a measurement of secondary stress. |
+| Palatal origin and merger | Pre-merger approximant assimilation leaves secondary *ʝ* distinct. After the frozen *ʝ > j* merger, the same assimilation reaches ‘rain’ (*rēn*), plausibly a variant but no general replacement for retained *reġn*. ‘Sail’ and ‘way’ remain outside this particular *d, þ/ð, n* merger domain. For a broader fricative treatment the inherited J8 audit shows adverse *sēl* and *wē* predictions (see [Dahl–Jones](../hiatus/DAHL_JONES.md#j8-joint-assay)). |
+
+An unmarked `*ei` before the selected consonant has the same
+monophthongization in the stage-local tests whether produced by
+hiatus incorporation, vocalization of an approximant, or
+vocalization of a fricative. The inherited `*ai` control is not
+its input; earlier processes and a different nucleus keep it
+outside the rule. Breaking with **retained** *ʝ* gives an
+intervening consonant that blocks the tested merger. Conversely,
+the rule cannot protect an independent nuclear `*ei` in the
+same context without additional, historically justified structure
+or chronology. That is a real prediction, not a licence to tag
+and exempt inherited outputs. Jones’s phonetic notation supports
+keeping *ʝ* distinct, not reclassifying every new glide as a
+fricative.
+
+The three histories agree at the short nonfinal endpoints when
+scope and chronology are matched; their intermediate states,
+palatal-origin effects and potentials for exposure to HVD are
+not the same. The standalone phone, boundary and origin controls
+and all panel derivations are in
+[`matched-traces.json.gz`](matched-traces.json.gz).
+Replay: `bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --matched --stage-cache "$cache"`.
