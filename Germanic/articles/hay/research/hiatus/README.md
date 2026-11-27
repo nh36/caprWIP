@@ -165,3 +165,64 @@ cache=$(docker compose exec -T backend mktemp -d /tmp/capr-hay-stages.XXXXXXXX)
 bash Germanic/articles/hay/research/hiatus/run-container.sh local --stage-cache "$cache" \
   > Germanic/articles/hay/research/hiatus/local.json
 ```
+
+## 4. Competing generalizations, fixed before the trials
+
+These are research overlays, not proposed edits to the canonical
+cascade or alternative historical certifications. The exact definitions
+and placement grid are in [candidates.py](candidates.py). The IDs here
+are independent of the historical hypothesis numbering in the article.
+
+| Arm | Operation and discriminating prediction |
+|---|---|
+| H0 | No overlay. The baseline can serialize syllabic *e.i* as ⟨ei⟩; that is neither contraction nor a glide. |
+| H1 | *e.i > ē* even with no following consonant. Lengthens without retaining a palatal. An acute-only arm is a representation control, not a historically distinct rule. |
+| H2 | *e.i > ej* regardless of the following segment. Can give final *eġ*, can leave a cluster before a consonant, and can feed existing intervocalic vocalization before a vowel. |
+| H3 | *e.i > ē* before stops `{p b t d k g}`, dental stops `{t d}`, dental obstruents `{t d þ ð}`, coronals `{t d þ ð s z n l r}`, or any model consonant. Pair each with final retention and with an independent edge glide; the unmatched prevocalic environment retains both vowels. Dental stops predict no contraction before *þ* or *n*; adding coronals also predicts contraction before *s, l, r* and does not mean merely adding *n*. |
+| H4 | *e.i > ej > ē* before *d, þ, ð, n*, using a separately compiled glide-loss operation with lengthening. The vowel may reach the same endpoint as H3, but this arm predicts an intervening consonant and can act on a pre-existing compatible *ej* regardless of origin. Before the merger it does not reach *eʝ*. After the merger it also tests that inherited population. The corpus may reject treating these two sources together. |
+| H5 | *e.i > ē.i > ēj* against *e.i > ej > ēj*. Two distinct ordered events: transformed inputs may be intercepted by high-vowel loss or consonant rules. The second operations have no hidden origin restriction: inherited compatible long hiatus or *ej* can also be caught. A resulting *ēġ* is compatibility, not evidence that the lengthening occurred. |
+| H6 | Glide only at the absolute word edge, or only before consonants. The latter explicitly leaves final hiatus. These arms separate retention from desyllabification without attributing either to a morphological boundary. |
+
+The full early placement is immediately after labial loss, before the
+A/B2 final identical-vowel rule (before `OELatePalatalDiphthong` for
+canonical). H1 also brackets HVD and *i*-lowering, and contrasts with
+insertion immediately before `OEContraction`; H2 tests that late
+placement too. H4 brackets the existing heavy-context *j*-loss and
+tests a late position at the merger to distinguish *j* from *ʝ*.
+H5 puts its second operation immediately after heavy-context loss.
+Those are ordering comparisons motivated by the states in §3, not
+claims about historical placement. None rewrites the upstream
+`OEUnstressedEIContraction` or adds a proto-parser exception.
+
+Marked *é* is accepted on its own. For plain *e*, the overlay
+recognizes the first nucleus of an unprefixed form, or the root
+nucleus after one pretonic syllable with `*ᶠ`. This is a conservative
+proxy, not stress recovered from the internal string: it may accept
+a plain initial unstressed *e*, and after `OEHLoss` clears the flag
+it misses a prefixed root without an acute. `*ᶜ` and `*ᵘ` are
+preserved if present but cannot encode an internal boundary before
+the second vowel. No lexical IDs appear in a rule. The explicit
+coronal class is not the frozen lowering class, which excludes
+nasals. All arms remain specific to *e.i* at initiation because
+that is the comparison under test, not because other vowel
+sequences are known to resist resolution. Test different vowels,
+marked and unmarked stress, already-long sequences, and inherited
+palatals rather than extending an unattested generalization.
+
+The sources constrain different parts of this design. Luick §243
+and Campbell §237 describe absorption without a necessary
+intermediate consonant; Luick also considers remodelling from a
+stem with *j*. Campbell §§243–245 and 489 document sporadic early
+Anglian and predominantly West Saxon loss of palatal *g* before
+dentals, not a general rule for every coronal, nor a demonstrated
+ordering after gliding of post-*w*-loss hiatus. Hogg §§3.19, 5.131,
+5.133, 5.147–149 distinguishes supported diphthongal patterns and
+unresolved Anglian sequences; his assumption of prior length is
+the reason to test H5, not a measurement of short-root post-*w*-loss
+inputs. Mosionek and Zembrzuski (2019: §§2–6) separate diphthongization,
+gliding, glide insertion and contraction. Their examples of gliding
+and insertion (`nerian`, `lōcian`) have a different vowel and
+consonant configuration; their phonotactic diagnostics motivate
+testing adjacent consonants, prevocalic strings and long nuclei
+separately, not assigning a particular outcome to *e.i*. Atomic
+diphthongization and creation of consonantal *j* are not synonyms.
