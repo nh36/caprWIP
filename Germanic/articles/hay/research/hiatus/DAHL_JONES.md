@@ -960,3 +960,65 @@ context can coexist with diphthongal spellings, and
 the actual dialect, stage, consonant and spellings
 must be checked before either becomes a counterexample
 to a more narrowly conditioned history.
+
+## J3. The comparison tables and their controls
+
+The original images of Jones 19, 55 and 150 (PDF
+33, 69 and 164) distinguish reconstructed sounds from
+graphic forms. In Table 2.7 the accent or macron in
+the long-output column represents Jones’s interpretation
+of duration, not a series of manuscript accents. Table
+2.29 groups **spelling variants** by a proposed vocalic
+space; it does not transcribe every token. Table 3.17
+does give individual Old English transcriptions. The
+printed ‘clay’ is **[klæj]**, with one **æ** and final
+fricative [j], not the OCR’s [kleej].
+
+The locus or period below is the earliest one established
+in this bounded comparison, not a claim of exhaustive
+antiquity. Syllable cuts describe the immediate
+phonological hypotheses. In early reconstructed
+cluster histories the second consonant can form the
+next onset when a vowel follows; the letters alone do
+not fix that cut.
+
+| Comparison | Input and position | Evidence and possible outcomes |
+|---|---|---|
+| ‘Rain’ | Short mid vowel + secondary palatal before *n* in the root coda; inherited *g*, not hiatus *i*. | Table 2.7 West Saxon ⟨regn/rēn⟩; Jones 20 explicitly [rejn]/[reen]. A reinterpretation of the fricative and loss with lengthening have the same endpoints; the identity of the intervening segment is reconstructed. |
+| ‘Wagon’ | Short low front vowel + *g* before *n*; a root cluster in *wægn*, not the string in the fuller *wægen*. | Table 2.7 ⟨wægn/wægen/wǣn⟩, West Saxon comparison; Kentish charter form in Campbell §§243–244. At 149 Jones prints a velar fricative in the short input, so it is not an unambiguous palatal control. |
+| ‘Maiden’ | Short *æ*, secondary palatal before *d* after reduction of an earlier medial sequence; *d* can onset the unstressed syllable in *mæġ.den*. | Table 2.7 ⟨mægden/mǣden⟩; Table 2.29 adds late Northumbrian ⟨maiden⟩; Jones 21 also refers to Kentish. The diphthongal interpretation is a serious alternative before a dental but does not locate the loss in the same dialect or establish unchanged *i̯* in every token. |
+| ‘Thane’ | Short mid vowel + secondary palatal before *n*, root-final cluster. | Table 2.7 ⟨þegn/þēn⟩; Table 2.29 late Northumbrian ⟨ðegn/ðeign⟩. Compare lengthening on loss with breaking before a retained consonant. |
+| ‘Ask’ | West Saxon short high vowel before *g+n*, with *n* before the ending vowel in the infinitive; Northumbrian preterital forms have a different grade and the same type of cluster, possibly with a prefix. | Table 2.7 ⟨frignan/frīnan⟩; Table 2.29 ⟨frægn/fraign⟩ and 21’s prefixed spellings. At 149 Jones prints [fræjn]/[fræijn]. Do not treat inherited ablaut, a secondary palatal and morphologically restored stem material as the same witness. |
+| ‘Against’ | A former compound *on* + stem related to *gagn*, with short vowel and *g+n* in a reduced second member; ⟨ongegen⟩ has a fuller syllable. | Table 2.7 ⟨ongeagn/ongegen⟩ alongside ⟨ongēan/ongān/ongēn⟩. Dialect, syllable count and vowel quality vary; there is no simple length-only minimal pair. |
+| ‘Snail’ | Short mid vowel + root *g* before *l* after reduction. | Jones 20, Campbell §§243, 267; Sweet’s *Oldest English Texts*, Épinal 217 has oblique *sneglas*, while Sweet records both *snel* and *snegl* under *limax*. The oblique proves that the cluster was possible, not that every direct form retained it. |
+| ‘Scythe’ | Short high vowel + *g* before the dental after syncope, with the dental followed by an ending vowel. | Épinal/Erfurt 430 ⟨sigdi⟩ in Sweet; Jones contrasts later ⟨side⟩. Neither the early cluster spelling nor the later dental alone fixes the fricative’s original aperture or whether vocalization intervened. |
+| ‘Bridle’ | Short high vowel + *g* before *d* in early ⟨brigdels⟩; suffixal structure is not necessarily the same as in ⟨bridel⟩. | Jones 20 and Campbell §§243, 267 cite early gloss evidence and later loss/length; the precise earliest token was not independently localized here. Treat it as a comparison, not a tightly controlled pair. |
+| ‘Strew’ | Short front root vowel before dental, but the history of the second element is disputed: labial loss can expose syllabic *i* before a palatal consonant is inferred. | Épinal’s *streide* (see inventory); Table 2.29 juxtaposes ⟨strægd/straigden⟩, with unlike ending material. The table’s fricative interpretation and the independent post-labial hiatus reconstruction are rival analyses, not two observed stages. |
+| ‘Way’ | Short mid vowel + word-final secondary palatal from inherited velar; no suffix vowel or prehistory of short *e.i* at issue. | Vespasian ⟨weg⟩; Table 2.29 ⟨weg/wég/we⟩, and p. 56 construes the accent as lengthening with a retained palatal. Absence of the accent is not a direct measurement; J5 assesses the scribal inference. |
+| ‘Day’ | Short *æ* in Jones’s single [dæj], with a final secondary palatal from velar. | Vespasian ⟨deg⟩ and West Saxon ⟨dæg⟩; Table 3.17 compares early ME ⟨daȝ⟩ and later ⟨dei/dai/day⟩. This offers possible retention and vocalization, not inherited final *j* or independent short hiatus. |
+| ‘Dry’ | Long high rounded vowel in the adjective; secondary palatal in a potentially medial context before the ending (*drȳ.ġe*). | Table 2.29 ⟨dryge/druige/drui⟩ and pp. 56–57. The complex nucleus can coexist with written *g* or appear without it; *drui* alone does not distinguish ending loss from a changed syllabification. |
+| ‘Clay’ | In Jones, short *æ* + a final voiced fricative; Kroonen reconstructs *klajja-*, distinct from ‘day’ with inherited velar. | Table 3.17 West Saxon ⟨clæg⟩ [klæj] versus ME ⟨cleiȝ/cleigh⟩ and ⟨clay/clei/clai⟩. The table establishes what Jones assigns, not historical quantity independently of the earlier *jj* history or normalized long forms. |
+| ‘Hay’ | Short mid plus final fricative in Jones’s late OE illustration, long mid/high plus final fricative in his separate West Saxon comparison. | Table 2.29 attributes ⟨heg/heig⟩ to Lindisfarne; lexical/locus confirmation is due in J6. Table 3.17 prints [heej]/[hiij] and compares ⟨heigh/heiȝe/heyȝ⟩ with ⟨hai/hei/ai⟩. None of those spellings establishes *he.i* as the prehistoric input. |
+
+The five newly documented controls are in the existing
+[inventory](historical.tsv), with no full-cascade input
+submitted where the exact cell is not fixed or the
+comparison only requires a late local sequence. ‘Way’
+and ‘day’ are explicitly secondary-palatal controls:
+their unchanged full inputs had already made this
+distinction executable. Previously published receipts
+refer to the earlier inventory bytes; they are not
+silently regenerated or recertified.
+
+**Research verdict:** both long monophthongs and
+diphthongs occur in the preconsonantal comparisons, and
+both retained consonants and diphthongal developments
+are possible in the final series. That provides a positive
+reason to test all those outcomes, but not a positive
+reason to assign a categorical final/preconsonantal
+**hiatus** rule: most examples start with a consonant
+of independent ancestry, some retain it, and dialect
+and chronology matter. The orthographic ‘maiden’
+contrast prevents treating a following dental as a
+sufficient condition for length without checking the
+actual input and domain.
