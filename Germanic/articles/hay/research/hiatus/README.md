@@ -310,3 +310,44 @@ inherited cells that the full parser licensed.
 bash Germanic/articles/hay/research/hiatus/run-container.sh historical --stage-cache "$cache" \
   > Germanic/articles/hay/research/hiatus/comparison.json
 ```
+
+## 7. Unscored wider firing audit
+
+The [audit](corpus.json) uses the 394 archived and 396 active
+inputs and their captured stress/finality metadata, separately
+keyed. It runs H0 and 17 informative arms in each model:
+42,660 row–model–arm executions, including repeated comparison
+inputs, not that many independent lexical observations. H0
+reproduces all 394 archived endpoints in each model and all
+396 active endpoints in each of A and B2. Canonical at the
+396 active inputs is a new comparison on the inputs shared
+with A, not an asserted match to an active canonical trace
+receipt. All 490 isolated synthetic outputs match §5 on the
+recompiled overlay components. No comparator is rescored.
+
+The two panels show the same firing populations. The receipt
+includes every individual candidate application, both ordered
+traces for affected rows, and captured identities for unaffected
+rows. A firing is a before/after state change at a candidate
+component, not inferred from its endpoint. No affected row's
+endpoint returns to its H0 value here.
+
+| Complete population per panel | Output and interpretation |
+|---|---|
+| 2061 ‘hay’, A only | H1 early/late and H5 length-first give *hē*; H2 early/late, the three audited H3 edge-glide arms, all three H4 arms and H6 final-only give *heġ*; H5 glide-first gives *hēġ* with two firings. No other post-labial *e.i* lexeme fires on an archived or active selected input. |
+| 2147 ‘rain’, all three models | H4 post-merger alone gives *rēn* instead of *reġn*. Campbell §243 cites the loss variant and §489 discusses chronology; the recorded palatal retention is a real alternative, not a feature to erase from every witness. |
+| 2148 ‘rainbow’, all three models | H4 post-merger alone gives *rēnboga* instead of *reġnboga*. This was not used to formulate the candidates. The [existing source ledger](../../../../docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.source_ledger.md) records Orel (2003: 300) with retained *gn*, but [Bosworth–Toller, p. 790](https://bosworthtoller.com/25654) cites loss forms in the vocabularies, Ælfric and Genesis 9:13. The overlay reaches a documented variant, not the selected CAPR form. The dictionary's quantity mark is editorial, and the compound shares its first member with ‘rain’; this is neither a new independent root nor evidence for preconsonantal post-*w*-loss contraction. |
+| 2243 ‘thane’, all three models | H4 post-merger alone gives *þēn* instead of *þeġn*. Campbell §243 reports both shapes; an inherited cluster can undergo loss, but the result does not license categorical replacement of the retained variant across dialects. |
+
+All other rows and placements have zero candidate firings.
+In particular, the audit does **not** make the 396-row active
+corpus an independent confirmation of preconsonantal
+post-labial contraction. H3's wider classes do not enlarge its
+actual census, and the H4 late class reaches a different
+historical population. These are selection and domain findings,
+not evidence that the broader rules are harmless historically.
+
+```sh
+bash Germanic/articles/hay/research/hiatus/run-container.sh corpus --stage-cache "$cache" \
+  > Germanic/articles/hay/research/hiatus/corpus.json
+```

@@ -123,7 +123,7 @@ def overlay_order(order, placements):
     return order
 
 
-def synthetic_trials(order, paths):
+def synthetic_components(paths):
     probes = {row["id"]: row["form"] for row in dsv(HERE / "synthetic.tsv")}
     standalone = {name: frozen.apply_stage(
         paths[f"component:{name}"], {key: [form] for key, form in probes.items()})
@@ -162,6 +162,11 @@ def synthetic_trials(order, paths):
     ]:
         if standalone[component][probe] != [outcome]:
             raise RuntimeError(f"Incorrect immediate output: {component}/{probe}")
+    return probes, standalone
+
+
+def synthetic_trials(order, paths):
+    probes, standalone = synthetic_components(paths)
     starts = {candidates.EARLY, *candidates.ORDERINGS.values()}
     controls = {start: evaluate(order[order.index(start):], paths, probes, set())
                 for start in sorted(starts)}
@@ -201,16 +206,66 @@ def historical_trials(orders, paths, inputs):
             for model, order in orders.items()}
 
 
+CORPUS_ARMS = (
+    "H0", "H1-acute", "H1-early", "H1-late", "H2-early", "H2-late",
+    "H3-stop-retain", "H3-dental_stop-retain", "H3-dental_obstruent-glide",
+    "H3-coronal-glide", "H3-consonant-glide", "H4-pre-loss", "H4-post-loss",
+    "H4-post-merger", "H5-length-first", "H5-glide-first", "H6-final-only",
+    "H6-nonfinal-only",
+)
+
+
+def corpus_trials(orders, paths, archive, capture):
+    results = {}
+    for model, order in orders.items():
+        archived = archive["corpus"] if model == "canonical" else capture["models"][model]["corpus"]
+        active = capture["models"]["A" if model == "canonical" else model]["active_corpus"]
+        rows = {f"{panel}:{row['row_id']}": row for panel, items in
+                (("archived", archived), ("active", active)) for row in items}
+        inputs = {key: row["fst_input"] for key, row in rows.items()}
+        arms = compare_arms(model, order, paths, {order[0]: inputs}, CORPUS_ARMS)
+        base = arms.pop("H0")["traces"]
+        baseline = {}
+        for key, row in rows.items():
+            panel = key.split(":")[0]
+            expected = (row["identity" if model == "canonical" else "diagnostic_outputs"]
+                        if panel == "archived" else row["outputs"] if model != "canonical" else None)
+            output = base[key]["output"]
+            if expected is not None and output != expected:
+                raise RuntimeError(f"Corpus H0 does not reproduce {model}/{key}")
+            baseline[key] = {field: row[field] for field in
+                             ("concept", "proto", "fst_input", "word_stress",
+                              "phonological_finality", "counterpart")}
+            baseline[key]["output"] = output
+        comparison = {}
+        for arm, details in arms.items():
+            affected = {}
+            for key, tr in details["traces"].items():
+                firings = {stage: [before, after] for stage, (before, after)
+                           in tr["anchors"].items() if before != after}
+                if firings or tr["output"] != base[key]["output"]:
+                    affected[key] = {
+                        "firings": firings,
+                        "baseline_changes": base[key]["changes"],
+                        "changes": tr["changes"],
+                        "output": tr["output"],
+                    }
+            comparison[arm] = {"placements": details["placements"], "affected": affected}
+        results[model] = {"baseline": baseline, "arms": comparison}
+    return results
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("snapshot", type=Path)
-    parser.add_argument("mode", choices=("baseline", "local", "synthetic", "historical"), nargs="?",
-                        default="baseline")
+    parser.add_argument("mode", choices=("baseline", "local", "synthetic", "historical", "corpus"),
+                        nargs="?", default="baseline")
     parser.add_argument("--stage-cache", type=Path)
     args = parser.parse_args()
     source = ROOT / "Germanic/fsts/germanic.txt"
     archive = read_json(frozen.FROZEN)
-    capture = read_json(frozen.DOCS / "models/sc047/captures/sc047-adoption-v1.json.gz")
+    capture_path = frozen.DOCS / "models/sc047/captures/sc047-adoption-v1.json.gz"
+    capture = read_json(capture_path)
     if (frozen.sha(frozen.FROZEN) != frozen.FROZEN_SHA
             or frozen.sha(source) != archive["inputs_sha256"]["germanic.txt"]
             or frozen.sha(source) != capture["fst_sha256"]
@@ -239,10 +294,17 @@ def main():
                 if args.mode == "synthetic":
                     data.update(synthetic_sha256=frozen.sha(HERE / "synthetic.tsv"),
                                 **synthetic_trials(orders["A"], paths | bins))
-                else:
+                elif args.mode == "historical":
                     data.update(inventory_sha256=frozen.sha(inventory),
                                 local_sha256=frozen.sha(HERE / "local.tsv"),
                                 models=historical_trials(orders, paths | bins, inputs))
+                else:
+                    _, predictions = synthetic_components(paths | bins)
+                    data.update(archived_sha256=frozen.sha(frozen.FROZEN),
+                                active_capture_sha256=frozen.sha(capture_path),
+                                synthetic_sha256=frozen.sha(HERE / "synthetic.tsv"),
+                                synthetic_component_outputs=predictions,
+                                models=corpus_trials(orders, paths | bins, archive, capture))
         print(json.dumps(data, ensure_ascii=False))
         return
     anchors = {"OEWLossBeforeI", "SC047FinalIi", "OEHighVowelApocope",
