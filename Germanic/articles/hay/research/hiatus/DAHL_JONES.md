@@ -442,3 +442,109 @@ formation in ‘hay’. Neither the comparative reconstruction nor
 the executable mismatch demonstrates stress-conditioned
 dissimilation, direct-cell analogy, or a historical chronology
 edge. No production change is proposed.
+
+## D5. What *hei weg* can tell us about compound position
+
+Dahl (86 n., 97, 104; PDF 108, 119, 126) separates loss
+of the old vowel at the end of a first compound member
+from simplex apocope. He treats the compound loss as a
+development in the individual West Germanic dialects and
+places English differentiation of inherited *au* before both
+the relevant compound-medial loss and loss of the residual
+simplex ending. That does not order the two losses more
+precisely against one another. In the ‘glee’ comparison
+he explicitly puts simplex loss of the exposed palatal
+**after mutation**; in a primary compound the palatal of
+the first member instead remains within the word and can
+survive without borrowing from an inflected simplex. He
+mentions *hēg-* and *īg-* by comparison under an argument
+stated explicitly for West Saxon. He treats the unusual
+*glii-* as secondary relative to *glīg-*, not as an example
+of the simplex word-final loss (104, PDF 126, image checked).
+The compound argument does not require the creation or
+contraction of short *e.i*; that belongs to a different
+starting representation.
+
+The testable consequence is conditional but important:
+on Dahl’s reconstruction, a first member with a long vowel
+and surviving palatal is possible even if an unremodelled
+simplex would have yielded *hē*. This follows from the
+different edge, not from quantifying the accent of *hei*.
+An ordinary internal /VjC/ sequence is not in itself a
+compound, and a weak final *second* member is still at the
+absolute word edge. Dahl’s specific weak-stress dissimilation
+account for ‘district’ is an additional claim, not a
+consequence of distinguishing these edges. His West Saxon
+formulation does not independently establish the Kentish
+generalization; using the charter to establish it and then
+as its prediction would be circular.
+
+### Date and interpretation of the witness
+
+Dahl’s printed p. 96 (PDF 118, rechecked against the image)
+has **“heiweg (‘hay-road’), 43/3 (A.D. 859)”**, not 839 as
+in the OCR. The preceding *Hegforde* entry has A.D. 858.
+Sweet, p. 450 (PDF 464, image checked), prints **cyniges hei
+weg** at the same locus and heads the charter **859**.
+There is therefore no demonstrated 839 misprint in Dahl;
+the discrepancy is between the image and the OCR. The paused
+manuscript’s note attributing 839 to Dahl needs correction
+at a later authorized article revision; it has not been
+changed in this assignment. Separately, Lowe (2001: 85–86)
+gives **? 859** for S 1196 (Cotton Augustus II 16) because
+Æthelwulf appears in the witness list despite dying in 858.
+The date of the sheet, the transaction and the witness list
+need not be identical. This is a diplomatic qualification,
+not support for an alternative 839.
+
+‘Hay-road’ is Dahl’s explicit reading, also compatible with
+the meadows in the bounds and the later road-name comparison.
+It is not a contemporary gloss of the phrase. The ‘highway’
+alternative and the earlier discussion of *hēah-* remain
+relevant; lexical interpretation does not follow from an
+endpoint match. If ‘hay’ is right, ⟨hei⟩ is an exact
+**graphemic** counterpart of the frozen A serialization.
+It is compatible with inherited short material plus gliding,
+and with inherited diphthongal vocalism plus retention of
+the compound palatal under Dahl’s account. Kentish *dei*
+shows how ⟨ei⟩ can write a vowel plus palatal, not that
+⟨ei⟩ measures quantity or identifies hiatus. Neither candidate
+is corroborated specifically unless one can discriminate
+the earlier structure independently. With no matched
+Kentish simplex known to have lost its palatal, the charter
+does not demonstrate differential treatment.
+
+### Explicit-boundary components
+
+The [synthetic extension](compound.tsv) uses `*⊕` as a
+private compound boundary, not a production input flag or
+a claim about a historical segment. It crosses absolute
+finality, first-member edge before *w*, ordinary internal
+preconsonantal position with the same segments, and second
+member at the word edge. The two last-member short-hiatus
+probes distinguish an unmarked nucleus from an explicitly
+stressed one; they do not establish how weak secondary stress
+was pronounced. No boundary probe is sent through the
+production surface filter. The independent *cǣġ/cǣġe* pair
+is retained from D2.
+
+The [component receipt](compound.json) records 91 lookups
+(13 inputs × seven definitions):
+
+| Candidate | Discriminating result |
+|---|---|
+| Existing `HiContract` and `HiGlide` | Fire at all three short first-domain placements: word edge, marked first-member edge, and unmarked internal position. The unmarked second member escapes the plain-nucleus context; the explicit acute activates the stress branch. |
+| Existing `HiEdgeGlide` and `HiCGlide` | The former matches the word edge (including the acute second-member probe), not the first-member edge. The latter matches ordinary preconsonantal adjacency, not the marked boundary. |
+| `HiMemberGlide` counterfactual | Treating `*⊕` like a right edge licenses gliding there as well as at absolute finality, but not in an unmarked internal cluster. This is an explicit domain alternative, not a fit to the charter. |
+| `DaFinalJ` vs. `DaMemberLoss` | Absolute-final loss removes long-nucleus *j* in a simplex and in the second member, not the first; treating `*⊕` as another edge also deletes first-member *j*. Neither deletes in the ordinary internal case. Both delete in absolute-final *cǣġ*, leaving the same independent objection as in D2; protected *cǣġe* is unchanged. |
+
+```sh
+bash Germanic/articles/hay/research/hiatus/run-container.sh compound --stage-cache "$cache" > compound.json
+```
+
+**Research verdict:** Dahl offers a genuine competing
+explanation of the compound spelling, conditional on his
+earlier diphthongal representation and a word-edge loss
+not yet independently established. The model contrast
+clarifies the boundary prediction; the one written compound
+cannot choose it. No registry edge or article asset changes.

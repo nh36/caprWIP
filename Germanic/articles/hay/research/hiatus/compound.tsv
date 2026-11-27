@@ -1,0 +1,14 @@
+id	form	role
+short-word	*ç*e*i	absolute final syllabic hiatus
+short-member	*ç*e*i*⊕*w*e*g	first member with explicit boundary
+short-internal	*ç*e*i*w*e*g	same segments without a compound boundary
+short-last	*s*ū*θ*⊕*ʝ*e*i	final member with no independent stress marker
+short-last-acute	*s*ū*θ*⊕*ʝ*é*i	same final member with explicit local stress
+long-word	*ç*ē*j	absolute final long vowel and j
+long-member	*ç*ē*j*⊕*w*e*g	first member, homosegmental to short-member after length and gliding
+long-internal	*ç*ē*j*w*e*g	same segments without a compound boundary
+long-last	*s*ū*θ*⊕*ʝ*ē*j	word-final j in a second member
+diph-word	*ç*īe*j	long diphthong at absolute word edge
+diph-member	*ç*īe*j*⊕*w*e*g	long diphthong at the first-member edge
+key-word	*k*ǣ*j	independent D2 inherited final-palatal retention control
+key-protected	*k*ǣ*j*æ	D2 protected key control

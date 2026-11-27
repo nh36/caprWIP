@@ -14,6 +14,7 @@ import unicodedata
 from unittest.mock import patch
 
 import candidates
+import compound
 import palatal
 
 BASE = "113101ac5f169b589e1a9647cdf24d32cdd4d919"
@@ -302,7 +303,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("snapshot", type=Path)
     parser.add_argument("mode", choices=("baseline", "local", "synthetic", "historical", "corpus",
-                                        "palatal", "district"),
+                                        "palatal", "district", "compound"),
                         nargs="?", default="baseline")
     parser.add_argument("--stage-cache", type=Path)
     args = parser.parse_args()
@@ -331,12 +332,19 @@ def main():
                         models=local_diagnostics(orders, paths))
         else:
             with tempfile.TemporaryDirectory(prefix="hay-candidates-") as tmp:
-                overlay = palatal if args.mode == "palatal" else candidates
+                overlay = {"palatal": palatal, "compound": compound}.get(args.mode, candidates)
                 bins = compile_candidates(source, args.stage_cache, Path(tmp), overlay)
                 data.update(candidates_sha256=frozen.sha(HERE / f"{overlay.__name__}.py"),
                             foma=subprocess.check_output(["foma", "-v"], text=True).strip(),
                             component_sha256={key: frozen.sha(path) for key, path in bins.items()})
-                if args.mode == "district":
+                if args.mode == "compound":
+                    probes = {row["id"]: [row["form"]] for row in dsv(HERE / "compound.tsv")}
+                    data.update(panel_sha256=frozen.sha(HERE / "compound.tsv"),
+                                inputs=probes, outputs={
+                                    name: frozen.apply_stage(bins[f"component:{name}"], probes)
+                                    for name in overlay.RULES
+                                })
+                elif args.mode == "district":
                     with tempfile.TemporaryDirectory(prefix="hay-palatal-") as palatal_dir:
                         palatal_bins = compile_candidates(source, args.stage_cache,
                                                           Path(palatal_dir), palatal)
