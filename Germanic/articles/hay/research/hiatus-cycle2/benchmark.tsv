@@ -1,0 +1,18 @@
+id	split	grade	provenance	entry	input	comparator	source	discriminator
+way-retained	anchor	established	panel	way-dir		weġ	Sweet 1885 p.207; DAHL_JONES.md J8	Retained secondary palatal; unconditioned coda assimilation overpredicts loss.
+key-retained	anchor	local	panel	key-edge		cǣġ	Hogg 1979 p.105; Ringe–Taylor pp.235,286	Long-vowel final inherited palatal; no ad hoc exemption.
+key-protected	anchor	established	panel	key-protected		cǣġe	Hogg 1979 p.105; Campbell §439	Protected long-vowel inherited palatal; contrast edge with following vowel.
+hay	anchor	disputed	panel	hay-dir		heg	Sweet 1885 p.335; DAHL_JONES.md	Quantity and ancestry not measured by the written mid vowel and palatal.
+couch-acc	anchor	qualified	panel	couch-acc		strene	COUCH.md §§C1–C3	Test whole accusative with final e, not a bare lemma.
+couch-oblique	anchor	disputed	panel	couch-gen		strene	COUCH.md §§C1–C3	Case and earlier ending conditional.
+flock	anchor	local	panel	flock-late		ede	Ringe–Taylor pp.259,318; Campbell §237	Stem and ending distinguish early HVD feeding from later resolution.
+strew-retention	anchor	variant	panel	strew-past-late		streide	Ringe–Taylor pp.259,318; Hogg §5.133	Attested spelling conditional on the lexical identification.
+aldboth	anchor	variant	observation	none		heg; heig	DAHL_JONES.md J5–J6	Two verified Aldred spellings; fixed manuscript loci, not two quantity observations.
+wealth-dat	holdout	qualified	probe	OEHLoss	*f*eo*x*e	fēo	Ringe–Taylor pp.315–316; Campbell §235	Intervocalic loss feeds front-broken-nucleus contraction before a front vowel. Southern comparator; distinct from feorh.
+weak-high	holdout	qualified	probe	OEHLoss	*x*ēa*x*a*n	hēan	Ringe–Taylor p.315; Goering 2026 p.306	Test already-long broken vowel with a surviving weak ending distinct from high dative.
+postconsonantal-feore	holdout	local	probe	OEHLoss	*f*eo*r*e	feore (short root)	Goering 2026 §8 pp.313–314	Direct post-loss state: test lack of general lengthening, not whether the cascade creates that stage.
+wool-fringe	holdout	variant	probe	OEHLoss	*w*l*ō*x*u*m	wlohum; wloum; contracted *wlōm not attested	Ringe–Taylor p.314; Épinal 1066 and Corpus 2122	Stage preservation in successive glosses; do not score inferred complete contraction as an attestation.
+three-neut	holdout	qualified	probe	OEAuBrightening	*θ*r*i*u	þrīo	Hogg §3.19(3); cf. §§3.8,3.34	Hiatus from final raising, not labial loss; short i.u template is an independent generalization.
+servant-weak	holdout	qualified	probe	OEAuBrightening	*θ*eu	þēo(w)	Hogg §3.19(2); Ringe–Taylor p.174	Post-final-vocalization nuclear eu; w-restored variant kept separate.
+nasal-b	holdout	synthetic	probe	OEWLossBeforeI	*t*e*i*b	none	Matched T2 classes	All stops vs. d, þ/ð, n outside the training lexemes.
+edge-same-spelling	holdout	synthetic	probe	OEWLossBeforeI	*t*ei	none	Matched T2 & STRESS.md	Atomic nucleus cannot be treated as syllabic e.i solely from spelling.
