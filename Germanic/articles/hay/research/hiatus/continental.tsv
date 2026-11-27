@@ -1,0 +1,15 @@
+id	form	role
+hay-diph-direct	*x*au*j*ą	Dahl diphthongal direct input
+hay-diph-protected	*x*au*j*a*s	Dahl diphthongal protected input
+hay-cluster-direct	*x*a*w*j*ą	consonantal input for gemination comparison
+hay-cluster-protected	*x*a*w*j*a*s	consonantal protected input
+district-diph	*g*au*j*a*s	diphthongal protected district input
+district-cluster	*g*a*w*j*a*s	consonantal protected district input
+strew-diph	*s*t*r*au*j*a*n	diphthongal protected verbal comparison
+strew-cluster	*s*t*r*a*w*j*a*n	consonantal protected verbal comparison
+new-diph	*n*iu*j*a*s	diphthongal high-nucleus comparison
+new-cluster	*n*i*w*j*a*s	consonantal high-nucleus comparison
+new-oral-edge	*n*iu*j	already exposed oral comparison, not a reconstruction of order
+long-labial	*t*ē*w*j*a	long monophthong with labial cluster, gemination negative
+key-final	*k*ǣ*j	inherited j retention control from D2
+key-protected	*k*ǣ*j*æ	protected control from D2

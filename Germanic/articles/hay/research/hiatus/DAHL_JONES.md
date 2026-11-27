@@ -711,3 +711,79 @@ position; ‘hue’ does not independently show homophony
 avoidance; ‘island’ supplies qualified long-nucleus
 comparisons, not measured quantity. No registry verdict
 or production chronology changes.
+
+## D7. Diphthongal assimilation on the continent
+
+Dahl’s excursus (107–109, PDF 129–131) is a positive
+alternative to ordinary gemination. The trigger in the
+labial forms is the surviving labial **part of a nucleus**;
+the target is the **following palatal**. Compare ordinary
+gemination, which doubles an already consonantal labial
+before *j* without first changing *j*. In normalized
+notation the competing protected inputs are
+\*au̯.jes > au̯.wes versus \*a.wjes > a.wwjes.
+Both can ultimately write a diphthongal or geminate-looking
+labial sequence; those later spellings alone cannot recover
+the first operation or its timing.
+
+| Comparison | Evidence and discrimination |
+|---|---|
+| OHG *hewi/houwi*, *gewi/gouwi*, *gistrewi/gistrouwi* | Dahl groups the first members as old direct forms and attributes the diphthongal labial stem to copying of labial articulation from the nucleus. Ringe and Taylor (53, PDF 68, image checked) explicitly recognize inherited *hewi* beside geminated *houwi* and compare the verb *gistrouwen*; their verb is not the same grammatical form as Dahl’s nominal pair. Orel 128 independently lists *gewi/gouwi*. Rare ungeminated forms pose a general problem for the claim that every consonantal *wj* geminated before any relevant ending loss, not for every theory allowing established cell differences. Dahl admits gemination is the simplest account of doubling spellings taken by themselves. |
+| OS | Dahl cites direct *gō(i)* and dat. *gauwa*: distinct cell material is real on his evidence, but an alternation by cell is compatible with either a conditioned development or transfer from protected material. Kroonen (215) lists *hōi* with an asterisk; its citation is not by itself a verified token. |
+| OFris, ODu and MDu | Dahl cites OFris *hā* and *gē* as outcomes with distinct intermediate vowel histories; Kroonen (171, 215) lists OFris *gā/gē*, *hā*, and MDu *gou(w)/gooy* for ‘district’, while Orel lists OS compounded *-gō/-gā*. These support vowel diversity and the existence of w-less stems but do not by themselves establish a phonetically comparable *ww* stage. Dahl’s specific route through a restored labial in OFris ‘hay’ and his appeal to inherited singleton forms in ODu rely on his reconstruction and cited van Helten; the individual original texts and their dates have not all been collated. Do not equate modern Dutch *hooi* with an independently observed Old Dutch stage. |
+| ‘New’ | Dahl cites OS *nigemo*, *nigean*, and compound *nī-*; OFris *nige* beside *nia/nie*; Dutch place-names in *nij-*; and labial OHG/OS *niuwi* and ODu *nūwi* (108, PDF 130, image checked). The continental palatal spellings matter precisely because Dahl cannot appeal to specifically West Saxon mutation there. He allows a distinct stem class as an alternative source of w-forms. Ringe and Taylor cite OS/OHG *niuwi* and independently compare ‘sew’ (*siuw-*), interpreting the high-vowel evidence in favour of earlier gemination. A toponymic series in *nij-* does not establish a matched simplex cell or one dated origin. |
+
+Dahl’s chronology requires the English differentiation of
+the nucleus to precede the loss exposing the palatal.
+On the continental direct route the corresponding
+differentiation is later, so the newly exposed sequence
+can resolve instead to a short nucleus, consonantal *w*
+and syllabic *i*. In protected inputs the retained labial
+element of the diphthong motivates palatal-to-labial
+assimilation; an oblique can in turn supply its stem to
+the direct cell. Evidence for the **completed** labial
+reflex is independent of English (especially in OHG).
+The interpretation as copying, the absolute sequence of
+events, and the proposed analogical direction are not
+independently fixed by those reflexes. The chronological
+problem Dahl raises is worth testing even where one
+prefers the alternative of early ungeminated direct
+cells and ordinary gemination in protected forms.
+
+The [private definitions](continental.py) and [input
+panel](continental.tsv) record that distinction without
+treating continental endpoints as outputs of the OE
+cascade. In 112 component lookups (14 × eight), the
+copying component matches nuclear `*au*j` and `*iu*j`
+before the following vowel. It would also fire before the
+unlost direct ending in isolation; its application to
+protected forms alone requires prior loss of that ending
+in the direct forms. The gemination component
+matches short-nucleus `*a*w*j` or `*i*w*j`, producing
+`*wwj`, not loss of `*j`. The long monophthong plus
+consonantal `*wj` is a negative for both. In the exposed
+direct probe, low-vowel loss followed by unfusing gives
+`*x*a*w*i`; differentiation first gives `*x*ǣo*j`
+instead. The latter uses a private atomic vowel to keep
+the diphthong differentiated. Neither result includes
+continental monophthongization, mutation, levelling
+or orthographic serialization. The segmented gemination
+path instead leaves `*x*a*w*w*j` immediately after
+the same low-vowel deletion. ‘Key’ is unchanged in
+both its direct and protected controls.
+
+```sh
+bash Germanic/articles/hay/research/hiatus/run-container.sh continental --stage-cache "$cache" > continental.json
+```
+
+The [receipt](continental.json) isolates hypotheses
+that a complete continental account must differentiate:
+an independently secured labial geminate before surviving
+*j*, a surviving palatal in a context that should have
+assimilated beside undifferentiated *au/iu*, or a dated
+form showing when the direct cell first acquired a
+syllabic *i*. Without such evidence the endpoint may be
+many-to-one. **Research verdict:** treat Dahl’s proposal
+as a distinct, testable alternative, not a renaming of
+B2 or a demonstrated replacement for ordinary gemination.
+No production chronology is inferred from this assay.
