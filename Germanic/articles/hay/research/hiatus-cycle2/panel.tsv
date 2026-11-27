@@ -1,0 +1,33 @@
+id	parent	family	cell	grade	entry	input	observed	source	preceding_history_and_limits
+couch-acc	couch-dir	couch	acc.sg.	qualified	full	strawinǭ	strene	COUCH.md §§C1–C3	Earlier conditional strong feminine projection; keep nominal ending; not a new token.
+couch-gen	couch-dir	couch	gen.sg.	disputed	full	strawinōz	strene	COUCH.md §§C1–C3	Case and genitive inflection conditional; Hogg–Fulk §§2.39–40.
+couch-local-nom	couch-dir	couch	nom.sg.	local	EAFBrighteningUnstressed	*s*t*r*a*w*i*n*u	none	Ringe–Taylor p.260; COUCH.md	Late strong feminine nominative with final u; no secure nominative.
+couch-tanner	couch-dir	couch	acc.sg.	local	OELatePalatalDiphthong	*s*t*r*ēo*w*i*n*ǣ	streoƿne	Tanner 10 f.13r; Brunner §129 n.2	Old English after potential remodelling from the verb and after w-loss; quantity conditional.
+district-direct		district	nom.acc.sg.	disputed	full	gáwją	none	DAHL_JONES.md D4	Dahl reconstructs a direct cell; no secure simplex attestation.
+district-protected		district	dat.sg.	disputed	full	gáwjai	none	DAHL_JONES.md D4	A place-name comparison, not a fully attested oblique paradigm.
+flock-late	flock-dir	flock	nom.acc.sg.	local	OEWLossBeforeI	*e*w*i*d*i	ede	Ringe–Taylor pp.259,318; Campbell §237.1b	After i-mutation, before w-loss; exact final quantity and inflection remain disputed.
+call-past-late	call-past	call	3sg past	local	OEWLossBeforeI	*ᶠ*ʝ*i*k*e*w*i*d*e	gecede	Ringe–Taylor p.260; STRESS.md	Plain post-umlaut root with pretonic foot; transcriber final e reflects reduced tail; independently compare this entry to full admitted participle.
+strew-past-late	strew-past	strew	3sg past	local	OEWLossBeforeI	*s*t*r*e*w*i*d*e	streide	Ringe–Taylor p.259; Hogg §5.133	After i-mutation; identity of early gloss disputed, long earlier ending not presently admitted.
+strew-pl-late	strew-pl	strew	3pl past	local	OEWLossBeforeI	*s*t*r*e*w*i*d*u*n	stredun	Ringe–Taylor p.259; Campbell §237	After i-mutation; serialize attested plural tail, not an asserted full early input.
+betray-late	betray-past	betray	3sg past	local	OEWLossBeforeI	*l*ē*w*i*d*e	bilede	Ringe–Taylor p.259	Post-umlaut long root; prefix excluded; endpoint comparison is stem only.
+prepare-past-late	prepare-past	prepare	3sg past	local	OEWLossBeforeI	*ʝ*i*e*r*w*i*d*e	gierede	Ringe–Taylor pp.258,327–328; DAHL_JONES.md D3	Reconstructed WS post-umlaut stem, with the reduced preterite ending; labial follows r, not a hiatus source.
+pillow-late	pillow-dir	pillow	nom.sg.	local	OEWLossBeforeI	*p*y*l*w*i	pyle	Ringe–Taylor p.260; Campbell §406	Latin pulvinus > pre-OE pulwin > pylwi; loan entry after n-loss and i-mutation.
+new-late	new-cpd	new	first member	local	OEWLossBeforeI	*n*í*w*i	nicenned; nicumen	Ringe–Taylor pp.259,318; Campbell §237	Post-umlaut first member before w-loss; token edge is not a real compound boundary.
+hue-dir		hue	nom.acc.sg.	qualified	full	xíwją	hiw	Ringe–Taylor p.250; DAHL_JONES.md D6	Independent direct etymology; do not identify Dahl’s counterfactual high-vowel path with the observed word.
+key-edge		key	nom.acc.sg.	local	OEWLossBeforeI	*k*ǣ*j	cǣġ	Hogg 1979:105; DAHL_JONES.md D2	After i-mutation; inherited palatal, independently long root; not an e.i witness.
+key-protected		key	dat.sg.	established	full	káijai	cǣġe	Hogg 1979:105; Campbell §439	Earlier long nucleus plus inherited palatal; full run is a retention check.
+rainbow	rain-dir	rainbow	compound	variant	archive	2148	reġnboga	DAHL_JONES.md J8; frozen row 2148	Related to rain; use the model’s frozen active input, not a newly invented protoform.
+sail		sail	nom.acc.sg.	variant	archive	2164	segel; segl	DAHL_JONES.md J8; Campbell §§204.8,363	Do not count sēl as attested; closed cluster vs. anaptyxis is not length evidence.
+brandish-late	brandish-inf	brandish	inf.	local	OEJLossAfterHeavy	*b*r*e*ʝ*d*a*n	bregdan; bredan	Campbell §243; DAHL_JONES.md J3	Compare conditional secondary fricative in the retained West Saxon type; the unadmitted early form is not repaired by changing the grade.
+river-short	river-dat	river	dat.sg.	local	OEHLoss	*e*ç*i	e	Ringe–Taylor pp.317–318; Campbell §§235,254–255	Hypothetical Anglian short root after smoothing and palatalization; exact inherited cell uncertain.
+river-long	river-dat	river	dat.sg.	local	OEHLoss	*ḗ*ç*i	e	Ringe–Taylor pp.317–318; Campbell §§235,254–255	Quantity contrast, not an independent attestation.
+strike-h	strike-pres	strike	3sg pres.	local	OEHLoss	*s*l*e*ç*i*θ	sleð	Campbell §237.1d	Regional i-mutated and smoothed input before h-loss; unlowered i hypothesis.
+strike-lowered	strike-pres	strike	3sg pres.	synthetic	OEHLoss	*s*l*e*ç*e*θ	none	hiatus/local.tsv	Matched contrast with lowered i; not an asserted historic input.
+claw-back	claw-dir	claw	nom.sg.	disputed	OEWLossBeforeI	*k*l*a*w*u	clea	Ringe–Taylor pp.154,173; Brunner §128	Alternative to direct vocalization of w; prior k/l and the weak ending are not independently diagnostic.
+tree-back	tree-pl	tree	nom.acc.pl.	local	OEWLossBeforeI	*t*r*e*w*u	treo	Brunner §129.1; Hogg §3.19	PWGmc trewu after final raising; homography with singular does not establish path.
+knee-back	knee-pl	knee	nom.acc.pl.	local	OEWLossBeforeI	*k*n*e*w*u	cneo	Brunner §129.1; Hogg §3.19	PWGmc knewu after final raising; compare protected w-bearing forms.
+hay-kentish	hay-dir	hay	first compound member	variant	none		hei weg	Dahl pp.74,97; DAHL_JONES.md D5	Compound evidence only; Dahl prints 859, not OCR 839. No claim about simplex quantity or a reconstructed boundary spelling.
+member-edge	hay-dir	hay	first compound member	synthetic	OEWLossBeforeI	*ç*e*i*⊕*w*e*g	none	hiatus/compound.tsv	Compare internal adjacency with exactly the same segments; boundary is an experimental token.
+member-internal	hay-dir	hay	internal comparator	synthetic	OEWLossBeforeI	*ç*e*i*w*e*g	none	hiatus/compound.tsv	No boundary; not a historical word.
+member-final-weak	hay-dir	hay	second compound member	synthetic	OEWLossBeforeI	*s*ū*θ*⊕*ʝ*e*i	none	hiatus/compound.tsv	No local stress marker; not equated with an ordinary unprefixed root.
+member-final-marked	hay-dir	hay	second compound member	synthetic	OEWLossBeforeI	*s*ū*θ*⊕*ʝ*é*i	none	hiatus/compound.tsv	Matched locally stressed probe, not a statement of historical stress.
