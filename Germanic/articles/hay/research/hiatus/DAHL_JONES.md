@@ -227,3 +227,115 @@ retention evidence likewise leaves regular survival of long
 by the evidence. No historical stage, geographic scope, or
 chronology edge is established for the proposed rule.
 No registry verdict, frozen model, or article asset changes.
+
+## D3. What the later evidence establishes about *w*-loss
+
+### Dahl’s objection in context
+
+The testable claim is not that every Old English *e* before
+written ⟨g⟩ comes from *ewi*, but that independent words can
+establish regular loss in that phonological environment.
+Dahl (100–102, PDF 122–124; p. 101 checked against the image)
+argues from the competing compound spellings of ‘island’.
+Girvan, starting from the same ungeminated reconstruction as
+Chadwick and Luick, accounts for Northumbrian *-eu* by adding
+*u* back to *ē*, itself derived from *ewi*. Dahl admits
+another way to derive *-eu* from this input, through assimilation
+of *i* to *u* rather than loss of *w*. The analogy he cites there
+is *eowu* ‘sheep’. What he specifically calls insecure is the
+evidence for regular loss between *e* and *i*, invoked to obtain
+*ē* and then *ēg*. His preference for a single base for both
+sets of nominatives helps drive the objection; it is not an
+independently observed phonological constraint.
+
+He knows the *g*-bearing infinitives of ‘call’ and ‘strew’ and
+the labial in ‘show’ (102 n. 3), which he treats as obscure but
+possibly influenced by *awi*-forms. Those are not the
+same cells as the w-less endings cited by the later grammars.
+In ‘glee’ and ‘new’ he considers the high-vowel comparison,
+and explicitly concedes that assimilation in *iwi* is plausible
+in itself (102–104, PDF 124–126); he doubts its use in the
+proposed history given his account of gemination and the
+apparent West Saxon confinement of the relevant forms.
+The phrase about insecure traces on p. 101 does not enumerate
+individual examples. It would be unwarranted either to assign
+him the later full list or to infer from silence that he was
+unaware of a particular gloss.
+
+### What the enlarged comparisons decide
+
+Campbell (1959: 100–101, 166–167, §§237.1b, 406;
+PDF 118–119, 184–185) and Ringe and Taylor (2014: 258–261,
+318; PDF 273–276, 333) separate the loss from the subsequent
+fate of the high vowel. The central comparisons are:
+
+| Comparison | Evidential role |
+|---|---|
+| ‘Prepare’ *ġierwan/ġerwan* vs. *ġiereþ*, *ġierede/ġerede*; Campbell also adduces ‘roll’ *wyleþ* vs. *wylwan*. | The alternation within a root is phonological: earlier *-CijV-* syncope created protected *wj* in the infinitive, whereas the finite forms still had *wi*. After *w*-loss the remaining consonant can onset the next syllable; **no hiatus** is created. This independent control argues against an ad hoc rule between two particular vowels. |
+| ‘Pillow’ *pyle* from Latin *pulvīnus* via pre-OE *pulwīn*. | The conditioning high vowel can also be long if fully unstressed. The loan is independent of the labial *j*-stems. Its date does not fix a date for resolution of postvocalic *e.i*. |
+| ‘Flock’ *ēde* and Vespasian ‘call’ *ceð, cede, geced*. | Short *e* after mutation, with *w* followed by unstressed *i*, offers the closest independent parallels. Comparative forms and the represented cells motivate *ewi* without assuming anything about direct ‘hay’. In these reconstructions mere deletion of *i* cannot produce the reported long *ē*. West Saxon *eowede* is analysed as remodelled on ‘ewe’, not a refutation from an identical unrestructured input. |
+| ‘Strew’ *strēdun*, contested early glosses *streidæ/streide*, Beowulf *strēd*. | Possible evidence for persistence of the product of loss before contraction, not three unqualified short-input proofs. The lexical identification of the early glosses and the metrical interpretation of the verse retain the qualifications in the [first-cycle dossier](ADJUDICATION.md). |
+| ‘Sea’, ‘law’; ‘know’, ‘betray’ and ‘show’. | *w*-less comparisons with a long preceding nucleus. Deletion of the weak vowel and contraction can converge, so their outputs do not uniquely establish contraction. ‘Show’ also has uncertain prehistory; ‘corpse’ has competing stem histories. ‘Crow’ is another long-nucleus verbal comparison, not another short *e.i* witness. |
+| *nī-* ‘new’, *glī* ‘merrymaking’; *strēn* ‘couch’. | The first two are identical-vowel comparisons, not evidence for identical timing in short unlike hiatus. ‘Couch’ would extend the unlike sequence to a nasal under the proposed reconstruction; its stem formation remains conditional here. |
+
+The supported generalization is loss of noninitial *w* before
+fully unstressed *i/ī*, after either a vowel or a consonant.
+The data do not limit it to short or long preceding nuclei,
+to a particular vowel quality, or to one word class. The
+surviving *cleweþa* ‘itch’ is a real complication: Ringe and
+Taylor (260–261) suggest analogy or competition with a different
+suffixal input; neither explanation is independently established.
+Continental *nī* and *streidun* support the
+plausibility of parallel loss, not an identical ancestral date.
+For English, ‘ewe’ motivates **umlaut > transfer out of the
+i-stems > w-loss** on Ringe and Taylor’s stem-transfer analysis.
+‘Prepare’ motivates **w-loss > general syncope** because loss
+creates a light syllable and bleeds syncope. These are historical
+dependencies with separate witnesses, not dates inferred from
+component positions.
+
+Postvocalic loss can leave two syllabic vowels, e.g.
+*ewidi > e.idi*; that is the intermediate predicted by removal
+alone, not a pronunciation read directly off the contracted
+form. The attested relics allow more than one resolution
+history. For short-input *ēde* and
+*cēð*, a length-producing development is needed if the
+reconstruction and quantity are correct. Contraction accounts
+for it without positing a palatal consonant; the endpoint does
+not independently exclude gliding followed by palatal loss and
+lengthening. Final ‘sea’ and ‘law’ can lose a weak vowel
+without changing the earlier quantity; final ‘glee’ involves
+identical vowels. None establishes that final **short unlike**
+*e.i* behaved as in *e.i.d* or *e.i.þ*. The evidence is uneven
+by position, but that is not proof of a position-dependent
+resolution law or of a specifically dental trigger. Ringe and
+Taylor (318) leave the timing open and allow unlike hiatus to
+persist longer than identical hiatus.
+
+### Frozen checks and verdict
+
+The existing [H0 baseline](baseline.json) independently
+distinguishes the live executable contexts: in A, ‘prepare’
+loses *w* in the present but not in the infinitive, ‘sea’
+passes through long *ǣ.i*, and direct ‘hay’ passes through
+short *e.i* and renders `hei`. The ‘call’ participle and
+‘strew’ participle reach short *e.i* before *d*, but the
+frozen outputs `ġecid` and `streid` do not reproduce the
+putative length-producing history. ‘Flock’, ‘pillow’ and
+‘prepared’ are unadmitted as submitted; their historical
+evidential standing is independent of that gate. The
+[D2 control](palatal.json) preserves *cǣġ* as a comparison
+for final inherited *j* after a long nucleus, **not** as a
+w-loss positive. No added run, changed input, or new census
+is needed for this literature increment.
+
+**Research verdict:** the subsequent comparative evidence
+removes the basis for dismissing regular *w*-loss in *ewi*
+as an expedient. If an English direct *hewi* existed, *he.i*
+has an independently supported route. The evidence does not
+establish that this direct stem existed, require it for the
+Northumbrian compound forms, or diagnose its final outcome.
+Dahl’s differentiated-diphthong history remains a competitor;
+its starting point and the actual treatment of compound
+‘island’ require separate tests. No production verdict or
+chronology edge changes.
