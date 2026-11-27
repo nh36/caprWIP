@@ -898,3 +898,65 @@ edition and manuscript audit is needed for the attribution
 and reading of the individual ⟨heg/heig⟩ tokens. The
 published quantity claim is on record even if that audit
 ultimately weakens its empirical basis.
+
+## J2. What the palatal changes can actually explain
+
+Jones (19–21, 55–58, 149–154) distinguishes four
+outcomes of a postvocalic voiced palatal fricative. His
+analysis concerns the location of the second element in
+the rhyme and whether it preserves its own quality and
+consonantal character. Table 3.19 (153) distinguishes a
+peak capable of holding two vowel elements from a
+consonantal coda. Tables 3.20–21 use a velar example
+(*boga*) to illustrate the transfer from coda to peak;
+the model is then applied to both fricatives, not cited
+as direct evidence for ‘hay’.
+
+| Outcome | Distinguishing prediction |
+|---|---|
+| Retain [ʝ]: [eʝ] | A single vowel and a consonantal coda remain. Neither a vocalic offglide nor increased duration is implied. |
+| Vocalize [ʝ]: [eʝ] > [ei̯] | The second portion of the peak bears the palatal element’s own quality, and the original fricative no longer occupies the coda. Jones compares ‘maiden’ at 21, 56. This predicts a diphthong, not yet a long monophthong. |
+| Vocalize and assimilate: [eʝ] > [eː] | At 57 the second element loses its consonantal character **and** takes its quality from the first vowel. At 58 the resulting peak is internally durationally complex but uniform in quality. Jones’s statement allows simultaneous reinterpretation; it does not assert an attested intermediate [ei̯]. |
+| Break before retained [ʝ]: [eʝ] > [ei̯ʝ] | Palatal quality enters the peak but the fricative stays in the coda. Jones treats ‘ask’, ‘thane’, and the reported Lindisfarne ‘hay’ pair in this way. Retention of the fricative is the difference from simple vocalization; the letters alone do not prove it. |
+
+These are not interchangeable with direct contraction
+of two syllabic vowels, \*e.i > ē: that account has no
+consonant to vocalize. They are also not the same as
+literal loss followed by compensation, [eʝ] > [e] >
+[eː]; Jones (20–21) explicitly offers **substitution**
+instead of loss, making the old fricative the source of
+the second portion. A serial account through [ei̯]
+followed by monophthongization makes an additional
+intermediate prediction that the p. 57 analysis by
+itself does not require.
+
+For \*e.iD > ejD > ēD, the first arrow gains no direct
+support here. If its result is an approximant [j],
+Jones’s comparison supports the second arrow only by
+analogy: either establish an intervening strengthening
+to [ʝ], or show separately that an approximant can
+undergo the same reanalysis. If desyllabification
+directly yields [ei̯D], that instead tests the serial
+vocalic route and bypasses a consonantal stage. A
+research trace should therefore keep `*e*i` (syllabic
+hiatus), atomic `*ei` (complex peak), `*e*j`
+(approximant), and `*e*ʝ` (fricative) distinct at the
+input to the tested operation, even when spellings or
+final outputs converge.
+
+**Research verdict:** postvocalic reanalysis predicts
+that a consonantal trigger may become a nuclear
+offglide, supply a second interval of like quality, or
+survive after breaking. Compare fricative versus
+approximant, short versus long nuclei, and the same
+sequence before a consonant, at word edge, and before
+an independent vowel. Jones (154) proposes that
+vocalization is favoured by voicing but explicitly
+acknowledges voiceless examples and insufficient
+evidence. He does not demonstrate a categorical split
+between dental context and absolute edge. ‘Maiden’
+and ‘thane’ make that split unsafe to assume: nasal
+context can coexist with diphthongal spellings, and
+the actual dialect, stage, consonant and spellings
+must be checked before either becomes a counterexample
+to a more narrowly conditioned history.
