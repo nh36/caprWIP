@@ -223,3 +223,122 @@ neither an independent measurement of length nor a directly attested
 hiatus intermediate. ‘Couch’ is a serious independent **lexical**
 comparison to ‘hay’, conditional as evidence for one particular
 phonological mechanism or wider nasal conditioning.
+
+## C3: admitted forms, experimental outcomes and verdict
+
+Replay from the repository root with `bash
+Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --couch
+--stage-cache "$cache"` using the frozen cache described in [STRESS.md](STRESS.md).
+The [compressed receipt](couch-traces.json.gz) includes every stage input
+and output, separate raw parser and late-entry experiments, exact placements,
+and SHA-256 identities. The frozen source and prior model receipts are unchanged.
+
+**Admission.** `strawinu` and `stráwinu` both fail the two frozen
+entry relations. The same onset and stem succeed in `PGCellRoot`
+and `PGCellRoot PGCellStem`; `PGCellEnd` lacks a bare final `u`
+after this stem. A private diagnostic adding just that tail accepts
+both spellings with the expected segmentation. This is a coverage gap
+for an independently posited **late** ending, not a bad ⟨str⟩ cluster,
+an accent error, or evidence against the reconstruction. The assay
+enters late forms after the earlier *aw* and final bare-*a* decisions,
+but before brightening and umlaut. The separately tested earlier
+*strawinō* is a morphological projection, not a respelling fix.
+
+**Accusative and other obliques.** On late entry, *strawina*
+supplies the correct hiatus but the frozen tail reduction leaves
+*-a*: contraction yields *strēna*, not the attested whole form.
+Through full admission, plain *-a* is instead deleted in the early
+bare-*a* rule. The independent earlier ō-stem projection
+*strawinǭ* carries the accusative ending as *ǭ > ā > ǣ > æ > e*.
+A/B2 yield *streine* without an overlay, *streġne* with glide
+formation alone, and **strēne** with direct contraction, glide
+formation plus loss, or nuclear incorporation plus monophthongization.
+Canonical full admission instead yields *strīene* because its
+pre-umlaut *aw* route pre-empts the short *e.i* environment.
+Local replay after that decision gives identical results across the
+three frozen orders; this does not erase the full-entry difference.
+
+Earlier *strawinōz* and *strawinai* give convergent *-e* outputs
+in the successful A/B2 arms, but that is not direct confirmation of
+the case of 131:3 or of the historical process yielding genitive *-e*.
+The frozen *-ōz* implementation runs through long-*ā/ǣ*,
+whereas Hogg–Fulk §2.40 discuss historically expected *-a* and
+oblique levelling; the software convergence cannot decide between
+them. The dative plural output *strēnum* is not a match for the
+ambiguous Exeter ⟨streonum⟩. The Bede short-*eo*, short-tail
+retention probe gives *streowena*; a long-*ēo* and long-*ǣ* late
+probe syncopates to *strēowne*. That establishes only a compatible
+late phonological path: the T spelling independently establishes
+neither long *ēo* nor the exact remodelling. The long-suffix-*ī*
+probe retains distinct hiatus in this assay, and the geminate
+probe does not deliver the attested singleton oblique simply by
+changing the core rule.
+
+**High-vowel loss.** In the unobserved nominative, late entry
+*streinu* survives without resolution and gives *strēnu* if
+direct contraction follows HVD. Contraction before HVD makes
+the stem heavy and gives *strēn*. Early glide formation also
+allows the *jn* cluster to feed HVD even if glide loss follows
+it. Early nuclear incorporation feeds HVD in the assay through
+its atomic-*ei* representation; that executable classification
+is a modelling assumption, not direct evidence for its historical
+weight. The secure accusative has no final high vowel, so the
+successful accusative histories do not adjudicate nominative
+apocope or independently date the resolution.
+
+### Answers to the lexical brief
+
+1. **Secure attestations.** Four running-text Vespasian ⟨strene⟩
+   tokens, verified in Sweet, and manuscript Tanner ⟨streoƿne⟩;
+   Exeter ⟨streonum⟩ is lexically ambiguous. There is no verified
+   bare Vespasian token.
+2. **Cells.** Vespasian has secure accusative singular, another
+   likely accusative and one qualified genitive (dative or
+   appositional reinterpretation possible); Tanner has accusative
+   singular. Exeter is dative plural, whichever lemma it represents.
+3. **Gender.** Vespasian feminine singular is strongly supported by
+   English agreement, especially *minre*; it is not inferred from
+   Latin. Strong inflection is preferable there, not a proven
+   inherited stem class.
+4. **Best reconstruction.** A short-root, *w*-bearing derivative of
+   ‘spread out’ with stem *strawin-* is preferable. Build complete
+   strong feminine cells separately; *strawinu* is a reconstructed
+   nominative, not evidence for a bare attestation.
+5. **Suffix.** Defensible independently as a derivational type,
+   with concrete and labial-bearing comparisons. The precise
+   short-*i*, singleton-*n* combination is not demonstrated
+   by Wright's classification or a matching extra-English noun.
+6. **Root quantity.** Regular derivation from independently short
+   *straw-* favours a short first vowel. No secure observation or
+   exactly matching nominal cognate establishes the quantity of
+   the derived noun independently of the etymology.
+7. **Intermediate.** *streinu* with syllabic *e.i* is well
+   motivated **if** the Ringe–Taylor input and regular umlaut and
+   labial loss are accepted; it is not a manuscript form.
+8. **Lengthening.** A long vowel from hiatus resolution is a
+   good explanation under that analysis. The manuscript spelling,
+   and the conventional macron, do not independently establish
+   the resulting quantity or distinguish contraction from other paths.
+9. **Direct contraction.** Yes, before *n* in the conditional
+   A/B2 account. The earlier conditional accusative preserves the
+   ending and gives the target; the bare late *-a* replay does not.
+10. **Glide plus loss.** Yes, if loss or absorption of the new
+    coda before *n* is separately licensed. Unaccompanied
+    desyllabification predicts a written palatal in the assay.
+11. **Nuclear path.** Yes, given incorporation followed by an
+    independently supported environment for monophthongization.
+    Its endpoint agrees without establishing a historical atomic
+    diphthong or its weight.
+12. **Narrow rules.** A single stops-only or dental-obstruent-only
+    process cannot explain both the obstruent cases and this nasal
+    case under the preferred etymology without a second development.
+13. **Wider conditioning.** Conditional positive evidence for
+    including *n*; not evidence that all coronals, or all
+    consonants, behaved alike and not a disproof of independent
+    analogical alternatives.
+14. **Other families.** ‘Call’ and ‘strew’ independently illustrate
+    weak-*i* labial loss and obstruent contexts, not *e.i.n*.
+    ‘Pillow’ supports labial loss but has different vocalism and
+    final history. ‘Maidservant’, ‘ball’ and ‘wooden’ are valuable
+    post-labial controls, not further confirmed instances of
+    the same nasal hiatus-resolution environment.
