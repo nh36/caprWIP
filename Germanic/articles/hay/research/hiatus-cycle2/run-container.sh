@@ -13,6 +13,7 @@ case "${1:-}" in
     --couch) mode=couch; files+=(couch.py stress_repairs.py); shift ;;
     --panel) mode=panel; files+=(panel.py panel.tsv stress_repairs.py); shift ;;
     --matched) mode=matched; files+=(matched.py panel.py panel.tsv stress_repairs.py); shift ;;
+    --quantity) mode=quantity; files+=(quantity.py matched.py panel.py panel.tsv stress_repairs.py); shift ;;
 esac
 
 tmp=$(docker compose exec -T backend mktemp -d /tmp/capr-hay-cycle2.XXXXXXXX)

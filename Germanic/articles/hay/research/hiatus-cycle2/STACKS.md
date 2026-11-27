@@ -98,3 +98,57 @@ not the same. The standalone phone, boundary and origin controls
 and all panel derivations are in
 [`matched-traces.json.gz`](matched-traces.json.gz).
 Replay: `bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --matched --stage-cache "$cache"`.
+
+## T3: quantity, absorption and final-palatal retention
+
+The [quantity receipt](quantity-traces.json.gz) separates
+lengthening before and after gliding, lengthening as a
+consequence of palatal loss, direct contraction, and absorption
+after an independently long nucleus. In A, early gliding gives
+*heġ*. Prior lengthening plus immediate gliding gives *hēġ*;
+delaying the glide with the same prior lengthening instead
+gives *hē*, because ordinary HVD removes the still syllabic
+second vowel before the glide can form. Post-glide lengthening
+gives *hēġ* too, but also lengthens a supplied, already present
+short *ej*: it is not innocuous without an independently
+defined scope. Contraction produces *hē* directly, without
+that apocope firing; the internal trace distinguishes the
+two occurrences of the same spelling. Assimilation before a
+consonant is not an explanation for a final *hē*.
+
+The broad absorption probe after long nuclei leaves short
+*e.i* untouched and removes syllabic *i* without creating
+a palatal or lengthening the first vowel. ‘Sea’ and ‘law’
+already end in *sǣ* and *ǣ* in A; this is convergent evidence
+for an endpoint, not for the diagnostic rule or its placement.
+The early absorption arm yields *lēde* in the local ‘betray’
+stem and changes the ‘know’ and ‘crow’ traces; the latter
+retain unresolved differences of prefix, vocalism and
+ending. These are long-root comparisons, not corroboration
+of a short-root contraction law (Ringe–Taylor pp. 259–260,
+317–318; Campbell §§237, 406).
+
+Dahl’s literal loss rule distinguishes short monophthong
+plus *j* (retained) from long monophthong and either
+diphthong plus *j* (lost in the edge probes). No secure
+independently quantified short-diphthong lexeme was found in
+that environment. Late placement also removes the palatal of
+the qualified long-diphthong comparator ‘island’. Crucially,
+each tested placement exposed to the independently long
+*cǣġ* loses its inherited palatal; protected *cǣġe* remains.
+Simply moving the rule before experimental gliding therefore
+does not repair its independent counterexample. Doing so
+before the merger keeps secondary fricatives separate from
+inherited *j*; doing it after the merger does not create
+evidence for the historical spread of its target. Short
+*weġ* and *dæġ* are retained as secondary-palatal controls,
+not independent attestations of short inherited final *j*.
+See Hogg (1979: 105), Ringe–Taylor (2014: 235, 286), and
+the [Dahl–Jones source checks](../hiatus/DAHL_JONES.md).
+
+The tests sustain **both** regular short *hej* and conditional
+long *hēj* after independent lengthening; they do not
+give that lengthening its historical motivation. A general
+long-vowel final-palatal deletion would require better evidence
+than an endpoint fit for ‘hay’. Replay:
+`bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --quantity --stage-cache "$cache"`.
