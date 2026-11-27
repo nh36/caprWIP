@@ -200,10 +200,9 @@ def compare_arms(model, order, paths, batches, selected, extra=None):
     return results
 
 
-def district_trials(orders, paths, inputs):
-    rows = dsv(HERE / "district.tsv")
+def comparison_panel(orders, paths, inputs, panel, arms):
+    rows = dsv(panel)
     extra = {"Dahl-final": (("OEJLossAfterHeavy", "DaFinalJ"),)}
-    arms = ("H0", "H1-early", "H2-early", "H5-glide-first", "H6-final-only", *extra)
     results = {}
     for model, order in orders.items():
         batches = {}
@@ -213,7 +212,7 @@ def district_trials(orders, paths, inputs):
             batches.setdefault(start, {})[row["id"]] = (
                 inputs[form[1:]] if form.startswith("@") else form
             )
-        results[model] = compare_arms(model, order, paths, batches, arms, extra)
+        results[model] = compare_arms(model, order, paths, batches, (*arms, *extra), extra)
     return results
 
 
@@ -303,7 +302,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("snapshot", type=Path)
     parser.add_argument("mode", choices=("baseline", "local", "synthetic", "historical", "corpus",
-                                        "palatal", "district", "compound"),
+                                        "palatal", "district", "compound", "families"),
                         nargs="?", default="baseline")
     parser.add_argument("--stage-cache", type=Path)
     args = parser.parse_args()
@@ -344,17 +343,22 @@ def main():
                                     name: frozen.apply_stage(bins[f"component:{name}"], probes)
                                     for name in overlay.RULES
                                 })
-                elif args.mode == "district":
+                elif args.mode in ("district", "families"):
+                    panel = HERE / f"{args.mode}.tsv"
+                    arms = ("H0", "H1-early", "H2-early")
+                    if args.mode == "district":
+                        arms += ("H5-glide-first", "H6-final-only")
                     with tempfile.TemporaryDirectory(prefix="hay-palatal-") as palatal_dir:
                         palatal_bins = compile_candidates(source, args.stage_cache,
                                                           Path(palatal_dir), palatal)
                         data.update(inventory_sha256=frozen.sha(inventory),
-                                    panel_sha256=frozen.sha(HERE / "district.tsv"),
+                                    panel_sha256=frozen.sha(panel),
                                     palatal_sha256=frozen.sha(HERE / "palatal.py"),
                                     palatal_component_sha256={
                                         key: frozen.sha(path) for key, path in palatal_bins.items()
                                     },
-                                    models=district_trials(orders, paths | bins | palatal_bins, inputs))
+                                    models=comparison_panel(orders, paths | bins | palatal_bins,
+                                                            inputs, panel, arms))
                 elif args.mode == "synthetic":
                     data.update(synthetic_sha256=frozen.sha(HERE / "synthetic.tsv"),
                                 **synthetic_trials(orders["A"], paths | bins))

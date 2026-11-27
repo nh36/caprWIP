@@ -1,0 +1,20 @@
+id	start	form	role
+glee-dir	full	@glee-dir	existing inherited direct input
+glee-gen	full	glíwjas	Ringe and Taylor 53; inherited protected input
+hue-dir	full	xíwją	Ringe and Taylor 250; inherited neuter direct input
+hue-gen	full	xíwjas	reconstructed protected cell; no claim exact genitive is cited by source
+new-masc	full	níwjaz	Ringe and Taylor 53; Dahl 106; inherited masculine
+new-neut	full	níwją	Dahl 106; counterfactual inherited neuter
+new-gen	full	níwjas	Dahl 106; inherited protected hypothesis
+island-dir	full	@island-dir	existing strong long-nucleus control
+island-gen	full	áwjōz	reconstructed protected ō-stem cell
+key-hogg-dat	full	káijai	independent protected retention control from D2
+key-edge	OEWLossBeforeI	*k*ǣ*j	independent inherited final-palatal retention control from D2
+glee-hiatus	OEWLossBeforeI	*g*l*í*w*i	Luick/Girvan identical-vowel history
+hue-hiatus	OEWLossBeforeI	*ç*í*w*i	matched identical-vowel history
+new-first-edge	OEWLossBeforeI	*n*í*w*i	isolate combining form as member suffix only; not a full compound
+glee-palat	OEWLossBeforeI	*g*l*ī*j	Dahl restored or retained palatal, with high nucleus
+hue-palat	OEWLossBeforeI	*ç*ī*j	Dahl's unattested homophony candidate, with high nucleus
+new-palat	OEWLossBeforeI	*n*ī*j	Dahl's first-member segmental prediction isolated from compound domain
+island-dahl	OEWLossBeforeI	*ē*j	Dahl's hypothesized mid-vowel branch; not a full place-name
+island-hiatus	OEWLossBeforeI	*e*w*i	alternative ungeminated history discussed by Dahl

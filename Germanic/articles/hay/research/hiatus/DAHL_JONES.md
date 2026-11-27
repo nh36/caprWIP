@@ -548,3 +548,166 @@ earlier diphthongal representation and a word-edge loss
 not yet independently established. The model contrast
 clarifies the boundary prediction; the one written compound
 cannot choose it. No registry edge or article asset changes.
+
+## D6. The four lexical families
+
+The relevant comparison is not merely whether a word ends
+in written ⟨g⟩. The rival accounts predict different
+distribution across cells, inherited labial and palatal
+representations, and compound positions. The following
+checks use Dahl’s original pp. 99–107 (PDF 121–129), Sweet’s
+editions and the later reconstruction in Ringe and Taylor
+(2014: 53, 246, 250, 259). The held text corpora and
+glossary loci give a bounded distribution check, not an
+exhaustive independently dialect-tagged DOE census.
+
+### ‘Glee’
+
+Luick and Girvan, as presented by Dahl (96, 103), obtain
+the direct cell from \*gliwi > gli.i > glī. Written *glīg*
+then starts as an inverse spelling for the long vowel and
+supplies the graphic or reinterpreted palatal to inflected
+forms; it is not the first product of hiatus contraction.
+Dahl explicitly accepts that the assimilatory development
+is phonetically credible. His objections are the apparent
+restriction to West Saxon, and his own reconstruction of
+an undissolved diphthong at ending loss, which leaves no
+syllabic *gliwi* input at that date. On his account the
+mutated direct branch loses final *j* and can restore it
+from the protected forms; the unmutated branch yields
+*glīo(w)*. The labial branch of the obliques involves
+assimilation to the unmutated diphthong’s second element;
+the mutated branch preserves the intervocalic palatal. He
+treats *glīw* as a compromise between the high-vowel palatal
+and *glēow*, not straightforward evidence that the shortest
+spelling is oldest. A first-member *glīg-* instead
+potentially preserves its consonant directly (D5).
+
+The attested split is real in the checked material: Sweet’s
+*Pastoral Care* p. 231 (PDF 243, Hatton; image checked)
+has *gligmonna*; the Cotton facing-page text also preserves
+it. Dahl’s protected *glige* at 183/25 is not a bare
+simplex. The early Mercian *gliu*, *glio*, and protected
+*gliuuæ/gliowe* (Épinal 398, 550; Corpus 825, 1112)
+remain the labial comparison in Ringe and Taylor 250
+(PDF 265, image checked). The latter do not assign an
+unequivocal dialect to poetic *glīw*. There is no secure
+counterexample to Dahl’s West Saxon concentration in this
+comparison, but overlapping copies, poetic forms, and the
+uncertainty of bare ⟨i⟩ prevent turning it into an exclusive
+historical sound-law distribution. Campbell §§237.1b,
+411 treats *glīman* and the possible analogical creation
+of *glīg-* cautiously. The hypotheses would be better
+discriminated by an early protected palatal predating
+levelling, or secure unremodelled regional direct cells.
+
+### ‘Hue’
+
+Dahl’s p. 105 (PDF 127, image checked) contrasts Mercian
+*hio(w)/heow* with West Saxon *hiew/hiw* and inflected
+*hiwes/hiewes*, *hiwe/hiewe*. He expects but cannot find
+a West Saxon *hī(e)g* in his sources. His proposed avoidance
+of homophony with ‘hay’ presupposes the lost form and the
+sound identity he needs to explain; no attested confusion,
+independent replacement trajectory, or dated transition
+establishes avoidance. Ringe and Taylor (250) instead
+propose a fronted labial glide in the protected history,
+yielding *hīew > hīw*, and a distinct w-less direct
+development in West Saxon, which they reconstruct rather
+than cite as the ordinary attested simplex. The attested
+labial stem is consistent with the separate development and
+does not require a detour through an erstwhile homophone.
+‘Hue’ is therefore a negative check on extrapolating the
+‘glee’ palatal to every *iwj* stem, not independent evidence
+for either ancestry of ‘hay’.
+
+### ‘New’
+
+Dahl (105–107, PDF 127–129, image checked) assigns the
+masculine nominative the oral ending *-az*, already lost
+before English differentiation, with an inherited *niwi*
+input. His neuter *-ą* survives long enough for the
+English diphthong to resist dissolution. He then requires
+masculine labial material to oust the expected neuter
+*nī(e)g/nīow* and lets oblique labial vocalism remodel
+*niwe* to *niowe*. This is not a direct observation of
+an oral/nasal contrast: Vespasian *niowe* is reported in
+both masculine nominative (80/10) and neuter accusative
+(68/32). Dahl’s other analysis distinguishes a simplex
+*ija*-stem from a compound *ja*-stem, prompted by the
+lack of the inflected palatal forms the single-stem
+analysis predicts. The *nīg-/nī-* competition, with
+*nicealtan* in Dahl and *nīcenned*, *nīcumen* in Ringe
+and Taylor (259), discriminates the **distribution**
+of composition material from the simplex labial stem.
+It does not alone choose retention plus contraction over
+direct *iwi > i.i > ī*, nor fix the relative chronology
+of oral and nasal loss. The analogue with ‘glee’ is partly
+morphological and the quantity diagnostics are not matched.
+
+### ‘Island’
+
+Dahl’s HE series includes frequent *-eu* (e.g.
+*Laestingaeu*, *Heruteu*, *Peartaneu*, *Seleseu*), *-ei*
+(e.g. *Cerotaesei*, *Herutei*), possible *-ea*, a small
+number of *-eig/-ig* readings including alterations,
+and uncertain oblique *-e/-ei/-æi/-awi* (99–102,
+PDF 121–124). Sweet’s text of Bede compares *Heruteu*
+with *Heruteig* in the passage glossing the name *insula
+cervi*, and elsewhere *Heruteu* with *Herutei*. This
+fixes the lexical family there; the forms are neither three
+independently attested quantities nor three simplex cells.
+The early West Saxon forms *Sceapige*, *Turecesiege*,
+*iegbuendum*, and *igland*, and the later charter
+*Ceortesege* (Ct 45/22, /30), preserve a palatal-bearing
+spelling in different positions and cells. *Sel(es)egi*
+before Latin *ecclesiae* admits Latin genitival spelling,
+and Latin case frames or inferred vernacular locatives
+must not be treated as secure direct-cell evidence.
+
+Dahl’s regular diphthongal branch yields a long nucleus
+and eventual independent or analogically supported
+palatal; he explains the Northumbrian compound *-eu*
+instead from loss of the palatal element before retained
+final *u* under weak stress. His alternatives for *-ei*
+include a spelling of a palatal-bearing form and a
+locative development; neither is licensed automatically
+by the letters. Ringe and Taylor’s separately reconstructed
+geminate-type branch (246) also yields *īeġ/ēġ* after
+mutation and high-vowel loss. This is a useful **conditional
+long-nucleus control** alongside ‘key’, not evidence for
+an independently measured short or long direct simplex
+in the HE. Where an edition shows a correction, that
+correction is evidence for a written alternant; without
+independently dated reading layers it cannot date a sound
+change.
+
+### Frozen assay
+
+The [panel](families.tsv) and [receipt](families.json)
+contain 228 traces: 19 inputs × four arms × three cascades.
+Unset historical compound encodings stay as suffix probes;
+no full simplex derivation is counted as a run of a named
+compound. The existing *cǣġ/cǣġe* control remains in the
+panel, unchanged in H0.
+
+| Family | First relevant distinction and outcome |
+|---|---|
+| ‘Glee’ and ‘hue’ | A sends inherited direct forms through *iwi > i.i* to `glī/hī` while the protected cells give `glīewes/hīewes`. Canonical and B2 give `glīew/hīew` in the direct forms and retain the same protected outputs. An inherited direct input that runs to `hī` therefore does not account for the attested preferred w-forms without a further morphological history. |
+| ‘New’ | B2 distinguishes oral masculine `nī` from nasal neuter `nīew`; A gives `nī` for both and canonical `nīew` for both. The protected `nīewes` is a comparison output, not proof of the recorded grammatical ending. No H0 output here independently derives the attested leveled simplex `niwe`. The isolated combining-form input gives `nī` in A/B2 (canonical `nii`), not a direct derivation of the compound. |
+| ‘Island’ | H0 gives `īeġ` after HVD in all three, and `īeġe` in the protected probe. Late Dahl loss takes `īeġ` to `īe` while leaving `īeġe`. The normalized mid branch `*ēj` separately gives `ē`; the ungeminated `*ewi` suffix instead lets the early contraction and early gliding arms diverge as `ē` and `eġ`. None maps those alternatives onto individual name forms by spelling alone. |
+| Inherited palatal controls | `DaFinalJ` strips the palatal from each synthetic long absolute-final `*īj` and from `*kǣj`. Protected ‘key’ still gives `cǣġe`. This is a real deletion prediction, not corroboration of actual loss or restoration. D5 supplies the separate compound-boundary counterfactual. |
+
+```sh
+bash Germanic/articles/hay/research/hiatus/run-container.sh families --stage-cache "$cache" > families.json
+```
+
+**Research verdict:** these families expose the non-equivalence
+of inherited hiatus, protected-stem transfer and compound
+retention, but no family supplies all the matched cells
+needed to decide ‘hay’ by analogy alone. ‘Glee’ and ‘new’
+positively show different reflex distributions by stem or
+position; ‘hue’ does not independently show homophony
+avoidance; ‘island’ supplies qualified long-nucleus
+comparisons, not measured quantity. No registry verdict
+or production chronology changes.
