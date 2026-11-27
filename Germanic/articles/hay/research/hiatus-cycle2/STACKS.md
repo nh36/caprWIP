@@ -152,3 +152,114 @@ give that lengthening its historical motivation. A general
 long-vowel final-palatal deletion would require better evidence
 than an endpoint fit for ‘hay’. Replay:
 `bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --quantity --stage-cache "$cache"`.
+
+## T4: back-vowel nuclei and hiatus from *h*-loss
+
+Hogg (1992 §3.19; 2011 reprint pp. 58–59) explicitly
+analyses early WGmc incorporation as matching a pre-existing
+diphthong template, then restricted to short vowel + *u*.
+Loss of *w* between the vowels is one source, not a requisite
+feature of the subsequent operation; final *w* vocalization
+and independent *u*-raising supply other sources. Campbell
+§120.3 likewise distinguishes intervocalic loss in the plural
+from final vocalization in the singular. Brunner §§128.1,
+129.1, 134 records both the *clēa : clawe* alternation and
+the *treo, cneo* alternations, while Luick §126 notes early
+and later Anglian written *eu*, including Corpus *treu*.
+These are not arguments that an onset followed the nucleus.
+
+- **‘Claw’.** Hogg’s nominative has *klawō > klawu > kla.u
+  > klau > klæu > clēa*. Ringe–Taylor (pp. 150, 173)
+  give already nuclear PWGmc *klau*, with *klawa* beside it,
+  yielding *clēa* and *clawe*. Their reconstruction does not
+  require a syllabic intermediate lasting into Old English.
+  Campbell §598 also distinguishes the remodelled *clawu*
+  and documents surviving *clēa* plural forms. Brunner
+  reconstructs the oblique with retained *w*. The experimental
+  early *w*-loss plus incorporation supplies *clēa* from the
+  PNWGmc input without claiming a correct entire paradigm:
+  the protected probe keeps *w* but the A/B2 frozen proxy
+  renders *clēawa*, not *clawe*.
+- **‘Knees’ and ‘trees’.** PGmc plural *knewō, trewō*
+  give early raised *knewu, trewu*, with *w*-loss and
+  incorporation giving PWGmc *kneu, treu* (Ringe–Taylor
+  pp. 61, 174; Brunner §129.1). Endingless singulars can
+  reach the same nuclei by final *w*-vocalization after
+  ending loss, not by intervocalic *w*-loss. Obliques and
+  Northumbrian *cnewa, trewum* keep labial evidence; later
+  *cnēow/trēow* involve levelling. The short syllabic
+  inputs yield frozen A/B2 *cneowu/treowu*; incorporation
+  before frozen diphthong realization gives *cnēo/trēo*.
+  HVD does not by itself convert a retained labial with a
+  final syllable into this nucleus. Given an already
+  nuclear *eu*, realization alone yields the same endpoint.
+- **Independent predictions.** The same operation also yields
+  *þrēa* ‘threat’ and neuter plural *fēa* ‘few’ from their
+  appropriate *-awu* states (Hogg §3.19; Ringe–Taylor p. 173).
+  Direct conversion to consonantal *w* yields different outputs.
+  Waiting until the general OE contraction anchor loses some
+  inputs to intervening rules and cannot give this uniform
+  result. The private unaccented *aeu > ēa* bridge fixes a
+  transient-symbol admission gap at `OEEwLongDiphthong`,
+  not a new phonological law or a lexical exception.
+
+The independent back-vowel evidence therefore motivates
+incorporation as a historical **mechanism**, with its own
+early, template-sensitive domain. The later *e.i* need not
+have had an equivalent template or subsequently merged in
+every environment. Ringe–Taylor’s chronology separates
+PWGmc *w*-loss before *u* from OE *w*-loss before weak *i*;
+only the later *w*-loss is ordered after i-mutation and
+before high-vowel syncope. This is not a single timeless
+gliding or merger rule.
+
+**Later *h*-loss.** Ringe–Taylor §§6.7.1, 6.9.3
+(pp. 258–261, 314–318) independently place intervocalic
+*h*-loss after ordinary syncope and Anglian monophthongization.
+For ‘see’, they explicitly derive PGmc *sehʷaną* >
+PWGmc *sehwan* > *seohan* > *sēon*. Thus the earlier
+cluster is not a typo. The frozen full input retains
+*xw* and gives *seohwan*; private intervocalic cluster
+reduction gives *seoan*, not completed contraction.
+Realizing the broken front nucleus with the following
+unstressed vowel after *h*-loss gives *sēon*. The same
+contraction also serves local *tēo* ‘draw’ subjunctive,
+*hēam* ‘high’ dative and *ēa* ‘river’ nominative; it
+does not supply the separately required Anglian smoothing
+of ‘see’. The local smoothed *sehan* comparison gives
+*sēan* with front + back contraction. ‘Draw’ infinitive
+already has a successful *tēon* route; it is not an
+instance of short *e.i*. Likewise the shoe plural
+projection with a broken long nucleus gives *sċēos*,
+whereas the frozen earlier trial is not a successful full
+inflectional prediction.
+
+For Anglian ‘strike’, an unlowered *slehiþ* can reach
+*slēþ* via any matched dental-fricative mechanism after
+*h*-loss. If *i* were lowered before *h*-loss, the cascade
+would give the same *slēþ* by existing *e.e* contraction.
+Ringe–Taylor specifically reconstruct the unlowered form,
+and no separate general lowering in this exact environment
+was established here. An *i.i* comparison after *h*-loss
+contracts in the frozen rules, independently of A/B2’s
+earlier final *i.i* operation. These separate pathways
+are evidence against using one position as the date of
+all contraction. For ‘high’, long *hēhir-* is compatible
+with simple absorption after *h*-loss, unlike ‘strike’.
+
+For **‘river’ obliques**, Ringe–Taylor p. 318 and
+Campbell §§254–255 leave inherited root-noun *eahi*
+(*iehi/ehi* regionally) versus formation to contracted
+*ēa* open. The former is a genuine conditional final
+short *e.i > ē* counterexample to general final gliding;
+neither original oblique quantity nor inherited origin
+is independently secure. Both the short direct-collapse
+probe and long absorption probe give written *ē*. The
+analogy alternative requires a morphological account,
+not another hiatus rule. A single later window for some
+old *w*-hiatus and new *h*-hiatus remains plausible;
+early *streide* and the metrical *strēd* are discriminators,
+not automatic proof of a universal intermediate.
+
+Replay the [source-specific receipts](sources-traces.json.gz)
+with `bash Germanic/articles/hay/research/hiatus-cycle2/run-container.sh --sources --stage-cache "$cache"`.
