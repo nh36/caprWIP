@@ -14,6 +14,7 @@ import unicodedata
 from unittest.mock import patch
 
 import candidates
+import palatal
 
 BASE = "113101ac5f169b589e1a9647cdf24d32cdd4d919"
 ROOT = Path(sys.argv[1]).resolve()
@@ -102,14 +103,14 @@ def cached_stages(directory, source, definitions, orders):
     return paths
 
 
-def compile_candidates(source, cache, directory):
+def compile_candidates(source, cache, directory, overlay=candidates):
     image = cache / "defined.bin"
     if not frozen.compiler.definition_image_source(
             source.read_text(encoding="utf-8"), directory, image).startswith("load defined "):
         raise RuntimeError("Candidate compilation requires the matching frozen definition image")
-    recipe = {"definitions": candidates.definitions(), "replace": {}, "insert_rule": None,
+    recipe = {"definitions": overlay.definitions(), "replace": {}, "insert_rule": None,
               "insert_after": None, "component_checks": [
-                  {"component": name} for name in candidates.RULES
+                  {"component": name} for name in overlay.RULES
               ]}
     with patch.dict(os.environ, {"CAPR_FOMA_DEFINITION_IMAGE": str(image)}):
         return frozen.compiler.compile_isolated(
@@ -206,6 +207,31 @@ def historical_trials(orders, paths, inputs):
             for model, order in orders.items()}
 
 
+def palatal_trials(orders, paths, inputs):
+    rows = dsv(HERE / "palatal.tsv")
+    results = {}
+    for model, order in orders.items():
+        arms = {}
+        for arm, anchor in {"H0": None, **palatal.POSITIONS}.items():
+            records = {}
+            for entry in dict.fromkeys(row["start"] for row in rows):
+                start = order[0] if entry == "full" else entry
+                batch = {row["id"]: inputs[row["form"][1:]] if row["form"].startswith("@")
+                         else row["form"] for row in rows if row["start"] == entry}
+                suffix = order[order.index(start):]
+                if anchor in suffix:
+                    suffix = overlay_order(suffix, ((anchor, "DaFinalJ"),))
+                records.update(evaluate(suffix, paths, batch, {
+                    "DaFinalJ", "OEIUmlaut", "OEWLossBeforeI", "OEHighVowelApocope",
+                    "OEJLossAfterHeavy", "OEJStrengtheningAfterFrontDiphthong",
+                    "OEIntervocalicJVocalization",
+                    "OEPalatalFricativeMerger", "OldEnglishOrthography",
+                }))
+            arms[arm] = records
+        results[model] = arms
+    return results
+
+
 CORPUS_ARMS = (
     "H0", "H1-acute", "H1-early", "H1-late", "H2-early", "H2-late",
     "H3-stop-retain", "H3-dental_stop-retain", "H3-dental_obstruent-glide",
@@ -258,7 +284,8 @@ def corpus_trials(orders, paths, archive, capture):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("snapshot", type=Path)
-    parser.add_argument("mode", choices=("baseline", "local", "synthetic", "historical", "corpus"),
+    parser.add_argument("mode", choices=("baseline", "local", "synthetic", "historical", "corpus",
+                                        "palatal"),
                         nargs="?", default="baseline")
     parser.add_argument("--stage-cache", type=Path)
     args = parser.parse_args()
@@ -287,8 +314,9 @@ def main():
                         models=local_diagnostics(orders, paths))
         else:
             with tempfile.TemporaryDirectory(prefix="hay-candidates-") as tmp:
-                bins = compile_candidates(source, args.stage_cache, Path(tmp))
-                data.update(candidates_sha256=frozen.sha(HERE / "candidates.py"),
+                overlay = palatal if args.mode == "palatal" else candidates
+                bins = compile_candidates(source, args.stage_cache, Path(tmp), overlay)
+                data.update(candidates_sha256=frozen.sha(HERE / f"{overlay.__name__}.py"),
                             foma=subprocess.check_output(["foma", "-v"], text=True).strip(),
                             component_sha256={key: frozen.sha(path) for key, path in bins.items()})
                 if args.mode == "synthetic":
@@ -298,13 +326,18 @@ def main():
                     data.update(inventory_sha256=frozen.sha(inventory),
                                 local_sha256=frozen.sha(HERE / "local.tsv"),
                                 models=historical_trials(orders, paths | bins, inputs))
-                else:
+                elif args.mode == "corpus":
                     _, predictions = synthetic_components(paths | bins)
                     data.update(archived_sha256=frozen.sha(frozen.FROZEN),
                                 active_capture_sha256=frozen.sha(capture_path),
                                 synthetic_sha256=frozen.sha(HERE / "synthetic.tsv"),
                                 synthetic_component_outputs=predictions,
                                 models=corpus_trials(orders, paths | bins, archive, capture))
+                else:
+                    data.update(inventory_sha256=frozen.sha(inventory),
+                                panel_sha256=frozen.sha(HERE / "palatal.tsv"),
+                                placements=palatal.POSITIONS,
+                                models=palatal_trials(orders, paths | bins, inputs))
         print(json.dumps(data, ensure_ascii=False))
         return
     anchors = {"OEWLossBeforeI", "SC047FinalIi", "OEHighVowelApocope",

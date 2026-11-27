@@ -1,0 +1,26 @@
+id	start	form	role	source
+hay-dir	full	@hay-dir	disputed target, not a control	historical.tsv
+hay-gen	full	@hay-gen	protected prediction	historical.tsv
+island-dir	full	@island-dir	conditional inherited j after a long diphthong	historical.tsv
+glee-dir	full	@glee-dir	disputed historical j versus syllabic i	historical.tsv
+way-dir	full	@way-dir	secondary palatal after a short vowel	historical.tsv
+day-dir	full	@day-dir	secondary palatal after a short vowel	historical.tsv
+key-hogg-dat	full	káijai	inherited palatal, long protected dative	Hogg 1979: 105; Campbell §439
+key-rt-dir	full	kāju	different defensible source input, northern WGmc not PGmc	Ringe and Taylor 2014: 235, 286
+strew-inf	full	stráwjaną	inherited palatal in protected verbal comparison	Brunner §129 n. 2; Luick §98
+cow-dat	full	kūi	long vowel plus syllabic i; not inherited final consonantal j	Ringe and Taylor 2014: 318; frozen corpus row 1980
+free-masc	full	fríjaz	inherited palatal, competing contraction and glide histories	Campbell §§238.1, 410, 648
+key-unmutated	OEIUmlaut	*k*ā*j	isolate the hypothesis that deletion could bleed mutation	Hogg 1979: 105 (long unmutated stem; edge is a probe)
+key-long	OEWLossBeforeI	*k*ǣ*j	inherited j, exposed long nucleus; not a new token	Hogg 1979: 105
+key-protected	OEWLossBeforeI	*k*ǣ*j*æ	inherited j, corresponding protected input	Hogg 1979: 105
+long-high-tail	OEHighVowelApocope	*k*ǣ*j*u	isolate exposure of inherited j by HVD from the full key input	Ringe and Taylor 2014: 286 (mutated key stem)
+short-edge	OEWLossBeforeI	*t*e*j	quantity negative; synthetic consonantal j	Dahl p. 97 test
+long-edge	OEWLossBeforeI	*t*ḗ*j	absolute-final long mid nucleus plus inherited-type j	Dahl p. 97 test
+short-diph-edge	OEWLossBeforeI	*t*ea*j	short diphthong; no secure independent attested input asserted	Dahl p. 97 test
+long-diph-edge	OEWLossBeforeI	*t*īe*j	long diphthong; controls identity of frozen rule	Dahl p. 97 test
+long-diph-vowel	OEWLossBeforeI	*t*īe*j*æ	protected context; tests strengthening	Dahl p. 97 test
+long-diph-consonant	OEWLossBeforeI	*t*īe*j*n	ordinary internal preconsonantal position	Dahl p. 97 test
+heavy-c-j	OEWLossBeforeI	*t*ḗ*n*j	positive control for heavy-context j loss	frozen OEJLossAfterHeavy
+long-secondary	OEWLossBeforeI	*t*ē*ʝ	secondary palatal; isolates timing of merger	Hogg §7.15 test
+long-syllabic	OEWLossBeforeI	*t*ḗ*i	two adjacent vowels; never a direct target of the consonant rule	Dahl p. 97 test
+short-hiatus	OEWLossBeforeI	*t*e*i	A-type short hiatus; ordinary negative	Dahl p. 97 test
