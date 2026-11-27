@@ -1263,3 +1263,67 @@ one, and no prehistoric \*he.i derivation. His long
 reference forms document a received reconstruction,
 while the later spellings cannot distinguish it from
 the short history once the contrast is neutralized.
+
+## J8. What syllabicity shifting does not establish
+
+Jones 68–73, §2.4.5, starts with a **single complex
+nucleus**. In the proposed Middle Kentish interpretation
+of *hyald/hyeald/hieald* (Table 2.36), peak prominence
+shifts to its second component, and the original first
+component becomes a prevocalic glide. His Old Icelandic
+comparison (70–71, Table 2.37, ‘sea’ among the examples)
+likewise concerns an original first element losing
+syllabicity and forming or joining an onset. The historical
+notation [j] used for a glide in this discussion should
+not be translated as the fricative in §§2.3.6 and 3.4.2.
+At 71–73 Jones explicitly doubts a blanket interpretation
+of Kentish ⟨ie/ye⟩ in the *eo* series: the letter following
+the supposed glide is often not ⟨o⟩, some examples lack
+an ancestral diphthong, and both monophthongal spelling
+and onset insertion are alternatives. Onset insertion
+adds a segment; shifting makes an existing vocalic
+element less syllabic.
+
+The proposed ‘hay’ input \*he.i has **two syllabic
+peaks**, the second unstressed. An offglide resolution
+makes the second element part of the preceding nucleus,
+*hei̯*, leaving no separate coda consonant. A consonantal
+resolution instead gives *hej* with a newly formed coda;
+if a vowel follows at another stage, that consonant
+could onset the next syllable. Neither mechanism is
+the same as an onset produced by shifting the peak
+rightward in an already diphthongal nucleus. Both preserve
+the palatal quality of *i* without creating a stop or
+fricative directly. A fricative realization requires separate
+evidence or a separately modelled development.
+
+[Mosionek and Zembrzuski (2019: 5–23, §§2–6)](https://doi.org/10.7311/0860-5734.28.2.01)
+distinguish diphthongization, gliding, glide insertion,
+and contraction, and explicitly consider the allowed
+diphthong templates and weight. Their *nerian/lōcian*
+comparison has a following vowel and supplies an
+onset diagnostic, not a match for a new coda. The
+case of *feohes* attributed to Opalińska involves
+*h*-loss and a separate length/absorption history;
+it does not establish contraction for short post-*w*-loss
+*e.i*. The Opalińska dissertation (2002: 170–187,
+207), 2004 article (235–252), and 2006 chapter
+(111–132) remain indirect here. The located 2004
+record and Kobayashi’s discussion of its *h*-loss
+examples do not substitute for checking the author's
+full text; see the previous [source assessment](ADJUDICATION.md).
+
+**Research verdict:** the sources motivate a
+testable change of syllabicity, not its occurrence
+at a specific historical edge. At the same mid/high
+hiatus input, compare retention, a complex nucleus
+and coda formation at absolute edge, before a
+consonant and before an independently syllabic
+vowel; distinguish length and stress without
+pooling phonotactically different contexts. A result
+requiring a consonant must fail on an otherwise
+identical vocalic offglide, and an onset-driven
+analysis must not be credited with explaining a
+coda by the same evidence. Neither Jones’s comparisons
+nor the modern analyses demonstrate a division
+between final gliding and pre-dental contraction.
