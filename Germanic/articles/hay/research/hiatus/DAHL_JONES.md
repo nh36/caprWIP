@@ -787,3 +787,45 @@ many-to-one. **Research verdict:** treat Dahl’s proposal
 as a distinct, testable alternative, not a renaming of
 B2 or a demonstrated replacement for ordinary gemination.
 No production chronology is inferred from this assay.
+
+## D8. Dahl adjudication
+
+| Question | Historical assessment |
+|---|---|
+| 1. Independent grounds to reject English *hawi/hewi*? | Dahl offers a coherent rival: retain nuclear *au*, differentiate it before nasal apocope, then expose a postnuclear palatal. His chronology is the premise that excludes syllabic *i* in the English direct form, not an observable segment in an English witness. The later written reflexes do not independently establish that ordering, and OHG *hewi* establishes only a comparative possibility, not the English input. |
+| 2. What changes with regular *w*-loss? | The ‘prepare’ alternation and *pyle* (D3) independently support loss before fully unstressed high front vowels. Given *hewi*, *he.i* can therefore arise without a special change for ‘hay’. The law neither establishes *hewi* nor tells us how exposed short unlike hiatus resolved. |
+| 3. Is absolute-final palatal loss defensible? | As a conditional reconstruction, yes: the loss and later restoration distinguish exposed and protected cells and could preserve written variation. As an independently established sound law with Dahl’s broad quantity conditioning, no: *cǣġ* retains an inherited palatal after a long nucleus. Supposing restoration there too is possible, but is another historical claim requiring evidence. CAPR’s postconsonantal heavy-context deletion is not the same operation. |
+| 4. Does the quantitative condition support regular short /hej/? | It makes survival after a short vowel **compatible** with the proposed restriction, once glide formation is independently assumed. It does not positively attest such survival: D2 found no secure independent short monophthong plus inherited final palatal in its comparison panel, and *hei/heg* cannot establish vowel duration or the syllabicity of the earlier sequence. |
+| 5. Does ‘district’ discriminate? | It exposes a hidden premise: Dahl needs weak-stress dissimilation to remove the palatal from protected forms and deprive the exposed stem of a donor. The attestation is largely compound, often embedded in Latin, and partly ambiguous with ‘island’. Neither that dissimilation nor unremodelled direct-simplex quantity is established. Initial palatal conditioning also differentiates the frozen ‘district’ and ‘hay’ paths before their comparable post-labial hiatus. The family challenges indiscriminate analogy but does not choose the ‘hay’ history. |
+| 6. Can simplex versus compound explain *hei weg*? | Yes, conditionally: first-member *j* can be retained if deletion is truly restricted to absolute word edge. The Kentish compound has no matched unremodelled simplex in the same witness, and ⟨ei⟩ does not identify a short nucleus, long nucleus, or retained consonant. This explains how the form could coexist with Dahl’s loss; it does not demonstrate either the loss or its domain in Kentish. |
+| 7. What weaknesses does the lexical comparison expose? | The frozen cascades distinguish some direct and protected inputs, but they do not generate the full attested cell and compound distributions: ‘new’ needs a separate account of the labial simplex and palatal or contracted composition forms, ‘hue’ a reason for the predominance of labial forms, and ‘glee’ independently justified stem histories. ‘Island’ illustrates how quantitative and morphological inference can outrun mixed written evidence. An output that fits a preferred reflex does not supply these missing histories. |
+| 8. Is the continental theory a separate question? | Yes. A/B2 compare paths inside the frozen English investigation; neither pits a surviving nuclear labial trigger against ordinary consonantal gemination across continental stem cells. OHG supplies genuinely independent reflexes, but their chronology and morphology do not yet choose the mechanism. D7 spells out the contrasting intermediate predictions rather than scoring identical endpoints as different historical evidence. |
+
+Dahl’s strongest contribution is to make the distinction
+between **retention in a protected position** and
+**restoration in an exposed cell** historically consequential.
+His account can link a long nucleus, divergent direct
+and protected reflexes, and a retaining compound edge
+without contracting short *e.i* or substituting an entire
+protected stem. The required intermediate nucleus, the
+loss and its restoration, and the chronology that protects
+the obliques are nevertheless distinct claims. The
+English evidence does not require the entire package.
+
+The most useful new evidence would be (i) a securely
+localized direct form distinguishing short mid vocalism,
+long mid vocalism, and diphthongal vocalism independently
+of ⟨g⟩; (ii) an independently inherited short-nucleus
+palatal control, together with a long-nucleus comparison
+not dependent on analogy for its classification; (iii)
+matched direct, protected, and first-member forms in the
+same dialect and period; or (iv) continental evidence
+ordering exposure of the direct palatal against the
+emergence of labial or geminate reflexes. Until then,
+carry *cǣġ* forward as an independent countercontrol,
+and keep all three Anglian mechanisms open: regular
+desyllabification, contraction with later palatal
+restoration, and protected-stem transfer. Dahl’s
+diphthongal route remains a distinct competitor, not
+an adopted change or a synonym for any of the frozen
+variants.
