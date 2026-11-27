@@ -1166,3 +1166,43 @@ historically long and short final-palatal monosyllables
 with the relevant loci, marked and unmarked, and
 allowance for double-gloss context. No new Farman
 calibration was needed or performed.
+
+## J6. Direct collation of ⟨heg/heig⟩ in Lindisfarne
+
+The [color facsimile](https://commons.wikimedia.org/wiki/File:BL_Cotton_MS_Nero_D_IV.djvu)
+of British Library Cotton MS Nero D IV now allows a
+direct check of the Aldred readings previously verified
+only in Cook and in edition images. Folios below follow
+the current shelfmark labels visible in the photographs,
+not the older numerals also visible on the leaves. All
+three targets were inspected at 3,840 px page width.
+
+| Locus | Latin and function | Actual gloss and image reading |
+|---|---|---|
+| Mt 6:30, [f. 38v](https://commons.wikimedia.org/w/index.php?title=File:BL_Cotton_MS_Nero_D_IV.djvu&page=87), left column | *faenum agri* in *si … Deus sic vestit*: *faenum* is the object of *vestit*; the relative *quod* is the subject of *est/mittitur*. Cook lists the gloss as nominative, but the main clause favours accusative; the bare neuter ending does not discriminate. | ⟨gers ɫ heg⟩ over *faenum*, no acute over ⟨e⟩. The conspicuous stroke above belongs to the Latin line, not the gloss. Kemble–Hardwick p. 55; Skeat p. 59. |
+| Mt 14:19, [f. 56r](https://commons.wikimedia.org/w/index.php?title=File:BL_Cotton_MS_Nero_D_IV.djvu&page=122), left column | *supra faenum*, accusative after the preposition. | ⟨hehg ɫ gers⟩ over *faenum*, with a dot below the second ⟨h⟩ cancelling it to give ⟨heg⟩; no acute. Kemble–Hardwick p. 117 prints the uncancelled letters; Skeat p. 123 prints the corrected form and reports the alteration. The image does not identify a corrector or date the intervention. |
+| Jn 6:10, [f. 222v](https://commons.wikimedia.org/w/index.php?title=File:BL_Cotton_MS_Nero_D_IV.djvu&page=455), right column near the foot | *erat autem faenum multum*, nominative subject of *erat*. | ⟨gærs ɫ heig⟩ above *faenum*, with *micil* over *multum* on the following line. The narrow ⟨i⟩ is present; no acute is visible. Skeat p. 55. |
+
+These are all uses of the same Old English ‘hay’ lexeme
+as an alternative to ‘grass’ in glossing *faenum*. The
+passages concern standing grass, not stored fodder,
+but nothing in the verified witnesses supports a separate
+noun ‘meadow’. Jones’s table gloss is a loose gloss or
+an error; the surviving evidence cannot tell which was
+intended. The alternation is genuine **across verses**,
+not a repeated word with both spellings in one gloss.
+The Matthew correction is a separate graphic event,
+not an extra independent ⟨heg⟩ token. Owun’s ⟨heg⟩ at
+John 6:10 is a distinct written gloss in the same
+tradition; it is not another Aldred example.
+
+Ross and Stanley’s Book II is identified by the
+[catalogued commentary](https://catalogue.nli.ie/Record/vtls000444010/TOC),
+but a readable copy of the index was not obtained.
+The independent cross-check is Cook (1894), s.v.
+*heg*, plus Kemble–Hardwick, Skeat and now the primary
+folio images. **Research verdict:** the primary record
+improves the textual basis of Jones’s comparison and
+confirms the dotted cancellation, but neither lack of
+an acute nor ⟨ei⟩ determines vowel length or shows
+how the palatal originated.
