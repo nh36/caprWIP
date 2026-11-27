@@ -10,6 +10,9 @@ Cycle 22 `DRAFT.md` and PDF remain fixed (PDF SHA-256
 The adoption worktree is read-only. No production model, target, corpus
 row, certificate or publication artifact belongs to this experiment.
 
+The [adjudication and closeout](ADJUDICATION.md) give the historical
+verdict, the chronological ledger and the focused second-cycle proposal.
+
 ## 1. Historical comparison fixed before execution
 
 The [historical manifest](historical.tsv) separates the independently
