@@ -13,6 +13,7 @@ case "${1:-}" in
     --representation) mode=representation; files=(representation.py); shift ;;
     --chronology) mode=chronology; files+=(chronology.py representation.py); shift ;;
     --back-vowels) mode=back_vowels; files+=(back_vowels.py); shift ;;
+    --later-h) mode=later_h; files+=(later_h.py); shift ;;
 esac
 
 tmp=$(docker compose exec -T backend mktemp -d /tmp/capr-hay-cycle3.XXXXXXXX)
