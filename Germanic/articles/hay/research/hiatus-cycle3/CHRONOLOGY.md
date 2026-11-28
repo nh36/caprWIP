@@ -42,7 +42,7 @@ The geographical claim concerns the w-less English evidence, not all Anglian, We
 
 ## Propagation and residue
 
-Only the private launcher, assay, record and compressed receipt change. No baseline, registry, corpus or publication fingerprint changes. The executable controls cover early/late loss, early serial weight, the long and lowered tail sensitivity, both private nuclear weights and ‘key’. The short-final reconstruction, historical weight of a possible nucleus, renewability of the ending and stress representation after *h*-loss remain separate questions. The early ‘strew’ projection continues to be collapsed by every nonfinal arm from the *w*-loss input; its evidential status is the next independent inquiry.
+Only the private launcher, assay, record and compressed receipt change. No baseline, registry, corpus or publication fingerprint changes. The executable controls cover early/late loss, early serial weight, the long and lowered tail sensitivity, both private nuclear weights and ‘key’. The short-final reconstruction, historical weight of a possible nucleus, renewability of the ending and stress representation after *h*-loss remain separate questions. The early ‘strew’ projection collapses in every R1 nonfinal arm; [R5](STREW.md) separates that result from the R4 late-placement effects of the incumbent atomic conversion.
 
 **Replay:** Two small private component compilations and 108 × 17 local traces on the frozen cache; no default-suite expansion or production rebuild.
 
