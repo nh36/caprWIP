@@ -12,6 +12,8 @@ The frozen quantitative deletion uses the first foot and treats long vowels/diph
 
 The receipt records 36 arms in each of canonical, A and B2, against the same 17 stage-local entries. It brackets *w*-loss, HVD, weak-*i* lowering, *h*-loss and the palatal merger. The “after weak *i*” placement follows the entire weak-vowel group through `OEWeakTailReduction`. The stage orders and the FST hash are checked against the frozen baseline. All three orders agree on these local surface results; that agreement does not extend to independently submitted full histories. A wider corpus census belongs to R9, not this local placement assay.
 
+**Replay correction.** This dossier uses `chronology-corrected-traces.json.gz`. The first execution compiled the two component families into one directory with overlapping numbered filenames; the second compilation overwrote some binaries to which the first map still pointed. With separate directories, 119 of 612 traces (70 surface outcomes) change in each model. The first receipt, `chronology-traces.json.gz` at `e0c56ad1`, is retained for provenance but must not be used as evidence. The HVD and light/heavy controls in the table survive the corrected run.
+
 | ‘Flock’ direct singular | Input at HVD | HVD result and consequence |
 |---|---|---|
 | Before HVD: D, J or N complete | *ēdi* | *ēdi > ēd*, no ending to lower |
@@ -22,7 +24,7 @@ The receipt records 36 arms in each of canonical, A and B2, against the same 17 
 
 With the initial short *i* absent the unchanged or resolved stem has no final reflex to compare. Long *ī* and already lowered *e* let even early heavy resolution give *ēde*. The protected projections do not test direct-cell HVD. The short direct form is a **counterfeeding negative** for early heavy resolution under the short-ending hypothesis; the controls test whether deleting that ending follows from weight rather than from late endpoint matching.
 
-Post-*h*-loss placement can reach the plain and accented stage-local ‘strike’ *e.i*, whereas a wholly pre-*h*-loss matched pair cannot. The *e.e* comparison contracts on the common substrate. Conversely, after *h*-loss the unaccented prefixed ‘call’ probe loses the foot marker and is missed; a split J arm can leave *ġeceġþ* when downstream strengthening changes the intermediate before assimilation. This is a representational limitation, not a source-supported ordering. Before the palatal merger late J assimilation reaches injected inherited *j* but not *ʝ*; after the merger it reaches both. Late N assimilation reaches an injected old atomic *ei* (origin collision). The independent long-vowel ‘key’ control remains *cǣġ* in every arm.
+Post-*h*-loss placement can reach the plain and accented stage-local ‘strike’ *e.i*, whereas a wholly pre-*h*-loss matched pair cannot. The *e.e* comparison contracts on the common substrate. Conversely, after *h*-loss the unaccented prefixed ‘call’ probe loses the foot marker and is missed. A split J arm leaves *ġeceġþ*: it does create *j*, but after marker loss its local assimilation cannot identify the unaccented head. This is a representational limitation, not a source-supported ordering. Before the palatal merger late J assimilation reaches injected inherited *j* but not *ʝ*; after the merger it reaches both. Late N assimilation reaches an injected old atomic *ei* (origin collision). The independent long-vowel ‘key’ control remains *cǣġ* in every arm.
 
 ## Literature
 
@@ -42,7 +44,7 @@ The geographical claim concerns the w-less English evidence, not all Anglian, We
 
 ## Propagation and residue
 
-Only the private launcher, assay, record and compressed receipt change. No baseline, registry, corpus or publication fingerprint changes. The executable controls cover early/late loss, early serial weight, the long and lowered tail sensitivity, both private nuclear weights and ‘key’. The short-final reconstruction, historical weight of a possible nucleus, renewability of the ending and stress representation after *h*-loss remain separate questions. The early ‘strew’ projection collapses in every R1 nonfinal arm; [R5](STREW.md) separates that result from the R4 late-placement effects of the incumbent atomic conversion.
+Only private research records and artifacts change. No baseline, registry, corpus or publication fingerprint changes. The executable controls cover early/late loss, early serial weight, the long and lowered tail sensitivity, both private nuclear weights and ‘key’. The short-final reconstruction, historical weight of a possible nucleus, renewability of the ending and stress representation after *h*-loss remain separate questions. The early ‘strew’ projection collapses in every R1 nonfinal arm; corrected R4 likewise finds that late D/J/N all resolve it. The shared foot-guarded stage does not create an atomic nucleus there.
 
 **Replay:** Two small private component compilations and 108 × 17 local traces on the frozen cache; no default-suite expansion or production rebuild.
 
@@ -50,5 +52,5 @@ Only the private launcher, assay, record and compressed receipt change. No basel
 set -o pipefail
 cycle=Germanic/articles/hay/research/hiatus-cycle3
 bash "$cycle/run-container.sh" --chronology --stage-cache /tmp/capr-hay-stress.lVemXDSn |
-  gzip -n -9 | cmp "$cycle/chronology-traces.json.gz" -
+  gzip -n -9 | cmp "$cycle/chronology-corrected-traces.json.gz" -
 ```

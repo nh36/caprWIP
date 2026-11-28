@@ -88,7 +88,9 @@ def main():
         paths = frozen | run.compile_candidates(source, args.stage_cache, work, Components)
         paths[f"component:{DELETION}"] = paths["component:StFoot"]
         private = representation_components(source)
-        private_paths = frozen | run.compile_candidates(source, args.stage_cache, work, private)
+        weight_dir = work / "weight"
+        weight_dir.mkdir()
+        private_paths = frozen | run.compile_candidates(source, args.stage_cache, weight_dir, private)
         weight = {}
         for label, ending in (("Sh", "*i"), ("Lt", "")):
             stage = f"{label}OEHighVowelApocope"
@@ -116,6 +118,8 @@ def main():
                     verify(check["output"], ["ēde"], f"{model} {name} sensitivity")
             for record in records.values():
                 verify(record["traces"]["key"]["output"], ["cǣġ"], f"{model} key preservation")
+            verify(records["common"]["traces"]["strew-singular"]["anchors"][DELETION],
+                   [["*s*t*r*e*i*d*e"]] * 2, f"{model} common does not atomize strew")
             models[model] = {"sites": timing(order), "arms": records}
     print(json.dumps({
         "base": run.BASE, "orders": orders, "source_sha256": run.frozen.sha(source),

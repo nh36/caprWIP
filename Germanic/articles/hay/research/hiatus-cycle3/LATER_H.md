@@ -36,7 +36,7 @@ Two edges are independent of ‘hay’: **regional smoothing before intervocalic
 
 `Registry-verdict: SC085=REFORMULATE/RESTRICT`
 
-**Propagation and residue.** Research-only additions; no frozen or production fingerprints change. A separate SC086 audit could test the missing broken-front corridor and acute identical-token support. R9 must avoid an origin collision between incumbent atomic *ei* and newly incorporated *e.i*, and retain all five exercised initial-*hw* negatives.
+**Propagation and residue.** Research-only additions; no frozen or production fingerprints change. A separate SC086 audit could test the missing broken-front corridor and acute identical-token support. R9 must avoid an origin collision between previously atomic *ei* and newly incorporated *e.i*, and retain all five exercised initial-*hw* negatives.
 
 ```sh
 set -o pipefail
