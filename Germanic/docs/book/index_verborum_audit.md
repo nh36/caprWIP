@@ -22,7 +22,7 @@
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 443
-- Broad-prose notation / compound expressions: 553
+- Broad-prose notation / compound expressions: 558
 - Broad-prose evidence suggestions: 318
 - Curated broad-prose deferred: 24
 - Curated broad-prose ignored: 7
@@ -749,6 +749,7 @@
 | `*bede` | Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:20 | intermediate or model-stage form in development chain |
 | `bēġ(e)a` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:40 | notation or compound expression |
 | `bi-` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33 | notation or compound expression |
+| `bi-` | Germanic/docs/lexeme_reports/model_entries/2344-filter-sēoh.model.md:18 | notation or compound expression |
 | `bi- > be-` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:29 | notation or compound expression |
 | `-βn-` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:119 | notation or compound expression |
 | `bn → fn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:105 | notation or compound expression |
@@ -758,6 +759,7 @@
 | `*bōk(j)ō-` | Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:21 | notation or compound expression |
 | `*bōkō` | Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:29 | intermediate or model-stage form in development chain |
 | `*bōkō > bōc` | Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:29 | notation or compound expression |
+| `bor-` | Germanic/docs/lexeme_reports/model_entries/1956-bore-borian.model.md:14 | notation or compound expression |
 | `*bóra` | Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:43 | intermediate or model-stage form in development chain |
 | `*bóraθ` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:43 | intermediate or model-stage form in development chain |
 | `*bórô` | Germanic/docs/lexeme_reports/model_entries/2311-bore-(iptv.2sg)-bora.model.md:41 | intermediate or model-stage form in development chain |
@@ -844,6 +846,7 @@
 | `*g` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33 | intermediate or model-stage form in development chain |
 | `*g` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 | intermediate or model-stage form in development chain |
 | `*g` | Germanic/docs/lexeme_reports/model_entries/2277-way-weġ.model.md:29 | intermediate or model-stage form in development chain |
+| `*ga-` | Germanic/docs/lexeme_reports/model_entries/2342-call-ġeċēð.model.md:16 | notation or compound expression |
 | `*gallōn-` | Germanic/docs/lexeme_reports/model_entries/2037-gall-ġealla.model.md:22 | notation or compound expression |
 | `*gánga` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:33 | intermediate or model-stage form in development chain |
 | `*gángaz > gang` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:33 | notation or compound expression |
@@ -1002,6 +1005,7 @@
 | `*luttiz ~ *luttjaz` | Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:92 | notation or compound expression |
 | `*lȳtelu` | Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:344 | intermediate or model-stage form in development chain |
 | `*lȳtilu` | Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:330 | intermediate or model-stage form in development chain |
+| `mac-` | Germanic/docs/lexeme_reports/model_entries/2117-make-macian.model.md:12 | notation or compound expression |
 | `*mækô` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:43 | intermediate or model-stage form in development chain |
 | `*mækōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:46 | intermediate or model-stage form in development chain |
 | `*mærōn-` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:27 | notation or compound expression |
@@ -1083,6 +1087,7 @@
 | `*sċilleng` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:29 | intermediate or model-stage form in development chain |
 | `scit-` | Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:75 | notation or compound expression |
 | `*sebjō-` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:26 | notation or compound expression |
+| `*seihw-a-` | Germanic/docs/lexeme_reports/model_entries/2344-filter-sēoh.model.md:10 | notation or compound expression |
 | `*síβe` | Germanic/docs/lexeme_reports/model_entries/2189-sieve-sife.model.md:41 | intermediate or model-stage form in development chain |
 | `*sk` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:92 | intermediate or model-stage form in development chain |
 | `*sk-` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:37 | notation or compound expression |
