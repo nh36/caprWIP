@@ -18,9 +18,10 @@ case "$mode" in
     medial_hw_check) files=(components.py component_check.py medial_hw_check.py) ;;
     prospective) files=(components.py component_check.py stress_handoff.py quantity_check.py
                         source_entry_check.py prospective.py validation-h-loss-v1.tsv validation-nuclei-v1.tsv) ;;
-    sc083)
+    sc083|sc085_handoff)
         payload=Germanic/articles/hay/research/component-proposals
-        files=(sc083.py sc083-panel.tsv)
+        files=("$mode.py")
+        if [[ "$mode" == sc083 ]]; then files+=(sc083-panel.tsv); fi
         support=(components.py component_check.py)
         ;;
     *) printf 'Unknown research replay mode: %s\n' "$mode" >&2; exit 2 ;;
