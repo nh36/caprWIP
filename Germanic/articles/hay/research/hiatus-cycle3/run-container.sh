@@ -7,6 +7,10 @@ previous=fb1d39abab2420faa90ef7bd4a19751ac4a17321
 prior=Germanic/articles/hay/research/hiatus
 cycle2=$prior-cycle2
 cycle3=$prior-cycle3
+mode=integrated
+case "${1:-}" in
+    --representation) mode=representation; shift ;;
+esac
 
 tmp=$(docker compose exec -T backend mktemp -d /tmp/capr-hay-cycle3.XXXXXXXX)
 case "$tmp" in
@@ -28,7 +32,7 @@ git archive "$intake" "$prior" |
 git archive "$previous" "$cycle2" |
     docker compose exec -T backend tar -xf - -C "$tmp"
 docker compose exec -T backend mkdir "$tmp/cycle3"
-tar -cf - -C "$cycle3" integrated.py |
+tar -cf - -C "$cycle3" "$mode.py" |
     docker compose exec -T backend tar -xf - -C "$tmp/cycle3"
 docker compose exec -T backend env PYTHONDONTWRITEBYTECODE=1 \
-    python "$tmp/cycle3/integrated.py" "$tmp" "$@"
+    python "$tmp/cycle3/$mode.py" "$tmp" "$@"
