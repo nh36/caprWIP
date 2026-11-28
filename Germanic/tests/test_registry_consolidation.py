@@ -375,8 +375,13 @@ class FingerprintGuardTests(unittest.TestCase):
         )
         self.assertEqual(data["legacy_subset_sha256"],
                          "1b53e382bb320caf05c795218fe626bf7d0fd8f4e19da3af7f4ef6190d7892ee")
-        self.assertEqual(data["outputs_sha256"],
+        before_medial = json.loads(
+            (BASELINE / "cascade_baseline_summary_pre_sc083_call_admission.json").read_text(
+                encoding="utf-8"))
+        self.assertEqual(before_medial["outputs_sha256"],
                          "51953ed3a411b10bfa551de996053bc805ba87525180c4bf13f9b1ba46d4ee0e")
+        self.assertEqual(data["outputs_sha256"],
+                         "93f979f2986c8ebbdf8ddf2221510f8a301e970d357960356f96f6cdcde294e5")
         previous = {
             row["row_id"]: row
             for row in csv.DictReader(

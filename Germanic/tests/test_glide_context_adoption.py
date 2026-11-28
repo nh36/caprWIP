@@ -80,7 +80,8 @@ class ContextAdoptionTests(unittest.TestCase):
         self.assertEqual(summary["OEJGlideIO"], (1, ["hue"]))
         self.assertEqual(summary["OEDiphthongLeveling"][0], 34)
         self.assertIn("livestock", summary["OEDiphthongLeveling"][1])
-        self.assertEqual(summary["OEAwLongDiphthong"][0], 3)
+        self.assertEqual(summary["OEAwLongDiphthong"],
+                         (4, ["show", "show (iptv.2sg)", "show (3sg)", "call"]))
         self.assertEqual(summary["PWGmcEndinglessAw"], (1, ["straw"]))
         for concept in ("four", "you"):
             block = text.split(f"--- {concept} ---\n", 1)[1].split("\n--- ", 1)[0]

@@ -74,6 +74,7 @@ def test_current_source_distinguishes_old_experiments_from_adopted_relations():
         ("SC049", "SC037"), ("SC037", "SC038"),
         ("SC065", "SC055"), ("SC065", "SC068"),
         ("SC023", "PWGmcChanges"), ("SC069", "SC023"),
+        ("SC053", "PWGmcChanges"), ("SC053", "SC087"),
     }
     assert all(e["evidence_basis"] == "archived_experiment" for e in archived)
     assert not registry.validate_registry(registry.read_tsv(registry.SC_REGISTRY), edges)
