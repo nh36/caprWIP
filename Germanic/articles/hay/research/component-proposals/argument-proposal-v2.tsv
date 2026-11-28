@@ -1,0 +1,25 @@
+node	action	status	requires	qualifies	article_location
+E14	qualify	contractive competitor; nonfinal or otherwise mismatched	E31	E25	R5
+E25	retain and constrain	final short consonantalization motivated but exact application and date unproved	E03;E11;E12;E25d;E31	E25a;E25e	R5/R8
+E25a	propose	inherited river oblique preferable; adverse to uniform application		E25	R5
+E25b	propose	long key retains inherited palatal; no general final prohibition		E30;E34	R7/R8
+E25c	propose	executable nuclear distinction; not a historical selection		E25	R5/R8
+E25d	propose	independent precedents for desyllabification; no exact dated final front control		E25	R5
+E25e	propose	w-loss earlier than ordinary h-loss; resolution interval unproved	E31	E25a	R5
+E25f	propose	long final flock ending; old HVD edge withdrawn			R5/Table 4
+E13a	propose	short way and long flame share Vespasian final eg; no quantity preference	E13	E15;E29	R4/R6
+E16a	propose	source-based protected high West Saxon and long mid Anglian projections	E04;E05;E16		R7
+E30	qualify	Dahl distinct diphthongal long route; 859 is printed; final loss not universal		E25b	R3/R8
+E33	retain	contraction before new consonant is an unestablished application	E03;E14	E25a	R5/R7
+E34	retain	donor existence does not prove consonant-only transfer	E18;E19	E16a	R7
+H1	retain	short consonantal direct route conditional	C01;E25	E13a;E25a;E25e	R8
+H1a	propose	short direct nuclear incorporation; consonantal reading not predicted	C01;E25c;E25d	E13a	R8
+H1b	propose	long direct nucleus and a new or retained palatal require separate mechanisms	C01;E25b	E13a	R8
+H3	retain	whole protected-stem transfer; independently motivated but not required in Anglian	C03;E16a	E13a	R7/R8
+H4	retain	protected type inherited under late nasal loss	C02;E16a	E20	R8
+H4a	propose	Dahl's diphthongal route separate from late gemination	E30	E25b	R8
+C06	retain	positive direct argument through short hiatus	C01;E31	E25	R2/R5
+C07	qualify	quantity open in Vespasian; Farman local; West Saxon vocalism independent	E13a;E15;E16;E29	E24	R6
+C09	retain	conditional consequence for early-apocope cost, not verdict	C10;E20	C08;C11	R8
+C10	expand	regular direct nucleus viable, endpoint not identified	C06;C07	H1a;H1b;H2;H3;H4;H4a;H5	R8
+C11	retain	short consonantal preferred conditional on short consonantal outcome	H1	C07;E25e	R8
