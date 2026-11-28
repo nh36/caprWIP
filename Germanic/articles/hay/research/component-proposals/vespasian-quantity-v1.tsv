@@ -1,0 +1,13 @@
+lexeme	locus	sweet_page	pdf_sheet	word	alignment	cell	historical_quantity	consonant_origin	environment	mark_in_edition	verification	role
+flame	Ps 28:7	222	236	leg	flammam	acc.sg.	long	dorsal > secondary palatal	final	none	edition image	matched long
+flame	Ps 82:15	307	321	leg	flamma	nom.sg.	long	dorsal > secondary palatal	final	none	edition image	matched long
+flame	Ps 105:18	341	355	leg	flamma	nom.sg.	long	dorsal > secondary palatal	final	none	edition image	matched long
+sound	Ps 9:7	195	209	swoege	sonitu	dat.sg.	long rounded	dorsal > secondary palatal	intervocalic	none	edition text and alignment	rounded comparator
+sound	Ps 18:5	209	223	swoeg	sonus	nom.sg.	long rounded	dorsal > secondary palatal	final	none	edition text and alignment	rounded comparator
+sound	Ps 41:5	244	258	swoeg	sonus	nom.sg.	long rounded	dorsal > secondary palatal	final	none	edition text and alignment	rounded comparator
+sound	Ps 76:18	295	309	swoeges	sonitus	gen.sg.	long rounded	dorsal > secondary palatal	intervocalic	none	edition text and alignment	rounded comparator
+year	Ps 64:12	274	288	geres	anni	gen.sg.	long	inherited j	initial	none	edition text and glossary	inherited j; nonmatched
+say	Ps 39:10	242	256	segde	adnuntiavi	pst.1sg.	short	dorsal; palatal reflex uncertain here	preconsonantal	none	edition text and alignment	preconsonantal graphic control
+say	Ps 96:6	326	340	segdon	adnuntiaverunt	pst.3pl.	short	dorsal; palatal reflex uncertain here	preconsonantal	none	edition text and alignment	preconsonantal graphic control
+God	Ps 13:1	200	214	god	Deus	nom.sg.	short	none	no adjacent palatal	none	edition text and alignment	length-marking comparator
+good	Ps 13:1	200	214	god	bonum	acc.sg.	long	none	no adjacent palatal	none	edition text and alignment	length-marking comparator
