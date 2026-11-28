@@ -1,5 +1,11 @@
 # R8: Independent environments and frozen comparison panel
 
+**Source correction.** [Q1b](../hiatus-cycle4/H_LOSS_QUANTITY.md)
+confirms that ‘receive’, ‘cover’ and ‘rug’ were transferred with the
+wrong root quantities. The frozen inventory below and its original
+results are preserved, but these entries do not support short-root
+coalescence or broaden the inventory of short unlike hiatus.
+
 `holdouts-v1.tsv` is an unscored extension, frozen before the revised integrated execution. It does not replace the cycle 2 benchmark. Written variants, source-based injections and synthetic probes have explicit grades; a written variant without a securely recoverable input is not executable evidence. The ‘hay’ inputs remain targets of inference, not holdouts.
 
 ## What the sources add

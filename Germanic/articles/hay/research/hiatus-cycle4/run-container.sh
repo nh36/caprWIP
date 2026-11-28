@@ -10,6 +10,7 @@ mode="${1:?Specify a research replay mode}"
 shift
 case "$mode" in
     component_check) files=(components.py component_check.py) ;;
+    quantity_check) files=(components.py component_check.py quantity_check.py) ;;
     *) printf 'Unknown research replay mode: %s\n' "$mode" >&2; exit 2 ;;
 esac
 

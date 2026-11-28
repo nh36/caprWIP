@@ -1,5 +1,11 @@
 # R9: Revised matched stacks and wider firing census
 
+**Source correction.** The short ‘flock’ probe is conditional, not the
+published reconstruction ([Q1a](../hiatus-cycle4/FLOCK_QUANTITY.md)).
+The [Q1b replay](../hiatus-cycle4/H_LOSS_QUANTITY.md) supersedes the
+source interpretation of the original ‘receive’, ‘cover’ and ‘rug’
+entries; the R9 receipt records their originally supplied inputs.
+
 ## Identity and controls
 
 The run uses `113101ac5f169b589e1a9647cdf24d32cdd4d919`, the frozen canonical/A/B2 orders and the [R8 freeze](ENVIRONMENTS.md) at `23c9621a`. `revised-traces.json.gz` contains the exact orders, input strings, entry points, placements, definitions, changing stages and before/after anchors. The full-panel entries do not silently substitute protected or later local forms for failed early inputs.
