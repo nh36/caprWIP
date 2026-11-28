@@ -1,5 +1,11 @@
 # Integrated hiatus experiments
 
+**Source-entry correction:** [Q2a](../hiatus-cycle4/SOURCE_ENTRY_AUDIT.md)
+separates the published long-vowel ‘pillow’ input from the local short
+proxy. It also reproduces *lēde* ‘betrayed’ with the published weak tail
+in the frozen model, so the lowered probe alone does not establish a
+need for the absorption component.
+
 ## T1: comparison inventory and common substrate
 
 [`panel.tsv`](panel.tsv) extends the pinned first-cycle

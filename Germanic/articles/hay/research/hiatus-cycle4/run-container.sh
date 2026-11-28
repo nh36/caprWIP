@@ -11,6 +11,7 @@ shift
 case "$mode" in
     component_check) files=(components.py component_check.py) ;;
     quantity_check) files=(components.py component_check.py quantity_check.py) ;;
+    source_entry_check) files=(components.py component_check.py quantity_check.py source_entry_check.py) ;;
     *) printf 'Unknown research replay mode: %s\n' "$mode" >&2; exit 2 ;;
 esac
 

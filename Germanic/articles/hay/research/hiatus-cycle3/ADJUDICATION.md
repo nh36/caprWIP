@@ -7,6 +7,12 @@ The preserved adjudication below reflects the previous reading; the
 long-ending control permits either chronology. This does not select an
 edge policy for ‘hay’.
 
+**Correction to the h-loss comparisons.** [Q1b](../hiatus-cycle4/H_LOSS_QUANTITY.md)
+supersedes historical deductions based on the short roots of ‘receive’,
+‘cover’ and ‘rug’. [Q2a](../hiatus-cycle4/SOURCE_ENTRY_AUDIT.md) distinguishes
+the long-tail ‘higher’ stage and the conditional ‘river’ comparison from
+the reduced and sensitivity entries.
+
 **Decision.** Prefer resolution to a heavy output **after high-vowel loss** for short unlike front hiatus where the ‘flock’ ending provides an independent test. Retain *d, þ/ð, n* as the best-supported working nonfinal scope, not a fully established sound law. Direct contraction is the least elaborate account of the convergent nonfinal endpoints, not the only historical account. Nuclear incorporation is independently motivated for early back vowels, not thereby demonstrated for short front hiatus. Under early nasal apocope and inherited *he.i*, short /hej/ remains the economical working explanation of Vespasian ⟨heg⟩. Even the best-supported broader stack does not independently select the final gliding policy that produces it.
 
 ## Fifteen questions
