@@ -1,0 +1,14 @@
+{
+  "inputs": {
+    "Germanic/docs/models/sc047/captures/sc047-current.json.gz": "4069538281195f0c01936863c074e84e3d1b456d4409b1c8a57ccb380fe6c4c5",
+    "Germanic/docs/models/sc047/publish.py": "f2d843703a32c5e08e64ffc91308ad378376df5630446a62aeed870942aa65db",
+    "docs/refs.bib": "e522d54ab82b76c647ba9136bd35e3eb918ea0539035a86e70480a0209988db6",
+    "Germanic/docs/assembly/manifest_all_by_class.tsv": "de3d2c7b1aaa5fc223eebf9b3fb638b56c1780a8fba621751f9350d42ce36dee",
+    "Germanic/docs/assembly/lexical_source_provenance.json": "9ce7f700471cc05ce30373b4bd2dd30bdce7374ca172b89a3fe18491f15e1f82",
+    "Germanic/data/entry_stage_metadata.tsv": "1724d3ba7de2bdd1085ed417bdfe580b3e6618d63666664402a4c2975e976145"
+  },
+  "pdfs": {
+    "A-volume.pdf": "dd9399bccc930829a1d7f016c6d57b034020e49b7501ea7ab5f1d072e36909bd",
+    "B2-volume.pdf": "94fd71de421bc1879c2055bc86edb2c63c259a81d97b7d37ca5b48a8393bc983"
+  }
+}

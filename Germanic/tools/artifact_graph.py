@@ -45,11 +45,15 @@ Usage
 
 from __future__ import annotations
 
+import gzip
 import hashlib
 import json
+import os
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
@@ -60,6 +64,7 @@ REPO_ROOT = TOOLS.parents[1]
 ASSEMBLY = REPO_ROOT / "Germanic/docs/assembly"
 
 import build_reader_book  # noqa: E402
+from build_germanic_models import CONTROLS as MODEL_CONTROLS  # noqa: E402
 import cascade_order_manifest  # noqa: E402
 import executable_facts  # noqa: E402
 import generate_registry_views  # noqa: E402
@@ -67,6 +72,7 @@ import oe_pipeline  # noqa: E402
 import oe_known_problems_report  # noqa: E402
 import pgmc_reconstruction_survey  # noqa: E402
 import rule_coverage_census  # noqa: E402
+import sc047_models  # noqa: E402
 from capr_runtime import (  # noqa: E402
     check_build_manifest,
     layout,
@@ -83,6 +89,9 @@ BOOK_DIR = REPO_ROOT / "Germanic/docs/book"
 INDEX_BUILDER = TOOLS / "build_index_verborum.py"
 INDEX_HEADER = ASSEMBLY / "book_draft_index_registry.tex"
 BOOK_DRAFT_BUILDER = ASSEMBLY / "build_capr_book_draft.py"
+MODEL_DIR = sc047_models.CURRENT_CAPTURE.parents[1]
+MODEL_PDFS = tuple(MODEL_DIR / f"{model}-volume.pdf" for model in sc047_models.MODELS)
+MODEL_PUBLICATION_RECEIPT = MODEL_DIR / "publication-provenance.json"
 LEXICAL_TRACE = FULL_TRACE.with_name("oe_derivation_class_trace_report.txt")
 LEXICAL_COMPACT = FULL_TRACE.with_name("oe_derivation_class_trace_report.compact.md")
 LEXICAL_PROVENANCE = ASSEMBLY / "lexical_source_provenance.json"
@@ -506,6 +515,98 @@ def _matrix_build() -> list:
     return [_rel(MATRIX), _rel(MATRIX_PROVENANCE)]
 
 
+def _active_models_verify() -> list:
+    directory = layout().bin_dir / "germanic-model-bins"
+    try:
+        with gzip.open(sc047_models.CURRENT_CAPTURE, "rt", encoding="utf-8") as stream:
+            data = json.load(stream)
+        sc047_models.verify_capture_inputs(data)
+        if (set(data["models"]) != set(sc047_models.MODELS)
+                or "compatibility_active_corpus" not in data
+                or any(tuple(probe["input"] for probe in record["queries"]) != MODEL_CONTROLS
+                       for record in data["models"].values())):
+            return ["current model capture is missing an application arm or control"]
+        for model in sc047_models.MODELS:
+            binary = directory / f"old_english_{model}.bin"
+            receipt = json.loads(binary.with_suffix(".json").read_text(encoding="utf-8"))
+            if (receipt["fst_sha256"] != data["fst_sha256"]
+                    or receipt["runner_sha256"] != data["runner_sha256"]
+                    or receipt["bin_sha256"] != sc047_models.sha(binary)):
+                return [f"stale application binary for Model {model}"]
+        for name in ("old_english.bin", "english.bin", "german.bin", "dutch.bin"):
+            if not (directory / name).is_file():
+                return [f"missing shared application binary: {name}"]
+    except (OSError, EOFError, ValueError, KeyError) as exc:
+        return [f"current model evidence unavailable: {exc}"]
+    return []
+
+
+def _active_models_build() -> list:
+    result = run_in_runner("python3 tools/build_germanic_models.py",
+                           capture_output=True, text=True)
+    if result.returncode:
+        raise GraphError(f"active model build failed:\n{result.stderr}\n{result.stdout}")
+    try:
+        sc047_models.verify_capture_inputs(json.loads(result.stdout))
+    except (OSError, ValueError, KeyError) as exc:
+        raise GraphError(f"active model build produced invalid evidence: {exc}") from exc
+    path = sc047_models.CURRENT_CAPTURE
+    with tempfile.NamedTemporaryFile(dir=path.parent, delete=False) as stream:
+        stream.write(gzip.compress(result.stdout.encode("utf-8"), compresslevel=9, mtime=0))
+        pending = Path(stream.name)
+    pending.replace(path)
+    return [_rel(path)]
+
+
+def _model_publication_hashes(pdfs=MODEL_PDFS) -> dict:
+    inputs = [sc047_models.CURRENT_CAPTURE, MODEL_DIR / "publish.py",
+              REPO_ROOT / "docs/refs.bib", ASSEMBLY / "manifest_all_by_class.tsv",
+              ASSEMBLY / "lexical_source_provenance.json",
+              REPO_ROOT / "Germanic/data/entry_stage_metadata.tsv"]
+    return {"inputs": {_rel(path): sc047_models.sha(path) for path in inputs},
+            "pdfs": {path.name: sc047_models.sha(path) for path in pdfs}}
+
+
+def _model_publication_verify() -> list:
+    try:
+        receipt = json.loads(MODEL_PUBLICATION_RECEIPT.read_text(encoding="utf-8"))
+        if receipt == _model_publication_hashes():
+            return []
+    except (OSError, ValueError):
+        pass
+    return ["selectable-model PDF companions do not match current publication inputs"]
+
+
+def _model_publication_build() -> list:
+    with tempfile.TemporaryDirectory(dir=MODEL_DIR) as temporary:
+        args = [_rel(MODEL_DIR / "publish.py"), _rel(sc047_models.CURRENT_CAPTURE),
+                _rel(Path(temporary)), "--pdf"]
+        if shutil.which("pandoc") and shutil.which("xelatex"):
+            command = [sys.executable, *args]
+        else:
+            command = [
+                "docker", "run", "--rm", "--platform",
+                os.environ.get("ASSEMBLY_DOCKER_PLATFORM", "linux/amd64"),
+                "--entrypoint", "/bin/sh", "-v", f"{REPO_ROOT}:/data", "-w", "/data",
+                os.environ.get("ASSEMBLY_DOCKER_IMAGE", "pandoc/latex:latest"),
+                "-c", 'apk add --no-cache font-noto python3 >/dev/null && python3 "$@"',
+                "model-companions", *args,
+            ]
+        result = subprocess.run(
+            command,
+            cwd=REPO_ROOT, capture_output=True, text=True)
+        if result.returncode:
+            raise GraphError(f"model companion rendering failed:\n{result.stderr}")
+        rendered = [Path(temporary) / path.name for path in MODEL_PDFS]
+        hashes = _model_publication_hashes(rendered)
+        for before, after in zip(rendered, MODEL_PDFS):
+            before.replace(after)
+        receipt = Path(temporary) / MODEL_PUBLICATION_RECEIPT.name
+        receipt.write_text(json.dumps(hashes, indent=2) + "\n", encoding="utf-8")
+        receipt.replace(MODEL_PUBLICATION_RECEIPT)
+    return [_rel(path) for path in (*MODEL_PDFS, MODEL_PUBLICATION_RECEIPT)]
+
+
 def _runtime(name: str, authority: str, verify, build,
              outputs: Callable[[], list]) -> Node:
     return Node(name, "runtime", authority, verify, build, outputs)
@@ -610,10 +711,19 @@ def nodes(*, mode: str = "full") -> tuple:
                             "oe_derivation_class_trace_report.with_lexeme_reports" + suffix)
                           for suffix in (".md", ".audit.md", ".publish.md",
                                          ".publish.missing_reports.md")]]),
+        _runtime("active_models",
+                 "shared FST and corpus through the selectable-model compiler",
+                 _active_models_verify, _active_models_build,
+                 lambda: [sc047_models.CURRENT_CAPTURE]),
         _projection("book_draft",
                     "assembly sources via build_capr_book_draft",
-                    _render_book_draft),
+                    _render_book_draft,
+                    outputs=lambda: [ASSEMBLY / "capr_book_draft_alpha_01.md"]),
         _regen_index_verborum(),
+        _runtime("model_companions",
+                 "current selectable-model capture and shared lexical publication",
+                 _model_publication_verify, _model_publication_build,
+                 lambda: [*MODEL_PDFS, MODEL_PUBLICATION_RECEIPT]),
         _runtime("interaction_matrix",
                  "container cascade_interaction_harness.py over the live "
                  "stage-derived pair list",

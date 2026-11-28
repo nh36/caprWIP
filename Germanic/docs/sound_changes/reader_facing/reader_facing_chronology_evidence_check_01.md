@@ -7,7 +7,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 ## Summary
 
 - Sections checked: 108.
-- Sections with absent cues or notation observations: 72.
+- Sections with absent cues or notation observations: 73.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 080-final-geminate-simplification.md | SC080. Simplification of final geminates (`OEFinalGeminateSimplification`) {#rule-OEFinalGeminateSimplification} | yes | yes | yes | yes | yes | no | no | — |
 | 081-j-strengthening.md | SC081. Strengthening of \emph{*j} after front diphthongs (`OEJStrengtheningAfterFrontDiphthong`) {#rule-OEJStrengtheningAfterFrontDiphthong} | yes | yes | yes | yes | yes | no | no | — |
 | 082-intervocalic-j-vocalization.md | SC082. Bounded inherited-j normalization (`OEIntervocalicJVocalization`) {#rule-OEIntervocalicJVocalization} | yes | yes | yes | yes | yes | no | no | — |
-| 083-unstressed-ei-contraction.md | SC083. Contraction of unstressed \emph{ei} (`OEUnstressedEIContraction`) {#rule-OEUnstressedEIContraction} | yes | yes | yes | yes | yes | no | no | — |
+| 083-unstressed-ei-contraction.md | SC083. Contraction of unstressed \emph{ei} (`OEUnstressedEIContraction`) {#rule-OEUnstressedEIContraction} | yes | no | yes | yes | no | no | no | missing expected-form wording; missing explicit verbal boundary conclusion |
 | 085-h-loss.md | SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss} | yes | yes | yes | yes | yes | no | no | — |
 | 086-contraction.md | SC086. Contraction of the resulting hiatus (`OEContraction`) {#rule-OEContraction} | yes | yes | yes | yes | yes | no | no | — |
 | 087-r-metathesis.md | SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis} | yes | yes | yes | yes | yes | no | no | — |

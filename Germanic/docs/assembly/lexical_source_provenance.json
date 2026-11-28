@@ -1,13 +1,13 @@
 {
   "inputs": {
     "Germanic/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
-    "Germanic/data/entry_stage_metadata.tsv": "e40c903037330879c04b7a9b1979bfb02ea97931a479950d79a18210444ef744",
-    "Germanic/data/germanic-aligned-final.tsv": "29f11c10e7cf8756c2708334fbd6947a4629ddcb9e69ac28bfbf9a920c5f9cf7",
+    "Germanic/data/entry_stage_metadata.tsv": "1724d3ba7de2bdd1085ed417bdfe580b3e6618d63666664402a4c2975e976145",
+    "Germanic/data/germanic-aligned-final.tsv": "7d79985ef776b5bf354f0cc8167cedf6cadd40473f1d484b10f16459d8f8a7c6",
     "Germanic/docs/assembly/build_class_manifests.py": "9f1606d6ab0bbdc9187f90888112ee7150373abf7225f944d2cad806112c4e7d",
     "Germanic/docs/assembly/build_full_lexical_volume.py": "f78a8f66e5f0974d3df554b0b2925cf705548989f06a503b21fb3ae1d71dd84f",
     "Germanic/docs/assembly/lexical_editorial_order.tsv": "7cdafe042fb24f8be02533b762841917351e0e10037a7f79f23096cdc2240a5d",
     "Germanic/docs/assembly/section_introductions_draft.md": "d2af1bd13554449b7053b038ce493ea90c98cbe8e41da6b8c362d276b59867bd",
-    "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "65f29513c98f61bedf81c4f5bd53ea0be1e274d00ddc5ce3b1ed2c9bfd114a37",
+    "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "a46a90423d3aedc4fb20a6223fb8013d07f3bb562996b4eb3da9213407169c41",
     "Germanic/docs/lexeme_reports/model_entries/1933-adder-n\u01e3dre.model.md": "52549a9050ba8eb79643b769ec290b5ba323de44c757b9641ae0ed35ed04fb98",
     "Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md": "dc2610f275dc925e44f886bc8efab18d4ade9fc16cbfe9d38154ad3ee4222a90",
     "Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md": "e14c2eb8eaa31c708bca41b5d2e1d6d147e3b3bffd66a323f3daa9c4f74d6164",
@@ -189,7 +189,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md": "56679d12fa16e1b94d97babae114d99f9c99b3c1ab7076e414bf5976160fd3b5",
     "Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md": "c3fc6b1c826c62d656b2eef2656aef1ec655097d4f26c0ad1cf880632efb985c",
     "Germanic/fsts/old_english_sandbox.txt": "3753d17cdb928652a8d0090e632d0fcf20a42e488a4a3c3d485868cb74e0b1a7",
-    "Germanic/tools/artifact_graph.py": "3a18e912da64828a32d7b0e2205fd2665418a046b093903bd9736c3465ff7470",
+    "Germanic/tools/artifact_graph.py": "5db6e2cc9ebf4cb43dffd79ea2e67e1608d22d70c91e7ae9c25507ed86b5b052",
     "Germanic/tools/compact_trace_report.py": "b5dbb5d467d0dabe7dc1ba4e55646dd3c33d4d0fb841bfa09f4cd11da8505707",
     "Germanic/tools/entry_stages.py": "63317b032ce41030f85af64a4c5d9823604f1bde0c9b833f2dca11933e15abdd",
     "Germanic/tools/oe_derivation_class_trace_report.py": "90d9b6eecf4f7828ce4be953d7d50a82f3035d36576b3beb683ede1f5494b137",
@@ -207,7 +207,7 @@
     "Germanic/docs/assembly/manifest_regular.tsv": "d6bbf4990c824d5143f442e0bddb91fffe777c909de13ad1914b4dba7b6509fb",
     "Germanic/docs/assembly/manifest_summary.md": "a96610cb325221b2fff490799fb4631d4b6e7f6357f35c96b2191e3856b09747",
     "Germanic/docs/assembly/manifest_unexplained.tsv": "be0045a4d746dac52ee896c888fab7208f888d60cea50d1b1a28c07a0aa433ae",
-    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md": "09193f66cb01b673807b2db101f34370d8634e485fc320889bdff39b763e9fcb",
-    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.txt": "41d31527232f4ea8c52d541939535fae6f3a2d5d880f23ad8943b1c774a5175b"
+    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md": "f1980b2e9cff7b3dc36b3116788569a4e5d34f7d5edc335b649e077d73b004a3",
+    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.txt": "dd13374546c4f369df3336feb984bb81856ddbc584c6252352f8c0c07b5dcf37"
   }
 }

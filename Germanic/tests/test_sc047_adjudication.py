@@ -26,7 +26,7 @@ def baseline_definitions():
 
 
 def before_sc047_adoption(current):
-    """Authenticate the input-only layer before applying older exact guards."""
+    """Authenticate the current narrow deltas before applying older exact guards."""
     from test_sc059_clause_separation import before_sc059_separation
     current = before_sc059_separation(current)
     previous = baseline_definitions()
@@ -34,10 +34,13 @@ def before_sc047_adoption(current):
         a:{*a} m:{*m} a:{*a} z:{*z} |
         a:{*a} m:{*m} m:{*m} a:{*a} z:{*z} |
         o:{*o} n:{*n} m:{*m} i:{*i} z:{*z}"""
-    expected = previous["PGWeakTails"].body.rstrip()[:-1] + "|" + extra + "]"
+    expected = {
+        "PGWeakTails": previous["PGWeakTails"].body.rstrip()[:-1] + "|" + extra + "]",
+        "OEUnstressedEIContraction": f"FootCtx({previous['OEUnstressedEIContraction'].body})",
+    }
     assert current.keys() == previous.keys()
     for name in previous:
-        body = expected if name == "PGWeakTails" else previous[name].body
+        body = expected.get(name, previous[name].body)
         assert "".join(current[name].body.split()) == "".join(body.split()), name
     return previous
 

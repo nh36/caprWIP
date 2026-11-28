@@ -211,8 +211,10 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
 
     active_source = models.ROOT / "data/germanic-aligned-final.tsv"
     capture_dir = models.CELLS.parent / "captures"
-    with gzip.open(capture_dir / "sc047-production-v1.json.gz", "rt", encoding="utf-8") as stream:
+    with gzip.open(models.CURRENT_CAPTURE, "rt", encoding="utf-8") as stream:
         result = json.load(stream)
+    with gzip.open(capture_dir / "sc047-production-v1.json.gz", "rt", encoding="utf-8") as stream:
+        original = json.load(stream)
     with gzip.open(capture_dir / "sc047-lexical-expansion-v1.json.gz", "rt", encoding="utf-8") as stream:
         reference = json.load(stream)
     models.verify_capture_inputs(result)
@@ -224,8 +226,8 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
     for model, value in result["models"].items():
         historical = reference["models"][model]
         for key in ("order", "paradigms", "queries"):
-            assert value[key] == historical[key]
-        assert {row["row_id"]: row for row in value["corpus"]} == {
+            assert original["models"][model][key] == historical[key]
+        assert {row["row_id"]: row for row in original["models"][model]["corpus"]} == {
             row["row_id"]: row for row in historical["corpus"]}
         active = {row["row_id"]: row for row in value["active_corpus"]}
         assert len(value["active_corpus"]) == len(active) == len(source)
@@ -243,6 +245,24 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
             assert "SC047FinalIi" not in intermediate
         else:
             assert intermediate["OEIUmlaut"] == ["*ç*īe*j"]
+
+    stage = "OEUnstressedEIContraction"
+    firing_ids = {"1956", "2055", "2095", "2099", "2117", "2186", "2205", "2232"}
+    for rows in (result["compatibility_active_corpus"],
+                 *(value["active_corpus"] for value in result["models"].values())):
+        by_id = {row["row_id"]: dict(row["trace"]) for row in rows}
+        assert set(by_id) == set(source)
+        assert {key for key, trace in by_id.items() if stage in trace} == firing_ids
+        assert by_id["2099"][stage] == ["*l*í*k*k*i*a*n"]
+    for value in result["models"].values():
+        queries = {probe["input"]: probe for probe in value["queries"]}
+        order = value["order"]
+        earlier = set(order[:order.index(stage)])
+        for form, suffix in (("gakáwiθi", "θ"), ("gakáwid", "d")):
+            trace = queries[form]["trace"]
+            assert next(outputs for name, outputs in reversed(trace) if name in earlier) == [
+                f"*ᶠ*ʝ*e*k*e*i*{suffix}"]
+            assert stage not in dict(trace)
 
 
 @pytest.mark.runtime
@@ -270,7 +290,8 @@ for requested, model, expected in (
     for form, output in zip(("nátją", "bádją", "kúnją", "xáwją", "xíwją"), expected):
         assert set(fst.apply_down(form)) == {output}, (model, form, output)
     for form, output in (("nátjai", "nette"), ("xíwjas", "hīewes"), ("bádjai", "bedde"),
-                         ("kúnjas", "cynnes"), ("xágjō", "heġġ"), ("rástǭ", "ræste")):
+                         ("kúnjas", "cynnes"), ("xágjō", "heġġ"), ("rástǭ", "ræste"),
+                         ("gakáwiθi", "ġeceiþ"), ("gakáwid", "ġeceid")):
         assert set(fst.apply_down(form)) == {output}, (model, form, output)
     board = client.post("/new-board", json={"dataPath": "germanic-aligned-final.tsv",
                                          "transducer": "internal", **requested})
@@ -303,10 +324,19 @@ response = client.post("/get-transducers", json={"name": "germanic.txt", "model"
 assert response.status_code == 400, response.data
 response = client.post("/get-transducers", json={"name": "germanic.txt", "model": "compatibility"})
 assert response.status_code == 200 and "regex OldEnglish;" in response.json["transducer"]
+compatibility_fst = model_bins("compatibility", ["Old_English"])["Old_English"]
+assert set(compatibility_fst.apply_down("gakáwiθi")) == {"ġecēaiþ"}
 with TemporaryDirectory() as directory:
     compatibility = germanic_models.MODEL_DIR / "old_english.bin"
+    b2 = germanic_models.MODEL_DIR / "old_english_B2.bin"
     germanic_models.MODEL_DIR = Path(directory)
     (germanic_models.MODEL_DIR / compatibility.name).symlink_to(compatibility)
+    response = client.post("/new-board", json={"dataPath": "germanic-aligned-final.tsv",
+                                              "transducer": "internal", "model": "B2"})
+    assert response.status_code == 503 and "Model B2" in response.json["message"], response.data
+    (germanic_models.MODEL_DIR / b2.name).symlink_to(b2)
+    (germanic_models.MODEL_DIR / "old_english_B2.json").write_text(
+        '{"fst_sha256":"stale","runner_sha256":"stale","bin_sha256":"stale"}')
     response = client.post("/new-board", json={"dataPath": "germanic-aligned-final.tsv",
                                               "transducer": "internal", "model": "B2"})
     assert response.status_code == 503 and "Model B2" in response.json["message"], response.data

@@ -22,6 +22,7 @@ BASE = DOCS / "sound_changes/literature_dossiers/sc047_paired_chronologies"
 FROZEN = BASE / "comparative_followup/parallel/observations.json.gz"
 PLAN = BASE / "labial_review/plan.json"
 CELLS = DOCS / "models/sc047/cells.tsv"
+CURRENT_CAPTURE = CELLS.parent / "captures/sc047-current.json.gz"
 MODELS = {"A": "early", "B2": "split_geminate_only"}
 VERSION = "sc047-active-v2"
 FROZEN_SHA = "f2962dde3a9f0e1771c6de1bab6cbd2b18f0f844bbddfcb6807b7dab81e43060"
@@ -190,8 +191,9 @@ def run(models, forms=(), *, active=False, binaries=None):
         raise ValueError("SC047 historical input digest does not match the pinned archive")
     with gzip.open(FROZEN, "rt", encoding="utf-8") as stream:
         frozen = json.load(stream)
-    if hashes["fst_sha256"] != frozen["inputs_sha256"]["germanic.txt"]:
-        raise ValueError("A changed canonical FST needs a new reviewed model base")
+    historical_source = hashes["fst_sha256"] == frozen["inputs_sha256"]["germanic.txt"]
+    if not active and not historical_source:
+        raise ValueError("Historical replay requires its archived FST; use --active for current models")
     expected = {row["row_id"]: row for row in frozen["corpus"]}
     fields = ("row_id", "concept", "proto", "proto_norm", "fst_input", "word_stress",
               "phonological_finality", "counterpart")
@@ -221,9 +223,15 @@ def run(models, forms=(), *, active=False, binaries=None):
             }, [], work, components_only=True)
         diag = {f"row:{row['row_id']}": row["fst_input"] for row in rows}
         live = {f"active:{row['row_id']}": row["fst_input"] for row in live_rows}
-        canonical_outputs, canonical_traces = trace(canonical, paths, diag)
+        canonical_inputs = diag | live | (queries if active else {})
+        canonical_outputs, canonical_traces = trace(canonical, paths, canonical_inputs)
+        if binaries is not None:
+            composed = batch_apply_down(work / "old_english.bin", list(canonical_inputs.values()))
+            for key, output in zip(canonical_inputs, composed):
+                if sorted(set(output)) != canonical_outputs[key]:
+                    raise RuntimeError(f"Compatibility composed output disagrees with trace: {key}")
         for row in rows:
-            if canonical_outputs[f"row:{row['row_id']}"] != expected[row["row_id"]]["identity"]:
+            if historical_source and canonical_outputs[f"row:{row['row_id']}"] != expected[row["row_id"]]["identity"]:
                 raise RuntimeError(f"Stage evaluation disagrees with canonical composition: {row['row_id']}")
         for model in models:
             overrides = selections(rows, cells, model)
@@ -284,7 +292,18 @@ def run(models, forms=(), *, active=False, binaries=None):
                     tmp_bin.write(path.read_bytes())
                     temp_path = Path(tmp_bin.name)
                 os.replace(temp_path, binaries / name)
-    return {"version": VERSION, "lexical_proposal": PROPOSAL, **hashes, "models": results}
+    result = {"version": VERSION, "lexical_proposal": PROPOSAL, **hashes, "models": results}
+    if active:
+        result["compatibility_active_corpus"] = [
+            {**row, "outputs": canonical_outputs[f"active:{row['row_id']}"],
+             "trace": canonical_traces[f"active:{row['row_id']}"]}
+            for row in live_rows
+        ]
+        result["compatibility_queries"] = [
+            {"input": form, "outputs": canonical_outputs[key], "trace": canonical_traces[key]}
+            for key, form in queries.items()
+        ]
+    return result
 
 
 def main():

@@ -14,13 +14,13 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[2]
 sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
 from index_verborum_emission import build_emission_table, load_model_entry_headings, load_print_main
-from sc047_models import verify_capture_inputs
+from sc047_models import CURRENT_CAPTURE, verify_capture_inputs
 INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
 MODEL_APPENDIX_PATH = SCRIPT_DIR / "sc047_preview" / "appendix.md"
 MODEL_CHAPTER_PATH = SCRIPT_DIR / "sc047_preview" / "chronologies.md"
-MODEL_CAPTURE_PATH = REPO_ROOT / "Germanic/docs/models/sc047/captures/sc047-production-v1.json.gz"
+MODEL_CAPTURE_PATH = CURRENT_CAPTURE
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"

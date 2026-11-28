@@ -3151,7 +3151,7 @@ English Proto Input: *xíwjas
 Old English Orthography: h*īewes
 Outcome: hīewes
 
-NOTE: Genitive singular Cotton hiewes, Ælfric's Grammar, Zupitza p.30 l.11; normalized hīewes. Inherited direct *xíwją and hīew remain separate diagnostic and headword.
+NOTE: Genitive singular Cotton hiewes, Sweet's Pastoral Care p.86 l.20; Hatton hiwes on the facing p.87. Inherited direct *xíwją and hīew remain separate diagnostic and headword.
 
 
 

@@ -5,10 +5,14 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
-The [SC047 adoption candidate](models/sc047/adoption.md) maintains A
-and B2 as selectable historical Old English transducers against one
-lexical catalogue. The compatibility cascade remains available for
-replay and rule-inventory evidence, not as a third historical model.
+The [SC047 integration](models/sc047/integration-record.md) provides A
+and B2 as selectable Old English transducers against one lexical
+catalogue. The compatibility cascade remains available for replay
+and rule-inventory evidence, not as a third historical model.
+The scoped [SC083 adjudication](sound_changes/audits/sc083-adjudication.md)
+follows that integration to assess the common weak-vowel proxy in all
+three cascades. It does not advance the saved programme: SC050 remains
+next and the intervening obligations remain open.
 
 The [SC047/SC048 research pass](sound_changes/audits/sc047-adjudication.md)
 distinguishes early low-vowel loss from its retained late nasal fragment,

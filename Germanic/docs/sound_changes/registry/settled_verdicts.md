@@ -54,6 +54,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC074 | Later medial weak-i lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC076 | Pretonic i-lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC082 | Bounded inherited-j normalization | active | RESTRICT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc082-adjudication.md` |
+| SC083 | OE Unstressed EI Contraction | active | RESTRICT | `Germanic/docs/sound_changes/audits/sc083-adjudication.md` |
 | SC085 | OE H Loss | active | REFORMULATE/RESTRICT | `Germanic/docs/sound_changes/audits/sc085-adjudication.md` |
 | SC087 | OE R Metathesis | active | RETAIN | `Germanic/docs/sound_changes/audits/sc087-adjudication.md` |
 | SC089 | Late unstressed ag-suffix raising | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc089-adjudication.md` |

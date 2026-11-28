@@ -104,7 +104,7 @@ SC079	OE J Loss After Heavy	not_started				no
 SC080	OE Final Geminate Simplification	not_started				no
 SC081	OE J Strengthening After Front Diphthong	not_started				no
 SC082	Bounded inherited-j normalization		three; bore; key	Retain j after non-high long front monophthongs.	Weak-suffix normalization is telescoped, not one generic physical VjV vocalization law.	yes
-SC083	OE Unstressed EI Contraction	not_started				no
+SC083	OE Unstressed EI Contraction	adjudicated	bore; lick; make	Weak e.i deletion proxy restricted by the existing one-pretonic foot annotation.	Prefixed call is a stressed-root protection control, not a selected input or historical chronology edge. Retain the SC082 and SC087 records.	no
 SC084	OE Weight Cleanup	not_started			Identity cleanup checkpoint after weight-sensitive rules; methodological appendix only.	no
 SC085	OE singleton intervocalic h-loss	adjudicated	toe; clay; fringe	Velar/palatal allophones, back/back loss, geminate and pretonic controls; Campbell186-187 §§461,464-465.	REFORMULATE/RESTRICT; existing FootCtx protects pretonic material. Written h phonetics and ae/e chronology remain open; SC073 boundary observation is not historical proof.	no
 SC086	OE Contraction	not_started				no

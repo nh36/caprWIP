@@ -297,7 +297,7 @@ def publish_active(result, directory, headings):
         }
         volume.extend(("", "## Technical appendix", "",
                        f"Active selected matches: {len(active) - len(missing)}/{len(active)}. "
-                       f"Historical frozen matches: {len(frozen) - len(frozen_missing)}/{len(frozen)}.", "",
+                       f"Current results on archived inputs: {len(frozen) - len(frozen_missing)}/{len(frozen)}.", "",
                        "Hay remains a direct comparison in both denominators. Model A has "
                        "no verified protected selection.", "", "### Unmatched active forms", ""))
         volume.extend(f"- {key}: *{target}* versus `{display(outputs)}`."

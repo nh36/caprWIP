@@ -7977,17 +7977,40 @@ therefore ordered between strengthening and contraction.
 
 ### SC083. Contraction of unstressed \emph{ei} (`OEUnstressedEIContraction`) {#rule-OEUnstressedEIContraction}
 
-The final rule removes the extra unstressed \emph{e} before \emph{i}.
+In the weak suffix of verbs such as *macian* ‘make’, earlier rounded
+vocalism was shortened and unrounded. Unstressed \emph{*-ej-} >
+\emph{-ij-}; further loss of the vowel was restricted to forms with a
+following heavy syllable. Early spellings with \emph{i} or \emph{iġ}
+reflect the distinction [@RingeTaylor2014, p. 228].
 
 ```foma
-define OEUnstressedEIContraction [
+define OEUnstressedEIContraction FootCtx([
     {*e} -> 0 || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*i}
-];
+]);
 ```
 
-The rule contracts the unstressed \emph{ei}-like sequence that the preceding vocalization would otherwise leave behind in forms such as *borian* ‘bore’ and *liccian* ‘lick’.
+The preceding rule represents the weak sequence as \emph{e.i}. Removing
+\emph{e} in that representation approximates the historical weak-vowel
+development in *borian* ‘bore’ and *liccian* ‘lick’; the finite Vespasian
+gloss *liciað* ‘lick’ independently attests the suffix
+[@RingeTaylor2014, pp. 32, 35, 228; @Sweet1885, p. 286 (Ps. 71:9)].
+The foot restriction keeps one annotated pretonic syllable outside the
+context that licenses deletion. This prevents its vowel from licensing
+loss of \emph{e} in the stressed root after earlier rules remove the
+root's overt accent. In Mercian *ġeċēð* ‘calls’, the sequence arose
+inside the stressed root after loss of \emph{w} and developed a long
+vowel, not the weak outcome [@Campbell1959, §237.1b;
+@RingeTaylor2014, pp. 260, 318]. The foot marker does not itself model
+that contraction or diagnose stress after an unmarked longer prefix.
 
-Moving the rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) makes PGmc [búrōjaną]{.recon} ‘bore’ yield [*boreian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7898" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7898:1"} rather than expected OE *borian* 'bore', and PGmc [líkkōjaną]{.recon} ‘lick’ yield [*licceian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7898" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7898:2"} rather than expected *liccian* 'lick'. The contrast requires [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) to follow [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving this rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization)
+makes the reconstructed inputs [búrōjaną]{.recon} ‘bore’ and
+[líkkōjaną]{.recon} ‘lick’
+yield [*boreian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7917" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7917:1"} and [*licceian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7917" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7917:2"} instead of the attested
+forms. This establishes that the two executable steps must be ordered in
+that way for these weak forms, not that the consonant became a separate
+vowel historically. No new failure was found towards
+[SC087 OERMetathesis](#rule-OERMetathesis) within the tested range.
 
 ## Intervocalic h-loss
 
@@ -8062,7 +8085,7 @@ reproduces the toe boundary in two separately executed trials. Moving
 loss before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), or
 moving merger after loss, removes the palatal fricative while the ending
 is still \emph{æ}. The resulting \emph{ā + æ} neither meets the merger's
-consonantal context nor contracts, yielding [*tāæ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7973" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7973:1"} rather than
+consonantal context nor contracts, yielding [*tāæ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7996" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7996:1"} rather than
 OE *tā* 'toe'. Unperturbed, merger first supplies \emph{e}; loss leaves
 \emph{ā + e}, and contraction gives *tā* 'toe'.
 The [earlier loss-displacement record](https://github.com/nh36/caprWIP/commit/196b8f6b73d825d86830bb8612834f50f865b9e4)
@@ -8074,7 +8097,7 @@ the clay witness instead puts loss before merger in that form. Whether this
 spelling distinguishes \emph{æ} from \emph{e} remains open; a successful
 contracted endpoint cannot decide it.
 
-If loss is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields [*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7985" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7985:1"} rather than expected OE *flēon* ‘flee’, PGmc [sláxaną]{.recon} ‘slay’ yields [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7985" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7985:2"} rather than expected *slēan* ‘slay’, PGmc [téxun]{.recon} ‘draw’ yields [*teoon*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7985" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7985:3"} rather than expected *tēon* ‘draw’, and PGmc [táixōn]{.recon} ‘toe’ yields [*tāe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7985" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7985:4"} rather than expected *tā* ‘toe’. These outputs require loss before contraction in the current cascade. The four displacement witnesses agree with the glossary evidence for that sequence; neither their executable adjacency nor the copy dates establish an immediate historical succession.
+If loss is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields [*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8008" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8008:1"} rather than expected OE *flēon* ‘flee’, PGmc [sláxaną]{.recon} ‘slay’ yields [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8008" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8008:2"} rather than expected *slēan* ‘slay’, PGmc [téxun]{.recon} ‘draw’ yields [*teoon*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8008" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8008:3"} rather than expected *tēon* ‘draw’, and PGmc [táixōn]{.recon} ‘toe’ yields [*tāe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8008" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8008:4"} rather than expected *tā* ‘toe’. These outputs require loss before contraction in the current cascade. The four displacement witnesses agree with the glossary evidence for that sequence; neither their executable adjacency nor the copy dates establish an immediate historical succession.
 
 ## Contraction after h-loss
 
@@ -8138,7 +8161,7 @@ cited texts [@RingeTaylor2014, p. 314, §6.9.3].
 The evidence to preserve here is the hiatus with both segments of
 \emph{-um} retained, not an additional contraction target.
 
-Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc [fléuxaną]{.recon} ‘flee’ yield [*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8049" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8049:1"} rather than expected OE *flēon* 'flee', PGmc [sláxaną]{.recon} ‘slay’ yield [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8049" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8049:2"} rather than expected *slēan* 'slay', PGmc [téxun]{.recon} ‘draw’ yield [*teoon*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8049" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8049:3"} rather than expected *tēon* 'draw', and PGmc [táixōn]{.recon} ‘toe’ yield [*tāe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8049" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8049:4"} rather than expected *tā* 'toe'. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc [fléuxaną]{.recon} ‘flee’ yield [*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8072" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8072:1"} rather than expected OE *flēon* 'flee', PGmc [sláxaną]{.recon} ‘slay’ yield [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8072" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8072:2"} rather than expected *slēan* 'slay', PGmc [téxun]{.recon} ‘draw’ yield [*teoon*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8072" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8072:3"} rather than expected *tēon* 'draw', and PGmc [táixōn]{.recon} ‘toe’ yield [*tāe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8072" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8072:4"} rather than expected *tā* 'toe'. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 The more distant [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction)
 relation establishes only that weak-tail reduction precedes contraction.
 
@@ -8232,7 +8255,7 @@ define OERMetathesis [
 
 The rule moves \emph{*r} across a following short vowel in the relevant late clusters, producing forms such as *berstan* ‘burst’ where an earlier order would still show a broken vowel sequence.
 
-Moving the rule before [SC044 OEBreaking](#rule-OEBreaking) makes PGmc [bréstaną]{.recon} ‘burst’ yield [*beorstan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8143" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8143:1"} rather than expected OE *berstan* ‘burst’. On this evidence, I take [SC087 OERMetathesis](#rule-OERMetathesis) to follow [SC044 OEBreaking](#rule-OEBreaking). Moving it later within the tested sequence alters no output.
+Moving the rule before [SC044 OEBreaking](#rule-OEBreaking) makes PGmc [bréstaną]{.recon} ‘burst’ yield [*beorstan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8166" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8166:1"} rather than expected OE *berstan* ‘burst’. On this evidence, I take [SC087 OERMetathesis](#rule-OERMetathesis) to follow [SC044 OEBreaking](#rule-OEBreaking). Moving it later within the tested sequence alters no output.
 
 The lexical evidence fixes the earlier relation but does not identify a corresponding
 later constraint. For the selected West Saxon history, the sources support a late

@@ -10,7 +10,8 @@ from sc047_models import MODELS, run, sha
 from capr_runtime import layout
 
 CONTROLS = ("sáiwalōi", "sáiwalôi", "bádjamiz", "fánją", "fánjai", "fánjas",
-            "fánjō", "wígjaz", "wígją", "wígjai", "wígjas", "wígjô", "bázjas")
+            "fánjō", "wígjaz", "wígją", "wígjai", "wígjas", "wígjô", "bázjas",
+            "gakáwiθi", "gakáwid")
 
 
 def main():

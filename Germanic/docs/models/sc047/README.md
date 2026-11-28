@@ -1,25 +1,33 @@
 # CAPR's two SC047 research models
 
-For the [adoption candidate](adoption.md), use `--active` with the
-shared lexical corpus. The procedure below reproduces the historical
-benchmark and its research selections, not the active catalogue.
-The active companions publish each complete order and changed-stage
-trace from the production capture. Their publisher checks the same
-source digests as the main book; frozen research captures remain
-independently renderable.
+See the [production integration record](integration-record.md) for the
+disposition of the [adoption candidate](adoption.md). The current
+[A](A-volume.pdf) and [B2](B2-volume.pdf) companions project the
+[current capture](captures/sc047-current.json.gz), with the complete
+orders and changed-stage traces for the same selected catalogue.
+`adjudicate.py --refresh` owns the current capture and companion PDFs.
+The capture and installed binaries are refreshed together only when
+stale; rendering a stale companion requires Pandoc, XeLaTeX and the
+book fonts. The publisher checks the same source digests as the main
+book. Historical captures, including the first production capture,
+remain separate immutable records.
 
 **A (Ringe–Taylor)** loses short oral and nasal low vowels before West
 Germanic j-gemination. **B2 (Dahl–Hogg–Fulk)** loses oral *a* before
 gemination but nasal *ą* afterwards. The labels specify their apocope
 chronologies, not adoption of every reconstruction in those authors.
 The original B is archived, not selectable. Neither model changes
-`update` or rewrites the original 394-input experiment.
+the historical compatibility order or rewrites the original 394-input
+experiment.
 
 ## Source and build
 
 `sc047_models.py` compiles the shared production definitions and executes
 two explicitly ordered cascades. It first reproduces the canonical
-394-row endpoints by sequential stage lookup. Each active arm then runs
+394-row endpoints by sequential stage lookup on the original FST.
+`--active` also evaluates the shared live corpus in compatibility, A
+and B2, and compares each complete composition with its stage lookups.
+Each selectable arm runs
 the identical frozen inputs, the model-specific selections, and the
 paradigm controls. Every changed stage is recorded: a missing stage in a
 trace means identity at that stage. The shared compilation and all
@@ -27,7 +35,8 @@ lookups are isolated, disposable and opt-in; ordinary CI does not gain
 any Foma runs. The historical files and their hashes are inputs, not
 outputs. An individual arm can run with `--model A` or `--model B2`.
 
-From the warmed Germanic research checkout:
+To run an independent replay against the original FST from the warmed
+historical checkout:
 
 ```sh
 mkdir -p .capr-work/sc047-models
@@ -111,8 +120,10 @@ inventory differences, and the second rejects unrecognized or multiply
 selected corpus cells. The recorded-run check verifies the exact corpus
 deltas, the 40 lowering identities, the lengthening controls, and the
 quantity and dative probes. The archived replay checks still test historical
-artifacts; they cannot validate the new selections. Ordinary test runs
-add no Foma process, rebuilt fixture, corpus runtime sweep or concurrency.
+artifacts; they cannot validate the new selections. Ordinary test runs add no Foma process, rebuilt fixture, corpus runtime sweep
+or concurrency. The SC083 controls reuse the current capture; the refresh
+now owns the previously manual selectable-app build, and the same component
+image serves the extra compatibility paths and two prefixed ‘call’ forms.
 The explicit research build uses one disposable common image and one
 component compile for both variants, then performs batched lookups.
 Neither it nor the PDF render writes production bins or generated

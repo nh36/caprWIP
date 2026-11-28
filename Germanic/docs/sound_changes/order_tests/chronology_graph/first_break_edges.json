@@ -674,7 +674,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC083-oe-unstressed-ei-contraction.md",
       "card_type": "reciprocal_or_near_reciprocal",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary reciprocates SC082 later; later search reaches SC087 with no real break."
+      "short_summary": "SC082 displacement reciprocates executable weak-vowel feeding; the bounded search toward SC087 is not a chronology constraint."
     },
     {
       "change_id": "SC085",

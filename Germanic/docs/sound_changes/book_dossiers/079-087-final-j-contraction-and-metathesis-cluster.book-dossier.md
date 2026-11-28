@@ -12,6 +12,14 @@ postmutation merger. This repairs the native key diagnostic without
 changing any selected input or corpus final; `sc082-adjudication.md`
 owns the bounded verdict and residue.
 
+SC083 restricts the deletion proxy to the eligible weak domain under the
+existing one-pretonic foot annotation. The independent contrast is
+weak-suffix raising in *macian* versus stressed-root contraction in
+Mercian *ġeċēð* [@RingeTaylor2014, pp. 228, 260, 318; @Campbell1959, §237.1b].
+The correction is at the same executable position, with SC085 unchanged.
+See the [SC083 adjudication](../audits/sc083-adjudication.md) for the
+firing census, developmental controls and remaining representation limits.
+
 ## 1. Role in the book
 
 This row is the terminal visibility scaffold of the sound-change half. It
@@ -67,9 +75,11 @@ strongest closing subcluster, not a reason to merge SC078 into it.
 
 ### Does SC083 belong with contraction, with final-j/e-vowel material, or as a separate bridge?
 
-SC083 belongs with the `SC081-SC083` material, not with `SC085-SC086`. Its only
-positive edge is `SC082 < SC083`, and its later side is runner-bounded. It is
-best read as the right-edge follower inside the vocalization/contraction chain.
+SC083 belongs with the `SC081-SC083` material, not with `SC085-SC086`.
+Moving it ahead of SC082 breaks executable feeding in admitted weak forms;
+the computational dependency does not date a historical syllabic *i*.
+The later side is runner-bounded. The restored foot-domain restriction
+adds no independent historical chronology edge.
 
 ### Is SC087 an independent terminal singleton, or does it belong structurally with a preceding closing subcluster?
 

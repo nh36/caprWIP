@@ -28,7 +28,13 @@
 Current first-break evidence places SC083 after `SC082` OE Intervocalic J Vocalization. If OE Unstressed EI Contraction is moved before that stage, PGmc `*búrōjaną` yields `boreian` rather than expected OE `borian`, PGmc `*líznōjaną` yields `liorneian` rather than `liornian`, and PGmc `*líkkōjaną` yields `licceian` rather than `liccian`, alongside five other newly failing rows. The later direction found no real break through order `86`, so this run does **not** identify any later historical boundary for SC083.
 
 ## Caveats
-This card is one-sided in current testing. The earlier boundary is historically interpretable and directly reciprocates `SC082` later, but the later side is runner-bounded and must **not** be rewritten into a claim that SC083 must precede `SC087`.
+This card is one-sided. The earlier boundary reciprocates `SC082` on its
+later side and demonstrates feeding in the executable weak-suffix proxy.
+The historical description starts with a palatal consonant
+(Ringe & Taylor 2014:228); the experiment does not independently date a
+syllabic stage. The SC083 foot-domain restriction preserves these witnesses
+without changing position. The later side is runner-bounded and must
+**not** be rewritten into a requirement that SC083 precede `SC087`.
 
 ## Source files
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03.tsv`

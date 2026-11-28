@@ -106,7 +106,7 @@ SC079	OEJLossAfterHeavy	historical_sound_change	Old English	OE J Loss After Heav
 SC080	OEFinalGeminateSimplification	historical_sound_change	Old English	OE Final Geminate Simplification	oe	english_specific	A	unadjudicated		97	95
 SC081	OEJStrengtheningAfterFrontDiphthong	historical_sound_change	Old English	OE J Strengthening After Front Diphthong	oe	english_specific	A	unadjudicated		98	96
 SC082	OEIntervocalicJVocalization	historical_sound_change	Old English	Bounded inherited-j normalization	oe	english_specific	B	adjudicated	RESTRICT/REFORMULATE	99	97
-SC083	OEUnstressedEIContraction	historical_sound_change	Old English	OE Unstressed EI Contraction	oe	english_specific	A	unadjudicated		100	98
+SC083	OEUnstressedEIContraction	historical_sound_change	Old English	OE Unstressed EI Contraction	oe	english_specific	A	adjudicated	RESTRICT	100	98
 SC084	OEWeightCleanup	technical_marker	Old English	OE Weight Cleanup				unadjudicated		101	99
 SC085	OEHLoss	historical_sound_change	Old English	OE H Loss	oe	english_specific	A	adjudicated	REFORMULATE/RESTRICT	102	100
 SC086	OEContraction	historical_sound_change	Old English	OE Contraction	oe	english_specific	A	unadjudicated		103	101

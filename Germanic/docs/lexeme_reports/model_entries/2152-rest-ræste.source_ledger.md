@@ -10,12 +10,15 @@ ledger below. The printed Kroonen locator is p. 405 (PDF sheet 445).
 | Source | Use in the adopted entry |
 | :--- | :--- |
 | [Morris, *Blickling Homilies* 101.26](https://archive.org/details/blicklinghomilie00morr/page/n110/mode/1up); Bosworth–Toller, s.v. *ræst* | The printed *þa écean ræste* is the direct object of *geearnige*, with distinct beneficiary *him*: accusative singular. The normalized target is unchanged. |
-| Ringe 2017:225, 312; Ringe–Taylor 2014:61, 299–300 | Inherited accusative *-ǭ* is distinct from nominative *-ō*, genitive *-ōz* and dative *-ōi*. Dative *-ōi* to West Germanic *-ē* is a reconstruction, not a completed CAPR lookup. |
+| Ringe 2017:225, 312; Ringe–Taylor 2014:61, 299–300 | Inherited accusative *-ǭ* is distinct from nominative *-ō*, genitive *-ōz* and dative *-ōi*. The reconstructed dative development \emph{*-ōi} > \emph{-ē} is implemented by both selectable CAPR models. |
 | *Boethius* 25, Fox 88.29–32; *Guthlac B* 1068 | Nominative *sēo ræst* and dative *tō ræste* are secure. *Ræste* with *nēod* is a genitive candidate; neither prepositional citation exemplifies it. |
-| Canonical and matched-cell traces | Accusative *rástǭ* gives *ræste* in all orders. Retain *rástōz → rast* in the historical trials as a distinct long-ending dependency; do not change the phonological order. |
+| Canonical and matched-cell traces | Accusative \emph{*rástǭ} > *ræste* in all orders. Bimoric genitive \emph{*rástōz} > *ræste* in A and B2; *rast* is the archived reversed-order result, not a prediction for the selected accusative. |
 | Fulk 2018:155 | Trimoric genitive *rástôz* is a quantity alternative to bimoric *rástōz*, not a second attestation. Both are preserved separately from the selected accusative and the later dative input. |
 
 ### Historical extraction notes predating the cell migration
+
+Labels such as “selected input” and “current local trace” in this table
+refer to the original genitive comparison, not the current accusative.
 
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

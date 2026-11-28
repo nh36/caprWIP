@@ -11027,29 +11027,44 @@ and contraction.
 \subsection{\texorpdfstring{SC083. Contraction of unstressed \emph{ei}
 (\texttt{OEUnstressedEIContraction})}{SC083. Contraction of unstressed  (OEUnstressedEIContraction)}}\label{rule-OEUnstressedEIContraction}
 
-The final rule removes the extra unstressed \emph{e} before \emph{i}.
+In the weak suffix of verbs such as \emph{macian} `make', earlier
+rounded vocalism was shortened and unrounded. Unstressed \emph{*-ej-}
+\textgreater{} \emph{-ij-}; further loss of the vowel was restricted to
+forms with a following heavy syllable. Early spellings with \emph{i} or
+\emph{iġ} reflect the distinction (\citeproc{ref-RingeTaylor2014}{Ringe
+and Taylor 2014, 228}).
 
 \begin{ReaderFacingFoma}
-define OEUnstressedEIContraction [
+define OEUnstressedEIContraction FootCtx([
     {*e} -> 0 || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ {*i}
-];
+]);
 \end{ReaderFacingFoma}
 
-The rule contracts the unstressed \emph{ei}-like sequence that the
-preceding vocalization would otherwise leave behind in forms such as
-\emph{borian} `bore' and \emph{liccian} `lick'.
+The preceding rule represents the weak sequence as \emph{e.i}. Removing
+\emph{e} in that representation approximates the historical weak-vowel
+development in \emph{borian} `bore' and \emph{liccian} `lick'; the
+finite Vespasian gloss \emph{liciað} `lick' independently attests the
+suffix (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 32, 35,
+228}; \citeproc{ref-Sweet1885}{Sweet 1885, 286} (Ps. 71:9)). The foot
+restriction keeps one annotated pretonic syllable outside the context
+that licenses deletion. This prevents its vowel from licensing loss of
+\emph{e} in the stressed root after earlier rules remove the root's
+overt accent. In Mercian \emph{ġeċēð} `calls', the sequence arose inside
+the stressed root after loss of \emph{w} and developed a long vowel, not
+the weak outcome (\citeproc{ref-Campbell1959}{Campbell 1959, § 237.1b}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 260,
+318}). The foot marker does not itself model that contraction or
+diagnose stress after an unmarked longer prefix.
 
-Moving the rule before \hyperref[rule-OEIntervocalicJVocalization]{SC082
-OEIntervocalicJVocalization} makes PGmc \Recon{búrōjaną} `bore' yield
-\Pred{boreian} rather than expected OE \emph{borian} `bore', and PGmc
-\Recon{líkkōjaną} `lick' yield \Pred{licceian} rather than expected
-\emph{liccian} `lick'. The contrast requires
-\hyperref[rule-OEUnstressedEIContraction]{SC083
-OEUnstressedEIContraction} to follow
+Moving this rule before
 \hyperref[rule-OEIntervocalicJVocalization]{SC082
-OEIntervocalicJVocalization}. Moving it later within the tested range
-before \hyperref[rule-OERMetathesis]{SC087 OERMetathesis} creates no new
-failure.
+OEIntervocalicJVocalization} makes the reconstructed inputs
+\Recon{búrōjaną} `bore' and \Recon{líkkōjaną} `lick' yield
+\Pred{boreian} and \Pred{licceian} instead of the attested forms. This
+establishes that the two executable steps must be ordered in that way
+for these weak forms, not that the consonant became a separate vowel
+historically. No new failure was found towards
+\hyperref[rule-OERMetathesis]{SC087 OERMetathesis} within the tested
+range.
 
 \section{Intervocalic h-loss}\label{intervocalic-h-loss}
 
