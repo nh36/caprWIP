@@ -1,0 +1,31 @@
+id	grade	provenance	entry	input	expected	source	limits
+cover-3sg	qualified	local	OEHLoss	*w*r*i*ç*i*θ	wrīþ (stem)	Ringe–Taylor 2014:317	Identical-vowel comparator; attested ofer-wrīð, prefix not injected.
+receive-3sg	qualified	local	OEHLoss	*f*æ*ç*i*θ	fǣþ (stem)	Ringe–Taylor 2014:317	Short unlike æ.i, before dental rather than expanding consonantal scope; attested on-fǣð, prefix not injected.
+nearest	qualified	local	OEHLoss	*n*ē*ç*i*s*t	nēst	Ringe–Taylor 2014:317	Before s, but long ē.i; h-bearing alternatives and history of syncope explicitly uncertain.
+higher	qualified	local	OEHLoss	*x*ē*ç*i*r*a	hēra	Ringe–Taylor 2014:317; Campbell §237.1d	Before r, but long ē.i; Anglian route, not WS hīerra.
+rug-front	qualified	local	OEHLoss	*r*y*ç*e	rye	Ringe–Taylor 2014:317; Pheifer nos.1080–1081	Short unlike y.e, not e.i; Corpus spelling does not itself settle syllabicity.
+rug-back	qualified	local	OEHLoss	*r*y*x*a*n	rēon	Ringe–Taylor 2014:317	Short front/back before n, attested obliques of a backformed paradigm; distinct qualitative result.
+cow-pl	qualified	local	OEContraction	*k*ū*i	cȳ	Ringe–Taylor 2014:318; Campbell §236.1	Root noun; inherited unlike long back plus front at the edge, not short e.i.
+be-subj	established	observation	-	-	sie	Ringe–Taylor 2014:319; Beowulf 682b	Independent metrical hiatus after inherited j, contrasting with WS nuclear resolution; does not provide short e.i.
+rain	established	panel	rain-dir	-	regn / ren	Campbell §§243–244; historical.tsv	Secondary velar-derived palatal before n; not hiatus.
+thane	established	panel	thane-dir	-	þegn / þen	Campbell §243; historical.tsv	Same environment class as rain, not an independent chronology for V.i.
+maiden	variant	observation	-	-	mægden / mæden / maiden	Campbell §§243–244; Jones 1995:55	Competing palatal outcomes before d; not a supplied e.i derivation.
+wagon	established	panel	wagon-dir	-	wægn / wæn	Campbell §§243–244; historical.tsv	Regional vowels; retention and loss before n are not inherited gliding diagnostics.
+sail	variant	observation	-	-	segel / segl	Campbell §§204.8,363; frozen row 2164	Before l versus anaptyxis; sēl is not established by this comparison.
+snail	variant	observation	-	-	snegl / snel	Campbell §§243,267; Jones 1995:20	Short mid vowel before g+l, not a reconstruction of short unlike hiatus before l.
+way	established	panel	way-dir	-	weġ	Sweet 1885:207; historical.tsv	Secondary palatal retained at word edge.
+key-edge	qualified	panel	key-edge	-	cǣġ	Hogg 1979:105; Ringe–Taylor 2014:235,286	Long vowel and inherited approximant; edge retention control.
+key-vowel	established	panel	key-protected	-	cǣġe	Hogg 1979:105; Campbell §439	Protected long vowel and inherited approximant.
+labial-stop	synthetic	local	OEUnstressedEIContraction	*t*e*i*p	-	Scope probe	No newly established short e.i witness.
+labial-nasal	synthetic	local	OEUnstressedEIContraction	*t*e*i*m	-	Scope probe	Contrasts n with labial m; not a lexical observation.
+velar-stop	synthetic	local	OEUnstressedEIContraction	*t*e*i*k	-	Scope probe	No newly established short e.i witness.
+coronal-stop	synthetic	local	OEUnstressedEIContraction	*t*e*i*t	-	Scope probe	Contrasts d and t independently of the fricatives.
+sibilant	synthetic	local	OEUnstressedEIContraction	*t*e*i*s	-	Scope probe	Higher-quality long-vowel witness nearest does not license this firing.
+lateral	synthetic	local	OEUnstressedEIContraction	*t*e*i*l	-	Scope probe	Sail and snail test different segmental histories.
+rhotic	synthetic	local	OEUnstressedEIContraction	*t*e*i*r	-	Scope probe	Higher does not match the short nucleus.
+prevocalic	synthetic	local	OEUnstressedEIContraction	*t*e*i*a	-	Boundary probe	Different from both an absolute edge and a closed syllable.
+absolute	synthetic	local	OEUnstressedEIContraction	*t*e*i	-	Boundary probe	Compare qualified historical river; do not score hay.
+first-member	synthetic	local	OEUnstressedEIContraction	*t*e*i*⊕*w*e*g	-	Boundary probe	Different from absolute edge.
+old-atom	synthetic	local	OEUnstressedEIContraction	*t*ei*d	-	Origin probe	Incumbent atomic ei must not be consumed as a newly incorporated nucleus.
+old-j	synthetic	local	OEUnstressedEIContraction	*t*e*j*d	-	Origin probe	Inherited approximant must not be counted as a product of the new glide step.
+old-fricative	synthetic	local	OEUnstressedEIContraction	*t*e*ʝ*d	-	Origin probe	Secondary palatal fricative is distinct before merger.
