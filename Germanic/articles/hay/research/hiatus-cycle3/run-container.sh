@@ -14,6 +14,8 @@ case "${1:-}" in
     --chronology) mode=chronology; files+=(chronology.py representation.py); shift ;;
     --back-vowels) mode=back_vowels; files+=(back_vowels.py); shift ;;
     --later-h) mode=later_h; files+=(later_h.py); shift ;;
+    --revised) mode=revised; files+=(revised.py chronology.py representation.py later_h.py
+                                    back_vowels.py holdouts-v1.tsv); shift ;;
 esac
 
 tmp=$(docker compose exec -T backend mktemp -d /tmp/capr-hay-cycle3.XXXXXXXX)
