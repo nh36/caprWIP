@@ -14,6 +14,7 @@ case "$mode" in
     source_entry_check) files=(components.py component_check.py quantity_check.py source_entry_check.py) ;;
     stress_handoff) files=(components.py component_check.py stress_handoff.py) ;;
     nucleus_check) files=(components.py component_check.py nucleus_check.py) ;;
+    medial_hw_check) files=(components.py component_check.py medial_hw_check.py) ;;
     *) printf 'Unknown research replay mode: %s\n' "$mode" >&2; exit 2 ;;
 esac
 
