@@ -1,5 +1,12 @@
 # R4: What the surviving ‘flock’ ending dates
 
+**Historical correction.** [Q1a](../hiatus-cycle4/FLOCK_QUANTITY.md)
+verifies that Ringe & Taylor print long final *ī*. The `flock-long`
+comparison, not `flock-short`, reflects their final quantity. It allows
+both heavy-resolution chronologies. The traces and the short-input
+conditional remain valid; the earlier preference for a post-HVD heavy
+outcome from this lexeme is withdrawn.
+
 ## Identity and question
 
 **Branch:** `research/hay-article`; experimental base `113101ac5f169b589e1a9647cdf24d32cdd4d919`; immediate predecessor `0362b998`. **Incumbent:** SC063 `OEHighVowelApocope`, recorded as Old English and English-specific in the registry. The D, J and N operations have no registry identities. Would the direct singular in [FLOCK.md](FLOCK.md) have lost its independently reconstructed final short *i* if unlike hiatus had already ceased to be syllabic?

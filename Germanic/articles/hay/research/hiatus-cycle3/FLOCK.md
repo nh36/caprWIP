@@ -1,5 +1,12 @@
 # R3: ‘flock’, stem history and the surviving ending
 
+**Superseded quantity attribution.** The direct page-image check in
+[Q1a](../hiatus-cycle4/FLOCK_QUANTITY.md) confirms printed *awidī* and
+*eïdī*, not short final *i*. In the original record below, the short
+input must be read as a sensitivity case. The attestation and
+morphological evidence stand; the chronology inference does not follow
+from the published reconstruction.
+
 **Question.** Does attested *ēde* positively require late
 resolution? That inference needs an independently motivated
 short high ending in the **attested cell**, eligible for loss if
