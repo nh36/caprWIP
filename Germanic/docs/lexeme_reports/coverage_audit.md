@@ -1,13 +1,13 @@
 # Old English lexeme-report coverage audit
 
-- Total OE rows with real counterpart: 396
+- Total OE rows with real counterpart: 399
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 175
-- Required rows with published SOURCE: 33
-- Required rows with no published SOURCE: 142
-- Rows selected independently for philological discussion: 23
+- Rows requiring lexeme report: 178
+- Required rows with published SOURCE: 37
+- Required rows with no published SOURCE: 141
+- Rows selected independently for philological discussion: 27
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 160
+- Required rows with source material available but no manifest-backed production report: 163
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 2
 - Regular rows with empty NOTE but supporting material present: 223
@@ -21,7 +21,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | attested_variant | 6 | 6 | 1 | 5 | 0 |
 | early_analogy | 35 | 35 | 2 | 33 | 0 |
-| known_unmodelled | 2 | 2 | 2 | 0 | 0 |
+| known_unmodelled | 5 | 5 | 2 | 3 | 0 |
 | late_analogy | 28 | 28 | 4 | 24 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
 | regular | 317 | 96 | 0 | 92 | 4 |
@@ -38,6 +38,7 @@
 | 2011 | find | fundne | late_analogy | yes | certified_editorial_source | - | model_entries/2011-find-fundene.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=find-strong-nominative-plural |
 | 2013 | fire | fȳre | known_unmodelled | yes | certified_editorial_source | pilot | model_entries/2013-fire-fȳre.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, production_report, philological=fire-input-and-genealogy |
 | 2053 | hammer | hamer | attested_variant | yes | certified_editorial_source | - | model_entries/2053-hammer-hameres.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=hammer-citation-hamer |
+| 2055 | handle | handlian | regular | yes | certified_editorial_source | - | model_entries/2055-handle-handlian.model.md | NOTE, philological=handle-infinitive-formation |
 | 2085 | knee | cneowe | late_analogy | yes | certified_editorial_source | - | model_entries/2085-knee-cneowe.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=knee-ending |
 | 2148 | rainbow | reġnboga | regular | no | certified_editorial_source | - | model_entries/2148-rainbow-reġnboga.model.md | philological=rainbow-early-root-lowering |
 | 2162 | rust | rust | unexplained_unmodelled | yes | certified_editorial_source | - | model_entries/2162-rust-rust.model.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, philological=rust-masculine-citation |
@@ -54,6 +55,9 @@
 | 2337 | little | lȳtelu | regular | yes | certified_editorial_source | - | model_entries/2337-little-lȳtelu.model.md | NOTE, philological=little-hll-retention |
 | 2338 | livestock | nīetenu | regular | yes | certified_editorial_source | - | model_entries/2338-livestock-nīetenu.model.md | NOTE, philological=livestock-hvd-regression |
 | 2339 | dart | sċytel | regular | yes | certified_editorial_source | - | model_entries/2339-dart-sċytel.model.md | NOTE, philological=dart-hvd-regression |
+| 2342 | call | ġeċēð | known_unmodelled | yes | certified_editorial_source | - | model_entries/2342-call-ġeċēð.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, philological=call-stressed-front-hiatus |
+| 2343 | see | sēon | known_unmodelled | yes | certified_editorial_source | - | model_entries/2343-see-sēon.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, philological=see-medial-labiovelar |
+| 2344 | filter | sēoh | known_unmodelled | yes | certified_editorial_source | - | model_entries/2344-filter-sēoh.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, philological=filter-voiceless-and-voiced |
 
 ## Required rows with manifest-backed production reports
 
@@ -94,7 +98,7 @@
 | 1980 | cow | cȳ | late_analogy | yes | source_material | - | archive/dev_notes_slices/1980-cow-cȳ.md, archive/packets/1980-cow-cȳ.md, model_entries/1980-cow-cȳ.model.md, model_entries/1980-cow-cȳ.source_ledger.md, research_memos/1980-cow-cȳ.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 1987 | deed | dǣd | regular | yes | source_material | - | archive/dev_notes_slices/1987-deed-dǣd.md, model_entries/1987-deed-dǣd.model.md, model_entries/1987-deed-dǣd.source_ledger.md, research_memos/1987-deed-dǣd.md | NOTE |
 | 1990 | dill | dile | early_analogy | yes | source_material | - | archive/dev_notes_slices/1990-dill-dile.md, archive/packets/1990-dill-dile.md, model_entries/1990-dill-dile.model.md, model_entries/1990-dill-dile.source_ledger.md, research_memos/1990-dill-dile.md | NOTE, DERIVATION_CLASS=early_analogy |
-| 1992 | door | dor | regular | yes | source_material | - | archive/dev_notes_slices/1992-door-dor.md, archive/packets/1992-door-dor.md, model_entries/1992-door-dor.model.md, model_entries/1992-door-dor.source_ledger.md, model_entries/2183-shoulder-sċuldrum.model.md, model_entries/2183-shoulder-sċuldrum.source_ledger.md, pgmc_reconstructions/comparison_map.md, research_memos/1992-door-dor.md | NOTE |
+| 1992 | door | dor | regular | yes | source_material | - | archive/dev_notes_slices/1992-door-dor.md, archive/packets/1992-door-dor.md, model_entries/1992-door-dor.model.md, model_entries/1992-door-dor.source_ledger.md, model_entries/2183-shoulder-sċuldrum.model.md, model_entries/2183-shoulder-sċuldrum.source_ledger.md, model_entries/2343-see-sēon.source_ledger.md, pgmc_integration/provisional/lend-onleon.md, pgmc_integration/provisional/strainer-seohhe.md, pgmc_reconstructions/comparison_map.md, research_memos/1992-door-dor.md | NOTE |
 | 2003 | fare | faran | regular | yes | source_material | - | archive/dev_notes_slices/2003-fare-faran.md, archive/packets/2003-fare-faran.md, model_entries/2003-fare-faran.model.md, model_entries/2003-fare-faran.source_ledger.md, research_memos/2003-fare-faran.md | NOTE |
 | 2004 | fast | festan | early_analogy | yes | source_material | - | archive/dev_notes_slices/2004-fast-festan.md, archive/packets/2004-fast-festan.md, model_entries/2004-fast-festan.model.md, model_entries/2004-fast-festan.source_ledger.md, research_memos/2004-fast-festan.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2006 | fee | feoh | early_analogy | no | certified_editorial_source | - | model_entries/2006-fee-feoh.model.md | DERIVATION_CLASS=early_analogy, philological=fee-early-a-stem-transfer |
@@ -235,12 +239,15 @@
 | 2339 | dart | sċytel | regular | yes | certified_editorial_source | - | model_entries/2339-dart-sċytel.model.md | NOTE, philological=dart-hvd-regression |
 | 2340 | bed | bedde | regular | yes | source_material | - | model_entries/2340-bed-bedd.model.md, model_entries/2340-bed-bedd.source_ledger.md | NOTE |
 | 2341 | kin | cynnes | regular | yes | source_material | - | model_entries/2341-kin-cynn.model.md, model_entries/2341-kin-cynn.source_ledger.md | NOTE |
+| 2342 | call | ġeċēð | known_unmodelled | yes | certified_editorial_source | - | model_entries/2342-call-ġeċēð.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, philological=call-stressed-front-hiatus |
+| 2343 | see | sēon | known_unmodelled | yes | certified_editorial_source | - | model_entries/2343-see-sēon.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, philological=see-medial-labiovelar |
+| 2344 | filter | sēoh | known_unmodelled | yes | certified_editorial_source | - | model_entries/2344-filter-sēoh.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, philological=filter-voiceless-and-voiced |
 
 ## Required rows with no source material found
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Coverage category | Production status | Production report / source-material path(s) | Requirement basis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2055 | handle | handlian | regular | yes | none | - | - | NOTE |
+| 2055 | handle | handlian | regular | yes | certified_editorial_source | - | model_entries/2055-handle-handlian.model.md | NOTE, philological=handle-infinitive-formation |
 | 2327 | wound | wundude | regular | yes | none | - | - | NOTE |
 | 2328 | sow | sāwan | regular | yes | none | - | - | NOTE |
 | 2329 | betray | lǣwan | regular | yes | none | - | - | NOTE |
@@ -268,7 +275,7 @@
 | 1952 | blood | blōd | regular | no | source_material | - | archive/dev_notes_slices/1952-blood-blōd.md | none |
 | 1953 | board | bord | regular | no | source_material | - | archive/dev_notes_slices/1953-board-bord.md | none |
 | 1955 | book | bōc | regular | no | source_material | - | archive/dev_notes_slices/1955-book-bōc.md, model_entries/1955-book-bōc.model.md, model_entries/1955-book-bōc.source_ledger.md | none |
-| 1956 | bore | borian | regular | no | source_material | - | archive/dev_notes_slices/1956-bore-borian.md | none |
+| 1956 | bore | borian | regular | no | source_material | - | archive/dev_notes_slices/1956-bore-borian.md, model_entries/1956-bore-borian.model.md, model_entries/1956-bore-borian.source_ledger.md | none |
 | 1957 | bosom | bōsm | regular | no | source_material | - | archive/dev_notes_slices/1957-bosom-bōsm.md | none |
 | 1960 | bough | bōg | regular | no | source_material | - | archive/dev_notes_slices/1960-bough-bōg.md | none |
 | 1963 | bow | boga | regular | no | source_material | - | archive/dev_notes_slices/1963-bow-boga.md, model_entries/2148-rainbow-reġnboga.model.md, model_entries/2148-rainbow-reġnboga.source_ledger.md | none |
@@ -325,7 +332,7 @@
 | 2048 | ground | grund | regular | no | source_material | - | archive/dev_notes_slices/2048-ground-grund.md | none |
 | 2050 | hail | hæġl | regular | no | source_material | - | archive/dev_notes_slices/2050-hail-hæġl.md | none |
 | 2052 | hall | heall | regular | no | source_material | - | archive/dev_notes_slices/2052-hall-heall.md | none |
-| 2054 | hand | hand | regular | no | source_material | - | archive/dev_notes_slices/2054-hand-hand.md, archive/dev_notes_slices/2055-handle-handlian.md, archive/packets/2055-handle-handlian.md, research_memos/2055-handle-handlian.md | none |
+| 2054 | hand | hand | regular | no | source_material | - | archive/dev_notes_slices/2054-hand-hand.md, archive/dev_notes_slices/2055-handle-handlian.md, archive/packets/2055-handle-handlian.md, model_entries/2055-handle-handlian.model.md, model_entries/2055-handle-handlian.source_ledger.md, research_memos/2055-handle-handlian.md | none |
 | 2056 | harm | hearm | regular | no | source_material | - | archive/dev_notes_slices/2056-harm-hearm.md | none |
 | 2059 | haw | haga | regular | no | source_material | - | archive/dev_notes_slices/2059-haw-haga.md | none |
 | 2060 | hawk | hafoc | regular | no | source_material | - | archive/dev_notes_slices/2060-hawk-hafoc.md | none |
@@ -352,7 +359,7 @@
 | 2096 | leather | leþer | regular | no | source_material | - | archive/dev_notes_slices/2096-leather-leþer.md | none |
 | 2097 | leek | lēac | regular | no | source_material | - | archive/dev_notes_slices/2097-leek-lēac.md | none |
 | 2098 | let | lǣtan | regular | no | source_material | - | archive/dev_notes_slices/2098-let-lǣtan.md | none |
-| 2099 | lick | liccian | regular | no | source_material | - | archive/dev_notes_slices/2099-lick-liccian.md, model_entries/2315-lick-(iptv.2sg)-licca.model.md, model_entries/2316-lick-(3sg)-liccaþ.model.md | none |
+| 2099 | lick | liccian | regular | no | source_material | - | archive/dev_notes_slices/2099-lick-liccian.md, model_entries/2099-lick-liccian.model.md, model_entries/2099-lick-liccian.source_ledger.md, model_entries/2315-lick-(iptv.2sg)-licca.model.md, model_entries/2316-lick-(3sg)-liccaþ.model.md | none |
 | 2101 | life | līf | regular | no | source_material | - | archive/dev_notes_slices/2101-life-līf.md | none |
 | 2103 | lime | līm | regular | no | source_material | - | archive/dev_notes_slices/2103-lime-līm.md | none |
 | 2105 | line | līne | regular | no | source_material | - | archive/dev_notes_slices/2105-line-līne.md | none |
@@ -364,7 +371,7 @@
 | 2113 | louse | lūs | regular | no | source_material | - | archive/dev_notes_slices/2113-louse-lūs.md, model_entries/2113-louse-lūs.model.md, model_entries/2113-louse-lūs.source_ledger.md | none |
 | 2115 | lust | lust | regular | no | source_material | - | archive/dev_notes_slices/2115-lust-lust.md | none |
 | 2116 | lye | lēag | regular | no | source_material | - | archive/dev_notes_slices/2116-lye-lēag.md | none |
-| 2117 | make | macian | regular | no | source_material | - | archive/dev_notes_slices/2117-make-macian.md, model_entries/2309-make-(iptv.2sg)-maca.model.md, model_entries/2310-make-(3sg)-macaþ.source_ledger.md | none |
+| 2117 | make | macian | regular | no | source_material | - | archive/dev_notes_slices/2117-make-macian.md, model_entries/2117-make-macian.model.md, model_entries/2309-make-(iptv.2sg)-maca.model.md, model_entries/2310-make-(3sg)-macaþ.source_ledger.md | none |
 | 2118 | malt | mealt | regular | no | source_material | - | archive/dev_notes_slices/2118-malt-mealt.md | none |
 | 2121 | mast | mæst | regular | no | source_material | - | archive/dev_notes_slices/2121-mast-mæst.md | none |
 | 2122 | meal | mǣl | regular | no | source_material | - | archive/dev_notes_slices/2122-meal-mǣl.md, archive/dev_notes_slices/2127-meal-melu.md | none |
@@ -492,6 +499,8 @@
 - archive/dev_notes_slices/orphan_fragments.md -> ambiguous among 2068:heofon, 2139:netle, 2174:seofon
 - archive/packets/2138-net-nett.md -> ambiguous among 1943:beġinnan, 2057:hierfest
 - model_entries/2061-hay-hīeġ.model.md -> ambiguous among 2061:hīeġ, 2282:west
+- model_entries/2117-make-macian.source_ledger.md -> ambiguous among 2117:macian, 2282:west
+- model_entries/2344-filter-sēoh.source_ledger.md -> ambiguous among 1992:dor, 2054:hand, 2344:sēoh
 - pgmc_integration/README.md -> ambiguous among 2054:hand, 2194:six
 - pgmc_integration/examples/2330-thought.md -> ambiguous among 1992:dor, 2301:word
 - pgmc_integration/schema-proposal.md -> ambiguous among 2072:help, 2194:six, 2301:word

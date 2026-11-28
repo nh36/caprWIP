@@ -1,0 +1,41 @@
+{
+  "adjudication": "SC053",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc053-adjudication.md",
+  "transition_id": "medial_labiovelars",
+  "previous_summary": {
+    "outputs_sha256": "2498394f01e5b597da5290fe7987d40e04bd90373d507580be93f1b8c5a83509",
+    "lexical_outputs_sha256": "1c31cc883cc694aedc78269ef544eedaad219478fc880a6024b15e53519d8ad1",
+    "legacy_subset_sha256": "1b53e382bb320caf05c795218fe626bf7d0fd8f4e19da3af7f4ef6190d7892ee"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "additions": [
+    {
+      "row_id": "2343",
+      "concept": "see",
+      "proto": "*séxwaną",
+      "proto_norm": "séxwaną",
+      "fst_input": "séxwaną",
+      "word_stress": "stressed",
+      "phonological_finality": "final",
+      "counterpart": "sēon",
+      "accepted": "1",
+      "output_count": "1",
+      "match": "0",
+      "outputs": "seoan"
+    },
+    {
+      "row_id": "2344",
+      "concept": "filter",
+      "proto": "*sḯx",
+      "proto_norm": "sḯx",
+      "fst_input": "sḯx",
+      "word_stress": "stressed",
+      "phonological_finality": "final",
+      "counterpart": "sēoh",
+      "accepted": "1",
+      "output_count": "1",
+      "match": "0",
+      "outputs": "sīoh"
+    }
+  ]
+}

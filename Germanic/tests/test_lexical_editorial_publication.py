@@ -100,6 +100,45 @@ def assert_flask_nompl_index_delta(rows):
     assert all(not row.get("variety") for row in rows)
 
 
+def assert_sc083_sc053_index_delta(rows):
+    entries = (
+        ("1956", "bore", "borian", "*búrōjaną", "pgmc", None),
+        ("2055", "handle", "handlian", "*xándlōjaną", "pgmc", None),
+        ("2099", "lick", "liccian", "*líkkōjaną", "pgmc", None),
+        ("2117", "make", "macian", "*mákōjaną", "pgmc", None),
+        ("2342", "call", "ġeċēð", "*gakáwiθi", "pwgmc", "*káwjaną"),
+        ("2343", "see", "sēon", "*séxwaną", "pgmc", None),
+        ("2344", "filter", "sēoh", "*sī́x", "pwgmc", "*sī́xwaną"),
+    )
+    expected = set()
+    for row_id, gloss, target, selected, stage, citation in entries:
+        heading = f"{gloss} — OE {target}"
+        model = f"Germanic/docs/lexeme_reports/model_entries/{row_id}-{gloss}-{target}.model.md"
+        expected.update({
+            ("oe", target, "target_form", "lexical_heading", heading),
+            ("oe", target, "target_form", "explicit_tag", model),
+            (stage, selected, "source_protoform", "lexical_protoform", heading),
+        })
+        if int(row_id) >= 2342:
+            expected.add((stage, selected, "selected_input", "trace_proto_input", heading))
+        if citation:
+            expected.add(("pgmc", citation, "source_protoform", "lexical_proto", heading))
+    for row_id, gloss, target, language, form, role, scope in (
+        ("2342", "call", "ġeċēð", "oe", "geceð", "evidence_form", "explicit_tag"),
+        ("2099", "lick", "liccian", "oe", "liciað", "evidence_form", "explicit_tag"),
+        ("2055", "handle", "handlian", "oe", "handle", "comparison_form", "explicit_tag"),
+        ("2055", "handle", "handlian", "on", "hǫndla", "comparison_form", "explicit_tag"),
+        ("2055", "handle", "handlian", "pgmc", "*xandlōjanan", "source_protoform", "broad_prose_decision"),
+        ("2055", "handle", "handlian", "pgmc", "*xanduz", "source_protoform", "broad_prose_decision"),
+    ):
+        model = f"Germanic/docs/lexeme_reports/model_entries/{row_id}-{gloss}-{target}.model.md"
+        expected.add((language, form, role, scope, model))
+    fields = ("language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == len(expected) == 32
+    assert {tuple(row[field] for field in fields) for row in rows} == expected
+    assert all(row["action"] == "add" and not row.get("variety") for row in rows)
+
+
 class EditorialPublicationTests(unittest.TestCase):
     def test_selected_find_and_soul_have_one_printed_entry_with_all_sites(self):
         path = ROOT / "Germanic/docs/book/index_verborum_book_print_unique.tsv"
@@ -131,7 +170,7 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertIn("2224", self.old_required)
         self.assertIn("2208", self.old_required)
         self.assertIn("2006", self.old_required)
-        self.assertEqual(len(self.old_required - {"2224", "2006"}), 169)
+        self.assertEqual(len(self.old_required - {"2224", "2006"}), 172)
         straw = self.by_id["2224"]
         self.assertEqual(straw.derivation_class, "late_analogy")
         self.assertEqual(straw.editorial_case_ids, ["straw-endingless-and-levelling"])
@@ -140,7 +179,8 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertEqual({r.row_id for r in self.rows if r.editorial_case_ids},
                          PRINCIPAL | {"1934", "1941", "2148", "2162", "2224", "2283",
                                       "2335", "2336", "2337", "2208", "2011",
-                                      "2053", "2201", "2282", "2006", "2338", "2339"})
+                                      "2053", "2201", "2282", "2006", "2338", "2339",
+                                      "2055", "2342", "2343", "2344"})
         beaver = self.by_id["1941"]
         self.assertEqual(beaver.derivation_class, "regular")
         self.assertFalse(beaver.note)
@@ -202,7 +242,7 @@ class EditorialPublicationTests(unittest.TestCase):
             after = parse_entries(assembly.assemble_report(
                 self.compact, self.index, self.report_map, mode=mode), self.index)
             self.assertEqual(set(after), set(before))
-            self.assertEqual(len(after), 396)
+            self.assertEqual(len(after), 399)
             for row_id, lines in before.items():
                 original = assembly.trim_blank_edges(
                     [line for line in lines if not line.startswith("NOTE:")])
@@ -435,7 +475,7 @@ class EditorialPublicationTests(unittest.TestCase):
             path = REPORTS / row.editorial_report_path
             old = "" if row.row_id in {
                 "1941", "2148", "2224", "2283", "2335", "2336", "2337", "2208",
-                "2201", "2282", "2006", "2338", "2339"
+                "2201", "2282", "2006", "2338", "2339", "2055", "2342", "2343", "2344"
             } else committed(path)
             pattern = r"\[[^\]\n]*@[^\]\n]*(?:\n[^\]]*)?\]"
             added = Counter(re.findall(pattern, path.read_text())) - Counter(re.findall(pattern, old))

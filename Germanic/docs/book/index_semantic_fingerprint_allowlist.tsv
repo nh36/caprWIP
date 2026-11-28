@@ -1,4 +1,36 @@
 action	language	form	form_role	source_scope	source_ref	note	variety
+add	oe	borian	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1956-bore-borian.model.md	SC083/SC053 lexical publication: selected infinitive.	
+add	oe	borian	target_form	lexical_heading	bore — OE borian	SC083/SC053 lexical publication: chapter headword.	
+add	oe	geceð	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2342-call-ġeċēð.model.md	SC083/SC053 lexical publication: diplomatic Mercian witness.	
+add	oe	handle	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md	SC083/SC053 lexical publication: distinct noun.	
+add	oe	handlian	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md	SC083/SC053 lexical publication: selected infinitive.	
+add	oe	handlian	target_form	lexical_heading	handle — OE handlian	SC083/SC053 lexical publication: chapter headword.	
+add	oe	liccian	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2099-lick-liccian.model.md	SC083/SC053 lexical publication: selected infinitive.	
+add	oe	liccian	target_form	lexical_heading	lick — OE liccian	SC083/SC053 lexical publication: chapter headword.	
+add	oe	liciað	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2099-lick-liccian.model.md	SC083/SC053 lexical publication: independently attested plural present.	
+add	oe	macian	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2117-make-macian.model.md	SC083/SC053 lexical publication: selected infinitive.	
+add	oe	macian	target_form	lexical_heading	make — OE macian	SC083/SC053 lexical publication: chapter headword.	
+add	oe	sēoh	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2344-filter-sēoh.model.md	SC083/SC053 lexical publication: selected imperative.	
+add	oe	sēoh	target_form	lexical_heading	filter — OE sēoh	SC083/SC053 lexical publication: chapter headword.	
+add	oe	sēon	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2343-see-sēon.model.md	SC083/SC053 lexical publication: selected infinitive.	
+add	oe	sēon	target_form	lexical_heading	see — OE sēon	SC083/SC053 lexical publication: chapter headword.	
+add	oe	ġeċēð	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2342-call-ġeċēð.model.md	SC083/SC053 lexical publication: normalized Mercian present.	
+add	oe	ġeċēð	target_form	lexical_heading	call — OE ġeċēð	SC083/SC053 lexical publication: chapter headword.	
+add	on	hǫndla	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md	SC083/SC053 lexical publication: Old Norse cognate.	
+add	pgmc	*búrōjaną	source_protoform	lexical_protoform	bore — OE borian	SC083/SC053 lexical publication: selected reconstruction.	
+add	pgmc	*káwjaną	source_protoform	lexical_proto	call — OE ġeċēð	SC083/SC053 lexical publication: comparative simplex.	
+add	pgmc	*líkkōjaną	source_protoform	lexical_protoform	lick — OE liccian	SC083/SC053 lexical publication: selected reconstruction.	
+add	pgmc	*mákōjaną	source_protoform	lexical_protoform	make — OE macian	SC083/SC053 lexical publication: selected reconstruction.	
+add	pgmc	*séxwaną	selected_input	trace_proto_input	see — OE sēon	SC083/SC053 lexical publication: trace input.	
+add	pgmc	*séxwaną	source_protoform	lexical_protoform	see — OE sēon	SC083/SC053 lexical publication: selected reconstruction.	
+add	pgmc	*sī́xwaną	source_protoform	lexical_proto	filter — OE sēoh	SC083/SC053 lexical publication: comparative infinitive.	
+add	pgmc	*xandlōjanan	source_protoform	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md	SC083/SC053 lexical publication: Orel's verbal reconstruction.	
+add	pgmc	*xanduz	source_protoform	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md	SC083/SC053 lexical publication: Orel's reconstructed nominal base.	
+add	pgmc	*xándlōjaną	source_protoform	lexical_protoform	handle — OE handlian	SC083/SC053 lexical publication: selected reconstruction.	
+add	pwgmc	*gakáwiθi	selected_input	trace_proto_input	call — OE ġeċēð	SC083/SC053 lexical publication: trace input.	
+add	pwgmc	*gakáwiθi	source_protoform	lexical_protoform	call — OE ġeċēð	SC083/SC053 lexical publication: prefixed present reconstruction.	
+add	pwgmc	*sī́x	selected_input	trace_proto_input	filter — OE sēoh	SC083/SC053 lexical publication: trace input.	
+add	pwgmc	*sī́x	source_protoform	lexical_protoform	filter — OE sēoh	SC083/SC053 lexical publication: endingless imperative reconstruction.	
 add	goth	badi	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: bed cognate.	
 add	goth	kuni	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md	SC047 model adoption: kin cognate.	
 add	oe	bedd	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: direct bed comparison.	

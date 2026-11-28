@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import runpy
 import shlex
+import subprocess
 
 import pytest
 
@@ -195,13 +196,16 @@ def test_active_corpus_uses_source_supported_common_cells():
 
     rows = load_rows(models.ROOT / "data/germanic-aligned-final.tsv")
     by_id = {row["row_id"]: row for row in rows}
-    assert len(rows) == len(by_id) == 396
+    assert len(rows) == len(by_id) == 399
     assert {row_id: (by_id[row_id]["fst_input"], by_id[row_id]["counterpart"])
-            for row_id in ("1988", "2061", "2069", "2138", "2152", "2332", "2340", "2341")} == {
+            for row_id in ("1988", "2061", "2069", "2138", "2152", "2332", "2340", "2341",
+                           "2342", "2343", "2344")} == {
         "1988": ("déuzô", "dēora"), "2061": ("xáwją", "hīeġ"),
         "2069": ("xágjō", "heġġ"), "2138": ("nátjai", "nette"),
         "2152": ("rástǭ", "ræste"), "2332": ("xíwjas", "hīewes"),
         "2340": ("bádjai", "bedde"), "2341": ("kúnjas", "cynnes"),
+        "2342": ("gakáwiθi", "ġeċēð"), "2343": ("séxwaną", "sēon"),
+        "2344": ("sḯx", "sēoh"),
     }
     assert {"pledge", "fen", "wicg"}.isdisjoint(row["concept"] for row in rows)
 
@@ -217,12 +221,19 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
         original = json.load(stream)
     with gzip.open(capture_dir / "sc047-lexical-expansion-v1.json.gz", "rt", encoding="utf-8") as stream:
         reference = json.load(stream)
+    before_medial = json.loads(gzip.decompress(subprocess.check_output(
+        ["git", "show", "20a6bbbb3d8fb173ec6bbb930198e6c29da2661c:"
+         "Germanic/docs/models/sc047/captures/sc047-current.json.gz"],
+        cwd=models.ROOT.parent)))
     models.verify_capture_inputs(result)
     with pytest.raises(ValueError, match="entry_context_metadata.tsv"):
         models.verify_capture_inputs({**result, "context_metadata_sha256": "stale"})
     source = {row["row_id"]: row for row in load_rows(active_source)}
     shared = {"2069", "2138", "2152", "2332", "2340", "2341"}
-    inherited = {"1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300"}
+    common_mismatches = {
+        "1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300",
+        "2342", "2343", "2344",
+    }
     for model, value in result["models"].items():
         historical = reference["models"][model]
         for key in ("order", "paradigms", "queries"):
@@ -233,7 +244,7 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
         assert len(value["active_corpus"]) == len(active) == len(source)
         assert active.keys() == source.keys()
         assert {key for key, row in active.items() if row["counterpart"] not in row["outputs"]} == (
-            inherited | ({"2061"} if model == "A" else set()))
+            common_mismatches | ({"2061"} if model == "A" else set()))
         for key, row in source.items():
             assert all(active[key][field] == expected for field, expected in row.items())
         assert all(active[key]["outputs"] == [active[key]["counterpart"]] for key in shared)
@@ -248,12 +259,26 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
 
     stage = "OEUnstressedEIContraction"
     firing_ids = {"1956", "2055", "2095", "2099", "2117", "2186", "2205", "2232"}
-    for rows in (result["compatibility_active_corpus"],
-                 *(value["active_corpus"] for value in result["models"].values())):
+    def corpus(capture, arm):
+        return (capture["compatibility_active_corpus"] if arm == "compatibility"
+                else capture["models"][arm]["active_corpus"])
+
+    for arm in ("compatibility", "A", "B2"):
+        rows = corpus(result, arm)
+        previous = {row["row_id"]: row for row in corpus(before_medial, arm)}
+        assert len(previous) == 396
+        assert {row["row_id"]: row for row in rows if row["row_id"] in previous} == previous
         by_id = {row["row_id"]: dict(row["trace"]) for row in rows}
         assert set(by_id) == set(source)
         assert {key for key, trace in by_id.items() if stage in trace} == firing_ids
         assert by_id["2099"][stage] == ["*l*í*k*k*i*a*n"]
+        see = by_id["2343"]
+        assert see["OEPostVelarWLoss"] == ["*s*éo*x*ą*n"]
+        assert "OEHLoss" in see
+        assert "OEHLoss" not in by_id["2344"]
+        assert {key for key, trace in by_id.items() if "OEPostVelarWLoss" in trace} == {
+            "2190", "2343",
+        }
     for value in result["models"].values():
         queries = {probe["input"]: probe for probe in value["queries"]}
         order = value["order"]
@@ -291,7 +316,8 @@ for requested, model, expected in (
         assert set(fst.apply_down(form)) == {output}, (model, form, output)
     for form, output in (("nátjai", "nette"), ("xíwjas", "hīewes"), ("bádjai", "bedde"),
                          ("kúnjas", "cynnes"), ("xágjō", "heġġ"), ("rástǭ", "ræste"),
-                         ("gakáwiθi", "ġeceiþ"), ("gakáwid", "ġeceid")):
+                         ("gakáwiθi", "ġeceiþ"), ("gakáwid", "ġeceid"),
+                         ("séxwaną", "seoan"), ("sḯx", "sīoh")):
         assert set(fst.apply_down(form)) == {output}, (model, form, output)
     board = client.post("/new-board", json={"dataPath": "germanic-aligned-final.tsv",
                                          "transducer": "internal", **requested})
@@ -325,7 +351,8 @@ assert response.status_code == 400, response.data
 response = client.post("/get-transducers", json={"name": "germanic.txt", "model": "compatibility"})
 assert response.status_code == 200 and "regex OldEnglish;" in response.json["transducer"]
 compatibility_fst = model_bins("compatibility", ["Old_English"])["Old_English"]
-assert set(compatibility_fst.apply_down("gakáwiθi")) == {"ġecēaiþ"}
+for form, output in (("gakáwiθi", "ġecēaiþ"), ("séxwaną", "seoan"), ("sḯx", "sīoh")):
+    assert set(compatibility_fst.apply_down(form)) == {output}, (form, output)
 with TemporaryDirectory() as directory:
     compatibility = germanic_models.MODEL_DIR / "old_english.bin"
     b2 = germanic_models.MODEL_DIR / "old_english_B2.bin"

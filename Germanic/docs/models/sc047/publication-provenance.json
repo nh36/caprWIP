@@ -1,14 +1,14 @@
 {
   "inputs": {
-    "Germanic/docs/models/sc047/captures/sc047-current.json.gz": "4069538281195f0c01936863c074e84e3d1b456d4409b1c8a57ccb380fe6c4c5",
+    "Germanic/docs/models/sc047/captures/sc047-current.json.gz": "28f23e3eb8b48411ffb858f197b14c4a12da4837361b86388156f092f7c7f205",
     "Germanic/docs/models/sc047/publish.py": "f2d843703a32c5e08e64ffc91308ad378376df5630446a62aeed870942aa65db",
     "docs/refs.bib": "e522d54ab82b76c647ba9136bd35e3eb918ea0539035a86e70480a0209988db6",
-    "Germanic/docs/assembly/manifest_all_by_class.tsv": "de3d2c7b1aaa5fc223eebf9b3fb638b56c1780a8fba621751f9350d42ce36dee",
-    "Germanic/docs/assembly/lexical_source_provenance.json": "9ce7f700471cc05ce30373b4bd2dd30bdce7374ca172b89a3fe18491f15e1f82",
-    "Germanic/data/entry_stage_metadata.tsv": "1724d3ba7de2bdd1085ed417bdfe580b3e6618d63666664402a4c2975e976145"
+    "Germanic/docs/assembly/manifest_all_by_class.tsv": "cec82a50b1760e74264573431defdf47d049135a566ffc8f2ffd42e5e532d1aa",
+    "Germanic/docs/assembly/lexical_source_provenance.json": "b4e6f5130eb6acb9791016f58d8190b14380d44bf4500840e90e9c33ff49058d",
+    "Germanic/data/entry_stage_metadata.tsv": "b033700270fd17d26ed53a715c67e68408b7dac1bbcbc84d4ece496818ca9dda"
   },
   "pdfs": {
-    "A-volume.pdf": "dd9399bccc930829a1d7f016c6d57b034020e49b7501ea7ab5f1d072e36909bd",
-    "B2-volume.pdf": "94fd71de421bc1879c2055bc86edb2c63c259a81d97b7d37ca5b48a8393bc983"
+    "A-volume.pdf": "9f44f5e5d84c4188e592985abfada82f7f89647d427aadd703c862175eed6664",
+    "B2-volume.pdf": "28646de8c1c7349a9a8d8d2ac0567c57e077f0073097565ec2744e609e33ba93"
   }
 }

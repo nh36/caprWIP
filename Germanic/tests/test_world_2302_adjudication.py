@@ -21,7 +21,7 @@ from capr_runtime import run_in_runner
 from check_bibliography_sanity import parse_entries
 from test_lexical_editorial_publication import (
     assert_nightmare_index_delta, assert_final_nasal_index_delta,
-    assert_flask_nompl_index_delta,
+    assert_flask_nompl_index_delta, assert_sc083_sc053_index_delta,
 )
 
 
@@ -110,8 +110,7 @@ def test_scientific_sources_and_archives_are_preserved():
     equivalent = json.loads((ROOT /
         "Germanic/docs/sound_changes/cascade_baseline/oe_equivalence_report.json").read_text())
     assert equivalent["status"] == "equivalent"
-    # The current equivalence census also includes the later bed and kin admissions.
-    assert equivalent["rows_compared"] == 396
+    assert equivalent["rows_compared"] == 399
 
 
 def test_only_authorized_world_fields_changed():
@@ -437,7 +436,7 @@ def test_current_migration_repeats_adopted_semantics_and_protected_outputs(
         "MWeakA": {"from": "{*a}", "to": "[{*a}|{*à}]"}}
     assert current["component_results"]["OEInterStressRaising"] == expected
     assert current["component_results"]["MCombined"] == expected
-    assert current["selected_rows"] == 396
+    assert current["selected_rows"] == 399
     assert current["legacy380_identities"] == 380
     for name, model in current["models"].items():
         # WBackU retains the historical, unrestricted SC059 counterfactual.
@@ -719,6 +718,9 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     assert_flask_nompl_index_delta(flask)
     added = [row for row in added if row not in flask]
     added = [row for row in added if not row["note"].startswith("SC047 model adoption:")]
+    medial = [row for row in added if row["note"].startswith("SC083/SC053 lexical publication:")]
+    assert_sc083_sc053_index_delta(medial)
+    added = [row for row in added if row not in medial]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

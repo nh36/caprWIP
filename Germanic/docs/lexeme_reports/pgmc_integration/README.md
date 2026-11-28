@@ -28,6 +28,11 @@ completed survey. No existing production text or publication manifest is replace
 The source checks retain evidence IDs and holding/page provenance outside the
 reader-facing argument.
 
+The SC053 lexical follow-up also preserves two provisional dossiers outside
+the corpus and assembled book: [lend](provisional/lend-onleon.md) and
+[strainer](provisional/strainer-seohhe.md). They document the remaining
+selected-input and admission constraints; neither is a production entry.
+
 The pilot adopts arguments into the six mature models and bake, rather than
 inserting these prototypes. Knee's full quantity/paradigm scholarship and
 hue's full glide analysis are retained verbatim. Beaver's consequential

@@ -12,7 +12,7 @@ chronology constraints.
 ## Totals
 
 - total node count: `73`
-- total edge count: `150`
+- total edge count: `151`
 
 ### Node counts by card_type
 
@@ -22,14 +22,14 @@ chronology constraints.
 | `boundary_observation` | 2 |
 | `broad_far` | 4 |
 | `mixed` | 17 |
-| `negative_boundary` | 7 |
+| `negative_boundary` | 6 |
 | `one_sided` | 1 |
 | `one_sided_chronology` | 9 |
 | `reciprocal_or_near_reciprocal` | 14 |
 | `retired` | 1 |
 | `runner_limited_or_technical` | 1 |
 | `source_partial_chain` | 10 |
-| `source_supported` | 2 |
+| `source_supported` | 3 |
 | `superseded` | 1 |
 | `technical_computational` | 2 |
 
@@ -38,11 +38,11 @@ chronology constraints.
 | relation_type | count |
 | --- | ---: |
 | `broad_far_chronology` | 10 |
-| `no_break_search_boundary` | 21 |
-| `one_sided_chronology` | 37 |
+| `no_break_search_boundary` | 20 |
+| `one_sided_chronology` | 38 |
 | `reciprocal_chronology` | 20 |
-| `runner_limited_boundary` | 17 |
-| `superseded_experiment` | 14 |
+| `runner_limited_boundary` | 16 |
+| `superseded_experiment` | 16 |
 | `technical_computational` | 31 |
 
 ## Chronology edges
@@ -81,6 +81,7 @@ chronology constraints.
 1. `SC051 -> SC056` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `shaft; shear; sheep; shield`; forms: PGmc `*skáftą` yields expected OE `sċeaft`, but the later-shifted variant yields `sċæft`; PGmc `*skéraną` likewise yields `sċeran` instead of expected `sċieran`
 1. `SC052 -> SC050` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `stretch`; forms: PGmc `*strákkijaną` yields expected OE `streċċan`, but the earlier-shifted variant yields `strecċan`
 1. `SC052 -> SC055` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `cow; lung`; forms: PGmc `*kūi` yields expected OE `cȳ`, but the later-shifted variant yields `ċȳ`; PGmc `*lúnganjō` likewise yields `lunġen` instead of expected `lungen`
+1. `SC053 -> SC085` (one_sided_chronology; stage_entailed; witness role: feeding) — lexemes: `see`; forms: PWGmc *sehwan > OE *seohan > sēon; loss of the labial leaves a singleton dorsal available for intervocalic loss.
 1. `SC054 -> SC020` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sea`; forms: PGmc `*sáiwiz` yields expected OE `sǣ`, but the earlier-shifted variant yields `sǣw`
 1. `SC054 -> SC063` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sea`; forms: PGmc `*sáiwiz` yields expected OE `sǣ`, but the later-shifted variant again yields `sǣw`
 1. `SC055 -> SC052` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `cow; lung`; forms: PGmc `*kūi` yields expected OE `cȳ`, but the earlier-shifted variant yields `ċȳ`; PGmc `*lúnganjō` likewise yields `lunġen` instead of expected `lungen`
@@ -165,8 +166,8 @@ chronology constraints.
 1. `SC049 -> SC087` (no_break_search_boundary)
 1. `SC050 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC051 -> SC046` (technical_computational)
-1. `SC053 -> PWGmcChanges` (runner_limited_boundary)
-1. `SC053 -> SC087` (no_break_search_boundary)
+1. `SC053 -> PWGmcChanges` (superseded_experiment)
+1. `SC053 -> SC087` (superseded_experiment)
 1. `SC057 -> SC087` (no_break_search_boundary)
 1. `SC058 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC058 -> SC087` (no_break_search_boundary)

@@ -11,8 +11,10 @@ catalogue. The compatibility cascade remains available for replay
 and rule-inventory evidence, not as a third historical model.
 The scoped [SC083 adjudication](sound_changes/audits/sc083-adjudication.md)
 follows that integration to assess the common weak-vowel proxy in all
-three cascades. It does not advance the saved programme: SC050 remains
-next and the intervening obligations remain open.
+three cascades. The scoped [SC053 adjudication](sound_changes/audits/sc053-adjudication.md)
+continues that follow-up with singleton medial labiovelars and their
+lexical witnesses. The saved programme does not advance: SC050 remains
+next, and the contraction work is separately deferred.
 
 The [SC047/SC048 research pass](sound_changes/audits/sc047-adjudication.md)
 distinguishes early low-vowel loss from its retained late nasal fragment,

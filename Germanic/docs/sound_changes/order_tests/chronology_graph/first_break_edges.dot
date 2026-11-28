@@ -42,7 +42,7 @@ digraph first_break_chronology {
   "SC050" [label="SC050\nSievers Law Syncope"];
   "SC051" [label="SC051\nOE Sk Palatalization"];
   "SC052" [label="SC052\nClass-distinct English velar palatalization"];
-  "SC053" [label="SC053\nOE Post Velar W Loss"];
+  "SC053" [label="SC053\nPostvelar labial loss"];
   "SC054" [label="SC054\nNoninitial w-loss before unstressed i/ī"];
   "SC055" [label="SC055\nOE I Umlaut"];
   "SC056" [label="SC056\nOrdinary West Saxon palatal diphthongization"];
@@ -162,8 +162,9 @@ digraph first_break_chronology {
   "SC051" -> "SC056" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC052" -> "SC050" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC052" -> "SC055" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
-  "SC053" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC053" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
+  "SC053" -> "PWGmcChanges" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
+  "SC053" -> "SC087" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
+  "SC053" -> "SC085" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC054" -> "SC020" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC054" -> "SC063" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC055" -> "SC052" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];

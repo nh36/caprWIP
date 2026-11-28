@@ -8564,26 +8564,59 @@ early high-vowel evidence through regular phonology, while the bounded
 implementation neither claims universal compound coverage nor treats one
 successful derivation as independent proof of historical generality.
 
-\section{Post-velar w-loss}\label{post-velar-w-loss}
+\section{Postvelar labial loss}\label{postvelar-labial-loss}
 
-\subsection{\texorpdfstring{SC053. Loss of \emph{*w} after velars
-(\texttt{OEPostVelarWLoss})}{SC053. Loss of  after velars (OEPostVelarWLoss)}}\label{rule-OEPostVelarWLoss}
+\subsection{\texorpdfstring{SC053. Postvelar labial loss
+(\texttt{OEPostVelarWLoss})}{SC053. Postvelar labial loss (OEPostVelarWLoss)}}\label{rule-OEPostVelarWLoss}
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
 define OEPostVelarWLoss Ctx([
-    {*w} -> 0 || {*n} {*g} _
+    {*w} -> 0 || {*n} {*g} _,
+                EnglishStarVocalic [{*x}|{*ç}] _ EnglishStarVocalic
 ]);
 \end{ReaderFacingFoma}
 \end{minipage}
 
-The comparative development \texttt{*singwan\ \textgreater{}\ singan}
-establishes narrow post-velar \emph{*w}-loss in the \emph{*ngw}
-sequence, yielding \emph{singan} `sing'. Moving
-\hyperref[rule-OEPostVelarWLoss]{SC053 OEPostVelarWLoss} earlier or
-later leaves every output unchanged. Its pre-umlaut position therefore
-rests on comparative evidence, while the present lexicon supplies no
-neighboring boundary.
+West Germanic resolved inherited unit labiovelars into a dorsal plus a
+glide. The later English loss of the glide after a noninitial dorsal
+accounts both for \emph{*singwan} \textgreater{} \emph{singan} `sing'
+and for the labial-less stage of \emph{*sehwan} \textgreater{}
+\emph{*seohan} \textgreater{} \emph{sēon} `see'. In `see', the first
+loss leaves a dorsal, whose subsequent intervocalic deletion belongs to
+\hyperref[rule-OEHLoss]{SC085 OEHLoss}. The final contraction is another
+operation. The voiced comparison \emph{sewen} `seen' lacks a voiceless
+dorsal before \emph{w} and is not an exception
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 48--50, 178,
+214--15, 315--17, 344--45}; \citeproc{ref-Campbell1959}{Campbell 1959,
+186--87}).
+
+The hard stop of \emph{þicce} `thick' supplies the independent argument
+for retaining the labial during
+\hyperref[rule-OEVelarPalatalization]{SC052 OEVelarPalatalization}; the
+written geminate in this word is a stop, not a witness to the exact date
+of loss after a fricative. The implementation uses the same
+post-palatalization slot for the two environments. It does not infer a
+date from the earlier successful computational insertion. The
+singleton-fricative environment accepts the two executable articulations
+of the voiceless singleton, but not a voiced consonant, a geminate or a
+word edge (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 49--50,
+214--15}).
+
+The whole simplex infinitive of `see' reaches \texttt{*s*éo*x*w*ą*n} in
+the compatibility cascade; this rule yields \texttt{*s*éo*x*ą*n}. The
+later loss of the dorsal leaves hiatus: the current transducers give
+\Pred{seoan}, not the attested \emph{sēon} `see'. The related `lend' and
+`filter' histories support the same separation. The selected \emph{sēoh}
+`strain!' has a final dorsal and no medial labial for this rule to
+remove; the model keeps that dorsal in \Pred{sīoh}. In contrast, the
+derived \emph{seohhe} `strainer' preserves a geminate dorsal after the
+labial is lost. That family supports the distinction in dorsal quantity
+but does not independently date fricative-geminate delabialization. The
+geminate extension is not implemented
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 49, 178--79};
+\citeproc{ref-Seebold1970}{Seebold 1970, 327--28, 389--90};
+\citeproc{ref-Campbell1959}{Campbell 1959, 187}).
 
 \section{West Saxon palatal
 diphthongization}\label{west-saxon-palatal-diphthongization}
@@ -11943,7 +11976,7 @@ each class, alphabetically by headword. Counts in this alpha are:
 \begin{itemize}
 \tightlist
 \item
-  Regular derivations: 101
+  Regular derivations: 105
 \item
   Attested variants: 6
 \item
@@ -11953,7 +11986,7 @@ each class, alphabetically by headword. Counts in this alpha are:
 \item
   Reconstructed Old English comparators: 3
 \item
-  Known but unmodelled developments: 2
+  Known but unmodelled developments: 5
 \item
   Unexplained or deliberately unmodelled exceptions: 5
 \end{itemize}
@@ -12557,6 +12590,48 @@ Germanic loss of final \emph{*z} in unstressed syllables (as in
 stressed monosyllables (as in the pronouns); the root-noun ending was
 gone before either of those changes applied.
 
+\section{\texorpdfstring{bore --- OE
+\emph{borian}}{bore --- OE borian}}\label{bore-oe-borian}
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!borian@\iventry{borian}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!burojana@\iventry{*búrōjaną}{}}
+
+Derivation: \emph{*búrōjaną} \textgreater{} \emph{borian} (regular).
+
+\subsection{Derivation trace}\label{derivation-trace-9}
+
+Model A and B2: \texttt{búrōjaną} → \texttt{bórōjaną} → \texttt{bórōjan}
+→ \texttt{bórōjąn} → \texttt{bórējąn} → \texttt{bórejąn} →
+\texttt{bórejan} → \texttt{bóreian} → \texttt{bórian} → \texttt{borian}
+
+\subsection{Comparative stem and Old English
+evidence}\label{comparative-stem-and-old-english-evidence}
+
+This is the verb `bore a hole', not the later sense `weary'. Kroonen
+groups Old English
+{\emph{borian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!borian@\iventry{borian}{}}
+`bore' with the Germanic drilling verb under \Recon{burōjan-} `bore'.
+The English \emph{o} is not a warrant for reconstructing \emph{o} as the
+inherited root vowel. The Old English dictionary records an infinitive
+\emph{borian}; Dutch \emph{boren} and German \emph{bohren} are cognate
+comparisons, not evidence for the exact prehistoric English ending
+(\citeproc{ref-Kroonen2013}{Kroonen 2013, 85};
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 48}).
+
+\subsection{Selected derivation}\label{selected-derivation}
+
+The three models produce \emph{*búrōjaną} \textgreater{} \emph{borian}.
+Root lowering gives \emph{bor- before the weak ending reaches the late
+}e.i* representation on which SC083 operates. That \emph{i} belongs to
+the infinitival suffix. The related imperative \emph{bora} `bore' and
+third singular \emph{boraþ} `bores' have no \emph{j} in the
+corresponding finite stems; their \emph{a} is no counterexample to the
+weak development in the infinitive. The contrast is between distinct
+inherited endings, not selection of one ending to explain the entire
+paradigm (\citeproc{ref-Campbell1959}{Campbell 1959, §§ 356.4,
+754--757}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 80,
+228}).
+
 \section{\texorpdfstring{both --- OE
 \emph{bū}}{both --- OE bū}}\label{both-oe-bux16b}
 
@@ -12568,7 +12643,7 @@ gone before either of those changes applied.
 
 Derivation: \emph{*bō} \textgreater{} \emph{bū} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-9}
+\subsection{Derivation trace}\label{derivation-trace-10}
 
 Model A and B2: \texttt{bō} → \texttt{bū}
 
@@ -12727,7 +12802,7 @@ continuation of OE \emph{bū} \\
 
 Derivation: \emph{*báugijaną} \textgreater{} \emph{bīeġan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-10}
+\subsection{Derivation trace}\label{derivation-trace-11}
 
 Model A and B2: \texttt{báugijaną} → \texttt{báugijan} →
 \texttt{báeugijan} → \texttt{bēagijan} → \texttt{bēagijąn} →
@@ -12782,7 +12857,7 @@ therefore straightforward: \emph{*báugijaną} \textgreater{}
 
 Derivation: \emph{*brōkiz} \textgreater{} \emph{brēċ} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-11}
+\subsection{Derivation trace}\label{derivation-trace-12}
 
 Model A and B2: \texttt{brōkiz} → \texttt{brōki} → \texttt{brōʧi} →
 \texttt{brēʧi} → \texttt{brēʧ} → \texttt{brēċ}
@@ -12831,7 +12906,7 @@ is therefore regular: \Recon{brōkiz} `breeches' \textgreater{}
 
 Derivation: \emph{*kálbaz} \textgreater{} \emph{ċealf} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-12}
+\subsection{Derivation trace}\label{derivation-trace-13}
 
 Model A and B2: \texttt{kálbaz} → \texttt{kálba} → \texttt{kálb} →
 \texttt{kælb} → \texttt{kealb} → \texttt{ʧealb} → \texttt{ʧealβ} →
@@ -12887,7 +12962,7 @@ so \Recon{kálbaz} `calf' develops regularly to \emph{ċealf} `calf'
 
 Derivation: \emph{*rúkkaz} \textgreater{} \emph{rocc} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-13}
+\subsection{Derivation trace}\label{derivation-trace-14}
 
 Model A and B2: \texttt{rúkkaz} → \texttt{rókkaz} → \texttt{rókka} →
 \texttt{rókk} → \texttt{rocc}
@@ -12931,7 +13006,7 @@ This entry concerns the garment noun only. The stone word seen in
 
 Derivation: \emph{*kúrną} \textgreater{} \emph{corn} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-14}
+\subsection{Derivation trace}\label{derivation-trace-15}
 
 Model A and B2: \texttt{kúrną} → \texttt{kórną} → \texttt{kórn} →
 \texttt{corn}
@@ -12981,7 +13056,7 @@ entry.
 Derivation: citation reconstruction \emph{*skutilaz}; form followed here
 \emph{*skútilaz} \textgreater{} \emph{sċytel} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-15}
+\subsection{Derivation trace}\label{derivation-trace-16}
 
 Model A and B2: \texttt{skútilaz} → \texttt{skútila} → \texttt{skútil} →
 \texttt{ʃútil} → \texttt{ʃytil} → \texttt{ʃytel} → \texttt{sċytel}
@@ -13108,7 +13183,7 @@ supplying an arbitrary nonfiring word.
 
 Derivation: \emph{*dḗdiz} \textgreater{} \emph{dǣd} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-16}
+\subsection{Derivation trace}\label{derivation-trace-17}
 
 Model A and B2: \texttt{dḗdiz} → \texttt{dādiz} → \texttt{dādi} →
 \texttt{dǣdi} → \texttt{dǣd}
@@ -13155,7 +13230,7 @@ treated here is therefore the regular West Saxon line.
 
 Derivation: \emph{*dáwwō} \textgreater{} \emph{dēaw} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-17}
+\subsection{Derivation trace}\label{derivation-trace-18}
 
 Model A and B2: \texttt{dáwwō} → \texttt{dáuwō} → \texttt{dáuwu} →
 \texttt{dáeuwu} → \texttt{dēawu} → \texttt{dēaw}
@@ -13191,7 +13266,7 @@ sentence stress (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
 
 Derivation: \emph{*dúrą} \textgreater{} \emph{dor} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-18}
+\subsection{Derivation trace}\label{derivation-trace-19}
 
 Model A and B2: \texttt{dúrą} → \texttt{dórą} → \texttt{dór} →
 \texttt{dor}
@@ -13249,7 +13324,7 @@ Ringe-Taylor (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 
 Derivation: \emph{*fáraną} \textgreater{} \emph{faran} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-19}
+\subsection{Derivation trace}\label{derivation-trace-20}
 
 Model A and B2: \texttt{fáraną} → \texttt{fáran} → \texttt{færan} →
 \texttt{faran} → \texttt{farąn} → \texttt{faran}
@@ -13305,7 +13380,7 @@ does not alter the infinitive headword (\citeproc{ref-Fulk2018}{Fulk
 
 Derivation: \emph{*féllą} \textgreater{} \emph{fell} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-20}
+\subsection{Derivation trace}\label{derivation-trace-21}
 
 Model A and B2: \texttt{féllą} → \texttt{féll} → \texttt{fell}
 
@@ -13356,7 +13431,7 @@ heavy-syllable nasal apocope yields \Recon{féll} `fell', surfacing as
 
 Derivation: \emph{*fárnaz} \textgreater{} \emph{fearn} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-21}
+\subsection{Derivation trace}\label{derivation-trace-22}
 
 Model A and B2: \texttt{fárnaz} → \texttt{fárna} → \texttt{fárn} →
 \texttt{færn} → \texttt{fearn}
@@ -13410,7 +13485,7 @@ treated here is therefore the regular \emph{rC}-breaking line.
 
 Derivation: \emph{*félθuz} \textgreater{} \emph{feld} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-22}
+\subsection{Derivation trace}\label{derivation-trace-23}
 
 Model A and B2: \texttt{félθuz} → \texttt{félθu} → \texttt{féldu} →
 \texttt{féld} → \texttt{feld}
@@ -13463,7 +13538,7 @@ development, both accounts converge on the same Old English form
 Derivation: citation reconstruction \emph{*fūliþō}; form followed here
 \emph{*fūliþǭ} \textgreater{} \emph{fȳlþe} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-23}
+\subsection{Derivation trace}\label{derivation-trace-24}
 
 Model A and B2: \texttt{fūliθǭ} → \texttt{fūliθā} → \texttt{fūliθǣ} →
 \texttt{fȳliθǣ} → \texttt{fȳlθǣ} → \texttt{fȳlθæ} → \texttt{fȳlθe} →
@@ -13608,7 +13683,7 @@ regular merely because the former cascade produced it.
 Derivation: citation reconstruction \emph{*flaskō}; form followed here
 \emph{*fláskōniz} \textgreater{} \emph{flascan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-24}
+\subsection{Derivation trace}\label{derivation-trace-25}
 
 Model A and B2: \texttt{fláskōniz} → \texttt{fláskōnz} →
 \texttt{fláskōn} → \texttt{flæskōn} → \texttt{flaskōn} →
@@ -13965,7 +14040,7 @@ not a prerequisite silently reopened by this selection.
 
 Derivation: \emph{*fláuxz} \textgreater{} \emph{flēah} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-25}
+\subsection{Derivation trace}\label{derivation-trace-26}
 
 Model A and B2: \texttt{fláuxz} → \texttt{fláux} → \texttt{fláeux} →
 \texttt{flēax} → \texttt{flēah}
@@ -14041,7 +14116,7 @@ vowel-final monosyllables.
 
 Derivation: \emph{*fléuganą} \textgreater{} \emph{flēogan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-26}
+\subsection{Derivation trace}\label{derivation-trace-27}
 
 Model A and B2: \texttt{fléuganą} → \texttt{fléugan} → \texttt{flēogan}
 → \texttt{flēogąn} → \texttt{flēogan}
@@ -14097,7 +14172,7 @@ is therefore regular: \emph{*fléuganą} \textgreater{} \emph{flēogan}
 
 Derivation: \emph{*léusaną} \textgreater{} \emph{lēosan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-27}
+\subsection{Derivation trace}\label{derivation-trace-28}
 
 Model A and B2: \texttt{léusaną} → \texttt{léusan} → \texttt{lēosan} →
 \texttt{lēosąn} → \texttt{lēosan}
@@ -14147,7 +14222,7 @@ Taylor 2014}). The prefixed forms follow the same verbal base with added
 
 Derivation: \emph{*fédwōr} \textgreater{} \emph{fēower} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-28}
+\subsection{Derivation trace}\label{derivation-trace-29}
 
 Model A and B2: \texttt{fédwōr} → \texttt{fédwar} → \texttt{féwwar} →
 \texttt{féuwar} → \texttt{fēowar} → \texttt{fēowær} → \texttt{fēower}
@@ -14184,7 +14259,7 @@ reconstruction or final target has changed.
 
 Derivation: \emph{*gángaz} \textgreater{} \emph{gang} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-29}
+\subsection{Derivation trace}\label{derivation-trace-30}
 
 Model A and B2: \texttt{gángaz} → \texttt{gánga} → \texttt{gáng} →
 \texttt{gang}
@@ -14240,7 +14315,7 @@ From \Recon{gángaz} `gang', loss of final \emph{-z} gives \Recon{gánga}
 
 Derivation: \emph{*gíftiz} \textgreater{} \emph{ġift} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-30}
+\subsection{Derivation trace}\label{derivation-trace-31}
 
 Model A and B2: \texttt{gíftiz} → \texttt{gífti} → \texttt{ʝífti} →
 \texttt{ʝíft} → \texttt{jíft} → \texttt{ġíft} → \texttt{ġift}
@@ -14501,7 +14576,7 @@ as such; it must not be silently delegated again to late OE mutation.
 
 Derivation: \emph{*gébaną} \textgreater{} \emph{ġiefan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-31}
+\subsection{Derivation trace}\label{derivation-trace-32}
 
 Model A and B2: \texttt{gébaną} → \texttt{géban} → \texttt{gébąn} →
 \texttt{ʝébąn} → \texttt{ʝíebąn} → \texttt{ʝíeβąn} → \texttt{ʝíeβan} →
@@ -14560,7 +14635,7 @@ therefore the regular West Saxon infinitive.
 
 Derivation: \emph{*gúlθą} \textgreater{} \emph{gold} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-32}
+\subsection{Derivation trace}\label{derivation-trace-33}
 
 Model A and B2: \texttt{gúlθą} → \texttt{gólθą} → \texttt{gólθ} →
 \texttt{góld} → \texttt{gold}
@@ -14607,7 +14682,7 @@ yields \Recon{góldą} `gold', and apocope gives \emph{gold}
 
 Derivation: \emph{*gánsz} \textgreater{} \emph{gōs} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-33}
+\subsection{Derivation trace}\label{derivation-trace-34}
 
 Model A and B2: \texttt{gánsz} → \texttt{gáns} → \texttt{gãns} →
 \texttt{gãs} → \texttt{gōs}
@@ -14682,7 +14757,7 @@ the root-noun ending was already gone.
 
 Derivation: \emph{*grábaną} \textgreater{} \emph{grafan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-34}
+\subsection{Derivation trace}\label{derivation-trace-35}
 
 Model A and B2: \texttt{grábaną} → \texttt{grában} → \texttt{græban} →
 \texttt{graban} → \texttt{grabąn} → \texttt{graβąn} → \texttt{graβan} →
@@ -14734,7 +14809,7 @@ paradigm positions and do not replace the infinitive \emph{grafan}
 
 Derivation: \emph{*gástiz} \textgreater{} \emph{ġiest} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-35}
+\subsection{Derivation trace}\label{derivation-trace-36}
 
 Model A and B2: \texttt{gástiz} → \texttt{gásti} → \texttt{gæsti} →
 \texttt{ʝæsti} → \texttt{ʝeasti} → \texttt{ʝiesti} → \texttt{ʝiest} →
@@ -14786,7 +14861,7 @@ comparators rather than corrections to that choice
 
 Derivation: \emph{*xḗrą} \textgreater{} \emph{hǣr} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-36}
+\subsection{Derivation trace}\label{derivation-trace-37}
 
 Model A and B2: \texttt{xḗrą} → \texttt{xārą} → \texttt{xār} →
 \texttt{xǣr} → \texttt{çǣr} → \texttt{hǣr}
@@ -14823,6 +14898,66 @@ does not displace the ordinary simplex \emph{hǣr} `hair' treated here
 (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 \citeproc{ref-ClarkHall1960}{Clark Hall 1960, 158}).
 
+\section{\texorpdfstring{handle --- OE
+\emph{handlian}}{handle --- OE handlian}}\label{handle-oe-handlian}
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!handlian@\iventry{handlian}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xandlojana@\iventry{*xándlōjaną}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xandlojanan@\iventry{*xandlōjanan}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xanduz@\iventry{*xanduz}{}}
+
+Derivation: \emph{*xándlōjaną} \textgreater{} \emph{handlian} (regular).
+
+\subsection{Derivation trace}\label{derivation-trace-38}
+
+Model A and B2: \texttt{xándlōjaną} → \texttt{xándlōjan} →
+\texttt{xándlōjąn} → \texttt{xándlējąn} → \texttt{xándlejąn} →
+\texttt{xándlejan} → \texttt{xándleian} → \texttt{xándlian} →
+\texttt{hándlian} → \texttt{handlian}
+
+\subsection{The verb and its nominal
+relatives}\label{the-verb-and-its-nominal-relatives}
+
+The selected Old English infinitive
+{\emph{handlian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!handlian@\iventry{handlian}{}}
+`handle, touch' glosses Latin \emph{contrectare} in the glosses printed
+at \emph{Anecdota Oxoniensia} 17.44. The dictionary also records finite
+\emph{handlað} `handles' and preterite plural \emph{handledon}
+`handled'. The noun
+{\emph{handle}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!handle@\iventry{handle}{}}
+`handle' is a different formation; it is not an alternate spelling or
+grammatical cell of the verb (\citeproc{ref-BosworthToller1898}{Bosworth
+and Toller 1898}, s.vv.~\emph{handle}, \emph{handlian}).
+
+Orel reconstructs \Recon{xandlōjanan} `handle' and derives it from a
+nominal derivative of \Recon{xanduz} `hand'. His comparisons include Old
+Norse
+{\emph{hǫndla}}\index[iv]{09on@\ivlangheader{Old Norse}{}!hondla@\iventry{hǫndla}{}}
+`handle', Old Frisian \emph{handelia} `handle', and Old High German
+\emph{hantalōn} `handle'. Ringe and Taylor instead reconstruct an
+internal \emph{u} in the older verb and retain it at the West Germanic
+stage. Their West Germanic \emph{handulōn} and later English
+\emph{handulōjan} distinguish inheritance from English class-II
+remodelling. The Old Norse and Old High German comparisons support the
+family; the Old English infinitive alone cannot settle when the internal
+vowel disappeared or when the class-II extension arose
+(\citeproc{ref-Orel2003}{Orel 2003, 159};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 131, 269}).
+
+\subsection{Selected derivation}\label{selected-derivation-1}
+
+CAPR uses \emph{*xándlōjaną} \textgreater{} \emph{handlian} in
+compatibility and in both selectable models. This input follows Orel's
+compact verbal stem and represents the class-II ending from the start.
+In the models the weak suffix passes through an \emph{e.i} sequence
+before SC083 deletes the first vowel, leaving \emph{i} before the
+infinitival continuation. This is a representation of weak-suffix
+development, not evidence that the earlier West Germanic stem lacked
+\emph{u}. The derivation is regular from the derivational input; the
+earlier comparative reconstruction and possible morphological
+remodelling remain separate questions
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 228, 269}).
+
 \section{\texorpdfstring{harvest --- OE
 \emph{hierfest}}{harvest --- OE hierfest}}\label{harvest-oe-hierfest}
 
@@ -14831,7 +14966,7 @@ does not displace the ordinary simplex \emph{hǣr} `hair' treated here
 
 Derivation: \emph{*xárbistuz} \textgreater{} \emph{hierfest} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-37}
+\subsection{Derivation trace}\label{derivation-trace-39}
 
 Model A and B2: \texttt{xárbistuz} → \texttt{xárbistu} →
 \texttt{xærbistu} → \texttt{xearbistu} → \texttt{çearbistu} →
@@ -14884,7 +15019,7 @@ non-West-Saxon or Anglian material in West Saxon transmission
 Derivation: \emph{*xáwją} \textgreater{} \emph{hīeġ} (regular in B2; A
 predicts short /e/ plus syllabic /i/).
 
-\subsection{Derivation trace}\label{derivation-trace-38}
+\subsection{Derivation trace}\label{derivation-trace-40}
 
 Model A: \texttt{xáwją} → \texttt{xáwj} → \texttt{xáwi} → \texttt{xæwi}
 → \texttt{çæwi} → \texttt{çewi} → \texttt{çei} → \texttt{hei}
@@ -14984,7 +15119,7 @@ the implemented rules, not an orthographic penalty.
 
 Derivation: \emph{*xágjō} \textgreater{} \emph{heġġ} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-39}
+\subsection{Derivation trace}\label{derivation-trace-41}
 
 Model A and B2: \texttt{xágjō} → \texttt{xágju} → \texttt{xággju} →
 \texttt{xæggju} → \texttt{çæggju} → \texttt{çæʤʤju} → \texttt{çeʤʤju} →
@@ -15061,7 +15196,7 @@ Old English citation evidence
 
 Derivation: \emph{*xélmaz} \textgreater{} \emph{helm} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-40}
+\subsection{Derivation trace}\label{derivation-trace-42}
 
 Model A and B2: \texttt{xélmaz} → \texttt{xélma} → \texttt{xélm} →
 \texttt{çélm} → \texttt{hélm} → \texttt{helm}
@@ -15111,7 +15246,7 @@ set. It should not be confused with Old English
 
 Derivation: \emph{*xélpaną} \textgreater{} \emph{helpan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-41}
+\subsection{Derivation trace}\label{derivation-trace-43}
 
 Model A and B2: \texttt{xélpaną} → \texttt{xélpan} → \texttt{çélpan} →
 \texttt{çélpąn} → \texttt{çélpan} → \texttt{hélpan} → \texttt{helpan}
@@ -15161,7 +15296,7 @@ Noun
 
 Derivation: \emph{*xáwwaną} \textgreater{} \emph{hēawan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-42}
+\subsection{Derivation trace}\label{derivation-trace-44}
 
 Model A and B2: \texttt{xáwwaną} → \texttt{xáuwaną} → \texttt{xáuwan} →
 \texttt{xáeuwan} → \texttt{xēawan} → \texttt{çēawan} → \texttt{çēawąn} →
@@ -15196,7 +15331,7 @@ is unchanged (\citeproc{ref-Campbell1959}{Campbell 1959, 45--47};
 
 Derivation: \emph{*xéndjō} \textgreater{} \emph{hind} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-43}
+\subsection{Derivation trace}\label{derivation-trace-45}
 
 Model A and B2: \texttt{xéndjō} → \texttt{xéndju} → \texttt{çéndju} →
 \texttt{çindju} → \texttt{çindj} → \texttt{çind} → \texttt{hind}
@@ -15241,7 +15376,7 @@ and does not belong to the noun history of \emph{hind}
 
 Derivation: \emph{*xáldaną} \textgreater{} \emph{healdan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-44}
+\subsection{Derivation trace}\label{derivation-trace-46}
 
 Model A and B2: \texttt{xáldaną} → \texttt{xáldan} → \texttt{xældan} →
 \texttt{xealdan} → \texttt{çealdan} → \texttt{çealdąn} →
@@ -15293,7 +15428,7 @@ that choice (\citeproc{ref-Campbell1959}{Campbell 1959};
 
 Derivation: \emph{*xúrną} \textgreater{} \emph{horn} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-45}
+\subsection{Derivation trace}\label{derivation-trace-47}
 
 Model A and B2: \texttt{xúrną} → \texttt{xórną} → \texttt{xórn} →
 \texttt{hórn} → \texttt{horn}
@@ -15340,7 +15475,7 @@ background only. It does not replace the derivational input
 Derivation: citation reconstruction \emph{*xíwją}; form followed here
 \emph{*xíwjas} \textgreater{} \emph{hīewes} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-46}
+\subsection{Derivation trace}\label{derivation-trace-48}
 
 Model A and B2: \texttt{xíwjas} → \texttt{xíwwjas} → \texttt{xíuwjas} →
 \texttt{xīowjas} → \texttt{xīowjæs} → \texttt{çīowjæs} →
@@ -15589,7 +15724,7 @@ additional lexeme or analogical mechanism is introduced.
 Derivation: citation reconstruction \emph{*kúnją}; form followed here
 \emph{*kúnjas} \textgreater{} \emph{cynnes} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-47}
+\subsection{Derivation trace}\label{derivation-trace-49}
 
 Model A and B2: \texttt{kúnjas} → \texttt{kúnnjas} → \texttt{kúnnjæs} →
 \texttt{kynnjæs} → \texttt{kynnjes} → \texttt{kynnes} → \texttt{cynnes}
@@ -15647,7 +15782,7 @@ the transfer (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
 
 Derivation: \emph{*láidijaną} \textgreater{} \emph{lǣdan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-48}
+\subsection{Derivation trace}\label{derivation-trace-50}
 
 Model A and B2: \texttt{láidijaną} → \texttt{láidijan} →
 \texttt{lādijan} → \texttt{lādijąn} → \texttt{lādjąn} → \texttt{lǣdjąn}
@@ -15686,7 +15821,7 @@ reduction, and loss of \emph{j} after a heavy stem yield \emph{lǣdan}
 
 Derivation: \emph{*líznōjaną} \textgreater{} \emph{leornian} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-49}
+\subsection{Derivation trace}\label{derivation-trace-51}
 
 Model A and B2: \texttt{líznōjaną} → \texttt{líznōjan} →
 \texttt{léznōjan} → \texttt{lérnōjan} → \texttt{léornōjan} →
@@ -15801,6 +15936,57 @@ compared here and uncertain earlier paradigm history is essential to
 interpreting the derivations (\citeproc{ref-Jasanoff1973}{Jasanoff 1973,
 865, 868}; \citeproc{ref-TarsiLaker2026}{Tarsi and Laker 2026, 42--43}).
 
+\section{\texorpdfstring{lick --- OE
+\emph{liccian}}{lick --- OE liccian}}\label{lick-oe-liccian}
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liccian@\iventry{liccian}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkojana@\iventry{*líkkōjaną}{}}
+
+Derivation: \emph{*líkkōjaną} \textgreater{} \emph{liccian} (regular).
+
+\subsection{Derivation trace}\label{derivation-trace-52}
+
+Model A and B2: \texttt{líkkōjaną} → \texttt{líkkōjan} →
+\texttt{líkkōjąn} → \texttt{líkkējąn} → \texttt{líkkejąn} →
+\texttt{líkkejan} → \texttt{líkkeian} → \texttt{líkkian} →
+\texttt{liccian}
+
+\subsection{Comparative stem and selected
+infinitive}\label{comparative-stem-and-selected-infinitive}
+
+Old English
+{\emph{liccian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liccian@\iventry{liccian}{}}
+`lick' is a weak verb with a medial geminate in the normalized citation
+form. Old Saxon \emph{likkon} and Old High German \emph{lecchon} support
+the consonantal comparison. Ringe and Taylor reconstruct a West Germanic
+class-II stem; Orel gives the longer citation formation
+\Recon{likkōjanan} `lick'. CAPR's selected infinitive explicitly
+represents that longer suffix, not the finite ending
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 50};
+\citeproc{ref-Orel2003}{Orel 2003, 285};
+\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 614}).
+
+\subsection{The Vespasian finite
+comparison}\label{the-vespasian-finite-comparison}
+
+The Vespasian Psalter has
+{\emph{liciað}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!liciath@\iventry{liciað}{}}
+`lick' glossing Latin \emph{lingent}, with `his enemies' as plural
+subject. The token is third-person plural, with one written \emph{c}; it
+is neither the selected infinitive nor the separately modelled third
+singular \emph{liccaþ} `licks'. The spelling is evidence for \emph{i} in
+the weak suffix, not proof that the consonant was historically a
+singleton or that the whole finite token should be emended to
+\emph{licciað} (\citeproc{ref-Sweet1885}{Sweet 1885, 286} (Ps. 71:9);
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 228}).
+
+All three orders derive \emph{*líkkōjaną} \textgreater{} \emph{liccian}.
+The model retains the geminate through SC083, which removes the first
+vowel of its weak \emph{e.i} representation. The finite third singular
+instead has \emph{-aþ} and does not go through that sequence
+(\citeproc{ref-Campbell1959}{Campbell 1959, § 356.4};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 80, 228}).
+
 \section{\texorpdfstring{lid --- OE
 \emph{hlid}}{lid --- OE hlid}}\label{lid-oe-hlid}
 
@@ -15810,7 +15996,7 @@ interpreting the derivations (\citeproc{ref-Jasanoff1973}{Jasanoff 1973,
 
 Derivation: \emph{*xlídą} \textgreater{} \emph{hlid} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-50}
+\subsection{Derivation trace}\label{derivation-trace-53}
 
 Model A and B2: \texttt{xlídą} → \texttt{xlíd} → \texttt{hlíd} →
 \texttt{hlid}
@@ -15858,7 +16044,7 @@ Old English noun (\citeproc{ref-Orel2003}{Orel 2003};
 
 Derivation: \emph{*léuxtijaną} \textgreater{} \emph{līehtan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-51}
+\subsection{Derivation trace}\label{derivation-trace-54}
 
 Model A and B2: \texttt{léuxtijaną} → \texttt{léuxtijan} →
 \texttt{lēoxtijan} → \texttt{lēoxtijąn} → \texttt{lēoxtjąn} →
@@ -15916,7 +16102,7 @@ Ringe and Taylor and Campbell distinguish West Saxon
 
 Derivation: \emph{*líndō} \textgreater{} \emph{lind} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-52}
+\subsection{Derivation trace}\label{derivation-trace-55}
 
 Model A and B2: \texttt{líndō} → \texttt{líndu} → \texttt{línd} →
 \texttt{lind}
@@ -15968,7 +16154,7 @@ counterpart for this entry (\citeproc{ref-ClarkHall1960}{Clark Hall
 Derivation: citation reconstruction \emph{*lūtilaz}; form followed here
 \emph{*lūtilō} \textgreater{} \emph{lȳtelu} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-53}
+\subsection{Derivation trace}\label{derivation-trace-56}
 
 Model A and B2: \texttt{lūtilō} → \texttt{lūtilu} → \texttt{lȳtilu} →
 \texttt{lȳtelu}
@@ -16353,7 +16539,7 @@ imply that every form of `little' should retain its medial vowel.
 Derivation: citation reconstruction \emph{*nautīną}; form followed here
 \emph{*náutīnō} \textgreater{} \emph{nīetenu} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-54}
+\subsection{Derivation trace}\label{derivation-trace-57}
 
 Model A and B2: \texttt{náutīnō} → \texttt{náutīnu} → \texttt{náeutīnu}
 → \texttt{nēatīnu} → \texttt{nīetīnu} → \texttt{nīetinu} →
@@ -16456,7 +16642,7 @@ than duplicate admissions.
 
 Derivation: \emph{*lūsz} \textgreater{} \emph{lūs} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-55}
+\subsection{Derivation trace}\label{derivation-trace-58}
 
 Model A and B2: \texttt{lūsz} → \texttt{lūs}
 
@@ -16518,6 +16704,47 @@ lengthening; the root-noun ending was gone before either applied, and
 the root-final \emph{s} of \emph{lūs} `louse' was never eligible for
 either change.
 
+\section{\texorpdfstring{make --- OE
+\emph{macian}}{make --- OE macian}}\label{make-oe-macian}
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!macian@\iventry{macian}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makojana@\iventry{*mákōjaną}{}}
+
+Derivation: \emph{*mákōjaną} \textgreater{} \emph{macian} (regular).
+
+\subsection{Derivation trace}\label{derivation-trace-59}
+
+Model A and B2: \texttt{mákōjaną} → \texttt{mákōjan} → \texttt{mækōjan}
+→ \texttt{makōjan} → \texttt{makōjąn} → \texttt{makējąn} →
+\texttt{makejąn} → \texttt{makejan} → \texttt{makeian} → \texttt{makian}
+→ \texttt{macian}
+
+\subsection{Formation and root vowel}\label{formation-and-root-vowel}
+
+Kroonen derives the weak verb \Recon{makōjan-} `make' from the
+\emph{*maka-} family. Ringe and Taylor distinguish the West Germanic
+verb from the remodelled English infinitive. Old English
+{\emph{macian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!macian@\iventry{macian}{}}
+`make', Old High German \emph{mahhōn} `make', and Dutch \emph{maken}
+`make' support the comparison; the English suffix does not require the
+continental verbs to have had the same infinitival form at every stage
+(\citeproc{ref-Kroonen2013}{Kroonen 2013, 350};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 191};
+\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 193}).
+
+Campbell cites \emph{macian} among weak verbs with restored \emph{a}. In
+the selected English derivation, opening the root vowel, palatalization,
+and reduction of the unstressed suffix are distinct issues: the model
+first fronts and then restores the root vowel; its restored vowel leaves
+the dorsal in the \emph{mac- stem. Later, the weak suffix passes through
+}e.i\emph{, and SC083 supplies the }i* of \emph{-ian}. Thus all three
+models derive \emph{*mákōjaną} \textgreater{} \emph{macian}. The related
+imperative \emph{maca} `make' and third singular \emph{macaþ} `makes'
+preserve \emph{a} in a different ending and do not test SC083. These
+comparisons do not resolve when the infinitival extension spread
+(\citeproc{ref-Campbell1959}{Campbell 1959, §§ 159, 356.4};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 80, 191, 228}).
+
 \section{\texorpdfstring{milk --- OE
 \emph{meoloc}}{milk --- OE meoloc}}\label{milk-oe-meoloc}
 
@@ -16526,7 +16753,7 @@ either change.
 
 Derivation: \emph{*mélukz} \textgreater{} \emph{meoloc} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-56}
+\subsection{Derivation trace}\label{derivation-trace-60}
 
 Model A and B2: \texttt{mélukz} → \texttt{méluk} → \texttt{méoluk} →
 \texttt{méolok} → \texttt{meoloc}
@@ -16575,7 +16802,7 @@ leveled tradition associated with oblique forms, whereas \emph{meoloc} /
 
 Derivation: \emph{*mōdēr} \textgreater{} \emph{mōder} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-57}
+\subsection{Derivation trace}\label{derivation-trace-61}
 
 Model A and B2: \texttt{mōdēr} → \texttt{mōder}
 
@@ -16623,7 +16850,7 @@ here, but dictionaries usually print \emph{mōdor} / \emph{modor}
 
 Derivation: \emph{*nístą} \textgreater{} \emph{nest} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-58}
+\subsection{Derivation trace}\label{derivation-trace-62}
 
 Model A and B2: \texttt{nístą} → \texttt{níst} → \texttt{nést} →
 \texttt{nest}
@@ -16670,7 +16897,7 @@ retains that evidential qualification (\citeproc{ref-Hill2017}{Hill
 Derivation: citation reconstruction \emph{*nátją}; form followed here
 \emph{*nátjai} \textgreater{} \emph{nette} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-59}
+\subsection{Derivation trace}\label{derivation-trace-63}
 
 Model A and B2: \texttt{nátjai} → \texttt{nátjē} → \texttt{náttjē} →
 \texttt{nættjē} → \texttt{nettjē} → \texttt{nettje} → \texttt{nette}
@@ -16723,7 +16950,7 @@ the Old English form here.
 
 Derivation: \emph{*márōn} \textgreater{} \emph{mære} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-60}
+\subsection{Derivation trace}\label{derivation-trace-64}
 
 Model A and B2: \texttt{márōn} → \texttt{márǭ} → \texttt{márā} →
 \texttt{mærā} → \texttt{mærǣ} → \texttt{mæræ} → \texttt{mære}
@@ -16793,7 +17020,7 @@ computational match.
 
 Derivation: \emph{*régna-bùgô} \textgreater{} \emph{reġnboga} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-61}
+\subsection{Derivation trace}\label{derivation-trace-65}
 
 Model A and B2: \texttt{régna-bùgô} → \texttt{régnabùgô} →
 \texttt{régnabògô} → \texttt{régnabogô} → \texttt{régnæbogô} →
@@ -17004,7 +17231,7 @@ compositional alternative.
 
 Derivation: \emph{*skḗpą} \textgreater{} \emph{sċēap} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-62}
+\subsection{Derivation trace}\label{derivation-trace-66}
 
 Model A and B2: \texttt{skḗpą} → \texttt{skāpą} → \texttt{skāp} →
 \texttt{skǣp} → \texttt{ʃǣp} → \texttt{ʃēap} → \texttt{sċēap}
@@ -17049,7 +17276,7 @@ headword (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014};
 
 Derivation: \emph{*skíllingaz} \textgreater{} \emph{sċilling} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-63}
+\subsection{Derivation trace}\label{derivation-trace-67}
 
 Model A and B2: \texttt{skíllingaz} → \texttt{skíllinga} →
 \texttt{skílling} → \texttt{ʃílling} → \texttt{ʃílleng} →
@@ -17102,7 +17329,7 @@ background of the cognate set. The derivational input \Recon{skíllingaz}
 
 Derivation: \emph{*skúflō} \textgreater{} \emph{sċofl} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-64}
+\subsection{Derivation trace}\label{derivation-trace-68}
 
 Model A and B2: \texttt{skúflō} → \texttt{skóflō} → \texttt{skóflu} →
 \texttt{ʃóflu} → \texttt{ʃófl} → \texttt{sċófl} → \texttt{sċofl}
@@ -17135,7 +17362,7 @@ PNWGmcFinalLongORaising}.
 
 Derivation: \emph{*skáwōjaną} \textgreater{} \emph{sċēawian} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-65}
+\subsection{Derivation trace}\label{derivation-trace-69}
 
 Model A and B2: \texttt{skáwōjaną} → \texttt{skáwōjan} →
 \texttt{skḗawōjan} → \texttt{skḗawōjąn} → \texttt{ʃḗawōjąn} →
@@ -17222,7 +17449,7 @@ articulation.
 
 Derivation: \emph{*slḗpaną} \textgreater{} \emph{slǣpan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-66}
+\subsection{Derivation trace}\label{derivation-trace-70}
 
 Model A and B2: \texttt{slḗpaną} → \texttt{slāpaną} → \texttt{slāpan} →
 \texttt{slǣpan} → \texttt{slǣpąn} → \texttt{slǣpan}
@@ -17286,7 +17513,7 @@ this row represents the verb \emph{slǣpan} `sleep', whereas \emph{slǣp}
 
 Derivation: \emph{*smérwijaną} \textgreater{} \emph{smierwan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-67}
+\subsection{Derivation trace}\label{derivation-trace-71}
 
 Model A and B2: \texttt{smérwijaną} → \texttt{smérwijan} →
 \texttt{sméorwijan} → \texttt{sméorwijąn} → \texttt{sméorwjąn} →
@@ -17355,7 +17582,7 @@ family:
 
 Derivation: \emph{*súrgō} \textgreater{} \emph{sorg} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-68}
+\subsection{Derivation trace}\label{derivation-trace-72}
 
 Model A and B2: \texttt{súrgō} → \texttt{sórgō} → \texttt{sórgu} →
 \texttt{sórg} → \texttt{sorg}
@@ -17390,7 +17617,7 @@ The comparative economy argument and its limits are developed in
 Derivation: citation reconstruction \emph{*sáiwalō}; form followed here
 \emph{*sáiwalǭ} \textgreater{} \emph{sāwle} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-69}
+\subsection{Derivation trace}\label{derivation-trace-73}
 
 Model A and B2: \texttt{sáiwalǭ} → \texttt{sāwalǭ} → \texttt{sāwalā} →
 \texttt{sāwælā} → \texttt{sāwælǣ} → \texttt{sāwlǣ} → \texttt{sāwlæ} →
@@ -17490,7 +17717,7 @@ to an unchanged whole paradigm.
 
 Derivation: \emph{*spánnaną} \textgreater{} \emph{spannan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-70}
+\subsection{Derivation trace}\label{derivation-trace-74}
 
 Model A and B2: \texttt{spánnaną} → \texttt{spánnan} → \texttt{spánnąn}
 → \texttt{spánnan} → \texttt{spannan}
@@ -17538,7 +17765,7 @@ material. The form represented here is the verb
 
 Derivation: \emph{*spárrô} \textgreater{} \emph{spearra} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-71}
+\subsection{Derivation trace}\label{derivation-trace-75}
 
 Model A and B2: \texttt{spárrô} → \texttt{spærrô} → \texttt{spearrô} →
 \texttt{spearra}
@@ -17591,7 +17818,7 @@ This entry concerns the noun
 Derivation: citation reconstruction \emph{*spénnilō}; form followed here
 \emph{*spénnilǭ} \textgreater{} \emph{spinle} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-72}
+\subsection{Derivation trace}\label{derivation-trace-76}
 
 Model A and B2: \texttt{spénnilǭ} → \texttt{spénnilā} →
 \texttt{spénnilǣ} → \texttt{spinnilǣ} → \texttt{spinnlǣ} →
@@ -17687,7 +17914,7 @@ second productive heavy-root deletion.
 
 Derivation: \emph{*stéllijaną} \textgreater{} \emph{stillan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-73}
+\subsection{Derivation trace}\label{derivation-trace-77}
 
 Model A and B2: \texttt{stéllijaną} → \texttt{stéllijan} →
 \texttt{stéllijąn} → \texttt{stélljąn} → \texttt{stilljąn} →
@@ -17738,7 +17965,7 @@ is the verb represented here, while
 
 Derivation: \emph{*súmaraz} \textgreater{} \emph{sumer} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-74}
+\subsection{Derivation trace}\label{derivation-trace-78}
 
 Model A and B2: \texttt{súmaraz} → \texttt{súmara} → \texttt{súmar} →
 \texttt{súmær} → \texttt{súmer} → \texttt{sumer}
@@ -17811,7 +18038,7 @@ English (\citeproc{ref-ClarkHall1960}{Clark Hall 1960};
 
 Derivation: \emph{*súndrōjaną} \textgreater{} \emph{sundrian} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-75}
+\subsection{Derivation trace}\label{derivation-trace-79}
 
 Model A and B2: \texttt{súndrōjaną} → \texttt{súndrōjan} →
 \texttt{súndrōjąn} → \texttt{súndrējąn} → \texttt{súndrejąn} →
@@ -17875,7 +18102,7 @@ Class II verb \emph{sundrian} (\citeproc{ref-Orel2003}{Orel 2003};
 
 Derivation: \emph{*swálwōn} \textgreater{} \emph{swealwe} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-76}
+\subsection{Derivation trace}\label{derivation-trace-80}
 
 Model A and B2: \texttt{swálwōn} → \texttt{swálwǭ} → \texttt{swálwā} →
 \texttt{swælwā} → \texttt{swælwǣ} → \texttt{swealwǣ} → \texttt{swealwæ}
@@ -17924,7 +18151,7 @@ Taylor 2014, 200}; \citeproc{ref-Kroonen2013}{Kroonen 2013, 535}).
 Derivation: citation reconstruction \emph{*swī́ną}; form followed here
 \emph{*swī́ną} \textgreater{} \emph{swīn} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-77}
+\subsection{Derivation trace}\label{derivation-trace-81}
 
 Model A and B2: \texttt{swḯną} → \texttt{swḯn} → \texttt{swīn}
 
@@ -17967,7 +18194,7 @@ represent the same lexical form.
 
 Derivation: \emph{*θár} \textgreater{} \emph{þǣr} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-78}
+\subsection{Derivation trace}\label{derivation-trace-82}
 
 Model A and B2: \texttt{θár} → \texttt{θār} → \texttt{θǣr} →
 \texttt{þǣr}
@@ -18042,7 +18269,7 @@ cannot independently order SC015 relative to lengthening.
 
 Derivation: \emph{*θánkijaną} \textgreater{} \emph{þenċan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-79}
+\subsection{Derivation trace}\label{derivation-trace-83}
 
 Model A and B2: \texttt{θánkijaną} → \texttt{θánkijan} →
 \texttt{θánkijąn} → \texttt{θánkjąn} → \texttt{θánʧjąn} →
@@ -18087,7 +18314,7 @@ Campbell's assibilation discussion uses the same verb \emph{þencan}
 
 Derivation: \emph{*θúrnaz} \textgreater{} \emph{þorn} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-80}
+\subsection{Derivation trace}\label{derivation-trace-84}
 
 Model A and B2: \texttt{θúrnaz} → \texttt{θórnaz} → \texttt{θórna} →
 \texttt{θórn} → \texttt{þórn} → \texttt{þorn}
@@ -18130,7 +18357,7 @@ Old English target itself is simply the citation form \emph{þorn}
 
 Derivation: \emph{*θánxtē} \textgreater{} \emph{þōhte} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-81}
+\subsection{Derivation trace}\label{derivation-trace-85}
 
 Model A and B2: \texttt{θánxtē} → \texttt{θãxtē} → \texttt{θōxtē} →
 \texttt{θōxte} → \texttt{þōhte}
@@ -18259,7 +18486,7 @@ entailment to an independently demonstrated ordering. See
 Derivation: citation reconstruction \emph{*tī́diz}; form followed here
 \emph{*tī́diz} \textgreater{} \emph{tīd} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-82}
+\subsection{Derivation trace}\label{derivation-trace-86}
 
 Model A and B2: \texttt{tḯdiz} → \texttt{tḯdi} → \texttt{tḯd} →
 \texttt{tīd}
@@ -18300,7 +18527,7 @@ English \emph{tide} can also lead to the separate weak verb \emph{tīdan}
 
 Derivation: \emph{*táikną} \textgreater{} \emph{tācn} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-83}
+\subsection{Derivation trace}\label{derivation-trace-87}
 
 Model A and B2: \texttt{táikną} → \texttt{táikn} → \texttt{tākn} →
 \texttt{tācn}
@@ -18344,7 +18571,7 @@ that does not displace the older unbroken form
 
 Derivation: \emph{*tūną} \textgreater{} \emph{tūn} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-84}
+\subsection{Derivation trace}\label{derivation-trace-88}
 
 Model A and B2: \texttt{tūną} → \texttt{tūn}
 
@@ -18384,7 +18611,7 @@ direct citation form \emph{tūn} `town', not an oblique \Recon{tūnăn}
 
 Derivation: \emph{*wádaną} \textgreater{} \emph{wadan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-85}
+\subsection{Derivation trace}\label{derivation-trace-89}
 
 Model A and B2: \texttt{wádaną} → \texttt{wádan} → \texttt{wædan} →
 \texttt{wadan} → \texttt{wadąn} → \texttt{wadan}
@@ -18433,7 +18660,7 @@ output.
 
 Derivation: \emph{*wérpaną} \textgreater{} \emph{weorpan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-86}
+\subsection{Derivation trace}\label{derivation-trace-90}
 
 Model A and B2: \texttt{wérpaną} → \texttt{wérpan} → \texttt{wéorpan} →
 \texttt{wéorpąn} → \texttt{wéorpan} → \texttt{weorpan}
@@ -18475,7 +18702,7 @@ target is the infinitive \emph{weorpan}.
 
 Derivation: \emph{*wáskaną} \textgreater{} \emph{wascan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-87}
+\subsection{Derivation trace}\label{derivation-trace-91}
 
 Model A and B2: \texttt{wáskaną} → \texttt{wáskan} → \texttt{wæskan} →
 \texttt{waskan} → \texttt{waskąn} → \texttt{waskan} → \texttt{wascan}
@@ -18520,7 +18747,7 @@ entry.
 
 Derivation: \emph{*wáxsaną} \textgreater{} \emph{weaxan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-88}
+\subsection{Derivation trace}\label{derivation-trace-92}
 
 Model A and B2: \texttt{wáxsaną} → \texttt{wáxsan} → \texttt{wæxsan} →
 \texttt{weaxsan} → \texttt{weaxsąn} → \texttt{weaxsan} →
@@ -18567,7 +18794,7 @@ lexical or paradigm slots.
 
 Derivation: \emph{*wégaz} \textgreater{} \emph{weġ} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-89}
+\subsection{Derivation trace}\label{derivation-trace-93}
 
 Model A and B2: \texttt{wégaz} → \texttt{wéga} → \texttt{wég} →
 \texttt{wéʝ} → \texttt{wéj} → \texttt{wéġ} → \texttt{weġ}
@@ -18618,7 +18845,7 @@ evidence for `way'.
 
 Derivation: \emph{*wḗpną} \textgreater{} \emph{wǣpn} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-90}
+\subsection{Derivation trace}\label{derivation-trace-94}
 
 Model A and B2: \texttt{wḗpną} → \texttt{wāpną} → \texttt{wāpn} →
 \texttt{wǣpn}
@@ -18671,7 +18898,7 @@ remains the regular unbroken oblique comparator
 
 Derivation: \emph{*wéstą} \textgreater{} \emph{west} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-91}
+\subsection{Derivation trace}\label{derivation-trace-95}
 
 Model A and B2: \texttt{wéstą} → \texttt{wést} → \texttt{west}
 
@@ -18745,7 +18972,7 @@ depend on resolving those wider questions.
 
 Derivation: \emph{*wéθruz} \textgreater{} \emph{weþer} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-92}
+\subsection{Derivation trace}\label{derivation-trace-96}
 
 Model A and B2: \texttt{wéθruz} → \texttt{wéθru} → \texttt{wéθr} →
 \texttt{wéθer} → \texttt{wéþer} → \texttt{weþer}
@@ -18820,7 +19047,7 @@ masculine \emph{u}-stem reconstruction.
 
 Derivation: \emph{*xwár} \textgreater{} \emph{hwǣr} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-93}
+\subsection{Derivation trace}\label{derivation-trace-97}
 
 Model A and B2: \texttt{xwár} → \texttt{xwār} → \texttt{xwǣr} →
 \texttt{hwǣr}
@@ -18899,7 +19126,7 @@ lowering of inherited \emph{*ē₁} in SC024.
 
 Derivation: \emph{*xwáz} \textgreater{} \emph{hwā} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-94}
+\subsection{Derivation trace}\label{derivation-trace-98}
 
 Model A and B2: \texttt{xwáz} → \texttt{xwā} → \texttt{hwā}
 
@@ -18982,7 +19209,7 @@ See
 
 Derivation: \emph{*wéljô} \textgreater{} \emph{willa} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-95}
+\subsection{Derivation trace}\label{derivation-trace-99}
 
 Model A and B2: \texttt{wéljô} → \texttt{wélljô} → \texttt{willjô} →
 \texttt{willja} → \texttt{willa}
@@ -19028,7 +19255,7 @@ for the noun row (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 
 Derivation: \emph{*wíndaną} \textgreater{} \emph{windan} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-96}
+\subsection{Derivation trace}\label{derivation-trace-100}
 
 Model A and B2: \texttt{wíndaną} → \texttt{wíndan} → \texttt{wíndąn} →
 \texttt{wíndan} → \texttt{windan}
@@ -19074,7 +19301,7 @@ class-III verb, not the noun (\citeproc{ref-Kroonen2013}{Kroonen 2013};
 
 Derivation: \emph{*wálθuz} \textgreater{} \emph{weald} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-97}
+\subsection{Derivation trace}\label{derivation-trace-101}
 
 Model A and B2: \texttt{wálθuz} → \texttt{wálθu} → \texttt{wáldu} →
 \texttt{wældu} → \texttt{wealdu} → \texttt{weald}
@@ -19134,7 +19361,7 @@ English form here is normalized
 Derivation: citation reconstruction \emph{*wíra-àldiz}; form followed
 here \emph{*wír-àldiz} \textgreater{} \emph{weorold} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-98}
+\subsection{Derivation trace}\label{derivation-trace-102}
 
 Model A and B2: \texttt{wír-àldiz} → \texttt{wíràldiz} →
 \texttt{wíràldz} → \texttt{wíràld} → \texttt{wéràld} → \texttt{wéruld} →
@@ -19445,7 +19672,7 @@ line \\
 
 Derivation: \emph{*gárną} \textgreater{} \emph{ġearn} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-99}
+\subsection{Derivation trace}\label{derivation-trace-103}
 
 Model A and B2: \texttt{gárną} → \texttt{gárn} → \texttt{gærn} →
 \texttt{gearn} → \texttt{ʝearn} → \texttt{jearn} → \texttt{ġearn}
@@ -19495,7 +19722,7 @@ to the same noun. The comparative stem \emph{*garna-} and oblique
 
 Derivation: \emph{*ízwiz} \textgreater{} \emph{ēow} (regular).
 
-\subsection{Derivation trace}\label{derivation-trace-100}
+\subsection{Derivation trace}\label{derivation-trace-104}
 
 Model A and B2: \texttt{ízwiz} → \texttt{ᵘízwiz} → \texttt{ᵘíwwiz} →
 \texttt{ᵘíuwiz} → \texttt{ᵘíuwi} → \texttt{íuw} → \texttt{ēow}
@@ -19611,7 +19838,7 @@ normalized away.
 Derivation: citation reconstruction \emph{*kwíθuz}; form followed here
 \emph{*kwéðuz} \textgreater{} \emph{cwedu} (attested variant).
 
-\subsection{Derivation trace}\label{derivation-trace-101}
+\subsection{Derivation trace}\label{derivation-trace-105}
 
 Model A and B2: \texttt{kwéðuz} → \texttt{kwéðu} → \texttt{kwédu} →
 \texttt{cwedu}
@@ -19726,7 +19953,7 @@ Derivation: citation reconstruction \emph{*érθa-kùnðaz}; form followed
 here \emph{*érθa-kùnðǭ} \textgreater{} \emph{eorþcunde} (attested
 variant).
 
-\subsection{Derivation trace}\label{derivation-trace-102}
+\subsection{Derivation trace}\label{derivation-trace-106}
 
 Model A and B2: \texttt{érθa-kùnðǭ} → \texttt{érθakùnðǭ} →
 \texttt{érθakùndǭ} → \texttt{érθakùndā} → \texttt{érθækùndā} →
@@ -20039,7 +20266,7 @@ final-overheavy protection, nor an additional analogy.
 Derivation: \emph{*xámaraz} \textgreater{} \emph{hamer} (attested
 variant).
 
-\subsection{Derivation trace}\label{derivation-trace-103}
+\subsection{Derivation trace}\label{derivation-trace-107}
 
 Model A and B2: \texttt{xámaraz} → \texttt{xámara} → \texttt{xámar} →
 \texttt{xámær} → \texttt{xámer} → \texttt{hámer} → \texttt{hamer}
@@ -20169,7 +20396,7 @@ that the sound law varies by word.
 
 Derivation: \emph{*téxun} \textgreater{} \emph{tēon} (attested variant).
 
-\subsection{Derivation trace}\label{derivation-trace-104}
+\subsection{Derivation trace}\label{derivation-trace-108}
 
 Model A and B2: \texttt{téxun} → \texttt{téoxun} → \texttt{téoxon} →
 \texttt{téoon} → \texttt{tḗon} → \texttt{tēon}
@@ -20264,7 +20491,7 @@ form \\
 Derivation: \emph{*θréjez} \textgreater{} \emph{þrīe} (attested
 variant).
 
-\subsection{Derivation trace}\label{derivation-trace-105}
+\subsection{Derivation trace}\label{derivation-trace-109}
 
 Model A and B2: \texttt{θréjez} → \texttt{θréje} → \texttt{θrije} →
 \texttt{θriie} → \texttt{θrīe} → \texttt{þrīe}
@@ -20364,7 +20591,7 @@ the cell compared here \\
 Derivation: \emph{*wábsaz} \textgreater{} \emph{wæfs} (attested
 variant).
 
-\subsection{Derivation trace}\label{derivation-trace-106}
+\subsection{Derivation trace}\label{derivation-trace-110}
 
 Model A and B2: \texttt{wábsaz} → \texttt{wábsa} → \texttt{wábs} →
 \texttt{wæbs} → \texttt{wæβs} → \texttt{wæfs}
@@ -20493,7 +20720,7 @@ independently of the successful output.
 Derivation: citation reconstruction \emph{*búdmaz}; form followed here
 \emph{*búttmaz} \textgreater{} \emph{botm} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-107}
+\subsection{Derivation trace}\label{derivation-trace-111}
 
 Model A and B2: \texttt{búttmaz} → \texttt{bóttmaz} → \texttt{bóttma} →
 \texttt{bóttm} → \texttt{bótm} → \texttt{botm}
@@ -20549,7 +20776,7 @@ English paradigm cells.
 Derivation: citation reconstruction \emph{*brándaz}; form followed here
 \emph{*brándas} \textgreater{} \emph{brandes} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-108}
+\subsection{Derivation trace}\label{derivation-trace-112}
 
 Model A and B2: \texttt{brándas} → \texttt{brándæs} → \texttt{brándes} →
 \texttt{brandes}
@@ -20671,7 +20898,7 @@ entry is that
 Derivation: citation reconstruction \emph{*brústz}; form followed here
 \emph{*bréustą} \textgreater{} \emph{brēost} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-109}
+\subsection{Derivation trace}\label{derivation-trace-113}
 
 Model A and B2: \texttt{bréustą} → \texttt{bréust} → \texttt{brēost}
 
@@ -20795,7 +21022,7 @@ branch, not of the root noun
 Derivation: citation reconstruction \emph{*kráftiz}; form followed here
 \emph{*kráftaz} \textgreater{} \emph{cræft} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-110}
+\subsection{Derivation trace}\label{derivation-trace-114}
 
 Model A and B2: \texttt{kráftaz} → \texttt{kráfta} → \texttt{kráft} →
 \texttt{kræft} → \texttt{cræft}
@@ -20857,7 +21084,7 @@ Candidate input & OE output & Result \\
 Derivation: citation reconstruction \emph{*déljaz}; form followed here
 \emph{*déliz} \textgreater{} \emph{dile} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-111}
+\subsection{Derivation trace}\label{derivation-trace-115}
 
 Model A and B2: \texttt{déliz} → \texttt{déli} → \texttt{dili} →
 \texttt{dile}
@@ -20977,7 +21204,7 @@ ja-stem branch.
 Derivation: citation reconstruction \emph{*fastēną}; form followed here
 \emph{*fástijaną} \textgreater{} \emph{festan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-112}
+\subsection{Derivation trace}\label{derivation-trace-116}
 
 Model A and B2: \texttt{fástijaną} → \texttt{fástijan} →
 \texttt{fæstijan} → \texttt{fæstijąn} → \texttt{fæstjąn} →
@@ -21112,7 +21339,7 @@ layer.
 Derivation: citation reconstruction \emph{*féxu}; form followed here
 \emph{*féx} \textgreater{} \emph{feoh} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-113}
+\subsection{Derivation trace}\label{derivation-trace-117}
 
 Model A and B2: \texttt{féx} → \texttt{féox} → \texttt{féoh} →
 \texttt{feoh}
@@ -21188,7 +21415,7 @@ remain unchanged.
 Derivation: citation reconstruction \emph{*fulgēną}; form followed here
 \emph{*fúlgijaną} \textgreater{} \emph{fylġan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-114}
+\subsection{Derivation trace}\label{derivation-trace-118}
 
 Model A and B2: \texttt{fúlgijaną} → \texttt{fúlgijan} →
 \texttt{fúlgijąn} → \texttt{fúlgjąn} → \texttt{fúlʝjąn} →
@@ -21350,7 +21577,7 @@ The relevant point is the class split.
 Derivation: citation reconstruction \emph{*gállą}; form followed here
 \emph{*gállô} \textgreater{} \emph{ġealla} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-115}
+\subsection{Derivation trace}\label{derivation-trace-119}
 
 Model A and B2: \texttt{gállô} → \texttt{gællô} → \texttt{geallô} →
 \texttt{ʝeallô} → \texttt{ʝealla} → \texttt{jealla} → \texttt{ġealla}
@@ -21473,7 +21700,7 @@ serves only as a family heading.
 Derivation: citation reconstruction \emph{*xémenaz}; form followed here
 \emph{*xébun} \textgreater{} \emph{heofon} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-116}
+\subsection{Derivation trace}\label{derivation-trace-120}
 
 Model A and B2: \texttt{xébun} → \texttt{çébun} → \texttt{çéobun} →
 \texttt{çéoβun} → \texttt{çéoβon} → \texttt{héoβon} → \texttt{heofon}
@@ -21772,7 +21999,7 @@ implementation audit
 Derivation: citation reconstruction \emph{*kníxtaz}; form followed here
 \emph{*knéxtaz} \textgreater{} \emph{cniht} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-117}
+\subsection{Derivation trace}\label{derivation-trace-121}
 
 Model A and B2: \texttt{knéxtaz} → \texttt{knéxta} → \texttt{knéxt} →
 \texttt{knéoxt} → \texttt{knixt} → \texttt{kniht} → \texttt{cniht}
@@ -21889,7 +22116,7 @@ here cell \\
 Derivation: citation reconstruction \emph{*laθōjaną}; form followed here
 \emph{*xláðaną} \textgreater{} \emph{hladan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-118}
+\subsection{Derivation trace}\label{derivation-trace-122}
 
 Model A and B2: \texttt{xláðaną} → \texttt{xláðan} → \texttt{xládan} →
 \texttt{xlædan} → \texttt{xladan} → \texttt{xladąn} → \texttt{xladan} →
@@ -21983,7 +22210,7 @@ attested OE infinitive \\
 Derivation: citation reconstruction \emph{*lábbaz}; form followed here
 \emph{*láppô} \textgreater{} \emph{lappa} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-119}
+\subsection{Derivation trace}\label{derivation-trace-123}
 
 Model A and B2: \texttt{láppô} → \texttt{læppô} → \texttt{lappô} →
 \texttt{lappa}
@@ -22080,7 +22307,7 @@ within the same OE tradition \\
 Derivation: citation reconstruction \emph{*lákaną}; form followed here
 \emph{*xláxjaną} \textgreater{} \emph{hliehhan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-120}
+\subsection{Derivation trace}\label{derivation-trace-124}
 
 Model A: \texttt{xláxjaną} → \texttt{xláxjan} → \texttt{xláxxjan} →
 \texttt{xlæxxjan} → \texttt{xleaxxjan} → \texttt{xleaxçjan} →
@@ -22198,7 +22425,7 @@ evidence, but secondary to the form compared here \\
 Derivation: citation reconstruction \emph{*laimōn}; form followed here
 \emph{*láimą} \textgreater{} \emph{lām} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-121}
+\subsection{Derivation trace}\label{derivation-trace-125}
 
 Model A and B2: \texttt{láimą} → \texttt{láim} → \texttt{lām}
 
@@ -22283,7 +22510,7 @@ attested OE noun \\
 Derivation: citation reconstruction \emph{*lungō}; form followed here
 \emph{*lúnganjō} \textgreater{} \emph{lungen} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-122}
+\subsection{Derivation trace}\label{derivation-trace-126}
 
 Model A and B2: \texttt{lúnganjō} → \texttt{lúnganju} →
 \texttt{lúngannju} → \texttt{lúngennju} → \texttt{lúngennj} →
@@ -22382,7 +22609,7 @@ normalized input form used here \\
 Derivation: citation reconstruction \emph{*nablô}; form followed here
 \emph{*nábulô} \textgreater{} \emph{nafola} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-123}
+\subsection{Derivation trace}\label{derivation-trace-127}
 
 Model A and B2: \texttt{nábulô} → \texttt{næbulô} → \texttt{nabulô} →
 \texttt{naβulô} → \texttt{naβula} → \texttt{naβola} → \texttt{nafola}
@@ -22504,7 +22731,7 @@ later OE reduction stages & same lexical history & attested
 Derivation: citation reconstruction \emph{*xnákkaz}; form followed here
 \emph{*xnékkô} \textgreater{} \emph{hnecca} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-124}
+\subsection{Derivation trace}\label{derivation-trace-128}
 
 Model A and B2: \texttt{xnékkô} → \texttt{xnékka} → \texttt{hnékka} →
 \texttt{hnecca}
@@ -22626,7 +22853,7 @@ oblique paradigm background &
 Derivation: citation reconstruction \emph{*nḗθlō}; form followed here
 \emph{*nḗðlō} \textgreater{} \emph{nǣdl} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-125}
+\subsection{Derivation trace}\label{derivation-trace-129}
 
 Model A and B2: \texttt{nḗðlō} → \texttt{nāðlō} → \texttt{nāðlu} →
 \texttt{nādlu} → \texttt{nǣdlu} → \texttt{nǣdl}
@@ -22731,7 +22958,7 @@ Proto-Germanic form followed here \\
 Derivation: citation reconstruction \emph{*nasō}; form followed here
 \emph{*núsō} \textgreater{} \emph{nosu} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-126}
+\subsection{Derivation trace}\label{derivation-trace-130}
 
 Model A and B2: \texttt{núsō} → \texttt{nósō} → \texttt{nósu} →
 \texttt{nosu}
@@ -22844,7 +23071,7 @@ noun \\
 Derivation: citation reconstruction \emph{*sapōn}; form followed here
 \emph{*sápą} \textgreater{} \emph{sæp} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-127}
+\subsection{Derivation trace}\label{derivation-trace-131}
 
 Model A and B2: \texttt{sápą} → \texttt{sáp} → \texttt{sæp}
 
@@ -22959,7 +23186,7 @@ selected a-stem input &
 Derivation: citation reconstruction \emph{*sái}; form followed here
 \emph{*sáiwiz} \textgreater{} \emph{sǣ} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-128}
+\subsection{Derivation trace}\label{derivation-trace-132}
 
 Model A and B2: \texttt{sáiwiz} → \texttt{sáiwi} → \texttt{sāwi} →
 \texttt{sǣwi} → \texttt{sǣi} → \texttt{sǣ}
@@ -23065,7 +23292,7 @@ selected i-stem input &
 Derivation: citation reconstruction \emph{*síbaz}; form followed here
 \emph{*síbi} \textgreater{} \emph{sife} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-129}
+\subsection{Derivation trace}\label{derivation-trace-133}
 
 Model A and B2: \texttt{síbi} → \texttt{síβi} → \texttt{síβe} →
 \texttt{sife}
@@ -23188,7 +23415,7 @@ evidence \\
 Derivation: citation reconstruction \emph{*sparēną}; form followed here
 \emph{*spárōjaną} \textgreater{} \emph{sparian} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-130}
+\subsection{Derivation trace}\label{derivation-trace-134}
 
 Model A and B2: \texttt{spárōjaną} → \texttt{spárōjan} →
 \texttt{spærōjan} → \texttt{sparōjan} → \texttt{sparōjąn} →
@@ -23336,7 +23563,7 @@ citation form \\
 Derivation: citation reconstruction \emph{*stábiz}; form followed here
 \emph{*stábaz} \textgreater{} \emph{stæf} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-131}
+\subsection{Derivation trace}\label{derivation-trace-135}
 
 Model A and B2: \texttt{stábaz} → \texttt{stába} → \texttt{stáb} →
 \texttt{stæb} → \texttt{stæβ} → \texttt{stæf}
@@ -23440,7 +23667,7 @@ selected a-stem input &
 Derivation: citation reconstruction \emph{*stámnaz}; form followed here
 \emph{*stámniz} \textgreater{} \emph{stefn} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-132}
+\subsection{Derivation trace}\label{derivation-trace-136}
 
 Model A and B2: \texttt{stámniz} → \texttt{stámni} → \texttt{stáβni} →
 \texttt{stæβni} → \texttt{steβni} → \texttt{steβn} → \texttt{stefn}
@@ -23652,7 +23879,7 @@ be used as row 2216's derivational input} \\
 Derivation: citation reconstruction \emph{*swánaz}; form followed here
 \emph{*swánas} \textgreater{} \emph{swanes} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-133}
+\subsection{Derivation trace}\label{derivation-trace-137}
 
 Model A and B2: \texttt{swánas} → \texttt{swánæs} → \texttt{swánes} →
 \texttt{swanes}
@@ -23754,7 +23981,7 @@ genitive singular &
 Derivation: citation reconstruction \emph{*θūs-undī}; form followed here
 \emph{*θūs-èndi} \textgreater{} \emph{þūsend} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-134}
+\subsection{Derivation trace}\label{derivation-trace-138}
 
 Model A and B2: \texttt{θūs-èndi} → \texttt{θūsèndi} → \texttt{θūsènd} →
 \texttt{θūsend} → \texttt{þūsend}
@@ -23865,7 +24092,7 @@ input \\
 Derivation: citation reconstruction \emph{*tímrą}; form followed here
 \emph{*tímbrą} \textgreater{} \emph{timber} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-135}
+\subsection{Derivation trace}\label{derivation-trace-139}
 
 Model A and B2: \texttt{tímbrą} → \texttt{tímbr} → \texttt{tímber} →
 \texttt{timber}
@@ -23963,7 +24190,7 @@ modeled input &
 Derivation: citation reconstruction \emph{*wakēną}; form followed here
 \emph{*wákaną} \textgreater{} \emph{wacan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-136}
+\subsection{Derivation trace}\label{derivation-trace-140}
 
 Model A and B2: \texttt{wákaną} → \texttt{wákan} → \texttt{wækan} →
 \texttt{wakan} → \texttt{wakąn} → \texttt{wakan} → \texttt{wacan}
@@ -24070,7 +24297,7 @@ infinitive \\
 Derivation: citation reconstruction \emph{*wátną}; form followed here
 \emph{*wátōr} \textgreater{} \emph{wæter} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-137}
+\subsection{Derivation trace}\label{derivation-trace-141}
 
 Model A and B2: \texttt{wátōr} → \texttt{wátar} → \texttt{wátær} →
 \texttt{wætær} → \texttt{wæter}
@@ -24175,7 +24402,7 @@ inherited singular input &
 Derivation: citation reconstruction \emph{*wálaz}; form followed here
 \emph{*xwálaz} \textgreater{} \emph{hwæl} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-138}
+\subsection{Derivation trace}\label{derivation-trace-142}
 
 Model A and B2: \texttt{xwálaz} → \texttt{xwála} → \texttt{xwál} →
 \texttt{xwæl} → \texttt{hwæl}
@@ -24280,7 +24507,7 @@ branch \\
 Derivation: citation reconstruction \emph{*wainōjaną}; form followed
 here \emph{*xwī́naną} \textgreater{} \emph{hwīnan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-139}
+\subsection{Derivation trace}\label{derivation-trace-143}
 
 Model A and B2: \texttt{xwḯnaną} → \texttt{xwḯnan} → \texttt{xwḯnąn} →
 \texttt{xwḯnan} → \texttt{hwḯnan} → \texttt{hwīnan}
@@ -24418,7 +24645,7 @@ behind ON
 Derivation: citation reconstruction \emph{*wáiθiz}; form followed here
 \emph{*wī́θagą} \textgreater{} \emph{wīþiġ} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-140}
+\subsection{Derivation trace}\label{derivation-trace-144}
 
 Model A and B2: \texttt{wḯθagą} → \texttt{wḯθag} → \texttt{wḯθæg} →
 \texttt{wḯθæʝ} → \texttt{wḯθeʝ} → \texttt{wḯθiʝ} → \texttt{wḯθij} →
@@ -24534,7 +24761,7 @@ Campbell/Adamczyk-style heavy ja-stem \emph{-e} / zero outcome &
 Derivation: citation reconstruction \emph{*júgunθiz}; form followed here
 \emph{*júgunθ} \textgreater{} \emph{ġeoguþ} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-141}
+\subsection{Derivation trace}\label{derivation-trace-145}
 
 Model A and B2: \texttt{júgunθ} → \texttt{júgūnθ} → \texttt{júgūθ} →
 \texttt{júguθ} → \texttt{ġúguþ} → \texttt{ġéoguþ} → \texttt{ġeoguþ}
@@ -24673,7 +24900,7 @@ identified.
 Derivation: citation reconstruction \emph{*bánną}; form followed here
 \emph{*bánnas} \textgreater{} \emph{bannes} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-142}
+\subsection{Derivation trace}\label{derivation-trace-146}
 
 Model A and B2: \texttt{bánnas} → \texttt{bánnæs} → \texttt{bánnes} →
 \texttt{bannes}
@@ -24775,7 +25002,7 @@ genitive singular &
 Derivation: citation reconstruction \emph{*bázją}; form followed here
 \emph{*bázjas} \textgreater{} \emph{berġes} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-143}
+\subsection{Derivation trace}\label{derivation-trace-147}
 
 Model A and B2: \texttt{bázjas} → \texttt{bárjas} → \texttt{bárjæs} →
 \texttt{bærjæs} → \texttt{berjæs} → \texttt{berjes} → \texttt{berġes}
@@ -24885,7 +25112,7 @@ genitive singular &
 Derivation: citation reconstruction \emph{*burōną}; form followed here
 \emph{*búrōθi} \textgreater{} \emph{boraþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-144}
+\subsection{Derivation trace}\label{derivation-trace-148}
 
 Model A and B2: \texttt{búrōθi} → \texttt{búrōθ} → \texttt{bórōθ} →
 \texttt{bóroθ} → \texttt{bóraθ} → \texttt{bóraþ} → \texttt{boraþ}
@@ -24999,7 +25226,7 @@ imperative singular companion &
 Derivation: citation reconstruction \emph{*burōną}; form followed here
 \emph{*búrô} \textgreater{} \emph{bora} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-145}
+\subsection{Derivation trace}\label{derivation-trace-149}
 
 Model A and B2: \texttt{búrô} → \texttt{bórô} → \texttt{bóra} →
 \texttt{bora}
@@ -25106,7 +25333,7 @@ imperative singular &
 Derivation: citation reconstruction \emph{*béuganą}; form followed here
 \emph{*báug} \textgreater{} \emph{bēag} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-146}
+\subsection{Derivation trace}\label{derivation-trace-150}
 
 Model A and B2: \texttt{báug} → \texttt{báeug} → \texttt{bēag}
 
@@ -25239,7 +25466,7 @@ undergone later leveling.
 Derivation: citation reconstruction \emph{*kōz}; form followed here
 \emph{*kūi} \textgreater{} \emph{cȳ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-147}
+\subsection{Derivation trace}\label{derivation-trace-151}
 
 Model A and B2: \texttt{kūi} → \texttt{kȳi} → \texttt{kȳ} → \texttt{cȳ}
 
@@ -25386,7 +25613,7 @@ path to attested
 Derivation: citation reconstruction \emph{*fínθaną}; form followed here
 \emph{*fúnðanai} \textgreater{} \emph{fundne} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-148}
+\subsection{Derivation trace}\label{derivation-trace-152}
 
 Model A and B2: \texttt{fúnðanai} → \texttt{fúnðanē} → \texttt{fúndanē}
 → \texttt{fúndnē} → \texttt{fúndne} → \texttt{fundne}
@@ -25523,7 +25750,7 @@ invalidate the independently supported nominative plural.
 Derivation: citation reconstruction \emph{*furxtīn}; form followed here
 \emph{*fúrxtīnaz} \textgreater{} \emph{fyrhte} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-149}
+\subsection{Derivation trace}\label{derivation-trace-153}
 
 Model A and B2: \texttt{fúrxtīnaz} → \texttt{fúrxtīna} →
 \texttt{fúrxtīn} → \texttt{fúrxtī} → \texttt{fyrxtī} → \texttt{fyrxti} →
@@ -25657,7 +25884,7 @@ later analogical layer.
 Derivation: citation reconstruction \emph{*xabēną}; form followed here
 \emph{*xábēθi} \textgreater{} \emph{hæfeþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-150}
+\subsection{Derivation trace}\label{derivation-trace-154}
 
 Model A and B2: \texttt{xábēθi} → \texttt{xábēθ} → \texttt{xæbēθ} →
 \texttt{çæbēθ} → \texttt{çæβēθ} → \texttt{çæβeθ} → \texttt{hæβeþ} →
@@ -25788,7 +26015,7 @@ here \\
 Derivation: citation reconstruction \emph{*knéwą}; form followed here
 \emph{*knéwai} \textgreater{} \emph{cneowe} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-151}
+\subsection{Derivation trace}\label{derivation-trace-155}
 
 Model A and B2: \texttt{knéwai} → \texttt{knéwē} → \texttt{knéowē} →
 \texttt{knéowe} → \texttt{cneowe}
@@ -25991,7 +26218,7 @@ of the lexeme's paradigm from the sound-law path of the chosen cell.
 Derivation: citation reconstruction \emph{*liznōjaną}; form followed
 here \emph{*líznōθi} \textgreater{} \emph{leornaþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-152}
+\subsection{Derivation trace}\label{derivation-trace-156}
 
 Model A and B2: \texttt{líznōθi} → \texttt{líznōθ} → \texttt{léznōθ} →
 \texttt{lérnōθ} → \texttt{léornōθ} → \texttt{léornoθ} → \texttt{léornaθ}
@@ -26050,7 +26277,7 @@ selected vowel itself requires analogical replacement
 Derivation: citation reconstruction \emph{*liznōjaną}; form followed
 here \emph{*líznô} \textgreater{} \emph{leorna} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-153}
+\subsection{Derivation trace}\label{derivation-trace-157}
 
 Model A and B2: \texttt{líznô} → \texttt{léznô} → \texttt{lérnô} →
 \texttt{léornô} → \texttt{léorna} → \texttt{leorna}
@@ -26103,7 +26330,7 @@ selection or an extra replacement needed for this imperative
 Derivation: citation reconstruction \emph{*likkōną}; form followed here
 \emph{*líkkōθi} \textgreater{} \emph{liccaþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-154}
+\subsection{Derivation trace}\label{derivation-trace-158}
 
 Model A and B2: \texttt{líkkōθi} → \texttt{líkkōθ} → \texttt{líkkoθ} →
 \texttt{líkkaθ} → \texttt{líkkaþ} → \texttt{liccaþ}
@@ -26222,7 +26449,7 @@ form here \\
 Derivation: citation reconstruction \emph{*likkōną}; form followed here
 \emph{*líkkô} \textgreater{} \emph{licca} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-155}
+\subsection{Derivation trace}\label{derivation-trace-159}
 
 Model A and B2: \texttt{líkkô} → \texttt{líkka} → \texttt{licca}
 
@@ -26343,7 +26570,7 @@ present third singular companion &
 Derivation: citation reconstruction \emph{*libēną}; form followed here
 \emph{*líbēθi} \textgreater{} \emph{lifeþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-156}
+\subsection{Derivation trace}\label{derivation-trace-160}
 
 Model A and B2: \texttt{líbēθi} → \texttt{líbēθ} → \texttt{líβēθ} →
 \texttt{líβeθ} → \texttt{líβeþ} → \texttt{lifeþ}
@@ -26462,7 +26689,7 @@ and related finite remodeling &
 Derivation: citation reconstruction \emph{*makōną}; form followed here
 \emph{*mákōθi} \textgreater{} \emph{macaþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-157}
+\subsection{Derivation trace}\label{derivation-trace-161}
 
 Model A and B2: \texttt{mákōθi} → \texttt{mákōθ} → \texttt{mækōθ} →
 \texttt{makōθ} → \texttt{makoθ} → \texttt{makaθ} → \texttt{makaþ} →
@@ -26585,7 +26812,7 @@ imperative singular companion &
 Derivation: citation reconstruction \emph{*makōną}; form followed here
 \emph{*mákô} \textgreater{} \emph{maca} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-158}
+\subsection{Derivation trace}\label{derivation-trace-162}
 
 Model A and B2: \texttt{mákô} → \texttt{mækô} → \texttt{makô} →
 \texttt{maka} → \texttt{maca}
@@ -26713,7 +26940,7 @@ present third singular companion &
 Derivation: citation reconstruction \emph{*mánnaz}; form followed here
 \emph{*mánnas} \textgreater{} \emph{mannes} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-159}
+\subsection{Derivation trace}\label{derivation-trace-163}
 
 Model A and B2: \texttt{mánnas} → \texttt{mánnæs} → \texttt{mánnes} →
 \texttt{mannes}
@@ -26839,7 +27066,7 @@ genitive singular &
 Derivation: citation reconstruction \emph{*mizdō}; form followed here
 \emph{*mízdai} \textgreater{} \emph{meorde} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-160}
+\subsection{Derivation trace}\label{derivation-trace-164}
 
 Model A and B2: \texttt{mízdai} → \texttt{mízdē} → \texttt{mézdē} →
 \texttt{mérdē} → \texttt{méordē} → \texttt{méorde} → \texttt{meorde}
@@ -26990,7 +27217,7 @@ singular target \\
 Derivation: citation reconstruction \emph{*náxtz}; form followed here
 \emph{*náxti} \textgreater{} \emph{niht} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-161}
+\subsection{Derivation trace}\label{derivation-trace-165}
 
 Model A and B2: \texttt{náxti} → \texttt{næxti} → \texttt{neaxti} →
 \texttt{niexti} → \texttt{nixti} → \texttt{nixt} → \texttt{niht}
@@ -27111,7 +27338,7 @@ selected dative singular &
 Derivation: citation reconstruction \emph{*rastō}; form followed here
 \emph{*rástǭ} \textgreater{} \emph{ræste} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-162}
+\subsection{Derivation trace}\label{derivation-trace-166}
 
 Model A and B2: \texttt{rástǭ} → \texttt{rástā} → \texttt{ræstā} →
 \texttt{ræstǣ} → \texttt{ræstæ} → \texttt{ræste}
@@ -27180,7 +27407,7 @@ that cell's regular derivation.
 Derivation: citation reconstruction \emph{*skuldrō}; form followed here
 \emph{*skúldramiz} \textgreater{} \emph{sċuldrum} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-163}
+\subsection{Derivation trace}\label{derivation-trace-167}
 
 Model A and B2: \texttt{skúldramiz} → \texttt{skúldrumiz} →
 \texttt{skúldrumz} → \texttt{skúldrum} → \texttt{ʃúldrum} →
@@ -27357,7 +27584,7 @@ compare unlike cells.
 Derivation: citation reconstruction \emph{*skéubaną}; form followed here
 \emph{*skáub} \textgreater{} \emph{sċēaf} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-164}
+\subsection{Derivation trace}\label{derivation-trace-168}
 
 Model A and B2: \texttt{skáub} → \texttt{skáeub} → \texttt{skēab} →
 \texttt{ʃēab} → \texttt{ʃēaβ} → \texttt{sċēaβ} → \texttt{sċēaf}
@@ -27492,7 +27719,7 @@ past participle &
 Derivation: citation reconstruction \emph{*skawōną}; form followed here
 \emph{*skáwōθi} \textgreater{} \emph{sċēawaþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-165}
+\subsection{Derivation trace}\label{derivation-trace-169}
 
 Model A and B2: \texttt{skáwōθi} → \texttt{skáwōθ} → \texttt{skḗawōθ} →
 \texttt{ʃḗawōθ} → \texttt{ʃḗawoθ} → \texttt{ʃḗawaθ} → \texttt{sċḗawaþ} →
@@ -27629,7 +27856,7 @@ form compared here \\
 Derivation: citation reconstruction \emph{*skawōną}; form followed here
 \emph{*skáwô} \textgreater{} \emph{sċēawa} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-166}
+\subsection{Derivation trace}\label{derivation-trace-170}
 
 Model A and B2: \texttt{skáwô} → \texttt{skḗawô} → \texttt{ʃḗawô} →
 \texttt{ʃḗawa} → \texttt{sċḗawa} → \texttt{sċēawa}
@@ -27749,7 +27976,7 @@ present third singular companion &
 Derivation: citation reconstruction \emph{*spannō}; form followed here
 \emph{*spánnai} \textgreater{} \emph{spanne} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-167}
+\subsection{Derivation trace}\label{derivation-trace-171}
 
 Model A and B2: \texttt{spánnai} → \texttt{spánnē} → \texttt{spánne} →
 \texttt{spanne}
@@ -27846,7 +28073,7 @@ dative singular compared here &
 Derivation: \emph{*stráwą} yields regular \Recon{strēa}; the Old English
 form here is \emph{strēaw} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-168}
+\subsection{Derivation trace}\label{derivation-trace-172}
 
 Model A and B2: \texttt{stráwą} → \texttt{stráw} → \texttt{stráu} →
 \texttt{stráeu} → \texttt{strēa}
@@ -27977,7 +28204,7 @@ rule.
 Derivation: citation reconstruction \emph{*θéstilaz}; form followed here
 \emph{*θístilas} \textgreater{} \emph{þistles} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-169}
+\subsection{Derivation trace}\label{derivation-trace-173}
 
 Model A and B2: \texttt{θístilas} → \texttt{θéstilas} →
 \texttt{θéstilæs} → \texttt{θistilæs} → \texttt{θistlæs} →
@@ -28093,7 +28320,7 @@ Derivation: citation reconstruction \emph{*knúppaz}; form followed here
 \emph{*knúbbô} \textgreater{} \emph{*cnobba} (reconstructed Old English
 comparator).
 
-\subsection{Derivation trace}\label{derivation-trace-170}
+\subsection{Derivation trace}\label{derivation-trace-174}
 
 Model A and B2: \texttt{knúbbô} → \texttt{knóbbô} → \texttt{knóbba} →
 \texttt{cnobba}
@@ -28191,7 +28418,7 @@ Derivation: citation reconstruction \emph{*ráukiz}; form followed here
 \emph{*ráukaz} \textgreater{} \emph{*rēac} (reconstructed Old English
 comparator).
 
-\subsection{Derivation trace}\label{derivation-trace-171}
+\subsection{Derivation trace}\label{derivation-trace-175}
 
 Model A and B2: \texttt{ráukaz} → \texttt{ráuka} → \texttt{ráuk} →
 \texttt{ráeuk} → \texttt{rēak} → \texttt{rēac}
@@ -28269,7 +28496,7 @@ remains philological background.
 Derivation: \emph{*stráwjaną} \textgreater{} \emph{*strīeġan}
 (reconstructed Old English comparator).
 
-\subsection{Derivation trace}\label{derivation-trace-172}
+\subsection{Derivation trace}\label{derivation-trace-176}
 
 Model A: \texttt{stráwjaną} → \texttt{stráwjan} → \texttt{stráwwjan} →
 \texttt{stráujan} → \texttt{stráeujan} → \texttt{strēajan} →
@@ -28398,6 +28625,157 @@ implement the phonological or morphological process required to derive
 the target. Naming the gap explains the status without pretending that
 no historical account exists.
 
+\section{\texorpdfstring{call --- OE
+\emph{ġeċēð}}{call --- OE ġeċēð}}\label{call-oe-ux121eux10bux113uxf0}
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geced@\iventry{ġeċēð}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!kawjana@\iventry{*káwjaną}{}}
+\index[iv]{05pwgmc@\ivlangheader{Proto-West Germanic}{}!gakawithi@\iventry{*gakáwiθi}{}}
+
+Derivation: citation reconstruction \emph{*káwjaną}; form followed here
+\emph{*gakáwiθi} yields \Recon{ġecēaiþ}; the Old English form here is
+\emph{ġeċēð} (known but unmodelled development).
+
+\subsection{Derivation trace}\label{derivation-trace-177}
+
+Model A and B2: \texttt{gakáwiθi} → \texttt{gakáwiθ} → \texttt{ᶠgakáwiθ}
+→ \texttt{ᶠgækáwiθ} → \texttt{ᶠgækæwiθ} → \texttt{ᶠʝækæwiθ} →
+\texttt{ᶠʝikæwiθ} → \texttt{ᶠʝikewiθ} → \texttt{ᶠʝikeiθ} →
+\texttt{ᶠʝekeiθ} → \texttt{ʝekeiθ} → \texttt{jekeiθ} → \texttt{ġekeiþ} →
+\texttt{ġeceiþ}
+
+\subsection{The comparative verb}\label{the-comparative-verb}
+
+The Old English verb treated here is West Saxon \emph{ċīeġan} `call'
+beside Anglian and Kentish \emph{ċēġan} `call', with Old High German
+\emph{gikewen} `call'. It is not the ancestor of Modern English
+\emph{call}, which belongs with Old Norse \emph{kalla}. Kroonen compares
+the former verb under \Recon{kaujan-} `call, shout'; CAPR writes the
+simplex citation with root stress and an infinitival ending,
+\emph{*káwjaną}. Ringe and Taylor reconstruct a West Germanic geminated
+infinitive; neither its geminate nor the infinitival suffix belongs in
+the inherited third singular (\citeproc{ref-Kroonen2013}{Kroonen 2013,
+278--79, 282}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
+206, 247}).
+
+\subsection{The selected Mercian
+present}\label{the-selected-mercian-present}
+
+The interlinear gloss
+{\emph{geceð}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geceth@\iventry{geceð}{}}
+`calls' stands over Latin \emph{invocat}, with \emph{abyssus} as subject
+and \emph{abyssum} as object, in the Vespasian Psalter. It is the
+prefixed third-person present indicative singular. Sweet cites it as
+Psalm 41:11 in the glossary; the edited Latin text marks the line with
+verse number 8. The letters on the page do not show vowel length or
+palatalization.
+{\emph{ġeċēð}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!geceth@\iventry{ġeċēð}{}}
+`calls' is a normalization informed by the Mercian history, not a
+diplomatic transcription (\citeproc{ref-Sweet1885}{Sweet 1885, 245,
+609}; \citeproc{ref-Campbell1959}{Campbell 1959, 100}, §237.1b;
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 260}).
+
+The derivational input \emph{*gakáwiθi} represents Ringe and Taylor's
+Proto-West-Germanic reconstruction for this prefixed cell, with CAPR's
+root-accent and dorsal/dental notation. The prefix continues inherited
+unstressed \emph{ga-; a cognate prefix in High German makes it
+unnecessary to posit an English invention. This does not put the whole
+selected inflection back into Proto-Germanic. Old English }gecede*
+`called' and \emph{geced} `called' belong to separate weak preterite and
+participial cells. In the Vespasian canticle gloss \emph{þu bist geced}
+`you will be called', the participle is part of a passive periphrasis,
+not another spelling of the present (\citeproc{ref-Sweet1885}{Sweet
+1885, 416, 609}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
+206, 260}).
+
+\subsection{Two stages still to
+distinguish}\label{two-stages-still-to-distinguish}
+
+The loss of the labial before the front suffix leaves hiatus in the
+stressed root. The historical account then contracts the front vowels to
+\emph{ē}. This is not the weak-suffix reduction seen in \emph{liccian}
+`lick'. CAPR's foot restriction now keeps the stressed \emph{e} in A and
+B2 but does not contract the resulting nucleus. Both yield \emph{ġeceiþ}
+for the present, while compatibility yields \emph{ġecēaiþ} from its
+differently prepared nucleus. The diagnostic West Germanic participle
+yields \emph{ġeceid} in A and B2 and \emph{ġecēaid} in compatibility;
+these are predictions, not attestations or replacements for the Mercian
+target. The remaining front-hiatus contraction should be adjudicated
+separately from both weak-vowel reduction and the contraction of broken
+nuclei (\citeproc{ref-Campbell1959}{Campbell 1959, 100}, §237.1b;
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 260, 318}).
+
+\section{\texorpdfstring{filter --- OE
+\emph{sēoh}}{filter --- OE sēoh}}\label{filter-oe-sux113oh}
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!seoh@\iventry{sēoh}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sixwana@\iventry{*sī́xwaną}{}}
+\index[iv]{05pwgmc@\ivlangheader{Proto-West Germanic}{}!six@\iventry{*sī́x}{}}
+
+Derivation: citation reconstruction \emph{*sī́xwaną}; form followed here
+\emph{*sī́x} yields \Recon{sīoh}; the Old English form here is
+\emph{sēoh} (known but unmodelled development).
+
+\subsection{Derivation trace}\label{derivation-trace-178}
+
+Model A and B2: \texttt{sḯx} → \texttt{sīox} → \texttt{sīoh}
+
+\subsection{The verb and its grades}\label{the-verb-and-its-grades}
+
+This class I strong verb is distinct from the homophonous Old English
+infinitive \emph{sēon} `see'. Seebold's comparative stem \emph{seihw-a-
+links Old High German }sīhan* and Old Frisian \emph{sīa} with the
+English verb `strain, filter', also used intransitively of oozing. Ringe
+and Taylor reconstruct a long root vowel and a voiceless labiovelar for
+the inherited infinitive \emph{*sīhʷaną}, in agreement with Orel's long
+vowel; Kroonen prints an unmarked \emph{i} in his stem. CAPR follows the
+explicitly long account, \emph{*sī́xwaną}. The contrasting participial
+grade is historically voiced, as shown by \emph{āsiwen} and
+\emph{āseowen} `strained'. It does not have a voiceless dorsal followed
+by a labial and is not an exception to medial delabialization
+(\citeproc{ref-Seebold1970}{Seebold 1970, 389--90};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 178--79, 344--45};
+\citeproc{ref-Orel2003}{Orel 2003, 329--30};
+\citeproc{ref-Kroonen2013}{Kroonen 2013, 435--36}).
+
+\subsection{The selected command}\label{the-selected-command}
+
+The singular command
+{\emph{sēoh}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!seoh@\iventry{sēoh}{}}
+`strain!' occurs in \emph{Sēoh þurh clāþ} `strain through cloth'
+(\emph{Leechdoms} II.24.1 and III.14.18, as cited by Bosworth and
+Toller). CAPR selects the endingless West Germanic imperative with long
+root vowel and final dorsal, \emph{*sī́x}. The earlier strong singular
+imperative and its ending history are not separately scored here. The
+derivational input is after the disappearance of final labialization; it
+is not the Proto-Germanic infinitive with its suffix removed by the
+medial law. A final dorsal survives, as it does in the independently
+attested \emph{þurhsēah} `strained through' of \emph{Bede} V.12, a past
+singular instead of an imperative. All three current orders produce
+\emph{sīoh}. The retained dorsal is right; the remaining difference is
+the long broken vowel (\citeproc{ref-BosworthToller1898}{Bosworth and
+Toller 1898}, s.v.~\emph{seón} `strain';
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 48--49, 344};
+\citeproc{ref-Campbell1959}{Campbell 1959, 186--87} §464).
+
+\subsection{The prefixed evidence}\label{the-prefixed-evidence}
+
+In \emph{Christ} C 1086 (1088 in the numbering used by Bosworth and
+Toller), \emph{biseon mid swate} `sprinkled with blood' describes the
+cross in parallel with \emph{blode bistemed}. Despite looking like an
+infinitive, it is used as a participle; the prefixed infinitive
+\emph{*bisīhwan} is a comparative projection, not the earlier cell of
+that token. The short prefix is independently supported by Germanic
+\emph{bi} and Seebold's \emph{bi- comparisons. Cockayne's }āsiwen* and
+the genitive \emph{āseownes} `of strained {[}honey{]}' show an overt
+labial in another prefix and a distinct grade. Do not select an
+unprefixed stem to match a prefixed attestation or resolve the unusual
+\emph{biseon} by assigning it to the ordinary voiced grade without
+further evidence (\citeproc{ref-BosworthToller1898}{Bosworth and Toller
+1898}, s.vv.~\emph{be-seón}, \emph{seón};
+\citeproc{ref-Seebold1970}{Seebold 1970, 389--90};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 65, 344--45}).
+
 \section{\texorpdfstring{fire --- OE
 \emph{fȳre}}{fire --- OE fȳre}}\label{fire-oe-fux233re}
 
@@ -28407,7 +28785,7 @@ no historical account exists.
 Derivation: \emph{*fūri} yields regular \Recon{fȳr}; the Old English
 form here is \emph{fȳre} (known but unmodelled development).
 
-\subsection{Derivation trace}\label{derivation-trace-173}
+\subsection{Derivation trace}\label{derivation-trace-179}
 
 Model A and B2: \texttt{fūri} → \texttt{fȳri} → \texttt{fȳr}
 
@@ -28539,6 +28917,78 @@ later analogical surface form & --- & attested
 \end{longtable}
 }
 
+\section{\texorpdfstring{see --- OE
+\emph{sēon}}{see --- OE sēon}}\label{see-oe-sux113on}
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!seon@\iventry{sēon}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sexwana@\iventry{*séxwaną}{}}
+
+Derivation: \emph{*séxwaną} yields regular \Recon{seoan}; the Old
+English form here is \emph{sēon} (known but unmodelled development).
+
+\subsection{Derivation trace}\label{derivation-trace-180}
+
+Model A and B2: \texttt{séxwaną} → \texttt{séxwan} → \texttt{séoxwan} →
+\texttt{séoxwąn} → \texttt{séoxąn} → \texttt{séoxan} → \texttt{séoan} →
+\texttt{seoan}
+
+\subsection{The inherited verb}\label{the-inherited-verb}
+
+Gothic \emph{saiƕan} `see' preserves the inherited voiceless labiovelar
+in the infinitive. Old Saxon and Old High German \emph{sehan} write a
+dorsal without a labial, and Old Frisian \emph{siā} and Old Norse
+\emph{sjá} reflect their own subsequent histories. Kroonen connects the
+Germanic verb with the Indo-European family of Latin \emph{sequor}
+`follow'; the semantic connection is following with the eye, not a
+reconstruction of the English inflection. CAPR writes the comparative
+infinitive \emph{*séxwaną}, encoding the inherited single labiovelar as
+a dorsal and labial sequence, not claiming that Proto-Germanic itself
+already had the West Germanic cluster
+(\citeproc{ref-Kroonen2013}{Kroonen 2013, 431--32};
+\citeproc{ref-Orel2003}{Orel 2003, 323};
+\citeproc{ref-Seebold1970}{Seebold 1970, 387--88};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 48--50, 315}).
+
+\subsection{The infinitive and the rest of the
+paradigm}\label{the-infinitive-and-the-rest-of-the-paradigm}
+
+The selected simplex
+{\emph{sēon}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!seon@\iventry{sēon}{}}
+`see' is the infinitive after \emph{mæge} `may' in the Old English
+\emph{Boethius} 38.5 (Fox p.~206, line 21, as cited by Bosworth and
+Toller). The Cotton variant \emph{gesion} has a prefix and is not the
+selected token. The inflected infinitive \emph{tō sēonne} `to see' in
+the Old English \emph{Orosius} has a different ending. The common West
+Saxon \emph{ġesēon} `see' is another valuable comparison, not a reason
+to identify all three words (\citeproc{ref-BosworthToller1898}{Bosworth
+and Toller 1898}, s.v.~\emph{seón}; \citeproc{ref-Bosworth1859}{Bosworth
+1859, 52}).
+
+West Saxon past singular \emph{seah} `saw' keeps final \emph{h}; its
+root is not the intervocalic input of the infinitive. The plural
+\emph{sāwon} `saw' and the participle \emph{sewen} `seen' show the
+voiced alternant, while the corresponding Anglian forms have a levelled
+dorsal. These cells illuminate the inherited alternations without
+requiring the same consonant development in every member of the paradigm
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 315--17,
+344--45}).
+
+\subsection{Two losses and a
+contraction}\label{two-losses-and-a-contraction}
+
+In the reconstruction through \emph{*sehwan}, the labial is lost before
+the now-intervocalic dorsal is lost. Breaking is visible in the
+reconstructed \emph{*seohan}, and the later contraction gives
+\emph{sēon}. Ringe and Taylor also reconstruct a first-person form
+\emph{*sehu}, where the labial has become syllabic: this is not a second
+application of loss before a following vowel. Before the reformulation
+of SC053 Postvelar labial loss, all three orders yielded \emph{seohwan}.
+With singleton labial loss, the dorsal can also fall, but the result
+\emph{seoan} still lacks the attested contraction. The target and the
+selected inherited input remain unchanged
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 178, 315--17};
+\citeproc{ref-Campbell1959}{Campbell 1959, 185--87} §§461, 464).
+
 \section{\texorpdfstring{tap --- OE
 \emph{tæppa}}{tap --- OE tæppa}}\label{tap-oe-tuxe6ppa}
 
@@ -28548,7 +28998,7 @@ later analogical surface form & --- & attested
 Derivation: \emph{*táppô} yields regular \Recon{tappa}; the Old English
 form here is \emph{tæppa} (known but unmodelled development).
 
-\subsection{Derivation trace}\label{derivation-trace-174}
+\subsection{Derivation trace}\label{derivation-trace-181}
 
 Model A and B2: \texttt{táppô} → \texttt{tæppô} → \texttt{tappô} →
 \texttt{tappa}
@@ -28649,7 +29099,7 @@ explain the mismatch.
 Derivation: \emph{*búkkaz} yields regular \Recon{bocc}; the Old English
 form here is \emph{bucc} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-175}
+\subsection{Derivation trace}\label{derivation-trace-182}
 
 Model A and B2: \texttt{búkkaz} → \texttt{bókkaz} → \texttt{bókka} →
 \texttt{bókk} → \texttt{bocc}
@@ -28753,7 +29203,7 @@ parallel OE lexical background & --- &
 Derivation: \emph{*fúglaz} yields regular \Recon{fogol}; the Old English
 form here is \emph{fugol} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-176}
+\subsection{Derivation trace}\label{derivation-trace-183}
 
 Model A and B2: \texttt{fúglaz} → \texttt{fóglaz} → \texttt{fógla} →
 \texttt{fógl} → \texttt{fógol} → \texttt{fogol}
@@ -28855,7 +29305,7 @@ is regular, but no accepted lautgesetzlich pathway has been found from
 Derivation: \emph{*rústaz} yields regular \Recon{rost}; the Old English
 form here is \emph{rust} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-177}
+\subsection{Derivation trace}\label{derivation-trace-184}
 
 Model A and B2: \texttt{rústaz} → \texttt{róstaz} → \texttt{rósta} →
 \texttt{róst} → \texttt{rost}
@@ -28973,7 +29423,7 @@ the ordinary citation noun.
 Derivation: \emph{*wúlfaz} yields regular \Recon{wolf}; the Old English
 form here is \emph{wulf} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-178}
+\subsection{Derivation trace}\label{derivation-trace-185}
 
 Model A and B2: \texttt{wúlfaz} → \texttt{wólfaz} → \texttt{wólfa} →
 \texttt{wólf} → \texttt{wolf}
@@ -29079,7 +29529,7 @@ preservation of \emph{u} remains unexplained \\
 Derivation: \emph{*wúllō} yields regular \Recon{woll}; the Old English
 form here is \emph{wull} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-179}
+\subsection{Derivation trace}\label{derivation-trace-186}
 
 Model A and B2: \texttt{wúllō} → \texttt{wóllō} → \texttt{wóllu} →
 \texttt{wóll} → \texttt{woll}

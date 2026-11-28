@@ -1,0 +1,27 @@
+{
+  "adjudication": "SC083",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc083-adjudication.md",
+  "transition_id": "call_admission",
+  "previous_summary": {
+    "outputs_sha256": "51953ed3a411b10bfa551de996053bc805ba87525180c4bf13f9b1ba46d4ee0e",
+    "lexical_outputs_sha256": "732a627efbb738bab1646d0d9c8ff54cdbad075b8109a4f4bc5c80d57321965b",
+    "legacy_subset_sha256": "1b53e382bb320caf05c795218fe626bf7d0fd8f4e19da3af7f4ef6190d7892ee"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "additions": [
+    {
+      "row_id": "2342",
+      "concept": "call",
+      "proto": "*gakáwiθi",
+      "proto_norm": "gakáwiθi",
+      "fst_input": "gakáwiθi",
+      "word_stress": "stressed",
+      "phonological_finality": "final",
+      "counterpart": "ġeċēð",
+      "accepted": "1",
+      "output_count": "1",
+      "match": "0",
+      "outputs": "ġecēaiþ"
+    }
+  ]
+}

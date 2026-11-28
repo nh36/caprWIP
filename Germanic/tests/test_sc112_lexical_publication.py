@@ -84,12 +84,13 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
         current = table(path.read_text())
         now = {row["row_id"]: row for row in current}
         self.assertEqual(len(current), len(now))
-        self.assertEqual((len(old), len(now)), (165, 180))
+        self.assertEqual((len(old), len(now)), (165, 187))
         self.assertEqual(set(now) - set(old), {
             "2148", "2333", "2334", "2335", "2336", "2201", "2282", "2006",
-            "2337", "2208", "2338", "2339", "2061", "2340", "2341"})
+            "2337", "2208", "2338", "2339", "2061", "2340", "2341",
+            "1956", "2055", "2099", "2117", "2342", "2343", "2344"})
         self.assertEqual(set(old) - set(now), set())
-        self.assertEqual(sum(r["derivation_class"] == "regular" for r in current), 101)
+        self.assertEqual(sum(r["derivation_class"] == "regular" for r in current), 105)
         # Positions are editorial (see test_lexical_editorial_order); every
         # scientific column of every pre-existing entry must be unchanged.
         presentation = {"global_order", "class_order"}

@@ -112,7 +112,7 @@ class Sc112Tests(unittest.TestCase):
                 continue
             source, output = line.split("\t", 1)
             outputs.setdefault(source, []).append(output)
-        self.assertEqual(len(outputs), 396)
+        self.assertEqual(len(outputs), 399)
         self.assertTrue(
             all(len(set(values)) == 1 and values[0] != "+?" for values in outputs.values())
         )
@@ -212,10 +212,11 @@ class Sc112Tests(unittest.TestCase):
 
     def test_exact_counts_and_known_mismatch_membership(self):
         self.assertEqual(sum(r["match"] == "1" for r in self.current.values()), 388)
-        self.assertEqual(sum(r["match"] == "0" for r in self.current.values()), 8)
+        self.assertEqual(sum(r["match"] == "0" for r in self.current.values()), 11)
         self.assertEqual(
             {r["row_id"] for r in self.current.values() if r["match"] == "0"},
-            {"1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300"},
+            {"1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300",
+             "2342", "2343", "2344"},
         )
 
 

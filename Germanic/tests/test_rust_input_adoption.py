@@ -174,7 +174,7 @@ class RustInputAdoptionTests(unittest.TestCase):
             (nightmare["proto"], nightmare["counterpart"], nightmare["outputs"], nightmare["match"]),
             ("*márōn", "mære", "mære", "1"))
         report = known.render_report(known.baseline_mismatches(live["records"]), ledger)
-        self.assertIn("Total mismatches:         8", report)
+        self.assertIn("Total mismatches:         11", report)
         self.assertNotIn("*fláskōniz", report)
         self.assertEqual(
             (ROOT / "Germanic/docs/debug_snapshots/oe_known_problems_report.txt").read_text(), report)

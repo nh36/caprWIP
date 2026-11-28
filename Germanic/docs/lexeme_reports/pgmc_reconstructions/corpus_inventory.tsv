@@ -401,3 +401,6 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2339	dart	sċytel	*skutilaz	pgmc	*skútilaz	pgmc		explicit_sidecar	regular	1	stressed	final
 2340	bed	bedde	*bádją	pgmc	*bádjai	pgmc		explicit_sidecar	regular	1	stressed	final
 2341	kin	cynnes	*kúnją	pgmc	*kúnjas	pgmc		explicit_sidecar	regular	1	stressed	final
+2342	call	ġeċēð	*káwjaną	pgmc	*gakáwiθi	pwgmc		explicit_sidecar	known_unmodelled	1	stressed	final
+2343	see	sēon	*séxwaną	pgmc	*séxwaną	pgmc		equality_convention	known_unmodelled	1	stressed	final
+2344	filter	sēoh	*sḯxwaną	pgmc	*sḯx	pwgmc		explicit_sidecar	known_unmodelled	1	stressed	final

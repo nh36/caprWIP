@@ -2,10 +2,10 @@
 OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
 ========================================================================
 
-Total mismatches:         8
+Total mismatches:         11
   Tractable (no ledger):  0
   exception               3
-  open                    0
+  open                    3
   parked                  0
   wontfix                 5
 Stale ledger entries:     0
@@ -78,9 +78,25 @@ EXCEPTION  (3)
     added:  2026-10-13
 
 ========================================================================
-OPEN  (0)
+OPEN  (3)
 ========================================================================
-  (none)
+--- broken_nucleus_hiatus (1) ---
+  *séxwaną           -> seoan                (expected sēon)
+    reason: The attested simplex sēon requires contraction after labial and singleton dorsal loss. Keep the target and the independently established input; do not extend the stressed front rule to this broken nucleus.
+    refs:   RingeTaylor2014 pp.178,215,315–317;BosworthToller1898 s.v. seón
+    added:  2026-11-28
+
+--- long_broken_nucleus (1) ---
+  *sḯx               -> sīoh                 (expected sēoh)
+    reason: The selected imperative retains final h; all three models give sīoh for the attested sēoh. Neither medial delabialization nor intervocalic dorsal loss should apply.
+    refs:   Leechdoms II.24.1;Campbell1959 §464;Seebold1970 pp.389–390
+    added:  2026-11-28
+
+--- stressed_front_hiatus (1) ---
+  *gakáwiθi          -> ġecēaiþ              (expected ġeċēð)
+    reason: Selected PWGmc prefixed present: compatibility ġecēaiþ; A and B2 ġeceiþ; Mercian target ġeċēð. Stressed front contraction after labial loss is deferred to package 3, not part of SC083 or broken-nucleus contraction.
+    refs:   Campbell1959 p.100 §237.1b;RingeTaylor2014 p.260;Sweet1885 pp.245,609
+    added:  2026-11-28
 
 ========================================================================
 STALE LEDGER ENTRIES  (0)

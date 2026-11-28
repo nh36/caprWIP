@@ -26,6 +26,7 @@ EXPECTED = {
     "2186": ("*s*k*á*w*ō*j*a*n*ą", "*s*k*ḗa*w*ō*j*a*n*ą"),
     "2317": ("*s*k*á*w*ô", "*s*k*ḗa*w*ô"),
     "2318": ("*s*k*á*w*ō*θ", "*s*k*ḗa*w*ō*θ"),
+    "2342": ("*g*a*k*á*w*i*θ", "*g*a*k*ḗa*w*i*θ"),
 }
 
 
@@ -34,12 +35,12 @@ class SC034AdjudicationTests(unittest.TestCase):
     def setUpClass(cls):
         cls.records = trace_records()
 
-    def test_fresh_complete_trace_and_all_three_actual_applications(self):
+    def test_fresh_complete_trace_and_actual_applications(self):
         trace = (GERMANIC / "docs/debug_snapshots/oe_full_trace_report.txt").read_text(
             encoding="utf-8"
         )
         self.assertEqual(trace_provenance_problems(trace), [])
-        self.assertEqual(len(self.records), 396)
+        self.assertEqual(len(self.records), 399)
         self.assertEqual({"2333", "2334"} <= set(self.records), True)
         for identifier in ("2333", "2334"):
             forms = self.records[identifier][2]

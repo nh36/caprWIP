@@ -1,4 +1,6 @@
 action	source_ref	form	language	variety	form_role	note
+accept	Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md:12	*xandlōjanan	pgmc		source_protoform	Orel's comparative reconstruction, distinct from CAPR's selected input.
+accept	Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md:12	*xanduz	pgmc		source_protoform	Orel's reconstructed nominal base; the Old Norse comparison later in the paragraph does not determine its language.
 accept	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:21	boc	oe		comparison_form	attested OE nominative comparison form cited by Kroonen
 accept	Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25	boc	oe		comparison_form	attested OE nominative comparison form in evidence prose
 accept	Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25	ge-byrd	oe		comparison_form	attested prefixed OE comparison form

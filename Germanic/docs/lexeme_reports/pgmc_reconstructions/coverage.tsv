@@ -1,4 +1,15 @@
 row_id	source_key	status	evidence_ids	search_basis	assessment
+2342	Orel2003	no_form_found		Bounded headword and cross-reference search for kaujan-/kawjan-, OE cīegan/cegan and OHG gikewen in the held dictionary.	No identifiable entry for the inherited weak verb was found; Orel is not counted as agreeing with Kroonen.
+2343	Kroonen2013	evidence_found	see-kroonen-2343	Bounded review of *sehwan-, printed 431-432.	Supports the inherited stem and cognate identity.
+2343	Orel2003	evidence_found	see-orel-2343	Bounded review in the original at *sexwanan, printed p. 323.	Supports the inherited stem; the different ending convention is retained.
+2344	Kroonen2013	evidence_found	filter-kroonen-2344	Bounded review of *sihwan-, printed pp. 435-436.	The citation has no macron; retain this divergence from the explicitly long reconstruction.
+2344	Orel2003	evidence_found	filter-orel-2344	Bounded review in the original at *sīxwanan, printed pp. 329-330.	Long comparative infinitive with separate voiced and derivative comparisons, not a reconstruction of the selected imperative.
+2342	Kroonen2013	evidence_found	call-kroonen-2342	Comparative stem entry and distinct antecedent of modern call.	The dictionary lists a stem, not a fully inflected prefixed cell.
+2342	RingeTaylor2014	evidence_found	call-rt-present-2342	Prefixed weak paradigm in chapter 6, printed p260.	The explicit West Germanic present anchors the selected input.
+2342	Sweet1885	evidence_found	call-sweet-present-2342	Edition image p245 and glossary p609.	Verifies consonant spelling, Latin alignment and grammatical cell; normalized length and palatalization are not documentary marks.
+2343	RingeTaylor2014	evidence_found	see-rt-infinitive-2343	Bounded review of the inherited infinitive in the breaking, delabialization and dorsal-loss sections.	Explicit Proto-Germanic reconstruction; does not merge the first singular or other diagnostic cells with the selected infinitive.
+2344	Seebold1970	evidence_found	filter-seebold-citation-2344	Bounded review under SEIHW-A-.	Comparative stem and voiced alternants; not a whole imperative reconstruction.
+2344	RingeTaylor2014	evidence_found	filter-rt-infinitive-2344	Bounded review of the comparative infinitive and the West Saxon paradigm.	Explicit Proto-Germanic citation; the selected imperative is a separate CAPR reconstruction.
 2340	Kroonen2013	evidence_found	bed-kroonen-2340	Bounded text review at p. 84	Neuter citation stem only; the whole selected dative is not quoted from Kroonen.
 2341	Kroonen2013	evidence_found	kin-kroonen-2341	Bounded text review at p. 351	Neuter citation stem only; the whole selected genitive is not quoted from Kroonen.
 2340	Orel2003	evidence_found	bed-orel-2340	Bounded text review at s.v. *badjan	The neuter citation and the whole selected dative are distinct units.

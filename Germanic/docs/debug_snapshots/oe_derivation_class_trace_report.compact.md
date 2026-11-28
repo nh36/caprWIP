@@ -9416,7 +9416,59 @@ NOTE: Unattested West Saxon cognate; reconstructed *strīeġan per regular WS de
 
 
 
-=== DERIVATION_CLASS: known_unmodelled (2) ===
+=== DERIVATION_CLASS: known_unmodelled (5) ===
+
+
+
+# call
+PROTO: *gakáwiθi
+EXPECTED: ġeċēð
+OUTPUTS: ġecēaiþ
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *gakáwiθi
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *gakáwiθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Aw Long Diphthong: *gakḗawiθ<br>EAF Brightening Unstressed: *gækḗawiθ<br>OE Velar Palatalization: *ʝækḗawiθ<br>OE Prefix A Reduction: *ʝikḗawiθ<br>OE W Loss Before I: *ʝikḗaiθ<br>OE Prefix I Reduction: *ʝekḗaiθ<br>OE Palatal Fricative Merger: *jekḗaiθ |
+
+
+
+### Orthography & surface
+
+Old English Orthography: ġ*ekḗaiþ
+Outcome: ġecēaiþ
+
+NOTE: Prefixed third singular present indicative; Mercian Vespasian Psalter geceð glossing invocat (Sweet 1885 pp.245, 609).
+
+
+
+# filter
+PROTO: *sḯx
+EXPECTED: sēoh
+OUTPUTS: sīoh
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *sḯx
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *sīox |
+
+
+
+### Orthography & surface
+
+Old English Orthography: *sīoh
+Outcome: sīoh
+
+NOTE: Singular imperative Seóh þurh cláþ, Leechdoms II.24.1 and III.14.18, as cited in Bosworth–Toller s.v. seón ‘strain’.
 
 
 
@@ -9442,6 +9494,31 @@ English Proto Input: *fūri
 Outcome: fȳr
 
 NOTE: ANALOGICAL: Proto dat.sg. *fūri triggers i-umlaut; final *-i apocopated after heavy syllable → fȳr. Attested fȳre has -e analogically restored by proportion with regular a-stems (word:worde::fȳr:fȳre). FST correctly produces endingless fȳr.
+
+
+
+# see
+PROTO: *séxwaną
+EXPECTED: sēon
+OUTPUTS: seoan
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *séxwaną
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *séoxwaną<br>OE Heavy Syllable Nasal Apocope: *séoxwan<br>OE Secondary Nasalization: *séoxwąn<br>OE Post Velar W Loss: *séoxąn<br>OE Weak Tail Reduction: *séoxan<br>OE H Loss: *séoan |
+
+
+
+### Orthography & surface
+
+Outcome: seoan
+
+NOTE: Simplex infinitive after mæge in Boethius 38.5; Bosworth–Toller s.v. seón cites Fox p.206 l.21 and the prefixed Cotton variant.
 
 
 

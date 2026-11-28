@@ -4,8 +4,8 @@ GENERATED from research SOURCE tables and the live corpus. Never hand-edit.
 
 Row-target status: **INCOMPLETE**. Row coverage is not passage or analytical completion.
 The separately generated [reading progress](reading_progress.md) tracks the three-source passages and applicability screens.
-Population: 402 OE rows; 396 runnable.
-Required source/row targets: 1407; retained actual consultations: 29; unchecked targets: 0; declared verification gaps: 0.
+Population: 405 OE rows; 399 runnable.
+Required source/row targets: 1413; retained actual consultations: 34; unchecked targets: 0; declared verification gaps: 0.
 
 Current CAPR fields below are observations, not new endorsements or approvals.
 A PGmc equality stage is the encoding convention, not independent author evidence.
@@ -11563,3 +11563,49 @@ Runnable: 1; derivation class: regular.
 | kin-orel-2341 | Orel2003 pp.224 | *kunjan | dictionary_context / word / Neuter dictionary citation | *kunjan Identity; retain Orel's ending notation. Neuter clan headword with Gothic kuni and OE cyn; not a genitive. | text_checked |
 
 Coverage: 2 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2342"></a>
+
+## 2342: call / ġeċēð
+
+Current citation: *káwjaną (pgmc); selected input: *gakáwiθi (pwgmc; variety: none; explicit_sidecar).
+Runnable: 1; derivation class: known_unmodelled.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| call-kroonen-2342 | Kroonen2013 pp.282 | kaujan- | pgmc / stem / Simplex comparative stem | *káwjaną CAPR supplies accent, consonantal w and infinitival ending. Comparative citation, not evidence for the entire prefixed cell. | text_checked |
+| call-rt-present-2342 | RingeTaylor2014 pp.260 | *gakawiþi | pwgmc / word / Prefixed present indicative third singular | *gakáwiθi CAPR adds the root accent and writes θ for þ. The West Germanic reconstructed cell is distinct from the Proto-Germanic simplex citation. | text_checked |
+| call-sweet-present-2342 | Sweet1885 pp.245,609 | geceð | oe / attestation / Prefixed Mercian present indicative third singular | ġeċēð Marks vowel quantity and palatal articulation, not printed in the token. Geceð glosses invocat with singular abyssus as subject. | page_image_checked |
+
+Coverage: 4 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2343"></a>
+
+## 2343: see / sēon
+
+Current citation: *séxwaną (pgmc); selected input: *séxwaną (pgmc; variety: none; equality_convention).
+Runnable: 1; derivation class: known_unmodelled.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| see-kroonen-2343 | Kroonen2013 pp.431-432 | *sehwan- | pgmc / stem / Comparative citation | *sehwan- Identity; the stem dash is not a full ending. Gothic and Continental cognates support the inherited labiovelar but not every thinning and contraction in Old English. | text_checked |
+| see-orel-2343 | Orel2003 pp.323 | *sexwanan | dictionary_context / word / Comparative infinitive citation | *sexwanan Identity; retain Orel's ending convention. Independent dictionary entry with Gothic and Old English reflexes. | text_checked |
+| see-rt-infinitive-2343 | RingeTaylor2014 pp.178,215,315 | *sehʷaną | pgmc / word / Simplex infinitive | *séxwaną CAPR adds the primary accent and writes xw for the inherited labiovelar. Gothic and West Germanic match the selected simplex; the later West Germanic sequence is explicitly distinguished. | text_checked |
+
+Coverage: 3 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2344"></a>
+
+## 2344: filter / sēoh
+
+Current citation: *sḯxwaną (pgmc); selected input: *sḯx (pwgmc; variety: none; explicit_sidecar).
+Runnable: 1; derivation class: known_unmodelled.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| filter-kroonen-2344 | Kroonen2013 pp.435-436 | *sihwan- | pgmc / stem / Original strong verb | *sihwan- Identity; retain the unmarked vowel rather than supplying a macron. Reconstructs the strong-verb paradigm including the w grade; does not identify an Old English imperative. | page_image_checked |
+| filter-orel-2344 | Orel2003 pp.329-330 | *sīxwanan | dictionary_context / word / Comparative infinitive citation | *sīxwanan Identity; retain the printed macron and ending. Lists the filter verb separately from its strainer derivative. | page_image_checked |
+| filter-seebold-citation-2344 | Seebold1970 pp.389-390 | seihw-a- | pgmc / stem / Long-grade strong-verb stem | *sḯxwaną Comparative stem is not an inflected word; CAPR's complete citation follows the corresponding Ringe and Taylor infinitive. The high front vowel and labiovelar distinguish the inherited comparative stem, not the endingless later imperative. | text_checked |
+| filter-rt-infinitive-2344 | RingeTaylor2014 pp.179 | *sīhʷaną | pgmc / word / Simplex infinitive | *sḯxwaną CAPR writes the long accented vowel and xw. Comparative citation; not the selected imperative or a reconstruction of the Christ participle. | text_checked |
+
+Coverage: 4 checks; 0 unchecked; 0 verification gaps.

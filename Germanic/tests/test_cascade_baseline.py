@@ -418,7 +418,10 @@ class LegacySubsetTests(unittest.TestCase):
             BASELINE_DIR / "cascade_baseline_outputs_pre_sc047_model_adoption.tsv",
             BASELINE_DIR / "cascade_baseline_summary_pre_sc047_model_adoption.json")
         before = {r["row_id"]: r for r in previous["records"]}
-        after = {r["row_id"]: r for r in self.current_rows}
+        adoption = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc083_call_admission.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc083_call_admission.json")
+        after = {r["row_id"]: r for r in adoption["records"]}
         assert len(before) == 394 and len(after) == 396
         assert after.keys() - before.keys() == {"2340", "2341"}
         assert not before.keys() - after.keys()
@@ -426,6 +429,23 @@ class LegacySubsetTests(unittest.TestCase):
             "1988", "2069", "2138", "2152", "2332"}
         assert {k for k in before if before[k]["match"] == "0"} == {
             k for k in after if after[k]["match"] == "0"}
+
+    def test_sc083_and_sc053_expand_without_changing_protected_rows(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+
+        def baseline(suffix):
+            return mod.read_baseline(
+                BASELINE_DIR / f"cascade_baseline_outputs{suffix}.tsv",
+                BASELINE_DIR / f"cascade_baseline_summary{suffix}.json")
+
+        before_call = baseline("_pre_sc083_call_admission")
+        after_call = baseline("_pre_sc053_medial_labiovelars")
+        for before, after, approval in (
+            (before_call, after_call, "approved_sc083_call_expansion.json"),
+            (after_call, baseline(""), "approved_sc053_medial_expansion.json"),
+        ):
+            mod.validate_expansion_transition(
+                before, after, json.loads((BASELINE_DIR / approval).read_text()))
 
     def test_later_admitted_migration_is_checked_but_not_added_to_legacy(self):
         import copy

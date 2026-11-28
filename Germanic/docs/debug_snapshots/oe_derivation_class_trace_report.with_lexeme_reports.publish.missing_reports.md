@@ -1,6 +1,6 @@
 # Missing lexeme reports for publish mode
 
-- Missing required production reports: 142
+- Missing required production reports: 141
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Reason |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -40,7 +40,6 @@
 | 2046 | grave | grafan | regular | yes | NOTE |
 | 2049 | guest | ġiest | regular | yes | NOTE |
 | 2051 | hair | hǣr | regular | yes | NOTE |
-| 2055 | handle | handlian | regular | yes | NOTE |
 | 2057 | harvest | hierfest | regular | yes | NOTE |
 | 2058 | have | hæfeþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2068 | heaven | heofon | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |

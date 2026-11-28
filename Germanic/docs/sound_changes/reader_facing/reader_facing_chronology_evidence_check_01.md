@@ -7,7 +7,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 ## Summary
 
 - Sections checked: 108.
-- Sections with absent cues or notation observations: 73.
+- Sections with absent cues or notation observations: 74.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -74,7 +74,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 052-velar-palatalization.md | SC052. Retained stop paths (`OEVelarPalatalizationStops`) {#rule-OEVelarPalatalizationStops} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 052-velar-palatalization.md | SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 035-pretonic-front-vowel-raising.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
-| 053-post-velar-w-loss.md | SC053. Loss of \emph{*w} after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss} | yes | no | no | yes | no | yes | no | — |
+| 053-post-velar-w-loss.md | SC053. Postvelar labial loss (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss} | no | no | yes | yes | no | no | no | missing move-condition wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 056-west-saxon-palatal-diphthongization.md | SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | yes | no | yes | yes | yes | no | no | missing expected-form wording |
 | 055-i-umlaut.md | SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising} | no | no | no | no | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing SC-plus-rule reference in chronology prose |

@@ -29,12 +29,12 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes and, within each class, alphabetically by headword. Counts in this alpha are:
 
-- Regular derivations: 101
+- Regular derivations: 105
 - Attested variants: 6
 - Early analogy: 35
 - Late analogy: 28
 - Reconstructed Old English comparators: 3
-- Known but unmodelled developments: 2
+- Known but unmodelled developments: 5
 - Unexplained or deliberately unmodelled exceptions: 5
 
 \clearpage
@@ -691,6 +691,67 @@ different development from the later West Germanic loss of final _\*z_ in
 unstressed syllables (as in [bárdaz]{.recon} 'beard') and from the still later
 northern loss in stressed monosyllables (as in the pronouns); the root-noun
 ending was gone before either of those changes applied.
+
+### bore — OE _borian_
+
+Derivation: _\*búrōjaną_ > _borian_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*búrōjaną_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*bórōjaną} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+OE Heavy Syllable Nasal Apocope & \emph{*bórōjan} \\
+\mbox{OE Secondary Nasalization} & \emph{*bórōjąn} \\
+\mbox{OE I Umlaut} & \emph{*bórējąn} \\
+\mbox{OE Med Long Short} & \emph{*bórejąn} \\
+\mbox{OE Weak Tail Reduction} & \emph{*bórejan} \\
+OE Intervocalic J Vocalization & \emph{*bóreian} \\
+\mbox{OE Unstressed EI Contraction} & \emph{*bórian} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _borian_
+
+#### Comparative stem and Old English evidence
+
+This is the verb ‘bore a hole’, not the later sense ‘weary’. Kroonen groups Old English [_borian_]{.iv lang=oe sort=borian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/1956-bore-borian.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/1956-bore-borian.model.md:10:1"} 'bore' with the Germanic drilling verb under [burōjan-]{.recon} ‘bore’. The English *o* is not a warrant for reconstructing *o* as the inherited root vowel. The Old English dictionary records an infinitive *borian*; Dutch *boren* and German *bohren* are cognate comparisons, not evidence for the exact prehistoric English ending [@Kroonen2013, p. 85; @ClarkHall1960, p. 48].
+
+#### Selected derivation
+
+The three models produce \emph{*búrōjaną} > *borian*. Root lowering gives *bor- before the weak ending reaches the late *e.i* representation on which SC083 operates. That *i* belongs to the infinitival suffix. The related imperative *bora* ‘bore’ and third singular *boraþ* ‘bores’ have no *j* in the corresponding finite stems; their *a* is no counterexample to the weak development in the infinitive. The contrast is between distinct inherited endings, not selection of one ending to explain the entire paradigm [@Campbell1959, §§356.4, 754–757; @RingeTaylor2014, pp. 80, 228].
 
 ### both — OE _bū_
 
@@ -3250,6 +3311,67 @@ From [xḗrą]{.recon} ‘hair’, Northwest Germanic lowering gives a long fron
 
 Older references to [xazwăz]{.recon} ‘hair’ belong to a different lexeme, and the separate _haddr_ / _heordan_ / _hād-_ material does not displace the ordinary simplex _hǣr_ 'hair' treated here [@Kroonen2013; @ClarkHall1960, 158].
 
+### handle — OE _handlian_
+
+Derivation: _\*xándlōjaną_ > _handlian_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*xándlōjaną_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+OE Heavy Syllable Nasal Apocope & \emph{*xándlōjan} \\
+\mbox{OE Secondary Nasalization} & \emph{*xándlōjąn} \\
+\mbox{OE I Umlaut} & \emph{*xándlējąn} \\
+\mbox{OE Med Long Short} & \emph{*xándlejąn} \\
+\mbox{OE Weak Tail Reduction} & \emph{*xándlejan} \\
+OE Intervocalic J Vocalization & \emph{*xándleian} \\
+\mbox{OE Unstressed EI Contraction} & \emph{*xándlian} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _handlian_
+
+#### The verb and its nominal relatives
+
+The selected Old English infinitive [_handlian_]{.iv lang=oe sort=handlian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md:10:1"} 'handle, touch' glosses Latin *contrectare* in the glosses printed at *Anecdota Oxoniensia* 17.44. The dictionary also records finite *handlað* ‘handles’ and preterite plural *handledon* ‘handled’. The noun [_handle_]{.iv lang=oe sort=handle role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md:10:2"} 'handle' is a different formation; it is not an alternate spelling or grammatical cell of the verb [@BosworthToller1898, s.vv. *handle*, *handlian*].
+
+Orel reconstructs [xandlōjanan]{.recon} ‘handle’ and derives it from a nominal derivative of [xanduz]{.recon} ‘hand’. His comparisons include Old Norse [_hǫndla_]{.iv lang=on sort=hondla role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md:12" occ_id="Germanic/docs/lexeme_reports/model_entries/2055-handle-handlian.model.md:12:1"} ‘handle’, Old Frisian *handelia* ‘handle’, and Old High German *hantalōn* ‘handle’. Ringe and Taylor instead reconstruct an internal *u* in the older verb and retain it at the West Germanic stage. Their West Germanic *handulōn* and later English *handulōjan* distinguish inheritance from English class-II remodelling. The Old Norse and Old High German comparisons support the family; the Old English infinitive alone cannot settle when the internal vowel disappeared or when the class-II extension arose [@Orel2003, p. 159; @RingeTaylor2014, pp. 131, 269].
+
+#### Selected derivation
+
+CAPR uses \emph{*xándlōjaną} > *handlian* in compatibility and in both selectable models. This input follows Orel's compact verbal stem and represents the class-II ending from the start. In the models the weak suffix passes through an *e.i* sequence before SC083 deletes the first vowel, leaving *i* before the infinitival continuation. This is a representation of weak-suffix development, not evidence that the earlier West Germanic stem lacked *u*. The derivation is regular from the derivational input; the earlier comparative reconstruction and possible morphological remodelling remain separate questions [@RingeTaylor2014, pp. 228, 269].
+
 ### harvest — OE _hierfest_
 
 Derivation: _\*xárbistuz_ > _hierfest_ (regular).
@@ -4386,6 +4508,67 @@ essential to interpreting the derivations
 [@Jasanoff1973, pp. 865, 868;
 @TarsiLaker2026, pp. 42--43].
 
+### lick — OE _liccian_
+
+Derivation: _\*líkkōjaną_ > _liccian_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*líkkōjaną_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
+OE Heavy Syllable Nasal Apocope & \emph{*líkkōjan} \\
+\mbox{OE Secondary Nasalization} & \emph{*líkkōjąn} \\
+\mbox{OE I Umlaut} & \emph{*líkkējąn} \\
+\mbox{OE Med Long Short} & \emph{*líkkejąn} \\
+\mbox{OE Weak Tail Reduction} & \emph{*líkkejan} \\
+OE Intervocalic J Vocalization & \emph{*líkkeian} \\
+\mbox{OE Unstressed EI Contraction} & \emph{*líkkian} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _liccian_
+
+#### Comparative stem and selected infinitive
+
+Old English [_liccian_]{.iv lang=oe sort=liccian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2099-lick-liccian.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2099-lick-liccian.model.md:10:1"} 'lick' is a weak verb with a medial geminate in the normalized citation form. Old Saxon *likkon* and Old High German *lecchon* support the consonantal comparison. Ringe and Taylor reconstruct a West Germanic class-II stem; Orel gives the longer citation formation [likkōjanan]{.recon} ‘lick’. CAPR's selected infinitive explicitly represents that longer suffix, not the finite ending [@RingeTaylor2014, p. 50; @Orel2003, p. 285; @BosworthToller1898, p. 614].
+
+#### The Vespasian finite comparison
+
+The Vespasian Psalter has [_liciað_]{.iv lang=oe sort=liciath role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/2099-lick-liccian.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2099-lick-liccian.model.md:14:1"} 'lick' glossing Latin *lingent*, with ‘his enemies’ as plural subject. The token is third-person plural, with one written *c*; it is neither the selected infinitive nor the separately modelled third singular *liccaþ* ‘licks’. The spelling is evidence for *i* in the weak suffix, not proof that the consonant was historically a singleton or that the whole finite token should be emended to *licciað* [@Sweet1885, p. 286 (Ps. 71:9); @RingeTaylor2014, p. 228].
+
+All three orders derive \emph{*líkkōjaną} > *liccian*. The model retains the geminate through SC083, which removes the first vowel of its weak *e.i* representation. The finite third singular instead has *-aþ* and does not go through that sequence [@Campbell1959, §356.4; @RingeTaylor2014, pp. 80, 228].
+
 ### lid — OE _hlid_
 
 Derivation: _\*xlídą_ > _hlid_ (regular).
@@ -5180,6 +5363,65 @@ West Germanic loss of final _\*z_ in unstressed syllables and from the
 northern monosyllabic loss with compensatory lengthening; the root-noun
 ending was gone before either applied, and the root-final _s_ of _lūs_
 'louse' was never eligible for either change.
+
+### make — OE _macian_
+
+Derivation: _\*mákōjaną_ > _macian_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*mákōjaną_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Brightening} & \emph{*mækōjaną} \\
+\mbox{OE A Restoration} & \emph{*makōjaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*makōjan} \\
+\mbox{OE Secondary Nasalization} & \emph{*makōjąn} \\
+\mbox{OE I Umlaut} & \emph{*makējąn} \\
+\mbox{OE Med Long Short} & \emph{*makejąn} \\
+\mbox{OE Weak Tail Reduction} & \emph{*makejan} \\
+OE Intervocalic J Vocalization & \emph{*makeian} \\
+\mbox{OE Unstressed EI Contraction} & \emph{*makian} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _macian_
+
+#### Formation and root vowel
+
+Kroonen derives the weak verb [makōjan-]{.recon} ‘make’ from the \emph{*maka-} family. Ringe and Taylor distinguish the West Germanic verb from the remodelled English infinitive. Old English [_macian_]{.iv lang=oe sort=macian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2117-make-macian.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2117-make-macian.model.md:10:1"} 'make', Old High German *mahhōn* ‘make’, and Dutch *maken* ‘make’ support the comparison; the English suffix does not require the continental verbs to have had the same infinitival form at every stage [@Kroonen2013, p. 350; @RingeTaylor2014, p. 191; @ClarkHall1960, p. 193].
+
+Campbell cites *macian* among weak verbs with restored *a*. In the selected English derivation, opening the root vowel, palatalization, and reduction of the unstressed suffix are distinct issues: the model first fronts and then restores the root vowel; its restored vowel leaves the dorsal in the *mac- stem. Later, the weak suffix passes through *e.i*, and SC083 supplies the *i* of *-ian*. Thus all three models derive \emph{*mákōjaną} > *macian*. The related imperative *maca* ‘make’ and third singular *macaþ* ‘makes’ preserve *a* in a different ending and do not test SC083. These comparisons do not resolve when the infinitival extension spread [@Campbell1959, §§159, 356.4; @RingeTaylor2014, pp. 80, 191, 228].
 
 ### milk — OE _meoloc_
 
@@ -15954,6 +16196,134 @@ evidence, but the current transducer cascade does not yet implement the phonolog
 or morphological process required to derive the target. Naming the gap explains the
 status without pretending that no historical account exists.
 
+### call — OE _ġeċēð_
+
+Derivation: citation reconstruction _\*káwjaną_; form followed here _\*gakáwiθi_ yields [ġecēaiþ]{.recon form_role=regular_output}; the Old English form here is _ġeċēð_ (known but unmodelled development).
+
+#### Derivation trace
+
+Proto input: _\*gakáwiθi_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\mbox{PWGmc Early I Apocope} & \emph{*gakáwiθ} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Aw Long Diphthong} & \emph{*gakḗawiθ} \\
+\mbox{EAF Brightening Unstressed} & \emph{*gækḗawiθ} \\
+\mbox{OE Velar Palatalization} & \emph{*ʝækḗawiθ} \\
+\mbox{OE Prefix A Reduction} & \emph{*ʝikḗawiθ} \\
+\mbox{OE W Loss Before I} & \emph{*ʝikḗaiθ} \\
+\mbox{OE Prefix I Reduction} & \emph{*ʝekḗaiθ} \\
+\mbox{OE Palatal Fricative Merger} & \emph{*jekḗaiθ} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Regular outcome: [ġecēaiþ]{.recon form_role=regular_output}
+
+Old English form: _ġeċēð_
+
+#### The comparative verb
+
+The Old English verb treated here is West Saxon *ċīeġan* ‘call’ beside Anglian and Kentish *ċēġan* ‘call’, with Old High German *gikewen* ‘call’. It is not the ancestor of Modern English *call*, which belongs with Old Norse *kalla*. Kroonen compares the former verb under [kaujan-]{.recon} ‘call, shout’; CAPR writes the simplex citation with root stress and an infinitival ending, \emph{*káwjaną}. Ringe and Taylor reconstruct a West Germanic geminated infinitive; neither its geminate nor the infinitival suffix belongs in the inherited third singular [@Kroonen2013, pp. 278–279, 282; @RingeTaylor2014, pp. 206, 247].
+
+#### The selected Mercian present
+
+The interlinear gloss [_geceð_]{.iv lang=oe sort=geceth role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/2342-call-ġeċēð.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2342-call-ġeċēð.model.md:14:1"} 'calls' stands over Latin *invocat*, with *abyssus* as subject and *abyssum* as object, in the Vespasian Psalter. It is the prefixed third-person present indicative singular. Sweet cites it as Psalm 41:11 in the glossary; the edited Latin text marks the line with verse number 8. The letters on the page do not show vowel length or palatalization. [_ġeċēð_]{.iv lang=oe sort=geceth role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2342-call-ġeċēð.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2342-call-ġeċēð.model.md:14:2"} 'calls' is a normalization informed by the Mercian history, not a diplomatic transcription [@Sweet1885, pp. 245, 609; @Campbell1959, p. 100, §237.1b; @RingeTaylor2014, p. 260].
+
+The derivational input \emph{*gakáwiθi} represents Ringe and Taylor's Proto-West-Germanic reconstruction for this prefixed cell, with CAPR's root-accent and dorsal/dental notation. The prefix continues inherited unstressed *ga-; a cognate prefix in High German makes it unnecessary to posit an English invention. This does not put the whole selected inflection back into Proto-Germanic. Old English *gecede* ‘called’ and *geced* ‘called’ belong to separate weak preterite and participial cells. In the Vespasian canticle gloss *þu bist geced* ‘you will be called’, the participle is part of a passive periphrasis, not another spelling of the present [@Sweet1885, pp. 416, 609; @RingeTaylor2014, pp. 206, 260].
+
+#### Two stages still to distinguish
+
+The loss of the labial before the front suffix leaves hiatus in the stressed root. The historical account then contracts the front vowels to *ē*. This is not the weak-suffix reduction seen in *liccian* ‘lick’. CAPR's foot restriction now keeps the stressed *e* in A and B2 but does not contract the resulting nucleus. Both yield *ġeceiþ* for the present, while compatibility yields *ġecēaiþ* from its differently prepared nucleus. The diagnostic West Germanic participle yields *ġeceid* in A and B2 and *ġecēaid* in compatibility; these are predictions, not attestations or replacements for the Mercian target. The remaining front-hiatus contraction should be adjudicated separately from both weak-vowel reduction and the contraction of broken nuclei [@Campbell1959, p. 100, §237.1b; @RingeTaylor2014, pp. 260, 318].
+
+### filter — OE _sēoh_
+
+Derivation: citation reconstruction _\*sī́xwaną_; form followed here _\*sī́x_ yields [sīoh]{.recon form_role=regular_output}; the Old English form here is _sēoh_ (known but unmodelled development).
+
+#### Derivation trace
+
+Proto input: _\*sī́x_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Breaking} & \emph{*sīox} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Regular outcome: [sīoh]{.recon form_role=regular_output}
+
+Old English form: _sēoh_
+
+#### The verb and its grades
+
+This class I strong verb is distinct from the homophonous Old English infinitive *sēon* ‘see’. Seebold's comparative stem *seihw-a- links Old High German *sīhan* and Old Frisian *sīa* with the English verb ‘strain, filter’, also used intransitively of oozing. Ringe and Taylor reconstruct a long root vowel and a voiceless labiovelar for the inherited infinitive \emph{*sīhʷaną}, in agreement with Orel's long vowel; Kroonen prints an unmarked *i* in his stem. CAPR follows the explicitly long account, \emph{*sī́xwaną}. The contrasting participial grade is historically voiced, as shown by *āsiwen* and *āseowen* ‘strained’. It does not have a voiceless dorsal followed by a labial and is not an exception to medial delabialization [@Seebold1970, pp. 389–390; @RingeTaylor2014, pp. 178–179, 344–345; @Orel2003, pp. 329–330; @Kroonen2013, pp. 435–436].
+
+#### The selected command
+
+The singular command [_sēoh_]{.iv lang=oe sort=seoh role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2344-filter-sēoh.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2344-filter-sēoh.model.md:14:1"} 'strain!' occurs in *Sēoh þurh clāþ* ‘strain through cloth’ (*Leechdoms* II.24.1 and III.14.18, as cited by Bosworth and Toller). CAPR selects the endingless West Germanic imperative with long root vowel and final dorsal, \emph{*sī́x}. The earlier strong singular imperative and its ending history are not separately scored here. The derivational input is after the disappearance of final labialization; it is not the Proto-Germanic infinitive with its suffix removed by the medial law. A final dorsal survives, as it does in the independently attested *þurhsēah* ‘strained through’ of *Bede* V.12, a past singular instead of an imperative. All three current orders produce *sīoh*. The retained dorsal is right; the remaining difference is the long broken vowel [@BosworthToller1898, s.v. *seón* ‘strain’; @RingeTaylor2014, pp. 48–49, 344; @Campbell1959, pp. 186–187 §464].
+
+#### The prefixed evidence
+
+In *Christ* C 1086 (1088 in the numbering used by Bosworth and Toller), *biseon mid swate* ‘sprinkled with blood’ describes the cross in parallel with *blode bistemed*. Despite looking like an infinitive, it is used as a participle; the prefixed infinitive \emph{*bisīhwan} is a comparative projection, not the earlier cell of that token. The short prefix is independently supported by Germanic *bi* and Seebold's *bi- comparisons. Cockayne's *āsiwen* and the genitive *āseownes* ‘of strained [honey]’ show an overt labial in another prefix and a distinct grade. Do not select an unprefixed stem to match a prefixed attestation or resolve the unusual *biseon* by assigning it to the ordinary voiced grade without further evidence [@BosworthToller1898, s.vv. *be-seón*, *seón*; @Seebold1970, pp. 389–390; @RingeTaylor2014, pp. 65, 344–345].
+
 ### fire — OE _fȳre_
 
 Derivation: _\*fūri_ yields regular [fȳr]{.recon form_role=regular_output}; the Old English form here is _fȳre_ (known but unmodelled development).
@@ -16071,6 +16441,72 @@ form and from the later analogical surface result.
 | lexeme-level heteroclitic headword | [fōr]{.recon} 'fire' ~ _\*fun-_ | comparative background only | fire family | explains the wider lexeme, but not the selected oblique input |
 | selected oblique-input proxy | [_\*fūri_]{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86:1"} | regular output: [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86:2"} 'fire' | [_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86:3"} 'fire' | regular output; exact ancestral cell remains qualified |
 | later analogical surface form | — | attested [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:87" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:87:1"} 'fire' with restored _-e_ | [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:87" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:87:2"} 'fire' | genuine OE target, but not the direct phonological output |
+
+### see — OE _sēon_
+
+Derivation: _\*séxwaną_ yields regular [seoan]{.recon form_role=regular_output}; the Old English form here is _sēon_ (known but unmodelled development).
+
+#### Derivation trace
+
+Proto input: _\*séxwaną_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Breaking} & \emph{*séoxwaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*séoxwan} \\
+\mbox{OE Secondary Nasalization} & \emph{*séoxwąn} \\
+\mbox{OE Post Velar W Loss} & \emph{*séoxąn} \\
+\mbox{OE Weak Tail Reduction} & \emph{*séoxan} \\
+\mbox{OE H Loss} & \emph{*séoan} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Regular outcome: [seoan]{.recon form_role=regular_output}
+
+Old English form: _sēon_
+
+#### The inherited verb
+
+Gothic *saiƕan* ‘see’ preserves the inherited voiceless labiovelar in the infinitive. Old Saxon and Old High German *sehan* write a dorsal without a labial, and Old Frisian *siā* and Old Norse *sjá* reflect their own subsequent histories. Kroonen connects the Germanic verb with the Indo-European family of Latin *sequor* ‘follow’; the semantic connection is following with the eye, not a reconstruction of the English inflection. CAPR writes the comparative infinitive \emph{*séxwaną}, encoding the inherited single labiovelar as a dorsal and labial sequence, not claiming that Proto-Germanic itself already had the West Germanic cluster [@Kroonen2013, pp. 431–432; @Orel2003, p. 323; @Seebold1970, pp. 387–388; @RingeTaylor2014, pp. 48–50, 315].
+
+#### The infinitive and the rest of the paradigm
+
+The selected simplex [_sēon_]{.iv lang=oe sort=seon role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2343-see-sēon.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2343-see-sēon.model.md:14:1"} 'see' is the infinitive after *mæge* ‘may’ in the Old English *Boethius* 38.5 (Fox p. 206, line 21, as cited by Bosworth and Toller). The Cotton variant *gesion* has a prefix and is not the selected token. The inflected infinitive *tō sēonne* ‘to see’ in the Old English *Orosius* has a different ending. The common West Saxon *ġesēon* ‘see’ is another valuable comparison, not a reason to identify all three words [@BosworthToller1898, s.v. *seón*; @Bosworth1859, p. 52].
+
+West Saxon past singular *seah* ‘saw’ keeps final *h*; its root is not the intervocalic input of the infinitive. The plural *sāwon* ‘saw’ and the participle *sewen* ‘seen’ show the voiced alternant, while the corresponding Anglian forms have a levelled dorsal. These cells illuminate the inherited alternations without requiring the same consonant development in every member of the paradigm [@RingeTaylor2014, pp. 315–317, 344–345].
+
+#### Two losses and a contraction
+
+In the reconstruction through \emph{*sehwan}, the labial is lost before the now-intervocalic dorsal is lost. Breaking is visible in the reconstructed \emph{*seohan}, and the later contraction gives *sēon*. Ringe and Taylor also reconstruct a first-person form \emph{*sehu}, where the labial has become syllabic: this is not a second application of loss before a following vowel. Before the reformulation of SC053 Postvelar labial loss, all three orders yielded *seohwan*. With singleton labial loss, the dorsal can also fall, but the result *seoan* still lacks the attested contraction. The target and the selected inherited input remain unchanged [@RingeTaylor2014, pp. 178, 315–317; @Campbell1959, pp. 185–187 §§461, 464].
 
 ### tap — OE _tæppa_
 

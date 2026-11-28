@@ -3629,12 +3629,10 @@ define OEPreconsonantalDegemNN [
 define OEPreconsonantalDegemination Ctx(OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN);
 
 # R/T §6.4.2: *w lost after non-initial velars (after palatalization).
-# In *ngw clusters, *g is a stop: *w is lost (*singwan → singan).
-# Post-vocalic *gw: *g (= [ɣ] fricative) was lost, *w survives.
-# Our TSV corrects post-vocalic *gw etyma at source (snow, swallow).
-# This rule handles the *ngw → *ng simplification.
+# Keep the stop cluster and the intervocalic voiceless singleton distinct.
 define OEPostVelarWLoss Ctx([
-    {*w} -> 0 || {*n} {*g} _
+    {*w} -> 0 || {*n} {*g} _,
+                EnglishStarVocalic [{*x}|{*ç}] _ EnglishStarVocalic
 ]);
 
 define OEHLoss FootCtx([

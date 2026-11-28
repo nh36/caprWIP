@@ -388,13 +388,13 @@
     },
     {
       "change_id": "SC053",
-      "display_name": "OE Post Velar W Loss",
+      "display_name": "Postvelar labial loss",
       "lifecycle_status": "active",
       "rule_name": "OEPostVelarWLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC053-oe-post-velar-w-loss.md",
-      "card_type": "negative_boundary",
+      "card_type": "source_supported",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Both sides are negative computational results: earlier search is blocked by bundled PWGmcChanges and later search reaches SC087 with no real break."
+      "short_summary": "The broader English operation follows stop palatalization (Ringe–Taylor 214–215); the singleton fricative fragment feeds SC085 without dating breaking from the harness."
     },
     {
       "change_id": "SC054",
@@ -1889,30 +1889,44 @@
     {
       "source_change_id": "SC053",
       "target_change_id": "PWGmcChanges",
-      "relation_type": "runner_limited_boundary",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "boundary_observation",
+      "evidence_basis": "archived_experiment",
       "witness_role": "",
       "representative_lexemes": "",
       "representative_forms": "`none — no earlier real break was found before the runner boundary`",
-      "strength": "runner_boundary",
-      "interpretation_category": "runner_boundary",
+      "strength": "archived",
+      "interpretation_category": "superseded",
       "reciprocal_group_id": "",
-      "notes": "Both sides are negative computational results: earlier search is blocked by bundled PWGmcChanges and later search reaches SC087 with no real break."
+      "notes": "Original stop-only runner search was blocked by bundled PWGmcChanges. It did not assay the singleton-fricative clause."
     },
     {
       "source_change_id": "SC053",
       "target_change_id": "SC087",
-      "relation_type": "no_break_search_boundary",
+      "relation_type": "superseded_experiment",
       "direction_basis": "later_boundary",
-      "evidence_basis": "boundary_observation",
+      "evidence_basis": "archived_experiment",
       "witness_role": "",
       "representative_lexemes": "",
       "representative_forms": "`none — no later real break was found before the runner boundary`",
-      "strength": "search_boundary",
-      "interpretation_category": "search_boundary",
+      "strength": "archived",
+      "interpretation_category": "superseded",
       "reciprocal_group_id": "",
-      "notes": "Both sides are negative computational results: earlier search is blocked by bundled PWGmcChanges and later search reaches SC087 with no real break."
+      "notes": "Original stop-only runner search reached SC087 with no real break. It did not assay the singleton-fricative clause."
+    },
+    {
+      "source_change_id": "SC053",
+      "target_change_id": "SC085",
+      "relation_type": "one_sided_chronology",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "stage_entailed",
+      "witness_role": "feeding",
+      "representative_lexemes": "see",
+      "representative_forms": "PWGmc *sehwan > OE *seohan > sēon; loss of the labial leaves a singleton dorsal available for intervocalic loss.",
+      "strength": "stage_entailed",
+      "interpretation_category": "stage_entailed",
+      "reciprocal_group_id": "",
+      "notes": "Ringe–Taylor 2014 pp.178,215,315–317; Campbell 1959 §§461,464. The independently reconstructed loss stages supply precedence, not an independently dated experimental displacement."
     },
     {
       "source_change_id": "SC054",

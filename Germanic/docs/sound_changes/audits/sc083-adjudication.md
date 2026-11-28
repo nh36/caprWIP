@@ -183,3 +183,27 @@ in either revision.
   full ‘love’ discrepancy and defer any general stress redesign.
 - Do not replace the proxy with a new general *ej* law, move SC083,
   add a chronology edge, or refactor SC085 within this decision.
+
+## Subsequent lexical decision: ‘call’
+
+The original restriction and its 396-entry observation above remain
+unchanged. Subsequent lexical research independently identifies Sweet's
+Mercian Psalter *geceð* as a prefixed third singular, glossing *invocat*
+(Sweet 1885:245, 609). Ringe and Taylor (2014:260) reconstruct precisely
+that West Germanic inflection, \emph{*gakawiþi}; Kroonen (2013:282)
+supplies the separate comparative simplex stem. The witness is not a
+past participle or evidence for a complete Proto-Germanic prefixed
+reconstruction. See the [lexical chapter](../../lexeme_reports/model_entries/2342-call-ġeċēð.model.md)
+and its [source ledger](../../lexeme_reports/model_entries/2342-call-ġeċēð.source_ledger.md).
+
+Approve the one-row expansion as a **known unmodelled** mismatch:
+normalize the target to *ġeċēð*, retaining the newly verified
+historical cell rather than selecting a model output. Compatibility
+predicts *ġecēaiþ*; A and B2 predict *ġeceiþ*. The added row does not
+fire SC083 and does not change any previously admitted record. The
+[expansion approval](../cascade_baseline/approved_sc083_call_expansion.json)
+freezes the exact compatibility observation and protects the prior
+population. Route stressed front-hiatus contraction after labial
+loss (Campbell 1959:100 §237.1b) to package 3. This lexical decision
+authorizes neither a stressed contraction rule nor a change to the
+broken-nucleus proposals.

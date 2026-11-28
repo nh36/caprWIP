@@ -37,6 +37,10 @@ def before_sc047_adoption(current):
     expected = {
         "PGWeakTails": previous["PGWeakTails"].body.rstrip()[:-1] + "|" + extra + "]",
         "OEUnstressedEIContraction": f"FootCtx({previous['OEUnstressedEIContraction'].body})",
+        "OEPostVelarWLoss": """Ctx([
+            {*w} -> 0 || {*n} {*g} _,
+                        EnglishStarVocalic [{*x}|{*ç}] _ EnglishStarVocalic
+        ])""",
     }
     assert current.keys() == previous.keys()
     for name in previous:

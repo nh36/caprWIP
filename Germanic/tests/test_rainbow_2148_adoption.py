@@ -18,7 +18,7 @@ from executable_facts import parse_defines
 from historical_sc035 import historical_runtime
 from test_lexical_editorial_publication import (
     assert_nightmare_index_delta, assert_final_nasal_index_delta,
-    assert_flask_nompl_index_delta,
+    assert_flask_nompl_index_delta, assert_sc083_sc053_index_delta,
 )
 
 # The adoption commit: replaying its frozen capture must pin both the adopted
@@ -123,9 +123,9 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assembly = ROOT / "Germanic/docs/assembly"
     with (assembly / "manifest_all_by_class.tsv").open() as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
-    assert len(rows) == 180
+    assert len(rows) == 187
     regular = [row for row in rows if row["derivation_class"] == "regular"]
-    assert len(regular) == 101
+    assert len(regular) == 105
     rainbow = [row for row in regular if row["row_id"] == "2148"]
     assert len(rainbow) == 1
     assert (rainbow[0]["proto"], rainbow[0]["protoform"],
@@ -261,6 +261,9 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assert_flask_nompl_index_delta(flask)
     added = [row for row in added if row not in flask]
     added = [row for row in added if not row["note"].startswith("SC047 model adoption:")]
+    medial = [row for row in added if row["note"].startswith("SC083/SC053 lexical publication:")]
+    assert_sc083_sc053_index_delta(medial)
+    added = [row for row in added if row not in medial]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {

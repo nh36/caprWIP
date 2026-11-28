@@ -41,6 +41,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC048 | Coda nasalization: final-n proxy | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc048-adjudication.md` |
 | SC049 | Inherited labial positional realization | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC052 | Class-distinct English velar palatalization | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc052-scoping-adoption.md` |
+| SC053 | Postvelar labial loss | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc053-adjudication.md` |
 | SC054 | Noninitial w-loss before unstressed i/ī | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc054-adjudication.md` |
 | SC056 | Ordinary West Saxon palatal diphthongization | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC059 | OE Back Mutation | active | RESTRICT | `Germanic/docs/sound_changes/audits/sc059-adjudication.md` |

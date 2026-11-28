@@ -71,7 +71,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 052-velar-palatalization.md | SC052. K articulation and eventual reflex (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront} | 71 | 58 | no |
 | 052-velar-palatalization.md | SC052. Retained stop paths (`OEVelarPalatalizationStops`) {#rule-OEVelarPalatalizationStops} | 103 | 75 | no |
 | 052-velar-palatalization.md | SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization} | 142 | 54 | no |
-| 053-post-velar-w-loss.md | SC053. Loss of \emph{*w} after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss} | 5 | 29 | no |
+| 053-post-velar-w-loss.md | SC053. Postvelar labial loss (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss} | 5 | 67 | no |
 | 054-w-loss-before-final-i.md | SC054. Noninitial \emph{*w}-loss before unstressed \emph{*i/ī} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI} | 5 | 71 | no |
 | 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 5 | 67 | no |
 | 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 52 | 92 | yes |
