@@ -1,5 +1,11 @@
 # R6: Early back-vowel holdouts
 
+**Source distinction:** [Q2b](../hiatus-cycle4/SOURCE_ENTRY_AUDIT.md#q2b--early-back-vowels-and-additional-laryngeal-loss-entries)
+verifies that Hogg reconstructs short *a* for ‘claw’ while Ringe & Taylor
+print long *ā*. The long-vowel probe is a negative for the short rule,
+but also the published alternative that the short-vowel experiment
+does not explain.
+
 ## Identity and question
 
 Research-only, `research/hay-article`, predecessor `e5e8b7ad`. The frozen substrate and common placements are those of R1. Can the proposed early short vowel + *u* operation explain ‘three’ and the labial-retaining paradigms without changing the historical cause that supplies each input? The diagnoses below distinguish nuclear formation, realization, consonant loss, and morphological renewal.

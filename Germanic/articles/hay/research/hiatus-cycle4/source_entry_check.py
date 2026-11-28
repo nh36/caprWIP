@@ -30,12 +30,33 @@ ENTRIES = {
     },
 }
 
+LATER_ENTRIES = {
+    "OEAuBrightening": {
+        "claw-hogg": "*k*l*a*w*u",
+        "claw-ringe-taylor": "*k*l*ā*w*u",
+        "claw-ringe-taylor-after-loss": "*k*l*ā*u",
+    },
+    "OEHLoss": {
+        "see-ws-subj": "*s*eo*x*æ",
+        "see-anglian-subj-lowered": "*s*e*ç*e",
+        "see-anglian-subj-source": "*s*e*ç*æ",
+        "strike-stem": "*s*l*e*ç*i*θ",
+        "strike-full-cell": "*s*l*e*ç*i*θ*i",
+        "clay-lowered": "*θ*ō*x*e",
+        "clay-source": "*θ*ō*x*æ",
+        "shoe-nom-pl": "*s*k*ō*x*a*s",
+        "shoe-gen-pl-proxy": "*ʃ*ēo*x*a*s",
+    },
+}
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("snapshot", type=Path)
     parser.add_argument("--stage-cache", type=Path, required=True)
+    parser.add_argument("--back-and-h", action="store_true")
     args = parser.parse_args()
+    entries = LATER_ENTRIES if args.back_and_h else ENTRIES
     runtime = subprocess.check_output(["foma", "-v"], text=True).strip()
     source = args.snapshot / "Germanic/fsts/germanic.txt"
     canonical, alternatives, definitions = run.frozen.model_sources(source)
@@ -53,15 +74,16 @@ def main():
         for model, order in orders.items():
             placements = common(order)
             results[model] = {
-                "frozen": trial(order, frozen, ENTRIES, ()),
-                "cycle3-common": trial(order, paths, ENTRIES, placements),
+                "frozen": trial(order, frozen, entries, ()),
+                "cycle3-common": trial(order, paths, entries, placements),
                 "placements": placements,
             }
         print(json.dumps({
-            "base": run.BASE, "orders": orders, "inputs": ENTRIES,
+            "base": run.BASE, "orders": orders, "inputs": entries,
             "source_sha256": digest(source), "runner_sha256": digest(Path(__file__)),
             "frozen_component_hashes": {key: digest(value) for key, value in frozen.items()},
-            "historical_pdf": {"sheets": [273, 274, 275, 332],
+            "historical_pdf": {"sheets": [165, 188, 189, 190, 329, 330, 331, 332]
+                               if args.back_and_h else [273, 274, 275, 332],
                                "sha256": "278f94f6076a31278ecca75d8d0429f0822728e5efe0ec3011186a694cf8d6f2"},
             "components": build.receipt(), "definitions": Components.definitions(), "models": results,
         }, ensure_ascii=False))

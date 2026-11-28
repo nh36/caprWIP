@@ -1,5 +1,11 @@
 # R7: Intervocalic loss, later contraction, and its limits
 
+**Source corrections:** [Q1a](../hiatus-cycle4/FLOCK_QUANTITY.md) withdraws
+‘flock’ as evidence for delaying heaviness. [Q2b](../hiatus-cycle4/SOURCE_ENTRY_AUDIT.md#q2b--early-back-vowels-and-additional-laryngeal-loss-entries)
+distinguishes the exact *æ*-tail stages of Mercian ‘see’ and ‘clay’
+from the successful lowered *e*-tail probes. The exact stages reproduce
+loss but not the final contraction on the common substrate.
+
 ## Identity and question
 
 Research-only, `research/hay-article`, predecessor `8ba5b981`. SC085 (`OEHLoss`) and SC086 (`OEContraction`) supply the frozen controls. Do independently attested *h*-loss forms require the same operation as the post-*w*-loss series, and can a narrower *hw* treatment, regional smoothing, and different sorts of contraction coexist without overgenerating?
