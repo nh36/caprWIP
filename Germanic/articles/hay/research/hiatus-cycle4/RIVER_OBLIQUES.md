@@ -1,0 +1,23 @@
+# H1a — The adverse final-hiatus comparison: ‘river’
+
+## Question and source check
+
+The closest independent adverse comparison is the mid-vowel oblique of ‘river’. If it continues a short inherited oblique in *-i*, its absence of a written palatal weighs against extending consonantal *i* > *j* to all final *e.i*. The test is whether the evidence independently establishes that cell's ancestry, rather than whether the candidate transducer can print an appropriate vowel.
+
+The following is a targeted check of the cited editions, not a manuscript recollation. The public OCR of the two historical editions was used to verify the syntactic context, with the readings cross-checked against [Toller, Supplement s.v. *eá*](https://bosworthtoller.com/43189). Accents and macrons in modern or dictionary headwords are not counted as manuscript marks.
+
+| Edition and locus | Relevant written form and grammatical evidence | Diagnostic role |
+|---|---|---|
+| [Sweet 1883](https://archive.org/details/kingalfredsorosi79oros), *Orosius* I.1, pp. 8.10–16, 10.13 | Dative ⟨ie⟩ in the geographic description, including after *of*; genitive ⟨ie⟩ after ‘the mouth’. Nominative ⟨ea⟩ is used for the same river at 8.16. | The alternation between direct *ea* and mutated oblique is not an artifact of comparing different meanings of the noun. |
+| Sweet 1883: 14.28–32, 16.6–7, 17.22–23, 24.33 | At 14.28, dative ⟨ie⟩ follows ‘from’; at 14.32, after ‘bank’, ⟨ie⟩ is genitive, as in the Elbe example at 16.6–7. In the Ohthere narrative, dative ⟨ea⟩ follows *bi* and genitive ⟨eas⟩ follows ‘side’. At 24.33, ⟨ee⟩ follows *æt*. | Multiple oblique formations coexist at the level of the edited work. The overt *-s* proves that some cells recruited a different ending; it does not identify the source of the unsuffixed mutated cells. Double ⟨ee⟩ belongs to a separate token and context from the Chronicle’s single ⟨e⟩. |
+| [Plummer 1892](https://archive.org/details/twoofsaxonchron01earl), *Chronicle* A, annal 894, p. 87.22 and nearby | ⟨e⟩ follows ‘both sides of the’ and again ‘east side of the’ in the Buttington passage. | A securely identified mid-vowel **genitive** token without a written palatal. The two nearby occurrences are not independent scribal controls. The form’s characterization as Anglian is a historical inference, not the manuscript’s label. |
+
+These are not new attestations: Toller and Campbell (1959: §628.4, 254–255) already use these varieties of form. What the targeted check adds is a distinction between the syntactic evidence for the diagnostic genitive, the genuinely remodelled genitive in *-s*, and the separate dative spellings. Unmutated *ea* in an oblique supports spread of *ea* in the written paradigm; this is not positive evidence that *ie/e* was itself derived from *ea* by a productive mutation rule.
+
+## Historical adjudication
+
+Ringe & Taylor (2014: 315, 318) distinguish an inherited front-vowel oblique (*eahi > ehi* in the Anglian comparison) from formation of the attested obliques to the already contracted nominative *ēa*. A dative reconstructed with long *ē* gives a different prediction and is not interchangeable with the root-noun *i*-ending. The long *ēhi* inputs in the earlier assays are sensitivity controls, not source reconstructions. The Orosius alternations are compatible with inherited allomorphy surviving alongside remodelling, or with a mixed later paradigm. They do not recover the precise ancestry or quantity of the Chronicle genitive.
+
+**RETAIN** ‘river’ as an adverse comparison for **uniform** word-final consonantal gliding. **DEFER** its status as a decisive counterexample. On the inherited short reading, loss of *h* feeds final *e.i* and the simplest uniform J account predicts a palatal not found in the cited forms. The strong rebuttal would be independent evidence that the actual mutated oblique was rebuilt, or a separately established chronologic or structural difference in how *w*- and *h*-generated sequences entered resolution. The existence of remodelled *eas* alone is not that evidence. The [matched final-edge traces](../hiatus-cycle3/LATER_H.md) show that the contrast is accessible to the model; they neither demonstrate a historical edge nor select a historical mechanism.
+
+An unqualified rule producing /hej/ from all final short *e.i* is therefore less defensible than a local conditional proposal for ‘hay’. A late *h*-loss comparator does not rule out earlier gliding in *w*-loss hiatus, but arguing for that difference requires evidence beyond the availability of two executable windows. No prospectively scored stack, article paragraph, or frozen experiment was changed.
