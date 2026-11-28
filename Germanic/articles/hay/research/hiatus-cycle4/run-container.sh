@@ -15,6 +15,8 @@ case "$mode" in
     stress_handoff) files=(components.py component_check.py stress_handoff.py) ;;
     nucleus_check) files=(components.py component_check.py nucleus_check.py) ;;
     medial_hw_check) files=(components.py component_check.py medial_hw_check.py) ;;
+    prospective) files=(components.py component_check.py stress_handoff.py quantity_check.py
+                        source_entry_check.py prospective.py validation-h-loss-v1.tsv validation-nuclei-v1.tsv) ;;
     *) printf 'Unknown research replay mode: %s\n' "$mode" >&2; exit 2 ;;
 esac
 
